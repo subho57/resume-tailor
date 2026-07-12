@@ -76,7 +76,7 @@
       "type": "object",
       "additionalProperties": false,
       "properties": {
-        "nonBreakingHyphens": { "type": "boolean", "default": true, "description": "Replace hyphens in compound terms with U+2011 to prevent raw-stream extractors dropping them at line-wrap boundaries." }
+        "nonBreakingHyphens": { "type": "boolean", "default": true, "description": "Reserved for non-breaking-hyphen protection of compound terms. Currently a no-op: Carlito (the required font) has no glyph at U+2010/U+2011, so both the literal character and docx's NoBreakHyphen render as a tofu box in LibreOffice's PDF export; compound terms render as plain ASCII hyphens instead." }
       },
       "default": {}
     },

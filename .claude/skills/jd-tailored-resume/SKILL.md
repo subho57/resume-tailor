@@ -107,13 +107,52 @@ For each section, choose the subset that matches the JD:
 - **Projects / open-source / education**: include what reinforces the JD; a tailored
   resume usually omits the ground-truth-only sections (preferences, companyContext,
   the full recommendations list, beginner certifications).
+- **Every kept skill keyword needs a visible backer.** If a keyword's only evidence in
+  the superset lives in a company/project/internship you'd otherwise cut for space or
+  relevance, don't just drop the source and keep the keyword floating alone in the
+  Skills list — that reads as inflated even though it's technically true. Instead,
+  greedily pull a short, honestly-rephrased line forward from that source (see the
+  compact-entry pattern below) or drop the keyword. See step 4.
+
+**Compact-entry pattern** for a keyword whose only backing is a small, old, or
+otherwise-cut role: add it as a normal, minimal `work[]` entry, not a labeled aside.
+Use the real company name in `name` (never prefix it with editorial text like
+"Additional Experience:" — that field is what ATS parsers read as the employer name,
+and decorating it breaks that parse), a compact `dateDisplay` (e.g. `"2021"`), the
+real `position` if it adds clarity, and exactly one trimmed highlight — no
+`domainNote`, no multi-bullet list. Example:
+```json
+{ "name": "Kredey", "dateDisplay": "2021", "position": "Full-Stack Website Developer (Intern)",
+  "highlights": ["Used Elasticsearch to support full-text and semantic search over a NoSQL Firebase-backed document-sharing platform."] }
+```
+Real company, real tech, no invented scope, no decorative labeling — it reads to both
+a human and an ATS as an ordinary (if brief) work-history entry.
 
 ### 4. Map JD keywords to real evidence
 
 Build a quick mental (or written) map: JD term → where the candidate demonstrates it in
 the superset. This map drives step 6. Any JD term with **no** entry in the map is a
 gap — record it, do not fabricate it. Any term WITH evidence must make it into the
-resume text.
+resume text — and not just as a bare Skills-list entry.
+
+**Before finalizing, re-check every kept keyword against the map's source, not just
+the term's presence.** If evidence for a keyword lives ONLY in a company, project, or
+internship you're excluding from the tailored resume, you have two options, not one:
+1. **Pull a line forward** — greedily surface a short, honestly-rephrased bullet, via
+   the compact-entry pattern (step 3), from that source into the resume, so the
+   keyword has a visible backer.
+2. **Drop the keyword** — if it's not worth the space, don't keep it in Skills either.
+
+Never do the third thing: keep the keyword in Skills while cutting the only bullet
+that proves it. That's how a resume ends up with a claim that looks unsupported to a
+human reviewer even though it's technically true — worse than an honest gap, because
+it invites a follow-up question the candidate can only half-answer.
+
+**Collect the confirmed list for bolding.** As you finalize the map, keep a running,
+comma-separated list of the JD terms that ARE confirmed (evidence-backed, actually
+going into the resume text) — this becomes the `--keywords` value in step 7. Only
+confirmed matches go in this list, never gaps: a missing term won't match anything in
+the rendered text anyway, but keep the list itself honest, not a wishlist.
 
 ### 5. Confirm role display for any multi-role company (ASK THE USER)
 
@@ -169,25 +208,34 @@ deterministically. **Run these from the repo root** — in Claude Code the worki
 directory is the project root, so the plain paths below just work.
 
 ```bash
-# one-time, only if dist/ is missing or Node reports a missing 'docx' module:
-npm install && npm run build      # or: bun install && bun run build
+# one-time, only if dist/ is missing or docx can't be resolved:
+bun install && bun run build
 
 # render (single-page is the default expectation for a tailored resume):
-node dist/cli.js \
+bun dist/cli.js \
   --content <output_folder>/<FileName>.resume.json \
   --theme corporate-navy \
   --out <output_folder> \
   --basename "<FileName>" \
-  --auto-fit-to-single-page
+  --auto-fit-to-single-page \
+  --keywords "<comma,separated,confirmed,terms,from,step,4>"
 ```
 
-If for some reason you are running from *inside* the skill directory instead of the
-repo root, prefix repo paths with `../../../` (e.g. `node ../../../dist/cli.js …`).
+Always use `bun`, not `node`, to run the CLI: `package.json` sets `"type": "module"`
+but the compiled output is CommonJS, so plain Node throws `ReferenceError: exports is
+not defined in ES module scope`. Bun runs it fine regardless.
 
-Note: `dist/` is committed, so `node dist/cli.js …` usually works without a build. Only
-run the install/build if `dist/` is absent or `docx` can't be resolved. The CLI needs
-LibreOffice + `pdfinfo` for PDF/autofit; if those are unavailable it still writes the
-DOCX and warns.
+If for some reason you are running from *inside* the skill directory instead of the
+repo root, prefix repo paths with `../../../` (e.g. `bun ../../../dist/cli.js …`).
+
+Note: `dist/` and `out/` are gitignored (not committed) — run the install/build above
+after a fresh clone or any `src/` change; there's no prebuilt `dist/` to fall back on.
+The CLI needs LibreOffice + `pdfinfo` for PDF/autofit; if those are unavailable it
+still writes the DOCX and warns, naming exactly what's missing.
+
+`--keywords` bolds the confirmed terms from step 4 wherever they occur in the Summary,
+Work-experience bullets, and Projects (case-insensitive; punctuation-safe, so terms
+like "CI/CD" match correctly). It's optional — omit it to render without any bolding.
 
 **Output naming** — name the file after the JD so outputs don't collide. Use:
 `<CandidateLast>_<Company>_<Role>` with spaces→underscores, e.g.
@@ -228,6 +276,8 @@ Summarize concisely:
   one-line note that these were intentionally not fabricated.
 - Any judgment calls (e.g. represented Kubernetes as "working knowledge" per the
   ground truth despite the JD asking for more).
+- Any keyword you backed with a pulled-forward compact work entry rather than a full
+  work-experience block — say which company/keyword and why (step 4).
 
 ## Guardrails (do not violate)
 
@@ -243,6 +293,14 @@ Summarize concisely:
   (step 5).
 - **When in doubt, leave it out.** If unsure whether a claim is supported, omit it and
   flag it as a gap. An honest gap always beats a fabricated match.
+- **Keywords need a visible backer.** Don't keep a Skills-list term whose only evidence
+  lives in a company/project you excluded from the resume. Pull a short, honestly
+  rephrased line forward (the compact-entry pattern, step 3) or drop the keyword —
+  never both keep the keyword and cut its only proof.
+- **Never label a resume entry as an aside.** A pulled-forward compact entry is a
+  normal `work[]` item with the real company name in `name` — don't prefix it with
+  editorial text like "Additional Experience:"; that field is what ATS parsers read
+  as the employer name, and decorating it breaks the parse.
 
 ## Files in this skill
 

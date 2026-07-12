@@ -3,12 +3,13 @@
   "version": "1.0.0",
   "description": "Deterministic, schema-driven resume generator: content JSON + theme preset -> DOCX + PDF, with optional single-page autofit.",
   "bin": {
-    "resume-build": "dist/cli.js"
+    "build-resume": "dist/cli.js"
   },
   "scripts": {
     "build": "tsc -p tsconfig.json",
-    "generate": "node dist/cli.js --content data/priyanka.resume.json",
-    "generate:onepage": "node dist/cli.js --content data/priyanka.resume.json --auto-fit-to-single-page"
+    "compile": "bun build --compile --outfile=bin/build-resume ./src/cli.ts",
+    "generate": "bun dist/cli.js --content data/priyanka.resume.json",
+    "generate:onepage": "bun dist/cli.js --content data/priyanka.resume.json --auto-fit-to-single-page"
   },
   "dependencies": {
     "docx": "9.7.1"

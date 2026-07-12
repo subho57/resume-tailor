@@ -41,9 +41,33 @@ function repairCommentIds(docxPath: string): number {
   }
 }
 
+// Detect presence of the external PDF toolchain (LibreOffice + Poppler) without
+// spawning anything, so callers can surface an actionable warning up front instead
+// of a vague post-hoc "conversion failed" message. Bun-only (this is a Bun repo).
+function binaryExists(bin: string): boolean {
+  return !!Bun.which(bin);
+}
+
+export function checkPdfToolchain(): { soffice: boolean; pdfinfo: boolean } {
+  return { soffice: binaryExists("soffice"), pdfinfo: binaryExists("pdfinfo") };
+}
+
 // Convert docx -> pdf via LibreOffice headless. Serialized by nature (we call
 // synchronously). Uses a private profile dir to avoid lock contention.
+//
+// KNOWN ISSUE: under rapid repeated conversions against the same directory (e.g.
+// autofit's measure() loop), soffice/pdfinfo can occasionally produce a stably-wrong
+// (not flaky/fluctuating) page count for reasons not fully root-caused — deleting any
+// pre-existing file at the target path first at least prevents a stale *previous*
+// file from being silently re-read as the current result. See autofit.ts's
+// DEBUG_AUTOFIT trace and the -1-vs-"fits" handling in its loop for related context;
+// this is a pre-existing reliability gap in the pipeline, not something introduced by
+// any single caller.
 export function convertToPdf(docxPath: string, outDir: string): string {
+  const pdfName = path.basename(docxPath).replace(/\.docx$/i, ".pdf");
+  const pdfPath = path.join(outDir, pdfName);
+  fs.rmSync(pdfPath, { force: true });
+
   const profile = fs.mkdtempSync(path.join(os.tmpdir(), "lo-"));
   try {
     execFileSync("soffice", [
@@ -58,8 +82,7 @@ export function convertToPdf(docxPath: string, outDir: string): string {
   } finally {
     fs.rmSync(profile, { recursive: true, force: true });
   }
-  const pdfName = path.basename(docxPath).replace(/\.docx$/i, ".pdf");
-  return path.join(outDir, pdfName);
+  return pdfPath;
 }
 
 // Count PDF pages via pdfinfo (Poppler). Returns -1 if it cannot be determined.

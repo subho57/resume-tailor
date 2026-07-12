@@ -1,6 +1,6 @@
 import { ResumeContent, ResolvedTheme } from "./types";
 import { renderResume } from "./render";
-import { packDocx, convertToPdf, countPdfPages } from "./pack";
+import { packDocx, convertToPdf, countPdfPages, checkPdfToolchain } from "./pack";
 import * as path from "path";
 import * as os from "os";
 import * as fs from "fs";
@@ -16,12 +16,26 @@ export interface AutofitResult {
 const clone = (t: ResolvedTheme): ResolvedTheme => JSON.parse(JSON.stringify(t));
 
 // Render -> pack -> convert -> count pages. Returns page count (-1 if unmeasurable).
-async function measure(content: ResumeContent, theme: ResolvedTheme, work: string): Promise<number> {
-  const docxPath = path.join(work, "probe.docx");
-  const { doc } = renderResume(content, theme);
-  await packDocx(doc, docxPath);
-  const pdfPath = convertToPdf(docxPath, work);
-  return countPdfPages(pdfPath);
+//
+// Each call gets its own freshly created temp directory (not just a unique filename
+// within one shared directory) — observed in practice, rapid repeated soffice/pdfinfo
+// invocations against a churning shared directory produce stably-wrong (not flaky)
+// page counts, consistent with the OS/tooling confusing a freshly written file with a
+// just-deleted one at the same path or a recently-reused inode. A brand new directory
+// per call is the strongest structural isolation available against that class of bug.
+async function measure(content: ResumeContent, theme: ResolvedTheme, workRoot: string, keywords: string[]): Promise<number> {
+  const work = fs.mkdtempSync(path.join(workRoot, "m-"));
+  try {
+    const docxPath = path.join(work, "probe.docx");
+    const { doc } = renderResume(content, theme, keywords);
+    await packDocx(doc, docxPath);
+    const pdfPath = convertToPdf(docxPath, work);
+    const pages = countPdfPages(pdfPath);
+    if (process.env.DEBUG_AUTOFIT) console.error(`[DEBUG] measure: pdfPath=${pdfPath} exists=${fs.existsSync(pdfPath)} pages=${pages} lineHeight=${theme.lineHeight} margins=${theme.margins.top} sizeBody=${theme.sizeBody}`);
+    return pages;
+  } finally {
+    fs.rmSync(work, { recursive: true, force: true });
+  }
 }
 
 /**
@@ -29,18 +43,34 @@ async function measure(content: ResumeContent, theme: ResolvedTheme, work: strin
  * Shrink order (cheapest-to-readability first): spacing/line-height -> margins -> body font.
  * Stops at floors (autofit.minBodySize / autofit.minMargin) and warns if still > 1 page.
  */
-export async function autofitToSinglePage(content: ResumeContent, startTheme: ResolvedTheme): Promise<AutofitResult> {
+export async function autofitToSinglePage(content: ResumeContent, startTheme: ResolvedTheme, keywords: string[] = []): Promise<AutofitResult> {
   const warnings: string[] = [];
   let theme = clone(startTheme);
   const af = theme.autofit;
   const work = fs.mkdtempSync(path.join(os.tmpdir(), "autofit-"));
 
+  let iterations = 0;
+  // -1 means "unmeasurable this attempt" (e.g. a transient conversion hiccup), never
+  // "fits" — retrying once before giving up avoids conflating the two, which would
+  // otherwise let the loop stop early believing a false "fit to 1 page".
+  const measureReliably = async (): Promise<number> => {
+    let p = await measure(content, theme, work, keywords);
+    iterations++;
+    if (p === -1) { p = await measure(content, theme, work, keywords); iterations++; }
+    return p;
+  };
+
   try {
-    let pages = await measure(content, theme, work);
-    let iterations = 0;
+    let pages = await measureReliably();
+    let giveUp = false;
 
     if (pages === -1) {
-      warnings.push("Could not measure page count (LibreOffice/pdfinfo unavailable); skipped autofit and kept base theme.");
+      const toolchain = checkPdfToolchain();
+      const missing: string[] = [];
+      if (!toolchain.soffice) missing.push("soffice (LibreOffice)");
+      if (!toolchain.pdfinfo) missing.push("pdfinfo (Poppler)");
+      const detail = missing.length ? `missing: ${missing.join(", ")}` : "conversion failed twice in a row despite both being on PATH";
+      warnings.push(`Could not measure page count (${detail}); skipped autofit and kept base theme. See README.md Prerequisites.`);
       return { fitted: false, pages, iterations, finalTheme: theme, warnings };
     }
 
@@ -52,14 +82,16 @@ export async function autofitToSinglePage(content: ResumeContent, startTheme: Re
       if (theme.sectionBefore > 6) { theme.sectionBefore = Math.max(6, +(theme.sectionBefore - 0.5).toFixed(2)); changed = true; }
       if (theme.sectionAfter > 2.5) { theme.sectionAfter = Math.max(2.5, +(theme.sectionAfter - 0.25).toFixed(2)); changed = true; }
       if (theme.bulletAfter > 1.5) { theme.bulletAfter = Math.max(1.5, +(theme.bulletAfter - 0.25).toFixed(2)); changed = true; }
-      pages = await measure(content, theme, work); iterations++;
+      pages = await measureReliably();
+      if (pages === -1) { giveUp = true; break; }
       if (pages <= 1) break;
 
       // Phase 2: margins toward floor.
       (["top", "bottom", "left", "right"] as const).forEach((side) => {
         if (theme.margins[side] > af.minMargin) { theme.margins[side] = Math.max(af.minMargin, +(theme.margins[side] - af.marginStep).toFixed(3)); changed = true; }
       });
-      pages = await measure(content, theme, work); iterations++;
+      pages = await measureReliably();
+      if (pages === -1) { giveUp = true; break; }
       if (pages <= 1) break;
 
       // Phase 3: body font (proportional derived sizes) toward floor.
@@ -73,7 +105,8 @@ export async function autofitToSinglePage(content: ResumeContent, startTheme: Re
         theme.sizeName = Math.max(14, +(theme.sizeName * ratio).toFixed(2)); // name floor 14pt
         changed = true;
       }
-      pages = await measure(content, theme, work); iterations++;
+      pages = await measureReliably();
+      if (pages === -1) { giveUp = true; break; }
 
       const atFloors = theme.sizeBody <= af.minBodySize &&
         theme.margins.top <= af.minMargin && theme.margins.bottom <= af.minMargin &&
@@ -82,8 +115,11 @@ export async function autofitToSinglePage(content: ResumeContent, startTheme: Re
       if (!changed || (atFloors && pages > 1)) break;
     }
 
-    const fitted = pages === 1;
-    if (!fitted) {
+    if (giveUp) {
+      warnings.push("Page-count measurement failed twice in a row mid-autofit (LibreOffice/pdfinfo hiccup); stopped shrinking with the last verified theme rather than guessing.");
+    }
+    const fitted = !giveUp && pages === 1;
+    if (!fitted && !giveUp) {
       warnings.push(`Could not fit one page at readable floors (body ${theme.sizeBody}pt, margins ${theme.margins.top}in, line-height ${theme.lineHeight}). Result is ${pages} page(s). Consider trimming content rather than shrinking further.`);
     }
     return { fitted, pages, iterations, finalTheme: theme, warnings };

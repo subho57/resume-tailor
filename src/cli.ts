@@ -1,4 +1,4 @@
-#!/usr/bin/env node
+#!/usr/bin/env bun
 // ============================================================================
 // Resume builder CLI.
 //
@@ -14,6 +14,10 @@
 //   --auto-fit-to-single-page   Iteratively shrink spacing/margins/font (within
 //                               ATS-safe floors) to fit one page; warns if it can't.
 //   --no-pdf                    Skip PDF generation (docx only).
+//   --keywords <comma,list>     Bold these terms wherever they appear in the Summary,
+//                               Work-experience bullets, and Projects (case-insensitive,
+//                               whole-term matching). Not stored in content/theme JSON —
+//                               a render-time-only directive.
 //   --schema <path>             Content schema (default: schema/resume.schema.json).
 //   --theme-schema <path>       Theme schema (default: schema/theme.schema.json).
 //   --strict                    Exit non-zero if any validation warnings occur.
@@ -30,12 +34,44 @@ import { ResumeContent, Theme } from "./types";
 import { validate, Warning } from "./validate";
 import { resolveTheme } from "./theme";
 import { renderResume } from "./render";
-import { packDocx, convertToPdf, countPdfPages } from "./pack";
+import { packDocx, convertToPdf, countPdfPages, checkPdfToolchain } from "./pack";
 import { autofitToSinglePage } from "./autofit";
+
+// Statically imported (not fs.readFileSync'd) so `bun build --compile` embeds these
+// directly into a standalone binary, where __dirname resolves to Bun's virtual
+// filesystem rather than a real directory containing schema/themes/. `bun dist/cli.js`
+// still reads the live files off disk first (see fs.existsSync checks below) — these
+// are only the fallback for when that fails, i.e. inside the compiled binary.
+import resumeSchemaBuiltin from "../schema/resume.schema.json";
+import themeSchemaBuiltin from "../schema/theme.schema.json";
+import corporateNavyBuiltin from "../themes/corporate-navy.theme.json";
+import slateCompactBuiltin from "../themes/slate-compact.theme.json";
+
+// Bare `--theme <name>` resolves here first, before the fs-based lookup below.
+// Adding a new theme preset needs a line here (+ a recompile) to be embedded.
+const BUILTIN_THEMES: Record<string, Theme> = {
+  "corporate-navy": corporateNavyBuiltin as Theme,
+  "slate-compact": slateCompactBuiltin as Theme,
+};
+
+// Build an actionable "missing binary + how to install it" message, or null if
+// the full PDF toolchain (LibreOffice + Poppler) is present.
+function pdfToolchainWarning(toolchain: { soffice: boolean; pdfinfo: boolean }): string | null {
+  const missing: string[] = [];
+  if (!toolchain.soffice) missing.push("soffice (LibreOffice)");
+  if (!toolchain.pdfinfo) missing.push("pdfinfo (Poppler)");
+  if (!missing.length) return null;
+  const hint = process.platform === "darwin"
+    ? "brew install --cask libreoffice && brew install poppler"
+    : process.platform === "linux"
+    ? "sudo apt install libreoffice poppler-utils"
+    : "see README.md Prerequisites section for install instructions";
+  return `Missing ${missing.join(" and ")} on PATH — PDF output and autofit are skipped. Install: ${hint}`;
+}
 
 interface Args {
   content?: string; theme?: string; out: string; basename?: string;
-  autofit: boolean; pdf: boolean; schema: string; themeSchema: string;
+  autofit: boolean; pdf: boolean; keywords: string[]; schema: string; themeSchema: string;
   strict: boolean; quiet: boolean;
 }
 
@@ -44,7 +80,7 @@ function parseArgs(argv: string[]): Args {
   const root = path.resolve(here, "..");
   const a: Args = {
     out: path.resolve(process.cwd(), "out"),
-    autofit: false, pdf: true,
+    autofit: false, pdf: true, keywords: [],
     schema: path.join(root, "schema", "resume.schema.json"),
     themeSchema: path.join(root, "schema", "theme.schema.json"),
     strict: false, quiet: false,
@@ -59,6 +95,7 @@ function parseArgs(argv: string[]): Args {
       case "--basename": a.basename = next(); break;
       case "--auto-fit-to-single-page": a.autofit = true; break;
       case "--no-pdf": a.pdf = false; break;
+      case "--keywords": a.keywords = next().split(",").map((k) => k.trim()).filter(Boolean); break;
       case "--schema": a.schema = next(); break;
       case "--theme-schema": a.themeSchema = next(); break;
       case "--strict": a.strict = true; break;
@@ -73,7 +110,7 @@ function parseArgs(argv: string[]): Args {
 function printHelp() {
   console.log(`resume-build --content <file.json> [--theme <name|path>] [--out <dir>]
                    [--basename <name>] [--auto-fit-to-single-page] [--no-pdf]
-                   [--strict] [--quiet]`);
+                   [--keywords <comma,list>] [--strict] [--quiet]`);
 }
 
 function readJson(p: string): any {
@@ -108,24 +145,34 @@ async function main() {
 
   // --- load + validate content (best-effort) ---
   const content: ResumeContent = readJson(args.content);
-  const contentSchema = fs.existsSync(args.schema) ? readJson(args.schema) : null;
-  let contentWarnings: Warning[] = [];
-  if (contentSchema) contentWarnings = validate(contentSchema, content);
+  const contentSchema = fs.existsSync(args.schema) ? readJson(args.schema) : resumeSchemaBuiltin;
+  let contentWarnings: Warning[] = validate(contentSchema, content);
   printWarnings("Content validation warnings", contentWarnings, args.quiet);
 
   // --- load + validate theme (best-effort) ---
-  const themePath = resolveThemePath(args.theme, content.theme, root);
+  // A bare theme name checks the embedded BUILTIN_THEMES first (works with no
+  // filesystem access, e.g. inside a compiled binary); only names outside that map,
+  // or an explicit --theme <path.json>, fall through to the fs-based lookup.
+  const themeName = args.theme || content.theme;
   let themeRaw: Theme = {};
-  if (themePath) {
-    themeRaw = readJson(themePath);
-    const themeSchema = fs.existsSync(args.themeSchema) ? readJson(args.themeSchema) : null;
-    if (themeSchema) {
-      const themeWarnings = validate(themeSchema, themeRaw);
-      printWarnings(`Theme validation warnings (${path.basename(themePath)})`, themeWarnings, args.quiet);
-      contentWarnings = contentWarnings.concat(themeWarnings);
+  let themeSource: string | undefined;
+  if (themeName && BUILTIN_THEMES[themeName]) {
+    themeRaw = BUILTIN_THEMES[themeName];
+    themeSource = `${themeName} (built-in)`;
+  } else {
+    const themePath = resolveThemePath(args.theme, content.theme, root);
+    if (themePath) {
+      themeRaw = readJson(themePath);
+      themeSource = path.basename(themePath);
+    } else if (themeName) {
+      console.warn(`⚠  Theme "${themeName}" not found; using built-in defaults.`);
     }
-  } else if (args.theme || content.theme) {
-    console.warn(`⚠  Theme "${args.theme || content.theme}" not found; using built-in defaults.`);
+  }
+  if (themeSource) {
+    const themeSchema = fs.existsSync(args.themeSchema) ? readJson(args.themeSchema) : themeSchemaBuiltin;
+    const themeWarnings = validate(themeSchema, themeRaw);
+    printWarnings(`Theme validation warnings (${themeSource})`, themeWarnings, args.quiet);
+    contentWarnings = contentWarnings.concat(themeWarnings);
   }
   const theme = resolveTheme(themeRaw);
 
@@ -135,13 +182,18 @@ async function main() {
   const docxPath = path.join(args.out, `${base}.docx`);
   const runtimeWarnings: string[] = [];
 
+  // --- PDF toolchain preflight (surface missing binaries up front, not just after a failed convert) ---
+  const toolchain = (args.pdf || args.autofit) ? checkPdfToolchain() : { soffice: true, pdfinfo: true };
+  const toolchainWarning = pdfToolchainWarning(toolchain);
+  if (toolchainWarning && (args.pdf || args.autofit)) runtimeWarnings.push(toolchainWarning);
+
   // --- autofit (optional) ---
   let finalTheme = theme;
   if (args.autofit) {
     if (!args.pdf) {
       runtimeWarnings.push("--auto-fit-to-single-page requires PDF rendering to measure pages; ignoring --no-pdf for measurement.");
     }
-    const result = await autofitToSinglePage(content, theme);
+    const result = await autofitToSinglePage(content, theme, args.keywords);
     finalTheme = result.finalTheme;
     runtimeWarnings.push(...result.warnings);
     if (!args.quiet) {
@@ -151,7 +203,7 @@ async function main() {
   }
 
   // --- render + pack final docx ---
-  const { doc, commentCount } = renderResume(content, finalTheme);
+  const { doc, commentCount } = renderResume(content, finalTheme, args.keywords);
   const { commentIdsFixed } = await packDocx(doc, docxPath);
   if (!args.quiet) {
     console.log(`\n✓ DOCX: ${docxPath}`);
@@ -164,8 +216,9 @@ async function main() {
     const pages = countPdfPages(pdfPath);
     if (fs.existsSync(pdfPath)) {
       if (!args.quiet) console.log(`✓ PDF:  ${pdfPath}${pages > 0 ? `  (${pages} page${pages === 1 ? "" : "s"})` : ""}`);
-    } else {
-      runtimeWarnings.push("PDF conversion failed (LibreOffice unavailable?). DOCX was still written.");
+    } else if (!toolchainWarning) {
+      // Toolchain looked present but conversion still failed — a different problem than a missing binary.
+      runtimeWarnings.push("PDF conversion failed despite soffice/pdfinfo being on PATH; DOCX was still written. Check LibreOffice logs.");
     }
   }
 

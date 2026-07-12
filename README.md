@@ -40,26 +40,79 @@ src/
 ## Install & build
 
 ```bash
-npm install          # installs docx@9.7.1, typescript, @types/node
-npm run build        # compiles src/ -> dist/
+bun install          # installs docx@9.7.1, typescript, @types/node
+bun run build        # compiles src/ -> dist/
 ```
 
 Requirements for PDF + autofit: **LibreOffice** (`soffice`) and **Poppler** (`pdfinfo`)
 on PATH, plus a Calibri-metric-compatible font (**Carlito**) installed so page counts
-match across machines.
+match across machines. See "## Prerequisites" below for install commands. DOCX
+generation itself has no external dependency and always works; only
+`--auto-fit-to-single-page` and PDF output need these. If either binary is missing,
+the CLI prints an actionable warning naming exactly what's absent and how to
+install it, rather than silently skipping PDF/autofit.
+
+## Prerequisites
+
+Only needed for PDF output and `--auto-fit-to-single-page`; DOCX-only builds need
+nothing beyond `bun install`.
+
+**macOS:**
+```bash
+brew install --cask libreoffice
+brew install poppler
+brew install --cask font-carlito
+```
+
+**Debian/Ubuntu:**
+```bash
+sudo apt install libreoffice poppler-utils fonts-crosextra-carlito
+```
+
+**Windows:** install [LibreOffice](https://www.libreoffice.org/download/) and
+[Poppler for Windows](https://github.com/oschwartz10612/poppler-windows/releases/)
+manually, adding both to PATH; install the Carlito font from the same Google
+Fonts / Crosextra sources used above.
 
 ## Usage
 
 ```bash
 # Full ground-truth document (multi-page), default theme from the JSON:
-node dist/cli.js --content data/priyanka.resume.json
+bun dist/cli.js --content data/priyanka.resume.json
 
 # A tailored document, forced to one page:
-node dist/cli.js --content data/tailored-golang.example.json --auto-fit-to-single-page
+bun dist/cli.js --content data/tailored-golang.example.json --auto-fit-to-single-page
 
 # Swap themes without touching content:
-node dist/cli.js --content data/tailored-golang.example.json --theme slate-compact
+bun dist/cli.js --content data/tailored-golang.example.json --theme slate-compact
 ```
+
+Always run with `bun`, not `node`: `package.json` sets `"type": "module"` but the
+compiled output is CommonJS, so plain Node throws `ReferenceError: exports is not
+defined in ES module scope`. Bun runs it fine regardless.
+
+## Standalone binary
+
+For a single `build-resume` command usable from anywhere, without typing
+`bun dist/cli.js` or needing to be in this repo's directory:
+
+```bash
+bun run compile                # bun build --compile --outfile=bin/build-resume ./src/cli.ts
+cp bin/build-resume ~/.bun/bin/   # any directory already on PATH works
+build-resume --content data/priyanka.resume.json --auto-fit-to-single-page
+```
+
+`bun build --compile` bundles the JS, the Bun runtime, and all npm dependencies
+(`docx`, etc.) into one self-contained executable (~90MB) — no `bun`/`node` or
+`node_modules` needed to run it afterward. The two shipped theme presets
+(`corporate-navy`, `slate-compact`) and both JSON schemas are statically imported in
+`src/cli.ts` specifically so Bun's bundler embeds them into the binary; a custom
+`--theme <path.json>` or `--schema <path.json>` still reads from disk as normal.
+
+The binary is a frozen snapshot: rebuild and re-copy (`bun run compile`) after
+changing anything in `src/`, `schema/`, or `themes/` — unlike `bun dist/cli.js`, it
+won't pick up edits automatically. Adding a new theme preset also needs a line in
+`src/cli.ts`'s `BUILTIN_THEMES` map to be embedded in future compiles.
 
 ### Options
 
@@ -71,6 +124,7 @@ node dist/cli.js --content data/tailored-golang.example.json --theme slate-compa
 | `--basename <name>` | Output filename base (default derived from `basics.name`). |
 | `--auto-fit-to-single-page` | Iteratively shrink spacing, then margins, then font — within ATS-safe floors (10pt body, 0.5in margins by default) — to fit one page. Warns if it can't. |
 | `--no-pdf` | Skip PDF (DOCX only). |
+| `--keywords <comma,list>` | Bold these terms wherever they occur in the Summary, Work-experience bullets, and Projects (case-insensitive, whole-term matching — punctuation-safe, so "CI/CD" and "Node.js" match correctly). Not stored in the content or theme JSON; a render-time-only directive, same tier as autofit. Skills/Education/company headers/dates are unaffected. |
 | `--strict` | Exit non-zero if any validation warning occurs (for CI). |
 | `--quiet` | Suppress warning output. |
 
@@ -119,10 +173,20 @@ only a subset and you get a resume built from exactly what's present.
 - Word comments use **plain numeric ids** (`new CommentRangeStart(0)`), which avoids the
   docx v9 `[object Object]` serialization bug; `pack.ts` additionally repairs marker ids
   as a safety net.
-- Compound terms get U+2011 non-breaking hyphens (toggle via `ats.nonBreakingHyphens`) so
-  raw-stream ATS extractors don't drop hyphens at line-wrap boundaries.
+- Compound-term hyphens render as plain ASCII hyphens. `ats.nonBreakingHyphens`
+  exists in the theme schema for a planned non-breaking-hyphen protection, but it's
+  currently a no-op: Carlito (the required font) has no glyph at U+2010/U+2011, and
+  both the literal character and docx's `NoBreakHyphen` run-child resolve to that
+  same glyph, so either renders as a tofu box in LibreOffice's PDF export. A visible,
+  correct hyphen beats an invisible missing-glyph box.
 - For identical page counts across environments, install **Carlito** (Calibri-metric
   compatible) and run the same LibreOffice version.
+- `--keywords` matching uses lookaround boundaries (`(?<![A-Za-z0-9])term(?![A-Za-z0-9])`),
+  not `\b`, so punctuation-bearing terms ("CI/CD", "Node.js") match correctly — `\b` is
+  defined relative to `\w` and misfires around symbols. Mirrors the same boundary logic
+  in `scripts/check_keywords.py`'s `term_present()`. If autofit is also requested, both
+  the measurement passes and the final render use the same keyword list, since bold
+  glyphs are slightly wider and can shift line-wrapping/pagination.
 
 ## Autofit
 
@@ -133,3 +197,14 @@ floors (default 9.5pt body / 0.4in margins; ATS-safe is 10pt / 0.5in) and **warn
 single page isn't achievable — a signal to trim content rather than shrink into
 unreadability. A genuine data dump (the full superset) will not collapse to one page;
 that's expected.
+
+**Known reliability gap:** under rapid repeated conversions in one autofit run,
+`soffice`/`pdfinfo` can occasionally report a stably-wrong (not flaky/fluctuating)
+page count for a mid-loop measurement, causing autofit to report "fit to 1 page" when
+the final PDF is actually 2. This is a pre-existing issue in the LibreOffice-invocation
+pipeline (`src/pack.ts`'s `convertToPdf`/`countPdfPages`), reproduces identically via
+`bun dist/cli.js` and the compiled `build-resume` binary alike, and is not fully
+root-caused yet. Mitigated (file staleness reduced by deleting any pre-existing output
+file first, and a real independent `-1`-vs-"fits" conflation bug in `autofit.ts`'s loop
+is fixed) but not eliminated. If a delivered PDF's page count looks off, open it and
+check — don't fully trust the "fit to 1 page" log line yet.

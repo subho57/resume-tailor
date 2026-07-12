@@ -85,7 +85,23 @@ JD is ambiguous or spans several, bias toward the higher-preference framing.
   (unless the JD specifically values a cert the candidate holds).
 - **Older/tiny roles:** keep or drop based on relevance and space. A senior backend JD
   rarely needs a 2021 web-dev internship; include it only if it fills a gap or space
-  allows.
+  allows — **except** when it's the only backing for a skill keyword you're keeping
+  (see below), in which case pull a one-line mention forward instead of dropping it
+  silently.
+- **Don't orphan a keyword.** If you keep "Elasticsearch" in Skills because a 2021
+  internship used it, but you cut that internship's work-experience block entirely,
+  the keyword now has zero visible backing in the resume — a reviewer sees a claim
+  with nothing behind it. Either add a compact, ordinary `work[]` entry for that
+  company (real name, real year, the one relevant fact — no full bullet list, no
+  domain note) or drop the keyword from Skills. Don't do neither, and don't label it
+  as an aside (e.g. "Additional Experience: X") — the company-name field is what ATS
+  parsers read as the employer, and decorating it with editorial text breaks the
+  parse.
+- **Track the confirmed-keyword list as you go.** Every term you keep because it's
+  genuinely backed (not a gap) is a candidate for `--keywords` at render time (step 7)
+  — it bolds those exact terms wherever they land in Summary/Work/Projects. Build this
+  list alongside the selection work in this section rather than trying to reconstruct
+  it afterward from the finished JSON.
 
 ---
 
@@ -146,3 +162,9 @@ the JD's term. If the fact isn't there, leave the keyword out.
 - **Ignoring the verifier's real hits.** If `check_keywords.py` flags a term as missing
   and the candidate genuinely has it, that's a real miss to fix — surface it. Only the
   unsupported terms should stay missing.
+- **Orphaned keywords.** `check_keywords.py` only checks whether a term's text appears
+  *anywhere* in the resume — including a bare Skills-list entry with zero supporting
+  bullet. It will report a keyword as "present" even if you cut the only company/project
+  that demonstrates it. That's not a pass; check it yourself (step 4): every kept
+  keyword needs a visible bullet behind it — a normal (if compact) work entry, not
+  just a verifier green-light.

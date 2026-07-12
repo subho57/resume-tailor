@@ -1,7 +1,7 @@
 import {
   Document, Paragraph, TextRun, ExternalHyperlink,
   Table, TableRow, TableCell, WidthType, BorderStyle, AlignmentType,
-  TabStopType,
+  TabStopType, Tab,
   VerticalAlign, LevelFormat,
   CommentRangeStart, CommentRangeEnd, CommentReference,
 } from "docx";
@@ -9,7 +9,6 @@ import {
   ResumeContent, ResolvedTheme, SectionName, Highlight, Work, Education, Role,
 } from "./types";
 
-const NBH = "\u2011"; // non-breaking hyphen
 const EN = "\u2013";  // en dash
 
 const US_LETTER = { width: 12240, height: 15840 };
@@ -43,12 +42,31 @@ const CANONICAL_ORDER: SectionName[] = [
   "openSource", "projects", "certifications", "languages", "recommendations", "companyContext",
 ];
 
-// Apply non-breaking hyphens to compound terms (ATS line-wrap protection).
-// Only used when theme.nonBreakingHyphens is true. We convert hyphens that sit
-// between word characters (compound words), leaving number ranges/en-dashes alone.
+// Non-breaking-hyphen protection for compound terms is currently disabled: both the
+// literal U+2011 character and docx's NoBreakHyphen run-child resolve to the same
+// U+2011 glyph for rendering purposes (NoBreakHyphen only changes the OOXML markup,
+// not the character identity), and Carlito — this project's required, metric-locked
+// font — has no glyph at U+2010/U+2011, so either approach renders as a tofu box in
+// LibreOffice's PDF export. A plain ASCII hyphen always has a glyph and is far safer
+// for both human readers and ATS text extraction than a document full of missing-
+// glyph boxes, so `ats()` is a pass-through no-op until a font with full punctuation
+// coverage is adopted. theme.nonBreakingHyphens is kept for schema/config
+// compatibility but currently has no effect.
 function ats(s: string, on: boolean): string {
-  if (!s || !on) return s || "";
-  return s.replace(/(?<=\w)-(?=\w)/g, NBH);
+  return s || "";
+}
+
+// Build one case-insensitive matcher for all keywords to bold, combined so overlapping
+// terms don't get bolded twice. Boundaries use lookarounds (not \b) so punctuation-
+// bearing terms like "CI/CD" or "Node.js" match correctly — \b is defined relative to
+// \w and misfires around symbols. Mirrors scripts/check_keywords.py's term_present().
+// Sorted longest-first so a multi-word phrase wins over a shorter term it contains.
+function buildBoldPattern(keywords: string[]): RegExp | null {
+  const cleaned = [...new Set(keywords.map((k) => k.trim()).filter(Boolean))];
+  if (!cleaned.length) return null;
+  const sorted = cleaned.sort((a, b) => b.length - a.length);
+  const escaped = sorted.map((k) => k.replace(/[.*+?^${}()|[\]\\]/g, "\\$&"));
+  return new RegExp(`(?<![A-Za-z0-9])(${escaped.join("|")})(?![A-Za-z0-9])`, "gi");
 }
 
 export interface RenderResult {
@@ -56,7 +74,8 @@ export interface RenderResult {
   commentCount: number;
 }
 
-export function renderResume(content: ResumeContent, theme: ResolvedTheme): RenderResult {
+export function renderResume(content: ResumeContent, theme: ResolvedTheme, keywords: string[] = []): RenderResult {
+  const boldPattern = buildBoldPattern(keywords);
   const NONE = { style: BorderStyle.NONE, size: 0, color: "auto" } as const;
   const usableWidth = US_LETTER.width - inchToDxa(theme.margins.left) - inchToDxa(theme.margins.right);
 
@@ -104,6 +123,19 @@ export function renderResume(content: ResumeContent, theme: ResolvedTheme): Rend
   const run = (text: string, o: { bold?: boolean; italics?: boolean; color?: string; size?: number } = {}) =>
     new TextRun({ text, font: theme.fontFamily, color: o.color || theme.body, bold: !!o.bold, italics: !!o.italics, size: ptToHalf(o.size ?? theme.sizeBody) });
 
+  // Like run(), but splits on boldPattern and bolds the matched keyword segments —
+  // a safe drop-in that returns a single-element array unchanged when there's no
+  // pattern or no match in this text. A capturing-group split alternates plain/match
+  // segments (odd indices are the matches).
+  const textRuns = (text: string, o: { bold?: boolean; italics?: boolean; color?: string; size?: number } = {}): TextRun[] => {
+    if (!boldPattern || !text) return [run(text, o)];
+    const parts = text.split(boldPattern);
+    if (parts.length === 1) return [run(text, o)];
+    return parts
+      .map((seg, i) => (seg ? run(seg, { ...o, bold: o.bold || i % 2 === 1 }) : null))
+      .filter((r): r is TextRun => r !== null);
+  };
+
   const link = (label: string, url: string, size?: number) =>
     new ExternalHyperlink({ link: url, children: [new TextRun({ text: label, font: theme.fontFamily, color: theme.link, size: ptToHalf(size ?? theme.sizeBody), underline: {} })] });
 
@@ -122,15 +154,17 @@ export function renderResume(content: ResumeContent, theme: ResolvedTheme): Rend
   });
 
   // A "left .......... right-aligned" line. Uses an explicit RIGHT tab stop at the
-  // usable-width position plus a literal tab, which renders correctly in BOTH Word
-  // and LibreOffice. (docx PositionalTab is not honored by LibreOffice, so the date
-  // would otherwise sit mid-line in the PDF.)
-  const leftRight = (leftRuns: any[], rightText: string) => new Paragraph({
+  // usable-width position plus a real Tab run-child, which renders correctly in BOTH
+  // Word and LibreOffice. (docx PositionalTab is not honored by LibreOffice, so the
+  // date would otherwise sit mid-line in the PDF; a literal "\t" character inside a
+  // TextRun's text is just whitespace to both renderers and collapses instead of
+  // jumping to the tab stop — the tab must be its own Tab() child.)
+  const leftRight = (leftRuns: TextRun[], rightText: string) => new Paragraph({
     spacing: { after: ptToTwip(1) },
     tabStops: [{ type: TabStopType.RIGHT, position: usableWidth }],
     children: [
       ...leftRuns,
-      new TextRun({ text: "\t" + rightText, font: theme.fontFamily, color: theme.body, italics: true, size: ptToHalf(theme.sizeBody) }),
+      new TextRun({ children: [new Tab(), rightText], font: theme.fontFamily, color: theme.body, italics: true, size: ptToHalf(theme.sizeBody) }),
     ],
   });
 
@@ -148,12 +182,12 @@ export function renderResume(content: ResumeContent, theme: ResolvedTheme): Rend
 
   // ================= HEADER (two-column table, zeroed margins) =================
   const b = content.basics || {};
-  if (b.name || (b.profiles && b.profiles.length) || b.email || b.phone) {
+  if (b.name || b.profiles?.length || b.email || b.phone) {
     const leftW = Math.round(usableWidth * theme.leftCellPct);
     const rightW = usableWidth - leftW;
     const zero = { top: 0, bottom: 0, left: 0, right: 0 };
 
-    const leftChildren: any[] = [];
+    const leftChildren: Paragraph[] = [];
     if (b.name) leftChildren.push(new Paragraph({ spacing: { after: ptToTwip(1) }, children: [new TextRun({ text: b.name, font: theme.fontFamily, bold: true, color: theme.accent, size: ptToHalf(theme.sizeName) })] }));
     if (b.label) leftChildren.push(new Paragraph({ spacing: { after: ptToTwip(1) }, children: [run(ats(b.label, theme.nonBreakingHyphens), { italics: true })] }));
     const loc = b.location?.display || [b.location?.city, b.location?.region, b.location?.countryCode].filter(Boolean).join(", ");
@@ -205,15 +239,15 @@ export function renderResume(content: ResumeContent, theme: ResolvedTheme): Rend
       children.push(sectionHeading(SECTION_TITLES.summary));
       if (bb.activeSummary && summaries[bb.activeSummary]) {
         // tailored render: one summary
-        children.push(new Paragraph({ spacing: { after: ptToTwip(3), ...lineRule(theme.lineHeight) }, children: [run(ats(summaries[bb.activeSummary], theme.nonBreakingHyphens))] }));
+        children.push(new Paragraph({ spacing: { after: ptToTwip(3), ...lineRule(theme.lineHeight) }, children: textRuns(ats(summaries[bb.activeSummary], theme.nonBreakingHyphens)) }));
       } else if (Object.keys(summaries).length > 0) {
-        // ground-truth: list ALL variants, labeled
+        // ground-truth: list ALL variants, labeled (reference dump, not bolded)
         for (const [key, text] of Object.entries(summaries)) {
           const label = key === "default" ? "Default" : key.replace(/-/g, " ").replace(/\b\w/g, (m) => m.toUpperCase());
           children.push(new Paragraph({ spacing: { after: ptToTwip(3), ...lineRule(theme.lineHeight) }, children: [run(label + ": ", { bold: true, color: theme.accent }), run(ats(text, theme.nonBreakingHyphens))] }));
         }
       } else if (single) {
-        children.push(new Paragraph({ spacing: { after: ptToTwip(3), ...lineRule(theme.lineHeight) }, children: [run(ats(single, theme.nonBreakingHyphens))] }));
+        children.push(new Paragraph({ spacing: { after: ptToTwip(3), ...lineRule(theme.lineHeight) }, children: textRuns(ats(single, theme.nonBreakingHyphens)) }));
       }
     },
     skills: () => {
@@ -255,15 +289,23 @@ export function renderResume(content: ResumeContent, theme: ResolvedTheme): Rend
           const titles = allRoles.map((r) => r.position).filter(Boolean).join(" / ");
           roles = [{ position: titles, dateDisplay: dateRight || "" }];
         }
+        // A single displayed role's dates are always identical to (or a subset of) the
+        // company header line just above, so repeating them there is redundant — only
+        // show per-role dates when there's more than one role line to distinguish.
         roles.forEach((r) => {
-          const rd = r.dateDisplay || composeDates(r.startDate, r.endDate);
-          children.push(leftRight([new TextRun({ text: r.position || "", font: theme.fontFamily, italics: true, bold: true, color: theme.body, size: ptToHalf(theme.sizeBody) })], rd || ""));
+          const positionRun = new TextRun({ text: r.position || "", font: theme.fontFamily, italics: true, bold: true, color: theme.body, size: ptToHalf(theme.sizeBody) });
+          if (roles.length === 1) {
+            children.push(new Paragraph({ spacing: { after: ptToTwip(1) }, children: [positionRun] }));
+          } else {
+            const rd = r.dateDisplay || composeDates(r.startDate, r.endDate);
+            children.push(leftRight([positionRun], rd || ""));
+          }
         });
         asArray<Highlight>(job.highlights).forEach((h: Highlight) => {
-          if (typeof h === "string") { children.push(bullet([run(ats(h, theme.nonBreakingHyphens))])); return; }
+          if (typeof h === "string") { children.push(bullet(textRuns(ats(h, theme.nonBreakingHyphens)))); return; }
           const text = ats(h.text || "", theme.nonBreakingHyphens);
-          if (h.flagged && h.note) children.push(commentedParagraph([run(text)], h.note, { bullet: true }));
-          else children.push(bullet([run(text)]));
+          if (h.flagged && h.note) children.push(commentedParagraph(textRuns(text), h.note, { bullet: true }));
+          else children.push(bullet(textRuns(text)));
         });
       });
     },
@@ -309,8 +351,8 @@ export function renderResume(content: ResumeContent, theme: ResolvedTheme): Rend
         if (p.dateDisplay) head.push(new TextRun({ text: "  (" + p.dateDisplay + ")", font: theme.fontFamily, italics: true, color: theme.body, size: ptToHalf(theme.sizeSmall) }));
         children.push(new Paragraph({ spacing: { before: ptToTwip(3), after: ptToTwip(1) }, children: head }));
         if (p.association) children.push(new Paragraph({ spacing: { after: ptToTwip(1) }, children: [run(p.association, { italics: true, size: theme.sizeSmall })] }));
-        if (p.description) children.push(new Paragraph({ spacing: { after: ptToTwip(2), ...lineRule(theme.lineHeight) }, children: [run(ats(p.description, theme.nonBreakingHyphens))] }));
-        asArray<string>(p.highlights).forEach((h) => children.push(bullet([run(ats(h, theme.nonBreakingHyphens))])));
+        if (p.description) children.push(new Paragraph({ spacing: { after: ptToTwip(2), ...lineRule(theme.lineHeight) }, children: textRuns(ats(p.description, theme.nonBreakingHyphens)) }));
+        asArray<string>(p.highlights).forEach((h) => children.push(bullet(textRuns(ats(h, theme.nonBreakingHyphens)))));
         if (asArray(p.links).length) {
           const linkRuns: any[] = [];
           asArray(p.links).forEach((u: any, i: number) => { if (i) linkRuns.push(run("  ·  ", { size: theme.sizeSmall })); linkRuns.push(link(u.label || u.url || "link", u.url || "#", theme.sizeSmall)); });
@@ -365,7 +407,7 @@ export function renderResume(content: ResumeContent, theme: ResolvedTheme): Rend
   const requested = (content.sectionOrder && content.sectionOrder.length ? content.sectionOrder : CANONICAL_ORDER).filter((s) => s in renderers);
   const seen = new Set(requested);
   const order = [...requested, ...CANONICAL_ORDER.filter((s) => !seen.has(s))];
-  order.forEach((s) => renderers[s]());
+  order.forEach((s) => {renderers[s]()});
 
   const doc = new Document({
     creator: "Resume Builder",
@@ -389,6 +431,6 @@ export function renderResume(content: ResumeContent, theme: ResolvedTheme): Rend
 
 function composeDates(start?: string, end?: string): string {
   if (!start && !end) return "";
-  const e = end && end.trim() ? end : "Present";
+  const e = end?.trim() ? end : "Present";
   return start ? `${start} ${EN} ${e}` : e;
 }
