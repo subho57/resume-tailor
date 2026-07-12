@@ -59,6 +59,7 @@ export interface Work {
   startDate?: string;
   endDate?: string;
   dateDisplay?: string;
+  roleDisplay?: "separate" | "combined" | "senior-only";
   roles?: Role[];
   summary?: string;
   highlights?: Highlight[];

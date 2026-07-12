@@ -1,0 +1,23 @@
+{
+  "skill_name": "jd-tailored-resume",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Here's a job description (attached as jd.txt). Tailor my resume to it. My ground-truth resume JSON is at resume-system/data/priyanka.resume.json.",
+      "expected_output": "A tailored .resume.json plus rendered .docx and .pdf in an output folder, named after the role/company, one page, with the JD's supported keywords present and honest gaps reported.",
+      "files": ["jd.txt"]
+    },
+    {
+      "id": 2,
+      "prompt": "Make a resume for this Golang backend role (pasting the JD below). Use my superset JSON and make sure the keywords match.",
+      "expected_output": "A Golang-framed one-page resume; check_keywords.py shows high coverage of supported terms; any unsupported JD terms left out and flagged, not fabricated.",
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "I'm applying to this AI/LLM engineer position. Reverse-engineer the JD and build me a targeted resume from my ground truth.",
+      "expected_output": "An AI/agentic-framed resume leading with MCP/multi-agent/RAG work; keyword coverage verified; output file named for the role in a dedicated folder.",
+      "files": ["jd.txt"]
+    }
+  ]
+}

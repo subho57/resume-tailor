@@ -94,6 +94,12 @@
           "startDate": { "type": "string", "description": "ISO 8601 (YYYY, YYYY-MM, or YYYY-MM-DD). Used when 'roles' is absent." },
           "endDate": { "type": "string", "description": "ISO 8601 or empty/'Present'." },
           "dateDisplay": { "type": "string", "description": "Pre-formatted combined date range for the company header line; overrides computed range." },
+          "roleDisplay": {
+            "type": "string",
+            "enum": ["separate", "combined", "senior-only"],
+            "default": "separate",
+            "description": "How to show multiple roles at this company. 'separate' (default): one line per role with its own dates. 'senior-only': show only the most-senior title (first in 'roles') spanning the company's full date range (a 'continued role'). 'combined': join titles on one line over the full span. For a company with 2+ roles, the JD-tailoring agent must ask the user which treatment to use before rendering."
+          },
           "roles": {
             "type": "array",
             "description": "Multiple titles/date ranges within one company (e.g. intern -> engineer).",

@@ -241,7 +241,20 @@ export function renderResume(content: ResumeContent, theme: ResolvedTheme): Rend
         ];
         children.push(leftRight(compRuns, dateRight || ""));
         if (job.domainNote) children.push(new Paragraph({ spacing: { after: ptToTwip(2), ...lineRule(theme.lineHeight) }, children: [run(ats(job.domainNote, theme.nonBreakingHyphens), { italics: true, size: theme.sizeSmall })] }));
-        const roles: Role[] = asArray<Role>(job.roles).length ? asArray<Role>(job.roles) : (job.position ? [{ position: job.position, dateDisplay: "" }] : []);
+        const allRoles: Role[] = asArray<Role>(job.roles).length ? asArray<Role>(job.roles) : (job.position ? [{ position: job.position, dateDisplay: "" }] : []);
+        // roleDisplay controls how multiple roles at one company are shown:
+        //   "separate"    (default) -> one line per role, each with its own dates
+        //   "senior-only"           -> only the most-senior title (first in the list),
+        //                              spanning the company's full date range
+        //   "combined"              -> titles joined on one line, company's full span
+        const roleDisplay = job.roleDisplay || "separate";
+        let roles: Role[] = allRoles;
+        if (allRoles.length > 1 && roleDisplay === "senior-only") {
+          roles = [{ position: allRoles[0].position, dateDisplay: dateRight || allRoles[0].dateDisplay || "" }];
+        } else if (allRoles.length > 1 && roleDisplay === "combined") {
+          const titles = allRoles.map((r) => r.position).filter(Boolean).join(" / ");
+          roles = [{ position: titles, dateDisplay: dateRight || "" }];
+        }
         roles.forEach((r) => {
           const rd = r.dateDisplay || composeDates(r.startDate, r.endDate);
           children.push(leftRight([new TextRun({ text: r.position || "", font: theme.fontFamily, italics: true, bold: true, color: theme.body, size: ptToHalf(theme.sizeBody) })], rd || ""));
