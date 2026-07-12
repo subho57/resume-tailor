@@ -1,0 +1,284 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://priyanka.dev/schema/resume.schema.json",
+  "title": "Resume Content (Superset / Ground Truth)",
+  "description": "Content-only resume document. Carries ZERO styling — all presentation lives in a theme preset. A superset of the JSON Resume standard: interoperable field names, extended with multiple summary variants, per-role multiple titles/date ranges, company domain notes, an open-source-contributions section, flagged alternate values, projects, certifications, recommendations, languages, job-search preferences, and a company-context appendix. Nearly every field is OPTIONAL so a trimmed/tailored document still renders (graceful degradation). Additional properties are permitted on content objects.",
+  "type": "object",
+  "additionalProperties": true,
+  "properties": {
+    "schemaVersion": { "type": "string", "default": "1.0.0", "description": "Version of this content schema the document targets." },
+    "theme": { "type": "string", "default": "corporate-navy", "description": "Name of the theme preset to render with (resolved to themes/<name>.theme.json). CLI --theme overrides this." },
+
+    "sectionOrder": {
+      "type": "array",
+      "description": "Explicit render order of sections. Any omitted-but-present section is appended in canonical order after the listed ones. Unknown names are ignored.",
+      "items": {
+        "type": "string",
+        "enum": ["about","preferences","summary","skills","work","education","openSource","projects","certifications","languages","recommendations","companyContext"]
+      },
+      "default": ["about","preferences","summary","skills","work","education","openSource","projects","certifications","languages","recommendations","companyContext"]
+    },
+
+    "basics": {
+      "type": "object",
+      "additionalProperties": true,
+      "description": "Identity and contact block. Mirrors JSON Resume 'basics', extended with multiple summary variants and a tagline.",
+      "properties": {
+        "name": { "type": "string" },
+        "label": { "type": "string", "description": "Headline / tagline shown under the name." },
+        "email": { "type": "string", "format": "email" },
+        "phone": { "type": "string" },
+        "url": { "type": "string", "format": "uri", "description": "Portfolio / website URL." },
+        "location": {
+          "type": "object",
+          "additionalProperties": true,
+          "properties": {
+            "address": { "type": "string" },
+            "postalCode": { "type": "string" },
+            "city": { "type": "string" },
+            "region": { "type": "string" },
+            "countryCode": { "type": "string" },
+            "display": { "type": "string", "description": "Pre-formatted location string; if present, used verbatim in the header." }
+          }
+        },
+        "profiles": {
+          "type": "array",
+          "description": "Social / professional profiles (LinkedIn, GitHub, etc.).",
+          "items": {
+            "type": "object",
+            "additionalProperties": true,
+            "properties": {
+              "network": { "type": "string" },
+              "username": { "type": "string" },
+              "url": { "type": "string", "format": "uri" },
+              "display": { "type": "string", "description": "Text to show for the link; defaults to url without scheme." }
+            }
+          },
+          "default": []
+        },
+        "summary": { "type": "string", "description": "Single default summary. Superseded by 'summaries.default' if that is present." },
+        "summaries": {
+          "type": "object",
+          "additionalProperties": { "type": "string" },
+          "description": "Named summary variants (e.g. default, golang, nodejs, ai, platform). The renderer uses summaries[activeSummary] || summaries.default || summary. In the FULL ground-truth document, ALL variants are listed under the Summary section for reference.",
+          "default": {}
+        },
+        "activeSummary": { "type": "string", "description": "Which named summary to use as THE summary in a tailored render. If unset, the ground-truth document lists every variant; a tailored doc typically sets this to one key.", "default": "" }
+      }
+    },
+
+    "preferences": {
+      "type": "object",
+      "additionalProperties": true,
+      "description": "Job-search targeting metadata (locations, roles). Rendered as a short section in the ground-truth doc; usually omitted from a tailored resume.",
+      "properties": {
+        "locations": { "type": "array", "items": { "type": "string" }, "default": [] },
+        "hybrid": { "type": "string", "default": "" },
+        "roles": { "type": "array", "items": { "type": "string" }, "default": [] }
+      }
+    },
+
+    "work": {
+      "type": "array",
+      "description": "Work experience. Extends JSON Resume 'work' with a domain note and multiple roles (title + date range) per company for promotions.",
+      "default": [],
+      "items": {
+        "type": "object",
+        "additionalProperties": true,
+        "properties": {
+          "name": { "type": "string", "description": "Company / organization name." },
+          "location": { "type": "string" },
+          "url": { "type": "string", "format": "uri" },
+          "domainNote": { "type": "string", "description": "Short italic descriptor of what the company does." },
+          "position": { "type": "string", "description": "Single title (JSON Resume compatible). Used when 'roles' is absent." },
+          "startDate": { "type": "string", "description": "ISO 8601 (YYYY, YYYY-MM, or YYYY-MM-DD). Used when 'roles' is absent." },
+          "endDate": { "type": "string", "description": "ISO 8601 or empty/'Present'." },
+          "dateDisplay": { "type": "string", "description": "Pre-formatted combined date range for the company header line; overrides computed range." },
+          "roles": {
+            "type": "array",
+            "description": "Multiple titles/date ranges within one company (e.g. intern -> engineer).",
+            "default": [],
+            "items": {
+              "type": "object",
+              "additionalProperties": true,
+              "properties": {
+                "position": { "type": "string" },
+                "startDate": { "type": "string" },
+                "endDate": { "type": "string" },
+                "dateDisplay": { "type": "string" }
+              }
+            }
+          },
+          "summary": { "type": "string" },
+          "highlights": {
+            "type": "array",
+            "description": "Bullet points. Each may be a plain string OR an object with flagged/alt metadata for tailoring.",
+            "default": [],
+            "items": {
+              "oneOf": [
+                { "type": "string" },
+                {
+                  "type": "object",
+                  "additionalProperties": true,
+                  "properties": {
+                    "text": { "type": "string" },
+                    "alt": { "type": "string", "description": "Alternate phrasing (kept for reference; not rendered unless selected)." },
+                    "flagged": { "type": "boolean", "default": false, "description": "If true, a Word comment is attached noting the flag/resolution." },
+                    "note": { "type": "string", "description": "Text of the flag/reconciliation comment." }
+                  }
+                }
+              ]
+            }
+          }
+        }
+      }
+    },
+
+    "education": {
+      "type": "array",
+      "default": [],
+      "items": {
+        "type": "object",
+        "additionalProperties": true,
+        "properties": {
+          "institution": { "type": "string" },
+          "location": { "type": "string" },
+          "url": { "type": "string", "format": "uri" },
+          "area": { "type": "string", "description": "Field of study." },
+          "studyType": { "type": "string", "description": "Degree type, e.g. Bachelor of Technology." },
+          "degreeDisplay": { "type": "string", "description": "Pre-formatted degree line; overrides area/studyType composition." },
+          "startDate": { "type": "string" },
+          "endDate": { "type": "string" },
+          "dateDisplay": { "type": "string" },
+          "score": { "type": "string", "description": "CGPA / GPA. May carry a flag via scoreNote/scoreFlagged." },
+          "scoreFlagged": { "type": "boolean", "default": false },
+          "scoreNote": { "type": "string" },
+          "courses": { "type": "array", "items": { "type": "string" }, "default": [] },
+          "detail": { "type": "string", "description": "Free-form extra line (board, honors, etc.)." }
+        }
+      }
+    },
+
+    "skills": {
+      "type": "array",
+      "description": "Skill groups. 'name' is the category label; 'keywords' the items.",
+      "default": [],
+      "items": {
+        "type": "object",
+        "additionalProperties": true,
+        "properties": {
+          "name": { "type": "string", "description": "Category label, e.g. Languages." },
+          "level": { "type": "string" },
+          "keywords": { "type": "array", "items": { "type": "string" }, "default": [] },
+          "keywordsText": { "type": "string", "description": "Pre-joined items string; overrides keywords when present." }
+        }
+      }
+    },
+
+    "openSource": {
+      "type": "object",
+      "additionalProperties": true,
+      "description": "Open-source contributions section (extension beyond JSON Resume).",
+      "properties": {
+        "headline": { "type": "string" },
+        "note": { "type": "string", "description": "Italic caveat/verification note (e.g. which figures are self-reported vs verified)." },
+        "noteFlagged": { "type": "boolean", "default": false },
+        "items": { "type": "array", "items": { "type": "string" }, "default": [] },
+        "url": { "type": "string", "format": "uri", "description": "Link to full contribution history." },
+        "urlLabel": { "type": "string" }
+      }
+    },
+
+    "projects": {
+      "type": "array",
+      "default": [],
+      "items": {
+        "type": "object",
+        "additionalProperties": true,
+        "properties": {
+          "name": { "type": "string" },
+          "dateDisplay": { "type": "string", "description": "e.g. 2026 or Jun 2025 - Aug 2025." },
+          "association": { "type": "string", "description": "e.g. Associated with UEM." },
+          "description": { "type": "string" },
+          "highlights": { "type": "array", "items": { "type": "string" }, "default": [] },
+          "links": {
+            "type": "array",
+            "default": [],
+            "items": {
+              "type": "object",
+              "additionalProperties": true,
+              "properties": {
+                "label": { "type": "string" },
+                "url": { "type": "string", "format": "uri" }
+              }
+            }
+          }
+        }
+      }
+    },
+
+    "certifications": {
+      "type": "array",
+      "default": [],
+      "items": {
+        "type": "object",
+        "additionalProperties": true,
+        "properties": {
+          "title": { "type": "string" },
+          "issuer": { "type": "string" },
+          "date": { "type": "string" },
+          "url": { "type": "string", "format": "uri" },
+          "urlLabel": { "type": "string", "default": "certificate" }
+        }
+      }
+    },
+    "certificationsNote": { "type": "string", "description": "Italic caveat rendered above the certifications list." },
+    "certificationsNoteFlagged": { "type": "boolean", "default": false },
+
+    "languages": {
+      "type": "array",
+      "description": "Spoken/written languages. Each has a language and optional fluency.",
+      "default": [],
+      "items": {
+        "type": "object",
+        "additionalProperties": true,
+        "properties": {
+          "language": { "type": "string" },
+          "fluency": { "type": "string" }
+        }
+      }
+    },
+
+    "recommendations": {
+      "type": "array",
+      "description": "LinkedIn-style recommendations (extension beyond JSON Resume 'references').",
+      "default": [],
+      "items": {
+        "type": "object",
+        "additionalProperties": true,
+        "properties": {
+          "by": { "type": "string" },
+          "role": { "type": "string" },
+          "relationship": { "type": "string" },
+          "text": { "type": "string" }
+        }
+      }
+    },
+
+    "companyContext": {
+      "type": "array",
+      "description": "Appendix: short factual background per company (ground-truth aid).",
+      "default": [],
+      "items": {
+        "type": "object",
+        "additionalProperties": true,
+        "properties": {
+          "name": { "type": "string" },
+          "text": { "type": "string" }
+        }
+      }
+    },
+
+    "about": { "type": "string", "description": "Optional 'about this document' banner (used by the ground-truth doc; usually omitted in tailored resumes)." }
+  }
+}

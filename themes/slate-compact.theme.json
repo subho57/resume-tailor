@@ -1,0 +1,11 @@
+{
+  "name": "slate-compact",
+  "font": { "family": "Carlito", "baseSize": 10 },
+  "sizes": { "name": 19, "sectionHeading": 10.5, "body": null, "small": 8.5 },
+  "colors": { "accent": "2F3A45", "body": "1A1A1A", "rule": "B0B0B0", "link": "0563C1" },
+  "margins": { "top": 0.5, "right": 0.5, "bottom": 0.5, "left": 0.5 },
+  "spacing": { "sectionBefore": 9, "sectionAfter": 3.5, "bulletAfter": 2.5, "lineHeight": 1.1 },
+  "header": { "leftCellPct": 0.62 },
+  "ats": { "nonBreakingHyphens": true },
+  "autofit": { "minBodySize": 9.5, "minMargin": 0.4, "fontStep": 0.5, "marginStep": 0.05, "spacingStep": 0.1, "maxIterations": 40 }
+}

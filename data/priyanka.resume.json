@@ -1,0 +1,492 @@
+{
+  "schemaVersion": "1.0.0",
+  "theme": "corporate-navy",
+  "sectionOrder": [
+    "about",
+    "preferences",
+    "summary",
+    "skills",
+    "work",
+    "education",
+    "openSource",
+    "projects",
+    "certifications",
+    "languages",
+    "recommendations",
+    "companyContext"
+  ],
+  "about": "Ground-truth superset / master data dump — a comprehensive, deduplicated accumulation of every detail found across all resume versions, the LinkedIn profile, and live research. This is not a one-page resume; it is the source of truth from which role-tailored resumes are generated. Flagged values carry comments noting conflicts and their resolutions.",
+  "basics": {
+    "name": "Priyanka Chatterjee",
+    "label": "Go · Python · TypeScript · Node.js — 3.5+ Years of Experience",
+    "email": "priyankachatterjee9075@gmail.com",
+    "phone": "+91 8617262536",
+    "url": "https://priyanka-chatterjee-2000.github.io",
+    "location": {
+      "display": "Rishra, West Bengal, India 712248  (also listed as Kolkata, West Bengal, India)",
+      "city": "Kolkata",
+      "region": "West Bengal",
+      "countryCode": "IN"
+    },
+    "profiles": [
+      {
+        "network": "LinkedIn",
+        "username": "priyanka-9075",
+        "url": "https://linkedin.com/in/priyanka-9075",
+        "display": "linkedin.com/in/priyanka-9075"
+      },
+      {
+        "network": "GitHub",
+        "username": "Priyanka-Chatterjee-2000",
+        "url": "https://github.com/Priyanka-Chatterjee-2000",
+        "display": "github.com/Priyanka-Chatterjee-2000"
+      },
+      {
+        "network": "Portfolio",
+        "url": "https://priyanka-chatterjee-2000.github.io",
+        "display": "priyanka-chatterjee-2000.github.io"
+      }
+    ],
+    "summaries": {
+      "default": "Backend engineer building cloud security tooling and agentic LLM automation, with production experience across microservices, event-driven architecture, cloud compliance, and observability systems.",
+      "distributed-agentic-deccanai": "Backend engineer with 3.5+ years building distributed, event-driven systems and agentic AI platforms in Go and Python, including multi-agent workflows, an MCP server for real-time LLM access, and Kafka pipelines with DLQ-backed reliability. Comfortable owning systems end to end across AWS, Azure, and GCP in fast-moving, ambiguous environments.",
+      "backend-platform-sde": "Backend software engineer with 3+ years designing, building, and testing reliable, scalable services in Go, Python, and Node.js. Strong fundamentals in data structures, algorithms, and object-oriented design; core contributor to four open-source platform products with 120+ merged pull requests, delivering well-scoped features end to end with unit and integration tests, code reviews, and durable production fixes across distributed, event-driven systems on AWS, Azure, and GCP.",
+      "golang-node-js-impact-led": "Backend Software Engineer building distributed, event-driven systems in Go and Node.js across AWS, Azure, GCP, OCI, and AliCloud; core contributor to four Go-based open-source products (9,300+ GitHub stars, 120+ merged PRs) with shipped impact: 70–90% resource-discovery latency cuts, eliminated audit false positives, and unblocked platform-wide runtime upgrades.",
+      "python-ai-automation": "Backend Software Engineer with a strong focus on AI automation and cloud security, using Python and JavaScript to drive impactful software solutions. Skilled in implementing CI/CD pipelines and orchestrating multi-distro Linux tests, ensuring robust and secure software releases. Proficient in AI automation tools and SDKs including OpenAI and Pydantic, with a proven track record of enhancing user experience and operational efficiency.",
+      "platform-engineer": "Platform engineer with 3+ years building internal developer platforms and automation tooling in Go and Python, across AWS, Azure, and GCP. Built and maintained CI/CD pipelines in GitHub Actions, containerized services with Docker, and operated Kubernetes-based deployments alongside platform teams; integrated AI directly into platform workflows through agentic tooling and Model Context Protocol (MCP) servers. Core contributor to four open-source platform-engineering products (Steampipe, Powerpipe, Flowpipe, Tailpipe) with 120+ merged pull requests and 9,300+ GitHub stars.",
+      "devops-infra": "Software engineer with 3+ years building and operating cloud infrastructure and automation across AWS, Azure, and GCP. Hands-on with Infrastructure as Code (Terraform, OpenTofu, HCL), CI/CD pipelines in GitHub Actions, Docker and Kubernetes, and multi-distro Linux tooling; automated cloud governance, migrations, and release workflows to cut manual effort and harden reliability. Core contributor to four open-source cloud-infrastructure products (9,300+ GitHub stars, 120+ merged pull requests).",
+      "cloud-support-linux-incident": "Software engineer with 3+ years across AWS, Azure, GCP, and OCI, with hands-on Linux troubleshooting, production incident diagnosis, and infrastructure monitoring. Comfortable resolving complex cloud and Linux issues under pressure, automating routine tasks with Python and Bash, and writing clear technical documentation; collaborated closely with platform teams to triage and resolve production incidents across distributed systems.",
+      "ai-integrated-backend": "Backend engineer with 3+ years building scalable services in Go and Python, and integrating AI components (agentic workflows, Model Context Protocol tooling) directly into production infrastructure. Deployed and managed services on AWS and Azure, engineered pipelines processing 1,000+ events per second, and designed event-driven architectures for asynchronous task handling and high-availability system design. Core contributor to four open-source backend platform products with 120+ merged pull requests and 9,300+ GitHub stars.",
+      "linkedin-about-long-form": "Software Engineer with 3+ years of experience building scalable distributed systems, cloud-native applications, and event-driven platforms across AWS, Azure, GCP, OCI, and AliCloud environments. Strong expertise in backend engineering, microservices architecture, API development, cloud governance, compliance automation, and performance optimization using Go, Node.js, TypeScript, Python, and modern cloud technologies. Proven track record of delivering resilient, high-performance enterprise solutions. Significant contributions to open-source ecosystems, with 120+ merged pull requests and 4,000+ commits across multiple repositories supporting widely adopted cloud products. Strong interest and practical experience in AI-powered engineering workflows, including building MCP servers, developing agentic AI applications, and automating software development using tools such as Claude Code, Cursor, Codex, OpenAI Agents Framework, and Pydantic AI."
+    },
+    "activeSummary": ""
+  },
+  "preferences": {
+    "locations": [
+      "Remote — top priority",
+      "Kolkata",
+      "Hyderabad",
+      "Bengaluru"
+    ],
+    "hybrid": "Open to hybrid opportunities as well.",
+    "roles": [
+      "Golang Developer — 1st choice",
+      "Node.js Developer — 2nd choice",
+      "Python AI Automation Engineer — 3rd choice"
+    ]
+  },
+  "work": [
+    {
+      "name": "Turbot HQ, Inc.",
+      "location": "Remote",
+      "domainNote": "Multi-cloud security, governance, and compliance software; makers of the open-source Steampipe / Powerpipe / Flowpipe / Tailpipe suite and the commercial Turbot Guardrails PSPM platform. Remote-first.",
+      "dateDisplay": "August 2022 – April 2026",
+      "roles": [
+        {
+          "position": "Software Engineer I",
+          "dateDisplay": "August 2023 – April 2026"
+        },
+        {
+          "position": "Junior Software Developer Intern",
+          "dateDisplay": "August 2022 – July 2023"
+        }
+      ],
+      "highlights": [
+        "Designed and developed an internal REST API microservice in Go using the Gin framework to power the backend of Turbot Guardrails, a Preventive Security Posture Management (PSPM) SaaS product; secured endpoints with JWT client-token authentication, containerized with Docker, deployed to AWS EC2, and served as a gRPC client for several internal microservices.",
+        "Built a Kafka-based, fire-and-forget event-driven pipeline for Turbot Guardrails, where consumers asynchronously processed policy-enforcement events and fired a webhook once a policy was successfully enforced against a resource; added a dead-letter queue (DLQ) to capture recurring failures for manual investigation and debugging.",
+        "Engineered core features for Tailpipe, a Go-based observability/SIEM CLI on DuckDB + Parquet, lifting log-processing throughput 30% to 1,000+ logs per second by chunking and batching file reads and streaming writes to DuckDB; reduced memory use to eliminate out-of-memory failures and enable incremental updates.",
+        "Authored 11 AWS log-source tables for Tailpipe in Go (CloudTrail, GuardDuty, SecurityHub, ALB/NLB/CLB/ELB access, S3 access, VPC flow, WAF, Network Firewall) and 25+ pre-built security detections; designed standardized exit-code handling, zero-data-loss DuckLake metadata backups, and a cross-platform smoke-test pipeline (CentOS, Ubuntu ARM64, macOS).",
+        "Built the Steampipe Model Context Protocol (MCP) server end to end in Python, giving LLM agents standardized, real-time access to enterprise cloud and security data for retrieval and analysis.",
+        "Designed a multi-agent workflow on the OpenAI Agents SDK to orchestrate LLM agents that generate cloud preventive-policy commands (e.g., blocking public S3 buckets by region), validate them in a live test environment, self-correct failures, and score accounts against an internal security metric.",
+        "Built a RAG-based internal Pydantic AI agent to resolve cross-team queries by ingesting the documentation and code graph for all internal repos into S3 vector storage; deployed it to AWS Lambda and integrated it with the Slack Bot API as the UI for easy developer access, resolving onboarding and cross-team queries instantly.",
+        "Authored an LLM-driven Claude Code skill automating code refactoring, unit test generation, deployment, Terraform-driven integration testing, and PR creation; used it to migrate 35+ Azure cloud-governance modules from polling to push-based eventing via Azure Event Grid, cutting resource-discovery latency 70–90% and eliminating recurring Azure API throttling.",
+        {
+          "text": "Led the AWS SDK for JavaScript v2 to v3 migration across 180+ call sites and 11+ AWS services (SecurityHub, CloudWatch, ControlTower, Shield, Comprehend, Pinpoint, RAM, X-Ray, EC2, EFS) in production Node.js Lambdas, refactoring discovery, configuration-sync, tagging, and resource-cleanup workflows; reduced policy-code duplication ~60% via Nunjucks templating and shrank bundle size through modular imports, keeping the platform supported past AWS SDK v2 EOL and unblocking the Node.js runtime upgrade.",
+          "flagged": true,
+          "note": "Reconciliation: 'call sites' = 'modules' (per user). Older versions variously say '180+ modules' / '30+ modules' for the Azure Event Grid migration and '35+' elsewhere; 180+ call sites across 11+ services and 35+ Azure modules are the values carried forward. The ~60% duplication reduction via Nunjucks templating is confirmed valid."
+        },
+        "Authored multi-cloud compliance modules in HCL + SQL covering 1,000+ resource checks across CIS (AWS v4–v6, Azure v2.1–v4.0, GCP v3–v4, Microsoft 365, Google Workspace, GitHub), NIST, HIPAA, PCI DSS v4, SOC 2, and FedRAMP frameworks — used by enterprise customers in finance, healthcare, and government — cutting enterprise compliance-audit time 50%.",
+        "Optimized complex PostgreSQL queries powering customer compliance audits — rewriting AWS IAM policy-evaluation queries with jsonb array elements, multi-stage CTEs, and condition-aware filters — improving query performance 40% (cutting audit-report generation from 3 minutes to 1.5 minutes across 10,000+ resources) and eliminating a class of false-positive findings that were corrupting enterprise audit reports.",
+        "Automated creation of CIS markdown documents from XLSX using Python and a custom regex builder, reducing manual effort and human error and improving developer experience from weeks to seconds.",
+        "Added multi-distro Linux smoke tests (ephemeral environments) for Turbot's Go CLIs to the GitHub Actions release pipeline, hardening release safety and catching regressions across Linux distributions before deployment.",
+        "Owned release engineering for four open-source Go CLIs (Steampipe, Powerpipe, Flowpipe, Tailpipe) — unified GitHub Actions release/version workflows, automated Slack release notifications, and GHCR Docker image tagging; shipped HCL function-call support across Steampipe and Tailpipe by extending the shared pipe-fittings Go library (a top-requested feature).",
+        "Built GitHub-as-a-cloud governance controls extending Guardrails with rule builders, a scoring engine, and prevention policies for branch protection, workflow permissions, runners, dependency restrictions, MFA, and commit-author/message rules.",
+        "Resolved a production incident by diagnosing a Go service stuck in a Kubernetes CrashLoopBackOff, collaborating with the platform team to investigate pod logs and status and restore service."
+      ]
+    },
+    {
+      "name": "Trisetra, Inc.",
+      "location": "Remote",
+      "domainNote": "Early-stage Palo Alto (California) startup building an AI-powered 3D product-visualization / interior-design SaaS that turns photos and 2D plans into interactive 3D room models. Remote.",
+      "dateDisplay": "February 2022 – June 2022",
+      "roles": [
+        {
+          "position": "Frontend Software Developer Intern (SDE Intern)",
+          "dateDisplay": "February 2022 – June 2022"
+        }
+      ],
+      "highlights": [
+        {
+          "text": "Authored a 3D-geometry library using computational-geometry algorithms (footprint and inner-polygon extraction from arbitrary mesh boundaries) to power the furniture-placement feature; introduced the repo's first Mocha unit-test suite with real 3D-asset fixtures.",
+          "flagged": true,
+          "note": "Dates: most versions say Feb-Jun 2022 (used here). One version lists Jan-Apr 2022 - treated as the alternate."
+        },
+        "Built supporting 3D scene infrastructure — auto-crop image pipeline, IndexedDB-backed asset caching (fixing a recurring double-render bug), and bounding-box rotation control with surface-normal preservation across the scene graph.",
+        "Led the user-upload workflow redesign across 60+ files (Google Maps autocomplete, drag-and-drop upload, history dashboard, invite-code sign-up, improved empty/error states), driving increased user engagement.",
+        "Drove the responsive-design overhaul of the 3D model generator and Image Canvas across mobile/desktop breakpoints and fixed AR/VR panorama rendering issues across viewports.",
+        "Contributed to an incremental migration from React 17 to React 19 and MUI 4 to MUI 7, and fixed re-rendering issues in existing components."
+      ]
+    },
+    {
+      "name": "Kredey (Kredey Innovations Pvt. Ltd.)",
+      "location": "Remote",
+      "domainNote": "Very small content-publishing startup (Ghaziabad, India) building a web platform to upload, read, share, and monetize long-form documents/PDFs. [Small/early-stage.]",
+      "dateDisplay": "July 2021 – September 2021",
+      "roles": [
+        {
+          "position": "Full-Stack Website Developer (Intern)",
+          "dateDisplay": "July 2021 – September 2021"
+        }
+      ],
+      "highlights": [
+        "Developed a React & Firebase website facilitating PDF sharing among users, with chat, upvote, share, and post-following functionality (the 'Friend-A-Book' project).",
+        "Integrated push and email notifications via OneSignal and SendGrid; designed a social-media-inspired architecture tailored for PDFs with mobile-responsive UI/UX.",
+        "Used Elasticsearch to support full-text and semantic search over a NoSQL Firebase database."
+      ]
+    },
+    {
+      "name": "Koyo Software Solutions",
+      "location": "Remote",
+      "domainNote": "Small MERN-stack software/technology services firm (image-processing/OCR and robotics focus) offering web and design services. [Small/obscure.]",
+      "dateDisplay": "June 2021 – August 2021",
+      "roles": [
+        {
+          "position": "Web Developer (Intern)",
+          "dateDisplay": "June 2021 – August 2021"
+        }
+      ],
+      "highlights": [
+        "Single-handedly built an entire pet-grooming website in ReactJS, including UI/UX.",
+        "Implemented a login/sign-up system with Google/Facebook auth via Firebase and a pet-care slot-booking system on Firebase Cloud Firestore."
+      ]
+    },
+    {
+      "name": "VIBGYOR Advisors",
+      "location": "Remote",
+      "domainNote": "Indian financial-services/advisory firm (wealth management, corporate advisory, equity research), Mumbai. [Small firm; confirm exact entity.]",
+      "dateDisplay": "April 2021 – June 2021",
+      "roles": [
+        {
+          "position": "Web Developer (Intern)",
+          "dateDisplay": "April 2021 – June 2021"
+        }
+      ],
+      "highlights": [
+        "Developed UI for the main website, subscription website, subscription dashboard, and admin panels using Vanilla JS and React.",
+        "Implemented a financial-news display via a News API and a stock screener with filters in React; managed the subscription backend (login/sign-up, MySQL user storage, PHP server-side scripting, CSV upload/display)."
+      ]
+    },
+    {
+      "name": "The Prodigious People (Prodigious People LLP)",
+      "location": "Remote",
+      "domainNote": "Small creative branding, design, and digital-marketing agency (Kolkata/Rourkela, India; 1–10 employees). [Small/obscure.]",
+      "dateDisplay": "February 2021 – April 2021",
+      "roles": [
+        {
+          "position": "Web Developer & Mentor (Intern)",
+          "dateDisplay": "February 2021 – April 2021"
+        }
+      ],
+      "highlights": [
+        "Developed and revamped the company website, building the entire frontend with HTML, CSS, and JavaScript and using Firebase as the backend database (theprodigiouspeople.com)."
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "University of Engineering & Management (UEM)",
+      "location": "Kolkata, WB, IN",
+      "degreeDisplay": "Bachelor of Technology in Computer Science and Engineering",
+      "dateDisplay": "August 2019 – May 2023",
+      "score": "CGPA: 9.28",
+      "scoreFlagged": true,
+      "scoreNote": "CGPA 9.28 is FINAL (per user). Several resume versions show 9.45 (sometimes labeled SGPA) - 9.45 is the flagged alternate, not to be used.",
+      "detail": "Relevant Coursework: Object-Oriented Programming, DBMS, Data Structures and Algorithms, Shell Scripting in Linux, Low-Level Design, High-Level Design"
+    },
+    {
+      "institution": "St. Joseph's Convent",
+      "location": "IN",
+      "degreeDisplay": "ISC (Class XII) — PCM and Computer Science",
+      "dateDisplay": "2017 – 2019",
+      "detail": "CISCE Board. Received a certificate for politeness."
+    },
+    {
+      "institution": "St. Joseph's Convent",
+      "location": "IN",
+      "degreeDisplay": "ICSE (Class X)",
+      "dateDisplay": "2005 – 2017",
+      "detail": "Council for the Indian School Certificate Examinations (CISCE)."
+    }
+  ],
+  "skills": [
+    {
+      "name": "Languages",
+      "keywordsText": "Go, Python, TypeScript, JavaScript (ES6+), SQL, Bash, Java, HCL, C, PHP"
+    },
+    {
+      "name": "AI & Agentic Engineering",
+      "keywordsText": "LLM Application Development, Agentic Workflows, Multi-Agent Systems, Retrieval-Augmented Generation (RAG), Prompt Engineering, Model Context Protocol (MCP), OpenAI Agents SDK, Pydantic AI, Vercel AI SDK, Claude Code, Cursor, Codex, Logfire (LLM observability)"
+    },
+    {
+      "name": "Backend & APIs",
+      "keywordsText": "Microservices, Event-Driven Architecture, Distributed Systems, Serverless, REST, GraphQL, gRPC, WebSockets, JWT, Zod, Node.js, Express.js, Gin, Bun, Serverless Framework"
+    },
+    {
+      "name": "Messaging & Streaming",
+      "keywordsText": "Apache Kafka (consumer groups, DLQs), AWS SNS/SQS, AWS EventBridge, Azure Event Grid"
+    },
+    {
+      "name": "Databases & SQL",
+      "keywordsText": "PostgreSQL, MySQL, MongoDB, DuckDB, SQLite, Redis (ElastiCache), Firebase/Firestore; jsonb, CTEs, lateral joins, Foreign Data Wrappers, Parquet, prepared statements, indexing, query tuning, transactions, database migrations"
+    },
+    {
+      "name": "Cloud & Serverless",
+      "keywordsText": "AWS (Lambda, EC2, RDS, S3, SecurityHub, GuardDuty, ControlTower, Shield, X-Ray, Comprehend, Pinpoint, RAM, EFS), Azure, GCP, OCI, AliCloud, Firebase"
+    },
+    {
+      "name": "IaC & DevOps",
+      "keywordsText": "Terraform, OpenTofu, HCL, Docker, Kubernetes (working knowledge; collaborate with platform teams), GHCR, GitHub Actions, Nunjucks, Fly.io, Vercel, Git, Jira"
+    },
+    {
+      "name": "Observability",
+      "keywordsText": "Datadog, OpenTelemetry (OTel), Logfire; metrics, logging, tracing, incident triage"
+    },
+    {
+      "name": "Testing & Quality",
+      "keywordsText": "Unit Testing, Integration Testing, End-to-End Testing, Jest, Mocha, Automated CI Testing, Code Review"
+    },
+    {
+      "name": "Core CS",
+      "keywordsText": "Data Structures & Algorithms, Object-Oriented Design, Low-Level & High-Level System Design, API Design"
+    },
+    {
+      "name": "Security & Compliance",
+      "keywordsText": "CIS (AWS, Azure, GCP, M365, GitHub, Google Workspace), NIST (incl. 800-171 Rev 2), HIPAA, PCI DSS v4, SOC 2, FedRAMP, AWS Foundational Security Best Practices; IAM, RBAC, cloud security policies, CMDB, SIEM"
+    },
+    {
+      "name": "Frontend",
+      "keywordsText": "React, MUI, Three.js, A-Frame, HTML, CSS"
+    }
+  ],
+  "openSource": {
+    "headline": "Active contributor across all four Turbot Go-based open-source products (Steampipe, Powerpipe, Flowpipe, Tailpipe): 120+ merged PRs and 4,200+ commits across 79 repositories, with 9,300+ combined GitHub stars.",
+    "note": "Verified merged PRs (independently confirmed): CIS AWS Foundations Benchmark v5.0.0 (steampipe-mod-aws-compliance #881); DuckLake metadata-database backup (tailpipe #564); evalCtx config function-call support (pipe-fittings #740). Additional cited PRs: PCI DSS v4.0.0 (#871) and NIST 800-171 Rev 2 (#649) in steampipe-mod-aws-compliance.",
+    "noteFlagged": true,
+    "items": [
+      "Compliance benchmarks (HCL + SQL): CIS AWS Foundations v5.0.0, PCI DSS v4.0.0 (via AWS Audit Manager), NIST 800-171 Rev 2, HIPAA Security Rule, CIS Azure v4.0.0, CIS GCP v4.0.0, CIS Google Workspace v1.2.0.",
+      "Tailpipe plugin tables (Go): AWS log-source bundle (ALB, NLB, VPC flow, WAF), aws_securityhub_finding, aws_guardduty_finding, nginx_access_log (plugin scaffolded from scratch).",
+      "Core engine (Go): DuckLake metadata backup (Tailpipe), evalCtx HCL function-call support (pipe-fittings), structured CLI exit codes (Tailpipe), cross-platform smoke-test workflow (Steampipe).",
+      "GitHub achievement badges: Pull Shark ×3, Pair Extraordinaire ×4, Quickdraw, YOLO."
+    ],
+    "url": "https://github.com/pulls?q=author%3APriyanka-Chatterjee-2000+is%3Apr+is%3Amerged+org%3Aturbot",
+    "urlLabel": "author:Priyanka-Chatterjee-2000 (Turbot org)"
+  },
+  "projects": [
+    {
+      "name": "Lila Tic-Tac-Toe — Real-Time Multiplayer Game",
+      "dateDisplay": "2026",
+      "association": "",
+      "description": "Built end to end in 4 days. React 19 + TypeScript + Vite on Vercel; Nakama game server (Go core + TS runtime) on Fly.io with PostgreSQL. Server-authoritative anti-cheat over WebSocket transport, mode-aware matchmaking via KV-storage queues, tick-based turn timer, optimistic UI with revert-on-validation-failure, top-10 leaderboard, classic + 30s timed modes, and reconnect-into-active-match.",
+      "links": [
+        {
+          "label": "repo/live",
+          "url": "https://priyanka-chatterjee-2000.github.io"
+        }
+      ]
+    },
+    {
+      "name": "General-Purpose AI Chatbot / Agent (Model Context Protocol)",
+      "dateDisplay": "Jun 2025 – Aug 2025",
+      "association": "",
+      "description": "Agentic chatbot/agent framework built with Pydantic AI featuring configurable external MCP servers via a persistent MongoDB-backed registry, JSON config loader with strict input validation, per-server failure isolation, native tool calling, mid-conversation multi-model switching (OpenAI, Gemini, Anthropic, Mistral), conversation-history persistence, sync + streaming output, prompt-injection safeguards, and Logfire observability.",
+      "links": []
+    },
+    {
+      "name": "TODO / Tasks REST API",
+      "dateDisplay": "Apr 2026",
+      "association": "",
+      "description": "API-first REST backend in TypeScript with Bun, Express.js 5, and SQLite (bun:sqlite) + Zod + jose (JWT). JWT authentication (access, ID, and refresh tokens), RBAC, a prepared-statement CRUD service layer with crypto.randomUUID() IDs, schema-validated controllers with proper REST status codes (201/204/400/404), database migrations, and route-heatmap middleware.",
+      "links": []
+    },
+    {
+      "name": "CIS Benchmark → Compliance Dashboard Generator",
+      "dateDisplay": "",
+      "association": "",
+      "description": "Python CLI that automates compliance-dashboard authoring for a multi-cloud governance product. Ingests CIS benchmark XLSX workbooks (AWS v3.0.0, Azure v3.0.0/v4.0.0) and emits ready-to-deploy HCL dashboard config plus markdown docs. OOP resource model, custom HCL pretty-printer, openpyxl + pandas, distributed as a pip-installable package.",
+      "links": []
+    },
+    {
+      "name": "SLA Tracking Dashboard for an Open-Source Tools Team",
+      "dateDisplay": "",
+      "association": "",
+      "description": "651 lines of dashboard config (HCL + SQL) for a public OSS repo: per-repo SLA-tracking status cards across 8 repositories (Awaiting Initial Response, Needs Triage, Awaiting Author Feedback, Stale Issues, Total Age) with threshold-coded indicators. Lateral-join SQL against the Steampipe GitHub plugin tables detects zero-org-comment issues — replacing manual repo-by-repo triage with a single dashboard.",
+      "links": []
+    },
+    {
+      "name": "Friend-A-Book — Real-Time PDF Sharing Platform",
+      "dateDisplay": "2021",
+      "association": "Associated with University of Engineering & Management (UEM) / Kredey",
+      "description": "React + Firebase (Firestore + Storage + Google Auth) PWA for real-time PDF sharing with real-time chat, email & push notifications (OneSignal), address autocomplete (Google Maps API), a built-in PDF viewer, and full-text search powered by Elasticsearch.",
+      "links": [
+        {
+          "label": "live",
+          "url": "https://priyanka-chatterjee-2000.github.io"
+        }
+      ]
+    },
+    {
+      "name": "Chat Application",
+      "dateDisplay": "Apr 2021",
+      "association": "Associated with UEM",
+      "description": "A simple chat app built with React & Firebase during a 2-day Code Sprint. Planned future scope: notification system and mobile responsiveness.",
+      "links": []
+    },
+    {
+      "name": "Weather Application",
+      "dateDisplay": "Dec 2020",
+      "association": "Associated with UEM",
+      "description": "Uses the OpenWeather API to fetch forecasts for cities from user input, plus the Geolocation API to fetch the user's current location when permission is granted.",
+      "links": []
+    },
+    {
+      "name": "React Calculator",
+      "dateDisplay": "Nov 2020",
+      "association": "",
+      "description": "A simple calculator built with React — her first React project.",
+      "links": []
+    },
+    {
+      "name": "Dice Game (Pig Game)",
+      "dateDisplay": "Oct 2020",
+      "association": "",
+      "description": "A mini two-player dice game where the winner is determined by max score, built with HTML, CSS, and JavaScript.",
+      "links": []
+    }
+  ],
+  "certifications": [
+    {
+      "title": "Machine Learning for All",
+      "issuer": "University of London (Coursera)",
+      "date": "Oct 2020",
+      "url": "https://coursera.org/share/253b7ab14f74924aeb6878f4edcbeaa8",
+      "urlLabel": "certificate"
+    },
+    {
+      "title": "C for Everyone: Programming Fundamentals",
+      "issuer": "University of California, Santa Cruz (Coursera)",
+      "date": "Oct 2020",
+      "url": "https://coursera.org/share/2a506fab29faffe42158f75d11b05888",
+      "urlLabel": "certificate"
+    },
+    {
+      "title": "HTML",
+      "issuer": "SoloLearn",
+      "date": "Aug 2020",
+      "url": "https://www.sololearn.com/Certificate/1014-18404813/pdf/",
+      "urlLabel": "certificate"
+    },
+    {
+      "title": "PHP",
+      "issuer": "SoloLearn",
+      "date": "Sep 2020",
+      "url": "https://www.sololearn.com/Certificate/1059-18404813/pdf/",
+      "urlLabel": "certificate"
+    }
+  ],
+  "certificationsNote": "Note: these are beginner MOOCs from 2020 that predate professional experience; normally EXCLUDED from tailored resumes. Retained here only for ground-truth completeness (with downloadable links).",
+  "certificationsNoteFlagged": true,
+  "languages": [
+    {
+      "language": "English",
+      "fluency": "fluent"
+    },
+    {
+      "language": "Bengali",
+      "fluency": "native"
+    },
+    {
+      "language": "Hindi",
+      "fluency": "fluent"
+    }
+  ],
+  "recommendations": [
+    {
+      "by": "Nathan Wallace",
+      "role": "Founder & CEO, Turbot",
+      "relationship": "senior, did not manage directly (Apr 2, 2026)",
+      "text": "One of the most thoughtful, caring and connected people I've worked with — built close relationships across all levels and countries. Curious and loves to learn new technology, mastering JavaScript, Golang and SQL while at Turbot. Very early to embrace AI in her workflow, showing others how to use it for better community support and software delivery. A fantastic, positive force for any team."
+    },
+    {
+      "by": "Cody B.",
+      "role": "Software Architect, Turbot",
+      "relationship": "managed directly (Apr 17, 2026)",
+      "text": "One of the fastest learners I've come across. Joined with little knowledge of public cloud, Golang, or SQL and learned all of them at once, applying them to build Steampipe plugins and Powerpipe mods with thoughtful, user-friendly designs. Showed strong initiative with new AI tools — learned them herself, then helped the team use them effectively."
+    },
+    {
+      "by": "Puskar Basu",
+      "role": "Senior Software Engineer @ Red Hat (ex-Turbot mentor)",
+      "relationship": "managed directly (Apr 2, 2026)",
+      "text": "A bright, proactive engineer and a pleasure to mentor. Remarkable ability to catch onto new concepts quickly and consistently delivers high-quality work; strikes the perfect balance of working independently while never hesitating to ask the right questions."
+    },
+    {
+      "by": "Kai Daguerre",
+      "role": "Software Engineer, Turbot",
+      "relationship": "managed directly (Apr 15, 2026)",
+      "text": "A great software engineer — thorough, reliable, and learns fast. Always prepared to ask questions and seek clarification where needed, an underrated and all-too-rare attribute."
+    },
+    {
+      "by": "Karan Popat",
+      "role": "Senior Full-Stack Engineer (same team)",
+      "relationship": "same team (Apr 2, 2026)",
+      "text": "A very skilled individual always looking for excellence, well versed with AI adoption, and an absolute team player."
+    },
+    {
+      "by": "Matt Newsom-Smith",
+      "role": "Strategy / Commercial, Turbot",
+      "relationship": "senior, did not manage directly (Apr 4, 2026)",
+      "text": "Brings a strong learning mindset and curiosity, proactive about improving her skills and exploring new technologies including AI tooling. Thoughtful, collaborative, and eager to contribute."
+    },
+    {
+      "by": "Saurabh Srivastava",
+      "role": "SDE-III (early web-dev collaborator)",
+      "relationship": "same team (Apr 15, 2021)",
+      "text": "An amazing teammate with great technical skills, always eager to learn and ready to implement complex things."
+    }
+  ],
+  "companyContext": [
+    {
+      "name": "Turbot HQ, Inc.",
+      "text": "Privately held, remote-first cloud-governance software company founded by Nathan Wallace (2014), with entities in the US, UK, India, and Australia. Builds prevention-first multi-cloud security, governance, and compliance software: the commercial Turbot Guardrails (PSPM) platform, the hosted Turbot Pipes SaaS, and the open-source Steampipe/Powerpipe/Flowpipe/Tailpipe suite."
+    },
+    {
+      "name": "Trisetra, Inc.",
+      "text": "Early-stage software startup (founded 2018, Palo Alto, CA; small/early-stage headcount) building an AI-powered 3D product-visualization and interior-design SaaS that converts photos and 2D plans into interactive, photorealistic 3D room models using computer vision and LLMs. Founded and led by CEO Ajay Mishra (ex-HOVER, Magic Leap, Amazon)."
+    },
+    {
+      "name": "Kredey (Kredey Innovations Pvt. Ltd.)",
+      "text": "Very small content-publishing startup incorporated Dec 2020 in Ghaziabad, Uttar Pradesh, India. Product ('Kredey Folio') is a web platform for uploading, reading, sharing, and monetizing long-form written documents/PDFs. Early-stage and obscure."
+    },
+    {
+      "name": "Koyo Software Solutions",
+      "text": "Small MERN-stack software/technology services firm specializing in image processing (OCR for accountants/lawyers) and robotics, offering web and graphic-design services via an internship/project model. Small and obscure, with little independent public data."
+    },
+    {
+      "name": "VIBGYOR Advisors",
+      "text": "First-generation Indian financial-services/advisory firm (wealth management, loans, corporate advisory, equity research), founded by Sachin Neema, based in Mumbai. Small firm; note similarly named entities exist — confirm the exact one if precision matters."
+    },
+    {
+      "name": "The Prodigious People (Prodigious People LLP)",
+      "text": "Small creative branding, design, and digital-marketing agency founded July 2020 in Kolkata/Rourkela, India (co-founders Arup Mohapatra and Sushovan Chatterjee; 1–10 employees). Offers UI/UX, front-end development, content strategy, and digital marketing."
+    }
+  ]
+}

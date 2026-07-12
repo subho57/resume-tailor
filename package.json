@@ -1,0 +1,24 @@
+{
+  "name": "resume-superset-builder",
+  "version": "1.0.0",
+  "description": "Deterministic, schema-driven resume generator: content JSON + theme preset -> DOCX + PDF, with optional single-page autofit.",
+  "bin": {
+    "resume-build": "dist/cli.js"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "generate": "node dist/cli.js --content data/priyanka.resume.json",
+    "generate:onepage": "node dist/cli.js --content data/priyanka.resume.json --auto-fit-to-single-page"
+  },
+  "dependencies": {
+    "docx": "9.7.1"
+  },
+  "devDependencies": {
+    "typescript": "^5.0.0",
+    "@types/node": "^24.0.0",
+    "@types/bun": "latest"
+  },
+  "module": "src/cli.ts",
+  "type": "module",
+  "private": true
+}

@@ -1,0 +1,11 @@
+{
+  "name": "corporate-navy",
+  "font": { "family": "Carlito", "baseSize": 10.5 },
+  "sizes": { "name": 20, "sectionHeading": 11, "body": null, "small": 9 },
+  "colors": { "accent": "2E74B5", "body": "1A1A1A", "rule": "9B9B9B", "link": "0563C1" },
+  "margins": { "top": 0.6, "right": 0.6, "bottom": 0.6, "left": 0.6 },
+  "spacing": { "sectionBefore": 11, "sectionAfter": 4.5, "bulletAfter": 3, "lineHeight": 1.15 },
+  "header": { "leftCellPct": 0.61 },
+  "ats": { "nonBreakingHyphens": true },
+  "autofit": { "minBodySize": 9.5, "minMargin": 0.4, "fontStep": 0.5, "marginStep": 0.05, "spacingStep": 0.1, "maxIterations": 40 }
+}

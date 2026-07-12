@@ -1,0 +1,98 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://priyanka.dev/schema/theme.schema.json",
+  "title": "Resume Theme Preset",
+  "description": "Presentation-only styling for a resume render. Deliberately MINIMAL: just enough to tweak color, font, size, and margins, plus the autofit floors that bound how far the single-page autofit routine may shrink things. STRICT: unknown keys are rejected so style-key typos surface as warnings.",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "name": { "type": "string", "description": "Theme identifier." },
+    "font": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "family": { "type": "string", "default": "Carlito", "description": "Font family. Use a Calibri-metric-compatible family (Carlito) for faithful, reflow-free rendering via LibreOffice." },
+        "baseSize": { "type": "number", "default": 10.5, "description": "Base body font size in points. Bullets/prose use this; other sizes derive from it via the ratios below." }
+      },
+      "default": {}
+    },
+    "sizes": {
+      "type": "object",
+      "additionalProperties": false,
+      "description": "Font sizes in points. If a value is null/absent it is derived from font.baseSize.",
+      "properties": {
+        "name": { "type": ["number", "null"], "default": 20, "description": "Name / masthead size." },
+        "sectionHeading": { "type": ["number", "null"], "default": 11, "description": "ALL-CAPS section heading size." },
+        "body": { "type": ["number", "null"], "default": null, "description": "Body/bullet size; null -> font.baseSize." },
+        "small": { "type": ["number", "null"], "default": 9, "description": "Small text (domain notes, meta lines, links)." }
+      },
+      "default": {}
+    },
+    "colors": {
+      "type": "object",
+      "additionalProperties": false,
+      "description": "Hex colors WITHOUT the leading '#'.",
+      "properties": {
+        "accent": { "type": "string", "default": "2E74B5", "description": "Name + section headings." },
+        "body": { "type": "string", "default": "1A1A1A", "description": "Body text." },
+        "rule": { "type": "string", "default": "9B9B9B", "description": "Section-heading bottom-border rule (gray)." },
+        "link": { "type": "string", "default": "0563C1", "description": "Hyperlink color." }
+      },
+      "default": {}
+    },
+    "margins": {
+      "type": "object",
+      "additionalProperties": false,
+      "description": "Page margins in inches.",
+      "properties": {
+        "top": { "type": "number", "default": 0.6 },
+        "right": { "type": "number", "default": 0.6 },
+        "bottom": { "type": "number", "default": 0.6 },
+        "left": { "type": "number", "default": 0.6 }
+      },
+      "default": {}
+    },
+    "spacing": {
+      "type": "object",
+      "additionalProperties": false,
+      "description": "Vertical rhythm in points (converted to twips internally).",
+      "properties": {
+        "sectionBefore": { "type": "number", "default": 11, "description": "Space before a section heading." },
+        "sectionAfter": { "type": "number", "default": 4.5, "description": "Space after a section heading (before its content)." },
+        "bulletAfter": { "type": "number", "default": 3, "description": "Space after each bullet." },
+        "lineHeight": { "type": "number", "default": 1.15, "description": "Line height multiple for body text." }
+      },
+      "default": {}
+    },
+    "header": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "leftCellPct": { "type": "number", "default": 0.61, "description": "Fraction of usable width given to the left (name/tagline) cell; the rest holds right-aligned contacts." }
+      },
+      "default": {}
+    },
+    "ats": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "nonBreakingHyphens": { "type": "boolean", "default": true, "description": "Replace hyphens in compound terms with U+2011 to prevent raw-stream extractors dropping them at line-wrap boundaries." }
+      },
+      "default": {}
+    },
+    "autofit": {
+      "type": "object",
+      "additionalProperties": false,
+      "description": "Floors and step sizes bounding the single-page autofit routine (used only when --auto-fit-to-single-page is passed).",
+      "properties": {
+        "minBodySize": { "type": "number", "default": 9.5, "description": "Body font will not shrink below this (pt). ATS-safe floor is ~10pt; 9.5 permitted as a last resort." },
+        "minMargin": { "type": "number", "default": 0.4, "description": "Margins will not shrink below this (inches). ATS-safe floor is 0.5in." },
+        "fontStep": { "type": "number", "default": 0.5, "description": "Body-size decrement per iteration (pt)." },
+        "marginStep": { "type": "number", "default": 0.05, "description": "Margin decrement per iteration (inches)." },
+        "spacingStep": { "type": "number", "default": 0.1, "description": "Line-height / spacing decrement factor per iteration." },
+        "maxIterations": { "type": "number", "default": 40, "description": "Safety cap on shrink iterations." }
+      },
+      "default": {}
+    }
+  }
+}
