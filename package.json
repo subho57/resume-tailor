@@ -1,6 +1,6 @@
 {
   "name": "resume-superset-builder",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "Deterministic, schema-driven resume generator: content JSON + theme preset -> DOCX + PDF, with optional single-page autofit.",
   "bin": {
     "build-resume": "dist/cli.js"
