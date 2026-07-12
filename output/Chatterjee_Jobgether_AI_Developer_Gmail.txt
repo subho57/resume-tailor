@@ -1,0 +1,8 @@
+Subject: AI Developer at {{companyName}} — quick intro
+
+Hi {{outreachEmployeeName}},
+
+I recently applied for the {{jobTitle}} role at {{companyName}} ({{jobLink}}) and wanted to reach out directly. I've spent the last 3+ years building production AI systems in Python — RAG pipelines, multi-agent LLM workflows, and a Model Context Protocol (MCP) server giving LLM agents real-time access to enterprise data. I'd love to connect and hear more about the team if you have a few minutes.
+
+Thanks so much,
+Priyanka

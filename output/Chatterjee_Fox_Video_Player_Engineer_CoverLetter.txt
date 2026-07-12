@@ -1,0 +1,47 @@
+Priyanka Chatterjee
+Kolkata, West Bengal, India (open to remote)
+priyankachatterjee9075@gmail.com | +91 8617262536
+linkedin.com/in/priyanka-9075 | github.com/Priyanka-Chatterjee-2000
+
+Fox Corporation — Digital Video Platform Team
+Re: Video Player Engineer (R50033063)
+
+Dear Hiring Manager,
+
+I'm writing to apply for the Video Player Engineer role on the Fox Digital Video
+Platform team. I bring 3.5+ years of backend and frontend engineering experience
+in Go and React.js, built largely in fast-moving, ambiguous environments similar
+to the one your job posting describes.
+
+At Turbot HQ, I designed and built an internal REST API microservice in Go (Gin
+framework), containerized it with Docker, deployed it to AWS EC2, and wired it
+as a gRPC client for several other internal microservices — direct, hands-on
+experience with the containers/microservices architecture your posting asks
+for. I also led a production migration of the AWS SDK for JavaScript from v2 to
+v3 across 180+ call sites and 11+ AWS services in live Node.js Lambdas, and
+hardened our release pipeline with multi-distro Linux smoke tests in GitHub
+Actions — the kind of CI/CD and cloud-provider experience that keeps a
+high-availability platform like Fox's shipping safely. When a Go service went
+into a Kubernetes CrashLoopBackOff in production, I worked directly with the
+platform team to diagnose pod logs and restore service — the same on-call,
+production-support mindset your posting calls out for Tier 3 rotation.
+
+On the frontend side, at Trisetra I led a React-based redesign of a
+60+-file user-upload workflow (Google Maps autocomplete, drag-and-drop upload,
+history dashboard) end to end, which is representative of the kind of UI
+engineering I'd bring to your player and tooling surfaces.
+
+I'll be candid about one gap: I haven't yet worked directly with video
+streaming protocols (HLS/DASH) or AWS Media Services (MediaConvert/
+MediaLive/MediaPackage). What I can offer instead is a fast learning track
+record — open-source work across four Go-based platform products (120+ merged
+pull requests, 9,300+ GitHub stars) where I regularly picked up new domains
+quickly — and a strong foundation in the Go, React, AWS, and distributed-systems
+fundamentals the role is built on.
+
+I'd welcome the chance to talk about how I could contribute to the team
+delivering video for Fox's biggest live events. Thank you for your time and
+consideration.
+
+Sincerely,
+Priyanka Chatterjee

@@ -1,0 +1,68 @@
+Skip to main content
+ careers home
+
+Sign In
+Fox Careers
+
+Video Player Engineer page is loaded
+Video Player Engineer
+Apply
+Video Player Engineer
+Run Happpy Agent
+Apply
+remote type
+Remote
+locations
+IND - Remote
+time type
+Full time
+posted on
+Posted Yesterday
+job requisition id
+R50033063
+OVERVIEW OF THE COMPANY
+
+Fox Corporation
+Under the FOX banner, we produce and distribute content through some of the world’s leading and most valued brands, including: FOX News Media, FOX Sports, FOX Entertainment, FOX Television Stations and Tubi Media Group. We empower a diverse range of creators to imagine and develop culturally significant content, while building an organization that thrives on creative ideas, operational expertise and strategic thinking.
+JOB DESCRIPTION
+Fox Digital Video Platform team seeks a Software Engineer for the Video Engineering group to work on a team that designs, builds, deploys and supports video workflows. FOX is responsible for delivering the largest LIVE events on TV - including the Super Bowl, MLB World Series, FIFA World Cup, Election Coverage, WWE Smackdown, NFL Championships, Primetime Emmy Awards and countless more. This role is essential to providing our digital audience a great experience every time they press play and will be key to developing industry leading reliability, quality, and overall system performance. As an engineer, you will be working in an extremely fast paced environment where you’ll be expected to learn the ecosystem quickly and help build automated, resilient video tools for video streaming.
+
+A SNAPSHOT OF YOUR RESPONSIBILITES
+
+Work closely with Engineering/Product/Project Management and Backend Technology Services teams to solve challenging technical problems. In this role, you will help develop software, work closely with other developers, maintain good communication with stakeholders such as project managers and product managers. Additionally, you will help maintain uniformity across CI/CD solutions, testing solutions and solidify the development process.
+
+Build, deploy and test software solutions supporting video workflows.
+Confer with colleagues across the organization, studying systems flow, data usage, and work processes, investigating problem areas, following the software development lifecycle.
+Improve operations by conducting systems analysis, implementing changes in policies and procedures.
+Accomplish engineering and organization mission by completing related results as needed.
+Participate in Tier 3 on-call rotation support for the services you and your team develop and operate.
+
+WHAT YOU WILL NEED
+
+Strong development skills in React.js, Golang or equivalent programming languages.
+Strong understanding of software design/architecture and tradeoffs.
+Experience using AWS or other cloud providers.
+Familiarity with containers, micro-services and related architectures.
+Good understanding of the Software Development Life Cycle.
+NICE TO HAVE, BUT NOT A DEALBREAKER
+
+Experience building and scaling services using AWS
+Experience building UI tools for live streaming
+Experience with video streaming protocols (HLS, DASH)
+Experience with AWS Media Services (MediaConvert/MediaLive/MediaPackage)
+#Ll-CC1
+
+#Ll-Remote
+
+#DTC
+
+We are an equal opportunity employer and all qualified applicants will receive consideration for employment without regard to race, color, religion, sex, national origin, gender identity, disability, protected veteran status, or any other characteristic protected by law. We will consider for employment qualified applicants with criminal histories consistent with applicable law.
+
+About Us
+We’re disruptors. We’re big dreamers. We’re believers in the future, in possibility, in potential. We’re reinventing the world, every day. We create content for audiences big and small, global and local. We put our audiences first, and work hard to bring them stories they’ll love, wherever they are and however they watch, listen and learn.
+
+Whatever your discipline, from on-air talent to behind-the-scenes tech guru to business and finance, the career opportunities at FOX are exciting, rewarding and game-changing. We seek out the most talented individuals – the dreamers, the disruptors and the visionaries –and we want them to know that they matter. We’re committed to helping every single one of our employees feel valued and inspired, every day.
+
+
+Read More
+© 2026 Workday, Inc. All rights reserved.

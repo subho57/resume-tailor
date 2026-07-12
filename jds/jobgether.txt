@@ -1,0 +1,78 @@
+Jobgether logo
+AI Developer
+IndiaSecurity & IT – IT /Full-time /Remote
+Run Happpy Agent
+This position is listed on behalf of a partner company, who manages all applications and next steps. Our partner is looking for an AI Developer based in India.
+
+This role offers the opportunity to design and build advanced AI-powered solutions that improve how teams operate and make data-driven decisions.
+You will work with large-scale behavioral and operational datasets to create intelligent platforms, automation systems, and AI-driven workflows.
+The position combines AI engineering, machine learning, data processing, and product thinking to deliver solutions with measurable business impact.
+You will contribute to the full lifecycle of AI projects, from exploring data and selecting models to deploying reliable production systems.
+Working closely with cross-functional teams, you will transform complex technical challenges into practical tools used by real users.
+This is an ideal opportunity for a hands-on AI engineer who enjoys innovation, ownership, and building impactful solutions in a fast-moving environment.
+
+Accountabilities
+Build AI-powered internal tools and data-driven systems that enhance analytics, reporting, workflow automation, and decision-making processes.
+Develop AI and machine learning platforms capable of processing and analyzing large-scale operational and behavioral data.
+Design and implement RAG systems, LLM-powered features, and agent-based workflows that generate actionable insights.
+Create scalable data pipelines to collect, transform, and serve complex datasets efficiently.
+Prototype, test, and deploy AI solutions that improve internal processes and reduce manual effort.
+Evaluate and select appropriate AI models, frameworks, and infrastructure while balancing performance, cost, and scalability.
+Develop clean, reliable, and production-ready Python applications with strong testing, monitoring, and error-handling practices.
+Build and maintain APIs and services that integrate AI capabilities into business workflows.
+Collaborate with stakeholders to understand business needs and deliver tools that provide real value.
+Stay current with emerging AI technologies and introduce innovative approaches to improve existing systems.
+Communicate technical concepts clearly and support collaboration across development teams.
+Requirements
+3+ years of professional experience building and deploying AI/ML systems in production environments.
+Strong proficiency in Python, including software engineering best practices such as testing, packaging, type hints, and asynchronous programming.
+Hands-on experience with LLM frameworks such as LangChain, LlamaIndex, or similar technologies, including building RAG pipelines.
+Experience working with vector databases and embedding technologies such as Pinecone, ChromaDB, FAISS, Qdrant, or equivalent solutions.
+Strong understanding of machine learning fundamentals, including model evaluation, fine-tuning decisions, and prompt engineering strategies.
+Experience developing and deploying APIs using frameworks such as FastAPI, Flask, or similar tools.
+Familiarity with cloud platforms such as AWS, GCP, or Azure, as well as containerization technologies like Docker and Kubernetes.
+Experience processing large datasets using technologies such as SQL, pandas, Spark, or comparable tools.
+Proficiency with Git, GitHub, code reviews, and collaborative development workflows.
+Ability to quickly iterate on ideas while maintaining high-quality, maintainable code.
+Strong troubleshooting skills and the ability to resolve complex production issues.
+Ability to simplify complex systems and create scalable solutions.
+Experience working remotely with strong communication, organization, and self-management skills.
+Excellent written and verbal English communication skills.
+Availability for collaboration during agreed working hours and participation in virtual meetings.
+Additional experience that would be valuable:
+
+Experience with model fine-tuning techniques such as PEFT, LoRA, or QLoRA, as well as model quantization.
+Experience building multi-agent systems using frameworks such as CrewAI, LangGraph, AutoGen, or similar tools.
+Knowledge of MLOps practices, including model versioning, monitoring, and experiment tracking.
+Experience with platforms such as Databricks, AWS SageMaker, or other machine learning environments.
+Contributions to open-source projects, technical publications, research, or engineering blogs.
+Familiarity with SaaS products, WordPress ecosystems, PHP, or customer-focused product development.
+Experience building internal platforms used daily by non-technical teams.
+Knowledge of MCP (Model Context Protocol), function calling, structured outputs, or similar LLM integration approaches.
+Benefits
+Competitive salary package.
+Remote work flexibility with the ability to collaborate with a global team.
+Health, dental, and vision insurance benefits depending on location and eligibility.
+Life insurance and accidental death & dismemberment coverage for eligible team members.
+Flexible paid time off to support work-life balance and personal wellbeing.
+Paid holidays based on your location.
+Paid parental leave.
+Support for professional growth through access to software, books, courses, and learning resources.
+Company-covered travel expenses for retreats and team gatherings.
+Additional perks such as welcome packages, anniversary gifts, and technology support allowances.
+Opportunity to solve challenging technical problems with meaningful business impact.
+Collaboration with talented professionals across different countries and disciplines.
+A culture focused on autonomy, craftsmanship, respect, and impactful work.
+How Jobgether works:
+We use an AI-powered matching process to ensure your application is reviewed quickly, objectively, and fairly against the role's core requirements. Our system identifies the top-fitting candidates, and this shortlist is then shared directly with the hiring company. The final decision and next steps (interviews, assessments) are managed by their internal team.
+We appreciate your interest and wish you the best!
+ Why Apply Through Jobgether?
+
+Data Privacy Notice: By submitting your application, you acknowledge that Jobgether will process your personal data to evaluate your candidacy and share relevant information with the hiring employer. This processing is based on legitimate interest and pre-contractual measures under applicable data protection laws (including GDPR). You may exercise your rights (access, rectification, erasure, objection) at any time.
+
+
+#LI-CL1
+We may use artificial intelligence (AI) tools to support parts of the hiring process, such as reviewing applications, analyzing resumes, or assessing responses and identifying potential inconsistencies or verification signals in application materials based on available information. These tools assist our recruitment team but do not replace human judgment. Final hiring decisions are ultimately made by humans. If you would like more information about how your data is processed, please contact us.
+Jobgether Home Page
+
+Jobs powered byLever logo

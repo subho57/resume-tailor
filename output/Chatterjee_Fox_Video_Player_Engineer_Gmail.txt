@@ -1,0 +1,8 @@
+Subject: Video Player Engineer at {{companyName}} — quick intro
+
+Hi {{outreachEmployeeName}},
+
+I recently applied for the {{jobTitle}} role at {{companyName}} ({{jobLink}}) and wanted to reach out directly. I've spent 3.5+ years building Go microservices and React front-ends deployed on AWS — including a containerized Go/Gin REST service on EC2 and a production AWS SDK v2-to-v3 migration across 180+ call sites. I'd love to connect and hear more about the team if you have a few minutes.
+
+Thanks so much,
+Priyanka

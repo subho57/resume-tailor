@@ -1,0 +1,3 @@
+Hi {{outreachEmployeeName}}, I just applied for the {{jobTitle}} role at {{companyName}} ({{jobLink}}) and wanted to reach out directly — I build Go microservices and React front-ends on AWS, containers included. Would love to connect or hear about the team if you have a moment.
+
+Priyanka

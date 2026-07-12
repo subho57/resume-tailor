@@ -1,0 +1,76 @@
+{
+  "schemaVersion": "1.0.0",
+  "theme": "corporate-navy",
+  "sectionOrder": ["summary", "skills", "work", "projects", "education"],
+  "basics": {
+    "name": "Priyanka Chatterjee",
+    "label": "Software Engineer · 9,300★ Open-Source Contributor · Go · React.js · AWS · 3.5+ Years",
+    "email": "priyankachatterjee9075@gmail.com",
+    "phone": "+91 8617262536",
+    "url": "https://priyanka-chatterjee-2000.github.io",
+    "location": { "display": "Kolkata, West Bengal, India (open to remote)" },
+    "profiles": [
+      { "network": "LinkedIn", "url": "https://linkedin.com/in/priyanka-9075", "display": "linkedin.com/in/priyanka-9075" },
+      { "network": "GitHub", "url": "https://github.com/Priyanka-Chatterjee-2000", "display": "github.com/Priyanka-Chatterjee-2000" }
+    ],
+    "activeSummary": "default",
+    "summaries": {
+      "default": "Accomplished Software Engineer with 3.5+ years building reliable, scalable services in Go and Node.js with React.js front-ends, across AWS, Azure, and GCP, with strong grounding in software design/architecture tradeoffs, containerized microservices, and the full SDLC. Core contributor to four open-source products at Turbot (120+ merged pull requests, 9,300+ GitHub stars), shipping a containerized Go/Gin microservice on AWS EC2 and leading a production AWS SDK v2-to-v3 migration across 180+ call sites."
+    }
+  },
+  "skills": [
+    { "name": "Languages", "keywordsText": "Go (Golang), Python, TypeScript, JavaScript (ES6+), SQL" },
+    { "name": "Frontend", "keywordsText": "React, MUI, HTML, CSS" },
+    { "name": "Backend & APIs", "keywordsText": "Microservices, Event-Driven Architecture, Distributed Systems, REST, gRPC, WebSockets, Node.js, Gin" },
+    { "name": "Cloud & DevOps", "keywordsText": "AWS (Lambda, EC2, S3), Azure, GCP, Docker, Kubernetes (working knowledge), GitHub Actions (CI/CD)" },
+    { "name": "Testing & Quality", "keywordsText": "Unit Testing, Integration Testing, End-to-End Testing, Jest, Mocha, Code Review" },
+    { "name": "Core CS", "keywordsText": "Data Structures & Algorithms, Object-Oriented Design, System Design, API Design, Software Development Life Cycle (SDLC)" }
+  ],
+  "work": [
+    {
+      "name": "Turbot HQ, Inc.",
+      "location": "Remote",
+      "dateDisplay": "August 2022 – April 2026",
+      "roleDisplay": "senior-only",
+      "roles": [
+        { "position": "Software Engineer I", "dateDisplay": "August 2022 – April 2026" }
+      ],
+      "highlights": [
+        "Core contributor across all four Turbot open-source products (Steampipe, Powerpipe, Flowpipe, Tailpipe) — 120+ merged pull requests and 4,200+ commits across 79 repositories, with 9,300+ combined GitHub stars.",
+        "Designed and developed an internal REST API microservice in Go using the Gin framework to power the backend of Turbot Guardrails, a Preventive Security Posture Management (PSPM) SaaS product; secured endpoints with JWT client-token authentication, containerized with Docker, deployed to AWS EC2, and served as a gRPC client for several internal microservices.",
+        "Engineered core features for Tailpipe, a Go-based observability CLI on DuckDB + Parquet, lifting log-processing throughput 30% to 1,000+ logs per second by chunking and batching file reads and streaming writes to DuckDB; reduced memory use to eliminate out-of-memory failures.",
+        "Led the AWS SDK for JavaScript v2 to v3 migration across 180+ call sites and 11+ AWS services in production Node.js Lambdas, refactoring discovery, configuration-sync, tagging, and resource-cleanup workflows; kept the platform supported past AWS SDK v2 EOL and unblocked the Node.js runtime upgrade.",
+        "Added multi-distro Linux smoke tests (ephemeral environments) for Turbot's Go CLIs to the GitHub Actions release/CI-CD pipeline, hardening release safety and catching regressions across Linux distributions before deployment.",
+        "Resolved a production incident by diagnosing a Go service stuck in a Kubernetes CrashLoopBackOff, collaborating with the platform team to investigate pod logs and status and restore service."
+      ]
+    },
+    {
+      "name": "Trisetra, Inc.",
+      "location": "Remote",
+      "dateDisplay": "February 2022 – June 2022",
+      "roles": [
+        { "position": "Frontend Software Developer Intern (SDE Intern)", "dateDisplay": "February 2022 – June 2022" }
+      ],
+      "highlights": [
+        "Led the user-upload workflow redesign across 60+ files in React (Google Maps autocomplete, drag-and-drop upload, history dashboard, invite-code sign-up, improved empty/error states), driving increased user engagement."
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "name": "Lila Tic-Tac-Toe — Real-Time Multiplayer Game",
+      "dateDisplay": "2026",
+      "description": "Built end to end in 4 days. React 19 + TypeScript + Vite on Vercel; Nakama game server (Go core + TS runtime) on Fly.io with PostgreSQL. Server-authoritative anti-cheat over WebSocket transport, mode-aware matchmaking via KV-storage queues, tick-based turn timer, and a top-10 leaderboard.",
+      "links": [{ "label": "repo/live", "url": "https://priyanka-chatterjee-2000.github.io" }]
+    }
+  ],
+  "education": [
+    {
+      "institution": "University of Engineering & Management (UEM)",
+      "location": "Kolkata, WB, IN",
+      "degreeDisplay": "Bachelor of Technology in Computer Science and Engineering",
+      "dateDisplay": "August 2019 – May 2023",
+      "score": "CGPA: 9.28"
+    }
+  ]
+}

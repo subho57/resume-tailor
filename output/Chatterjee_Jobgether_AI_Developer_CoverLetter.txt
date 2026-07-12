@@ -1,0 +1,43 @@
+Priyanka Chatterjee
+Kolkata, West Bengal, India (open to remote)
+priyankachatterjee9075@gmail.com | +91 8617262536
+linkedin.com/in/priyanka-9075 | github.com/Priyanka-Chatterjee-2000
+
+Re: AI Developer (India, Remote)
+
+Dear Hiring Manager,
+
+I'm writing to apply for the AI Developer role. I bring 3+ years building AI-powered
+production systems in Python — RAG pipelines, multi-agent LLM workflows, and a Model
+Context Protocol (MCP) server — the kind of hands-on, full-lifecycle AI engineering
+your posting describes, from exploring data to deploying reliable production systems.
+
+At Turbot HQ, I built the Steampipe MCP server end to end in Python, giving LLM agents
+standardized, real-time access to enterprise cloud and security data for retrieval and
+analysis — directly aligned with your interest in MCP, function calling, and
+structured LLM integration. I also designed a multi-agent workflow on the OpenAI
+Agents SDK to orchestrate LLM agents that generate cloud policy commands, validate
+them in a live test environment, and self-correct failures — an agent-based workflow
+producing actionable output, matching your "agent-based workflows that generate
+actionable insights" requirement. Separately, I built a RAG-based internal Pydantic AI
+agent that ingests internal documentation into vector storage and serves it through a
+Slack Bot API, turning it into an internal tool non-technical teammates use daily to
+resolve onboarding and cross-team queries. I also engineered a Go-based data pipeline
+(Tailpipe) that lifted log-processing throughput 30% to 1,000+ logs/second, and
+optimized PostgreSQL queries powering compliance audits by 40% — direct experience
+with the large-scale data processing and troubleshooting your role calls for.
+
+I'll be candid about a few gaps: I haven't yet worked with LangChain, LlamaIndex, or a
+named vector database (Pinecone/ChromaDB/FAISS/Qdrant) — my RAG and agent work has been
+built directly on Pydantic AI, the OpenAI Agents SDK, and AWS-native vector storage
+instead. I also don't have hands-on model fine-tuning (PEFT/LoRA/QLoRA) or MLOps
+experiment-tracking experience. What I can offer instead is a fast learning track
+record — core contributor to four open-source platform products (120+ merged pull
+requests, 9,300+ GitHub stars) — and a strong foundation in the Python, RAG, and
+agentic fundamentals the role is built on.
+
+I'd welcome the chance to talk about how I could contribute to your AI engineering
+team. Thank you for your time and consideration.
+
+Sincerely,
+Priyanka Chatterjee

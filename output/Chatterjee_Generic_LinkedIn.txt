@@ -1,0 +1,7 @@
+Hi {{outreachEmployeeName}}, I'm really interested in the {{jobTitle}} role at {{companyName}} ({{jobLink}}) and saw you're on the team — before I apply, I wanted to ask whether you'd be open to referring me.
+
+Quick background: I'm a backend engineer with 3.5+ years building distributed, event-driven systems in Go, Python, and Node.js across AWS, Azure, and GCP, and a core contributor to four open-source products at Turbot (120+ merged PRs, 9,300+ GitHub stars), including recent AI/agentic work (an MCP server and a RAG agent).
+
+You can see more of my work at https://priyanka-chatterjee-2000.github.io. If it looks like a fit, I'd be grateful for a referral and happy to send my resume — and if not, I'd still love to connect. Thanks so much!
+
+Priyanka
