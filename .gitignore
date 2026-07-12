@@ -5,6 +5,7 @@ node_modules
 out
 dist
 bin
+src/skill-bundle.generated.ts
 *.tgz
 
 # code coverage

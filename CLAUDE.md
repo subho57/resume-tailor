@@ -174,6 +174,23 @@ see it even after `themes/<name>.theme.json` exists on disk.
 `--version`/`-v` prints `package.json`'s `version`, statically imported in `cli.ts`
 for the same reason as `BUILTIN_THEMES` (compiled-binary `__dirname` can't fs-read it).
 
+`--install-skill` writes a standalone variant of the `jd-tailored-resume` skill to
+`~/.claude/skills/jd-tailored-resume/` (personal skill, any project, no repo). Source
+of truth is still this repo's own `.claude/skills/jd-tailored-resume/` — never edit
+`src/skill-bundle.generated.ts` by hand or the standalone skill's content directly;
+edit the real skill files and re-generate. `scripts/generate-skill-bundle.ts` (run via
+the new `bun run prepare-skill` script, which `build` and `compile` both run first)
+reads `SKILL.md`/`references/tailoring-guide.md`/`scripts/check_keywords.py` and
+rewrites 7 specific anchor regions in `SKILL.md` (repo/bun instructions ->
+`build-resume` instructions) via an `assertReplace()` helper that **throws if an
+anchor isn't found exactly once** — so editing `SKILL.md` in a way that moves/rewords
+one of those regions fails the next `bun run build`/`bun run compile` loudly, instead
+of silently shipping a stale standalone skill. `evals/evals.json` is intentionally
+excluded (author-only test content, not needed at invocation time).
+`src/skill-bundle.generated.ts` is gitignored (regenerate with `bun run prepare-skill`
+if it's missing — needed before running `bun src/cli.ts` directly, since that
+bypasses both the `build`/`compile` scripts that normally generate it first).
+
 Releases are fully automatic via `.github/workflows/release.yml` + semantic-release
 (`.releaserc.json`) — every push to `main` is analyzed for Conventional Commits
 (`fix:`/`feat:`/`BREAKING CHANGE:`); if release-worthy, a `release` job bumps

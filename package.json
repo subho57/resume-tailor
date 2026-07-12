@@ -6,8 +6,9 @@
     "build-resume": "dist/cli.js"
   },
   "scripts": {
-    "build": "tsc -p tsconfig.json",
-    "compile": "bun build --compile --outfile=bin/build-resume ./src/cli.ts",
+    "prepare-skill": "bun scripts/generate-skill-bundle.ts",
+    "build": "bun run prepare-skill && tsc -p tsconfig.json",
+    "compile": "bun run prepare-skill && bun build --compile --outfile=bin/build-resume ./src/cli.ts",
     "generate": "bun dist/cli.js --content data/priyanka.resume.json",
     "generate:onepage": "bun dist/cli.js --content data/priyanka.resume.json --one-pager"
   },

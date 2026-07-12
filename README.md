@@ -114,6 +114,23 @@ changing anything in `src/`, `schema/`, or `themes/` — unlike `bun dist/cli.js
 won't pick up edits automatically. Adding a new theme preset also needs a line in
 `src/cli.ts`'s `BUILTIN_THEMES` map to be embedded in future compiles.
 
+### Installing the JD-tailoring skill
+
+```bash
+build-resume --install-skill
+```
+
+Installs a **standalone variant** of the `jd-tailored-resume` Claude Code skill to
+`~/.claude/skills/jd-tailored-resume/` — a personal skill usable from any project,
+not just this repo checkout. It's the same tailoring workflow, generated from this
+repo's own `.claude/skills/jd-tailored-resume/` at build time
+(`scripts/generate-skill-bundle.ts`), with the repo-specific instructions (`bun
+dist/cli.js`, `data/*.resume.json` in the repo root, the install/build step)
+rewritten to invoke `build-resume` directly — no repo, no build step, themes and
+schemas are already embedded in the binary. Re-run `--install-skill` any time to
+update it. This doesn't touch or read this repo's own `.claude/skills/` copy, which
+stays exactly as-is for in-repo use.
+
 ## Releases
 
 Releases are fully automatic — **no manual tagging.** Every push to `main` runs
