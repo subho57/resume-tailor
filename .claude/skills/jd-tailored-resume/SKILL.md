@@ -154,15 +154,26 @@ going into the resume text) — this becomes the `--keywords` value in step 7. O
 confirmed matches go in this list, never gaps: a missing term won't match anything in
 the rendered text anyway, but keep the list itself honest, not a wishlist.
 
-### 5. Confirm role display for any multi-role company (ASK THE USER)
+### 5. Confirm presentation choices (ASK THE USER)
 
-Some companies in the superset have **more than one role** (e.g. an intern-to-engineer
-progression stored as two entries in `work[].roles`). How to present that is a
-judgment call that belongs to the candidate, not to you — so **you must ask explicitly
-before rendering.** Do not silently pick.
+A few presentation decisions are judgment calls that belong to the candidate, not to
+you — so **you must ask explicitly before rendering. Do not silently pick.** If the
+user already stated a preference earlier in the conversation, honor it without
+re-asking.
 
-For **each** company that has 2+ roles, ask the user which of these they want (the
-`roleDisplay` field on that company controls it):
+**Company descriptions (`domainNote`).** The superset stores a one-line italic
+descriptor of what some companies do in `work[].domainNote`. It renders as a standalone
+italic line *between* the company-header line and the role/title line, which can break
+how ATS parsers associate company → title → dates. **Whenever any company you're
+keeping carries a `domainNote`, ask the user once, globally:** keep the company
+descriptions, or omit them for cleaner ATS parsing? Frame **omit as the recommended
+default.** Apply the answer to *every* entry — all or none, don't mix — by including or
+dropping the `domainNote` field when you write the tailored JSON (step 6).
+
+**Role display for multi-role companies.** Some companies in the superset have **more
+than one role** (e.g. an intern-to-engineer progression stored as two entries in
+`work[].roles`). For **each** company that has 2+ roles, ask the user which treatment
+they want (the `roleDisplay` field on that company controls it):
 
 - **`senior-only` — "continued role"**: show only the most-senior title (the first
   entry in `roles`), spanning the company's full date range, and drop the junior
@@ -176,9 +187,8 @@ For **each** company that has 2+ roles, ask the user which of these they want (t
 
 Ask concisely, once, listing the affected company/companies and their roles, and offer
 these three options with `senior-only` framed as the usual pick. Wait for the user's
-answer, then set `roleDisplay` accordingly on each such company in the tailored JSON.
-If the user has already stated a preference earlier in the conversation, honor it
-without re-asking. A company with a single role needs no question.
+answer, then set `roleDisplay` accordingly on each such company in the tailored JSON. A
+company with a single role needs no role-display question.
 
 ### 6. Write the tailored JSON
 
@@ -195,6 +205,7 @@ Produce a **new** JSON conforming to the same schema the superset uses
 - Set `basics.activeSummary` to your chosen variant.
 - Set `sectionOrder` to your chosen order.
 - Set `roleDisplay` on each multi-role company per the user's answer in step 5.
+- Include or drop each company's `domainNote` per the user's answer in step 5 (all-or-none).
 - Include a realistic contact block from the superset's `basics`.
 - Write it to the output folder (see step 7) as the tailored source.
 
