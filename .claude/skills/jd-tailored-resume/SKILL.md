@@ -5,12 +5,15 @@ description: >-
   JD (a text file, pasted text, or a link the user provides), extract the role's
   keywords and priorities, then SELECT, REPHRASE, and REORDER content from a
   candidate's superset "ground-truth" resume JSON to produce a new tailored JSON,
-  render it to DOCX + PDF via the bundled CLI, and verify the JD's key terms are
-  consistently present in the resume. Use this skill whenever the user wants to
-  tailor, customize, target, or generate a resume/CV for a specific job, role, or
-  company, or mentions a job description, JD, job posting, or "make my resume match
-  this job" — even if they don't say the word "resume." Produces one output file per
-  JD, named after the role/company, in a dedicated output folder.
+  render it to DOCX + PDF via the bundled CLI, verify the JD's key terms are
+  consistently present in the resume, and also write a matching plain-text cover
+  letter plus short Gmail and LinkedIn outreach messages (with literal
+  {{outreachEmployeeName}}/{{jobTitle}}/{{companyName}}/{{jobLink}} placeholders for a
+  downstream mail-merge step). Use this skill whenever the user wants to tailor,
+  customize, target, or generate a resume/CV for a specific job, role, or company, or
+  mentions a job description, JD, job posting, or "make my resume match this job" —
+  even if they don't say the word "resume." Produces one output-file set per JD,
+  named after the role/company, in a dedicated output folder.
 ---
 
 # JD-Tailored Resume Builder
@@ -68,7 +71,8 @@ ground truth, and you must not invent content to fill the gap.
 ## Workflow
 
 Follow these steps in order. Steps 1–4 are analysis; 5 confirms multi-role display; 6
-writes the tailored JSON; 7 renders; 8 verifies; 9 reports.
+writes the tailored JSON; 7 renders; 8 verifies; 9 writes the cover letter; 10 writes
+the Gmail/LinkedIn outreach messages; 11 reports.
 
 ### 1. Read and reverse-engineer the JD
 
@@ -89,11 +93,38 @@ For a structured extraction routine and how to weight terms, read
 ### 2. Choose the framing
 
 Pick the **summary variant** from the superset's `basics.summaries` that best matches
-the JD (e.g. the "golang" or "ai" variant), and set it as the active summary. Decide
-the **section order** and which of the superset's roles/bullets/skills to foreground.
-Backend/distributed roles lead with databases, event-driven systems, production
-fixes; AI/agentic roles lead with MCP, multi-agent, LLM tooling. See
-`references/tailoring-guide.md` (§"Framing by role family").
+the JD (e.g. the "golang" or "ai" variant), and set it as the active summary — but
+rewrite it to the **Relevance + Brilliance formula** (see below and
+`references/tailoring-guide.md` §"Framing by role family"), don't just copy a variant
+verbatim. Decide which roles/bullets/skills to foreground: backend/distributed roles
+lead with databases, event-driven systems, production fixes; AI/agentic roles lead with
+MCP, multi-agent, LLM tooling.
+
+**Summary formula.** Two sentences, ≤3–4 lines total:
+> Accomplished `{JD job title}` with `{X years}` of experience and expertise in
+> `{3–4 of the top skills from the JD}`. Achieved `{biggest, quantified, relevant
+> achievement}` for `{named company}`.
+
+The first sentence is **Relevance** (echo the JD's own title + its top skills); the
+second is **Brilliance** (a specific, numbers-backed win at a *named* company — never a
+vague claim). Always name the company; always quantify.
+
+**Fixed section order.** Use exactly this `sectionOrder`, no trailing sidebars:
+```
+["summary", "skills", "work", "projects", "education"]
+```
+Education is **always last**. Projects sit immediately after Work (they're part of the
+experience story, not a trailing appendix). There is **no** standalone `openSource`
+section — fold open-source into the title line, the summary's Brilliance clause, and
+the top Work bullets (step 3). Drop `projects` too if the candidate has none worth
+showing for this JD; never place any section after `education`.
+
+**Critical — omit unused sections' data keys entirely, don't just leave them off
+`sectionOrder`.** The renderer auto-appends any *populated* canonical section that isn't
+in `sectionOrder` (it lands after Education and breaks "Education last"). So the tailored
+JSON must simply **not contain** these keys: `about`, `preferences`, `openSource`,
+`certifications`, `languages`, `recommendations`, `companyContext`. Listing only the 5
+sections in `sectionOrder` is not enough on its own.
 
 ### 3. Select content from the superset
 
@@ -103,10 +134,20 @@ For each section, choose the subset that matches the JD:
   to this role. Preserve the candidate's real items — don't add unlisted tools.
 - **Work highlights**: from each company's full bullet list in the superset, pick the
   handful most relevant to the JD. A one-page resume typically shows 4–6 bullets for
-  the main role, fewer for older ones.
-- **Projects / open-source / education**: include what reinforces the JD; a tailored
-  resume usually omits the ground-truth-only sections (preferences, companyContext,
-  the full recommendations list, beginner certifications).
+  the main role, and only **1–2 business-impact bullets for older/prior roles** — trim
+  them hard, they're supporting context, not the main story.
+- **Open-source is folded in, not a section.** Open-source contribution is the
+  candidate's strongest "Brilliance" signal, and it's genuinely her employer's work
+  (the four products are Turbot's OSS). Surface it in three places, not a trailing
+  section: (a) the title line (`basics.label`) — e.g. "9,300★ open-source contributor";
+  (b) the summary's Brilliance clause — a quantified OSS + named-company achievement;
+  (c) the **top 1–2 Work highlights** under that employer (the shipped OSS wins). Do
+  **not** emit an `openSource` key. The GitHub profile link already lives in
+  `basics.profiles`, so nothing verifiable is lost.
+- **Projects**: keep as a section (after Work, before Education) when they reinforce the
+  JD; otherwise omit. **Education**: keep, always last. Omit the ground-truth-only
+  sections entirely (see step 2's omit rule): preferences, companyContext,
+  recommendations, languages, beginner certifications, about.
 - **Every kept skill keyword needs a visible backer.** If a keyword's only evidence in
   the superset lives in a company/project/internship you'd otherwise cut for space or
   relevance, don't just drop the source and keep the keyword floating alone in the
@@ -134,6 +175,28 @@ Build a quick mental (or written) map: JD term → where the candidate demonstra
 the superset. This map drives step 6. Any JD term with **no** entry in the map is a
 gap — record it, do not fabricate it. Any term WITH evidence must make it into the
 resume text — and not just as a bare Skills-list entry.
+
+**Adjacent-skill bridging (for a gap with a genuine in-domain equivalent).** If the JD
+asks for a specific tool the candidate lacks, but the candidate genuinely has a *close
+equivalent in the same domain*, surface the equivalent prominently — as a Skills entry
+and, better, in a Work/Projects bullet — so a reviewer sees domain competence, even
+though it's not a keyword match:
+- JD wants **RabbitMQ** → candidate has **Kafka** → foreground Kafka (messaging /
+  event-driven / DLQs). JD wants **GCP Pub/Sub** → same messaging domain.
+- JD wants **Pinecone** → candidate has **AWS S3 vector storage / pgvector** → surface
+  the real vector-search work.
+- JD wants **Jenkins** → candidate has **GitHub Actions** → surface the real CI/CD work.
+
+Strict rules so this stays honest, not stuffing:
+1. **Never write the JD's tool name** (don't put "RabbitMQ" anywhere) and never imply
+   experience with it. You surface the tool the candidate *actually* used.
+2. Only bridge within the **same category** (message queue↔message queue, vector
+   store↔vector store, CI↔CI) — never across unrelated domains.
+3. It's optional to add a short parenthetical signalling transferability in a bullet
+   (e.g. "…Kafka-based event pipeline with consumer groups and DLQs…") — but the
+   claim is always about the real tool.
+4. In the report (step 11), list the JD's exact term as an **honest gap**, noting you
+   covered the domain with the adjacent tool. It is still a gap for that keyword.
 
 **Before finalizing, re-check every kept keyword against the map's source, not just
 the term's presence.** If evidence for a keyword lives ONLY in a company, project, or
@@ -202,11 +265,25 @@ Produce a **new** JSON conforming to the same schema the superset uses
 - **Never change numbers, dates, employers, or claims.** Rephrasing is about wording
   and emphasis, not invention. Keep flagged/canonical values as the superset has them
   (e.g. CGPA exactly as stored).
-- Set `basics.activeSummary` to your chosen variant.
-- Set `sectionOrder` to your chosen order.
+- **Set `basics.label` (the title line) — pack it.** Format:
+  `{target title} · {top employer or OSS scale} · {2–3 superpower skills} · {years}`,
+  e.g. `AI / Backend Engineer · 9,300★ open-source contributor · Python · RAG · MCP ·
+  3.5+ Years`. This line is prime real estate — surface the open-source cred here.
+- **Write the summary to the Relevance + Brilliance formula** (step 2), into the active
+  summary variant. Set `basics.activeSummary` to that variant's key. Name a company and
+  quantify the achievement; fold the open-source scale into the Brilliance clause.
+- **Set `sectionOrder` to exactly `["summary","skills","work","projects","education"]`**
+  (drop `projects` if unused). Education last. **Do not emit** `openSource`, `about`,
+  `preferences`, `certifications`, `languages`, `recommendations`, or `companyContext`
+  keys — omitting them from `sectionOrder` is not enough, the data key must be absent
+  (step 2's omit rule).
+- **Fold open-source into the top 1–2 Work highlights** under the relevant employer
+  (e.g. "Core contributor across four open-source products — 120+ merged PRs, 9,300+
+  GitHub stars…"), since there's no standalone section.
 - Set `roleDisplay` on each multi-role company per the user's answer in step 5.
 - Include or drop each company's `domainNote` per the user's answer in step 5 (all-or-none).
-- Include a realistic contact block from the superset's `basics`.
+- Include a realistic contact block from the superset's `basics` (keep the GitHub
+  profile link — it backs the folded-in open-source claim).
 - Write it to the output folder (see step 7) as the tailored source.
 
 For a concrete before/after of honest rephrasing, read
@@ -277,14 +354,75 @@ Also confirm the resume is the expected length (usually one page — the autofit
 handles this and warns if it can't fit; if it warns, trim bullets rather than shrink
 into unreadability).
 
-### 9. Report to the user
+### 9. Write the cover letter
+
+Produce a one-page, plain-text cover letter for this JD, reusing the same JD-keyword
+map (step 4) and content selections (steps 2–6) — same honesty rules apply: only
+reference experience that's actually in the tailored resume, name at most one honest
+gap if it's material, and never fabricate.
+
+Shape: a contact block pulled from `basics` (name, email, phone, links — no date line,
+since the candidate doesn't control when it's sent) → `Dear Hiring Manager,` → 3–4 body
+paragraphs mapping the JD's top priorities to specific, real evidence (bullet-level
+detail — "designed and built a Go/Gin microservice, containerized it, deployed to AWS
+EC2" — not just a list of skill names) → optionally one sentence naming a genuine gap,
+framed as a fast-learning track record rather than an apology → a closing
+call-to-action → sign-off with the candidate's name.
+
+**Lead with the same brilliance hook as the resume.** The opening paragraph should
+carry the same Relevance + Brilliance signal the resume's title/summary lead with (the
+open-source scale + one named, quantified company achievement) — one consistent story
+across resume, cover letter, and the outreach messages below.
+
+Write it to `<output_folder>/<FileName>_CoverLetter.txt` (same `<FileName>` as the
+resume triple, e.g. `Chatterjee_Stripe_Backend_Engineer_CoverLetter.txt`). See
+`references/tailoring-guide.md` (§"Cover letter & outreach message guidelines") for a
+full worked example.
+
+### 10. Write outreach messages (Gmail & LinkedIn)
+
+Produce two short, plain-text cold-outreach/referral-style messages addressed to an
+employee at the target company (a recruiter, hiring manager, or any employee — not
+necessarily HR) — not a repeat of the cover letter. Tone: "I applied for this role, saw
+you're at the company, would love a referral or a quick chat," not a formal
+application.
+
+**Both messages must contain these 4 tokens verbatim** wherever the recipient's name,
+the role, the company, or the job link would go — a downstream mail-merge step
+substitutes them later, so **never invent a real name or fill these in yourself**:
+`{{outreachEmployeeName}}`, `{{jobTitle}}`, `{{companyName}}`, `{{jobLink}}`.
+
+- **Gmail** (`<FileName>_Gmail.txt`): starts with a `Subject:` line, 3–5 sentences,
+  may reference 1–2 of the strongest JD-matched keywords/evidence for credibility.
+- **LinkedIn** (`<FileName>_LinkedIn.txt`): no subject line, 2–3 sentences, kept under
+  ~500 characters — LinkedIn messages are read on mobile and are effectively capped,
+  so stay tight regardless of the exact platform limit.
+
+Both close with just the candidate's name (no phone/email — the channel itself already
+carries that context); reference only the sharpest 1–2 matches, not the full
+cover-letter pitch. Same honesty rules as everywhere else — no new claims beyond what's
+in the tailored resume. See `references/tailoring-guide.md` (§"Cover letter & outreach
+message guidelines") for templates.
+
+**Never hard-wrap a paragraph onto multiple lines.** Each paragraph must be written as
+one single unbroken line of text (a blank line separates paragraphs, e.g. before
+`Thanks so much,`). Gmail and LinkedIn both render a mid-paragraph newline as a hard
+line break, not a reflowable wrap, so a paragraph written across several source lines
+displays broken/choppy to the recipient. This matters more than usual here because a
+downstream mail-merge step sends these verbatim — there's no editor pass to fix it
+before it goes out.
+
+### 11. Report to the user
 
 Summarize concisely:
-- The file(s) produced and where.
+- The file(s) produced and where — resume (docx/pdf/json), cover letter, and the
+  Gmail + LinkedIn outreach messages.
 - Which JD priorities you emphasized and the framing/summary you chose.
 - Keyword coverage (e.g. "18/20 JD terms present").
 - **Honest gaps**: JD terms the candidate doesn't demonstrate, listed plainly, with a
-  one-line note that these were intentionally not fabricated.
+  one-line note that these were intentionally not fabricated. For any gap you covered
+  with an **adjacent skill** (step 4 — e.g. JD wanted RabbitMQ, you surfaced Kafka),
+  say so explicitly: name the JD term as a gap and the in-domain equivalent you led with.
 - Any judgment calls (e.g. represented Kubernetes as "working knowledge" per the
   ground truth despite the JD asking for more).
 - Any keyword you backed with a pulled-forward compact work entry rather than a full

@@ -1,10 +1,10 @@
 {
   "schemaVersion": "1.0.0",
   "theme": "corporate-navy",
-  "sectionOrder": ["summary", "skills", "work", "education", "openSource", "projects", "languages"],
+  "sectionOrder": ["summary", "skills", "work", "projects", "education"],
   "basics": {
     "name": "Priyanka Chatterjee",
-    "label": "Golang Backend Engineer — 3.5+ Years",
+    "label": "Golang Backend Engineer · 9,300★ Open-Source Contributor · Go · Kafka · AWS · 3.5+ Years",
     "email": "priyankachatterjee9075@gmail.com",
     "phone": "+91 8617262536",
     "url": "https://priyanka-chatterjee-2000.github.io",
@@ -15,7 +15,7 @@
     ],
     "activeSummary": "default",
     "summaries": {
-      "default": "Backend Software Engineer building distributed, event-driven systems in Go across AWS, Azure, GCP, and OCI; core contributor to four Go-based open-source products (9,300+ GitHub stars, 120+ merged PRs) with shipped impact: 30% throughput gains, 70-90% resource-discovery latency cuts, and 40% query-performance improvements."
+      "default": "Accomplished Backend Software Engineer with 3.5+ years building distributed, event-driven systems in Go across AWS, Azure, GCP, and OCI. Core contributor to four Go-based open-source products at Turbot (120+ merged PRs, 9,300+ GitHub stars), shipping a Kafka-backed event pipeline and Tailpipe throughput features that lifted log processing 30% to 1,000+ logs/second."
     }
   },
   "skills": [
@@ -34,12 +34,21 @@
         { "position": "Junior Software Developer Intern", "dateDisplay": "August 2022 – July 2023" }
       ],
       "highlights": [
+        "Core contributor across all four Turbot open-source products (Steampipe, Powerpipe, Flowpipe, Tailpipe) — 120+ merged pull requests and 4,200+ commits across 79 repositories, with 9,300+ combined GitHub stars.",
         "Designed and developed an internal REST API microservice in Go using the Gin framework to power the backend of Turbot Guardrails; secured endpoints with JWT client-token authentication, containerized with Docker, deployed to AWS EC2, and served as a gRPC client for internal microservices.",
         "Built a Kafka-based, fire-and-forget event-driven pipeline where consumers asynchronously processed policy-enforcement events and fired a webhook once a policy was enforced; added a dead-letter queue (DLQ) to capture recurring failures.",
         "Engineered core features for Tailpipe, a Go-based observability CLI on DuckDB + Parquet, lifting log-processing throughput 30% to 1,000+ logs per second and eliminating out-of-memory failures.",
         "Optimized complex PostgreSQL queries powering compliance audits, improving query performance 40% and eliminating a class of false-positive findings.",
         "Owned release engineering for four open-source Go CLIs, unifying GitHub Actions workflows and shipping HCL function-call support by extending the shared pipe-fittings Go library."
       ]
+    }
+  ],
+  "projects": [
+    {
+      "name": "Lila Tic-Tac-Toe — Real-Time Multiplayer Game",
+      "dateDisplay": "2026",
+      "description": "Nakama game server (Go core + TS runtime) on Fly.io with PostgreSQL; server-authoritative anti-cheat over WebSocket, mode-aware matchmaking, tick-based turn timer, and a top-10 leaderboard.",
+      "links": [{ "label": "repo/live", "url": "https://priyanka-chatterjee-2000.github.io" }]
     }
   ],
   "education": [
@@ -50,23 +59,5 @@
       "dateDisplay": "August 2019 – May 2023",
       "score": "CGPA: 9.28"
     }
-  ],
-  "openSource": {
-    "headline": "Core contributor across all four Turbot Go-based open-source products (Steampipe, Powerpipe, Flowpipe, Tailpipe): 120+ merged PRs and 4,200+ commits across 79 repositories, with 9,300+ combined GitHub stars.",
-    "url": "https://github.com/pulls?q=author%3APriyanka-Chatterjee-2000+is%3Apr+is%3Amerged+org%3Aturbot",
-    "urlLabel": "merged PR history"
-  },
-  "projects": [
-    {
-      "name": "Lila Tic-Tac-Toe — Real-Time Multiplayer Game",
-      "dateDisplay": "2026",
-      "description": "Nakama game server (Go core + TS runtime) on Fly.io with PostgreSQL; server-authoritative anti-cheat over WebSocket, mode-aware matchmaking, tick-based turn timer, and a top-10 leaderboard.",
-      "links": [{ "label": "repo/live", "url": "https://priyanka-chatterjee-2000.github.io" }]
-    }
-  ],
-  "languages": [
-    { "language": "English", "fluency": "fluent" },
-    { "language": "Bengali", "fluency": "native" },
-    { "language": "Hindi", "fluency": "fluent" }
   ]
 }
