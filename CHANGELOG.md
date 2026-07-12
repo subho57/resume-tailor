@@ -1,3 +1,10 @@
+## [1.1.1](https://github.com/subho57/resume-builder/compare/v1.1.0...v1.1.1) (2026-07-12)
+
+
+### Bug Fixes
+
+* removed any providing actual types ([a99a1bf](https://github.com/subho57/resume-builder/commit/a99a1bff8a230bc100cb17fc6d8cbc2e6f3f40c9))
+
 # [1.1.0](https://github.com/subho57/resume-builder/compare/v1.0.0...v1.1.0) (2026-07-12)
 
 
