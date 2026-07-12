@@ -5,7 +5,7 @@
 
 declare module "fs" {
   export function readFileSync(path: string, encoding: string): string;
-  export function writeFileSync(path: string, data: any, encoding?: string): void;
+  export function writeFileSync(path: string, data: string | Buffer, encoding?: string): void;
   export function existsSync(path: string): boolean;
   export function mkdirSync(path: string, opts?: { recursive?: boolean }): void;
   export function mkdtempSync(prefix: string): string;
@@ -21,7 +21,8 @@ declare module "os" {
   export function tmpdir(): string;
 }
 declare module "child_process" {
-  export function execFileSync(file: string, args?: string[], opts?: any): any;
+  export function execFileSync(file: string, args?: string[], opts?: { encoding: string; cwd?: string; stdio?: string }): string;
+  export function execFileSync(file: string, args?: string[], opts?: { encoding?: undefined; cwd?: string; stdio?: string }): Buffer;
 }
 
 declare const __dirname: string;
@@ -32,10 +33,10 @@ declare const process: {
   env: Record<string, string | undefined>;
 };
 declare const console: {
-  log(...args: any[]): void;
-  warn(...args: any[]): void;
-  error(...args: any[]): void;
+  log(...args: unknown[]): void;
+  warn(...args: unknown[]): void;
+  error(...args: unknown[]): void;
 };
 declare class Buffer {}
-declare const require: any;
-declare const module: any;
+declare const require: (id: string) => unknown;
+declare const module: { exports: unknown };

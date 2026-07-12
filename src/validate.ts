@@ -12,17 +12,26 @@
 
 export interface Warning { path: string; message: string; }
 
-type JSONValue = any;
+export interface JsonSchema {
+  type?: string | string[];
+  oneOf?: JsonSchema[];
+  enum?: unknown[];
+  format?: string;
+  default?: unknown;
+  properties?: Record<string, JsonSchema>;
+  additionalProperties?: boolean | JsonSchema;
+  items?: JsonSchema;
+}
 
-const isObj = (v: any) => v !== null && typeof v === "object" && !Array.isArray(v);
+const isObj = (v: unknown): v is Record<string, unknown> => v !== null && typeof v === "object" && !Array.isArray(v);
 
-function typeOf(v: any): string {
+function typeOf(v: unknown): string {
   if (v === null) return "null";
   if (Array.isArray(v)) return "array";
   return typeof v; // "string" | "number" | "boolean" | "object"
 }
 
-function typeMatches(v: any, t: string): boolean {
+function typeMatches(v: unknown, t: string): boolean {
   if (t === "integer") return typeof v === "number" && Number.isInteger(v);
   if (t === "number") return typeof v === "number";
   if (t === "array") return Array.isArray(v);
@@ -32,7 +41,7 @@ function typeMatches(v: any, t: string): boolean {
 
 // Attempt a scalar coercion toward one of the allowed types. Returns
 // { changed, value }. Mirrors Ajv coerceTypes for the common LLM-output cases.
-function coerce(v: any, types: string[]): { changed: boolean; value: any } {
+function coerce(v: unknown, types: string[]): { changed: boolean; value: unknown } {
   for (const t of types) {
     if (typeMatches(v, t)) return { changed: false, value: v };
   }
@@ -58,15 +67,16 @@ function coerce(v: any, types: string[]): { changed: boolean; value: any } {
  * Validate `data` against `schema`, MUTATING data in place to apply defaults and
  * coercions. Returns collected warnings. Never throws for content violations.
  */
-export function validate(schema: any, data: any, warnings: Warning[] = [], path = "$"): Warning[] {
-  if (!schema || typeof schema !== "object") return warnings;
+export function validate(schema: unknown, data: unknown, warnings: Warning[] = [], path = "$"): Warning[] {
+  if (!isObj(schema)) return warnings;
+  const s = schema as JsonSchema;
 
   // oneOf: pick the first matching branch by type; if none match, warn but keep data.
-  if (Array.isArray(schema.oneOf)) {
-    const branch = schema.oneOf.find((b: any) => {
+  if (Array.isArray(s.oneOf)) {
+    const branch = s.oneOf.find((b) => {
       if (!b.type) return true;
       const types = Array.isArray(b.type) ? b.type : [b.type];
-      return types.some((t: string) => typeMatches(data, t));
+      return types.some((t) => typeMatches(data, t));
     });
     if (branch) return validate(branch, data, warnings, path);
     warnings.push({ path, message: `value did not match any oneOf branch` });
@@ -74,8 +84,8 @@ export function validate(schema: any, data: any, warnings: Warning[] = [], path 
   }
 
   // type check + coercion
-  if (schema.type) {
-    const types: string[] = Array.isArray(schema.type) ? schema.type : [schema.type];
+  if (s.type) {
+    const types: string[] = Array.isArray(s.type) ? s.type : [s.type];
     if (data !== undefined && !types.some((t) => typeMatches(data, t))) {
       const c = coerce(data, types);
       if (c.changed) {
@@ -92,22 +102,21 @@ export function validate(schema: any, data: any, warnings: Warning[] = [], path 
   }
 
   // enum
-  if (Array.isArray(schema.enum) && data !== undefined) {
-    if (!schema.enum.includes(data)) {
-      warnings.push({ path, message: `value "${data}" not in enum [${schema.enum.join(", ")}]` });
+  if (Array.isArray(s.enum) && data !== undefined) {
+    if (!s.enum.includes(data)) {
+      warnings.push({ path, message: `value "${String(data)}" not in enum [${s.enum.join(", ")}]` });
     }
   }
 
   // format (advisory only)
-  if (schema.format && typeof data === "string") {
-    const ok = checkFormat(schema.format, data);
-    if (!ok) warnings.push({ path, message: `value does not look like a valid ${schema.format}` });
+  if (s.format && typeof data === "string") {
+    const ok = checkFormat(s.format, data);
+    if (!ok) warnings.push({ path, message: `value does not look like a valid ${s.format}` });
   }
 
   // object: apply defaults, recurse into properties, honor additionalProperties
-  if (isObj(schema.properties) && isObj(data)) {
-    for (const [key, subRaw] of Object.entries<any>(schema.properties)) {
-      const sub = subRaw as any;
+  if (s.properties && isObj(data)) {
+    for (const [key, sub] of Object.entries(s.properties)) {
       if (!(key in data) && sub && "default" in sub) {
         // deep-clone defaults so shared refs aren't mutated
         data[key] = JSON.parse(JSON.stringify(sub.default));
@@ -128,31 +137,32 @@ export function validate(schema: any, data: any, warnings: Warning[] = [], path 
         validate(sub, data[key], warnings, childPath);
       }
     }
-    if (schema.additionalProperties === false) {
-      const allowed = new Set(Object.keys(schema.properties || {}));
+    if (s.additionalProperties === false) {
+      const allowed = new Set(Object.keys(s.properties || {}));
       for (const key of Object.keys(data)) {
         if (!allowed.has(key)) warnings.push({ path: `${path}.${key}`, message: `unknown property (not allowed by theme schema)` });
       }
-    } else if (isObj(schema.additionalProperties)) {
-      const declared = new Set(Object.keys(schema.properties || {}));
+    } else if (isObj(s.additionalProperties)) {
+      const declared = new Set(Object.keys(s.properties || {}));
       for (const key of Object.keys(data)) {
-        if (!declared.has(key)) validate(schema.additionalProperties, data[key], warnings, `${path}.${key}`);
+        if (!declared.has(key)) validate(s.additionalProperties, data[key], warnings, `${path}.${key}`);
       }
     }
   }
 
   // array items
-  if (schema.items && Array.isArray(data)) {
+  if (s.items && Array.isArray(data)) {
+    const items = s.items;
     data.forEach((el, i) => {
       // scalar coercion for array elements
-      if (schema.items.type && !Array.isArray(schema.items.type)) {
-        const t = schema.items.type;
+      if (items.type && !Array.isArray(items.type)) {
+        const t = items.type;
         if (!typeMatches(el, t)) {
           const c = coerce(el, [t]);
           if (c.changed) { warnings.push({ path: `${path}[${i}]`, message: `coerced to ${t}` }); data[i] = c.value; }
         }
       }
-      validate(schema.items, data[i], warnings, `${path}[${i}]`);
+      validate(items, data[i], warnings, `${path}[${i}]`);
     });
   }
 

@@ -5,8 +5,9 @@ import {
   VerticalAlign, LevelFormat,
   CommentRangeStart, CommentRangeEnd, CommentReference,
 } from "docx";
+import type { FileChild, ParagraphChild, ICommentOptions } from "docx";
 import {
-  ResumeContent, ResolvedTheme, SectionName, Highlight, Work, Education, Role,
+  ResumeContent, ResolvedTheme, SectionName, Highlight, Work, Education, Role, ProjectLink,
 } from "./types";
 
 const EN = "\u2013";  // en dash
@@ -18,8 +19,8 @@ const ptToHalf = (pt: number) => Math.round(pt * 2);   // docx size unit = half-
 const ptToTwip = (pt: number) => Math.round(pt * 20);  // spacing unit = twentieths of a point
 
 // Defensive coercions so malformed/partial content never throws (best-effort render).
-const asArray = <T,>(v: any): T[] => (Array.isArray(v) ? v : []);
-const asStr = (v: any): string => (typeof v === "string" ? v : v == null ? "" : String(v));
+const asArray = <T,>(v: unknown): T[] => (Array.isArray(v) ? v : []);
+const asStr = (v: unknown): string => (typeof v === "string" ? v : v == null ? "" : String(v));
 
 // Section titles as displayed (ALL CAPS applied at render).
 const SECTION_TITLES: Record<SectionName, string> = {
@@ -108,7 +109,7 @@ export function renderResume(content: ResumeContent, theme: ResolvedTheme, keywo
   }
 
   // ---- comment registry (plain-number ids -> avoids the v9 [object Object] bug) ----
-  const commentsChildren: any[] = [];
+  const commentsChildren: ICommentOptions[] = [];
   let nextCommentId = 0;
   const addComment = (text: string): number => {
     const id = nextCommentId++;
@@ -147,7 +148,7 @@ export function renderResume(content: ResumeContent, theme: ResolvedTheme, keywo
     children: [new TextRun({ text: title.toUpperCase(), font: theme.fontFamily, bold: true, color: theme.accent, size: ptToHalf(theme.sizeSectionHeading) })],
   });
 
-  const bullet = (children: any[]) => new Paragraph({
+  const bullet = (children: ParagraphChild[]) => new Paragraph({
     numbering: { reference: "bullets", level: 0 },
     spacing: { after: ptToTwip(theme.bulletAfter), ...lineRule(theme.lineHeight) },
     children,
@@ -169,7 +170,7 @@ export function renderResume(content: ResumeContent, theme: ResolvedTheme, keywo
   });
 
   // Wrap a set of runs in a comment (flagged content).
-  const commentedParagraph = (runs: any[], commentText: string, opts: { bullet?: boolean } = {}) => {
+  const commentedParagraph = (runs: ParagraphChild[], commentText: string, opts: { bullet?: boolean } = {}) => {
     const id = addComment(commentText);
     const kids = [new CommentRangeStart(id), ...runs, new CommentRangeEnd(id), new TextRun({ children: [new CommentReference(id)] })];
     if (opts.bullet) {
@@ -178,7 +179,7 @@ export function renderResume(content: ResumeContent, theme: ResolvedTheme, keywo
     return new Paragraph({ spacing: { after: ptToTwip(1) }, children: kids });
   };
 
-  const children: any[] = [];
+  const children: FileChild[] = [];
 
   // ================= HEADER (two-column table, zeroed margins) =================
   const b = content.basics || {};
@@ -194,8 +195,8 @@ export function renderResume(content: ResumeContent, theme: ResolvedTheme, keywo
     if (loc) leftChildren.push(new Paragraph({ children: [run(loc, { size: theme.sizeSmall })] }));
     if (!leftChildren.length) leftChildren.push(new Paragraph({ children: [run("")] }));
 
-    const rightChildren: any[] = [];
-    const rline = (kids: any[]) => new Paragraph({ alignment: AlignmentType.RIGHT, spacing: { after: ptToTwip(0.5) }, children: kids });
+    const rightChildren: Paragraph[] = [];
+    const rline = (kids: ParagraphChild[]) => new Paragraph({ alignment: AlignmentType.RIGHT, spacing: { after: ptToTwip(0.5) }, children: kids });
     if (b.phone) rightChildren.push(rline([link(b.phone, "tel:" + b.phone.replace(/\s+/g, ""), theme.sizeSmall)]));
     if (b.email) rightChildren.push(rline([link(b.email, "mailto:" + b.email, theme.sizeSmall)]));
     (b.profiles || []).forEach((p) => {
@@ -339,7 +340,7 @@ export function renderResume(content: ResumeContent, theme: ResolvedTheme, keywo
         if (os.noteFlagged) children.push(commentedParagraph([run(ats(os.note, theme.nonBreakingHyphens), { italics: true, size: theme.sizeSmall })], "Provenance note: distinguishes independently verified PRs from self-reported aggregate figures."));
         else children.push(new Paragraph({ spacing: { after: ptToTwip(2.5), ...lineRule(theme.lineHeight) }, children: [run(ats(os.note, theme.nonBreakingHyphens), { italics: true, size: theme.sizeSmall })] }));
       }
-      asArray<string>(os.items).forEach((it) => children.push(bullet([run(ats(it, theme.nonBreakingHyphens))])));
+      asArray<string>(os.items).forEach((it) => { children.push(bullet([run(ats(it, theme.nonBreakingHyphens))])); });
       if (os.url) children.push(new Paragraph({ spacing: { after: ptToTwip(2) }, children: [run("Full merged-PR history: ", { size: theme.sizeSmall }), link(os.urlLabel || os.url, os.url, theme.sizeSmall)] }));
     },
     projects: () => {
@@ -352,10 +353,10 @@ export function renderResume(content: ResumeContent, theme: ResolvedTheme, keywo
         children.push(new Paragraph({ spacing: { before: ptToTwip(3), after: ptToTwip(1) }, children: head }));
         if (p.association) children.push(new Paragraph({ spacing: { after: ptToTwip(1) }, children: [run(p.association, { italics: true, size: theme.sizeSmall })] }));
         if (p.description) children.push(new Paragraph({ spacing: { after: ptToTwip(2), ...lineRule(theme.lineHeight) }, children: textRuns(ats(p.description, theme.nonBreakingHyphens)) }));
-        asArray<string>(p.highlights).forEach((h) => children.push(bullet(textRuns(ats(h, theme.nonBreakingHyphens)))));
+        asArray<string>(p.highlights).forEach((h) => { children.push(bullet(textRuns(ats(h, theme.nonBreakingHyphens)))); });
         if (asArray(p.links).length) {
-          const linkRuns: any[] = [];
-          asArray(p.links).forEach((u: any, i: number) => { if (i) linkRuns.push(run("  ·  ", { size: theme.sizeSmall })); linkRuns.push(link(u.label || u.url || "link", u.url || "#", theme.sizeSmall)); });
+          const linkRuns: ParagraphChild[] = [];
+          asArray<ProjectLink>(p.links).forEach((u, i) => { if (i) linkRuns.push(run("  ·  ", { size: theme.sizeSmall })); linkRuns.push(link(u.label || u.url || "link", u.url || "#", theme.sizeSmall)); });
           children.push(new Paragraph({ spacing: { after: ptToTwip(2) }, children: linkRuns }));
         }
       });
@@ -369,7 +370,7 @@ export function renderResume(content: ResumeContent, theme: ResolvedTheme, keywo
         else children.push(new Paragraph({ spacing: { after: ptToTwip(2.5), ...lineRule(theme.lineHeight) }, children: [run(content.certificationsNote, { italics: true, size: theme.sizeSmall })] }));
       }
       cf.forEach((c) => {
-        const kids: any[] = [run(`${c.title || ""}${c.issuer ? " — " + c.issuer : ""}${c.date ? " (" + c.date + ")" : ""}  `)];
+        const kids: ParagraphChild[] = [run(`${c.title || ""}${c.issuer ? " — " + c.issuer : ""}${c.date ? " (" + c.date + ")" : ""}  `)];
         if (c.url) kids.push(link("[" + (c.urlLabel || "certificate") + "]", c.url, theme.sizeSmall));
         children.push(bullet(kids));
       });
@@ -397,9 +398,9 @@ export function renderResume(content: ResumeContent, theme: ResolvedTheme, keywo
       const cc = content.companyContext || [];
       if (!cc.length) return;
       children.push(sectionHeading(SECTION_TITLES.companyContext));
-      cc.forEach((c) => children.push(new Paragraph({ spacing: { before: ptToTwip(2), after: ptToTwip(1.5), ...lineRule(theme.lineHeight) }, children: [
+      cc.forEach((c) => { children.push(new Paragraph({ spacing: { before: ptToTwip(2), after: ptToTwip(1.5), ...lineRule(theme.lineHeight) }, children: [
         run((c.name || "") + " — ", { bold: true }), run(c.text || ""),
-      ] })));
+      ] })); });
     },
   };
 

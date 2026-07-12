@@ -21,7 +21,7 @@ const D = {
   autofit: { minBodySize: 9.5, minMargin: 0.4, fontStep: 0.5, marginStep: 0.05, spacingStep: 0.1, maxIterations: 40 },
 };
 
-const num = (v: any, fallback: number): number => (typeof v === "number" && !Number.isNaN(v) ? v : fallback);
+const num = (v: unknown, fallback: number): number => (typeof v === "number" && !Number.isNaN(v) ? v : fallback);
 
 export function resolveTheme(t: Theme | undefined): ResolvedTheme {
   t = t || {};

@@ -36,7 +36,7 @@ import * as fs from "fs";
 import * as path from "path";
 import * as os from "os";
 import { ResumeContent, Theme } from "./types";
-import { validate, Warning } from "./validate";
+import { validate, Warning, JsonSchema } from "./validate";
 import { resolveTheme } from "./theme";
 import { renderResume } from "./render";
 import { packDocx, convertToPdf, countPdfPages, checkPdfToolchain } from "./pack";
@@ -111,10 +111,10 @@ function parseArgs(argv: string[]): Args {
       case "--theme-schema": a.themeSchema = next(); break;
       case "--strict": a.strict = true; break;
       case "--quiet": a.quiet = true; break;
-      case "-h": case "--help": printHelp(); process.exit(0);
-      case "-v": case "--version": console.log(pkg.version); process.exit(0);
-      case "--install-skill": installSkill(); process.exit(0);
-      default: console.error(`Unknown option: ${arg}`); printHelp(); process.exit(2);
+      case "-h": case "--help": printHelp(); process.exit(0); break;
+      case "-v": case "--version": console.log(pkg.version); process.exit(0); break;
+      case "--install-skill": installSkill(); process.exit(0); break;
+      default: console.error(`Unknown option: ${arg}`); printHelp(); process.exit(2); break;
     }
   }
   return a;
@@ -144,8 +144,8 @@ function installSkill() {
   console.log(`  Files: ${Object.keys(SKILL_BUNDLE).join(", ")}`);
 }
 
-function readJson(p: string): any {
-  return JSON.parse(fs.readFileSync(p, "utf-8"));
+function readJson<T = unknown>(p: string): T {
+  return JSON.parse(fs.readFileSync(p, "utf-8")) as T;
 }
 
 function resolveThemePath(themeArg: string | undefined, contentTheme: string | undefined, root: string): string | undefined {
@@ -161,7 +161,7 @@ function resolveThemePath(themeArg: string | undefined, contentTheme: string | u
 function printWarnings(label: string, warnings: Warning[] | string[], quiet: boolean) {
   if (quiet || !warnings.length) return;
   console.warn(`\n⚠  ${label} (${warnings.length}):`);
-  for (const w of warnings as any[]) {
+  for (const w of warnings) {
     if (typeof w === "string") console.warn(`   - ${w}`);
     else console.warn(`   - ${w.path}: ${w.message}`);
   }
@@ -175,8 +175,8 @@ async function main() {
   if (!fs.existsSync(args.content)) { console.error(`Error: content file not found: ${args.content}`); process.exit(2); }
 
   // --- load + validate content (best-effort) ---
-  const content: ResumeContent = readJson(args.content);
-  const contentSchema = fs.existsSync(args.schema) ? readJson(args.schema) : resumeSchemaBuiltin;
+  const content = readJson<ResumeContent>(args.content);
+  const contentSchema = fs.existsSync(args.schema) ? readJson<JsonSchema>(args.schema) : resumeSchemaBuiltin;
   let contentWarnings: Warning[] = validate(contentSchema, content);
   printWarnings("Content validation warnings", contentWarnings, args.quiet);
 
@@ -193,14 +193,14 @@ async function main() {
   } else {
     const themePath = resolveThemePath(args.theme, content.theme, root);
     if (themePath) {
-      themeRaw = readJson(themePath);
+      themeRaw = readJson<Theme>(themePath);
       themeSource = path.basename(themePath);
     } else if (themeName) {
       console.warn(`⚠  Theme "${themeName}" not found; using built-in defaults.`);
     }
   }
   if (themeSource) {
-    const themeSchema = fs.existsSync(args.themeSchema) ? readJson(args.themeSchema) : themeSchemaBuiltin;
+    const themeSchema = fs.existsSync(args.themeSchema) ? readJson<JsonSchema>(args.themeSchema) : themeSchemaBuiltin;
     const themeWarnings = validate(themeSchema, themeRaw);
     printWarnings(`Theme validation warnings (${themeSource})`, themeWarnings, args.quiet);
     contentWarnings = contentWarnings.concat(themeWarnings);
