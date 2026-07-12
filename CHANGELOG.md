@@ -1,3 +1,10 @@
+# [1.1.0](https://github.com/subho57/resume-builder/compare/v1.0.0...v1.1.0) (2026-07-12)
+
+
+### Features
+
+* add --install-skill to embed the JD-tailoring skill in the binary ([8248531](https://github.com/subho57/resume-builder/commit/82485313be4024821190e86979e9e0796f543f9e))
+
 # 1.0.0 (2026-07-12)
 
 
