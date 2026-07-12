@@ -22,6 +22,7 @@
 //   --theme-schema <path>       Theme schema (default: schema/theme.schema.json).
 //   --strict                    Exit non-zero if any validation warnings occur.
 //   --quiet                     Suppress warning output.
+//   --version, -v               Print the version and exit.
 //
 // Behavior: validation is BEST-EFFORT — warnings are printed, defaults applied,
 // obvious type mismatches coerced, and the resume is rendered from whatever
@@ -46,6 +47,7 @@ import resumeSchemaBuiltin from "../schema/resume.schema.json";
 import themeSchemaBuiltin from "../schema/theme.schema.json";
 import corporateNavyBuiltin from "../themes/corporate-navy.theme.json";
 import slateCompactBuiltin from "../themes/slate-compact.theme.json";
+import pkg from "../package.json";
 
 // Bare `--theme <name>` resolves here first, before the fs-based lookup below.
 // Adding a new theme preset needs a line here (+ a recompile) to be embedded.
@@ -101,6 +103,7 @@ function parseArgs(argv: string[]): Args {
       case "--strict": a.strict = true; break;
       case "--quiet": a.quiet = true; break;
       case "-h": case "--help": printHelp(); process.exit(0);
+      case "-v": case "--version": console.log(pkg.version); process.exit(0);
       default: console.error(`Unknown option: ${arg}`); printHelp(); process.exit(2);
     }
   }
@@ -110,7 +113,7 @@ function parseArgs(argv: string[]): Args {
 function printHelp() {
   console.log(`resume-build --content <file.json> [--theme <name|path>] [--out <dir>]
                    [--basename <name>] [--auto-fit-to-single-page] [--no-pdf]
-                   [--keywords <comma,list>] [--strict] [--quiet]`);
+                   [--keywords <comma,list>] [--strict] [--quiet] [--version]`);
 }
 
 function readJson(p: string): any {

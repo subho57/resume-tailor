@@ -114,6 +114,38 @@ changing anything in `src/`, `schema/`, or `themes/` — unlike `bun dist/cli.js
 won't pick up edits automatically. Adding a new theme preset also needs a line in
 `src/cli.ts`'s `BUILTIN_THEMES` map to be embedded in future compiles.
 
+## Releases
+
+Prebuilt binaries for Linux, macOS, and Windows (x64 + arm64) are published to
+[GitHub Releases](https://github.com/subho57/resume-builder/releases) by
+`.github/workflows/release.yml` whenever a `vX.Y.Z` tag is pushed. This repo is
+private, so downloading a release asset needs repo access (`gh release download`
+while authenticated, or a browser session logged in with access).
+
+| Asset | Platform |
+|---|---|
+| `build-resume-linux-x64` | Linux, x86_64 |
+| `build-resume-linux-arm64` | Linux, ARM64 |
+| `build-resume-macos-x64` | macOS, Intel |
+| `build-resume-macos-arm64` | macOS, Apple Silicon |
+| `build-resume-windows-x64.exe` | Windows, x86_64 |
+| `build-resume-windows-arm64.exe` | Windows, ARM64 |
+
+A `SHA256SUMS.txt` manifest is attached to each release for integrity verification.
+Download the matching asset, `chmod +x` it (Linux/macOS), put it on PATH, and run
+`build-resume --version` to confirm.
+
+**Cutting a release:** bump `version` in `package.json`, commit, then:
+```bash
+git tag v1.1.0      # must match package.json's version, or the workflow fails the build
+git push --tags
+```
+The workflow cross-compiles all 6 targets from a single Linux runner (Bun downloads
+the target platform's runtime for `--compile`, no per-OS runners needed), verifies the
+tag matches `package.json`'s version, and publishes a GitHub Release with all
+binaries + checksums attached. `workflow_dispatch` runs the same build matrix on
+demand without publishing a release — useful for testing the pipeline itself.
+
 ### Options
 
 | Flag | Meaning |
@@ -127,6 +159,7 @@ won't pick up edits automatically. Adding a new theme preset also needs a line i
 | `--keywords <comma,list>` | Bold these terms wherever they occur in the Summary, Work-experience bullets, and Projects (case-insensitive, whole-term matching — punctuation-safe, so "CI/CD" and "Node.js" match correctly). Not stored in the content or theme JSON; a render-time-only directive, same tier as autofit. Skills/Education/company headers/dates are unaffected. |
 | `--strict` | Exit non-zero if any validation warning occurs (for CI). |
 | `--quiet` | Suppress warning output. |
+| `--version`, `-v` | Print the version (from `package.json`, embedded at compile time) and exit. |
 
 ## The two-JSON contract
 

@@ -1,0 +1,89 @@
+name: Release binaries
+
+on:
+  push:
+    tags:
+      - "v*.*.*"
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - target: bun-linux-x64
+            asset: build-resume-linux-x64
+          - target: bun-linux-arm64
+            asset: build-resume-linux-arm64
+          - target: bun-darwin-x64
+            asset: build-resume-macos-x64
+          - target: bun-darwin-arm64
+            asset: build-resume-macos-arm64
+          - target: bun-windows-x64
+            asset: build-resume-windows-x64.exe
+          - target: bun-windows-arm64
+            asset: build-resume-windows-arm64.exe
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: oven-sh/setup-bun@v2
+        with:
+          bun-version: latest
+
+      - run: bun install
+
+      # Keep the release tag and the embedded --version output from ever drifting
+      # apart: fail loudly rather than publish a binary whose --version disagrees
+      # with the tag it was released under.
+      - name: Verify tag matches package.json version
+        if: startsWith(github.ref, 'refs/tags/')
+        run: |
+          TAG_VERSION="${GITHUB_REF_NAME#v}"
+          PKG_VERSION="$(bun -e "console.log(require('./package.json').version)")"
+          if [ "$TAG_VERSION" != "$PKG_VERSION" ]; then
+            echo "::error::Tag $GITHUB_REF_NAME (version $TAG_VERSION) does not match package.json version $PKG_VERSION"
+            exit 1
+          fi
+
+      # Cross-compiles from this single Linux runner for every target — bun build
+      # --compile downloads the target platform's Bun runtime, it doesn't need to
+      # run on that OS. Bun appends .exe to Windows outputs automatically.
+      - name: Compile ${{ matrix.target }}
+        run: |
+          mkdir -p dist-bin
+          bun build --compile --target=${{ matrix.target }} --outfile=dist-bin/${{ matrix.asset }} ./src/cli.ts
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: ${{ matrix.asset }}
+          path: dist-bin/${{ matrix.asset }}
+          if-no-files-found: error
+
+  release:
+    needs: build
+    if: startsWith(github.ref, 'refs/tags/')
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/download-artifact@v4
+        with:
+          path: artifacts
+
+      - name: Generate checksums
+        run: |
+          cd artifacts
+          find . -type f -exec sha256sum {} \; | sed 's#\./[^/]*/#/#' > ../SHA256SUMS.txt
+          cd ..
+          cat SHA256SUMS.txt
+
+      - name: Create GitHub Release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh release create "$GITHUB_REF_NAME" \
+            artifacts/*/* SHA256SUMS.txt \
+            --title "$GITHUB_REF_NAME" \
+            --generate-notes

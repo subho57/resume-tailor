@@ -1,0 +1,112 @@
+{
+  "schemaVersion": "1.0.0",
+  "theme": "corporate-navy",
+  "sectionOrder": [
+    "summary",
+    "skills",
+    "work",
+    "education"
+  ],
+  "basics": {
+    "name": "Priyanka Chatterjee",
+    "label": "DevOps / Cloud Infrastructure Engineer — AWS · Azure · Docker · Kubernetes · Terraform",
+    "email": "priyankachatterjee9075@gmail.com",
+    "phone": "+91 8617262536",
+    "url": "https://priyanka-chatterjee-2000.github.io",
+    "location": {
+      "display": "Kolkata, West Bengal, India",
+      "city": "Kolkata",
+      "region": "West Bengal",
+      "countryCode": "IN"
+    },
+    "profiles": [
+      {
+        "network": "LinkedIn",
+        "username": "priyanka-9075",
+        "url": "https://linkedin.com/in/priyanka-9075",
+        "display": "linkedin.com/in/priyanka-9075"
+      },
+      {
+        "network": "GitHub",
+        "username": "Priyanka-Chatterjee-2000",
+        "url": "https://github.com/Priyanka-Chatterjee-2000",
+        "display": "github.com/Priyanka-Chatterjee-2000"
+      }
+    ],
+    "summaries": {
+      "devops-infra": "Software engineer with 3+ years building and operating cloud infrastructure and automation across AWS, Azure, and GCP. Hands-on with Infrastructure as Code (Terraform, OpenTofu, HCL), CI/CD pipelines in GitHub Actions, Docker and Kubernetes, and multi-distro Linux tooling; automated cloud governance, migrations, and release workflows to cut manual effort and harden reliability. Core contributor to four open-source cloud-infrastructure products (9,300+ GitHub stars, 120+ merged pull requests)."
+    },
+    "activeSummary": "devops-infra"
+  },
+  "work": [
+    {
+      "name": "Turbot HQ, Inc.",
+      "location": "Remote",
+      "domainNote": "Multi-cloud security, governance, and compliance software; makers of the open-source Steampipe / Powerpipe / Flowpipe / Tailpipe suite and the commercial Turbot Guardrails PSPM platform. Remote-first.",
+      "dateDisplay": "August 2022 – April 2026",
+      "roleDisplay": "senior-only",
+      "roles": [
+        {
+          "position": "Software Engineer I",
+          "dateDisplay": "August 2022 – April 2026"
+        },
+        {
+          "position": "Junior Software Developer Intern",
+          "dateDisplay": "August 2022 – July 2023"
+        }
+      ],
+      "highlights": [
+        "Designed and developed an internal REST API microservice in Go using the Gin framework to power the backend of Turbot Guardrails, a Preventive Security Posture Management (PSPM) SaaS product; secured endpoints with JWT client-token authentication, containerized with Docker, and deployed to AWS EC2.",
+        "Authored multi-cloud compliance modules in HCL + SQL covering 1,000+ resource checks across CIS (AWS v4–v6, Azure v2.1–v4.0, GCP v3–v4, Microsoft 365, Google Workspace, GitHub), NIST, HIPAA, PCI DSS v4, SOC 2, and FedRAMP frameworks, orchestrating infrastructure checks across AWS, Azure, and GCP — cutting enterprise compliance-audit time 50%.",
+        "Built a Claude Code skill automating code refactoring, Terraform-driven integration testing, and deployment; used it to migrate 35+ Azure cloud-governance modules from polling to a push-based, event-driven model via Azure Event Grid, cutting resource-discovery latency 70–90% and eliminating recurring Azure API throttling.",
+        "Owned release engineering for four open-source Go CLIs (Steampipe, Powerpipe, Flowpipe, Tailpipe) — unified GitHub Actions CI/CD release/version workflows, automated Slack release notifications, and GHCR Docker image tagging.",
+        "Added multi-distro Linux smoke tests (ephemeral environments across CentOS, Ubuntu ARM64, macOS) to the GitHub Actions release pipeline, hardening release safety and catching regressions before deployment.",
+        "Resolved a production incident by diagnosing a Go service stuck in a Kubernetes CrashLoopBackOff, coordinating with the platform team to investigate pod logs and status and restore service — reinforcing system resiliency."
+      ]
+    },
+    {
+      "name": "Kredey",
+      "dateDisplay": "2021",
+      "position": "Full-Stack Website Developer (Intern)",
+      "highlights": [
+        "Used Elasticsearch to support full-text and semantic search over a NoSQL Firebase-backed document-sharing platform."
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "University of Engineering & Management (UEM)",
+      "location": "Kolkata, WB, IN",
+      "degreeDisplay": "Bachelor of Technology in Computer Science and Engineering",
+      "dateDisplay": "August 2019 – May 2023",
+      "score": "CGPA: 9.28",
+      "detail": "Relevant Coursework: Shell Scripting in Linux, Data Structures and Algorithms, DBMS, Low-Level Design, High-Level Design"
+    }
+  ],
+  "skills": [
+    {
+      "name": "IaC & DevOps",
+      "keywordsText": "Terraform, OpenTofu, HCL, Docker, Kubernetes (working knowledge; collaborate with platform teams), GHCR, GitHub Actions (CI/CD), Git, Jira"
+    },
+    {
+      "name": "Cloud & Serverless",
+      "keywordsText": "AWS (EC2, Lambda, RDS, S3, SecurityHub, GuardDuty, ControlTower, Shield), Azure (Event Grid), GCP, OCI"
+    },
+    {
+      "name": "Languages & Scripting",
+      "keywordsText": "Go, Python, Bash, SQL, HCL, TypeScript, JavaScript"
+    },
+    {
+      "name": "Databases & Search",
+      "keywordsText": "MongoDB, PostgreSQL, MySQL, DuckDB, Redis, Elasticsearch (full-text search)"
+    },
+    {
+      "name": "Security & Compliance",
+      "keywordsText": "CIS (AWS, Azure, GCP, M365, GitHub, Google Workspace), NIST, HIPAA, PCI DSS v4, SOC 2, FedRAMP; IAM, RBAC, cloud security policies"
+    },
+    {
+      "name": "Observability",
+      "keywordsText": "Datadog, OpenTelemetry (OTel); metrics, logging, tracing, incident triage"
+    }
+  ]
+}

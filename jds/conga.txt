@@ -1,0 +1,125 @@
+Conga Logo
+Back to jobs
+New
+Software Engineer, DevOps
+India - Bangalore
+Run Happpy Agent
+A career that’s the whole package!
+
+At Conga, we’ve built a community where our colleagues can thrive. Here you’ll find opportunities to innovate and support growth through individual and team development, all within an environment where every voice is heard.
+
+Conga lines up commercial operations so companies run as connected, smarter businesses. By unifying the people and processes that drive commerce, Conga aligns pricing, quoting, contracting, rebates, and communications so teams stay in sync and buyers keep moving forward. The result is trusted decisions, consistent buyer experiences, and profitable growth. More than 10,000 customers worldwide, including over 50% of the Fortune 100®, trust Conga when commercial complexity is high and global impact is on the line.
+
+Job Title: Software Engineer, DevOps
+Locations: Bangalore/ Ahmedabad
+Reports to: Manager, Cloud Operations
+
+A quick snapshot…
+
+We are looking for a talented Software Engineer, DevOps, to help us in both Software Development (Dev) & Deployment Operations (Ops). This is a great opportunity for someone who is looking to use his or her expertise in building and managing CI/CD pipelines.
+
+Why it’s a big deal…
+
+This is one of those critical roles in the team where the resource will be involved in both development & deployment operations and work individually, solving multiple challenges, and learning new technologies & programming languages in the market by gaining the required certifications. This role suits an individual who is passionate about owning & solving challenges in DevOps by coordinating with multiple teams, processes, products, etc.
+
+Are you the person we’re looking for?
+
+Engineering and Architecture. You should have 2-5 years of experience in the DevOps field and good hands-on experience in AWS/ Azure Cloud. Work closely with these teams to develop systems that focus on scalability, high performance, and security. Build end-to-end documentation to ensure visibility, and resiliency throughout the system.
+
+DevOps Automation. You should have hands-on experience with tools like Docker, Kubernetes, Helm, ELK Stack, and MongoDB. Proficiency in writing Shell/PowerShell scripts and use of automation, and orchestrating infrastructure (Terraform) changes across all clouds is desired.
+
+Agro CD, Prometheus and Grafana. You are good in using Argo CD to implement GitOps. You have good experience in using Prometheus and Grafana for observability.
+
+Docker and Kubernetes. You should have sound knowledge of CI/CD Automation tools like Jenkins and Spinnaker for our day-to-day deployment activities for our application services. We utilize Jenkins to automate the creation of Docker images and deploy them into Kubernetes in a fully automated approach.
+
+Education. A bachelor’s degree in Engineering or equivalent.
+
+
+
+Here’s what will give you an edge…
+
+
+Certifications. Cloud certification in AWS/Azure/Kubernetes would be an added advantage.
+
+Confident and deliberate communicator. You have a point of view and you’re completely comfortable defending it to any person or group, regardless of level or status. It’s confidence that comes from experience. And that’s not to say you aren’t open to different views; but, when you feel strongly about a particular matter, you don’t give up easily. You’re at ease with lively debate, in fact, you welcome it. Your points are clear and concise. And you’re equally as respected for your knowledge and expertise as for your style and approach. 
+
+Tools and technology experience.  You have worked with AWS/Azure cloud technologies and have been exposed to cloud architecture and design patterns. You also have experience working with NoSQL DB’s and Elastic search.
+
+#LI-AR1
+
+Did we pique your interest? 
+
+If this sounds like the kind of job you would love in the kind of environment where you would thrive, please click apply. We'd love to hear from you! 
+
+Preferred Resume Format
+
+We accept resumes in any format, we suggest using PDF or plain text. These formats help ensure that your resume’s formatting remains intact, making it easier for our recruiters to review your application promptly.
+
+Don’t meet every requirement for the role?  
+
+Studies have shown that women and members of ethnic minorities are less likely to apply to jobs unless they meet every single qualification. At Conga we are dedicated to building a diverse, inclusive, and authentic workplace, so if you’re excited about this role but your experience doesn’t align perfectly with every qualification in the job description, we encourage you to apply anyway. You just might be the right candidate for this or other roles. 
+
+Additional Information
+Conga is proud to be an Equal Opportunity Employer and provides equal employment opportunities to all employees and applicants regardless of race, color, religion, gender, gender identity, age, national origin, disability, parental or pregnancy status, marriage and civil partnership, sexual orientation, veteran status, or any other characteristic protected by law. We understand interviewing can be stressful for those with disabilities. If reasonable accommodation is needed to allow you to show us your best self, please let your recruiter know as soon as possible. All your information will be kept confidential according to EEO guidelines. Conga is not open to third party solicitation or resumes for our posted FTE positions. Resumes received from third party agencies that are unsolicited will be considered complimentary.
+
+Conga's Applicant Privacy Statement
+
+The information you provide during the application process will be used in accordance with Conga’s Applicant Privacy Statement (https://conga.com/applicant-privacy-statement). By submitting your application, you acknowledge and agree to the terms outlined in this privacy statement.
+
+
+
+
+
+Create a Job Alert
+
+Interested in building your career at Conga? Get future opportunities sent straight to your email.
+
+Create alert
+Apply for this job
+*
+
+indicates a required field
+
+First Name*
+Last Name*
+Email*
+Phone
+Country*
+
+Phone*
+Resume/CV*
+AttachNo file chosen
+Enter manually
+Accepted file types: pdf, doc, docx, txt, rtf
+
+Cover Letter
+AttachNo file chosen
+Enter manually
+Accepted file types: pdf, doc, docx, txt, rtf
+
+LinkedIn Profile
+Will you now or in the future require any sponsorship where this opportunity is located?*
+Select...
+
+Are you related to anyone to who works at Conga*
+Select...
+
+Have you been interviewed by Conga before?*
+Select...
+
+How many years of experience you have in DevOps?*
+Please mention your years of experience in below • Docker & Kubernetes • Helm • Gitops • ArgoCD • MongoDB *
+How many years of Hands-on experience you have in AWS/Azure?*
+Tell me about the cloud environments you've worked in. What was your role in supporting or managing them?*
+What is your current location?*
+What is your preferred location?*
+Select...
+
+What is your current CTC?*
+What is your expected CTC with 10% variable included?*
+What is your official notice period? If you are serving notice or completed, please mention your last working day.*
+
+By checking this box, I agree to allow Conga to store and process my data for the purpose of considering my eligibility regarding my current application for employment.*
+
+By checking this box, I agree to allow Conga to retain my data for future opportunities for employment for up to 365 days after the conclusion of consideration of my current application for employment.
+Powered by

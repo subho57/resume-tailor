@@ -171,6 +171,15 @@ not a real directory, and `schema/`/`themes/` fs lookups would silently fail. Ad
 new theme preset needs a line in `BUILTIN_THEMES` too, or the compiled binary won't
 see it even after `themes/<name>.theme.json` exists on disk.
 
+`--version`/`-v` prints `package.json`'s `version`, statically imported in `cli.ts`
+for the same reason as `BUILTIN_THEMES` (compiled-binary `__dirname` can't fs-read it).
+`.github/workflows/release.yml` cross-compiles all 6 `bun-{linux,darwin,windows}-
+{x64,arm64}` targets from one `ubuntu-latest` runner (Bun downloads the target
+platform's runtime for `--compile`, no per-OS runners needed) on a `vX.Y.Z` tag push,
+checks the tag matches `package.json`'s version before building, and publishes a
+GitHub Release with all 6 binaries + a `SHA256SUMS.txt`. Keep the tag and
+`package.json`'s `version` in sync — the workflow fails loudly if they drift.
+
 **Known bug, not yet root-caused:** under rapid repeated conversions within one
 `--auto-fit-to-single-page` run, `src/pack.ts`'s `convertToPdf`/`countPdfPages` can
 occasionally return a stably-wrong (not flaky) page count for a mid-loop measurement —
