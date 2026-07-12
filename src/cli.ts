@@ -11,7 +11,7 @@
 //                               themes/<name>.theme.json. Overrides content.theme.
 //   --out <dir>                 Output directory (default: ./out).
 //   --basename <name>           Output file base name (default: derived from name).
-//   --auto-fit-to-single-page   Iteratively shrink spacing/margins/font (within
+//   --one-pager                 Iteratively shrink spacing/margins/font (within
 //                               ATS-safe floors) to fit one page; warns if it can't.
 //   --no-pdf                    Skip PDF generation (docx only).
 //   --keywords <comma,list>     Bold these terms wherever they appear in the Summary,
@@ -95,7 +95,7 @@ function parseArgs(argv: string[]): Args {
       case "--theme": a.theme = next(); break;
       case "--out": a.out = path.resolve(next()); break;
       case "--basename": a.basename = next(); break;
-      case "--auto-fit-to-single-page": a.autofit = true; break;
+      case "--one-pager": a.autofit = true; break;
       case "--no-pdf": a.pdf = false; break;
       case "--keywords": a.keywords = next().split(",").map((k) => k.trim()).filter(Boolean); break;
       case "--schema": a.schema = next(); break;
@@ -112,7 +112,7 @@ function parseArgs(argv: string[]): Args {
 
 function printHelp() {
   console.log(`resume-build --content <file.json> [--theme <name|path>] [--out <dir>]
-                   [--basename <name>] [--auto-fit-to-single-page] [--no-pdf]
+                   [--basename <name>] [--one-pager] [--no-pdf]
                    [--keywords <comma,list>] [--strict] [--quiet] [--version]`);
 }
 
@@ -194,7 +194,7 @@ async function main() {
   let finalTheme = theme;
   if (args.autofit) {
     if (!args.pdf) {
-      runtimeWarnings.push("--auto-fit-to-single-page requires PDF rendering to measure pages; ignoring --no-pdf for measurement.");
+      runtimeWarnings.push("--one-pager requires PDF rendering to measure pages; ignoring --no-pdf for measurement.");
     }
     const result = await autofitToSinglePage(content, theme, args.keywords);
     finalTheme = result.finalTheme;

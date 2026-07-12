@@ -217,7 +217,7 @@ bun dist/cli.js \
   --theme corporate-navy \
   --out <output_folder> \
   --basename "<FileName>" \
-  --auto-fit-to-single-page \
+  --one-pager \
   --keywords "<comma,separated,confirmed,terms,from,step,4>"
 ```
 

@@ -83,7 +83,7 @@
     "autofit": {
       "type": "object",
       "additionalProperties": false,
-      "description": "Floors and step sizes bounding the single-page autofit routine (used only when --auto-fit-to-single-page is passed).",
+      "description": "Floors and step sizes bounding the single-page autofit routine (used only when --one-pager is passed).",
       "properties": {
         "minBodySize": { "type": "number", "default": 9.5, "description": "Body font will not shrink below this (pt). ATS-safe floor is ~10pt; 9.5 permitted as a last resort." },
         "minMargin": { "type": "number", "default": 0.4, "description": "Margins will not shrink below this (inches). ATS-safe floor is 0.5in." },

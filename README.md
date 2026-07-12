@@ -48,13 +48,13 @@ Requirements for PDF + autofit: **LibreOffice** (`soffice`) and **Poppler** (`pd
 on PATH, plus a Calibri-metric-compatible font (**Carlito**) installed so page counts
 match across machines. See "## Prerequisites" below for install commands. DOCX
 generation itself has no external dependency and always works; only
-`--auto-fit-to-single-page` and PDF output need these. If either binary is missing,
+`--one-pager` and PDF output need these. If either binary is missing,
 the CLI prints an actionable warning naming exactly what's absent and how to
 install it, rather than silently skipping PDF/autofit.
 
 ## Prerequisites
 
-Only needed for PDF output and `--auto-fit-to-single-page`; DOCX-only builds need
+Only needed for PDF output and `--one-pager`; DOCX-only builds need
 nothing beyond `bun install`.
 
 **macOS:**
@@ -81,7 +81,7 @@ Fonts / Crosextra sources used above.
 bun dist/cli.js --content data/priyanka.resume.json
 
 # A tailored document, forced to one page:
-bun dist/cli.js --content data/tailored-golang.example.json --auto-fit-to-single-page
+bun dist/cli.js --content data/tailored-golang.example.json --one-pager
 
 # Swap themes without touching content:
 bun dist/cli.js --content data/tailored-golang.example.json --theme slate-compact
@@ -99,7 +99,7 @@ For a single `build-resume` command usable from anywhere, without typing
 ```bash
 bun run compile                # bun build --compile --outfile=bin/build-resume ./src/cli.ts
 cp bin/build-resume ~/.bun/bin/   # any directory already on PATH works
-build-resume --content data/priyanka.resume.json --auto-fit-to-single-page
+build-resume --content data/priyanka.resume.json --one-pager
 ```
 
 `bun build --compile` bundles the JS, the Bun runtime, and all npm dependencies
@@ -167,7 +167,7 @@ Download the matching asset, `chmod +x` it (Linux/macOS), put it on PATH, and ru
 | `--theme <name\|path>` | Theme preset — a name (`corporate-navy`) resolved to `themes/<name>.theme.json`, or a `.json` path. Overrides `theme` in the content JSON. |
 | `--out <dir>` | Output directory (default `./out`). |
 | `--basename <name>` | Output filename base (default derived from `basics.name`). |
-| `--auto-fit-to-single-page` | Iteratively shrink spacing, then margins, then font — within ATS-safe floors (10pt body, 0.5in margins by default) — to fit one page. Warns if it can't. |
+| `--one-pager` | Iteratively shrink spacing, then margins, then font — within ATS-safe floors (10pt body, 0.5in margins by default) — to fit one page. Warns if it can't. |
 | `--no-pdf` | Skip PDF (DOCX only). |
 | `--keywords <comma,list>` | Bold these terms wherever they occur in the Summary, Work-experience bullets, and Projects (case-insensitive, whole-term matching — punctuation-safe, so "CI/CD" and "Node.js" match correctly). Not stored in the content or theme JSON; a render-time-only directive, same tier as autofit. Skills/Education/company headers/dates are unaffected. |
 | `--strict` | Exit non-zero if any validation warning occurs (for CI). |
@@ -236,7 +236,7 @@ only a subset and you get a resume built from exactly what's present.
 
 ## Autofit
 
-`--auto-fit-to-single-page` renders, converts to PDF, counts pages with `pdfinfo`, and if
+`--one-pager` renders, converts to PDF, counts pages with `pdfinfo`, and if
 > 1 page shrinks in this order: line-height/section spacing → margins → body font (with
 proportional heading scaling and a 14pt name floor). It stops at the theme's `autofit`
 floors (default 9.5pt body / 0.4in margins; ATS-safe is 10pt / 0.5in) and **warns** if a

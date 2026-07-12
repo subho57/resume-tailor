@@ -9,7 +9,7 @@
     "build": "tsc -p tsconfig.json",
     "compile": "bun build --compile --outfile=bin/build-resume ./src/cli.ts",
     "generate": "bun dist/cli.js --content data/priyanka.resume.json",
-    "generate:onepage": "bun dist/cli.js --content data/priyanka.resume.json --auto-fit-to-single-page"
+    "generate:onepage": "bun dist/cli.js --content data/priyanka.resume.json --one-pager"
   },
   "dependencies": {
     "docx": "9.7.1"
@@ -18,13 +18,13 @@
     "typescript": "^5.0.0",
     "@types/node": "^24.0.0",
     "@types/bun": "latest",
-    "semantic-release": "^24.0.0",
+    "semantic-release": "^25.0.6",
     "@semantic-release/changelog": "^6.0.3",
     "@semantic-release/git": "^10.0.1",
-    "@semantic-release/commit-analyzer": "^13.0.0",
-    "@semantic-release/release-notes-generator": "^14.0.0",
-    "@semantic-release/npm": "^12.0.0",
-    "@semantic-release/github": "^11.0.0"
+    "@semantic-release/commit-analyzer": "^13.0.1",
+    "@semantic-release/release-notes-generator": "^14.1.1",
+    "@semantic-release/npm": "^13.1.5",
+    "@semantic-release/github": "^12.0.9"
   },
   "module": "src/cli.ts",
   "type": "module",

@@ -76,7 +76,7 @@ JD is ambiguous or spans several, bias toward the higher-preference framing.
 
 - **Length:** default to one page for a tailored resume. That's ~4–6 bullets for the
   most recent/relevant role, 2–3 for prior roles, a tight skills block, and 1–2
-  projects. The `--auto-fit-to-single-page` flag will shrink within ATS-safe floors and
+  projects. The `--one-pager` flag will shrink within ATS-safe floors and
   warn if it can't — if it warns, cut bullets, don't shrink into 8pt.
 - **Skills:** reorder groups so JD-relevant ones come first; you may drop groups the JD
   doesn't touch. Never add tools the candidate doesn't list in the superset.

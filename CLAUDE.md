@@ -123,7 +123,7 @@ read it before making schema or renderer changes.
 bun install                    # deps: docx@9.7.1, typescript, @types/node
 bun run build                  # tsc -p tsconfig.json: src/ -> dist/ (commonjs)
 bun dist/cli.js --content data/priyanka.resume.json                       # full ground-truth doc
-bun dist/cli.js --content data/tailored-golang.example.json --auto-fit-to-single-page
+bun dist/cli.js --content data/tailored-golang.example.json --one-pager
 bun dist/cli.js --content <file> --theme slate-compact                   # swap theme only
 bun run compile                # bun build --compile -> bin/build-resume (standalone binary)
 ```
@@ -187,7 +187,7 @@ create a release tag manually** — semantic-release owns both; a manual edit ca
 directly conflict with what it computes on the next run.
 
 **Known bug, not yet root-caused:** under rapid repeated conversions within one
-`--auto-fit-to-single-page` run, `src/pack.ts`'s `convertToPdf`/`countPdfPages` can
+`--one-pager` run, `src/pack.ts`'s `convertToPdf`/`countPdfPages` can
 occasionally return a stably-wrong (not flaky) page count for a mid-loop measurement —
 autofit reports "fit to 1 page" while the actual final PDF is 2. Reproduces identically
 via `bun dist/cli.js` and the compiled binary, so it's a pre-existing pipeline issue,
