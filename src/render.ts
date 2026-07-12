@@ -1,7 +1,7 @@
 import {
   Document, Paragraph, TextRun, ExternalHyperlink,
   Table, TableRow, TableCell, WidthType, BorderStyle, AlignmentType,
-  PositionalTab, PositionalTabAlignment, PositionalTabRelativeTo, PositionalTabLeader,
+  TabStopType,
   VerticalAlign, LevelFormat,
   CommentRangeStart, CommentRangeEnd, CommentReference,
 } from "docx";
@@ -121,13 +121,16 @@ export function renderResume(content: ResumeContent, theme: ResolvedTheme): Rend
     children,
   });
 
-  // A "left ...... right-aligned" line via PositionalTab to the margin.
+  // A "left .......... right-aligned" line. Uses an explicit RIGHT tab stop at the
+  // usable-width position plus a literal tab, which renders correctly in BOTH Word
+  // and LibreOffice. (docx PositionalTab is not honored by LibreOffice, so the date
+  // would otherwise sit mid-line in the PDF.)
   const leftRight = (leftRuns: any[], rightText: string) => new Paragraph({
     spacing: { after: ptToTwip(1) },
+    tabStops: [{ type: TabStopType.RIGHT, position: usableWidth }],
     children: [
       ...leftRuns,
-      new TextRun({ children: [new PositionalTab({ alignment: PositionalTabAlignment.RIGHT, relativeTo: PositionalTabRelativeTo.MARGIN, leader: PositionalTabLeader.NONE })] }),
-      new TextRun({ text: rightText, font: theme.fontFamily, color: theme.body, italics: true, size: ptToHalf(theme.sizeBody) }),
+      new TextRun({ text: "\t" + rightText, font: theme.fontFamily, color: theme.body, italics: true, size: ptToHalf(theme.sizeBody) }),
     ],
   });
 
