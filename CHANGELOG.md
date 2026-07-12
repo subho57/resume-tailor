@@ -1,3 +1,10 @@
+# [1.2.0](https://github.com/subho57/resume-builder/compare/v1.1.2...v1.2.0) (2026-07-12)
+
+
+### Features
+
+* **skill:** add cover letter + outreach messages and align resume structure ([45154fe](https://github.com/subho57/resume-builder/commit/45154fe0b86da65f605f790f05572481c224fc7d))
+
 ## [1.1.2](https://github.com/subho57/resume-builder/compare/v1.1.1...v1.1.2) (2026-07-12)
 
 
