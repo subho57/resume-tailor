@@ -2,12 +2,53 @@ name: Release binaries
 
 on:
   push:
-    tags:
-      - "v*.*.*"
+    branches: [main]
   workflow_dispatch:
 
 jobs:
+  # Determines whether the commits since the last release warrant a new one
+  # (Conventional Commits: fix:/feat:/BREAKING CHANGE, via @semantic-release/commit-
+  # analyzer), and if so: bumps package.json's version, writes CHANGELOG.md, commits
+  # both back to main with [skip ci] (so this doesn't retrigger the workflow), tags,
+  # and creates the GitHub Release (no binary assets yet — those need the version
+  # this job just decided on, so they're built and attached in the jobs below).
+  release:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    outputs:
+      published: ${{ steps.semantic.outputs.new_release_published }}
+      version: ${{ steps.semantic.outputs.new_release_version }}
+      tag: ${{ steps.semantic.outputs.new_release_git_tag }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - uses: oven-sh/setup-bun@v2
+        with:
+          bun-version: latest
+
+      - run: bun install
+
+      - name: Semantic Release
+        id: semantic
+        uses: cycjimmy/semantic-release-action@v4
+        with:
+          extra_plugins: |
+            @semantic-release/changelog
+            @semantic-release/git
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+  # Cross-compiles build-resume for every target from this single Linux runner (bun
+  # build --compile downloads the target platform's Bun runtime, it doesn't need to
+  # run on that OS). Only runs when the release job actually published something, and
+  # checks out main *after* that job's version-bump commit, so each binary's embedded
+  # --version matches the release it belongs to.
   build:
+    needs: release
+    if: needs.release.outputs.published == 'true'
     runs-on: ubuntu-latest
     strategy:
       fail-fast: false
@@ -27,6 +68,8 @@ jobs:
             asset: build-resume-windows-arm64.exe
     steps:
       - uses: actions/checkout@v4
+        with:
+          ref: main
 
       - uses: oven-sh/setup-bun@v2
         with:
@@ -34,22 +77,6 @@ jobs:
 
       - run: bun install
 
-      # Keep the release tag and the embedded --version output from ever drifting
-      # apart: fail loudly rather than publish a binary whose --version disagrees
-      # with the tag it was released under.
-      - name: Verify tag matches package.json version
-        if: startsWith(github.ref, 'refs/tags/')
-        run: |
-          TAG_VERSION="${GITHUB_REF_NAME#v}"
-          PKG_VERSION="$(bun -e "console.log(require('./package.json').version)")"
-          if [ "$TAG_VERSION" != "$PKG_VERSION" ]; then
-            echo "::error::Tag $GITHUB_REF_NAME (version $TAG_VERSION) does not match package.json version $PKG_VERSION"
-            exit 1
-          fi
-
-      # Cross-compiles from this single Linux runner for every target — bun build
-      # --compile downloads the target platform's Bun runtime, it doesn't need to
-      # run on that OS. Bun appends .exe to Windows outputs automatically.
       - name: Compile ${{ matrix.target }}
         run: |
           mkdir -p dist-bin
@@ -61,9 +88,11 @@ jobs:
           path: dist-bin/${{ matrix.asset }}
           if-no-files-found: error
 
-  release:
-    needs: build
-    if: startsWith(github.ref, 'refs/tags/')
+  # Attaches the 6 binaries + a checksum manifest onto the release the `release` job
+  # already created (gh release upload, not create — the release exists already).
+  attach:
+    needs: [release, build]
+    if: needs.release.outputs.published == 'true'
     runs-on: ubuntu-latest
     permissions:
       contents: write
@@ -79,11 +108,10 @@ jobs:
           cd ..
           cat SHA256SUMS.txt
 
-      - name: Create GitHub Release
+      - name: Attach binaries to release
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
-          gh release create "$GITHUB_REF_NAME" \
+          gh release upload "${{ needs.release.outputs.tag }}" \
             artifacts/*/* SHA256SUMS.txt \
-            --title "$GITHUB_REF_NAME" \
-            --generate-notes
+            --repo "${{ github.repository }}"

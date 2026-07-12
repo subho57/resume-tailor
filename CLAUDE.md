@@ -173,12 +173,18 @@ see it even after `themes/<name>.theme.json` exists on disk.
 
 `--version`/`-v` prints `package.json`'s `version`, statically imported in `cli.ts`
 for the same reason as `BUILTIN_THEMES` (compiled-binary `__dirname` can't fs-read it).
-`.github/workflows/release.yml` cross-compiles all 6 `bun-{linux,darwin,windows}-
-{x64,arm64}` targets from one `ubuntu-latest` runner (Bun downloads the target
-platform's runtime for `--compile`, no per-OS runners needed) on a `vX.Y.Z` tag push,
-checks the tag matches `package.json`'s version before building, and publishes a
-GitHub Release with all 6 binaries + a `SHA256SUMS.txt`. Keep the tag and
-`package.json`'s `version` in sync — the workflow fails loudly if they drift.
+
+Releases are fully automatic via `.github/workflows/release.yml` + semantic-release
+(`.releaserc.json`) — every push to `main` is analyzed for Conventional Commits
+(`fix:`/`feat:`/`BREAKING CHANGE:`); if release-worthy, a `release` job bumps
+`package.json`, writes `CHANGELOG.md`, commits both back with `[skip ci]`, tags, and
+creates the GitHub Release, then `build` (needs: release, conditional on
+`published == 'true'`) cross-compiles all 6 `bun-{linux,darwin,windows}-{x64,arm64}`
+targets from one `ubuntu-latest` runner (Bun downloads the target platform's runtime
+for `--compile`) against the now-bumped version, and `attach` uploads the binaries +
+`SHA256SUMS.txt` onto the release. **Never hand-edit `package.json`'s `version` or
+create a release tag manually** — semantic-release owns both; a manual edit can
+directly conflict with what it computes on the next run.
 
 **Known bug, not yet root-caused:** under rapid repeated conversions within one
 `--auto-fit-to-single-page` run, `src/pack.ts`'s `convertToPdf`/`countPdfPages` can

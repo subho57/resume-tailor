@@ -116,9 +116,33 @@ won't pick up edits automatically. Adding a new theme preset also needs a line i
 
 ## Releases
 
-Prebuilt binaries for Linux, macOS, and Windows (x64 + arm64) are published to
-[GitHub Releases](https://github.com/subho57/resume-builder/releases) by
-`.github/workflows/release.yml` whenever a `vX.Y.Z` tag is pushed. This repo is
+Releases are fully automatic — **no manual tagging.** Every push to `main` runs
+`.github/workflows/release.yml`, which uses [semantic-release](https://semantic-release.gitbook.io/)
+to decide whether the commits since the last release warrant a new one, based on
+[Conventional Commits](https://www.conventionalcommits.org/):
+
+- `fix: ...` → patch release
+- `feat: ...` → minor release
+- `feat!: ...` / a `BREAKING CHANGE:` footer → major release
+- `docs:`, `chore:`, `refactor:`, `ci:`, `test:`, etc. → **no release** (by design —
+  this is what makes it "semantic," not "every push produces a release")
+
+When a release fires, semantic-release bumps `package.json`'s `version`, writes
+`CHANGELOG.md`, commits both back to `main` (tagged `[skip ci]`, so that commit
+doesn't retrigger the workflow), creates the git tag, and creates the GitHub Release.
+A follow-up job then cross-compiles all 6 targets (embedding the version just
+decided — this is why the compile step waits for the version-bump commit rather than
+building first) and attaches the binaries + a `SHA256SUMS.txt` manifest.
+
+**To cut a release:** just write commits with the right prefix and push/merge to
+`main`. Nothing else to do. `workflow_dispatch` re-runs the same pipeline on demand
+(e.g. to test it) — it still only publishes if there's something release-worthy.
+
+Don't hand-edit `package.json`'s `version` or create git tags manually — semantic-
+release owns both, and a manual edit can conflict with what it computes next.
+
+Prebuilt binaries are published to
+[GitHub Releases](https://github.com/subho57/resume-builder/releases). This repo is
 private, so downloading a release asset needs repo access (`gh release download`
 while authenticated, or a browser session logged in with access).
 
@@ -134,17 +158,6 @@ while authenticated, or a browser session logged in with access).
 A `SHA256SUMS.txt` manifest is attached to each release for integrity verification.
 Download the matching asset, `chmod +x` it (Linux/macOS), put it on PATH, and run
 `build-resume --version` to confirm.
-
-**Cutting a release:** bump `version` in `package.json`, commit, then:
-```bash
-git tag v1.1.0      # must match package.json's version, or the workflow fails the build
-git push --tags
-```
-The workflow cross-compiles all 6 targets from a single Linux runner (Bun downloads
-the target platform's runtime for `--compile`, no per-OS runners needed), verifies the
-tag matches `package.json`'s version, and publishes a GitHub Release with all
-binaries + checksums attached. `workflow_dispatch` runs the same build matrix on
-demand without publishing a release — useful for testing the pipeline itself.
 
 ### Options
 
