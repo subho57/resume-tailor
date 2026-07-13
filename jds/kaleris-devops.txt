@@ -1,0 +1,46 @@
+DevOps Engineer
+Run Happpy Agent
+Apply
+locations
+Chennai
+Remote India
+time type
+Full time
+posted on
+Posted Today
+job requisition id
+R-100520
+Job Description:
+
+What You Will Do
+
+Create cloud infrastructure in AWS & Kubernetes via automation using IaC such as Terraform, Helm, Github Actions and Spacelift.
+Create and deploy effective observability and monitoring solutions via automation using Monitoring as Code (MaC) such as Terraform, Grafana, and Sumologic.
+Design, develop, and maintain CI/CD pipelines to automate build, test, and deployment processes, utilizing tools such as GitHub Actions and Azure DevOps.
+Collaborate with engineering teams to diagnose, troubleshoot, and deliver innovative solutions to critical production issues, ensuring the reliability and performance of customer-facing systems.
+Work with your colleagues and other engineering teams to propose and implement enhancements that improve scalability, reliability, and developer workflows to internal and/or production infrastructure.
+Use your Platform Engineering/DevOps/SRE experience to prevent incidents from ever happening
+Identify operational processes suitable for automation and drive the implementation of solutions.
+Carry personal responsibility for high-quality changes to a live production infrastructure.
+Create estimates and work plans, then deliver according to those plans in an agile manner.
+Be part of an on-call rotation; occasionally participate during, or outside of, working hours in incident resolution as a subject matter expert.
+Occasionally carry out changes outside of normal working hours.
+Must Have Skills / Experience
+
+Minimum 3 years’ experience of building secure, cloud-native applications using AWS managed services.
+Ability to design, implement, and operate automated deployment pipelines suitable for production environments, ensuring reliability and scalability within an Agile framework.
+Development experience of creating complex AWS services using Terraform and automation pipelines.
+Development experience of creating Kubernetes resources.
+Scripting experience in Python, Bash, and/or PowerShell.
+Linux or windows systems administration.
+Demonstrable experience of delivering modern DevOps practices for the full development lifecycle.
+Additional skills and experience
+
+Redhat OpenShift (OCP) experience, either on-prem or in cloud.
+Experience with multiple cloud vendors (AWS, Azure, Google) is a plus.
+Effective communication in a variety of settings: one on one, small and large groups.
+Adapts approach and demeanour to match the demands of the situation.
+Experience of working as part of a global organization with engineering teams across multiple time-zones and cultures.
+A passion for keeping pace with industry trends, technologies, and their appropriate implementation.
+Fluent in the English language.
+Kaleris is an equal opportunity employer. We celebrate diversity and are committed to creating an inclusive environment for all employees.

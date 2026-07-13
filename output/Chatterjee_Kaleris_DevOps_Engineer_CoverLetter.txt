@@ -1,0 +1,16 @@
+Priyanka Chatterjee
+priyankachatterjee9075@gmail.com | +91 8617262536
+linkedin.com/in/priyanka-9075 | github.com/Priyanka-Chatterjee-2000 | priyanka-chatterjee-2000.github.io
+
+Dear Hiring Manager,
+
+I'm writing to apply for the DevOps Engineer role. At Turbot HQ, I own release engineering end-to-end for four open-source cloud-infrastructure products (9,300+ GitHub stars, 120+ merged PRs) via GitHub Actions CI/CD, and I led an AWS SDK migration across 180+ call sites and 11+ AWS services, keeping production systems supported past AWS SDK v2 end-of-life.
+
+On infrastructure automation, I've used Terraform for integration testing as part of an LLM-driven automation skill I built, which I also used to migrate 35+ Azure cloud-governance modules from polling to push-based eventing via Azure Event Grid, cutting resource-discovery latency 70-90% and eliminating recurring Azure API throttling. On reliability, I added multi-distro Linux smoke tests (CentOS, Ubuntu ARM64, macOS) to our release pipeline to catch regressions before they reach production, and I resolved a live production incident by diagnosing a Kubernetes CrashLoopBackOff, working directly with the platform team to restore service. I'm comfortable across AWS, Azure, and GCP, and containerize services with Docker as a matter of course.
+
+I want to be upfront about scope: my Kubernetes experience is working knowledge gained by collaborating closely with platform teams, rather than authoring complex Kubernetes resources myself, and I haven't worked with Helm, Spacelift, Grafana, Sumologic, Azure DevOps, or Red Hat OpenShift specifically. My GitHub Actions CI/CD and AWS automation experience transfers directly, and I pick up new tools quickly.
+
+Thank you for your consideration — I'd love to discuss further.
+
+Best regards,
+Priyanka Chatterjee

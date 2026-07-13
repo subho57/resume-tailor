@@ -1,0 +1,103 @@
+{
+  "schemaVersion": "1.0.0",
+  "theme": "corporate-navy",
+  "sectionOrder": ["summary", "skills", "work", "education"],
+  "basics": {
+    "name": "Priyanka Chatterjee",
+    "label": "DevOps Engineer · AWS & Multi-Cloud (AWS/Azure/GCP) · Kubernetes · CI/CD Automation · 9,300★ OSS Contributor · 3.5+ Years",
+    "email": "priyankachatterjee9075@gmail.com",
+    "phone": "+91 8617262536",
+    "url": "https://priyanka-chatterjee-2000.github.io",
+    "location": {
+      "display": "Kolkata, West Bengal, India",
+      "city": "Kolkata",
+      "region": "West Bengal",
+      "countryCode": "IN"
+    },
+    "profiles": [
+      {
+        "network": "LinkedIn",
+        "username": "priyanka-9075",
+        "url": "https://linkedin.com/in/priyanka-9075",
+        "display": "linkedin.com/in/priyanka-9075"
+      },
+      {
+        "network": "GitHub",
+        "username": "Priyanka-Chatterjee-2000",
+        "url": "https://github.com/Priyanka-Chatterjee-2000",
+        "display": "github.com/Priyanka-Chatterjee-2000"
+      },
+      {
+        "network": "Portfolio",
+        "url": "https://priyanka-chatterjee-2000.github.io",
+        "display": "priyanka-chatterjee-2000.github.io"
+      }
+    ],
+    "summaries": {
+      "devops-kaleris": "DevOps Engineer with 3.5+ years of experience and expertise in AWS, Kubernetes, Terraform, and CI/CD automation across multi-cloud environments (AWS, Azure, GCP). Owned release engineering and CI/CD automation for four open-source cloud-infrastructure products at Turbot HQ (9,300+ GitHub stars), and led an AWS SDK migration across 180+ call sites and 11+ AWS services, keeping production systems supported past AWS SDK v2 end-of-life."
+    },
+    "activeSummary": "devops-kaleris"
+  },
+  "work": [
+    {
+      "name": "Turbot HQ, Inc.",
+      "location": "Remote",
+      "dateDisplay": "August 2022 – April 2026",
+      "roleDisplay": "senior-only",
+      "roles": [
+        {
+          "position": "Software Engineer I",
+          "dateDisplay": "August 2022 – April 2026"
+        }
+      ],
+      "highlights": [
+        "Owned release engineering end-to-end for four open-source Go CLIs (Steampipe, Powerpipe, Flowpipe, Tailpipe) — unified GitHub Actions CI/CD workflows, automated Slack release notifications, and GHCR Docker image tagging.",
+        "Added multi-distro Linux smoke tests (ephemeral environments across CentOS, Ubuntu ARM64, macOS) to the GitHub Actions release pipeline, hardening release safety and catching regressions before deployment — preventing incidents before they reached production.",
+        "Authored an LLM-driven Claude Code skill automating code refactoring, unit test generation, deployment, Terraform-driven integration testing, and PR creation; used it to migrate 35+ Azure cloud-governance modules from polling to push-based eventing via Azure Event Grid, cutting resource-discovery latency 70-90% and eliminating recurring Azure API throttling.",
+        "Led the AWS SDK for JavaScript v2 to v3 migration across 180+ call sites and 11+ AWS services (SecurityHub, CloudWatch, ControlTower, Shield, Comprehend, Pinpoint, RAM, X-Ray, EC2, EFS) in production Lambdas, keeping the platform supported past AWS SDK v2 EOL.",
+        "Designed and developed an internal REST API microservice in Go using the Gin framework as part of a greenfield build of Turbot Guardrails, a cloud-native SaaS platform; containerized with Docker, deployed to AWS EC2, and served as a gRPC client for several internal microservices.",
+        "Resolved a production incident by diagnosing a Go service stuck in a Kubernetes CrashLoopBackOff — investigating pod logs and status and collaborating with the platform team to restore service."
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "University of Engineering & Management (UEM)",
+      "location": "Kolkata, WB, IN",
+      "degreeDisplay": "Bachelor of Technology in Computer Science and Engineering",
+      "dateDisplay": "August 2019 – May 2023",
+      "score": "CGPA: 9.28",
+      "detail": "Relevant Coursework: Object-Oriented Programming, DBMS, Data Structures and Algorithms, Shell Scripting in Linux, Low-Level Design, High-Level Design"
+    }
+  ],
+  "skills": [
+    {
+      "name": "Scripting & Languages",
+      "keywordsText": "Python, Bash, Go, SQL"
+    },
+    {
+      "name": "IaC & Automation",
+      "keywordsText": "Terraform, OpenTofu, HCL, GitHub Actions, GHCR"
+    },
+    {
+      "name": "Cloud Platforms (Multi-Cloud)",
+      "keywordsText": "AWS (Lambda, EC2, S3, SecurityHub, GuardDuty, ControlTower, Shield, X-Ray, Comprehend, Pinpoint, RAM, EFS), Azure, GCP"
+    },
+    {
+      "name": "Containers & Orchestration",
+      "keywordsText": "Docker, Kubernetes (working knowledge; collaborate with platform teams)"
+    },
+    {
+      "name": "Observability",
+      "keywordsText": "Datadog, OpenTelemetry (OTel); metrics, logging, tracing, incident triage"
+    },
+    {
+      "name": "CI/CD & Release Engineering",
+      "keywordsText": "GitHub Actions, CI/CD, Git, Release Engineering"
+    },
+    {
+      "name": "Linux & Systems",
+      "keywordsText": "Multi-distro Linux (CentOS, Ubuntu ARM64, macOS), production incident diagnosis & troubleshooting"
+    }
+  ]
+}

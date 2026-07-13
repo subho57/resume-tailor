@@ -1,0 +1,4 @@
+Hi {{outreachEmployeeName}}, I just applied for the {{jobTitle}} role at {{companyName}} ({{jobLink}}). I own GitHub Actions CI/CD release engineering and AWS automation for open-source infrastructure products at Turbot HQ, with hands-on AWS/Azure/GCP experience. Would really appreciate a referral or a quick chat if you're open to it!
+
+Thanks,
+Priyanka
