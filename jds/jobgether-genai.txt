@@ -1,0 +1,66 @@
+Gen AI
+IndiaSecurity & IT – IT /Full-time /Remote
+Run Happpy Agent
+This position is listed on behalf of a partner company, who manages all applications and next steps. Our partner is looking for a Gen AI Specialist based in India.
+
+This role offers the opportunity to work at the intersection of artificial intelligence, automation, and modern cloud technologies.
+You will contribute to the development and implementation of AI-driven solutions using generative AI models, automation frameworks, and advanced observability practices.
+The position combines software development, AI experimentation, data processing, and operational optimization to improve technology workflows.
+You will work with large language models, APIs, cloud platforms, and DevOps tools to create scalable and efficient solutions.
+This is an ideal opportunity for a technically curious professional who enjoys solving complex problems through innovation and automation.
+You will help shape intelligent systems by combining AI capabilities with strong engineering and operational practices.
+
+Accountabilities:
+The Gen AI Specialist will support the design, development, and optimization of AI-powered solutions while contributing to automation, monitoring, and operational excellence. This role requires a combination of programming expertise, AI knowledge, cloud understanding, and problem-solving skills.
+
+Develop and maintain AI-powered applications and automation solutions using Python and modern development practices.
+Work with generative AI technologies, including large language models (LLMs), prompt engineering techniques, and AI APIs.
+Integrate AI services such as OpenAI or Azure OpenAI into business and technical workflows.
+Prepare, process, and manage text-based data for AI applications, including data preprocessing and text handling.
+Apply basic natural language processing concepts to improve AI-driven solutions.
+Design and execute model testing, evaluation, and performance improvement processes.
+Collaborate with engineering teams to implement AI solutions within cloud-based environments.
+Support cloud infrastructure initiatives across platforms such as AWS, Azure, or Google Cloud.
+Contribute to monitoring and observability practices using tools such as Datadog, Grafana, Splunk, and OpenTelemetry.
+Analyze logs, troubleshoot technical issues, and support incident resolution processes.
+Assist with automation initiatives, including scripting, runbook automation, and operational improvements.
+Support containerized environments using Docker and Kubernetes fundamentals.
+Collaborate with DevOps teams on CI/CD workflows, version control, and deployment processes.
+Apply AIOps concepts, anomaly detection techniques, and intelligent automation practices to improve system reliability.
+Support IT service management processes and operational workflows using tools such as ServiceNow.
+Requirements:
+The ideal candidate is a technically skilled professional with experience in software development, artificial intelligence, cloud technologies, and automation. They should have strong analytical abilities and the ability to learn and apply emerging technologies in a fast-paced environment.
+
+Strong programming experience with Python and familiarity with automation scripting using Python or Bash.
+Understanding of generative AI concepts, large language models (LLMs), and prompt engineering.
+Experience integrating AI APIs such as OpenAI or Azure OpenAI.
+Knowledge of data preprocessing, text processing, and basic NLP concepts.
+Experience with Git, version control practices, and collaborative software development workflows.
+Understanding of model testing, evaluation, and AI solution performance measurement.
+Familiarity with cloud platforms such as AWS, Azure, or Google Cloud.
+Knowledge of monitoring, observability, and troubleshooting tools such as Datadog, Grafana, Splunk, or similar platforms.
+Understanding of logs, metrics, traces, and end-to-end observability practices.
+Familiarity with Docker, Kubernetes, and container orchestration concepts.
+Understanding of DevOps principles, CI/CD pipelines, and deployment processes.
+Knowledge of incident management, SRE practices, and operational reliability concepts.
+Familiarity with ITSM tools such as ServiceNow is a plus.
+Strong problem-solving skills, curiosity, and ability to work with emerging technologies.
+Ability to collaborate effectively in a remote and distributed team environment.
+Benefits:
+Fully remote work opportunity with flexibility and autonomy.
+Opportunity to work on innovative generative AI and automation projects.
+Exposure to modern cloud platforms, DevOps practices, and AI engineering technologies.
+Opportunity to develop expertise in rapidly evolving AI and machine learning environments.
+Collaborative environment focused on innovation, learning, and technical growth.
+Opportunity to work with advanced tools across AI development, cloud infrastructure, and observability.
+Flexible working environment supporting remote collaboration and continuous improvement.
+How Jobgether works:
+We use an AI-powered matching process to ensure your application is reviewed quickly, objectively, and fairly against the role's core requirements. Our system identifies the top-fitting candidates, and this shortlist is then shared directly with the hiring company. The final decision and next steps (interviews, assessments) are managed by their internal team.
+We appreciate your interest and wish you the best!
+ Why Apply Through Jobgether?
+
+Data Privacy Notice: By submitting your application, you acknowledge that Jobgether will process your personal data to evaluate your candidacy and share relevant information with the hiring employer. This processing is based on legitimate interest and pre-contractual measures under applicable data protection laws (including GDPR). You may exercise your rights (access, rectification, erasure, objection) at any time.
+
+
+#LI-CL1
+We may use artificial intelligence (AI) tools to support parts of the hiring process, such as reviewing applications, analyzing resumes, or assessing responses and identifying potential inconsistencies or verification signals in application materials based on available information. These tools assist our recruitment team but do not replace human judgment. Final hiring decisions are ultimately made by humans. If you would like more information about how your data is processed, please contact us.

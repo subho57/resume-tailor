@@ -1,0 +1,57 @@
+Implementation Engineer, TPRM
+IndiaSecurity & IT – IT /Full-time /Remote
+Run Happpy Agent
+This position is listed on behalf of a partner company, who manages all applications and next steps. Our partner is looking for an Implementation Engineer, TPRM based in India.
+
+We are seeking an Implementation Engineer to help enterprise customers successfully adopt and optimize a Third-Party Risk Management (TPRM) platform.
+This role combines technical expertise, customer collaboration, and solution design to deliver seamless implementations from discovery through go-live.
+You will work closely with customers to understand their workflows, configure solutions, build integrations, and create scalable technical assets.
+The position requires a strong balance of engineering skills, project ownership, and communication abilities across technical and business teams.
+You will play a key role in improving customer outcomes while contributing feedback and enhancements to product development.
+This is an opportunity for a customer-focused engineer to make a direct impact in a fast-growing SaaS environment with a remote-first culture.
+
+Accountabilities:
+Lead end-to-end implementation projects, from requirements discovery and technical planning through configuration, integrations, testing, and customer handoff.
+Partner with enterprise customers to understand their vendor risk management processes, data sources, workflows, and business objectives.
+Conduct discovery sessions and translate customer requirements into scalable technical solutions and implementation strategies.
+Configure TPRM workflows, including vendor assessments, risk scoring models, approval processes, notification rules, and reporting structures.
+Build and maintain REST API integrations with customer systems such as procurement platforms, GRC solutions, identity providers, and internal data sources.
+Develop scripts, automation tools, and lightweight solutions to support data migration, bulk imports, and ongoing data synchronization.
+Design, test, document, and deliver technical solutions that customers and internal teams can maintain independently.
+Manage multiple concurrent implementation projects while maintaining timelines, stakeholder alignment, and delivery quality.
+Provide customer training, documentation, and guidance to ensure successful adoption and long-term platform usage.
+Act as a customer advocate by identifying product gaps, integration challenges, and improvement opportunities for Product and Engineering teams.
+Contribute to implementation playbooks, reusable technical assets, and processes that improve scalability and customer success.
+Requirements:
+3–5 years of experience in an Implementation Engineer, Solutions Engineer, Technical Consultant, or similar customer-facing technical role within a SaaS environment.
+Hands-on experience designing, building, and maintaining REST API integrations, including reading API documentation, writing integration code, and troubleshooting issues.
+Proficiency in at least one scripting or backend programming language such as Python, Node.js, or similar technologies.
+Experience working with authentication methods including OAuth 2.0, API keys, SAML, and SSO integrations.
+Strong understanding of data migration, automation, JSON/XML transformations, webhooks, and integration workflows.
+Solid project management skills with the ability to manage timelines, coordinate stakeholders, and drive projects to completion independently.
+Excellent written and verbal communication skills in English, with the ability to explain technical concepts to non-technical audiences.
+Comfortable working independently in a remote and async-first environment.
+Experience with third-party risk management, vendor risk programs, or GRC concepts such as SOC 2, ISO 27001, or NIST CSF is a plus.
+Familiarity with enterprise platforms such as ServiceNow, Archer, Workday, Coupa, or similar systems is advantageous.
+Experience with workflow automation and iPaaS platforms such as Zapier, Workato, Tray.io, or similar tools is a plus.
+Prior experience supporting enterprise B2B SaaS customers is highly valued.
+Benefits:
+Fully remote work opportunity for candidates based in India.
+Competitive compensation package ranging from ₹2,137,000 to ₹3,000,000.
+Opportunity to work on impactful SaaS solutions within the Governance, Risk, and Compliance space.
+Flexible and remote-first work environment designed for autonomy and collaboration.
+Professional growth opportunities, including internal mobility and career development paths.
+Paid time off and company-wide rest periods to support work-life balance.
+Home office support and wellness benefits.
+Opportunity to collaborate with global teams and enterprise customers.
+Exposure to modern technologies including REST APIs, Python, Node.js, Git, and cloud-based platforms.
+How Jobgether works:
+We use an AI-powered matching process to ensure your application is reviewed quickly, objectively, and fairly against the role's core requirements. Our system identifies the top-fitting candidates, and this shortlist is then shared directly with the hiring company. The final decision and next steps (interviews, assessments) are managed by their internal team.
+We appreciate your interest and wish you the best!
+ Why Apply Through Jobgether?
+
+Data Privacy Notice: By submitting your application, you acknowledge that Jobgether will process your personal data to evaluate your candidacy and share relevant information with the hiring employer. This processing is based on legitimate interest and pre-contractual measures under applicable data protection laws (including GDPR). You may exercise your rights (access, rectification, erasure, objection) at any time.
+
+
+#LI-CL1
+We may use artificial intelligence (AI) tools to support parts of the hiring process, such as reviewing applications, analyzing resumes, or assessing responses and identifying potential inconsistencies or verification signals in application materials based on available information. These tools assist our recruitment team but do not replace human judgment. Final hiring decisions are ultimately made by humans. If you would like more information about how your data is processed, please contact us.

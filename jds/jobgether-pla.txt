@@ -1,0 +1,49 @@
+Platform Engineer (Edge / Docker / IIoT)
+IndiaSecurity & IT – IT /Full-time /Remote
+Run Happpy Agent
+This position is listed on behalf of a partner company, who manages all applications and next steps. Our partner is looking for a Platform Engineer (Edge / Docker / IIoT) based in India.
+
+This role offers the opportunity to solve complex infrastructure challenges at the intersection of edge computing, industrial technology, and cloud-native platforms. You will help operate and improve large-scale deployments of connected devices running critical applications in real-world environments. Working remotely with a global engineering team, you will design solutions for challenging conditions such as limited connectivity, distributed systems, and constrained networks. The position combines platform engineering, automation, troubleshooting, and customer collaboration. You will contribute to reliable technology deployments that support industrial operations across diverse sectors. This is an ideal opportunity for an engineer who enjoys solving large-scale technical problems and building resilient systems.
+
+Accountabilities:
+Operate and modernize large-scale edge computing environments supporting more than 100,000 connected devices.
+Manage and optimize Docker-based application deployments across distributed and remote environments.
+Troubleshoot production systems running on Linux platforms, including diagnosing issues remotely across challenging network conditions.
+Design and improve deployment processes to ensure reliable updates across large fleets of edge devices.
+Investigate and resolve complex operational challenges involving connectivity, bandwidth limitations, device availability, and application health.
+Collaborate directly with enterprise customers and internal engineering teams to solve platform and deployment challenges.
+Improve container performance through image optimization, multi-stage builds, and efficient deployment strategies.
+Support container networking, remote system management, and infrastructure reliability initiatives.
+Contribute to the evolution of platform capabilities through automation, monitoring, and engineering improvements.
+Requirements:
+Strong professional experience working with Docker and Docker Compose in production environments.
+Experience supporting and troubleshooting Linux systems in live production settings.
+Proven experience deploying applications to remote, distributed, or edge environments.
+Strong understanding of container networking and distributed system operations.
+Experience managing systems operating under unreliable, high-latency, or bandwidth-constrained network conditions.
+Ability to troubleshoot complex technical issues remotely with strong analytical and problem-solving skills.
+Familiarity with container image optimization and multi-stage Docker builds.
+Excellent communication skills with the ability to collaborate effectively with customers and technical teams.
+Experience with industrial IoT, edge computing, IoT gateways, manufacturing automation, connected vehicles, energy, transportation, or similar environments is highly desirable.
+Knowledge of technologies such as Docker Swarm, MQTT, OPC-UA, Modbus, VPN technologies, reverse proxies, mTLS, embedded Linux, ARM devices, Systemd, or shell scripting is a plus.
+Familiarity with Kubernetes, CI/CD practices, infrastructure automation, monitoring, observability tools, GitHub Actions, Python, or Go is advantageous.
+Benefits:
+Fully remote work opportunity based in India.
+Opportunity to work on large-scale engineering challenges impacting global industrial deployments.
+Exposure to advanced edge computing, container technologies, and distributed systems.
+Direct collaboration with engineering teams and enterprise customers.
+Opportunity to influence future platform capabilities and technical direction.
+Work on meaningful real-world problems involving connected devices, automation, and industrial technology.
+Growth opportunities within a technically ambitious and innovative environment.
+
+
+How Jobgether works:
+We use an AI-powered matching process to ensure your application is reviewed quickly, objectively, and fairly against the role's core requirements. Our system identifies the top-fitting candidates, and this shortlist is then shared directly with the hiring company. The final decision and next steps (interviews, assessments) are managed by their internal team.
+We appreciate your interest and wish you the best!
+ Why Apply Through Jobgether?
+
+Data Privacy Notice: By submitting your application, you acknowledge that Jobgether will process your personal data to evaluate your candidacy and share relevant information with the hiring employer. This processing is based on legitimate interest and pre-contractual measures under applicable data protection laws (including GDPR). You may exercise your rights (access, rectification, erasure, objection) at any time.
+
+
+#LI-CL1
+We may use artificial intelligence (AI) tools to support parts of the hiring process, such as reviewing applications, analyzing resumes, or assessing responses and identifying potential inconsistencies or verification signals in application materials based on available information. These tools assist our recruitment team but do not replace human judgment. Final hiring decisions are ultimately made by humans. If you would like more information about how your data is processed, please contact us.

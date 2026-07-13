@@ -1,0 +1,121 @@
+{
+  "schemaVersion": "1.0.0",
+  "theme": "corporate-navy",
+  "sectionOrder": ["summary", "skills", "work", "projects", "education"],
+  "basics": {
+    "name": "Priyanka Chatterjee",
+    "label": "AI-Enabled Software Engineer · Microservices & Event-Driven Architecture · AWS/Azure/GCP · 9,300★ OSS Contributor · 3.5+ Years",
+    "email": "priyankachatterjee9075@gmail.com",
+    "phone": "+91 8617262536",
+    "url": "https://priyanka-chatterjee-2000.github.io",
+    "location": {
+      "display": "Kolkata, West Bengal, India",
+      "city": "Kolkata",
+      "region": "West Bengal",
+      "countryCode": "IN"
+    },
+    "profiles": [
+      {
+        "network": "LinkedIn",
+        "username": "priyanka-9075",
+        "url": "https://linkedin.com/in/priyanka-9075",
+        "display": "linkedin.com/in/priyanka-9075"
+      },
+      {
+        "network": "GitHub",
+        "username": "Priyanka-Chatterjee-2000",
+        "url": "https://github.com/Priyanka-Chatterjee-2000",
+        "display": "github.com/Priyanka-Chatterjee-2000"
+      },
+      {
+        "network": "Portfolio",
+        "url": "https://priyanka-chatterjee-2000.github.io",
+        "display": "priyanka-chatterjee-2000.github.io"
+      }
+    ],
+    "summaries": {
+      "it-swe-ai": "Software Engineer with 3.5+ years of experience and expertise in AI-powered software development, scalable microservices, event-driven architecture, and cloud platforms (AWS, Azure, GCP). Built a Model Context Protocol server and multi-agent LLM automation for enterprise compliance workflows at Turbot HQ, cutting resource-discovery latency 70-90% while meeting CIS, NIST, and SOC 2 regulatory standards."
+    },
+    "activeSummary": "it-swe-ai"
+  },
+  "work": [
+    {
+      "name": "Turbot HQ, Inc.",
+      "location": "Remote",
+      "dateDisplay": "August 2022 – April 2026",
+      "roleDisplay": "senior-only",
+      "roles": [
+        {
+          "position": "Software Engineer I",
+          "dateDisplay": "August 2022 – April 2026"
+        }
+      ],
+      "highlights": [
+        "Designed a multi-agent AI architecture on the OpenAI Agents SDK, translating a business security requirement (preventing public-cloud misconfigurations) into an automated technical solution: LLM agents that generate policy commands, validate them in a live test environment, self-correct failures, and score accounts against an internal security metric.",
+        "Built the Steampipe Model Context Protocol (MCP) server end to end in Python, embedding AI capabilities directly into a production enterprise platform to give LLM agents standardized, real-time access to cloud and security data.",
+        "Designed and developed an internal REST API microservice in Go using the Gin framework as part of a scalable microservices architecture powering Turbot Guardrails, a security-compliance SaaS platform; secured endpoints with OAuth 2.0 authentication via Auth0, containerized with Docker, deployed to AWS EC2, and served as a gRPC client for several internal microservices.",
+        "Built a Kafka-based, event-driven pipeline where consumers asynchronously processed policy-enforcement events and fired a webhook once a policy was successfully enforced against a resource; added a dead-letter queue (DLQ) for reliability.",
+        "Built a RAG-based Pydantic AI agent deployed as a serverless AWS Lambda function to resolve cross-team business queries, ingesting internal documentation into S3 vector storage and surfacing it through Slack.",
+        "Authored multi-cloud compliance modules covering 1,000+ resource checks across CIS, NIST, HIPAA, PCI DSS v4, SOC 2, and FedRAMP regulatory frameworks for enterprise customers in finance, healthcare, and government — cutting audit time 50%.",
+        "Mentored teammates on adopting AI-assisted engineering tools (Claude Code, Cursor) into their daily workflows."
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "University of Engineering & Management (UEM)",
+      "location": "Kolkata, WB, IN",
+      "degreeDisplay": "Bachelor of Technology in Computer Science and Engineering",
+      "dateDisplay": "August 2019 – May 2023",
+      "score": "CGPA: 9.28",
+      "detail": "Relevant Coursework: Object-Oriented Programming, DBMS, Data Structures and Algorithms, Shell Scripting in Linux, Low-Level Design, High-Level Design"
+    }
+  ],
+  "skills": [
+    {
+      "name": "Languages",
+      "keywordsText": "Python, Go, TypeScript, JavaScript (ES6+), SQL, Bash"
+    },
+    {
+      "name": "AI Engineering",
+      "keywordsText": "LLM Application Development, Agentic Workflows, Multi-Agent Systems, Retrieval-Augmented Generation (RAG), Model Context Protocol (MCP), OpenAI Agents SDK, Pydantic AI"
+    },
+    {
+      "name": "Software Architecture",
+      "keywordsText": "Microservices, Event-Driven Architecture, Distributed Systems, Serverless, REST, gRPC, OAuth 2.0 (Auth0), JWT"
+    },
+    {
+      "name": "Cloud Platforms",
+      "keywordsText": "AWS (Lambda, EC2, S3, SecurityHub, GuardDuty), Azure, GCP"
+    },
+    {
+      "name": "Messaging & Streaming",
+      "keywordsText": "Apache Kafka (consumer groups, DLQs), AWS SNS/SQS, AWS EventBridge, Azure Event Grid"
+    },
+    {
+      "name": "Data Privacy, Security & Compliance",
+      "keywordsText": "CIS (AWS, Azure, GCP, M365, GitHub, Google Workspace), NIST, HIPAA, PCI DSS v4, SOC 2, FedRAMP; IAM, RBAC, cloud security policies"
+    },
+    {
+      "name": "Core CS",
+      "keywordsText": "Data Structures & Algorithms, Object-Oriented Design, Low-Level & High-Level System Design, API Design"
+    },
+    {
+      "name": "Databases",
+      "keywordsText": "PostgreSQL, MySQL, DuckDB, MongoDB, Redis (ElastiCache)"
+    },
+    {
+      "name": "DevOps & Testing",
+      "keywordsText": "Docker, GitHub Actions, Git, Unit Testing, Integration Testing, Code Review"
+    }
+  ],
+  "projects": [
+    {
+      "name": "General-Purpose AI Chatbot / Agent (Model Context Protocol)",
+      "dateDisplay": "Jun 2025 – Aug 2025",
+      "association": "",
+      "description": "Agentic chatbot/agent framework built with Pydantic AI featuring configurable external MCP servers via a persistent MongoDB-backed registry, JSON config loader with strict input validation, per-server failure isolation, native tool calling, mid-conversation multi-model switching (OpenAI, Gemini, Anthropic, Mistral), conversation-history persistence, sync + streaming output, prompt-injection safeguards, and Logfire observability.",
+      "links": []
+    }
+  ]
+}

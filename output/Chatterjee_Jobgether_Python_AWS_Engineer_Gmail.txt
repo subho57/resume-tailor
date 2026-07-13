@@ -1,0 +1,8 @@
+Subject: Applied for the Python + AWS Engineer role — quick hello
+
+Hi {{outreachEmployeeName}},
+
+I just applied for the {{jobTitle}} role at {{companyName}} ({{jobLink}}) and wanted to reach out directly. At Turbot HQ I've built Python services in production — an MCP server and a RAG agent deployed as a serverless AWS Lambda function — plus led an AWS SDK migration across 180+ call sites and 11+ AWS services, and built a Kafka-based distributed event pipeline. All fully remote, collaborating across a multicultural team. Would love a referral or a quick chat if you have a few minutes.
+
+Thanks so much,
+Priyanka Chatterjee

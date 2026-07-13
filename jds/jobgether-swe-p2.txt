@@ -1,0 +1,60 @@
+Software Engineer P2
+IndiaSecurity & IT – IT /Full-time /Remote
+Run Happpy Agent
+This position is listed on behalf of a partner company, who manages all applications and next steps. Our partner is looking for a Software Engineer P2 based in India.
+
+This role offers the opportunity to build and operate scalable cloud-based solutions that power modern customer engagement experiences. As a Software Engineer, you will contribute to the design, development, and improvement of distributed systems using modern engineering practices. You will work within an agile team environment, creating reliable microservices and delivering high-quality software solutions. The position combines technical problem-solving, innovation, and collaboration across engineering and product teams. You will have the opportunity to influence architecture decisions, improve platform capabilities, and contribute to products used by businesses and developers worldwide. This is an ideal opportunity for an engineer who enjoys building impactful technology, learning quickly, and solving complex challenges in a remote-first environment.
+
+Accountabilities:
+The Software Engineer P2 will be responsible for designing, developing, testing, and maintaining cloud-based software solutions while contributing to the scalability, reliability, and continuous improvement of engineering systems.
+
+Design, develop, test, and deploy cloud-based platform services following modern microservices architecture principles.
+Build and maintain scalable, distributed systems with a strong focus on reliability, security, and performance.
+Develop high-quality software solutions using Java and modern engineering frameworks.
+Create automated unit and integration tests while contributing to CI/CD pipelines and deployment processes.
+Participate in code reviews, architecture discussions, backlog planning, and Agile development ceremonies.
+Identify and resolve technical issues independently while collaborating with engineering teams on complex problems.
+Improve existing systems by reducing technical debt and maintaining strong engineering standards.
+Contribute to system documentation, operational guides, design documentation, and engineering best practices.
+Collaborate with product and engineering stakeholders to influence technical roadmaps and propose innovative solutions.
+Continuously learn and adapt to evolving technologies, infrastructure requirements, and business needs.
+Requirements:
+The ideal candidate is a software engineer with experience building cloud-native applications, strong technical foundations, and the ability to collaborate effectively in a fast-paced engineering environment.
+
+Bachelor’s or Master’s degree in Computer Science, Engineering, or equivalent professional experience.
+2 to 4 years of experience developing highly available, secure, cloud-based enterprise SaaS applications.
+Strong programming experience with Java and object-oriented development practices.
+Experience working with public cloud platforms such as AWS, GCP, or similar infrastructure environments.
+Experience designing and developing scalable, real-time distributed systems using microservices architecture.
+Knowledge of container technologies including Docker and Kubernetes.
+Experience designing and implementing REST APIs.
+Familiarity with SQL and NoSQL databases, caching systems, and data management practices.
+Experience implementing automated testing strategies and CI/CD pipelines.
+Ability to translate system designs into efficient software implementations.
+Strong problem-solving skills with experience troubleshooting production issues.
+Understanding of Agile methodologies, Scrum practices, and iterative software delivery.
+Strong communication skills with the ability to collaborate across teams.
+Ability to learn quickly, take ownership, and contribute effectively in a dynamic environment.
+Experience with streaming technologies such as Kafka, Flink, or Spark is a plus.
+Experience deploying applications in multi-region cloud environments and working with customer engagement platforms is desirable.
+Benefits:
+Fully remote work opportunity based in India.
+Competitive compensation package and location-based benefits.
+Comprehensive healthcare coverage and wellness support.
+Generous paid time off and parental leave programs.
+Retirement savings support and employee benefits that vary by location.
+Opportunity to work on globally impactful technology products.
+Collaborative remote-first culture with teams across different regions.
+Opportunities for professional growth, continuous learning, and skill development.
+Support for employee volunteering and community contribution initiatives.
+Occasional opportunities for in-person team and project collaboration.
+How Jobgether works:
+We use an AI-powered matching process to ensure your application is reviewed quickly, objectively, and fairly against the role's core requirements. Our system identifies the top-fitting candidates, and this shortlist is then shared directly with the hiring company. The final decision and next steps (interviews, assessments) are managed by their internal team.
+We appreciate your interest and wish you the best!
+ Why Apply Through Jobgether?
+
+Data Privacy Notice: By submitting your application, you acknowledge that Jobgether will process your personal data to evaluate your candidacy and share relevant information with the hiring employer. This processing is based on legitimate interest and pre-contractual measures under applicable data protection laws (including GDPR). You may exercise your rights (access, rectification, erasure, objection) at any time.
+
+
+#LI-CL1
+We may use artificial intelligence (AI) tools to support parts of the hiring process, such as reviewing applications, analyzing resumes, or assessing responses and identifying potential inconsistencies or verification signals in application materials based on available information. These tools assist our recruitment team but do not replace human judgment. Final hiring decisions are ultimately made by humans. If you would like more information about how your data is processed, please contact us.

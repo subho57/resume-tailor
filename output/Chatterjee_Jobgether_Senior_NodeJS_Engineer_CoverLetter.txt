@@ -1,0 +1,16 @@
+Priyanka Chatterjee
+priyankachatterjee9075@gmail.com | +91 8617262536
+linkedin.com/in/priyanka-9075 | github.com/Priyanka-Chatterjee-2000 | priyanka-chatterjee-2000.github.io
+
+Dear Hiring Manager,
+
+I'm writing to apply for the Senior NodeJS Engineer role. At Turbot HQ, I led the AWS SDK for JavaScript v2 to v3 migration across 180+ call sites and 11+ AWS services in production Node.js Lambdas, cutting policy-code duplication ~60% while keeping the platform supported past AWS SDK v2 end-of-life. I'm also a core open-source contributor there (9,300+ GitHub stars, 120+ merged PRs).
+
+On event-driven architecture, I built a Kafka-based distributed pipeline with dead-letter-queue handling for reliable failure recovery, and I've worked hands-on with AWS SNS/SQS as well — directly matching this role's messaging requirements. On distributed systems and APIs, I designed a REST API microservice with OAuth 2.0 authentication, containerized with Docker and deployed to AWS EC2, serving as a gRPC client for several internal distributed microservices. I've also built REST APIs in Express.js with JWT authentication and RBAC in a personal project.
+
+On performance and reliability — a core focus of this role — I lifted log-processing throughput 30% to 1,000+ events per second on an observability CLI while eliminating out-of-memory failures, and separately rewrote complex PostgreSQL queries to improve audit-query performance 40%. I also own release engineering end-to-end for four open-source CLIs, with GitHub Actions CI/CD workflows and Docker image automation improving deployment resilience.
+
+Thank you for your consideration — I'd love to discuss further.
+
+Best regards,
+Priyanka Chatterjee

@@ -1,0 +1,16 @@
+Priyanka Chatterjee
+priyankachatterjee9075@gmail.com | +91 8617262536
+linkedin.com/in/priyanka-9075 | github.com/Priyanka-Chatterjee-2000 | priyanka-chatterjee-2000.github.io
+
+Dear Hiring Manager,
+
+I'm writing to apply for the Platform Engineer (Edge / Docker / IIoT) role. At Turbot HQ, I've hardened release reliability for four open-source Go CLIs by adding multi-distro Linux smoke tests (CentOS, Ubuntu ARM64, macOS) to the CI/CD pipeline, catching platform-specific regressions before they reach production — the same kind of fleet-wide reliability engineering this role is built around.
+
+My background is in cloud-native distributed systems rather than edge/IIoT deployments specifically: I containerized and deployed a Go microservice with Docker to AWS EC2, built a Kafka-based distributed event pipeline with dead-letter-queue handling for reliable failure recovery, and resolved a live production incident by diagnosing a Kubernetes CrashLoopBackOff remotely, working with the platform team to restore service. I also own release engineering for four open-source CLIs end to end — GitHub Actions workflows, GHCR Docker image tagging, and cross-platform smoke testing — which maps closely onto this role's focus on reliable, repeatable deployments across a large device fleet.
+
+I want to be upfront: I haven't worked with industrial IoT protocols (MQTT, OPC-UA, Modbus), Docker Swarm, or embedded/ARM hardware specifically — my distributed-systems and Linux operations experience is cloud-side, not edge-device-side. What I bring is strong Docker, Linux troubleshooting, distributed-systems, and CI/CD fundamentals, plus a track record of picking up new operational domains quickly.
+
+I'd welcome the chance to discuss how that foundation could translate to your edge platform. Thank you for your consideration.
+
+Best regards,
+Priyanka Chatterjee

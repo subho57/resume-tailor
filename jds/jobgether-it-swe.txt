@@ -1,0 +1,40 @@
+Information Technology - Software Engineer
+IndiaSecurity & IT – IT /Full-time /Remote
+Run Happpy Agent
+This position is listed on behalf of a partner company, who manages all applications and next steps. Our partner is looking for a Information Technology - Software Engineer based in India.
+
+This role is centered on designing and delivering advanced AI-enabled software solutions within a proprietary Quality Management application ecosystem. You will play a key role in shaping how artificial intelligence capabilities are embedded into enterprise-grade systems that support critical business operations. Working closely with functional leaders, you will translate business needs into scalable technical architectures and practical AI-driven solutions. The environment is highly collaborative, requiring strong cross-functional communication and alignment between engineering and business stakeholders. You will also ensure that all solutions meet strict standards for data privacy, security, and regulatory compliance. This is a high-impact role where your architectural decisions will directly influence product capability, performance, and long-term scalability.
+
+Accountabilities:
+Design and develop AI-powered features and integrations within a Quality Management software platform, ensuring alignment with business goals and technical requirements.
+Define and implement scalable software architecture solutions, leveraging modern patterns such as microservices, event-driven systems, and serverless computing.
+Collaborate with cross-functional stakeholders to translate business requirements into robust technical designs and AI-driven capabilities.
+Ensure all solutions adhere to data privacy, security, and regulatory compliance standards across enterprise environments.
+Mentor developers and promote best practices in AI engineering, software architecture, and system design across the team.
+Support continuous improvement by identifying opportunities to optimize system performance, scalability, and reliability.
+Requirements:
+Strong professional experience in software engineering with a focus on designing and delivering scalable enterprise applications.
+Solid understanding of AI concepts and experience integrating AI capabilities into production systems or business applications.
+Hands-on experience with modern software architecture patterns, including microservices, event-driven architecture, and serverless technologies.
+Experience working with cloud platforms such as AWS, Azure, or Google Cloud Platform.
+Ability to translate complex business problems and metrics into technical AI and software solutions.
+Strong problem-solving skills with a structured and analytical approach to system design.
+Excellent communication and collaboration skills, with experience working across technical and non-technical teams.
+Experience mentoring or guiding other engineers in software development and architecture best practices.
+Benefits:
+Competitive compensation package aligned with experience and expertise.
+Remote-first work environment offering flexibility and work-life balance.
+Opportunity to work on cutting-edge AI and enterprise software solutions.
+Exposure to modern cloud-native architectures and advanced AI integration projects.
+Collaborative and knowledge-sharing engineering culture.
+Professional growth opportunities through mentorship, technical leadership, and cross-functional collaboration.
+How Jobgether works:
+We use an AI-powered matching process to ensure your application is reviewed quickly, objectively, and fairly against the role's core requirements. Our system identifies the top-fitting candidates, and this shortlist is then shared directly with the hiring company. The final decision and next steps (interviews, assessments) are managed by their internal team.
+We appreciate your interest and wish you the best!
+ Why Apply Through Jobgether?
+
+Data Privacy Notice: By submitting your application, you acknowledge that Jobgether will process your personal data to evaluate your candidacy and share relevant information with the hiring employer. This processing is based on legitimate interest and pre-contractual measures under applicable data protection laws (including GDPR). You may exercise your rights (access, rectification, erasure, objection) at any time.
+
+
+#LI-CL1
+We may use artificial intelligence (AI) tools to support parts of the hiring process, such as reviewing applications, analyzing resumes, or assessing responses and identifying potential inconsistencies or verification signals in application materials based on available information. These tools assist our recruitment team but do not replace human judgment. Final hiring decisions are ultimately made by humans. If you would like more information about how your data is processed, please contact us.

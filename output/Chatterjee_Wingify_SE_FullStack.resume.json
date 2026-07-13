@@ -1,0 +1,130 @@
+{
+  "schemaVersion": "1.0.0",
+  "theme": "corporate-navy",
+  "sectionOrder": ["summary", "skills", "work", "projects", "education"],
+  "basics": {
+    "name": "Priyanka Chatterjee",
+    "label": "Software Engineer – Full Stack · Python/Go Backend · React/TypeScript Frontend · 9,300★ OSS Contributor · 3.5+ Years",
+    "email": "priyankachatterjee9075@gmail.com",
+    "phone": "+91 8617262536",
+    "url": "https://priyanka-chatterjee-2000.github.io",
+    "location": {
+      "display": "Kolkata, West Bengal, India",
+      "city": "Kolkata",
+      "region": "West Bengal",
+      "countryCode": "IN"
+    },
+    "profiles": [
+      {
+        "network": "LinkedIn",
+        "username": "priyanka-9075",
+        "url": "https://linkedin.com/in/priyanka-9075",
+        "display": "linkedin.com/in/priyanka-9075"
+      },
+      {
+        "network": "GitHub",
+        "username": "Priyanka-Chatterjee-2000",
+        "url": "https://github.com/Priyanka-Chatterjee-2000",
+        "display": "github.com/Priyanka-Chatterjee-2000"
+      },
+      {
+        "network": "Portfolio",
+        "url": "https://priyanka-chatterjee-2000.github.io",
+        "display": "priyanka-chatterjee-2000.github.io"
+      }
+    ],
+    "summaries": {
+      "se-fullstack": "Software Engineer – Full Stack with 3.5+ years of experience and expertise in Python, Go, React/TypeScript, and scalable backend services on PostgreSQL. Built a Python-based Model Context Protocol server at Turbot HQ giving LLM agents real-time access to enterprise cloud data, and separately optimized PostgreSQL queries powering compliance audits, improving performance 40%."
+    },
+    "activeSummary": "se-fullstack"
+  },
+  "work": [
+    {
+      "name": "Turbot HQ, Inc.",
+      "location": "Remote",
+      "dateDisplay": "August 2022 – April 2026",
+      "roleDisplay": "senior-only",
+      "roles": [
+        {
+          "position": "Software Engineer I",
+          "dateDisplay": "August 2022 – April 2026"
+        }
+      ],
+      "highlights": [
+        "Built the Steampipe Model Context Protocol (MCP) server end to end in Python, giving LLM agents standardized, real-time access to enterprise cloud and security data for retrieval and analysis.",
+        "Designed and developed an internal REST API microservice in Go using the Gin framework as part of a greenfield build of Turbot Guardrails, a cloud-native SaaS platform; secured endpoints with OAuth 2.0 authentication via Auth0, containerized with Docker, deployed to AWS EC2, and served as a gRPC client for several internal microservices.",
+        "Optimized complex PostgreSQL queries powering customer compliance audits — rewriting AWS IAM policy-evaluation queries with jsonb array elements and multi-stage CTEs — improving query performance 40% and eliminating a class of false-positive findings.",
+        "Built a Kafka-based, event-driven pipeline where consumers asynchronously processed policy-enforcement events and fired a webhook once a policy was successfully enforced; added a dead-letter queue (DLQ) for reliable failure handling.",
+        "Resolved a production incident by diagnosing a Go service stuck in a Kubernetes CrashLoopBackOff — investigating pod logs and status and collaborating with the platform team to restore service."
+      ]
+    },
+    {
+      "name": "Kredey (Kredey Innovations Pvt. Ltd.)",
+      "location": "Remote",
+      "dateDisplay": "2021",
+      "roles": [
+        {
+          "position": "Full-Stack Website Developer (Intern)",
+          "dateDisplay": "2021"
+        }
+      ],
+      "highlights": [
+        "Used Elasticsearch to support full-text and semantic search over a NoSQL Firebase-backed document-sharing platform."
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "University of Engineering & Management (UEM)",
+      "location": "Kolkata, WB, IN",
+      "degreeDisplay": "Bachelor of Technology in Computer Science and Engineering",
+      "dateDisplay": "August 2019 – May 2023",
+      "score": "CGPA: 9.28",
+      "detail": "Relevant Coursework: Object-Oriented Programming, DBMS, Data Structures and Algorithms, Shell Scripting in Linux, Low-Level Design, High-Level Design"
+    }
+  ],
+  "skills": [
+    {
+      "name": "Languages",
+      "keywordsText": "Python, Go, TypeScript, JavaScript (ES6+), SQL, Bash"
+    },
+    {
+      "name": "Backend & APIs",
+      "keywordsText": "REST, Express.js (Node.js — same category as FastAPI/Flask/Django), gRPC, Microservices, OAuth 2.0 (Auth0), JWT"
+    },
+    {
+      "name": "Frontend",
+      "keywordsText": "React, TypeScript, Vite"
+    },
+    {
+      "name": "Databases & Caching",
+      "keywordsText": "PostgreSQL, MySQL, DuckDB, MongoDB, Redis (ElastiCache), Elasticsearch (same category as Meilisearch); jsonb, CTEs, query tuning"
+    },
+    {
+      "name": "Distributed Systems & Messaging",
+      "keywordsText": "Distributed Systems, Event-Driven Architecture, Apache Kafka (consumer groups, DLQs), AWS SNS/SQS"
+    },
+    {
+      "name": "Cloud & Containers",
+      "keywordsText": "AWS (Lambda, EC2, S3), Azure, GCP, Docker, Kubernetes (working knowledge; collaborate with platform teams)"
+    },
+    {
+      "name": "DevOps & Testing",
+      "keywordsText": "GitHub Actions, CI/CD, Git, Unit Testing, Integration Testing, Code Review"
+    }
+  ],
+  "projects": [
+    {
+      "name": "Lila Tic-Tac-Toe — Real-Time Multiplayer Game",
+      "dateDisplay": "2026",
+      "association": "",
+      "description": "Built end to end in 4 days: React 19 + TypeScript + Vite frontend on Vercel; Nakama game server (Go core + TS runtime) on Fly.io with PostgreSQL. Server-authoritative anti-cheat over WebSocket transport, mode-aware matchmaking via KV-storage queues, tick-based turn timer, optimistic UI with client-side state management and revert-on-validation-failure, top-10 leaderboard, and reconnect-into-active-match — full-stack, real-time system.",
+      "links": [
+        {
+          "label": "repo/live",
+          "url": "https://priyanka-chatterjee-2000.github.io"
+        }
+      ]
+    }
+  ]
+}

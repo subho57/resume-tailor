@@ -1,0 +1,18 @@
+Priyanka Chatterjee
+priyankachatterjee9075@gmail.com | +91 8617262536
+linkedin.com/in/priyanka-9075 | github.com/Priyanka-Chatterjee-2000 | priyanka-chatterjee-2000.github.io
+
+Dear Hiring Manager,
+
+I'm writing to apply for the Software Development Engineer III - Workflow AI role. At Turbot HQ, I built a RAG-based AI agent with a knowledge base spanning our internal documentation and code, backed by AWS S3 vector storage, and a multi-agent automation workflow on the OpenAI Agents SDK — cutting resource-discovery latency 70-90% through AI-driven automation. I'm also a core open-source contributor there (9,300+ GitHub stars, 120+ merged PRs).
+
+On custom AI agents specifically, my multi-agent workflow orchestrates agents that generate cloud policy automation commands, validate them in a live test environment, self-correct failures, and score outcomes against an internal metric — and separately, I built a general-purpose agent framework (Pydantic AI) that lets a user configure custom AI agents via external MCP servers, with native tool calling and mid-conversation multi-model switching across OpenAI, Gemini, Anthropic, and Mistral. On the RAG and knowledge-base side, my agent ingests internal docs and code into vector storage and integrates with Slack to deliver context-aware answers to cross-team queries. On the backend, I led an AWS SDK migration across 180+ call sites in production Node.js Lambdas, and separately improved log-processing throughput 30% to 1,000+ events per second.
+
+I also mentor teammates on adopting AI-assisted engineering tools (Claude Code, Cursor) into their daily workflows.
+
+Two honest notes: I have about 3.5 years of total experience against the role's 4+ year bar, with roughly the back half of that spent on AI-specific work; and I haven't worked with Hugging Face specifically, though my OpenAI and multi-model integration experience covers similar ground.
+
+Thank you for your consideration — I'd love to discuss further.
+
+Best regards,
+Priyanka Chatterjee

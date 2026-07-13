@@ -1,0 +1,41 @@
+Python + AWS
+IndiaSecurity & IT – IT /Full-time /Remote
+Run Happpy Agent
+This position is listed on behalf of a partner company, who manages all applications and next steps. Our partner is looking for a Python + AWS Engineer based in India.
+
+This role sits within a modern, fully remote engineering environment focused on building and delivering scalable backend services across distributed, international teams. You will contribute to the design, development, and optimization of cloud-native applications using Python and AWS, supporting business-critical systems and APIs. The position involves close collaboration with cross-functional and multicultural teams working on innovative, fast-evolving digital products. You will help ensure system reliability, performance, and security while contributing to API design and backend architecture decisions. The environment is highly collaborative, outcome-driven, and built for engineers who enjoy solving complex technical challenges. It is well suited for professionals who thrive in remote-first settings and value autonomy, flexibility, and continuous learning.
+
+Accountabilities:
+Design, develop, and maintain scalable backend services and APIs using Python, ensuring high performance, reliability, and maintainability.
+Build and deploy cloud-based solutions on AWS, leveraging services for compute, storage, networking, and serverless architectures.
+Design and document APIs using OpenAPI specifications while ensuring strong API security and adherence to best practices.
+Collaborate with distributed engineering teams to deliver features in an agile, iterative development environment.
+Troubleshoot, optimize, and enhance existing systems to improve performance, scalability, and security.
+Participate in code reviews, technical discussions, and architecture decisions to ensure engineering quality and consistency.
+Work closely with cross-functional teams to translate business requirements into technical solutions.
+Requirements:
+3+ years of professional experience in backend development using Python and/or Java.
+Strong hands-on experience working with AWS cloud services and building cloud-native applications.
+Solid understanding of RESTful API design, OpenAPI specifications, and API security principles.
+Experience building, deploying, and maintaining scalable backend systems in production environments.
+Familiarity with distributed systems and working in remote, multicultural, and cross-functional teams.
+Strong problem-solving skills with the ability to debug, optimize, and improve complex systems.
+Excellent communication skills and ability to work independently in a fully remote environment.
+Benefits:
+Competitive salary paid in USD
+100% remote work with flexible schedules worldwide
+High-end equipment provided to support remote productivity
+English classes and continuous learning and development programs
+Paid time off including birthday day off and dedicated developer day
+Referral bonus program with USD rewards
+Opportunity to work on international, high-impact, modern technology projects
+How Jobgether works:
+We use an AI-powered matching process to ensure your application is reviewed quickly, objectively, and fairly against the role's core requirements. Our system identifies the top-fitting candidates, and this shortlist is then shared directly with the hiring company. The final decision and next steps (interviews, assessments) are managed by their internal team.
+We appreciate your interest and wish you the best!
+ Why Apply Through Jobgether?
+
+Data Privacy Notice: By submitting your application, you acknowledge that Jobgether will process your personal data to evaluate your candidacy and share relevant information with the hiring employer. This processing is based on legitimate interest and pre-contractual measures under applicable data protection laws (including GDPR). You may exercise your rights (access, rectification, erasure, objection) at any time.
+
+
+#LI-CL1
+We may use artificial intelligence (AI) tools to support parts of the hiring process, such as reviewing applications, analyzing resumes, or assessing responses and identifying potential inconsistencies or verification signals in application materials based on available information. These tools assist our recruitment team but do not replace human judgment. Final hiring decisions are ultimately made by humans. If you would like more information about how your data is processed, please contact us.

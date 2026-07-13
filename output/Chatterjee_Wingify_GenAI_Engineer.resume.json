@@ -1,0 +1,118 @@
+{
+  "schemaVersion": "1.0.0",
+  "theme": "corporate-navy",
+  "sectionOrder": ["summary", "skills", "work", "projects", "education"],
+  "basics": {
+    "name": "Priyanka Chatterjee",
+    "label": "GenAI Engineer · Agentic AI & RAG (OpenAI Agents SDK, Pydantic AI) · Python · 9,300★ OSS Contributor · 3.5+ Years",
+    "email": "priyankachatterjee9075@gmail.com",
+    "phone": "+91 8617262536",
+    "url": "https://priyanka-chatterjee-2000.github.io",
+    "location": {
+      "display": "Kolkata, West Bengal, India",
+      "city": "Kolkata",
+      "region": "West Bengal",
+      "countryCode": "IN"
+    },
+    "profiles": [
+      {
+        "network": "LinkedIn",
+        "username": "priyanka-9075",
+        "url": "https://linkedin.com/in/priyanka-9075",
+        "display": "linkedin.com/in/priyanka-9075"
+      },
+      {
+        "network": "GitHub",
+        "username": "Priyanka-Chatterjee-2000",
+        "url": "https://github.com/Priyanka-Chatterjee-2000",
+        "display": "github.com/Priyanka-Chatterjee-2000"
+      },
+      {
+        "network": "Portfolio",
+        "url": "https://priyanka-chatterjee-2000.github.io",
+        "display": "priyanka-chatterjee-2000.github.io"
+      }
+    ],
+    "summaries": {
+      "genai-wingify": "GenAI Engineer with 3.5+ years of experience and expertise in Python, agentic AI systems, RAG, and backend services powering GenAI features. Built a multi-agent AI system and a RAG-based agent with a vector-store-backed knowledge base at Turbot HQ, cutting resource-discovery latency 70-90% through AI-driven automation that translated business security requirements into production systems."
+    },
+    "activeSummary": "genai-wingify"
+  },
+  "work": [
+    {
+      "name": "Turbot HQ, Inc.",
+      "location": "Remote",
+      "dateDisplay": "August 2022 – April 2026",
+      "roleDisplay": "senior-only",
+      "roles": [
+        {
+          "position": "Software Engineer I",
+          "dateDisplay": "August 2022 – April 2026"
+        }
+      ],
+      "highlights": [
+        "Designed a multi-agent AI system on the OpenAI Agents SDK — a production agentic-orchestration framework — translating a business security requirement into an automated technical solution: LLM agents that generate policy commands, validate them in a live test environment, self-correct failures, and score outcomes against an internal evaluation metric.",
+        "Built a RAG-based Pydantic AI agent with a knowledge base spanning internal documentation and code, ingested as embeddings into AWS S3 vector storage; deployed to AWS Lambda and integrated with Slack to translate cross-team business queries into instant, context-aware answers.",
+        "Built the Steampipe Model Context Protocol (MCP) server end to end in Python, giving LLM agents standardized, real-time access to enterprise cloud and security data — a backend service powering production GenAI features.",
+        "Authored an LLM-driven Claude Code skill automating code refactoring, unit test generation, deployment, and PR creation; used it to migrate 35+ Azure cloud-governance modules to event-driven eventing, cutting resource-discovery latency 70-90% — a measurable business-impact win from agentic automation.",
+        "Led the AWS SDK for JavaScript v2 to v3 migration across 180+ call sites and 11+ AWS services in production Node.js Lambdas; reduced policy-code duplication ~60% via templating, keeping the platform supported past AWS SDK v2 EOL.",
+        "Built a Kafka-based, event-driven distributed pipeline where consumers asynchronously processed policy-enforcement events; added a dead-letter queue (DLQ) for reliable failure handling and debugging.",
+        "Owned release engineering for four open-source Go CLIs — unified GitHub Actions CI/CD workflows and automated testing, hardening release safety and catching regressions before deployment."
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "University of Engineering & Management (UEM)",
+      "location": "Kolkata, WB, IN",
+      "degreeDisplay": "Bachelor of Technology in Computer Science and Engineering",
+      "dateDisplay": "August 2019 – May 2023",
+      "score": "CGPA: 9.28",
+      "detail": "Relevant Coursework: Object-Oriented Programming, DBMS, Data Structures and Algorithms, Shell Scripting in Linux, Low-Level Design, High-Level Design"
+    }
+  ],
+  "skills": [
+    {
+      "name": "Languages",
+      "keywordsText": "Python, Go, TypeScript, JavaScript (ES6+), SQL, Bash"
+    },
+    {
+      "name": "AI & Agentic Engineering",
+      "keywordsText": "LLM Application Development, Agentic Workflows, Multi-Agent Systems, Retrieval-Augmented Generation (RAG), Model Context Protocol (MCP), OpenAI Agents SDK, Pydantic AI, Vector Storage (AWS S3), Logfire (LLM observability/evaluation), Prompt Engineering"
+    },
+    {
+      "name": "Backend & APIs",
+      "keywordsText": "REST, gRPC, Microservices, Node.js, Express.js, OAuth 2.0 (Auth0), JWT"
+    },
+    {
+      "name": "Data & Infra",
+      "keywordsText": "PostgreSQL, MySQL, MongoDB, DuckDB, Redis (ElastiCache), Apache Kafka (consumer groups, DLQs), Docker"
+    },
+    {
+      "name": "Cloud Platforms",
+      "keywordsText": "AWS (Lambda, EC2, S3), Azure, GCP"
+    },
+    {
+      "name": "Frontend",
+      "keywordsText": "React, TypeScript, Vite"
+    },
+    {
+      "name": "DevOps & Testing",
+      "keywordsText": "GitHub Actions, CI/CD, Git, Unit Testing, Integration Testing, Code Review"
+    }
+  ],
+  "projects": [
+    {
+      "name": "Lila Tic-Tac-Toe — Real-Time Multiplayer Game",
+      "dateDisplay": "2026",
+      "association": "",
+      "description": "Built end to end in 4 days: React 19 + TypeScript + Vite frontend on Vercel; Nakama game server (Go core + TS runtime) on Fly.io with PostgreSQL. Server-authoritative anti-cheat over WebSocket transport, mode-aware matchmaking via KV-storage queues, tick-based turn timer, optimistic UI with revert-on-validation-failure, top-10 leaderboard, and reconnect-into-active-match — full-stack, real-time distributed system.",
+      "links": [
+        {
+          "label": "repo/live",
+          "url": "https://priyanka-chatterjee-2000.github.io"
+        }
+      ]
+    }
+  ]
+}

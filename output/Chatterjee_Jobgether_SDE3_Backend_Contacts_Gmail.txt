@@ -1,0 +1,8 @@
+Subject: Applied for the SDE III (Backend) - Contacts role — quick hello
+
+Hi {{outreachEmployeeName}},
+
+I just applied for the {{jobTitle}} role at {{companyName}} ({{jobLink}}) and wanted to reach out directly. At Turbot HQ I led an AWS SDK migration across 180+ call sites in production Node.js Lambdas, built a Kafka-based event-driven pipeline, and work daily with Redis, Elasticsearch, Docker, and Kubernetes. Would love a referral or a quick chat if you have a few minutes — happy to share more details or my resume.
+
+Thanks so much,
+Priyanka Chatterjee

@@ -1,0 +1,4 @@
+Hi {{outreachEmployeeName}}, I just applied for the {{jobTitle}} role at {{companyName}} ({{jobLink}}). I build distributed systems and microservices (Kafka, REST, Docker/Kubernetes, AWS/GCP) at Turbot HQ — my background is Go/Python/TypeScript rather than Java specifically. Would still appreciate a referral or a quick chat if you're open to it!
+
+Thanks,
+Priyanka

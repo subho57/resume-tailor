@@ -1,0 +1,88 @@
+Software Engineer – Backend (Commerce)
+1-3 years
+Full-Time
+Role Overview
+We're looking for a Software Engineer – Backend to help build the services powering our Commerce platform. You'll design, develop, and ship backend features across our merchandising and recommendation APIs while working alongside experienced engineers who will help you grow technically.
+This is a hands-on backend engineering role focused on building reliable, scalable APIs and distributed services. You'll own features end-to-end—from design through production—and contribute to a platform that powers personalized commerce experiences at scale.
+
+About Wingify (VWO)
+Wingify is backed by Everstone Capital, a leading global private equity firm with assets under management exceeding USD 8 billion across India and Southeast Asia.
+
+We are a global SaaS company building category-leading products in Digital Experience Platform Founded in India, Wingify is best known for its flagship product VWO (Visual Website Optimizer) — a powerful experimentation and personalization platform used by thousands of brands worldwide.
+
+In 2026, Wingify merged with AB Tasty, creating one of the world’s largest independent experimentation and personalization platforms.
+
+Today, the combined entity:
+Generates $100M+ in Annual Recurring Revenue (ARR)
+Serves 4,000+ customers globally
+Has 800+ employees across North America, Europe, and APAC
+Operates from 11 global offices
+Is valued at approximately $400–500M
+
+About the Commerce Team
+The Commerce (Recommendations & Merchandising) team builds the intelligence behind modern e-commerce experiences.
+Our platform powers personalized recommendations, merchandising automation, intelligent search, and the data infrastructure that enables them.
+
+Our technology stack includes Python and Go microservices, React applications, and a Google Cloud-based data platform using Airflow, dbt/Dataform, BigQuery, and ClickHouse.
+
+As part of the team, you'll help build scalable backend services that directly impact millions of customer interactions.
+
+What You'll Do
+Design, develop, test, and deploy backend features from concept to production.
+Build scalable REST and GraphQL APIs using modern Python frameworks.
+Design efficient data models and write optimized SQL queries for PostgreSQL.
+Improve application performance using caching, asynchronous processing, and scalable backend patterns.
+Write clean, maintainable, and well-tested code.
+Participate in code reviews and contribute to engineering best practices.
+Monitor production systems, investigate issues, and help improve reliability and observability.
+Collaborate closely with Product, Design, QA, and fellow engineers to deliver high-quality features.
+
+What We're Looking For
+Required
+1–3 years of professional experience building production backend applications.
+Strong programming skills in Python.
+Experience with FastAPI, Flask, Django, or similar backend frameworks.
+Good understanding of SQL and relational databases such as PostgreSQL or MySQL.
+Experience designing or consuming REST and/or GraphQL APIs.
+Familiarity with Git, automated testing, debugging, and code review practices.
+Strong problem-solving and communication skills.
+
+Nice to Have
+Redis or similar caching technologies.
+Docker and cloud platforms (GCP, AWS, or Azure).
+Exposure to Go.
+Experience with ClickHouse, BigQuery, Elasticsearch, or Meilisearch.
+Knowledge of asynchronous programming.
+Experience with monitoring and observability tools.
+Exposure to e-commerce, personalization, recommendation systems, or search platforms.
+
+Education
+Bachelor's degree in Computer Science, Information Technology, or a related field.
+Equivalent professional experience is equally valued.
+
+We Value Strong Engineering Fundamentals
+We believe great engineers can quickly learn new technologies. If you've worked with equivalent tools or frameworks, we'd still love to hear from you.
+
+Our Stack	Equivalent Technologies We Also Value
+Python	Java, Node.js, Scala, Rust, C++
+FastAPI	Flask, Django, Spring Boot, Express, NestJS
+PostgreSQL	MySQL, MariaDB, SQL Server, Oracle
+GraphQL	Apollo, Graphene, Ariadne, Hasura
+Google Cloud Platform	AWS, Microsoft Azure
+
+Our Technology Stack
+Backend: Python (FastAPI, Strawberry GraphQL, SQLAlchemy), Go
+Frontend: React, Angular, TypeScript, Vite, GraphQL
+Data & storage: PostgreSQL, Redis, ClickHouse, BigQuery, Bigtable, Google Cloud Storage
+Search: Meilisearch
+Data engineering: Apache Airflow (Cloud Composer), dbt, Dataform
+Platform & DevOps: Google Cloud (GKE / Kubernetes), Docker, Helm, GitLab CI, Sentry, Prometheus / Grafana
+
+What We Offer
+Remote-first work culture within India
+Flexible working hours
+Competitive compensation
+Opportunity to work on a large-scale commerce platform
+Modern engineering stack and high ownership
+Collaborative engineering culture with experienced mentors
+Learning and development support through courses, certifications, and conferences

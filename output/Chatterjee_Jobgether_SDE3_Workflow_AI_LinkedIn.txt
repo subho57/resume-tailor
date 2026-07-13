@@ -1,0 +1,4 @@
+Hi {{outreachEmployeeName}}, I just applied for the {{jobTitle}} role at {{companyName}} ({{jobLink}}). I build custom AI agents and RAG systems (OpenAI Agents SDK, vector-backed knowledge bases, multi-model switching) on a Node.js backend at Turbot HQ. Would really appreciate a referral or a quick chat if you're open to it!
+
+Thanks,
+Priyanka

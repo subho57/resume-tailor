@@ -1,0 +1,18 @@
+Priyanka Chatterjee
+priyankachatterjee9075@gmail.com | +91 8617262536
+linkedin.com/in/priyanka-9075 | github.com/Priyanka-Chatterjee-2000 | priyanka-chatterjee-2000.github.io
+
+Dear Hiring Manager,
+
+I'm writing to apply for the Software Engineer – Backend (Commerce) role. At Turbot HQ, I built a Model Context Protocol server end to end in Python and optimized PostgreSQL queries powering enterprise compliance audits, improving query performance 40% while separately cutting resource-discovery latency 70-90% through backend automation. I'm also a core open-source contributor there (9,300+ GitHub stars, 120+ merged PRs).
+
+On backend APIs, I designed a REST API microservice in Go (Gin) as part of a greenfield build of a cloud-native SaaS platform, containerized with Docker and deployed to AWS EC2 — and in a personal project, built a REST API in Express.js with JWT authentication and RBAC, which I understand you value as an equivalent to FastAPI/Flask/Django. On data and async processing, I've rewritten complex PostgreSQL queries with jsonb and CTEs for performance, worked hands-on with Redis, and built a Kafka-based pipeline that asynchronously processes events with dead-letter-queue handling for reliability. I've also used Elasticsearch for full-text and semantic search.
+
+On reliability, I resolved a live production incident by diagnosing a Kubernetes CrashLoopBackOff, and I use Datadog and OpenTelemetry for monitoring and observability. I'm comfortable across AWS, Azure, and GCP, and have hands-on Docker and Kubernetes experience.
+
+I haven't worked specifically with GraphQL, ClickHouse, BigQuery, or e-commerce/recommendation platforms, but my REST API, PostgreSQL, and distributed-systems fundamentals transfer directly, and I pick up new domains quickly.
+
+Thank you for your consideration — I'd love to discuss further.
+
+Best regards,
+Priyanka Chatterjee

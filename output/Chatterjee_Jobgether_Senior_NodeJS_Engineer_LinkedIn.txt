@@ -1,0 +1,4 @@
+Hi {{outreachEmployeeName}}, I just applied for the {{jobTitle}} role at {{companyName}} ({{jobLink}}). I led an AWS SDK migration in production Node.js Lambdas and built Kafka-based event-driven pipelines at Turbot HQ, with hands-on AWS, Docker, and MongoDB/Redis experience. Would really appreciate a referral or a quick chat if you're open to it!
+
+Thanks,
+Priyanka

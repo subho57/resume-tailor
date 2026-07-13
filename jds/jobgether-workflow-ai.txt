@@ -1,0 +1,54 @@
+Software Development Engineer III - Workflow AI
+IndiaSecurity & IT – IT /Remote
+Run Happpy Agent
+This position is listed on behalf of a partner company, who manages all applications and next steps. Our partner is looking for a Software Development Engineer III - Workflow AI based in India.
+
+This role offers the opportunity to design and build next-generation AI-powered automation solutions that transform how businesses create and manage workflows.
+You will contribute to intelligent systems that combine automation, machine learning, and scalable backend technologies to deliver seamless user experiences.
+The position involves developing advanced AI features, integrating large language models, and building context-aware workflows used at significant scale.
+You will collaborate with experienced engineers in a remote-first, innovation-driven environment where ownership and experimentation are highly valued.
+Your work will directly impact millions of users by improving efficiency, simplifying complex processes, and enabling smarter business operations.
+This is an opportunity to shape the future of AI-driven automation while mentoring others and driving technical excellence.
+
+Accountabilities:
+The role focuses on building scalable AI-powered workflow solutions, developing intelligent automation features, and contributing to high-impact engineering initiatives. Key responsibilities include:
+
+Designing and developing workflows that simplify automation through AI-powered and prompt-based experiences.
+Integrating AI capabilities into automation actions, including messaging, code execution, and other business processes.
+Creating AI-driven recommendations, templates, and recipes based on user inputs and business needs.
+Building tools that enable the creation of custom AI agents capable of handling complex automation tasks.
+Developing advanced AI functionalities such as data extraction, text-to-voice conversion, and intelligent data analysis.
+Implementing Retrieval-Augmented Generation (RAG) systems and knowledge bases to deliver context-aware workflows.
+Optimizing backend APIs and services to support large-scale usage with high performance and low latency.
+Mentoring junior engineers and taking ownership of AI-focused technical projects.
+Requirements:
+The ideal candidate combines strong backend engineering expertise with hands-on experience building AI-powered applications and scalable systems. Required qualifications and skills include:
+
+4+ years of software development experience, including at least 1.5 years working on AI-related projects.
+Strong proficiency in JavaScript and Node.js for backend development.
+Experience integrating AI platforms and technologies such as OpenAI, Hugging Face, vector databases, and RAG systems.
+Proven ability to build and manage knowledge bases and develop context-aware AI solutions.
+Experience with data processing workflows for large language models and scaling AI-driven systems.
+Strong problem-solving skills, ownership mindset, and a willingness to experiment and innovate.
+Ability to collaborate effectively in a remote environment and mentor other engineers.
+A proactive, builder-oriented approach with curiosity and a focus on delivering impactful solutions.
+Benefits:
+The role offers a flexible and rewarding environment designed to support professional growth and long-term success, including:
+
+Remote-first work environment with flexibility to work from anywhere.
+Opportunity to work on advanced AI and automation technologies at significant scale.
+Competitive compensation package.
+Access to a collaborative global engineering community.
+Opportunities for ownership, technical leadership, and career development.
+Exposure to innovative projects involving AI, automation, and large-scale distributed systems.
+A culture that values initiative, creativity, and continuous learning.
+How Jobgether works:
+We use an AI-powered matching process to ensure your application is reviewed quickly, objectively, and fairly against the role's core requirements. Our system identifies the top-fitting candidates, and this shortlist is then shared directly with the hiring company. The final decision and next steps (interviews, assessments) are managed by their internal team.
+We appreciate your interest and wish you the best!
+ Why Apply Through Jobgether?
+
+Data Privacy Notice: By submitting your application, you acknowledge that Jobgether will process your personal data to evaluate your candidacy and share relevant information with the hiring employer. This processing is based on legitimate interest and pre-contractual measures under applicable data protection laws (including GDPR). You may exercise your rights (access, rectification, erasure, objection) at any time.
+
+
+#LI-CL1
+We may use artificial intelligence (AI) tools to support parts of the hiring process, such as reviewing applications, analyzing resumes, or assessing responses and identifying potential inconsistencies or verification signals in application materials based on available information. These tools assist our recruitment team but do not replace human judgment. Final hiring decisions are ultimately made by humans. If you would like more information about how your data is processed, please contact us.

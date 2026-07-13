@@ -1,0 +1,4 @@
+Hi {{outreachEmployeeName}}, I just applied for the {{jobTitle}} role at {{companyName}} ({{jobLink}}). I built an MCP server and multi-agent LLM workflows (OpenAI Agents SDK, prompt engineering) in production at Turbot, plus observability tooling and incident response across AWS/Azure/GCP. Would really appreciate a referral or a quick chat if you're open to it!
+
+Thanks,
+Priyanka

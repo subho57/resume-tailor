@@ -1,0 +1,103 @@
+{
+  "schemaVersion": "1.0.0",
+  "theme": "corporate-navy",
+  "sectionOrder": ["summary", "skills", "work", "education"],
+  "basics": {
+    "name": "Priyanka Chatterjee",
+    "label": "Platform Engineer · Docker & Linux Production Systems · Distributed Systems · Kubernetes · 9,300★ OSS Contributor · 3.5+ Years",
+    "email": "priyankachatterjee9075@gmail.com",
+    "phone": "+91 8617262536",
+    "url": "https://priyanka-chatterjee-2000.github.io",
+    "location": {
+      "display": "Kolkata, West Bengal, India",
+      "city": "Kolkata",
+      "region": "West Bengal",
+      "countryCode": "IN"
+    },
+    "profiles": [
+      {
+        "network": "LinkedIn",
+        "username": "priyanka-9075",
+        "url": "https://linkedin.com/in/priyanka-9075",
+        "display": "linkedin.com/in/priyanka-9075"
+      },
+      {
+        "network": "GitHub",
+        "username": "Priyanka-Chatterjee-2000",
+        "url": "https://github.com/Priyanka-Chatterjee-2000",
+        "display": "github.com/Priyanka-Chatterjee-2000"
+      },
+      {
+        "network": "Portfolio",
+        "url": "https://priyanka-chatterjee-2000.github.io",
+        "display": "priyanka-chatterjee-2000.github.io"
+      }
+    ],
+    "summaries": {
+      "platform-edge": "Platform Engineer with 3.5+ years of experience and expertise in Docker, Linux production troubleshooting, distributed systems, and Kubernetes. Hardened release reliability for four open-source Go CLIs at Turbot HQ by adding multi-distro Linux smoke tests (CentOS, Ubuntu ARM64, macOS) to the CI/CD pipeline, catching platform regressions before deployment."
+    },
+    "activeSummary": "platform-edge"
+  },
+  "work": [
+    {
+      "name": "Turbot HQ, Inc.",
+      "location": "Remote",
+      "dateDisplay": "August 2022 – April 2026",
+      "roleDisplay": "senior-only",
+      "roles": [
+        {
+          "position": "Software Engineer I",
+          "dateDisplay": "August 2022 – April 2026"
+        }
+      ],
+      "highlights": [
+        "Added multi-distro Linux smoke tests (ephemeral environments across CentOS, Ubuntu ARM64, macOS) to the GitHub Actions release pipeline for four open-source Go CLIs, hardening release safety and catching platform-specific regressions before deployment.",
+        "Resolved a production incident by diagnosing a Go service stuck in a Kubernetes CrashLoopBackOff — investigating pod logs and status remotely and collaborating with the platform team to restore service.",
+        "Designed and developed an internal REST API microservice in Go using the Gin framework, containerized with Docker and deployed to AWS EC2, secured with OAuth 2.0 authentication via Auth0, and served as a gRPC client for several internal distributed microservices.",
+        "Built a Kafka-based, fire-and-forget distributed event pipeline where consumers asynchronously processed policy-enforcement events, with a dead-letter queue (DLQ) to capture recurring failures for manual investigation and debugging.",
+        "Engineered core features for Tailpipe, a Go-based observability CLI on DuckDB + Parquet, lifting log-processing throughput 30% to 1,000+ logs per second by chunking and batching file reads and streaming writes, and reducing memory use to eliminate out-of-memory failures.",
+        "Owned release engineering for four open-source Go CLIs (Steampipe, Powerpipe, Flowpipe, Tailpipe) — unified GitHub Actions release/version workflows, automated Slack release notifications, and GHCR Docker image tagging."
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "University of Engineering & Management (UEM)",
+      "location": "Kolkata, WB, IN",
+      "degreeDisplay": "Bachelor of Technology in Computer Science and Engineering",
+      "dateDisplay": "August 2019 – May 2023",
+      "score": "CGPA: 9.28",
+      "detail": "Relevant Coursework: Object-Oriented Programming, DBMS, Data Structures and Algorithms, Shell Scripting in Linux, Low-Level Design, High-Level Design"
+    }
+  ],
+  "skills": [
+    {
+      "name": "Languages",
+      "keywordsText": "Go, Python, Bash, SQL"
+    },
+    {
+      "name": "Containers & Distributed Systems",
+      "keywordsText": "Docker, Kubernetes (working knowledge; collaborate with platform teams), Microservices, Distributed Systems, Event-Driven Architecture, gRPC, Apache Kafka (consumer groups, DLQs)"
+    },
+    {
+      "name": "Linux & Production Operations",
+      "keywordsText": "Multi-distro Linux (CentOS, Ubuntu ARM64, macOS), production incident diagnosis & troubleshooting, release engineering"
+    },
+    {
+      "name": "CI/CD & DevOps",
+      "keywordsText": "GitHub Actions, Git, GHCR Docker image tagging, Terraform, OpenTofu"
+    },
+    {
+      "name": "Observability & Monitoring",
+      "keywordsText": "Datadog, OpenTelemetry (OTel); metrics, logging, tracing, incident triage"
+    },
+    {
+      "name": "Cloud Platforms",
+      "keywordsText": "AWS (EC2, Lambda, S3), Azure, GCP"
+    },
+    {
+      "name": "Backend & APIs",
+      "keywordsText": "REST, OAuth 2.0 (Auth0), JWT"
+    }
+  ]
+}

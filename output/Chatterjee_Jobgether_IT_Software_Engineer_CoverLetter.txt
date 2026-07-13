@@ -1,0 +1,18 @@
+Priyanka Chatterjee
+priyankachatterjee9075@gmail.com | +91 8617262536
+linkedin.com/in/priyanka-9075 | github.com/Priyanka-Chatterjee-2000 | priyanka-chatterjee-2000.github.io
+
+Dear Hiring Manager,
+
+I'm writing to apply for the Information Technology - Software Engineer role. At Turbot HQ, I built a Model Context Protocol server and multi-agent LLM automation embedded directly into a production enterprise platform, cutting resource-discovery latency 70-90% while keeping the platform aligned with CIS, NIST, and SOC 2 regulatory standards. That combination of hands-on AI engineering and enterprise architecture is exactly what this role calls for.
+
+On AI-in-production, I designed a multi-agent architecture on the OpenAI Agents SDK that translates a business security requirement — preventing public-cloud misconfigurations — into an automated technical solution: LLM agents that generate policy commands, validate them in a live environment, self-correct failures, and score outcomes against an internal metric. I also built a RAG-based Pydantic AI agent deployed as a serverless AWS Lambda function, giving cross-team stakeholders instant, non-technical-friendly access to internal documentation through Slack.
+
+On architecture and compliance, I designed a REST API microservice in Go (Gin) as part of a scalable microservices architecture, and a Kafka-based event-driven pipeline with webhook notifications and dead-letter-queue handling for reliability — both across AWS, Azure, and GCP. I also authored multi-cloud compliance modules covering 1,000+ resource checks across CIS, NIST, HIPAA, PCI DSS v4, SOC 2, and FedRAMP for enterprise customers in finance, healthcare, and government, and mentored teammates on adopting AI-assisted engineering tools into their daily workflows.
+
+I haven't worked specifically within a Quality Management platform, but the enterprise SaaS architecture, regulatory-compliance, and AI-integration patterns transfer directly, and I've consistently picked up new domains quickly throughout my career at Turbot.
+
+Thank you for your consideration — I'd love to discuss further.
+
+Best regards,
+Priyanka Chatterjee

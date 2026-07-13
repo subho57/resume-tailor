@@ -1,0 +1,16 @@
+Priyanka Chatterjee
+priyankachatterjee9075@gmail.com | +91 8617262536
+linkedin.com/in/priyanka-9075 | github.com/Priyanka-Chatterjee-2000 | priyanka-chatterjee-2000.github.io
+
+Dear Hiring Manager,
+
+I'm writing to apply for the Implementation Engineer, TPRM role. At Turbot HQ, I authored multi-cloud compliance modules in HCL and SQL covering 1,000+ resource checks across CIS, NIST, HIPAA, PCI DSS v4, SOC 2, and FedRAMP frameworks — used directly by enterprise customers in finance, healthcare, and government — cutting compliance-audit time 50%. That combination of GRC domain depth and hands-on engineering is exactly what this role's TPRM platform work calls for.
+
+On the integration side, I designed and built a REST API microservice in Go (Gin framework) secured with OAuth 2.0 authentication via Auth0, deployed it to AWS EC2, and built a Kafka-based event pipeline that fires webhooks on policy-enforcement events, with a dead-letter queue for reliable failure handling — directly matching this role's OAuth 2.0, REST API, and webhook integration requirements. I also led a cross-service AWS SDK migration across 180+ call sites and 11 AWS services in production Node.js, cutting duplicated code ~60% through templating automation, and separately built configurable governance workflows — rule builders, a scoring engine, and approval policies — that mirror the risk-scoring and approval-workflow configuration a TPRM platform needs.
+
+My background is engineering-side rather than frontline customer implementation, so while I haven't yet run customer discovery calls or owned a delivery timeline directly, I've consistently built the technical assets (compliance modules, automation scripts, integration pipelines) that enterprise customers rely on day to day, and I pick up new tools and processes quickly — as reflected in feedback from managers at Turbot.
+
+I'd welcome the opportunity to bring that technical foundation to a more customer-facing implementation role. Thank you for your consideration — I'd love to discuss further.
+
+Best regards,
+Priyanka Chatterjee

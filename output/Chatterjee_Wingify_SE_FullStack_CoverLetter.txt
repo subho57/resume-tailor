@@ -1,0 +1,18 @@
+Priyanka Chatterjee
+priyankachatterjee9075@gmail.com | +91 8617262536
+linkedin.com/in/priyanka-9075 | github.com/Priyanka-Chatterjee-2000 | priyanka-chatterjee-2000.github.io
+
+Dear Hiring Manager,
+
+I'm writing to apply for the Software Engineer – Full Stack role. At Turbot HQ, I built a Model Context Protocol server end to end in Python, and separately optimized PostgreSQL queries powering enterprise compliance audits, improving query performance 40%. I'm also a core open-source contributor there (9,300+ GitHub stars, 120+ merged PRs).
+
+On the backend, I designed a REST API microservice in Go (Gin) as part of a greenfield build of a cloud-native SaaS platform, containerized with Docker and deployed to AWS EC2, and built a Kafka-based event-driven pipeline with dead-letter-queue handling for reliability. I've also built a REST API in Express.js with JWT authentication, which I understand you value as equivalent to FastAPI/Flask/Django. On the frontend, I built a real-time multiplayer game end to end in 4 days — a React 19 + TypeScript + Vite frontend with client-side state management (optimistic UI with revert-on-validation-failure) talking to a Go game server over WebSocket — showing the same full-stack range this role is looking for.
+
+I've also used Elasticsearch for full-text and semantic search, which I understand you value as equivalent to Meilisearch, and I'm comfortable across AWS, Azure, and GCP, plus Redis, Docker, and Kubernetes.
+
+I don't have direct experience with ClickHouse, BigQuery, Apache Airflow, or dbt/Dataform, or with e-commerce/personalization/recommendation platforms specifically, but my backend and full-stack fundamentals transfer directly, and I pick up new tools quickly.
+
+Thank you for your consideration — I'd love to discuss further.
+
+Best regards,
+Priyanka Chatterjee

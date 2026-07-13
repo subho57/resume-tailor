@@ -1,0 +1,18 @@
+Priyanka Chatterjee
+priyankachatterjee9075@gmail.com | +91 8617262536
+linkedin.com/in/priyanka-9075 | github.com/Priyanka-Chatterjee-2000 | priyanka-chatterjee-2000.github.io
+
+Dear Hiring Manager,
+
+I'm writing to apply for the Gen AI Specialist role. At Turbot HQ, I built the Steampipe Model Context Protocol (MCP) server end to end in Python, giving large language models standardized, real-time access to enterprise cloud and security data — and I'm also a core contributor to Turbot's open-source suite (9,300+ GitHub stars, 120+ merged PRs). That combination of hands-on LLM engineering and production cloud experience is exactly what this role calls for.
+
+On the generative AI side, I designed a multi-agent workflow on the OpenAI Agents SDK, applying prompt engineering to orchestrate LLM agents that generate cloud policy commands, validate them in a live environment, self-correct failures, and score outcomes against an internal evaluation metric — directly matching this role's focus on AI API integration, model testing, and performance evaluation. I also built a RAG-based Pydantic AI agent that preprocesses and indexes internal documentation as text data into vector storage, deployed on AWS Lambda and surfaced through Slack for instant developer query resolution.
+
+On the operational side, I engineered core features for Tailpipe, a Go-based observability/SIEM CLI, lifting log-processing throughput 30% to 1,000+ logs/second while eliminating out-of-memory failures, and I've resolved production incidents (including a Kubernetes CrashLoopBackOff) by working directly with platform teams. I've also authored an LLM-driven Claude Code skill that automated code refactoring and migration work across 35+ Azure modules, cutting resource-discovery latency 70-90% — a concrete example of applying AI-driven automation to operational improvement, the kind of work this role's AIOps and automation focus points toward.
+
+I haven't worked with Grafana, Splunk, or ServiceNow specifically, but my Datadog, OpenTelemetry, and Tailpipe experience covers the same observability ground, and I've picked up new platforms quickly throughout my career at Turbot. I'd welcome the chance to discuss how my LLM engineering and cloud operations background could contribute to your team.
+
+Thank you for your consideration — I'd love to speak further.
+
+Best regards,
+Priyanka Chatterjee

@@ -1,0 +1,104 @@
+{
+  "schemaVersion": "1.0.0",
+  "theme": "corporate-navy",
+  "sectionOrder": ["summary", "skills", "work", "projects", "education"],
+  "basics": {
+    "name": "Priyanka Chatterjee",
+    "label": "SDE III · Workflow AI · Custom AI Agents & RAG · Node.js/JavaScript · 9,300★ OSS Contributor · 3.5+ Years",
+    "email": "priyankachatterjee9075@gmail.com",
+    "phone": "+91 8617262536",
+    "url": "https://priyanka-chatterjee-2000.github.io",
+    "location": {
+      "display": "Kolkata, West Bengal, India",
+      "city": "Kolkata",
+      "region": "West Bengal",
+      "countryCode": "IN"
+    },
+    "profiles": [
+      {
+        "network": "LinkedIn",
+        "username": "priyanka-9075",
+        "url": "https://linkedin.com/in/priyanka-9075",
+        "display": "linkedin.com/in/priyanka-9075"
+      },
+      {
+        "network": "GitHub",
+        "username": "Priyanka-Chatterjee-2000",
+        "url": "https://github.com/Priyanka-Chatterjee-2000",
+        "display": "github.com/Priyanka-Chatterjee-2000"
+      },
+      {
+        "network": "Portfolio",
+        "url": "https://priyanka-chatterjee-2000.github.io",
+        "display": "priyanka-chatterjee-2000.github.io"
+      }
+    ],
+    "summaries": {
+      "workflow-ai": "Software Development Engineer III - Workflow AI with 3.5+ years of experience and expertise in JavaScript/Node.js backend development, AI-powered automation, custom AI agents, and Retrieval-Augmented Generation (RAG) systems. Built a RAG-based AI agent with a vector-database-backed knowledge base and a multi-agent automation workflow at Turbot HQ, cutting resource-discovery latency 70-90% through AI-driven automation."
+    },
+    "activeSummary": "workflow-ai"
+  },
+  "work": [
+    {
+      "name": "Turbot HQ, Inc.",
+      "location": "Remote",
+      "dateDisplay": "August 2022 – April 2026",
+      "roleDisplay": "senior-only",
+      "roles": [
+        {
+          "position": "Software Engineer I",
+          "dateDisplay": "August 2022 – April 2026"
+        }
+      ],
+      "highlights": [
+        "Designed a multi-agent workflow on the OpenAI Agents SDK to orchestrate custom AI agents that generate cloud preventive-policy automation commands, validate them in a live test environment, self-correct failures, and score outcomes against an internal metric — an end-to-end AI-powered automation pipeline for complex tasks.",
+        "Built a RAG-based internal Pydantic AI agent with a knowledge base spanning documentation and code for all internal repositories, ingested into S3 vector storage; deployed to AWS Lambda and integrated with the Slack Bot API to deliver context-aware, AI-driven answers to cross-team queries.",
+        "Authored an LLM-driven Claude Code skill automating code refactoring, unit test generation, deployment, and PR creation — integrating AI directly into code-execution automation actions; used it to migrate 35+ Azure cloud-governance modules to event-driven eventing, cutting resource-discovery latency 70-90%.",
+        "Led the AWS SDK for JavaScript v2 to v3 migration across 180+ call sites and 11+ AWS services in production Node.js Lambdas; reduced policy-code duplication ~60% via templating, keeping the platform supported past AWS SDK v2 EOL.",
+        "Engineered core features for Tailpipe, a CLI on DuckDB + Parquet, lifting log-processing throughput 30% to 1,000+ logs per second by chunking and batching file reads and streaming writes at scale; reduced memory use to eliminate out-of-memory failures.",
+        "Mentored teammates on adopting AI-assisted engineering tools (Claude Code, Cursor) into their daily workflows."
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "University of Engineering & Management (UEM)",
+      "location": "Kolkata, WB, IN",
+      "degreeDisplay": "Bachelor of Technology in Computer Science and Engineering",
+      "dateDisplay": "August 2019 – May 2023",
+      "score": "CGPA: 9.28",
+      "detail": "Relevant Coursework: Object-Oriented Programming, DBMS, Data Structures and Algorithms, Shell Scripting in Linux, Low-Level Design, High-Level Design"
+    }
+  ],
+  "skills": [
+    {
+      "name": "Languages",
+      "keywordsText": "JavaScript (ES6+), Python"
+    },
+    {
+      "name": "AI Engineering",
+      "keywordsText": "LLM Application Development, Agentic Workflows, Multi-Agent Systems, Custom AI Agents, Retrieval-Augmented Generation (RAG), Model Context Protocol (MCP), OpenAI Agents SDK, Pydantic AI, Vector Storage (AWS S3), Prompt Engineering"
+    },
+    {
+      "name": "AI Tooling & Multi-Model Integration",
+      "keywordsText": "Claude Code, Cursor, Logfire (LLM observability), multi-model switching (OpenAI, Gemini, Anthropic, Mistral)"
+    },
+    {
+      "name": "Backend & Cloud",
+      "keywordsText": "Node.js, Serverless (AWS Lambda), Azure Event Grid, API Integration (OpenAI, Slack Bot API)"
+    },
+    {
+      "name": "Databases & Data",
+      "keywordsText": "DuckDB, Parquet, MongoDB, Vector Storage (AWS S3)"
+    }
+  ],
+  "projects": [
+    {
+      "name": "General-Purpose AI Chatbot / Agent (Model Context Protocol)",
+      "dateDisplay": "Jun 2025 – Aug 2025",
+      "association": "",
+      "description": "Tools framework enabling the creation of custom AI agents, built with Pydantic AI: configurable external MCP servers via a persistent MongoDB-backed registry, JSON config loader with strict input validation, per-server failure isolation, native tool calling, mid-conversation multi-model switching (OpenAI, Gemini, Anthropic, Mistral), conversation-history persistence, sync + streaming output, prompt-injection safeguards, and Logfire observability.",
+      "links": []
+    }
+  ]
+}

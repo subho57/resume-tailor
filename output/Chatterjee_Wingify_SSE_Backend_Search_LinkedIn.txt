@@ -1,0 +1,4 @@
+Hi {{outreachEmployeeName}}, I just applied for the {{jobTitle}} role (Track A, Backend & Search) at {{companyName}} ({{jobLink}}). I build high-throughput Go/Python backend services (Kafka, DuckDB, Elasticsearch) at Turbot HQ, plus own release engineering for open-source CLIs. Would really appreciate a referral or a quick chat if you're open to it!
+
+Thanks,
+Priyanka

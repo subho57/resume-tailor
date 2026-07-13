@@ -1,0 +1,18 @@
+Priyanka Chatterjee
+priyankachatterjee9075@gmail.com | +91 8617262536
+linkedin.com/in/priyanka-9075 | github.com/Priyanka-Chatterjee-2000 | priyanka-chatterjee-2000.github.io
+
+Dear Hiring Manager,
+
+I'm writing to apply for the Senior Software Engineer - Backend & Search role, specifically Track A (Backend & Search Engineering). At Turbot HQ, I engineered core features for Tailpipe, a Go-based observability CLI on DuckDB (a columnar analytical engine) and Parquet, lifting log-processing throughput 30% to 1,000+ logs per second, and I own release engineering end-to-end for four open-source Go CLIs with 9,300+ combined GitHub stars and 120+ merged PRs.
+
+On backend and distributed systems, I designed a REST API microservice in Go (Gin) as part of a greenfield build of a cloud-native SaaS platform, and built a fault-tolerant, Kafka-based event-driven pipeline with dead-letter-queue handling — Kafka being the tool you list as equivalent to Pub/Sub. On search, I've used Elasticsearch for full-text and semantic search, which I understand you value as equivalent to Meilisearch. On data, I rewrote complex PostgreSQL queries to improve audit-query performance 40%, and I'm comfortable across AWS and Azure, which you list as GCP equivalents.
+
+On engineering leadership, I've established CI/CD best practices across four open-source products via GitHub Actions, resolved a live production incident by diagnosing a Kubernetes CrashLoopBackOff, and mentored teammates on adopting AI-assisted engineering tools into their daily workflows.
+
+I don't have direct experience with ClickHouse, BigQuery, or Snowflake specifically — DuckDB is the closest analytical-database work I've done — and I haven't used Helm, Prometheus, or Grafana by name, though I use Datadog and OpenTelemetry for observability. I pick up new tools in this space quickly.
+
+Thank you for your consideration — I'd love to discuss further.
+
+Best regards,
+Priyanka Chatterjee

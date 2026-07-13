@@ -92,7 +92,7 @@
         }
       ],
       "highlights": [
-        "Designed and developed an internal REST API microservice in Go using the Gin framework to power the backend of Turbot Guardrails, a Preventive Security Posture Management (PSPM) SaaS product; secured endpoints with JWT client-token authentication, containerized with Docker, deployed to AWS EC2, and served as a gRPC client for several internal microservices.",
+        "Designed and developed an internal REST API microservice in Go using the Gin framework as part of a greenfield build of Turbot Guardrails, a Preventive Security Posture Management (PSPM) SaaS product; secured endpoints with OAuth 2.0 authentication via Auth0, containerized with Docker, deployed to AWS EC2, and served as a gRPC client for several internal microservices.",
         "Built a Kafka-based, fire-and-forget event-driven pipeline for Turbot Guardrails, where consumers asynchronously processed policy-enforcement events and fired a webhook once a policy was successfully enforced against a resource; added a dead-letter queue (DLQ) to capture recurring failures for manual investigation and debugging.",
         "Engineered core features for Tailpipe, a Go-based observability/SIEM CLI on DuckDB + Parquet, lifting log-processing throughput 30% to 1,000+ logs per second by chunking and batching file reads and streaming writes to DuckDB; reduced memory use to eliminate out-of-memory failures and enable incremental updates.",
         "Authored 11 AWS log-source tables for Tailpipe in Go (CloudTrail, GuardDuty, SecurityHub, ALB/NLB/CLB/ELB access, S3 access, VPC flow, WAF, Network Firewall) and 25+ pre-built security detections; designed standardized exit-code handling, zero-data-loss DuckLake metadata backups, and a cross-platform smoke-test pipeline (CentOS, Ubuntu ARM64, macOS).",
@@ -239,7 +239,7 @@
     },
     {
       "name": "Backend & APIs",
-      "keywordsText": "Microservices, Event-Driven Architecture, Distributed Systems, Serverless, REST, GraphQL, gRPC, WebSockets, JWT, Zod, Node.js, Express.js, Gin, Bun, Serverless Framework"
+      "keywordsText": "Microservices, Event-Driven Architecture, Distributed Systems, Serverless, REST, GraphQL, gRPC, WebSockets, OAuth 2.0 (Auth0), JWT, Zod, Node.js, Express.js, Gin, Bun, Serverless Framework"
     },
     {
       "name": "Messaging & Streaming",

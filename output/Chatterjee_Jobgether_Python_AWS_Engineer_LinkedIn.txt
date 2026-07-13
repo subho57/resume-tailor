@@ -1,0 +1,4 @@
+Hi {{outreachEmployeeName}}, I just applied for the {{jobTitle}} role at {{companyName}} ({{jobLink}}). I build Python services on AWS (MCP server, serverless Lambda RAG agent) and led an AWS SDK migration across 180+ call sites at Turbot HQ, all fully remote across a distributed team. Would really appreciate a referral or a quick chat if you're open to it!
+
+Thanks,
+Priyanka

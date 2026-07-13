@@ -1,0 +1,18 @@
+Priyanka Chatterjee
+priyankachatterjee9075@gmail.com | +91 8617262536
+linkedin.com/in/priyanka-9075 | github.com/Priyanka-Chatterjee-2000 | priyanka-chatterjee-2000.github.io
+
+Dear Hiring Manager,
+
+I'm writing to apply for the GenAI Engineer role at Wingify. At Turbot HQ, I built a multi-agent AI system on the OpenAI Agents SDK and a RAG-based agent with an embeddings-backed knowledge base in AWS S3 vector storage, cutting resource-discovery latency 70-90% through agentic automation that translated a business requirement directly into a production system. I'm also a core open-source contributor there (9,300+ GitHub stars, 120+ merged PRs).
+
+On agentic systems specifically, my multi-agent workflow orchestrates LLM agents that generate policy commands, validate them in a live test environment, self-correct failures, and score outcomes against an internal evaluation metric — end-to-end production agentic orchestration, translating business requirements the same way this role asks me to translate GTM stakeholder workflows into GenAI solutions. On RAG, my Pydantic AI agent ingests internal documentation and code as embeddings into vector storage and delivers context-aware answers through Slack, and I've used Logfire for LLM observability and evaluation. On the full-stack side, I built a real-time multiplayer game end to end in 4 days — React 19 + TypeScript frontend, a Go-based game server, PostgreSQL, and WebSocket transport — showing the same full-stack instincts this role calls for.
+
+On backend infrastructure, I've worked hands-on with Python, Node.js/TypeScript, PostgreSQL, MongoDB, Redis, Kafka, and Docker, and I own release engineering with GitHub Actions CI/CD for four open-source CLIs.
+
+One honest note: my orchestration and tooling experience is with the OpenAI Agents SDK, Pydantic AI, and Logfire rather than LangChain/LangGraph/CrewAI/Autogen or Langfuse/LangSmith specifically — the underlying agentic-orchestration, RAG, and evaluation concepts transfer directly, and I pick up new frameworks quickly.
+
+Thank you for your consideration — I'd love to discuss further.
+
+Best regards,
+Priyanka Chatterjee

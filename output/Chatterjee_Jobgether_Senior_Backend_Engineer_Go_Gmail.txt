@@ -1,0 +1,8 @@
+Subject: Applied for the Senior Backend Engineer (Go), Continuous Delivery role — quick hello
+
+Hi {{outreachEmployeeName}},
+
+I just applied for the {{jobTitle}} role at {{companyName}} ({{jobLink}}) and wanted to reach out directly. At Turbot HQ I built a Go microservice as part of a greenfield build of our Guardrails platform, and I own release engineering end-to-end for four open-source Go CLIs — GitHub Actions CI/CD, policy-based governance controls, Kafka event-driven pipelines, and AI-powered engineering tools (Claude Code) baked into my daily workflow. Would love a referral or a quick chat if you have a few minutes.
+
+Thanks so much,
+Priyanka Chatterjee

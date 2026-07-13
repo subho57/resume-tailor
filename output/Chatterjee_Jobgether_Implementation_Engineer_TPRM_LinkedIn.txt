@@ -1,0 +1,4 @@
+Hi {{outreachEmployeeName}}, I just applied for the {{jobTitle}} role at {{companyName}} ({{jobLink}}). I've built REST API integrations, webhook pipelines, and SOC 2/NIST/PCI DSS compliance modules for enterprise customers at Turbot HQ. Would really appreciate a referral or a quick chat if you're open to it!
+
+Thanks,
+Priyanka

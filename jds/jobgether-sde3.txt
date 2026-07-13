@@ -1,0 +1,68 @@
+Software Development Engineer III (Backend) - Contacts
+IndiaSecurity & IT – IT /Full-time /Remote
+Run Happpy Agent
+This position is listed on behalf of a partner company, who manages all applications and next steps. Our partner is looking for a Software Development Engineer III (Backend) - Contacts based in India.
+
+This role offers the opportunity to design and build highly scalable backend systems that support millions of users and billions of data operations.
+You will work on distributed services, APIs, and infrastructure that power critical contact management and automation capabilities.
+The position requires solving complex engineering challenges around performance, reliability, and large-scale data processing.
+You will collaborate with cross-functional teams in a remote-first environment focused on innovation, ownership, and technical excellence.
+Your contributions will directly influence the scalability, speed, and reliability of systems used by businesses worldwide.
+This is an opportunity to shape robust backend architectures while contributing to a culture of continuous improvement and engineering excellence.
+
+Accountabilities:
+The role focuses on developing scalable backend solutions, improving system reliability, and contributing to the evolution of high-performance distributed services. Key responsibilities include:
+
+Designing, developing, and maintaining scalable backend services, APIs, and microservices.
+Building reliable, high-performance systems capable of supporting large-scale workloads with low latency.
+Writing clean, efficient, maintainable, and production-ready code following engineering best practices.
+Developing reusable components and services while contributing to technical design discussions and architecture decisions.
+Optimizing backend systems for scalability, availability, and performance.
+Troubleshooting production issues, conducting root cause analysis, and implementing long-term solutions.
+Improving system reliability through monitoring, logging, testing, observability, and operational best practices.
+Collaborating with Product Managers, Designers, QA engineers, and other developers to deliver high-quality features.
+Participating in code reviews, knowledge sharing, and continuous improvements across engineering practices and development processes.
+Requirements:
+The ideal candidate brings strong backend engineering expertise, experience with distributed systems, and the ability to build reliable solutions at scale. Required qualifications and skills include:
+
+5+ years of hands-on experience in backend software development.
+Strong proficiency in TypeScript and Node.js.
+Experience with backend technologies such as JavaScript, Go, Java, Python, C#, or similar technologies, with the ability and willingness to work extensively with TypeScript and Node.js.
+Proven experience designing and building RESTful APIs and microservices.
+Strong understanding of distributed systems, event-driven architectures, and scalable application design.
+Experience working with relational and/or NoSQL databases, including schema design and query optimization.
+Knowledge of caching strategies, asynchronous processing, and message queue systems.
+Hands-on experience with Docker and containerized applications.
+Experience working with cloud platforms such as AWS or GCP.
+Familiarity with CI/CD pipelines, modern software development practices, and agile methodologies.
+Experience using observability and monitoring tools such as Grafana, Sentry, ELK, or similar solutions.
+Strong understanding of software engineering principles, testing methodologies, debugging techniques, and clean code practices.
+Ability to independently design, develop, test, and deploy scalable backend solutions.
+Strong analytical thinking, problem-solving abilities, and a collaborative approach to working across teams.
+Preferred qualifications include:
+
+Experience building high-scale SaaS products.
+Familiarity with technologies such as Kafka, Redis, Elasticsearch, or similar distributed systems.
+Experience optimizing backend platforms for performance, scalability, and reliability.
+Exposure to Kubernetes and cloud-native architectures.
+Experience working in Agile development environments.
+Benefits:
+The role provides an environment designed to support flexibility, professional growth, and impactful engineering work, including:
+
+Remote-first work environment with flexibility to work from anywhere.
+Competitive salary package aligned with experience and technical expertise.
+Opportunity to work on large-scale backend systems and complex engineering challenges.
+Collaboration with talented engineers across a global organization.
+Opportunities for technical ownership, leadership, and career development.
+Exposure to modern technologies across cloud infrastructure, distributed systems, and scalable architectures.
+A culture focused on innovation, continuous learning, and improving engineering practices.
+How Jobgether works:
+We use an AI-powered matching process to ensure your application is reviewed quickly, objectively, and fairly against the role's core requirements. Our system identifies the top-fitting candidates, and this shortlist is then shared directly with the hiring company. The final decision and next steps (interviews, assessments) are managed by their internal team.
+We appreciate your interest and wish you the best!
+ Why Apply Through Jobgether?
+
+Data Privacy Notice: By submitting your application, you acknowledge that Jobgether will process your personal data to evaluate your candidacy and share relevant information with the hiring employer. This processing is based on legitimate interest and pre-contractual measures under applicable data protection laws (including GDPR). You may exercise your rights (access, rectification, erasure, objection) at any time.
+
+
+#LI-CL1
+We may use artificial intelligence (AI) tools to support parts of the hiring process, such as reviewing applications, analyzing resumes, or assessing responses and identifying potential inconsistencies or verification signals in application materials based on available information. These tools assist our recruitment team but do not replace human judgment. Final hiring decisions are ultimately made by humans. If you would like more information about how your data is processed, please contact us.

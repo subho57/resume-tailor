@@ -1,0 +1,4 @@
+Hi {{outreachEmployeeName}}, I just applied for the {{jobTitle}} role at {{companyName}} ({{jobLink}}). I've built AI directly into production (MCP server, multi-agent LLM workflows) plus scalable microservices, event-driven pipelines, and regulatory-compliance systems across AWS/Azure/GCP at Turbot HQ. Would really appreciate a referral or a quick chat if you're open to it!
+
+Thanks,
+Priyanka

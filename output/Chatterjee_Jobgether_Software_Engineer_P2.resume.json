@@ -1,0 +1,103 @@
+{
+  "schemaVersion": "1.0.0",
+  "theme": "corporate-navy",
+  "sectionOrder": ["summary", "skills", "work", "education"],
+  "basics": {
+    "name": "Priyanka Chatterjee",
+    "label": "Software Engineer · Distributed Systems & Microservices · REST APIs · AWS/GCP · 9,300★ OSS Contributor · 3.5+ Years",
+    "email": "priyankachatterjee9075@gmail.com",
+    "phone": "+91 8617262536",
+    "url": "https://priyanka-chatterjee-2000.github.io",
+    "location": {
+      "display": "Kolkata, West Bengal, India",
+      "city": "Kolkata",
+      "region": "West Bengal",
+      "countryCode": "IN"
+    },
+    "profiles": [
+      {
+        "network": "LinkedIn",
+        "username": "priyanka-9075",
+        "url": "https://linkedin.com/in/priyanka-9075",
+        "display": "linkedin.com/in/priyanka-9075"
+      },
+      {
+        "network": "GitHub",
+        "username": "Priyanka-Chatterjee-2000",
+        "url": "https://github.com/Priyanka-Chatterjee-2000",
+        "display": "github.com/Priyanka-Chatterjee-2000"
+      },
+      {
+        "network": "Portfolio",
+        "url": "https://priyanka-chatterjee-2000.github.io",
+        "display": "priyanka-chatterjee-2000.github.io"
+      }
+    ],
+    "summaries": {
+      "swe-p2": "Software Engineer P2 with 3.5+ years of experience and expertise in distributed systems, microservices, REST APIs, and cloud-native development on AWS and GCP. Designed a Go-based REST API microservice as part of a greenfield build of Turbot Guardrails, a cloud-native SaaS platform, and engineered distributed event-driven pipelines at Turbot HQ, cutting resource-discovery latency 70-90%."
+    },
+    "activeSummary": "swe-p2"
+  },
+  "work": [
+    {
+      "name": "Turbot HQ, Inc.",
+      "location": "Remote",
+      "dateDisplay": "August 2022 – April 2026",
+      "roleDisplay": "senior-only",
+      "roles": [
+        {
+          "position": "Software Engineer I",
+          "dateDisplay": "August 2022 – April 2026"
+        }
+      ],
+      "highlights": [
+        "Designed and developed an internal REST API microservice in Go using the Gin framework as part of a greenfield build of Turbot Guardrails, a cloud-native SaaS platform; secured endpoints with OAuth 2.0 authentication via Auth0, containerized with Docker, deployed to AWS EC2, and served as a gRPC client for several internal microservices.",
+        "Built a Kafka-based, event-driven distributed pipeline where consumers asynchronously processed policy-enforcement events in real time; added a dead-letter queue (DLQ) for reliable failure handling and reprocessing.",
+        "Optimized complex PostgreSQL queries powering customer compliance audits — rewriting AWS IAM policy-evaluation queries with jsonb array elements and multi-stage CTEs — improving query performance 40% and eliminating a class of false-positive findings.",
+        "Engineered core features for Tailpipe, a CLI on DuckDB + Parquet, lifting log-processing throughput 30% to 1,000+ logs per second by chunking and batching file reads and streaming writes; reduced memory use to eliminate out-of-memory failures at scale.",
+        "Resolved a production incident by diagnosing a Go service stuck in a Kubernetes CrashLoopBackOff — investigating pod logs and status and collaborating with the platform team to restore service.",
+        "Added multi-distro Linux smoke tests to the GitHub Actions CI/CD release pipeline for four open-source Go CLIs, hardening release safety and catching regressions before deployment."
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "University of Engineering & Management (UEM)",
+      "location": "Kolkata, WB, IN",
+      "degreeDisplay": "Bachelor of Technology in Computer Science and Engineering",
+      "dateDisplay": "August 2019 – May 2023",
+      "score": "CGPA: 9.28",
+      "detail": "Relevant Coursework: Object-Oriented Programming, DBMS, Data Structures and Algorithms, Shell Scripting in Linux, Low-Level Design, High-Level Design"
+    }
+  ],
+  "skills": [
+    {
+      "name": "Languages",
+      "keywordsText": "Go, Python, TypeScript, JavaScript (ES6+), SQL, Bash"
+    },
+    {
+      "name": "Backend & APIs",
+      "keywordsText": "REST, gRPC, Microservices, OAuth 2.0 (Auth0), JWT"
+    },
+    {
+      "name": "Distributed Systems & Messaging",
+      "keywordsText": "Distributed Systems, Event-Driven Architecture, Apache Kafka (consumer groups, DLQs), AWS SNS/SQS"
+    },
+    {
+      "name": "Cloud & Containers",
+      "keywordsText": "AWS (Lambda, EC2, S3, SecurityHub, GuardDuty), GCP, Docker, Kubernetes (working knowledge; collaborate with platform teams)"
+    },
+    {
+      "name": "Databases & Caching",
+      "keywordsText": "PostgreSQL, MySQL, DuckDB, MongoDB, Redis (ElastiCache); jsonb, CTEs, query tuning"
+    },
+    {
+      "name": "DevOps & Testing",
+      "keywordsText": "GitHub Actions, CI/CD, Git, Unit Testing, Integration Testing, Code Review"
+    },
+    {
+      "name": "Core CS",
+      "keywordsText": "Data Structures & Algorithms, Object-Oriented Design, Low-Level & High-Level System Design, API Design"
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+Subject: Applied for the Gen AI Specialist role — quick hello
+
+Hi {{outreachEmployeeName}},
+
+I just applied for the {{jobTitle}} role at {{companyName}} ({{jobLink}}) and wanted to reach out directly. I'm a backend engineer who built a Model Context Protocol server in Python at Turbot HQ, giving LLMs real-time access to enterprise cloud data, plus multi-agent workflows on the OpenAI Agents SDK with prompt engineering and self-correcting validation loops. I'm also a core open-source contributor there (9,300+ GitHub stars, 120+ merged PRs), and I've built observability tooling (a SIEM/log-processing CLI) and resolved production incidents across AWS, Azure, and GCP. Would love a referral or a quick chat if you have a few minutes — happy to share more details or my resume.
+
+Thanks so much,
+Priyanka Chatterjee

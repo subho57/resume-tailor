@@ -1,0 +1,18 @@
+Priyanka Chatterjee
+priyankachatterjee9075@gmail.com | +91 8617262536
+linkedin.com/in/priyanka-9075 | github.com/Priyanka-Chatterjee-2000 | priyanka-chatterjee-2000.github.io
+
+Dear Hiring Manager,
+
+I'm writing to apply for the Python + AWS Engineer role. At Turbot HQ, I led the AWS SDK migration across 180+ call sites and 11+ AWS services in production Lambdas, keeping the platform supported past AWS SDK v2 end-of-life while cutting policy-code duplication ~60% — the kind of hands-on AWS depth and production ownership this role calls for. I'm also a core open-source contributor there (9,300+ GitHub stars, 120+ merged PRs).
+
+On the Python side, I built the Steampipe Model Context Protocol (MCP) server end to end in Python, giving LLM agents standardized, real-time access to enterprise cloud data, and built a RAG-based Pydantic AI agent deployed as a serverless AWS Lambda function to resolve cross-team queries via Slack. On the API and architecture side, I designed a REST API microservice in Go with OAuth 2.0 authentication via Auth0, and a Kafka-based event-driven distributed pipeline with dead-letter-queue handling for reliability — directly matching this role's focus on scalable backend services, API security, and distributed systems.
+
+I've also spent real time on system troubleshooting and optimization: I rewrote complex PostgreSQL queries powering customer compliance audits, improving performance 40% and eliminating a class of false-positive findings. All of this work has been fully remote, collaborating across a distributed, multicultural engineering team spanning the US, UK, India, and Australia.
+
+I haven't specifically authored OpenAPI specifications, though I've designed and secured REST APIs directly — I pick up documentation tooling and conventions quickly.
+
+Thank you for your consideration — I'd love to discuss further.
+
+Best regards,
+Priyanka Chatterjee

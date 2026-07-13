@@ -1,0 +1,8 @@
+Subject: Applied for the Platform Engineer (Edge/Docker/IIoT) role — quick hello
+
+Hi {{outreachEmployeeName}},
+
+I just applied for the {{jobTitle}} role at {{companyName}} ({{jobLink}}) and wanted to reach out directly. At Turbot HQ I've owned release engineering for four open-source Go CLIs — Docker, GitHub Actions CI/CD, and multi-distro Linux smoke testing — plus distributed Kafka pipelines and hands-on Kubernetes incident troubleshooting. My background is cloud-side rather than edge/IIoT-specific, but the Docker, Linux, and distributed-systems fundamentals transfer directly. Would love a referral or a quick chat if you have a few minutes.
+
+Thanks so much,
+Priyanka Chatterjee

@@ -1,0 +1,4 @@
+Hi {{outreachEmployeeName}}, I just applied for the {{jobTitle}} role at {{companyName}} ({{jobLink}}). I built a Go microservice on a greenfield platform and own release engineering (GitHub Actions CI/CD, policy-based governance, Kafka pipelines) for open-source CLIs at Turbot HQ, with AI-powered tools in my daily workflow. Would appreciate a referral or quick chat if you're open to it!
+
+Thanks,
+Priyanka

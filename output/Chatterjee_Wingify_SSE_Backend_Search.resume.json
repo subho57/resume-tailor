@@ -1,0 +1,118 @@
+{
+  "schemaVersion": "1.0.0",
+  "theme": "corporate-navy",
+  "sectionOrder": ["summary", "skills", "work", "education"],
+  "basics": {
+    "name": "Priyanka Chatterjee",
+    "label": "Senior Software Engineer · Backend & Search (Track A) · Go/Python · High-Throughput Distributed Systems · 9,300★ OSS Contributor · 3.5+ Years",
+    "email": "priyankachatterjee9075@gmail.com",
+    "phone": "+91 8617262536",
+    "url": "https://priyanka-chatterjee-2000.github.io",
+    "location": {
+      "display": "Kolkata, West Bengal, India",
+      "city": "Kolkata",
+      "region": "West Bengal",
+      "countryCode": "IN"
+    },
+    "profiles": [
+      {
+        "network": "LinkedIn",
+        "username": "priyanka-9075",
+        "url": "https://linkedin.com/in/priyanka-9075",
+        "display": "linkedin.com/in/priyanka-9075"
+      },
+      {
+        "network": "GitHub",
+        "username": "Priyanka-Chatterjee-2000",
+        "url": "https://github.com/Priyanka-Chatterjee-2000",
+        "display": "github.com/Priyanka-Chatterjee-2000"
+      },
+      {
+        "network": "Portfolio",
+        "url": "https://priyanka-chatterjee-2000.github.io",
+        "display": "priyanka-chatterjee-2000.github.io"
+      }
+    ],
+    "summaries": {
+      "sse-backend-search": "Senior Software Engineer - Backend & Search (Track A) with 3.5+ years of experience and expertise in Go, Python, high-throughput distributed systems, and search/analytical data technologies. Engineered a Go-based observability CLI at Turbot HQ processing 1,000+ logs per second and optimized PostgreSQL queries cutting audit-query time 40%, while owning release engineering across four open-source products (9,300+ GitHub stars)."
+    },
+    "activeSummary": "sse-backend-search"
+  },
+  "work": [
+    {
+      "name": "Turbot HQ, Inc.",
+      "location": "Remote",
+      "dateDisplay": "August 2022 – April 2026",
+      "roleDisplay": "senior-only",
+      "roles": [
+        {
+          "position": "Software Engineer I",
+          "dateDisplay": "August 2022 – April 2026"
+        }
+      ],
+      "highlights": [
+        "Engineered core features for Tailpipe, a Go-based observability CLI on DuckDB (a columnar analytical engine) + Parquet, lifting log-processing throughput 30% to 1,000+ logs per second by chunking and batching file reads and streaming writes; reduced memory use to eliminate out-of-memory failures at scale.",
+        "Designed and developed an internal REST API microservice in Go using the Gin framework as part of a greenfield build of Turbot Guardrails, a cloud-native SaaS platform; secured endpoints with OAuth 2.0 authentication via Auth0, containerized with Docker, deployed to AWS EC2, and served as a gRPC client for several internal high-throughput microservices.",
+        "Built a Kafka-based, fault-tolerant, event-driven distributed pipeline where consumers asynchronously processed policy-enforcement events; added a dead-letter queue (DLQ) for reliable failure handling and reprocessing.",
+        "Optimized complex PostgreSQL queries powering customer compliance audits — rewriting AWS IAM policy-evaluation queries with jsonb array elements and multi-stage CTEs — improving query performance 40% and eliminating a class of false-positive findings.",
+        "Owned release engineering end-to-end for four open-source Go CLIs (Steampipe, Powerpipe, Flowpipe, Tailpipe) — unified GitHub Actions CI/CD workflows, automated Slack release notifications, and GHCR Docker image tagging — establishing engineering best practices across the platform.",
+        "Resolved a production incident by diagnosing a Go service stuck in a Kubernetes CrashLoopBackOff — investigating pod logs and status and collaborating with the platform team to restore service.",
+        "Mentored teammates on adopting AI-assisted engineering tools (Claude Code, Cursor) into their daily workflows."
+      ]
+    },
+    {
+      "name": "Kredey (Kredey Innovations Pvt. Ltd.)",
+      "location": "Remote",
+      "dateDisplay": "2021",
+      "roles": [
+        {
+          "position": "Full-Stack Website Developer (Intern)",
+          "dateDisplay": "2021"
+        }
+      ],
+      "highlights": [
+        "Used Elasticsearch to support full-text and semantic search over a NoSQL Firebase-backed document-sharing platform."
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "University of Engineering & Management (UEM)",
+      "location": "Kolkata, WB, IN",
+      "degreeDisplay": "Bachelor of Technology in Computer Science and Engineering",
+      "dateDisplay": "August 2019 – May 2023",
+      "score": "CGPA: 9.28",
+      "detail": "Relevant Coursework: Object-Oriented Programming, DBMS, Data Structures and Algorithms, Shell Scripting in Linux, Low-Level Design, High-Level Design"
+    }
+  ],
+  "skills": [
+    {
+      "name": "Languages",
+      "keywordsText": "Go, Python, TypeScript, JavaScript (ES6+), SQL, Bash"
+    },
+    {
+      "name": "Search & Analytical Data",
+      "keywordsText": "Elasticsearch (full-text & semantic search), DuckDB (columnar/analytical engine), Parquet"
+    },
+    {
+      "name": "Backend & APIs",
+      "keywordsText": "REST, gRPC, Microservices, OAuth 2.0 (Auth0), JWT, Node.js, Express.js"
+    },
+    {
+      "name": "Distributed Systems & Messaging",
+      "keywordsText": "Distributed Systems, Event-Driven Architecture, Apache Kafka (consumer groups, DLQs), AWS SNS/SQS"
+    },
+    {
+      "name": "Databases & Caching",
+      "keywordsText": "PostgreSQL, MySQL, MongoDB, Redis (ElastiCache); jsonb, CTEs, query tuning, indexing"
+    },
+    {
+      "name": "Cloud & Containers",
+      "keywordsText": "AWS (Lambda, EC2, S3), Azure, GCP, Docker, Kubernetes (working knowledge; collaborate with platform teams)"
+    },
+    {
+      "name": "Observability & DevOps",
+      "keywordsText": "Datadog, OpenTelemetry (OTel), GitHub Actions, CI/CD, Git, Unit Testing, Integration Testing, Code Review"
+    }
+  ]
+}

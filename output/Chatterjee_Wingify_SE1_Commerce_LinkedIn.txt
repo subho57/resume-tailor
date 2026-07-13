@@ -1,0 +1,4 @@
+Hi {{outreachEmployeeName}}, I just applied for the {{jobTitle}} role at {{companyName}} ({{jobLink}}). I build Python/Go backend services (MCP server, REST APIs) with PostgreSQL, Redis, Kafka, and Docker across AWS/Azure/GCP at Turbot HQ. Would really appreciate a referral or a quick chat if you're open to it!
+
+Thanks,
+Priyanka

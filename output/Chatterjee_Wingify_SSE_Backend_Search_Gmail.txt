@@ -1,0 +1,8 @@
+Subject: Applied for the Senior Software Engineer - Backend & Search role — quick hello
+
+Hi {{outreachEmployeeName}},
+
+I just applied for the {{jobTitle}} role at {{companyName}} ({{jobLink}}) — specifically Track A, Backend & Search. At Turbot HQ I've built a Go-based observability CLI processing 1,000+ logs/second on DuckDB, a fault-tolerant Kafka event-driven pipeline, and used Elasticsearch for search — plus own release engineering across four open-source CLIs (9,300+ GitHub stars). Would love a referral or a quick chat if you have a few minutes.
+
+Thanks so much,
+Priyanka Chatterjee

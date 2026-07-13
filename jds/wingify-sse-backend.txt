@@ -1,0 +1,107 @@
+Senior Software Engineer - Backend & Search
+3-6 years
+Full-Time
+
+Role: Senior Software Engineer - Backend/Search
+Team: Commerce - Recommendations & Merchandising
+Experience: 3-6 years building production systems at scale
+Location: Remote (India)
+Employment type: Full-time
+
+Role Overview
+We are looking for experienced Senior Software Engineers who can independently own the design, development, and delivery of scalable software solutions with minimal guidance.
+We're hiring for two complementary tracks to strengthen different parts of our engineering platform. While both roles require strong software engineering fundamentals and technical leadership, each focuses on a distinct area:
+Track A – Backend & Search Engineering: Build and optimize high-throughput backend services using Go and Python, improve search relevance, and work with large-scale data systems powered by ClickHouse.
+Track B – Data Engineering: Design and maintain robust data pipelines using Airflow and dbt/Dataform, working with BigQuery and ClickHouse to enable reliable, scalable data processing.
+In either track, you'll drive technical design decisions, establish engineering best practices, mentor fellow engineers, and help scale our platform while maintaining a high bar for quality, performance, and reliability.
+
+About the Commerce Team
+The Commerce (Recommendations & Merchandising) team builds and scales our enterprise-grade e-commerce personalization platform, powering intelligent product recommendations, merchandising, search, and the data infrastructure behind them.
+
+Our platform processes large-scale data and serves high-throughput workloads using modern technologies, including Python, Go, React, TypeScript, and a Google Cloud-based data platform built on Airflow, dbt/Dataform, BigQuery, and ClickHouse.
+
+As part of this team, you'll help design, build, and evolve highly scalable systems that directly impact customer experiences across our platform.
+
+What You'll Do
+We're hiring for two complementary Senior Software Engineer tracks. Both roles involve technical ownership, mentoring, and building production-grade systems at scale.
+
+Across Both Tracks
+Own the design, implementation, and delivery of complex features and distributed systems.
+Drive architectural decisions and establish engineering best practices.
+Lead code reviews and maintain high standards for code quality, reliability, and maintainability.
+Mentor software engineers and interns through technical guidance and feedback.
+Improve system performance, scalability, observability, and security.
+Partner closely with the Tech Lead and Engineering Manager on roadmap planning and technical execution.
+
+Track A — Senior Backend / Search Engineer
+Focus Areas:
+Build high-throughput, low-latency backend services using Go and Python.
+Design and improve search relevance, ranking, and recommendation services.
+Optimize ClickHouse queries and improve backend performance.
+Build reliable, observable, and fault-tolerant distributed APIs.
+
+Track B — Senior Data Engineer
+Focus Areas:
+Design, build, and maintain scalable ETL/ELT pipelines.
+Develop reusable workflows using Airflow and transformation frameworks such as dbt or Dataform.
+Own data quality, lineage, governance, and multi-tenant data architecture.
+Optimize warehouse performance, pipeline reliability, and cloud infrastructure costs.
+
+What We're Looking For
+Required Qualifications
+3–6 years of experience building and operating production software at scale.
+Strong understanding of software design, distributed systems, and engineering best practices.
+Experience with automated testing, CI/CD pipelines, monitoring, observability, and code reviews.
+Passion for mentoring engineers and driving technical excellence.
+Track A – Backend/Search
+Experience with most of the following:
+Go and/or Python
+Search platforms such as Meilisearch, Elasticsearch, OpenSearch, Solr, or Vespa
+Analytical databases such as ClickHouse, BigQuery, or Apache Druid
+SQL and API design
+High-performance distributed systems
+Track B – Data Engineering
+Experience with most of the following:
+Advanced SQL and data modeling
+Workflow orchestration tools such as Airflow, Prefect, or Dagster
+Data transformation frameworks including dbt, Dataform, or Apache Spark
+Cloud data warehouses such as BigQuery, Snowflake, ClickHouse, or Redshift
+Python
+Cloud platforms (GCP, AWS, or Azure)
+
+Good to have
+Kafka / Pub/Sub, Bigtable / Cassandra, Redis, Kubernetes / Docker / Helm, GraphQL.
+Semantic / vector search, ranking, recommendations, or ML pipelines.
+E-commerce / personalization domain experience.
+
+Qualifications
+Bachelor's or Master's degree in Computer Science, Information Technology, or a related field.
+
+Equivalent experience counts
+We don't hire based solely on experience with a specific technology. If you've worked with comparable tools and can demonstrate strong engineering fundamentals, we'd love to hear from you.
+
+Languages: Python / Go ↔ Java, Node.js / TypeScript, Scala, C++, Rust (strong fundamentals transfer)
+Search engines: Meilisearch ↔ Elasticsearch, OpenSearch, Solr / Lucene, Vespa, Typesense, Azure Cognitive Search
+Analytical / columnar stores: ClickHouse / BigQuery ↔ Snowflake, Redshift, Apache Druid, Apache Pinot
+Orchestration: Airflow ↔ Prefect, Dagster, Luigi, Temporal, AWS Step Functions
+Transformation: dbt / Dataform ↔ Apache Spark, SQLMesh
+Messaging / streaming: Pub/Sub ↔ Apache Kafka, RabbitMQ, AWS SQS / Kinesis, Pulsar
+Wide-column / KV stores: Bigtable ↔ Cassandra, DynamoDB, HBase, ScyllaDB; Redis ↔ Memcached, Aerospike
+Cloud: GCP ↔ AWS, Azure
+
+Our Commerce tech stack
+Backend: Python (FastAPI, Strawberry GraphQL, SQLAlchemy), Go
+Frontend: React, TypeScript, Vite, GraphQL
+Data & storage: PostgreSQL, Redis, ClickHouse, BigQuery, Bigtable, Google Cloud Storage
+Search: Meilisearch
+Data engineering: Apache Airflow (Cloud Composer), dbt, Dataform
+Platform & DevOps: Google Cloud (GKE / Kubernetes), Docker, Helm, GitLab CI, Sentry, Prometheus / Grafana
+
+What we offer
+Remote-first work culture within India
+Flexible working hours
+Competitive compensation
+Opportunity to build and scale a modern, high-impact commerce platform
+Ownership of technically challenging problems with real business impact
+Collaborative engineering culture with strong mentorship
+Learning and development support through courses, certifications, and conferences

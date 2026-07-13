@@ -1,0 +1,56 @@
+GenAI Engineer
+2-4 years
+Full-Time
+We're building category-defining GenAI automations at Wingify — makers of VWO. This role sits within our Go-to-Market (GTM) team and primarily serves internal stakeholders across sales, marketing, and business operations. If you love shipping end-to-end features, can translate business needs into technical solutions, and want to work at the frontier of agentic systems — this is for you.
+
+WHAT YOU'LL DO
+The Role:-
+Design, build & maintain scalable backend services and APIs that power GenAI features across the VWO platform.
+Develop GenAI applications end-to-end — agents, copilots, and automations — from early prototype through production.
+Orchestrate agentic workflows using frameworks like CrewAI, Autogen, or LangGraph, and integrate them seamlessly into product surfaces.
+Implement retrieval and memory patterns (RAG, session and long-term memory, summarisation) backed by vector and graph stores.
+Own quality in production: observability, cost and latency optimisation, evaluation frameworks, and safety guardrails.
+Collaborate cross-functionally with design and frontend (React) and with product to shape the GenAI roadmap.
+Partner with internal business owners across sales, marketing, and operations — understand their workflows and translate requirements into GenAI solutions that drive measurable impact.
+Improve sales efficiency and business processes by identifying automation opportunities and delivering agentic workflows tailored to GTM stakeholder needs.
+
+REQUIREMENTS
+What You'll Bring:-
+2–4 years of professional experience with a backend focus and solid full-stack instincts.
+Strong Python expertise (primary language); working proficiency in Node.js/TypeScript, REST/GraphQL, and SQL.
+Deep expertise in LLMs and Agentic AI — you understand how large language models work, their failure modes, and how to build reliable agentic systems around them.
+Hands-on experience with LangChain/LangGraph and at least one other orchestration framework (CrewAI, Autogen, or similar) in production.
+Deep practical knowledge of RAG — retrieval strategies, chunking, re-ranking, hybrid search, and vector databases (pgvector, Pinecone, Weaviate, or similar).
+Experience with AI Evaluation Frameworks — designing and running evals, using tooling such as Langfuse, LangSmith, Arize, or comparable platforms for monitoring, tracing, and quality assessment.
+Ability to understand and translate business requirements — you can engage with non-technical business owners, grasp their workflows, and convert them into well-scoped technical solutions.
+Strong focus on business impact — you measure success not just in technical metrics but in sales efficiency, process improvement, and stakeholder outcomes.
+Practical data and infrastructure knowledge: Postgres/MySQL, MongoDB, Redis/Memcached, Kafka, Nginx, Docker.
+Working familiarity with React and modern frontend workflows.
+Strong engineering fundamentals: testing, code quality, CI/CD, and debugging complex distributed systems.
+
+Nice to Have:-
+AI Tooling & Evaluation
+Experience with LangSmith, Langfuse, Weights & Biases, prompt management systems, and evaluation frameworks.
+Memory & Retrieval Systems
+Experience with vector and graph databases such as pgvector, Pinecone, Weaviate, Neo4j, or similar.
+Deep understanding of retrieval optimization, hybrid search, and context-window management.
+Model Orchestration & Infrastructure
+Experience hosting and serving open-source models alongside commercial APIs such as OpenAI and Anthropic.
+Familiarity with embeddings pipelines, AI safety tooling, and guardrail frameworks.
+Startup Mindset
+Experience building products from 0→1.
+Strong product intuition and customer-centric thinking.
+
+Why Wingify?
+🚀 Build at the Frontier
+Work on production-grade AI systems that solve meaningful customer problems and redefine how experimentation and optimization are done.
+⚡ High Ownership, Fast Execution
+Operate with startup agility inside a successful global SaaS company. Own problems end-to-end and see your work reach customers quickly.
+📈 Growth & Learning
+Work alongside experienced engineers and product leaders while gaining exposure to cutting-edge GenAI technologies and real-world AI deployment challenges.
+🤝 Exceptional Team
+Join a highly collaborative, low-ego engineering culture that values craftsmanship, curiosity, and impact.
+
+Ready to build the future of AI-powered products?
+
+Apply now and help shape the next generation of GenAI experiences at Wingify.

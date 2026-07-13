@@ -1,0 +1,8 @@
+Subject: Applied for the GenAI Engineer role at Wingify — quick hello
+
+Hi {{outreachEmployeeName}},
+
+I just applied for the {{jobTitle}} role at {{companyName}} ({{jobLink}}) and wanted to reach out directly. At Turbot HQ I've built production agentic systems (OpenAI Agents SDK), a RAG agent with an embeddings-backed vector store, and used Logfire for LLM observability — cutting resource-discovery latency 70-90% by translating business requirements directly into automation. I also built a full-stack real-time multiplayer game (React/TypeScript + Go) end to end in 4 days. Would love a referral or a quick chat if you have a few minutes — happy to share more details or my resume.
+
+Thanks so much,
+Priyanka Chatterjee

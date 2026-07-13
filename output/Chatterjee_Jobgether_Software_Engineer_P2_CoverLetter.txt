@@ -1,0 +1,16 @@
+Priyanka Chatterjee
+priyankachatterjee9075@gmail.com | +91 8617262536
+linkedin.com/in/priyanka-9075 | github.com/Priyanka-Chatterjee-2000 | priyanka-chatterjee-2000.github.io
+
+Dear Hiring Manager,
+
+I'm writing to apply for the Software Engineer P2 role. At Turbot HQ, I designed a Go-based REST API microservice as part of a greenfield build of Turbot Guardrails, a cloud-native SaaS platform, and built distributed event-driven pipelines that cut resource-discovery latency 70-90%. I'm also a core open-source contributor there (9,300+ GitHub stars, 120+ merged PRs).
+
+On distributed systems and microservices — the core of this role — I built a Kafka-based event-driven pipeline processing policy-enforcement events in real time with dead-letter-queue handling for reliability, and designed a REST API microservice secured with OAuth 2.0, containerized with Docker and deployed to AWS EC2. I've also resolved a live production incident by diagnosing a Kubernetes CrashLoopBackOff, and hardened our CI/CD release pipeline with automated multi-distro smoke tests across four open-source CLIs. On data, I rewrote complex PostgreSQL queries to improve audit-query performance 40%.
+
+I want to be upfront about one important gap: my professional development experience is in Go, Python, TypeScript, and JavaScript — I don't have production Java experience, which I understand is central to this role. My object-oriented design fundamentals and distributed-systems experience transfer directly, but I wanted to flag this clearly rather than let it surface later.
+
+I'd welcome the chance to discuss whether that combination is still a fit. Thank you for your consideration.
+
+Best regards,
+Priyanka Chatterjee

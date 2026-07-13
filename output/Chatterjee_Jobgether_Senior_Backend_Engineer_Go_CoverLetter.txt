@@ -1,0 +1,16 @@
+Priyanka Chatterjee
+priyankachatterjee9075@gmail.com | +91 8617262536
+linkedin.com/in/priyanka-9075 | github.com/Priyanka-Chatterjee-2000 | priyanka-chatterjee-2000.github.io
+
+Dear Hiring Manager,
+
+I'm writing to apply for the Senior Backend Engineer (Go), Continuous Delivery role. At Turbot HQ, I designed and built a Go REST API microservice as part of a greenfield build of Turbot Guardrails, a policy-enforcement SaaS platform, and I own release engineering end-to-end for four open-source Go CLIs (9,300+ GitHub stars, 120+ merged PRs) — unifying GitHub Actions continuous-delivery workflows across the whole fleet. That combination of greenfield ownership and continuous-delivery depth is exactly what this role is built around.
+
+On policy-based governance — a core focus of this role — I built GitHub-as-a-cloud governance controls extending Guardrails with rule builders, a scoring engine, and policy-based prevention rules for branch protection, workflow permissions, and dependency restrictions, giving distributed engineering teams enterprise-grade governance. On distributed systems, I built a Kafka-based event-driven pipeline with dead-letter-queue handling for reliable failure recovery, and resolved a live production incident by diagnosing a Kubernetes CrashLoopBackOff, working directly with the platform team to restore service.
+
+AI-powered engineering is already part of my daily workflow: I authored an LLM-driven Claude Code skill that automates code refactoring, test generation, deployment, and PR creation, and used it to migrate 35+ Azure cloud-governance modules to event-driven eventing, cutting resource-discovery latency 70-90%. I've also mentored teammates on adopting AI-assisted engineering tools into their own workflows — all fully remote, collaborating across a globally distributed team.
+
+Thank you for your consideration — I'd love to discuss further.
+
+Best regards,
+Priyanka Chatterjee

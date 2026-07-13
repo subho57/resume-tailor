@@ -1,0 +1,8 @@
+Subject: Applied for the Software Engineer P2 role — quick hello
+
+Hi {{outreachEmployeeName}},
+
+I just applied for the {{jobTitle}} role at {{companyName}} ({{jobLink}}) and wanted to reach out directly. At Turbot HQ I've built Kafka-based distributed pipelines, REST API microservices on Docker/Kubernetes, and worked across AWS and GCP — though my production language background is Go/Python/TypeScript rather than Java, which I know is core to this role. Would still love a referral or a quick chat if you have a few minutes.
+
+Thanks so much,
+Priyanka Chatterjee
