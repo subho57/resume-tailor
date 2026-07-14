@@ -1,0 +1,4 @@
+Hi {{outreachEmployeeName}}, I just applied for the {{jobTitle}} role at {{companyName}} ({{jobLink}}). I built a production MCP server and multi-agent AI system from scratch at Turbot HQ (a product company), plus a RAG agent and an AWS SDK migration — and I use Claude Code daily as real leverage. Would really appreciate a referral or a quick chat if you're open to it!
+
+Thanks,
+Priyanka

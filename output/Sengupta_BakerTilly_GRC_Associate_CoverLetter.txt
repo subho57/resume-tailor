@@ -1,0 +1,20 @@
+Bhaskar Sengupta
+Kolkata, West Bengal, India (open to Bangalore / hybrid)
+bppec.11500319066@gmail.com | +91 8017175093
+linkedin.com/in/-bhaskarsengupta
+
+
+Dear Hiring Manager,
+
+I am applying for the Associate — Governance, Risk & Compliance role at Baker Tilly (BTVK Advisory). I am a GRC and cybersecurity consultant with 3.5+ years across PwC and EY and an ISO/IEC 27001:2022 Lead Implementer certification. At PwC I delivered IT and OT cybersecurity audits and ISO 27001:2022 assessments that improved client security posture by up to 40% and enabled successful certification — the kind of risk assessment, control-gap, and audit work this role is built around.
+
+The core of this position — assessing risk, reviewing documentation for control gaps, tracking remediation, and maintaining accurate risk records — maps directly to what I have done day to day. I conducted risk assessments and IT General Controls (ITGC) testing against ISO 27001:2022 and the NIST Cybersecurity Framework (NIST CSF 2.0), identified control gaps, maintained risk registers, and coached clients through ISO 27001 certification readiness. While my risk and control-assessment work has been client-side rather than a formal third-party risk management program, it is the same discipline your TPRM process relies on — reviewing evidence and policies, identifying control gaps against a framework, and driving remediation to closure — which I am confident transfers cleanly to vendor onboarding, due diligence, and reassessments.
+
+Much of the role is documentation, coordination, and reporting, which is where I am strongest. I produced audit reports, gap reports, security and privacy policies, and As-Is / To-Be network diagrams; built Power BI dashboards and metrics for management review; and responded to RFPs and client due-diligence requests as part of business development. At EY I led data-privacy work — Data Protection Impact Assessments (DPIA), data flow diagrams, and Records of Processing Activities (ROPA) against GDPR and ISO 27701:2025 — so I am comfortable reading privacy documentation and data protection requirements and summarizing findings clearly for technical and non-technical stakeholders.
+
+I will be direct about scope: I have not worked with SOC 2 Type II attestations or dedicated vendor-risk tooling, and I hold ISO 27001 Lead Implementer, BCMS ISO 22301, and Claroty (CIE 401) rather than CISA or CRISC. But I ramp fast — I earned those credentials and picked up industrial tools like Claroty, Nozomi, and Tenable on the job — and my ISO 27001 and NIST CSF control-assessment foundation is exactly the base these frameworks build on. I would welcome the chance to discuss how my audit and risk background fits Baker Tilly One India's program.
+
+Thank you for your consideration.
+
+Sincerely,
+Bhaskar Sengupta

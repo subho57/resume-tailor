@@ -1,0 +1,8 @@
+Subject: Applied for the Member of Technical Staff, Backend role — quick hello
+
+Hi {{outreachEmployeeName}},
+
+I just applied for the {{jobTitle}} role at {{companyName}} ({{jobLink}}) and wanted to reach out directly. At Turbot HQ I've shipped core Go features for a high-throughput observability CLI (1,000+ logs/sec), built cloud-native microservices and Kafka-based distributed pipelines, and use AI tooling (Claude Code) daily in my workflow. Would love a referral or a quick chat if you have a few minutes — happy to share more details or my resume.
+
+Thanks so much,
+Priyanka Chatterjee

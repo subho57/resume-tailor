@@ -1,0 +1,4 @@
+Hi {{outreachEmployeeName}}, I just applied for the {{jobTitle}} role at {{companyName}} ({{jobLink}}). I own CI/CD release engineering and multi-cloud compliance automation for open-source products, with hands-on AWS/GCP, Docker, Kubernetes, and Terraform. A bit more experience than the posting's range, but the stack fit felt worth a shot — would appreciate a referral or a quick chat if you're open to it!
+
+Thanks,
+Priyanka

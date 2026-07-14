@@ -1,0 +1,8 @@
+Subject: Applied for the Application Engineer (AI Automation) role — quick hello
+
+Hi {{outreachEmployeeName}},
+
+I just applied for the {{jobTitle}} role at {{companyName}} ({{jobLink}}) and wanted to reach out directly. I've actually built an MCP server end to end in Python at Turbot HQ, plus a multi-agent system with agent-to-agent validation and a RAG agent on vector storage — the core of what this role asks for. I don't have Salesforce/Zuora/ServiceNow experience and have 3.5 years against the 5+ bar, so wanted to be upfront about that too. Would still love a referral or a quick chat if you have a few minutes.
+
+Thanks so much,
+Priyanka Chatterjee

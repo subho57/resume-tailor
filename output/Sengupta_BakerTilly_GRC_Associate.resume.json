@@ -1,0 +1,110 @@
+{
+  "schemaVersion": "1.0.0",
+  "theme": "corporate-navy",
+  "sectionOrder": ["summary", "skills", "work", "projects", "education"],
+  "basics": {
+    "name": "Bhaskar Sengupta",
+    "label": "Governance, Risk & Compliance Associate · ISO 27001:2022 Lead Implementer · NIST CSF 2.0 · IT Audit & Risk Assessment · 3.5+ Years",
+    "email": "bppec.11500319066@gmail.com",
+    "phone": "+91 8017175093",
+    "location": {
+      "display": "Kolkata, West Bengal, India (open to Bangalore / hybrid)",
+      "city": "Kolkata",
+      "region": "West Bengal",
+      "countryCode": "IN"
+    },
+    "profiles": [
+      {
+        "network": "LinkedIn",
+        "username": "-bhaskarsengupta",
+        "url": "https://linkedin.com/in/-bhaskarsengupta",
+        "display": "linkedin.com/in/-bhaskarsengupta"
+      }
+    ],
+    "summaries": {
+      "grc-isms-audit": "Governance, Risk & Compliance consultant with 3.5+ years across PwC and EY in ISO 27001:2022, the NIST Cybersecurity Framework (CSF 2.0), risk assessments, and audit and control-gap identification. Delivered IT/OT cybersecurity audits and ISO 27001 assessments at PwC that lifted client security posture up to 40% and enabled certification, and led data-privacy DPIA engagements at EY against GDPR and ISO 27701."
+    },
+    "activeSummary": "grc-isms-audit"
+  },
+  "skills": [
+    {
+      "name": "GRC, Audit & Risk",
+      "keywordsText": "Governance, Risk & Compliance (GRC), ISMS Design & Audit, IT General Controls (ITGC), IT Audit, Internal Audit, Risk Assessment, Risk Register Management, Gap Assessment, Control-Gap Identification, Maturity Assessment, Remediation, Business Continuity, ISO Certification Readiness, Regulatory Compliance"
+    },
+    {
+      "name": "Frameworks & Standards",
+      "keywordsText": "ISO/IEC 27001:2022, NIST Cybersecurity Framework (NIST CSF 2.0), NIST SP 800-53 / 800-30, IEC 62443, ISO/IEC 27701:2025 (PIMS), ISO 22301 (BCMS), GDPR, DPDP Act (India)"
+    },
+    {
+      "name": "Privacy, Tools & Reporting",
+      "keywordsText": "Privacy Gap Assessment, DPIA, ROPA, Data Flow Mapping, Vulnerability Assessment & Management, Penetration Testing, Tenable, Nessus, Nozomi, Claroty, Wireshark, Power BI, Risk & Compliance Dashboards, Metrics & Management Reporting, Network Diagrams (As-Is / To-Be), RFP & Proposal Development, Stakeholder Communication"
+    },
+    {
+      "name": "Certifications",
+      "keywordsText": "ISO/IEC 27001:2022 Lead Implementer (LI), BCMS ISO 22301, Claroty Implementation Engineer (CIE 401)"
+    }
+  ],
+  "work": [
+    {
+      "name": "Ernst & Young (EY) India",
+      "location": "India (Hybrid)",
+      "dateDisplay": "March 2026 – Present",
+      "roles": [
+        {
+          "position": "Consultant — Governance, Risk & Privacy",
+          "dateDisplay": "March 2026 – Present"
+        }
+      ],
+      "highlights": [
+        "Delivered data-privacy and protection advisory for a telecommunications client against GDPR, ISO 27701:2025 (PIMS), and regional data-protection regulations, conducting a privacy gap assessment and risk assessment.",
+        "Performed Data Protection Impact Assessments (DPIA) and built data flow diagrams and Records of Processing Activities (ROPA), strengthening the client's privacy compliance maturity.",
+        "Delivered recommendations and implementation roadmaps, prepared management reports for stakeholders, and responded to RFPs and client proposals for prospective engagements."
+      ]
+    },
+    {
+      "name": "PwC India (PricewaterhouseCoopers)",
+      "location": "Kolkata, India (Hybrid)",
+      "dateDisplay": "January 2023 – March 2026",
+      "roleDisplay": "combined",
+      "roles": [
+        {
+          "position": "Cybersecurity Associate (Associate II)",
+          "dateDisplay": "May 2024 – March 2026"
+        },
+        {
+          "position": "Cyber Security Specialist",
+          "dateDisplay": "January 2023 – May 2024"
+        }
+      ],
+      "highlights": [
+        "Conducted IT and OT cybersecurity audits and IT General Controls (ITGC) testing against ISO 27001:2022 and the NIST Cybersecurity Framework (CSF 2.0), delivering maturity assessments, risk reports, and remediation recommendations that improved client security posture by up to 40%.",
+        "Identified control gaps and developed security policies, procedures, and As-Is / To-Be network diagrams aligned to regulatory standards, reducing compliance gaps by 30%.",
+        "Maintained risk registers and used Tenable, Nessus, Nozomi, and Claroty to assess vulnerabilities, triage findings by severity, and support remediation, cutting critical vulnerabilities by 25%.",
+        "Built Power BI dashboards and metrics to communicate risks and control gaps to stakeholders, and coached clients through ISO 27001 certification readiness."
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "name": "ISO 27001:2022 IT/OT Assessment — Steel Manufacturer",
+      "association": "Client engagement, PwC India",
+      "description": "On-site ISO 27001:2022 assessment for IT and OT; produced gap reports, risk registers, and dashboards, enabling successful certification and cutting OT-environment risks by 35%.",
+      "links": []
+    },
+    {
+      "name": "NIST + IEC 62443 OT Cybersecurity Audit — Cement Manufacturer",
+      "association": "Client engagement, PwC India",
+      "description": "NIST (SP 800-30, SP 800-53) and IEC 62443 based IT/OT audit; built risk and gap registers, dashboards, and To-Be network diagrams, performed endpoint assessments, and managed vulnerabilities, cutting identified risks by 30%.",
+      "links": []
+    }
+  ],
+  "education": [
+    {
+      "institution": "B.P. Poddar Institute of Management and Technology (BPPIMT)",
+      "location": "Kolkata, WB, IN",
+      "degreeDisplay": "Bachelor of Technology in Electronics and Communication Engineering",
+      "dateDisplay": "August 2019 – June 2023",
+      "score": "GPA: 9.17"
+    }
+  ]
+}

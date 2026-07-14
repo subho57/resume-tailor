@@ -1,0 +1,74 @@
+Senior Software Engineer (Backend/Architect)
+Stealth Startup
+Apply On LinkedIn
+Run Happpy Agent
+
+
+2 - 6 Years Exp
+Confidential
+Remote - Bengaluru
+Full time Permanent Position
+Did you apply?
+Yes
+No
+Must have skills required :
+Python, Go, Node.js, Java, PostgreSQL, MongoDB, AWS
+Good to have skills :
+Restful APIs, GraphQL, Docker, k8s, CI/CD
+To apply, please fill out this short form: https://docs.google.com/forms/d/e/1FAIpQLScguJjWs6GWfyL8YfkD6oAux_e3rPvjS3FwT4C2t9cCwxtkRQ/viewform
+
+
+
+About the company
+
+
+
+We're building the AI-native accounting platform for US commercial real estate, a $26 trillion asset class still run on 1990s ERPs and Excel. We start with the monthly close: AI agents extract, draft, and reconcile the books, while a deterministic engine proves every number to the cent with a full audit trail. Nobody has built this before, and early enterprise engagements are already pulling us forward.
+
+
+
+Why join
+
+The blank page. You’ll author the first version of systems built to move billions, and watch your early decisions compound into the product, for better and worse. Very few engineers ever get this.
+Founders who’ve done it before. Stanford and Columbia alumni who have founded companies and had multiple exits. We know what scale looks like and what it takes to get there.
+Compressed learning. A year here is five years anywhere else. You’ll touch agentic systems, financial infrastructure, enterprise products, and customer workflows, in your first quarter.
+
+
+Location: Chennai/Bangalore
+
+
+
+What you will own
+
+Design and build scalable, resilient backend systems from the ground up for AI-native finance and accounting automation platform
+Architect data models for complex CRE finance workflows (AP, AR, lease accounting, multi-entity reconciliation)
+Build high-performance APIs and microservices using Python/Go with event-driven architectures
+Design and optimize PostgreSQL/MongoDB schemas for financial data at scale
+Build integrations with accounting systems (Yardi, NetSuite, MRI, QuickBooks, JD Edwards)
+Integrate LLM APIs and build orchestration layers for multi-agent workflows (LangGraph, CrewAI)
+Design human-in-the-loop workflows, exception handling systems, and accuracy monitoring pipelines
+Own end-to-end technical architecture decisions and make critical build vs. buy choices
+Work closely with AI engineers to productionize ML models and implement continuous learning pipelines
+
+
+What makes you a great fit
+
+2–6 years of backend engineering experience building production systems at scale
+Must have worked at product companies (not services or consulting) — that’s the engineering culture we’re hiring for.
+B.E./B.Tech or M.E./M.Tech/M.S. degree in Computer Science or equivalent from top-tier engineering college
+Proficiency in Python, Go, Node.js, or Java with proven track record of building 0-to-1 products
+Deep database experience: PostgreSQL, MySQL, MongoDB - schema design, query optimization, indexing
+Cloud-native development experience: AWS/GCP/Azure, containerization (Docker/K8s), CI/CD pipelines
+Can design scalable distributed systems and microservices architectures.
+Strong experience in API design - RESTful APIs, GraphQL, event-driven architectures
+Self-motivated and autonomous - high ownership, product thinking, clear communicator
+Fast learner with startup DNA - thrive in ambiguity, move fast, iterate based on feedback
+Experience building AI/ML products (LLM integrations, RAG systems, agentic workflows)
+Experience with multi-tenant B2B SaaS platforms and financial systems
+Prefer who have built products from scratch that scaled as an early team member or a founder
+Good to have experience with finance and accounting workflows, ERP integrations, or compliance systems (ASC 842, IFRS 16)
+
+
+
+
+You treat AI as leverage — Cursor, Claude, and whatever shipped last week — and you’re meaningfully faster for it.

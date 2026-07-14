@@ -1,0 +1,116 @@
+{
+  "schemaVersion": "1.0.0",
+  "theme": "corporate-navy",
+  "sectionOrder": ["summary", "skills", "work", "projects", "education"],
+  "basics": {
+    "name": "Priyanka Chatterjee",
+    "label": "Full Stack Engineer · Node.js/TypeScript · REST APIs & Microservices · PostgreSQL · 9,300★ OSS Contributor · 3.5+ Years",
+    "email": "priyankachatterjee9075@gmail.com",
+    "phone": "+91 8617262536",
+    "url": "https://priyanka-chatterjee-2000.github.io",
+    "location": {
+      "display": "Kolkata, West Bengal, India",
+      "city": "Kolkata",
+      "region": "West Bengal",
+      "countryCode": "IN"
+    },
+    "profiles": [
+      {
+        "network": "LinkedIn",
+        "username": "priyanka-9075",
+        "url": "https://linkedin.com/in/priyanka-9075",
+        "display": "linkedin.com/in/priyanka-9075"
+      },
+      {
+        "network": "GitHub",
+        "username": "Priyanka-Chatterjee-2000",
+        "url": "https://github.com/Priyanka-Chatterjee-2000",
+        "display": "github.com/Priyanka-Chatterjee-2000"
+      },
+      {
+        "network": "Portfolio",
+        "url": "https://priyanka-chatterjee-2000.github.io",
+        "display": "priyanka-chatterjee-2000.github.io"
+      }
+    ],
+    "summaries": {
+      "full-stack-jobgether": "Full Stack Engineer with 3.5+ years of experience and expertise in Node.js, TypeScript, REST APIs, and scalable microservices on PostgreSQL and cloud-native infrastructure. Led the AWS SDK for JavaScript v2 to v3 migration across 180+ call sites and 11+ AWS services in production Node.js Lambdas at Turbot HQ, cutting policy-code duplication ~60%, and optimized PostgreSQL queries improving audit performance 40%."
+    },
+    "activeSummary": "full-stack-jobgether"
+  },
+  "work": [
+    {
+      "name": "Turbot HQ, Inc.",
+      "location": "Remote",
+      "dateDisplay": "August 2022 – April 2026",
+      "roleDisplay": "senior-only",
+      "roles": [
+        {
+          "position": "Software Engineer I",
+          "dateDisplay": "August 2022 – April 2026"
+        }
+      ],
+      "highlights": [
+        "Led the AWS SDK for JavaScript v2 to v3 migration across 180+ call sites and 11+ AWS services in production Node.js Lambdas; reduced policy-code duplication ~60% via templating, keeping the platform supported past AWS SDK v2 EOL.",
+        "Designed and developed an internal REST API microservice in Go using the Gin framework as part of a greenfield build of Turbot Guardrails, an enterprise SaaS platform; secured endpoints with OAuth 2.0 authentication via Auth0, containerized with Docker, deployed to AWS EC2, and served as a gRPC client for several internal distributed microservices.",
+        "Optimized complex PostgreSQL queries powering customer compliance audits — rewriting AWS IAM policy-evaluation queries with jsonb array elements and multi-stage CTEs — improving query performance 40% and eliminating a class of false-positive findings.",
+        "Built a Kafka-based, event-driven distributed pipeline where consumers asynchronously processed policy-enforcement events; added a dead-letter queue (DLQ) for reliable failure handling and reprocessing.",
+        "Authored an LLM-driven Claude Code skill automating code refactoring, unit test generation, deployment, Terraform-driven integration testing, and PR creation; used it to migrate 35+ Azure cloud-governance modules to event-driven eventing, cutting resource-discovery latency 70-90%.",
+        "Resolved a production incident by diagnosing a Go service stuck in a Kubernetes CrashLoopBackOff — investigating pod logs and status and collaborating with the platform team to restore service."
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "University of Engineering & Management (UEM)",
+      "location": "Kolkata, WB, IN",
+      "degreeDisplay": "Bachelor of Technology in Computer Science and Engineering",
+      "dateDisplay": "August 2019 – May 2023",
+      "score": "CGPA: 9.28",
+      "detail": "Relevant Coursework: Object-Oriented Programming, DBMS, Data Structures and Algorithms, Shell Scripting in Linux, Low-Level Design, High-Level Design"
+    }
+  ],
+  "skills": [
+    {
+      "name": "Languages",
+      "keywordsText": "TypeScript, JavaScript (ES6+), Go, Python, SQL, Bash"
+    },
+    {
+      "name": "Backend & APIs",
+      "keywordsText": "REST, Express.js, gRPC, Microservices, Node.js, OAuth 2.0 (Auth0), JWT"
+    },
+    {
+      "name": "Distributed Systems & Messaging",
+      "keywordsText": "Distributed Systems, Event-Driven Architecture, Apache Kafka (consumer groups, DLQs), AWS SNS/SQS"
+    },
+    {
+      "name": "Databases",
+      "keywordsText": "PostgreSQL, MySQL, MongoDB, DuckDB; jsonb, CTEs, query tuning, schema design"
+    },
+    {
+      "name": "Cloud & Containers",
+      "keywordsText": "AWS (Lambda, EC2, S3), Azure, GCP, Docker, Kubernetes (working knowledge; collaborate with platform teams)"
+    },
+    {
+      "name": "IaC & DevOps",
+      "keywordsText": "Terraform, GitHub Actions, CI/CD, Git"
+    },
+    {
+      "name": "Observability & Testing",
+      "keywordsText": "Datadog, OpenTelemetry (OTel), Unit Testing, Integration Testing, Code Review"
+    },
+    {
+      "name": "Core CS",
+      "keywordsText": "Data Structures & Algorithms, Object-Oriented Design, Low-Level & High-Level System Design, API Design"
+    }
+  ],
+  "projects": [
+    {
+      "name": "TODO / Tasks REST API",
+      "dateDisplay": "Apr 2026",
+      "association": "",
+      "description": "API-first REST backend in TypeScript with Bun, Express.js 5, and SQLite (bun:sqlite) + Zod + jose (JWT). JWT authentication (access, ID, and refresh tokens), RBAC, a prepared-statement CRUD service layer with crypto.randomUUID() IDs, schema-validated controllers with proper REST status codes (201/204/400/404), database migrations, and route-heatmap middleware.",
+      "links": []
+    }
+  ]
+}

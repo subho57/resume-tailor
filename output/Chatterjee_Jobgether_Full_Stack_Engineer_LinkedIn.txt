@@ -1,0 +1,4 @@
+Hi {{outreachEmployeeName}}, I just applied for the {{jobTitle}} role at {{companyName}} ({{jobLink}}). I build Node.js/TypeScript backend services (REST APIs, Kafka pipelines, PostgreSQL) at Turbot HQ, plus a personal Express.js REST API project. Would really appreciate a referral or a quick chat if you're open to it!
+
+Thanks,
+Priyanka

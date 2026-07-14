@@ -1,0 +1,4 @@
+Hi {{outreachEmployeeName}}, I just applied for the {{jobTitle}} role at {{companyName}} ({{jobLink}}). I ship Go microservices and distributed systems (Kafka, cloud-native, high-throughput CLIs) at Turbot HQ, with AI tooling in my daily workflow. Would really appreciate a referral or a quick chat if you're open to it!
+
+Thanks,
+Priyanka

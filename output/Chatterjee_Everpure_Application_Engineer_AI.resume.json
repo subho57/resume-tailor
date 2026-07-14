@@ -1,0 +1,95 @@
+{
+  "schemaVersion": "1.0.0",
+  "theme": "corporate-navy",
+  "sectionOrder": ["summary", "skills", "work", "education"],
+  "basics": {
+    "name": "Priyanka Chatterjee",
+    "label": "Application Engineer (AI Automation) · MCP Server Architecture · RAG & Agentic AI · Python · 9,300★ OSS Contributor · 3.5+ Years",
+    "email": "priyankachatterjee9075@gmail.com",
+    "phone": "+91 8617262536",
+    "url": "https://priyanka-chatterjee-2000.github.io",
+    "location": {
+      "display": "Kolkata, West Bengal, India",
+      "city": "Kolkata",
+      "region": "West Bengal",
+      "countryCode": "IN"
+    },
+    "profiles": [
+      {
+        "network": "LinkedIn",
+        "username": "priyanka-9075",
+        "url": "https://linkedin.com/in/priyanka-9075",
+        "display": "linkedin.com/in/priyanka-9075"
+      },
+      {
+        "network": "GitHub",
+        "username": "Priyanka-Chatterjee-2000",
+        "url": "https://github.com/Priyanka-Chatterjee-2000",
+        "display": "github.com/Priyanka-Chatterjee-2000"
+      },
+      {
+        "network": "Portfolio",
+        "url": "https://priyanka-chatterjee-2000.github.io",
+        "display": "priyanka-chatterjee-2000.github.io"
+      }
+    ],
+    "summaries": {
+      "everpure-ai-automation": "Application Engineer (AI Automation) with 3.5+ years of experience and expertise in Python, MCP server architecture, RAG systems, and agentic AI orchestration. Designed and built the Steampipe Model Context Protocol (MCP) server end to end in Python at Turbot HQ, giving LLM agents standardized, real-time access to enterprise cloud data, and built a multi-agent system with self-correcting, cross-agent validation."
+    },
+    "activeSummary": "everpure-ai-automation"
+  },
+  "work": [
+    {
+      "name": "Turbot HQ, Inc.",
+      "location": "Remote",
+      "dateDisplay": "August 2022 – April 2026",
+      "roleDisplay": "senior-only",
+      "roles": [
+        {
+          "position": "Software Engineer I",
+          "dateDisplay": "August 2022 – April 2026"
+        }
+      ],
+      "highlights": [
+        "Designed and built the Steampipe Model Context Protocol (MCP) server end to end in Python — architecting the protocol-compliant interface from scratch — giving AI agents standardized, real-time access to enterprise cloud and security data.",
+        "Designed a multi-agent AI system on the OpenAI Agents SDK where agents generate cloud policy actions, validate them against each other in a live environment, self-correct failures, and score outcomes against an internal metric — an agent-to-agent validation loop.",
+        "Built a RAG-based Pydantic AI agent with a knowledge base ingested into AWS S3 vector storage — the same vector-search category as Pinecone/Weaviate — deployed to AWS Lambda and integrated with Slack to give business teams autonomous, self-serve access to internal knowledge.",
+        "Designed and developed an internal REST API microservice in Go using the Gin framework, secured with OAuth 2.0 authentication via Auth0 — deep hands-on with authenticated REST integration patterns — containerized with Docker and deployed to AWS EC2, serving as a gRPC client for several internal microservices.",
+        "Authored an LLM-driven Claude Code skill automating code refactoring, test generation, deployment, and PR creation, then used it to migrate 35+ Azure cloud-governance modules to event-driven eventing, cutting resource-discovery latency 70-90% — AI automation applied directly to a real integration problem.",
+        "Mentored teammates on adopting AI-assisted engineering tools (Claude Code, Cursor) into their daily workflows."
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "University of Engineering & Management (UEM)",
+      "location": "Kolkata, WB, IN",
+      "degreeDisplay": "Bachelor of Technology in Computer Science and Engineering",
+      "dateDisplay": "August 2019 – May 2023",
+      "score": "CGPA: 9.28",
+      "detail": "Relevant Coursework: Object-Oriented Programming, DBMS, Data Structures and Algorithms, Shell Scripting in Linux, Low-Level Design, High-Level Design"
+    }
+  ],
+  "skills": [
+    {
+      "name": "AI & Agentic Engineering",
+      "keywordsText": "Model Context Protocol (MCP) server architecture, Agentic Workflows, Multi-Agent Systems (agent-to-agent validation), Retrieval-Augmented Generation (RAG), OpenAI Agents SDK, Pydantic AI, Vector Storage (AWS S3), Prompt Engineering"
+    },
+    {
+      "name": "Languages",
+      "keywordsText": "Python, TypeScript, JavaScript (ES6+), Go, SQL, Bash"
+    },
+    {
+      "name": "Backend & Integration",
+      "keywordsText": "REST API design & consumption, OAuth 2.0 (Auth0), JWT, gRPC, Microservices, Node.js"
+    },
+    {
+      "name": "Cloud & Containers",
+      "keywordsText": "AWS (Lambda, EC2, S3), Azure, GCP, Docker, Kubernetes (working knowledge; collaborate with platform teams)"
+    },
+    {
+      "name": "DevOps & Testing",
+      "keywordsText": "GitHub Actions, CI/CD, Git, Unit Testing, Code Review"
+    }
+  ]
+}

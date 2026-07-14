@@ -1,0 +1,8 @@
+Subject: Applied for the Full Stack Engineer role — quick hello
+
+Hi {{outreachEmployeeName}},
+
+I just applied for the {{jobTitle}} role at {{companyName}} ({{jobLink}}) and wanted to reach out directly. At Turbot HQ I've led an AWS SDK migration in production Node.js Lambdas, built a Kafka-based event-driven pipeline, and optimized PostgreSQL queries (40% faster) — plus a personal REST API project in Express.js/TypeScript. Would love a referral or a quick chat if you have a few minutes — happy to share more details or my resume.
+
+Thanks so much,
+Priyanka Chatterjee

@@ -1,0 +1,16 @@
+Priyanka Chatterjee
+priyankachatterjee9075@gmail.com | +91 8617262536
+linkedin.com/in/priyanka-9075 | github.com/Priyanka-Chatterjee-2000 | priyanka-chatterjee-2000.github.io
+
+Dear Hiring Manager,
+
+I'm writing to apply for the Software Engineer, Core Platform role. At Turbot HQ, I designed and built a multi-agent orchestration system on the OpenAI Agents SDK end to end — a genuine 0→1 build — and separately built the Steampipe MCP server from scratch in Python, designing its interface from the ground up. I'm also a core open-source contributor there (9,300+ GitHub stars, 120+ merged PRs), and I use Claude Code daily as real leverage in my own workflow, having authored an LLM-driven automation skill that cut resource-discovery latency 70-90% on a real migration.
+
+I'm a generalist by track record, not just by claim: I've owned a REST API microservice in Go end to end — design, build, test, deploy — as part of a greenfield SaaS platform build; optimized PostgreSQL schema and queries for a 40% performance gain; lifted a Go CLI's throughput 30% to 1,000+ events per second while eliminating out-of-memory failures at scale; and resolved a live production incident by diagnosing a Kubernetes CrashLoopBackOff. Outside work, I built a real-time multiplayer game end to end in 4 days — React/TypeScript frontend, Go backend — with no spec, just an idea I decided to ship.
+
+I want to be direct about one thing: my degree is from University of Engineering & Management, Kolkata, not a Tier-1 institution as listed in your requirements. I understand if that's a hard filter, but I wanted to apply anyway given how closely the rest of the role — generalist ownership, agent orchestration, AI-as-leverage, production systems at scale — matches what I've actually built.
+
+Thank you for your consideration — I'd love the chance to discuss further.
+
+Best regards,
+Priyanka Chatterjee

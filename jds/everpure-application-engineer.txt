@@ -1,0 +1,56 @@
+Application Engineer (AI Automation)
+Bangalore, India
+Run Happpy Agent
+We’re in an unbelievably exciting area of tech and are fundamentally reshaping the data storage industry. Here, you lead with innovative thinking, grow along with us, and join the smartest team in the industry.
+
+This type of work—work that changes the world—is what the tech industry was founded on. So, if you're ready to seize the endless opportunities and leave your mark, come join us.
+
+As an Application Engineer for AI Automation, you will be at the clinical edge of our intelligence layer. This isn't just about writing code; it's about architecting the nervous system of our automated enterprise. You will bridge the gap between heavy-duty enterprise platforms (Salesforce, Zuora, ServiceNow) and the next generation of Agentic AI.
+
+Your primary mission will be building high-performance Model Context Protocol (MCP) servers that allow AI agents to interact deeply with complex business logic—specifically within the Salesforce ecosystem (Quote, Opportunity, and Renewal services). You’ll move from building RAG-based retrieval to orchestrating Agent-to-Agent communication, creating a seamless autonomous workflow across our tech stack.
+
+Key Responsibilities
+Architect MCP Servers: Design and implement robust MCP servers to expose Salesforce services (Quote, Opportunity, Renewal) and other core platforms to AI agents.
+Data Model Synthesis: Rapidly decompose the data models of enterprise applications like Zuora, Salesforce, and ServiceNow to build effective schemas for AI interaction.
+Build AI Pipelines: Develop and optimize Retrieval-Augmented Generation (RAG) workflows and AI agents that can execute complex tasks with minimal human intervention.
+Agentic Orchestration: Lead the transition from simple chatbots to Agentic AI, focusing on multi-agent collaboration and autonomous "Agent-to-Agent" communication.
+Integration Engineering: Build and maintain secure, scalable integrations using REST APIs across disparate cloud environments.
+Technical Leadership: Act as a subject matter expert for AI automation, guiding the evolution of our automation strategy and mentoring junior engineers.
+Required Skills & Qualifications
+5+ years in professional software engineering.
+Expert-level proficiency in Python (for AI/ML orchestration) and JavaScript/TypeScript or Java (for enterprise services).
+Knowledge of Salesforce Sales Cloud (Apex knowledge is a plus, but understanding the API/Object model is mandatory).
+AI Specialization: Proven experience building AI agents using MCP (Model Context Protocol) and implementing RAG architectures.
+API Mastery: Deep expertise in designing and consuming RESTful APIs and handling complex authentication/OAuth flows.
+Autonomy: A "hunter" mindset for information—you can pick up a new tool like Zuora, read the docs, and understand the underlying data relationships without needing a guided tour.
+Preferred Qualifications
+Familiarity with vector databases (Pinecone, Weaviate, or Milvus).
+Background in SalesOps automation (specifically Quote-to-Cash processes).
+Contributions to open-source MCP servers or AI frameworks.
+The Future of This Role
+This role is designed for an engineer who wants to move beyond "GPT wrappers." You will eventually be responsible for building a decentralized network of agents where a "Sales Agent" can autonomously negotiate data with a "Billing Agent" (Zuora) and a "Contract Agent" (ServiceNow) to close renewals without manual data entry.
+
+ #LI-ONSITE
+
+WHAT YOU CAN EXPECT FROM US:
+
+Innovation: We celebrate those who think critically, like a challenge, and aspire to be trailblazers.
+Growth: We give you the space and support to grow along with us and to contribute to something meaningful. We have been named Fortune's Best Workplaces in Technology™, Fortune's Best Workplaces in the Bay Area™, and certified as a Great Place to Work®!
+Team: We build each other up and set aside ego for the greater good.
+And because we understand the value of bringing your full and best self to work, we offer a variety of perks to manage a healthy balance, including flexible time off, wellness resources, and company-sponsored team events. Check out purebenefits.com for more information.
+
+ACCOMMODATIONS AND ACCESSIBILITY:
+
+Candidates with disabilities may request accommodations for all aspects of our hiring process. For more on this, contact us at TA-Ops@purestorage.com if you’re invited to an interview.
+
+OUR COMMITMENT TO A STRONG AND INCLUSIVE TEAM:
+
+We’re forging a future where everyone finds their rightful place and where every voice matters. Where uniqueness isn’t just accepted but embraced. That’s why we are committed to fostering the growth and development of every person, cultivating a sense of community through our Employee Resource Groups and advocating for inclusive leadership.
+
+Everpure is proud to be an equal opportunity employer. We do not discriminate based upon race, religion, color, national origin, sex (including pregnancy, childbirth, or related medical conditions), sexual orientation, gender, gender identity, gender expression, transgender status, sexual stereotypes, age, status as a protected veteran, status as an individual with a disability, or any other characteristic legally protected by the laws of the jurisdiction in which you are being considered for hire.
+
+Join us and bring your best.
+
+Bring your bold.
+
+Pure and simple.

@@ -1,0 +1,390 @@
+{
+  "schemaVersion": "1.0.0",
+  "theme": "corporate-navy",
+  "sectionOrder": [
+    "about",
+    "preferences",
+    "summary",
+    "skills",
+    "work",
+    "projects",
+    "certifications",
+    "education",
+    "languages",
+    "recommendations",
+    "companyContext"
+  ],
+  "about": "Ground-truth superset / master data dump for Bhaskar Sengupta — a comprehensive, deduplicated accumulation of every detail across his three tailored CV variants (IT/OT Security Consultant, GRC/ISMS Associate, Senior Technical Analyst), his LinkedIn profile, and received recommendations. This is the source of truth from which role-tailored resumes are generated; it is not a one-page resume. Client engagements intentionally appear both as summarized Work highlights and as detailed Projects. Inline caveats and flagged values record wording variants across the CVs, LinkedIn-vs-CV reconciliations, and a few inferred fields (languages, preferences) that are NOT attested in any source document — confirm before use.",
+  "basics": {
+    "name": "Bhaskar Sengupta",
+    "label": "IT/OT Security & GRC Consultant · ISO 27001:2022 · NIST CSF 2.0 · IEC 62443 · ISO 27701 — 3.5+ Years",
+    "email": "bppec.11500319066@gmail.com",
+    "phone": "+91 8017175093",
+    "location": {
+      "display": "Kolkata, West Bengal, India 700055",
+      "postalCode": "700055",
+      "city": "Kolkata",
+      "region": "West Bengal",
+      "countryCode": "IN"
+    },
+    "profiles": [
+      {
+        "network": "LinkedIn",
+        "username": "-bhaskarsengupta",
+        "url": "https://linkedin.com/in/-bhaskarsengupta",
+        "display": "linkedin.com/in/-bhaskarsengupta"
+      },
+      {
+        "network": "GitHub",
+        "username": "kudos-dot-com",
+        "url": "https://github.com/kudos-dot-com",
+        "display": "github.com/kudos-dot-com"
+      }
+    ],
+    "summaries": {
+      "default": "IT/OT and GRC cybersecurity consultant with 3.5+ years across PwC and EY, delivering IT/OT security assessments, ISMS design and audit, technology-risk engagements, and data-privacy compliance against ISO 27001:2022, NIST CSF 2.0, IEC 62443, and ISO 27701:2025 (PIMS). Track record of strengthening client security posture, closing compliance gaps, and enabling successful ISO certification across regulated industries.",
+      "itot-security-consultant": "IT/OT Security Consultant with 3.5+ years of experience delivering IT and OT security assessments, technology risk engagements, IT/OT audits, and regulatory compliance projects. Supported organizations in strengthening security posture, managing risks, and achieving compliance across diverse industries.",
+      "grc-isms-audit": "GRC and cybersecurity consultant with 3.5+ years across PwC and EY, specializing in ISMS design and audit against ISO 27001:2022, IT General Controls (ITGC), risk assessment, and regulatory compliance (NIST CSF, GDPR, DPDP Act) across global and Bangladesh-specific frameworks.",
+      "technical-analyst": "Technical consultant with 3.5+ years across PwC and EY, experienced in diagnosing and triaging complex technical and compliance issues, translating stakeholder requirements into structured action plans, and producing clear documentation for technical and non-technical audiences.",
+      "data-privacy-consultant": "Data privacy and protection consultant experienced in PIMS gap assessments, DPIA, ROPA, and data-flow mapping against ISO 27701:2025, GDPR, India's DPDP Act, and Bangladesh's PDPA & NDMA — delivering privacy roadmaps, records of processing activities, and management reporting that strengthen enterprise privacy compliance maturity.",
+      "linkedin-about-long-form": "Cybersecurity Consultant at EY (ex-PwC) with expertise in IT/OT/IoT cybersecurity assessment, ISMS, risk analysis and risk management, penetration testing, maturity assessment, information security, policy formulation, data analysis, firewalls, Linux, vulnerability assessment, application security, and internal audit. Knowledge base spans ISO 27001, ISO 27002, NIST 800-53, NIST CSF 2.0, and ISO 27701 (PIMS), with in-depth knowledge of API security and a background in website development."
+    },
+    "activeSummary": ""
+  },
+  "preferences": {
+    "locations": [
+      "Remote",
+      "Hybrid — Kolkata",
+      "Kolkata"
+    ],
+    "hybrid": "Open to remote and hybrid engagements (both PwC and EY roles were hybrid; earlier developer internship was fully remote).",
+    "roles": [
+      "Cybersecurity / GRC Consultant",
+      "IT/OT Security & Audit Consultant",
+      "Data Privacy / Protection Consultant",
+      "Technical Analyst / Consultant"
+    ],
+    "preferencesNote": "INFERRED from his headline, title history, and openToWork=true on LinkedIn — NOT an explicit stated preference. Confirm target roles/locations and any ranking with the candidate before relying on this section.",
+    "preferencesFlagged": true
+  },
+  "work": [
+    {
+      "name": "Ernst & Young (EY) India",
+      "location": "India (Hybrid)",
+      "url": "https://www.linkedin.com/company/ernstandyoung/",
+      "domainNote": "One of the 'Big Four' global professional-services firms; EY India's Cybersecurity, Risk & Privacy consulting practice. Data-privacy advisory, ISMS, and technology-risk engagements for enterprise clients.",
+      "dateDisplay": "March 2026 – Present",
+      "roles": [
+        {
+          "position": "Consultant",
+          "dateDisplay": "March 2026 – Present"
+        }
+      ],
+      "highlights": [
+        "Delivered data privacy and protection advisory services for a telecommunications client, applying Bangladesh's PDPA and NDMA regulations, ISO 27701:2025 (PIMS), and GDPR requirements.",
+        {
+          "text": "Conducted a PIMS gap assessment and risk assessment, defining risk criteria and performing Data Protection Impact Assessments (DPIA) that meaningfully strengthened the client's privacy compliance maturity.",
+          "flagged": true,
+          "note": "The 'Senior Technical Analyst' CV variant reframes this bullet as '...defining risk criteria, triaging findings by severity, and performing DPIA' to emphasize an issue-diagnosis / technical-analyst angle. Same work, different framing."
+        },
+        {
+          "text": "Delivered actionable tool, process, and people recommendations with structured implementation roadmaps, and supported the client in implementing ISO 27701:2025 (PIMS) requirements.",
+          "flagged": true,
+          "note": "'Technical Analyst' CV opens this as 'Translated assessment findings into actionable...' — a translation/requirements-analysis framing of the same recommendation work."
+        },
+        "Developed data flow diagrams and supported the formulation of Records of Processing Activities (ROPA), substantially reducing undocumented processing activities, while preparing management reports for stakeholders.",
+        "Contributed to business development by drafting client proposals and responding to RFPs for prospective engagements."
+      ]
+    },
+    {
+      "name": "PwC India (PricewaterhouseCoopers)",
+      "location": "Kolkata, West Bengal, India (Hybrid)",
+      "url": "https://www.linkedin.com/company/pwc-india/",
+      "domainNote": "One of the 'Big Four' global professional-services firms; PwC India's cybersecurity practice — IT/OT audits, ISO 27001 / NIST CSF assessments, and risk & compliance advisory across regulated industries. Title history: LinkedIn splits this tenure into 'Cyber Security Specialist' (Jan 2023 – May 2024) then 'Cybersecurity Associate' (May 2024 – Mar 2026); all three CVs present the full span under a single title, 'Cybersecurity Consultant (Associate II)'.",
+      "dateDisplay": "January 2023 – March 2026",
+      "roles": [
+        {
+          "position": "Cybersecurity Associate (Associate II)",
+          "dateDisplay": "May 2024 – March 2026"
+        },
+        {
+          "position": "Cyber Security Specialist",
+          "dateDisplay": "January 2023 – May 2024"
+        }
+      ],
+      "highlights": [
+        {
+          "text": "Conducted IT and OT cybersecurity audits — including IT General Controls (ITGC) testing — using frameworks such as ISO 27001:2022 and NIST CSF 2.0, delivering maturity assessments, risk reports, and actionable recommendations that improved clients' security posture by up to 40%.",
+          "flagged": true,
+          "note": "'IT General Controls (ITGC) testing' appears only in the GRC/ISMS CV variant; the IT/OT Security CV omits it. The 'Technical Analyst' CV reframes as 'IT and OT technical audits ... diagnosing issues.' The 'up to 40%' posture-improvement figure is self-reported and consistent across all CV variants."
+        },
+        "Developed policies, procedures, and network diagrams (As-Is / To-Be) aligned with organizational infrastructure and regulatory standards, reducing compliance gaps by 30%.",
+        {
+          "text": "Used tools such as Claroty, Nozomi, Wireshark, and Tenable to identify vulnerabilities, assess risk, and support remediation in industrial (OT) environments, cutting critical vulnerabilities by 25%.",
+          "flagged": true,
+          "note": "'Technical Analyst' CV reframes as '...diagnose and triage technical vulnerabilities by severity...' for an issue-triage angle."
+        },
+        "Created Power BI dashboards to visualize vulnerabilities and gaps, supported clients in ISO certification readiness, and enhanced overall security posture by 35%."
+      ]
+    },
+    {
+      "name": "What a Story",
+      "location": "Remote",
+      "url": "https://www.linkedin.com/company/whatastory-agency/",
+      "domainNote": "Creative digital / video storytelling and content agency (LinkedIn: whatastory-agency). Small agency; limited independent public data. College internship — his last software-development role before pivoting to cybersecurity consulting.",
+      "dateDisplay": "December 2021 – July 2022",
+      "roles": [
+        {
+          "position": "Full-Stack Developer (College Internship)",
+          "dateDisplay": "December 2021 – July 2022"
+        }
+      ],
+      "highlights": [
+        "Implemented a JWT-based authentication layer for API security and built mobile-responsive websites using React."
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "B.P. Poddar Institute of Management and Technology (BPPIMT)",
+      "location": "Kolkata, WB, IN",
+      "url": "https://www.linkedin.com/company/15142116/",
+      "degreeDisplay": "Bachelor of Technology in Electronics and Communication Engineering",
+      "dateDisplay": "August 2019 – June 2023",
+      "score": "GPA: 9.17",
+      "scoreFlagged": true,
+      "scoreNote": "GPA 9.17 is stated on all three CVs; LinkedIn lists the degree without a GPA (no conflict, CV-sourced). Field-of-study variant: CVs say 'Electronics and Communication Engineering'; LinkedIn says 'Electrical, Electronics and Communications Engineering'. Dates: CVs show '2019 – 2023'; LinkedIn shows 'Aug 2019 – Jun 2023' (used here).",
+      "detail": "Affiliated to Maulana Abul Kalam Azad University of Technology (MAKAUT), West Bengal."
+    }
+  ],
+  "skills": [
+    {
+      "name": "Frameworks & Standards",
+      "keywordsText": "ISO/IEC 27001:2022, ISO/IEC 27002, ISO/IEC 27701:2025 (PIMS), ISO 22301 (BCMS), NIST CSF 2.0, NIST SP 800-53, NIST SP 800-30, IEC 62443, GDPR, DPDP Act (India), Bangladesh PDPA & NDMA"
+    },
+    {
+      "name": "GRC, Audit & ISMS",
+      "keywordsText": "ISMS Design & Audit, IT General Controls (ITGC), IT Audit, OT Audit, Internal Audit, IT/OT Security Assessment, Regulatory Compliance, ISO Certification Readiness, Policy & Procedure Development, IT Asset Management, Security Consulting"
+    },
+    {
+      "name": "Data Privacy & Protection",
+      "keywordsText": "Data Privacy Advisory, Privacy Gap Assessment, DPIA (Data Protection Impact Assessment), ROPA (Records of Processing Activities), Data Flow Mapping, Privacy Roadmap Development, PIMS Implementation"
+    },
+    {
+      "name": "OT / ICS & Network Security",
+      "keywordsText": "OT/ICS Cybersecurity, Industrial Control Systems (ICS), OT Network Security, Network Security, Firewalls (Cisco Firewall Security), Endpoint Security & Assessment, Application Security, API Security, Penetration Testing"
+    },
+    {
+      "name": "Vulnerability & Risk Management",
+      "keywordsText": "Vulnerability Management, Vulnerability Assessment, Risk Assessment, Risk Register Management, Risk Management, Severity Classification & Triage, Gap Assessment, Maturity Assessment, Security Posture Maturity"
+    },
+    {
+      "name": "Security & Assessment Tools",
+      "keywordsText": "Claroty, Nozomi Networks, Tenable, Nessus, Nipper, Wireshark, Burp Suite"
+    },
+    {
+      "name": "Reporting, Dashboards & Data",
+      "keywordsText": "Power BI, Compliance & Risk Dashboards, Audit Reports, Management Reports, Network Diagrams (As-Is / To-Be), Data Analysis, Pandas, Microsoft Excel, Microsoft Word, PowerPoint"
+    },
+    {
+      "name": "Programming & Web Development",
+      "keywordsText": "JavaScript, Java (Core Java, Java SE, Java Swing), Python, C, SQL, HTML, CSS, React.js, Vue.js (Vuex), Redux, Node.js, Express.js, Sails.js, MongoDB, Electron.js, AWS Textract, Git, GitHub, Figma, VS Code, Linux"
+    },
+    {
+      "name": "Soft Skills & Consulting",
+      "keywordsText": "Client Communication, Stakeholder Engagement, Analytical Thinking, Problem Solving, Proposal & RFP Development, Business Development"
+    }
+  ],
+  "projects": [
+    {
+      "name": "Data Privacy Gap Assessment & DPIA — Telecom Client",
+      "dateDisplay": "2026",
+      "association": "Client engagement at EY India",
+      "description": "Conducted a data-privacy gap assessment and DPIA for a telecommunications client against Bangladesh's PDPA and NDMA regulations, ISO 27701:2025 (PIMS), and GDPR; delivered data flow diagrams, ROPA support, and actionable tool, process, and people roadmaps to strengthen the client's privacy posture.",
+      "links": []
+    },
+    {
+      "name": "ISO 27001:2022 IT/OT Assessment — Steel Manufacturer",
+      "dateDisplay": "2023 – 2026",
+      "association": "Client engagement at PwC India",
+      "description": "Conducted on-site ISO 27001:2022 assessments for IT and OT at a leading steel-manufacturing firm; developed gap reports, risk registers, and dashboards, enabling successful certification and reducing OT-environment risks by 35% through targeted mitigation and policy improvements.",
+      "links": []
+    },
+    {
+      "name": "NIST + IEC 62443 OT Cybersecurity Audit — Cement Manufacturer",
+      "dateDisplay": "2023 – 2026",
+      "association": "Client engagement at PwC India",
+      "description": "Conducted comprehensive NIST (SP 800-30, SP 800-53) and IEC 62443 based IT/OT audits for a cement company; created dashboards, risk and gap registers, and network diagrams to design a To-Be architecture; supported policy and procedure development, performed endpoint assessments, and managed vulnerabilities — resulting in a 30% reduction in identified risks and improved security controls.",
+      "links": []
+    },
+    {
+      "name": "IT Maturity Assessment (NIST CSF 2.0) — Electrical Firm",
+      "dateDisplay": "2023 – 2026",
+      "association": "Client engagement at PwC India",
+      "description": "Conducted a comprehensive IT maturity assessment for a leading electrical firm based on NIST CSF 2.0; developed risk dashboards, identified gaps across people, process, and technology, and recommended tools and processes that improved business-continuity readiness by 30% and reduced critical-risk exposure by 25%.",
+      "links": []
+    },
+    {
+      "name": "Resume Keyword Sorter",
+      "dateDisplay": "",
+      "association": "Personal project",
+      "description": "Electron.js desktop app integrating the AWS Textract API to extract and filter resume content by keyword; self-directed full-stack development practice (JavaScript, React, Node.js).",
+      "links": []
+    }
+  ],
+  "certifications": [
+    {
+      "title": "ISO/IEC 27001:2022 Lead Implementer (LI)",
+      "issuer": "",
+      "date": "2023",
+      "urlLabel": "certificate"
+    },
+    {
+      "title": "Business Continuity Management System (BCMS) — ISO 22301",
+      "issuer": "",
+      "date": "2023",
+      "urlLabel": "certificate"
+    },
+    {
+      "title": "Claroty Implementation Engineer (CIE 401)",
+      "issuer": "Claroty",
+      "date": "2023",
+      "urlLabel": "certificate"
+    },
+    {
+      "title": "Penetration Testing Essential Training",
+      "issuer": "LinkedIn Learning",
+      "date": "Jan 2023",
+      "url": "https://www.linkedin.com/learning/certificates/0081c4a884ee917de9b6ea0b7b8ecab2254d9ae6214067009910f806fc280200",
+      "urlLabel": "certificate"
+    },
+    {
+      "title": "Implementing an Information Security Program",
+      "issuer": "LinkedIn Learning",
+      "date": "Jan 2023",
+      "url": "https://www.linkedin.com/learning/certificates/69b9a79528925b8356be2ca9e2aa277b9de06f0eef1aaad6b8111d91ca7fee9a",
+      "urlLabel": "certificate"
+    },
+    {
+      "title": "Learning Security Frameworks",
+      "issuer": "LinkedIn Learning",
+      "date": "Jan 2023",
+      "url": "https://www.linkedin.com/learning/certificates/db95148e3adade2d410a789f0ee22d033209d8a8f586534288457c5ad4482760",
+      "urlLabel": "certificate"
+    },
+    {
+      "title": "Cybersecurity Foundations",
+      "issuer": "LinkedIn Learning",
+      "date": "Jan 2023",
+      "url": "https://www.linkedin.com/learning/certificates/98d91867584e1395f248d8efd14afdb682fce3fed25c8cef28343017f02ef0d1",
+      "urlLabel": "certificate"
+    },
+    {
+      "title": "Learning Cloud Computing: Cloud Security",
+      "issuer": "LinkedIn Learning",
+      "date": "Jan 2023",
+      "url": "https://www.linkedin.com/learning/certificates/5d5efbdc594754661d6a2ff97b4cb39dac5c760b49d27f066c5af9f9034a714d",
+      "urlLabel": "certificate"
+    },
+    {
+      "title": "Understanding and Prioritizing Data Privacy",
+      "issuer": "LinkedIn Learning",
+      "date": "Jan 2023",
+      "url": "https://www.linkedin.com/learning/certificates/c576eea1b31539c1e4dfe762ff89af37af00e85c0e030d798a9042525225412d",
+      "urlLabel": "certificate"
+    },
+    {
+      "title": "Machine Learning and Artificial Intelligence Security Risk: Categorizing Attacks and Failure Modes",
+      "issuer": "LinkedIn Learning",
+      "date": "Jan 2023",
+      "url": "https://www.linkedin.com/learning/certificates/3b662f3febaf220e9e3215fad68712d1602f35ffae495fe7d6e64c674c8e3201",
+      "urlLabel": "certificate"
+    },
+    {
+      "title": "Cybersecurity Awareness: Cybersecurity Terminology",
+      "issuer": "LinkedIn Learning",
+      "date": "Jan 2023",
+      "url": "https://www.linkedin.com/learning/certificates/97c3fc9736dd122e6e538d3feafca68ae36a07e5fd30b77a2b629e81a2c19808",
+      "urlLabel": "certificate"
+    },
+    {
+      "title": "Emerging Financial Risk Management",
+      "issuer": "LinkedIn Learning",
+      "date": "Jan 2023",
+      "url": "https://www.linkedin.com/learning/certificates/67f96c40c317a5050b84efd0bfa8d4171631203bde88395c3f7368a2cec79aa0",
+      "urlLabel": "certificate"
+    },
+    {
+      "title": "Digital Transformation Foundations",
+      "issuer": "LinkedIn Learning",
+      "date": "Jan 2023",
+      "url": "https://www.linkedin.com/learning/certificates/ffccb58b3809f62b9143f0c85b16a1814b1b49a5c429f62dc5d39217f37c1595",
+      "urlLabel": "certificate"
+    },
+    {
+      "title": "34 Things to Know about Carbon and Climate",
+      "issuer": "LinkedIn Learning",
+      "date": "Jan 2023",
+      "url": "https://www.linkedin.com/learning/certificates/d6862d0573539e0e92a333b21e0ccd0b7b24657b033745490f0fb09bacca04a0",
+      "urlLabel": "certificate"
+    },
+    {
+      "title": "Introduction to Relational Database and SQL",
+      "issuer": "Coursera",
+      "date": "Sep 2020",
+      "url": "https://www.coursera.org/account/accomplishments/certificate/UZVUFF4W4BVE",
+      "urlLabel": "certificate"
+    },
+    {
+      "title": "Server-side Development with NodeJS, Express and MongoDB",
+      "issuer": "Coursera",
+      "date": "Sep 2020",
+      "url": "https://www.coursera.org/account/accomplishments/certificate/U79US5DKKC3D",
+      "urlLabel": "certificate"
+    }
+  ],
+  "certificationsNote": "The top three are professional certifications and belong on tailored resumes: ISO/IEC 27001:2022 Lead Implementer, BCMS ISO 22301, and Claroty Implementation Engineer (CIE 401) — all 2023 (issuers/credential IDs to be confirmed; the CVs list them by title only). The remaining entries are LinkedIn Learning short courses (Jan 2023) and two Coursera courses (Sep 2020) from his developer background; treat these as supplementary and normally EXCLUDE them from tailored resumes, retaining here only for ground-truth completeness with links.",
+  "certificationsNoteFlagged": true,
+  "languages": [
+    {
+      "language": "English",
+      "fluency": "fluent (professional — evidenced by consulting client communication, RFPs, and English-language CVs)"
+    },
+    {
+      "language": "Bengali",
+      "fluency": "native (INFERRED — not stated in any source document; confirm)"
+    },
+    {
+      "language": "Hindi",
+      "fluency": "fluent (INFERRED — not stated in any source document; confirm)"
+    }
+  ],
+  "recommendations": [
+    {
+      "by": "Subhankar Pal",
+      "role": "SE I (Backend) @ Precisely",
+      "relationship": "no relationship indicated (Dec 2, 2021) — from his full-stack developer days",
+      "text": "Bhaskar is a team player with good leadership skills as well as a great passion for problem-solving. Always thinks about an optimized approach and never fails his deadline. I strongly recommend him as a Full Stack Developer."
+    },
+    {
+      "by": "Avinash Jha",
+      "role": "Staff SDET at Druva Software",
+      "relationship": "same team (Mar 8, 2021) — from his full-stack developer days",
+      "text": "Bhaskar is a hardworking individual with the will to always innovate something new. Whenever stuck with something, he always reached out to me and yet came with the solution of his own. He really improved his skills while working at this internship and perhaps it was his best work up until now. It was a pleasure having him on the same team as I."
+    }
+  ],
+  "companyContext": [
+    {
+      "name": "Ernst & Young (EY) India",
+      "text": "One of the 'Big Four' global professional-services firms (assurance, tax, strategy & transactions, and consulting). EY India's Cybersecurity, Risk & Privacy consulting practice delivers data-privacy advisory, ISMS, and technology-risk engagements for enterprise clients. Bhaskar joined as a Consultant in March 2026."
+    },
+    {
+      "name": "PwC India (PricewaterhouseCoopers)",
+      "text": "One of the 'Big Four' global professional-services firms. PwC India's cybersecurity practice delivers IT/OT audits, ISO 27001 / NIST CSF assessments, and risk & compliance advisory across regulated industries (manufacturing, steel, cement, electrical, telecom). Bhaskar worked here Jan 2023 – Mar 2026, progressing from Cyber Security Specialist to Cybersecurity Associate (Associate II)."
+    },
+    {
+      "name": "What a Story",
+      "text": "Creative digital / video storytelling and content agency (LinkedIn handle: whatastory-agency). Small agency with limited independent public data. Bhaskar interned here as a full-stack developer (Dec 2021 – Jul 2022) during college — building React front-ends and JWT-based API authentication — before pivoting into cybersecurity consulting."
+    }
+  ]
+}

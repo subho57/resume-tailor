@@ -1,0 +1,12 @@
+Subject: Applied for {{jobTitle}} — GRC consultant (ISO 27001, PwC/EY)
+
+Hi {{outreachEmployeeName}},
+
+I recently applied for the {{jobTitle}} role at {{companyName}} ({{jobLink}}) and saw that you're on the team — I'd love a quick word or a referral if you think my background is a fit.
+
+I'm a GRC and cybersecurity consultant with 3.5+ years across PwC and EY and an ISO/IEC 27001:2022 Lead Implementer certification; I've run ISO 27001 and NIST CSF audits, identified control gaps, maintained risk registers, and driven remediation that lifted client security posture by up to 40%.
+
+Happy to share more or answer anything about my fit for the third-party risk and compliance work on your team.
+
+Thanks so much,
+Bhaskar

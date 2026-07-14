@@ -1,0 +1,103 @@
+{
+  "schemaVersion": "1.0.0",
+  "theme": "corporate-navy",
+  "sectionOrder": ["summary", "skills", "work", "education"],
+  "basics": {
+    "name": "Priyanka Chatterjee",
+    "label": "DevOps Engineer · Terraform & CI/CD · AWS/GCP · Security & Compliance Automation · 9,300★ OSS Contributor · 3.5+ Years",
+    "email": "priyankachatterjee9075@gmail.com",
+    "phone": "+91 8617262536",
+    "url": "https://priyanka-chatterjee-2000.github.io",
+    "location": {
+      "display": "Kolkata, West Bengal, India",
+      "city": "Kolkata",
+      "region": "West Bengal",
+      "countryCode": "IN"
+    },
+    "profiles": [
+      {
+        "network": "LinkedIn",
+        "username": "priyanka-9075",
+        "url": "https://linkedin.com/in/priyanka-9075",
+        "display": "linkedin.com/in/priyanka-9075"
+      },
+      {
+        "network": "GitHub",
+        "username": "Priyanka-Chatterjee-2000",
+        "url": "https://github.com/Priyanka-Chatterjee-2000",
+        "display": "github.com/Priyanka-Chatterjee-2000"
+      },
+      {
+        "network": "Portfolio",
+        "url": "https://priyanka-chatterjee-2000.github.io",
+        "display": "priyanka-chatterjee-2000.github.io"
+      }
+    ],
+    "summaries": {
+      "wework-devops": "DevOps Engineer with 3.5+ years of experience and expertise in Terraform, CI/CD automation, AWS/GCP cloud management, and security/compliance for cloud infrastructure. Owned release engineering and CI/CD automation for four open-source cloud-infrastructure products at Turbot HQ (9,300+ GitHub stars, 120+ merged PRs), and authored multi-cloud compliance modules cutting enterprise audit time 50%."
+    },
+    "activeSummary": "wework-devops"
+  },
+  "work": [
+    {
+      "name": "Turbot HQ, Inc.",
+      "location": "Remote",
+      "dateDisplay": "August 2022 – April 2026",
+      "roleDisplay": "senior-only",
+      "roles": [
+        {
+          "position": "Software Engineer I",
+          "dateDisplay": "August 2022 – April 2026"
+        }
+      ],
+      "highlights": [
+        "Owned release engineering end-to-end for four open-source Go CLIs — unified GitHub Actions CI/CD workflows, automated Slack release notifications, and GHCR Docker image tagging.",
+        "Added multi-distro Linux smoke tests (ephemeral environments across CentOS, Ubuntu ARM64, macOS) to the GitHub Actions release pipeline, hardening release safety and catching regressions before deployment.",
+        "Authored multi-cloud compliance modules in HCL + SQL covering 1,000+ resource checks across CIS (AWS, Azure, GCP), NIST, HIPAA, PCI DSS v4, SOC 2, and FedRAMP frameworks; cutting enterprise compliance-audit time 50%.",
+        "Authored an LLM-driven Claude Code skill automating code refactoring, deployment, and Terraform-driven integration testing; used it to migrate 35+ Azure cloud-governance modules to event-driven eventing, cutting resource-discovery latency 70-90%.",
+        "Resolved a production incident by diagnosing a Go service stuck in a Kubernetes CrashLoopBackOff — investigating pod logs and status and collaborating with the platform team to restore service.",
+        "Designed and developed an internal REST API microservice in Go using the Gin framework, containerized with Docker and deployed to AWS EC2."
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "University of Engineering & Management (UEM)",
+      "location": "Kolkata, WB, IN",
+      "degreeDisplay": "Bachelor of Technology in Computer Science and Engineering",
+      "dateDisplay": "August 2019 – May 2023",
+      "score": "CGPA: 9.28",
+      "detail": "Relevant Coursework: Object-Oriented Programming, DBMS, Data Structures and Algorithms, Shell Scripting in Linux, Low-Level Design, High-Level Design"
+    }
+  ],
+  "skills": [
+    {
+      "name": "Scripting & Languages",
+      "keywordsText": "Python, Bash, Go, SQL"
+    },
+    {
+      "name": "IaC & CI/CD",
+      "keywordsText": "Terraform, OpenTofu, HCL, GitHub Actions, GHCR"
+    },
+    {
+      "name": "Cloud Platforms",
+      "keywordsText": "AWS (Lambda, EC2, S3, SecurityHub, GuardDuty), Azure, GCP"
+    },
+    {
+      "name": "Containers & Orchestration",
+      "keywordsText": "Docker, Kubernetes (working knowledge; collaborate with platform teams)"
+    },
+    {
+      "name": "Observability",
+      "keywordsText": "Datadog, OpenTelemetry (OTel); metrics, logging, incident triage"
+    },
+    {
+      "name": "Security & Compliance",
+      "keywordsText": "CIS, NIST, HIPAA, PCI DSS v4, SOC 2, FedRAMP; IAM, RBAC"
+    },
+    {
+      "name": "Linux & Version Control",
+      "keywordsText": "Multi-distro Linux (CentOS, Ubuntu ARM64, macOS), Git"
+    }
+  ]
+}

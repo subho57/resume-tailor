@@ -1,0 +1,101 @@
+{
+  "schemaVersion": "1.0.0",
+  "theme": "corporate-navy",
+  "sectionOrder": ["summary", "skills", "work", "education"],
+  "basics": {
+    "name": "Priyanka Chatterjee",
+    "label": "Senior Software Engineer (Backend/Architect) · Python/Go/Node.js · Agentic AI & RAG · AWS · 9,300★ OSS Contributor · 3.5+ Years",
+    "email": "priyankachatterjee9075@gmail.com",
+    "phone": "+91 8617262536",
+    "url": "https://priyanka-chatterjee-2000.github.io",
+    "location": {
+      "display": "Kolkata, West Bengal, India",
+      "city": "Kolkata",
+      "region": "West Bengal",
+      "countryCode": "IN"
+    },
+    "profiles": [
+      {
+        "network": "LinkedIn",
+        "username": "priyanka-9075",
+        "url": "https://linkedin.com/in/priyanka-9075",
+        "display": "linkedin.com/in/priyanka-9075"
+      },
+      {
+        "network": "GitHub",
+        "username": "Priyanka-Chatterjee-2000",
+        "url": "https://github.com/Priyanka-Chatterjee-2000",
+        "display": "github.com/Priyanka-Chatterjee-2000"
+      },
+      {
+        "network": "Portfolio",
+        "url": "https://priyanka-chatterjee-2000.github.io",
+        "display": "priyanka-chatterjee-2000.github.io"
+      }
+    ],
+    "summaries": {
+      "stealth-backend-architect": "Senior Software Engineer (Backend/Architect) with 3.5+ years of experience and expertise in Python, Go, Node.js, PostgreSQL/MongoDB, and event-driven microservices on AWS. Built a production RAG agent and multi-agent AI system at Turbot HQ — a product company, not services — and led an AWS SDK migration across 180+ call sites and 11+ AWS services, cutting resource-discovery latency 70-90%."
+    },
+    "activeSummary": "stealth-backend-architect"
+  },
+  "work": [
+    {
+      "name": "Turbot HQ, Inc.",
+      "location": "Remote",
+      "dateDisplay": "August 2022 – April 2026",
+      "roleDisplay": "senior-only",
+      "roles": [
+        {
+          "position": "Software Engineer I",
+          "dateDisplay": "August 2022 – April 2026"
+        }
+      ],
+      "highlights": [
+        "Built the Steampipe Model Context Protocol (MCP) server end to end in Python — a 0→1 build, from identifying the gap to shipping a production capability — giving LLM agents standardized, real-time access to enterprise cloud and security data.",
+        "Designed a multi-agent AI system on the OpenAI Agents SDK — a production agentic-orchestration framework — orchestrating LLM agents that generate policy commands, validate them in a live environment, self-correct failures, and score outcomes against an internal metric.",
+        "Built a RAG-based Pydantic AI agent with an embeddings-backed knowledge base in AWS S3 vector storage; deployed to AWS Lambda and integrated with Slack for instant, context-aware query resolution.",
+        "Authored an LLM-driven Claude Code skill automating code refactoring, unit test generation, deployment, and PR creation — using AI as leverage in daily engineering; used it to migrate 35+ Azure cloud-governance modules to event-driven eventing, cutting resource-discovery latency 70-90%.",
+        "Built a Kafka-based, event-driven distributed-systems pipeline where consumers asynchronously processed policy-enforcement events; added a dead-letter queue (DLQ) for reliable failure handling.",
+        "Led the AWS SDK for JavaScript v2 to v3 migration across 180+ call sites and 11+ AWS services in production Node.js Lambdas; reduced policy-code duplication ~60% via templating, keeping the platform supported past AWS SDK v2 EOL.",
+        "Designed and developed an internal REST API microservice in Go using the Gin framework as part of a greenfield build of Turbot Guardrails, an enterprise B2B SaaS platform; containerized with Docker, deployed to AWS EC2, and served as a gRPC client for several internal event-driven microservices.",
+        "Optimized complex PostgreSQL queries powering customer compliance audits — rewriting AWS IAM policy-evaluation queries with jsonb array elements and multi-stage CTEs — improving query performance 40% and cutting enterprise audit time 50%, the same accuracy-and-audit-trail rigor a deterministic reconciliation engine demands."
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "University of Engineering & Management (UEM)",
+      "location": "Kolkata, WB, IN",
+      "degreeDisplay": "Bachelor of Technology in Computer Science and Engineering",
+      "dateDisplay": "August 2019 – May 2023",
+      "score": "CGPA: 9.28",
+      "detail": "Relevant Coursework: Object-Oriented Programming, DBMS, Data Structures and Algorithms, Shell Scripting in Linux, Low-Level Design, High-Level Design"
+    }
+  ],
+  "skills": [
+    {
+      "name": "Languages",
+      "keywordsText": "Python, Go, Node.js, TypeScript, JavaScript (ES6+), SQL, Bash"
+    },
+    {
+      "name": "AI & Agentic Engineering",
+      "keywordsText": "LLM Application Development, Agentic Workflows, Multi-Agent Systems, Retrieval-Augmented Generation (RAG), Model Context Protocol (MCP), OpenAI Agents SDK, Pydantic AI, Claude Code, Cursor, Codex"
+    },
+    {
+      "name": "Backend & APIs",
+      "keywordsText": "REST, gRPC, Microservices, Event-Driven Architecture, OAuth 2.0 (Auth0), JWT"
+    },
+    {
+      "name": "Databases",
+      "keywordsText": "PostgreSQL, MySQL, MongoDB, DuckDB; jsonb, CTEs, query tuning, schema design"
+    },
+    {
+      "name": "Cloud & Containers",
+      "keywordsText": "AWS (Lambda, EC2, S3, SecurityHub, GuardDuty), Azure, GCP, Docker, Kubernetes/k8s (working knowledge; collaborate with platform teams)"
+    },
+    {
+      "name": "DevOps & Testing",
+      "keywordsText": "GitHub Actions, CI/CD, Git, Unit Testing, Integration Testing, Code Review"
+    }
+  ]
+}

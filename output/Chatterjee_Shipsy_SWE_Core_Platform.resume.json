@@ -1,0 +1,123 @@
+{
+  "schemaVersion": "1.0.0",
+  "theme": "corporate-navy",
+  "sectionOrder": ["summary", "skills", "work", "projects", "education"],
+  "basics": {
+    "name": "Priyanka Chatterjee",
+    "label": "Software Engineer, Core Platform · Generalist (Backend/Infra/Data) · Agent Orchestration & AI Tooling · 9,300★ OSS Contributor · 3.5+ Years",
+    "email": "priyankachatterjee9075@gmail.com",
+    "phone": "+91 8617262536",
+    "url": "https://priyanka-chatterjee-2000.github.io",
+    "location": {
+      "display": "Kolkata, West Bengal, India",
+      "city": "Kolkata",
+      "region": "West Bengal",
+      "countryCode": "IN"
+    },
+    "profiles": [
+      {
+        "network": "LinkedIn",
+        "username": "priyanka-9075",
+        "url": "https://linkedin.com/in/priyanka-9075",
+        "display": "linkedin.com/in/priyanka-9075"
+      },
+      {
+        "network": "GitHub",
+        "username": "Priyanka-Chatterjee-2000",
+        "url": "https://github.com/Priyanka-Chatterjee-2000",
+        "display": "github.com/Priyanka-Chatterjee-2000"
+      },
+      {
+        "network": "Portfolio",
+        "url": "https://priyanka-chatterjee-2000.github.io",
+        "display": "priyanka-chatterjee-2000.github.io"
+      }
+    ],
+    "summaries": {
+      "shipsy-core-platform": "Software Engineer, Core Platform with 3.5+ years of production engineering experience and expertise across backend, infra, and data — Go, Python, distributed systems, and AI-agent orchestration. Built a production multi-agent orchestration system and the Steampipe MCP server from scratch at Turbot HQ (9,300+ GitHub stars, 120+ merged PRs), and lifted a Go-based CLI's throughput 30% to 1,000+ events per second."
+    },
+    "activeSummary": "shipsy-core-platform"
+  },
+  "work": [
+    {
+      "name": "Turbot HQ, Inc.",
+      "location": "Remote",
+      "dateDisplay": "August 2022 – April 2026",
+      "roleDisplay": "senior-only",
+      "roles": [
+        {
+          "position": "Software Engineer I",
+          "dateDisplay": "August 2022 – April 2026"
+        }
+      ],
+      "highlights": [
+        "Designed and built a multi-agent orchestration system on the OpenAI Agents SDK end to end — a 0→1 build — where LLM agents generate cloud policy commands, validate them in a live environment, self-correct failures, and score outcomes against an internal metric.",
+        "Built the Steampipe Model Context Protocol (MCP) server end to end in Python, designing the interface from scratch to give LLM agents standardized, real-time access to enterprise cloud and security data.",
+        "Authored an LLM-driven Claude Code skill automating code refactoring, test generation, deployment, and PR creation — using AI as leverage to automate my own workflow; used it to migrate 35+ Azure modules to event-driven eventing, cutting resource-discovery latency 70-90%.",
+        "Owned the design, build, testing, and deployment of an internal REST API microservice in Go (Gin) as part of a greenfield build of Turbot Guardrails; secured with OAuth 2.0 via Auth0, containerized with Docker, deployed to AWS EC2, and served as a gRPC client for internal microservices.",
+        "Engineered core features for Tailpipe, a Go CLI on DuckDB + Parquet, lifting log-processing throughput 30% to 1,000+ events per second by chunking and batching file reads and streaming writes; reduced memory use to eliminate out-of-memory failures at scale.",
+        "Optimized complex PostgreSQL queries powering customer compliance audits — rewriting AWS IAM policy-evaluation queries with jsonb array elements and multi-stage CTEs — improving query performance 40% and eliminating a class of false-positive findings.",
+        "Resolved a production incident by diagnosing a Go service stuck in a Kubernetes CrashLoopBackOff — investigating pod logs and status and collaborating with the platform team to restore service.",
+        "Owned release engineering end-to-end for four open-source Go CLIs — unified GitHub Actions CI/CD workflows and GHCR Docker image tagging, establishing engineering best practices across the platform."
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "University of Engineering & Management (UEM)",
+      "location": "Kolkata, WB, IN",
+      "degreeDisplay": "Bachelor of Technology in Computer Science and Engineering",
+      "dateDisplay": "August 2019 – May 2023",
+      "score": "CGPA: 9.28",
+      "detail": "Relevant Coursework: Object-Oriented Programming, DBMS, Data Structures and Algorithms, Shell Scripting in Linux, Low-Level Design, High-Level Design"
+    }
+  ],
+  "skills": [
+    {
+      "name": "Languages",
+      "keywordsText": "Go, Python, TypeScript, JavaScript (ES6+), SQL, Bash"
+    },
+    {
+      "name": "AI & Agentic Tooling",
+      "keywordsText": "LLM Application Development, Agentic Workflows, Multi-Agent Systems (Agent Orchestration), Retrieval-Augmented Generation (RAG), Model Context Protocol (MCP), OpenAI Agents SDK, Pydantic AI, Claude Code, Cursor, Codex"
+    },
+    {
+      "name": "Backend & APIs",
+      "keywordsText": "REST, gRPC, Microservices, Event-Driven Architecture, Distributed Systems, OAuth 2.0 (Auth0), JWT"
+    },
+    {
+      "name": "Databases & Data",
+      "keywordsText": "PostgreSQL, MySQL, DuckDB, MongoDB; jsonb, CTEs, query tuning, schema design"
+    },
+    {
+      "name": "Infra & DevOps",
+      "keywordsText": "Docker, Kubernetes (working knowledge; collaborate with platform teams), AWS, Azure, GCP, GitHub Actions, CI/CD, Terraform"
+    },
+    {
+      "name": "Observability",
+      "keywordsText": "Datadog, OpenTelemetry (OTel); metrics, logging, tracing, incident triage"
+    },
+    {
+      "name": "Frontend",
+      "keywordsText": "React, TypeScript, Vite"
+    },
+    {
+      "name": "Core CS & Testing",
+      "keywordsText": "Data Structures & Algorithms, Object-Oriented Design, System Design, Unit Testing, Integration Testing, Code Review"
+    }
+  ],
+  "projects": [
+    {
+      "name": "Lila Tic-Tac-Toe — Real-Time Multiplayer Game",
+      "dateDisplay": "2026",
+      "association": "",
+      "description": "Side project built end to end in 4 days, no spec, self-directed: React 19 + TypeScript + Vite frontend on Vercel; Nakama game server (Go core + TS runtime) on Fly.io with PostgreSQL. Server-authoritative anti-cheat over WebSocket transport, mode-aware matchmaking via KV-storage queues, tick-based turn timer, optimistic UI with revert-on-validation-failure, top-10 leaderboard, and reconnect-into-active-match.",
+      "links": [
+        {
+          "label": "repo/live",
+          "url": "https://priyanka-chatterjee-2000.github.io"
+        }
+      ]
+    }
+  ]
+}

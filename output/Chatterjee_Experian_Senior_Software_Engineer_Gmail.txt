@@ -1,0 +1,8 @@
+Subject: Applied for the Senior Software Engineer role — quick hello
+
+Hi {{outreachEmployeeName}},
+
+I just applied for the {{jobTitle}} role at {{companyName}} ({{jobLink}}) and wanted to reach out directly. At Turbot HQ I've authored AWS log-source tables for CloudTrail, GuardDuty, and SecurityHub, built a Python MCP server and a Kafka-based event-driven pipeline, and optimized PostgreSQL on RDS for a 40% performance gain. Would love a referral or a quick chat if you have a few minutes — happy to share more details or my resume.
+
+Thanks so much,
+Priyanka Chatterjee

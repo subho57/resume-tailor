@@ -1,0 +1,8 @@
+Subject: Applied for the Software Engineer, Core Platform role — quick hello
+
+Hi {{outreachEmployeeName}},
+
+I just applied for the {{jobTitle}} role at {{companyName}} ({{jobLink}}) and wanted to reach out directly. At Turbot HQ I built a multi-agent orchestration system on the OpenAI Agents SDK and the Steampipe MCP server, both from scratch, plus I use Claude Code daily as real automation leverage — and I've owned backend, infra, and data work end to end across REST APIs, Postgres, and Kubernetes incidents. One honest note: my degree is from a non-Tier-1 institution, so I know that's a filter, but the role fit felt worth reaching out anyway. Would love a referral or a quick chat if you have a few minutes.
+
+Thanks so much,
+Priyanka Chatterjee

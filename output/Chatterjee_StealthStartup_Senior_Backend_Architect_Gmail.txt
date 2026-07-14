@@ -1,0 +1,8 @@
+Subject: Applied for the Senior Software Engineer (Backend/Architect) role — quick hello
+
+Hi {{outreachEmployeeName}},
+
+I just applied for the {{jobTitle}} role at {{companyName}} ({{jobLink}}) and wanted to reach out directly. At Turbot HQ (a product company) I built a production MCP server and multi-agent AI system from scratch — genuine 0→1 work — plus a RAG agent, an AWS SDK migration across 180+ call sites, and I use Claude Code daily as real engineering leverage. Would love a referral or a quick chat if you have a few minutes — happy to share more details or my resume.
+
+Thanks so much,
+Priyanka Chatterjee

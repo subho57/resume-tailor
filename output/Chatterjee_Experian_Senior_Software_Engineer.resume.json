@@ -1,0 +1,122 @@
+{
+  "schemaVersion": "1.0.0",
+  "theme": "corporate-navy",
+  "sectionOrder": ["summary", "skills", "work", "projects", "education"],
+  "basics": {
+    "name": "Priyanka Chatterjee",
+    "label": "Senior Software Engineer · Python/TypeScript · AWS (SecurityHub, GuardDuty, CloudTrail) · Event-Driven Systems · 9,300★ OSS Contributor · 3.5+ Years",
+    "email": "priyankachatterjee9075@gmail.com",
+    "phone": "+91 8617262536",
+    "url": "https://priyanka-chatterjee-2000.github.io",
+    "location": {
+      "display": "Kolkata, West Bengal, India",
+      "city": "Kolkata",
+      "region": "West Bengal",
+      "countryCode": "IN"
+    },
+    "profiles": [
+      {
+        "network": "LinkedIn",
+        "username": "priyanka-9075",
+        "url": "https://linkedin.com/in/priyanka-9075",
+        "display": "linkedin.com/in/priyanka-9075"
+      },
+      {
+        "network": "GitHub",
+        "username": "Priyanka-Chatterjee-2000",
+        "url": "https://github.com/Priyanka-Chatterjee-2000",
+        "display": "github.com/Priyanka-Chatterjee-2000"
+      },
+      {
+        "network": "Portfolio",
+        "url": "https://priyanka-chatterjee-2000.github.io",
+        "display": "priyanka-chatterjee-2000.github.io"
+      }
+    ],
+    "summaries": {
+      "experian-sse": "Senior Software Engineer with 3.5+ years of experience and expertise in Python, TypeScript, AWS cloud-native services, and event-driven architectures. Authored AWS log-source tables and detections for CloudTrail, GuardDuty, and SecurityHub at Turbot HQ, and built a Kafka-based event-driven pipeline, contributing to a platform that cut enterprise compliance-audit time 50%."
+    },
+    "activeSummary": "experian-sse"
+  },
+  "work": [
+    {
+      "name": "Turbot HQ, Inc.",
+      "location": "Remote",
+      "dateDisplay": "August 2022 – April 2026",
+      "roleDisplay": "senior-only",
+      "roles": [
+        {
+          "position": "Software Engineer I",
+          "dateDisplay": "August 2022 – April 2026"
+        }
+      ],
+      "highlights": [
+        "Authored 11 AWS log-source tables for Tailpipe in Go — including CloudTrail, GuardDuty, SecurityHub, ALB access logs, and S3 access logs — plus 25+ pre-built security detections, working directly with the same AWS observability and security services this role centers on.",
+        "Built the Steampipe Model Context Protocol (MCP) server end to end in Python, giving LLM agents standardized, real-time access to enterprise cloud and security data.",
+        "Built a RAG-based Pydantic AI agent with a knowledge base ingested into S3 vector storage; deployed it as a serverless AWS Lambda function and integrated it with the Slack Bot API for instant developer access.",
+        "Built a Kafka-based, event-driven pipeline where consumers asynchronously processed policy-enforcement events and fired a webhook once a policy was enforced; added a dead-letter queue (DLQ) to capture recurring failures for retry and investigation.",
+        "Designed and developed an internal REST API microservice in Go using the Gin framework as part of a greenfield build of Turbot Guardrails; secured endpoints with OAuth 2.0 authentication via Auth0, containerized with Docker, deployed to AWS EC2, and served as a gRPC client for several internal microservices.",
+        "Optimized complex PostgreSQL (AWS RDS) queries powering customer compliance audits — rewriting AWS IAM policy-evaluation queries with jsonb array elements and multi-stage CTEs — improving query performance 40% and eliminating a class of false-positive findings.",
+        "Resolved a production incident by diagnosing a Go service stuck in a Kubernetes CrashLoopBackOff — investigating pod logs and status and collaborating with the platform team to restore service, the same root-cause discipline an on-call rotation demands.",
+        "Authored an LLM-driven Claude Code skill automating code refactoring, test generation, deployment, Terraform-driven integration testing, and PR creation; used it to migrate 35+ Azure cloud-governance modules to event-driven eventing via Azure Event Grid, cutting resource-discovery latency 70-90%."
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "name": "Lila Tic-Tac-Toe — Real-Time Multiplayer Game",
+      "dateDisplay": "2026",
+      "association": "",
+      "description": "Built end to end in 4 days: React 19 + TypeScript + Vite frontend on Vercel; Nakama game server (Go core + TS runtime) on Fly.io with PostgreSQL. Server-authoritative anti-cheat over WebSocket transport, mode-aware matchmaking via KV-storage queues, and optimistic UI with revert-on-validation-failure.",
+      "links": []
+    }
+  ],
+  "education": [
+    {
+      "institution": "University of Engineering & Management (UEM)",
+      "location": "Kolkata, WB, IN",
+      "degreeDisplay": "Bachelor of Technology in Computer Science and Engineering",
+      "dateDisplay": "August 2019 – May 2023",
+      "score": "CGPA: 9.28",
+      "detail": "Relevant Coursework: Object-Oriented Programming, DBMS, Data Structures and Algorithms, Shell Scripting in Linux, Low-Level Design, High-Level Design"
+    }
+  ],
+  "skills": [
+    {
+      "name": "Languages",
+      "keywordsText": "Python, TypeScript, JavaScript (ES6+), Go, SQL, Bash"
+    },
+    {
+      "name": "Backend & APIs",
+      "keywordsText": "REST, gRPC, Express.js (Node.js), Microservices, OAuth 2.0 (Auth0), JWT, Pydantic"
+    },
+    {
+      "name": "Frontend",
+      "keywordsText": "React, TypeScript, Vite"
+    },
+    {
+      "name": "AWS Security & Observability",
+      "keywordsText": "AWS SecurityHub, GuardDuty, CloudTrail, ControlTower, Shield"
+    },
+    {
+      "name": "Cloud Platforms",
+      "keywordsText": "AWS (Lambda, EC2, RDS, S3), Azure, GCP"
+    },
+    {
+      "name": "Distributed & Event-Driven Systems",
+      "keywordsText": "Distributed Systems, Event-Driven Architecture, Apache Kafka (consumer groups, DLQs), Azure Event Grid"
+    },
+    {
+      "name": "Databases",
+      "keywordsText": "PostgreSQL (AWS RDS), MySQL, MongoDB, DuckDB; jsonb, CTEs, query tuning, schema design"
+    },
+    {
+      "name": "IaC & DevOps",
+      "keywordsText": "Docker, Terraform, GitHub Actions, CI/CD, Git, Jira"
+    },
+    {
+      "name": "Observability & Testing",
+      "keywordsText": "Datadog, OpenTelemetry (OTel), Unit Testing, Integration Testing, Code Review"
+    }
+  ]
+}

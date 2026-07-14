@@ -1,0 +1,16 @@
+Priyanka Chatterjee
+priyankachatterjee9075@gmail.com | +91 8617262536
+linkedin.com/in/priyanka-9075 | github.com/Priyanka-Chatterjee-2000 | priyanka-chatterjee-2000.github.io
+
+Dear Hiring Manager,
+
+I'm writing to apply for the Application Engineer (AI Automation) role. At Turbot HQ, I designed and built the Steampipe Model Context Protocol (MCP) server end to end in Python — architecting the protocol-compliant interface from scratch to give AI agents standardized, real-time access to enterprise cloud data. I'm also a core open-source contributor there (9,300+ GitHub stars, 120+ merged PRs), and that MCP server lives within one of those open-source products.
+
+On agentic orchestration, I designed a multi-agent system on the OpenAI Agents SDK where agents generate cloud policy actions, validate them against each other in a live environment, self-correct failures, and score outcomes against an internal metric — an agent-to-agent validation loop conceptually close to what you're describing for Sales/Billing/Contract agents. On RAG, I built a Pydantic AI agent with a knowledge base in AWS S3 vector storage — the same vector-search category as Pinecone or Weaviate — deployed to AWS Lambda and integrated with Slack for autonomous, self-serve access. On integration, I designed a REST API microservice secured with OAuth 2.0 via Auth0 and served as a gRPC client across several internal microservices.
+
+Two things I want to flag directly, not bury: I have 3.5 years of experience against the role's 5+ year bar, and I have no hands-on experience with Salesforce, Zuora, or ServiceNow specifically — the entire business-platform context this role integrates with. What I bring is the harder-to-teach part: I've actually built an MCP server and production agentic systems, not read about them, and I pick up new platforms fast.
+
+Thank you for your consideration — I'd love to discuss whether that combination works for you.
+
+Best regards,
+Priyanka Chatterjee

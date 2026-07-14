@@ -1,0 +1,8 @@
+Subject: Applied for the DevOps Engineer I role — quick hello
+
+Hi {{outreachEmployeeName}},
+
+I just applied for the {{jobTitle}} role at {{companyName}} ({{jobLink}}) and wanted to reach out directly. I own GitHub Actions CI/CD release engineering and multi-cloud compliance automation (cutting audit time 50%) for open-source infrastructure products, with hands-on AWS/GCP, Docker, Kubernetes, and Terraform experience. Note: I have a bit more experience (3.5 years) than the posting's 1-3 year range, but the stack fit felt close enough to reach out. Would love a referral or a quick chat if you have a few minutes.
+
+Thanks so much,
+Priyanka Chatterjee

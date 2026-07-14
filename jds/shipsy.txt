@@ -1,0 +1,63 @@
+Core Engineering · Platform · Any pillar
+
+Software Engineer, Core Platform
+Gurugram
+
+Strong foundations. Generalist by design. You're given the highest-leverage problem across the Shipsy platform — not slotted into one pillar on day one. What you ship runs against 5 billion+ shipments a year for enterprises in 30+ countries.
+
+Team
+Core Engineering
+Experience
+2–4 years
+Education
+Tier-1 institution required
+Employment
+Full-time
+About the role
+The best engineers aren’t slotted into a pillar on day one. They’re given the highest-impact problem on the platform and expected to work it with rigour. Generalist-first, specialist-later. That’s the model here.
+
+Core engineering sits at the centre of the Shipsy flywheel. Forward Deployed Engineers prove patterns inside a customer. Product leaders frame the long-term bets. Your job is to turn those signals into platform — productising what deserves to be productised, and building new primitives where the platform is thin.
+
+The pillars you could work on are: AgentFleet (the agent orchestration layer), AgentFlow (the workflow runtime), the TMS and WMS cores, the routing and optimisation engine, the integration fabric, and the data platform underneath all of it. Where you start depends on where you fit and where the leverage is — not on a slot we filled six months ago.
+
+What you’ll own
+Module-level design. Given a problem, you own the design, the build, the tests, the deploy, the on-call. No hand-off to a platform team on the other side of the building — you are the platform team.
+Production code at scale. Everything you ship runs against 5 billion+ shipments a year. Performance, correctness, and observability are not afterthoughts — they are the job.
+Productising the FDE flywheel. A Forward Deployed Engineer proves something inside one customer. You take the pattern, generalise it, and make it a platform primitive that works for the next ten.
+API and interface design. Integration partners, FDEs, and customers use the surfaces you design. Clean, stable, well-documented APIs are the bar — not the aspiration.
+Code review and pattern-setting. We’re small enough that every engineer reviews every engineer. The standards of the codebase are what you and your peers decide they are.
+Scaling yourself. Use Claude, GPT, and agent frameworks aggressively in your own workflow. The person on the team who has automated more of their own work than anyone else wins.
+Picking your pillar. After your first six months, you’ll have seen enough of the platform to decide where you want to go deep. Generalist-first, specialist-later.
+Who we’re looking for
+We’re not hiring a specialist in any single stack. We’re hiring an engineer with strong foundations who can be thrown at any part of the platform and be productive inside a fortnight.
+
+2–4 years of production engineering. You’ve shipped code to real users at meaningful scale — not a single internship or a coursework project.
+Tier-1 education. IIT / NIT / BITS / equivalent, or a top international institution.
+Strong fundamentals. Data structures, algorithms, systems thinking. You can design a schema, reason about a distributed failure, and instrument a slow endpoint without a runbook.
+Generalist instincts. You’ve worked across backend, frontend, infra, or data and can move between them. No “I only do backend.”
+High agency. You’ve picked a project, owned it end-to-end, and shipped it without a PM spec pushing you. Ideally you’ve also built something outside work — a side project, open source, or a company.
+You use AI tools in your work. Hands-on with Claude, GPT, and agent frameworks. We’ll ask what you’ve actually built, not what you’ve read about.
+Taste. You can tell the difference between a 100-line function that’s clean and a 100-line function that’s a maintenance nightmare — and you can explain why.
+Where the role sits
+You’re on the Core Platform team, based out of Gurugram. Your first rotation is assigned based on where you fit and where the highest-leverage problem is right now. After six months you can request a pillar move, or you can stay and go deep — your call.
+
+You pair frequently with Forward Deployed Engineers. They see the customer pain first, you productise the fix. It’s a closed feedback loop, on purpose — the engineers who do this well become the ones who shape the next version of the platform.
+
+You report to a Staff Engineer and have a skip-level with engineering leadership. No manager overhead. Progression is sharp: strong junior → Senior Software Engineer in 18–24 months → Staff Engineer with a pillar of your own, typically in 3–4 years. The ceiling is what you can hold, not what the title ladder allows.
+
+About Shipsy
+Shipsy is the logistics platform behind some of the largest enterprise supply chains in the world. Carriers, post and parcel operators, retailers, and FMCG companies use us to plan dispatch, run operations, settle invoices, and handle exceptions at global scale.
+
+Where we are going. Most enterprise logistics still runs on spreadsheets, legacy ERPs, and tribal knowledge. We are replacing that with software that uses AI where it actually helps. Logistics is a multi-trillion-dollar industry that has been under-served by software for decades. We are changing that.
+
+The scale today: - 275+ enterprise customers across 30+ countries - 5 billion+ shipments processed annually - 240+ carrier integrations - 7 global offices — Gurugram · Bengaluru · Dubai · Riyadh · Sydney · Amsterdam · Singapore - 300+ team members
+
+Who we run: Aramex (65 countries, 18,000+ drivers, $27M annual savings delivered) · Heineken (2M+ trips across 70+ countries) · LATAM Cargo (Latin America’s largest airline group, $12B+ annual revenue) · Qatar Post (powers mail to 200+ countries) · Post Luxembourg (50%+ market share, $5M+/year savings) · Teleport (80% of Southeast Asia’s air-logistics network) · plus DPD, Smiths News, Apollo Pharmacy, argenx, Flipkart Minutes, Swiggy Instamart, and hundreds more.
+
+Backed by $35M+ in venture capital from Peak XV Partners, A91 Partners, Info Edge, and others. Featured in the Gartner Magic Quadrant. SOC 2 Type II, ISO 27001, and GDPR compliant. 99.7% uptime SLA.
+
+Trajectory. 50x revenue growth since 2020. Building toward $100M ARR and a public listing.
+
+We are still a startup. Our real scale-up began in 2020 — and we have grown 50x since. Early enough that every senior hire shapes the next decade of the business. You are not joining a steady-state organisation with everything figured out. You will build the playbook, lead the work, and own the outcome — with the speed and agency of a startup and the scale of customers most startups never touch.
+
+If you want to be the engineer whose code runs what a multi-billion-dollar logistics company actually depends on — not the engineer who ships a feature nobody uses — this is the role.

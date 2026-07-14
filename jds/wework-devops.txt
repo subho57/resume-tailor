@@ -1,0 +1,52 @@
+DevOps Engineer I
+Bengaluru, Karnataka, India | Engineering | Full-time
+
+
+About WeWork India
+Launched in 2017, WeWork India is one of India’s leading premium flexible workspace operators - GPTW certified (Nov 2024 – Nov 2025, Dec 2025 – Dec 2026). WeWork India has been the largest operator by total revenue for the past three fiscal years*. Since its inception, WeWork India has expanded across 8 cities in Chennai, New Delhi, Gurugram, Noida, Mumbai, Bengaluru, Pune, and Hyderabad, with 73 operational centres spanning 8.2 million square feet (as of December 2025). WeWork India has played a significant role in the growth of the flexible workspace sector and contributed to the evolution of its products and services, providing customised and curated solutions for various office space needs*.
+For more information, please visit our website https://wework.co.in/
+
+DevOps Engineer I
+About the Role
+As a DevOps Engineer I, you will support the reliability, scalability, and security of our infrastructure and applications. You will work closely with senior engineers and developers to learn and contribute to development, deployment, and engineering operations. You will gain hands-on experience with automation, cloud technologies, and infrastructure as code.
+
+Roles and Responsibilities
+Infrastructure as Code (IaC):
+
+Assist in developing and maintaining infrastructure as code scripts and templates using tools such as Terraform or CloudFormation
+Follow version control practices for infrastructure configurations and support <wbr></wbr>consistent provisioning
+Continuous Integration/Continuous Deployment (CI/CD):
+
+Support and maintain CI/CD pipelines using tools like Jenkins, GitHub Actions, or GitLab CI/CD
+Assist in automating testing, builds, and deployments to ensure efficient and reliable release processes
+Cloud Management:
+
+Assist in managing and monitoring cloud resources on AWS and/or Google Cloud platforms
+Support resource utilisation tracking and help implement cost-effective solutions
+Monitoring and Alerting:
+
+Help set up and maintain monitoring systems (e.g., Prometheus, Grafana) to ensure system performance <wbr></wbr>and availability
+Support alerting mechanisms for timely issue resolution
+Security and Compliance:
+
+Follow established best practices for cloud infrastructure and application security
+Support compliance with industry standards and regulations
+Troubleshooting and Incident Response:
+
+Assist in diagnosing and resolving infrastructure and deployment issues
+Participate in on-call rotation under guidance from senior engineers
+Experience and Qualifications
+Bachelor's degree in Computer Science or a related field
+1 to 3 years of experience in a DevOps, SRE, or systems engineering role
+Basic proficiency in at least one scripting language (e.g., Python, Bash)
+Foundational knowledge of cloud computing platforms (AWS or GCP)
+Familiarity with containerization tools (e.g., Docker) and basic understanding of orchestration (e.g., Kubernetes)
+Understanding of CI/CD principles and tools
+Exposure to Linux/Unix system administration
+Eagerness to learn, strong problem-solving skills, and good communication abilities
+Nice to Have
+Any cloud certification (e.g., AWS Cloud Practitioner, Google Associate Cloud Engineer)
+Experience with configuration management tools (e.g., Ansible)
+Contributions to open-source projects or personal infrastructure projects
+Familiarity with version control systems (Git)
+Exposure to monitoring and logging tools

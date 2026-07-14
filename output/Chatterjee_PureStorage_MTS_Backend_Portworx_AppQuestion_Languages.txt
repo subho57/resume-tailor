@@ -1,0 +1,1 @@
+Go is my primary hands-on language — I've shipped production microservices, CLI features, and log-source integrations in Go at Turbot HQ. I'm also hands-on with Python (backend services, automation, AI agent work) and TypeScript/JavaScript (Node.js backend services), plus SQL for query design and optimization, and Bash for scripting.

@@ -1,0 +1,18 @@
+Priyanka Chatterjee
+priyankachatterjee9075@gmail.com | +91 8617262536
+linkedin.com/in/priyanka-9075 | github.com/Priyanka-Chatterjee-2000 | priyanka-chatterjee-2000.github.io
+
+Dear Hiring Manager,
+
+I'm writing to apply for the Senior Software Engineer (Backend/Architect) role. At Turbot HQ — a product company, not services or consulting — I built the Steampipe Model Context Protocol (MCP) server end to end in Python: a genuine 0→1 build, from identifying that LLM agents had no standardized way to access our cloud data to shipping a production capability the team now relies on. I'm also a core open-source contributor there (9,300+ GitHub stars, 120+ merged PRs).
+
+On agentic AI, I designed a multi-agent system on the OpenAI Agents SDK — a production agentic-orchestration framework — that generates policy commands, validates them in a live environment, self-corrects failures, and scores outcomes against an internal metric, and I built a RAG-based agent with an embeddings-backed knowledge base in AWS S3 vector storage. I treat AI as leverage in my own workflow too: I authored an LLM-driven Claude Code skill that automates code refactoring, test generation, deployment, and PR creation, and used it to cut resource-discovery latency 70-90% on a real migration.
+
+On backend and data, I led an AWS SDK migration across 180+ call sites and 11+ AWS services in production Node.js Lambdas, built a Kafka-based event-driven distributed pipeline, designed a Go REST API microservice as part of a greenfield SaaS build, and rewrote complex PostgreSQL queries — cutting enterprise audit time 50% — the same accuracy-and-audit-trail discipline a deterministic reconciliation engine demands.
+
+I don't have direct experience with commercial real estate finance, ERP integrations (Yardi, NetSuite, MRI, QuickBooks), or accounting frameworks like ASC 842/IFRS 16, and my agent-orchestration tooling is OpenAI Agents SDK/Pydantic AI rather than LangGraph/CrewAI specifically — but the underlying architecture, 0→1 ownership, and AI-as-leverage habits transfer directly, and I learn fast.
+
+Thank you for your consideration — I'd love to discuss further.
+
+Best regards,
+Priyanka Chatterjee

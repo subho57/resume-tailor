@@ -1,0 +1,16 @@
+Priyanka Chatterjee
+priyankachatterjee9075@gmail.com | +91 8617262536
+linkedin.com/in/priyanka-9075 | github.com/Priyanka-Chatterjee-2000 | priyanka-chatterjee-2000.github.io
+
+Dear Hiring Manager,
+
+I'm writing to apply for the Full Stack Engineer role. At Turbot HQ, I led the AWS SDK for JavaScript v2 to v3 migration across 180+ call sites and 11+ AWS services in production Node.js Lambdas, cutting policy-code duplication ~60%, and optimized PostgreSQL queries powering enterprise compliance audits, improving performance 40%. I'm also a core open-source contributor there (9,300+ GitHub stars, 120+ merged PRs).
+
+On backend and APIs, I designed a REST API microservice in Go (Gin) as part of a greenfield build of an enterprise SaaS platform, containerized with Docker and deployed to AWS EC2 — and separately built a REST API in Express.js with JWT authentication and RBAC in a personal project. On distributed systems, I built a Kafka-based event-driven pipeline with dead-letter-queue handling for reliable failure recovery, and I've used Terraform for infrastructure automation as part of an LLM-driven engineering skill I authored. I'm comfortable across AWS and GCP, and containerize services with Docker as a matter of course.
+
+I don't have hands-on experience with GCP Cloud Run or Pub/Sub specifically, or with Agile/Scrum ceremonies by name, but my REST API, PostgreSQL, and distributed-systems fundamentals transfer directly across cloud providers and process frameworks.
+
+Thank you for your consideration — I'd love to discuss further.
+
+Best regards,
+Priyanka Chatterjee

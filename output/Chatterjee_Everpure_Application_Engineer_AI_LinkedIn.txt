@@ -1,0 +1,4 @@
+Hi {{outreachEmployeeName}}, I just applied for the {{jobTitle}} role at {{companyName}} ({{jobLink}}). I've built an MCP server, multi-agent systems, and a RAG agent on vector storage at Turbot HQ — though I don't have Salesforce/Zuora/ServiceNow experience and have 3.5 years vs. the 5+ bar, wanted to flag that upfront. Would still appreciate a referral or a quick chat if you're open to it!
+
+Thanks,
+Priyanka

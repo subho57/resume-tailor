@@ -1,0 +1,4 @@
+Hi {{outreachEmployeeName}}, I just applied for the {{jobTitle}} role at {{companyName}} ({{jobLink}}) and noticed you're on the team. I'm a GRC consultant (ISO 27001:2022 Lead Implementer) with 3.5+ years at PwC and EY running ISO 27001 / NIST CSF audits, control-gap and risk-register work — I'd love a referral or a quick chat if you think it's a fit.
+
+Thanks,
+Bhaskar

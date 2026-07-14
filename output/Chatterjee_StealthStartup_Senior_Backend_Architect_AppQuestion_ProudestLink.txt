@@ -1,0 +1,3 @@
+https://turbot.com/start
+
+I designed and built the internal REST API microservice in Go (Gin framework) that powers the backend of Turbot Guardrails, a Preventive Security Posture Management (PSPM) SaaS platform — I helped build it from the ground up (greenfield), securing endpoints with OAuth 2.0 via Auth0, containerizing with Docker, and integrating it as a gRPC client across several internal microservices.

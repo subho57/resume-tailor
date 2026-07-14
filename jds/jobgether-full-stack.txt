@@ -1,0 +1,106 @@
+Company logo for, Jobgether.
+Jobgether
+
+
+Full Stack Engineer
+
+India · 14 hours ago · Over 100 applicants
+
+No response insights available yet
+
+Remote
+Full-time
+
+Easy Apply
+Run Happpy Agent
+
+Save
+Use AI to assess how you fit
+Show match details
+
+Tailor my resume
+
+Create cover letter
+
+Help me stand out
+
+About the job
+This position is listed on behalf of a partner company, who manages all applications and next steps. Our partner is looking for a Full Stack Engineer based in India.
+
+This role offers the opportunity to build scalable, reliable software products while working across backend services, APIs, cloud infrastructure, and frontend integrations.
+
+You will contribute to the design and delivery of high-quality features in a collaborative product engineering environment.
+
+The position combines hands-on development with opportunities to improve system performance, reliability, and architecture.
+
+You will work closely with engineers, designers, QA teams, and product stakeholders to create impactful solutions.
+
+This is an ideal opportunity for an engineer who enjoys ownership, problem-solving, and building modern cloud-native applications.
+
+The role provides exposure to technologies including Node.js, TypeScript, Google Cloud Platform, Docker, and microservices architectures.
+
+Accountabilities
+
+The Full Stack Engineer will contribute to the development and improvement of scalable software systems, supporting product delivery through strong engineering practices and technical collaboration.
+
+Design, develop, and maintain backend services, APIs, and product features.
+Build reliable applications using JavaScript, TypeScript, Node.js, and modern backend frameworks.
+Develop clean, maintainable, and testable code following software engineering best practices.
+Design database schemas, write efficient queries, and optimise SQL database performance.
+Deploy and manage cloud-based applications using Google Cloud Platform, including Cloud Run.
+Containerise applications using Docker and support cloud-native deployment workflows.
+Participate in code reviews and contribute to improving overall code quality.
+Debug, troubleshoot, and resolve technical issues across applications and services.
+Improve system performance, scalability, and reliability through continuous optimisation.
+Create and maintain technical documentation for APIs, services, and workflows.
+Collaborate closely with frontend engineers, QA professionals, and product teams to deliver complete solutions.
+
+Requirements
+
+The ideal candidate has strong full stack engineering fundamentals, hands-on backend development experience, and the ability to build scalable applications in a modern cloud environment.
+
+3-5 years of professional experience in software engineering, with strong backend development experience.
+Proficiency in JavaScript and TypeScript.
+Hands-on experience with Node.js and backend frameworks such as Express, Fastify, or Hono.
+Strong understanding of RESTful API design and backend development best practices.
+Experience working with SQL databases such as PostgreSQL or MySQL, including query optimisation.
+Experience deploying and managing applications on Google Cloud Platform.
+Hands-on experience with Docker and containerised application deployments.
+Understanding of microservices architecture and distributed systems concepts.
+Familiarity with CI/CD pipelines and version control systems such as Git.
+Strong problem-solving skills and attention to detail.
+Ability to take ownership of features and deliver end-to-end solutions.
+Strong collaboration skills and ability to work effectively within cross-functional teams.
+
+Preferred Qualifications
+
+Experience with messaging systems such as Pub/Sub, Kafka, or similar technologies.
+Familiarity with NoSQL databases such as Firestore or MongoDB.
+Exposure to Infrastructure as Code tools such as Terraform.
+Experience with monitoring, logging, and observability tools.
+Knowledge of system design, scalability principles, and high-traffic applications.
+Experience working in Agile or Scrum environments.
+Previous experience building SaaS products.
+
+Benefits
+
+Fully remote working opportunity from India.
+Competitive salary range of ₹15-20 LPA.
+Opportunity to work on scalable, modern software products.
+Exposure to cloud-native technologies and distributed systems.
+Collaborative environment with experienced engineers and product teams.
+Opportunities to take ownership of impactful technical projects.
+Flexible remote setup with occasional team visits to the Chennai office twice per year.
+Opportunity for continuous learning and growth through hands-on engineering challenges.
+
+How Jobgether Works
+
+We use an AI-powered matching process to ensure your application is reviewed quickly, objectively, and fairly against the role's core requirements. Our system identifies the top-fitting candidates, and this shortlist is then shared directly with the hiring company. The final decision and next steps (interviews, assessments) are managed by their internal team.
+
+We appreciate your interest and wish you the best!
+
+ Why Apply Through Jobgether?
+
+Data Privacy Notice: By submitting your application, you acknowledge that Jobgether will process your personal data to evaluate your candidacy and share relevant information with the hiring employer. This processing is based on legitimate interest and pre-contractual measures under applicable data protection laws (including GDPR). You may exercise your rights (access, rectification, erasure, objection) at any time.
+
+We may use artificial intelligence (AI) tools to support parts of the hiring process, such as reviewing applications, analyzing resumes, or assessing responses and identifying potential inconsistencies or verification signals in application materials based on available information. These tools assist our recruitment team but do not replace human judgment. Final hiring decisions are ultimately made by humans. If you would like more information about how your data is processed, please contact us.

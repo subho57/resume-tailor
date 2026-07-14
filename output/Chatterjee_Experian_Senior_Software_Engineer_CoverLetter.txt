@@ -1,0 +1,18 @@
+Priyanka Chatterjee
+priyankachatterjee9075@gmail.com | +91 8617262536
+linkedin.com/in/priyanka-9075 | github.com/Priyanka-Chatterjee-2000 | priyanka-chatterjee-2000.github.io
+
+Dear Hiring Manager,
+
+I'm writing to apply for the Senior Software Engineer role. At Turbot HQ, I authored 11 AWS log-source tables for Tailpipe — including CloudTrail, GuardDuty, and SecurityHub — plus 25+ pre-built security detections, working directly with the same AWS security and observability services this role centers on. I'm also a core open-source contributor there (9,300+ GitHub stars, 120+ merged PRs).
+
+On Python and backend, I built the Steampipe Model Context Protocol (MCP) server end to end and a RAG-based Pydantic AI agent with a knowledge base in S3 vector storage, deployed as a serverless AWS Lambda function. On event-driven systems, I built a Kafka-based pipeline with dead-letter-queue handling for reliable retry and investigation — the same messaging category as SNS/SQS, though I haven't used SNS/SQS specifically. On data, I've optimized PostgreSQL (on AWS RDS) queries for a 40% performance gain, and on reliability, I resolved a live production incident by diagnosing a Kubernetes CrashLoopBackOff with the same root-cause discipline an on-call rotation demands.
+
+On the frontend side, I built a real-time multiplayer game end to end in 4 days using React 19 and TypeScript, and I use Terraform for infrastructure automation as part of an LLM-driven engineering skill I authored.
+
+I don't have direct experience with FastAPI, DynamoDB, AWS ECS, or API Gateway specifically, but my Python, AWS, and event-driven fundamentals transfer directly, and I pick up new tools quickly.
+
+Thank you for your consideration — I'd love to discuss further.
+
+Best regards,
+Priyanka Chatterjee
