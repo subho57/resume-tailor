@@ -1,0 +1,3 @@
+Hi {{outreachEmployeeName}}, I just applied for the {{jobTitle}} role at {{companyName}} ({{jobLink}}) and wanted to reach out directly. My background is a close match: 3.5+ years shipping production Go/Python/TypeScript features with AWS-deployed REST APIs, CI pipeline ownership, and root-cause production debugging. I’d value a referral or quick chat if possible.
+
+Priyanka Chatterjee

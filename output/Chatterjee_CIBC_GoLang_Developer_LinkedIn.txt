@@ -1,0 +1,3 @@
+Hi {{outreachEmployeeName}}, I just applied for the {{jobTitle}} role at {{companyName}} ({{jobLink}}) and wanted to reach out directly — my background is a close match: 3.5+ years building RESTful microservices in Go on Azure, plus real compliance-automation experience (CIS, NIST, HIPAA, PCI DSS, SOC 2, FedRAMP) as a top open-source contributor at Turbot. Would love to connect or hear about the team if you have a moment.
+
+Priyanka

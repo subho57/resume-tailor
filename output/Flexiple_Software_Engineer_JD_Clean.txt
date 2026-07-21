@@ -1,0 +1,16 @@
+Software Engineer
+
+Key Responsibilities:
+- Build and ship features across the stack from design to production.
+- Write clean, well-tested code and review peers' pull requests.
+- Debug and resolve production issues by tracing root causes.
+- Keep documentation, tests, and CI pipelines current.
+
+Ideal Candidate Profile:
+- 2 to 5 years building production software in Python, Java, Go, or JavaScript/TypeScript.
+- Solid fundamentals in data structures, algorithms, and system design basics.
+- Comfort with relational or NoSQL databases and REST/GraphQL APIs.
+
+Preferred Qualifications:
+- Exposure to AWS, GCP, or Azure and containerised deployments.
+- Contributions to open-source projects or strong GitHub history.

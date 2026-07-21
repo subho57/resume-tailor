@@ -1,0 +1,22 @@
+Priyanka Chatterjee
+Kolkata, West Bengal, India (open to Hyderabad / remote / hybrid)
+priyankachatterjee9075@gmail.com | +91 8617262536
+linkedin.com/in/priyanka-9075 | github.com/Priyanka-Chatterjee-2000
+
+CIBC India — Technology and Operations Hub, Hyderabad
+Re: Developer - GoLang
+
+Dear Hiring Manager,
+
+I'm writing to apply for the Developer - GoLang role at CIBC India's Hyderabad hub. I bring 3.5+ years of backend engineering experience building RESTful microservices in Go, and I'm a core contributor to four open-source products at Turbot (120+ merged pull requests, 9,300+ GitHub stars) — a track record of shipping production Go systems that I'd bring directly to your platform work.
+
+On the core stack, I designed and built an internal RESTful API microservice in Go using the Gin framework as part of a greenfield build of Turbot Guardrails, secured it with OAuth 2.0, containerized it with Docker, and wired it as a gRPC client for several internal microservices — hands-on RESTful, JSON, and microservices experience that maps directly onto your must-have list. I also have genuine Azure Cloud experience: I authored an automation that migrated 35+ Azure cloud-governance modules from polling to event-driven, cutting resource-discovery latency 70-90%, and I've built Kafka-based event-driven pipelines with dead-letter-queue reliability for cross-system integration.
+
+Given CIBC's regulatory context, I want to highlight the work I'm proudest of: authoring multi-cloud compliance modules covering 1,000+ resource checks across CIS, NIST, HIPAA, PCI DSS v4, SOC 2, and FedRAMP frameworks, used by enterprise customers in finance, healthcare, and government, and cutting compliance-audit time 50%. Adherence to regulatory and information-security standards isn't new to me — it's been the center of my day-to-day work. I've also applied automation and agentic AI directly to production infrastructure, building a Model Context Protocol (MCP) server in Python that gives LLM agents real-time access to enterprise cloud data, which lines up with the innovation your Hyderabad hub is driving in CI/CD and agentic AI.
+
+I'll be candid about one gap: my professional background is in Go and Python rather than Java/Spring Boot, so I don't have the enterprise Java experience your posting also calls for. What I can offer instead is a fast-learning track record — I joined Turbot with little Go, SQL, or cloud experience and became a top open-source contributor across four Go products within months — and deep, directly relevant strength in the RESTful APIs, microservices, Azure, and regulatory-compliance fundamentals this role is built on.
+
+I'd welcome the opportunity to discuss how I could contribute to CIBC India's growing Hyderabad team. Thank you for your time and consideration.
+
+Sincerely,
+Priyanka Chatterjee

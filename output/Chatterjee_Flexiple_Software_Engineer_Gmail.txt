@@ -1,0 +1,8 @@
+Subject: {{jobTitle}} at {{companyName}} — quick intro
+
+Hi {{outreachEmployeeName}},
+
+I recently applied for the {{jobTitle}} role at {{companyName}} ({{jobLink}}) and wanted to reach out directly. I have 3.5+ years building production software in Go, Python, and TypeScript, including AWS-deployed REST API microservices, CI pipeline ownership in GitHub Actions, and root-cause-driven production debugging. I’d really appreciate a referral or a quick conversation if you have a few minutes.
+
+Thanks so much,
+Priyanka Chatterjee

@@ -1,0 +1,20 @@
+Priyanka Chatterjee
+Kolkata, West Bengal, India
+priyankachatterjee9075@gmail.com | +91 8617262536
+linkedin.com/in/priyanka-9075 | github.com/Priyanka-Chatterjee-2000
+
+WhiteTable
+Re: Backend Engineer (Golang)
+
+Dear Hiring Manager,
+
+I am applying for the Backend Engineer (Golang) role. I bring 3.5+ years of backend engineering experience with strong hands-on work in Go, Python, SQL, REST APIs, and LLM-powered workflows, and I thrive in startup-style environments where fast shipping and ownership matter.
+
+At Turbot, I designed and shipped a secure Go (Gin) REST API microservice for a greenfield security platform, implemented OAuth 2.0 authentication, containerized the service with Docker, deployed it on AWS EC2, and integrated it as a gRPC client with internal microservices. I also built a Kafka-based event-driven pipeline with asynchronous consumers and dead-letter queue handling to improve reliability for policy-enforcement workflows.
+
+I have directly built high-volume data systems and AI-native backend workflows aligned with your priorities. I engineered Tailpipe ingestion features that increased log-processing throughput by 30% to 1,000+ logs per second, and I built Python-based LLM infrastructure including an MCP server for real-time data access plus a multi-agent workflow using OpenAI Agents SDK. Alongside this, I contributed 120+ merged pull requests across four open-source backend products with 9,300+ combined GitHub stars.
+
+I would welcome the opportunity to discuss how I can contribute to WhiteTable by building scalable APIs, backend services, and AI-powered workflows with strong production ownership from day one.
+
+Sincerely,
+Priyanka Chatterjee

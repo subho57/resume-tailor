@@ -1,0 +1,20 @@
+Priyanka Chatterjee
+Kolkata, West Bengal, India
+priyankachatterjee9075@gmail.com | +91 8617262536
+linkedin.com/in/priyanka-9075 | github.com/Priyanka-Chatterjee-2000
+
+Flexiple
+Re: Software Engineer
+
+Dear Hiring Manager,
+
+I am applying for the Software Engineer role. I bring 3.5+ years of experience building and shipping production software in Go, Python, and TypeScript, with strong foundations in data structures, algorithms, system design basics, and ownership of features from requirement breakdown to production delivery.
+
+At Turbot, I built and maintained production backend features end to end, including a secure Go (Gin) REST API microservice with OAuth 2.0, Docker containerization, and AWS EC2 deployment, plus a Kafka-based event-driven workflow with DLQ handling for reliability. I also improved data-processing throughput by 30% to 1,000+ logs per second in a Go + DuckDB pipeline and kept release and CI pipelines current through GitHub Actions smoke-test and release workflow ownership.
+
+I align closely with your quality and collaboration expectations: I regularly shipped well-tested increments, worked across engineering teams, and resolved production issues by tracing root causes, including a Kubernetes CrashLoopBackOff incident restored through systematic diagnostics. I also bring a strong open-source execution record with 120+ merged pull requests across four products with 9,300+ combined GitHub stars.
+
+I would value the opportunity to contribute to your founding India team and help ship reliable, customer-facing product features from day one.
+
+Sincerely,
+Priyanka Chatterjee

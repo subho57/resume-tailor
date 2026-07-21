@@ -1,0 +1,3 @@
+Hi {{outreachEmployeeName}}, I applied for the {{jobTitle}} role at {{companyName}} ({{jobLink}}) and wanted to connect. I have 3.5+ years across EY and PwC with direct SOX 404/internal audit support and ITGC-focused IT/OT risk assessments, including up to 40% security-posture improvement for clients. If possible, I would really appreciate a referral or quick guidance on next steps.
+
+Bhaskar Sengupta

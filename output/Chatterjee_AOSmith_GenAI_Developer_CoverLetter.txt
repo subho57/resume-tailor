@@ -1,0 +1,18 @@
+Priyanka Chatterjee
+priyankachatterjee9075@gmail.com | +91 8617262536
+linkedin.com/in/priyanka-9075 | github.com/Priyanka-Chatterjee-2000 | priyanka-chatterjee-2000.github.io
+
+Dear Hiring Manager,
+
+I'm writing to apply for the GenAI Developer role on A.O. Smith's Business Technology Systems team. I authored an LLM-driven Claude Code skill at Turbot HQ, Inc. that automated code refactoring, unit test generation, deployment, and Terraform-driven integration testing — I used it to migrate 35+ Azure cloud-governance modules from polling to a push-based, event-driven model, cutting resource-discovery latency 70-90% and eliminating recurring Azure API throttling. That project is close to the core of what this role asks for: hands-on Claude Code development in service of real, production-hardened business workflows.
+
+The rest of the job description maps closely to work I've shipped. For MCP integrations, I built the Steampipe Model Context Protocol server end to end in Python, giving LLM agents standardized, real-time access to enterprise cloud and security data. For agentic architecture, I designed a multi-agent workflow on the OpenAI Agents SDK that generates cloud policy commands, validates them in a live test environment, and self-corrects failures — the planner/executor and failure-recovery patterns the JD calls out. And in a personal project, I built a Pydantic AI agentic chatbot with a MongoDB-backed MCP server registry that routes tool calls per server with failure isolation, native tool/function calling, mid-conversation model switching, conversation-history-based context management, prompt-injection safeguards, and Logfire tracing — nearly a checklist match against duties 2 through 5 in the posting.
+
+On the full-stack side, I built a RAG-based Pydantic AI agent that ingests internal documentation into AWS S3 vector storage for embeddings-based retrieval, deployed it to AWS Lambda, and wired it into Slack for instant developer support; separately, I designed a Go/Gin REST microservice with OAuth 2.0 (Auth0) auth, containerized with Docker and deployed to AWS EC2, and a TypeScript/Node (Bun + Express) REST API with JWT auth and RBAC. That covers the JD's ask for strong full-stack skills across Python, Node/TypeScript, and Go, with testing, security, and cloud-native delivery built in.
+
+One honest gap: the posting calls for 8+ years of full-stack experience, and I have 6.5+ — but a much larger share of mine has been spent building exactly the GenAI/agentic systems this role is about, not catching up to them. I'd welcome the chance to talk through how that experience would apply at A.O. Smith.
+
+Thank you for your consideration — I'd love the opportunity to discuss this role further.
+
+Sincerely,
+Priyanka Chatterjee

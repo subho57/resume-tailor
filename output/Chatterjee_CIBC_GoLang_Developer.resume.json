@@ -1,0 +1,137 @@
+{
+  "schemaVersion": "1.0.0",
+  "theme": "corporate-navy",
+  "sectionOrder": [
+    "summary",
+    "skills",
+    "work",
+    "projects",
+    "education"
+  ],
+  "basics": {
+    "name": "Priyanka Chatterjee",
+    "label": "GoLang Developer · 9,300★ open-source contributor · Go · Microservices · Azure · 3.5+ Years",
+    "email": "priyankachatterjee9075@gmail.com",
+    "phone": "+91 8617262536",
+    "url": "https://priyanka-chatterjee-2000.github.io",
+    "location": {
+      "display": "Kolkata, West Bengal, India (open to Hyderabad / remote / hybrid)",
+      "city": "Kolkata",
+      "region": "West Bengal",
+      "countryCode": "IN"
+    },
+    "profiles": [
+      {
+        "network": "LinkedIn",
+        "username": "priyanka-9075",
+        "url": "https://linkedin.com/in/priyanka-9075",
+        "display": "linkedin.com/in/priyanka-9075"
+      },
+      {
+        "network": "GitHub",
+        "username": "Priyanka-Chatterjee-2000",
+        "url": "https://github.com/Priyanka-Chatterjee-2000",
+        "display": "github.com/Priyanka-Chatterjee-2000"
+      },
+      {
+        "network": "Portfolio",
+        "url": "https://priyanka-chatterjee-2000.github.io",
+        "display": "priyanka-chatterjee-2000.github.io"
+      }
+    ],
+    "summaries": {
+      "golang-cibc": "Accomplished GoLang Developer with 3.5+ years building RESTful microservices in Go, with hands-on Azure Cloud experience, event-driven pipelines, and CI/CD automation. Core contributor to four open-source products at Turbot (120+ merged PRs, 9,300+ GitHub stars) — built a Go/Gin REST microservice and cut resource-discovery latency 70–90% via an Azure-based migration."
+    },
+    "activeSummary": "golang-cibc"
+  },
+  "work": [
+    {
+      "name": "Turbot HQ, Inc.",
+      "location": "Remote",
+      "dateDisplay": "August 2022 – April 2026",
+      "roleDisplay": "senior-only",
+      "roles": [
+        {
+          "position": "Software Engineer I",
+          "dateDisplay": "August 2023 – April 2026"
+        },
+        {
+          "position": "Junior Software Developer Intern",
+          "dateDisplay": "August 2022 – July 2023"
+        }
+      ],
+      "highlights": [
+        "Designed and built an internal RESTful API microservice in Go using the Gin framework for a greenfield build of Turbot Guardrails; secured endpoints with OAuth 2.0 via Auth0, containerized with Docker, deployed to AWS EC2, and served as a gRPC client for several internal microservices.",
+        "Authored multi-cloud compliance modules in HCL + SQL covering 1,000+ resource checks across CIS, NIST, HIPAA, PCI DSS v4, SOC 2, and FedRAMP frameworks — used by enterprise customers in finance, healthcare, and government — cutting enterprise compliance-audit time 50%.",
+        "Authored an LLM-driven Claude Code skill automating code refactoring, unit test generation, and deployment; used it to migrate 35+ Azure cloud-governance modules from polling to push-based eventing via Azure Event Grid, cutting resource-discovery latency 70–90% and eliminating recurring Azure API throttling.",
+        "Built a Kafka-based, event-driven pipeline where consumers asynchronously processed policy-enforcement events and fired a webhook on success; added a dead-letter queue (DLQ) to capture recurring failures, hardening reliability.",
+        "Owned release engineering for four open-source Go CLIs — unified GitHub Actions CI/CD release workflows and automated Docker image tagging; core contributor with 120+ merged PRs and 9,300+ GitHub stars.",
+        "Built the Steampipe Model Context Protocol (MCP) server end to end in Python, giving LLM agents real-time access to enterprise cloud data — hands-on agentic AI and automation experience."
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "name": "Lila Tic-Tac-Toe — Real-Time Multiplayer Game",
+      "dateDisplay": "2026",
+      "association": "",
+      "description": "Full-stack real-time multiplayer game built end to end in 4 days: a Go-based Nakama game server on Fly.io with PostgreSQL, React 19 + TypeScript front-end on Vercel. Server-authoritative anti-cheat over WebSocket, mode-aware matchmaking, optimistic UI, a top-10 leaderboard, and reconnect-into-active-match.",
+      "links": [
+        {
+          "label": "repo/live",
+          "url": "https://priyanka-chatterjee-2000.github.io"
+        }
+      ]
+    },
+    {
+      "name": "CIS Benchmark → Compliance Dashboard Generator",
+      "dateDisplay": "",
+      "association": "",
+      "description": "Python CLI automating compliance-dashboard authoring for a multi-cloud governance product. Ingests CIS benchmark XLSX workbooks (AWS, Azure) and emits ready-to-deploy HCL dashboard config plus markdown docs; OOP resource model, custom HCL pretty-printer.",
+      "links": []
+    }
+  ],
+  "education": [
+    {
+      "institution": "University of Engineering & Management (UEM)",
+      "location": "Kolkata, WB, IN",
+      "degreeDisplay": "Bachelor of Technology in Computer Science and Engineering",
+      "dateDisplay": "August 2019 – May 2023",
+      "score": "CGPA: 9.28"
+    }
+  ],
+  "skills": [
+    {
+      "name": "Languages",
+      "keywordsText": "Go (Golang), Python, TypeScript, JavaScript (ES6+), SQL, Bash, HCL, C, PHP"
+    },
+    {
+      "name": "Backend & Web Services",
+      "keywordsText": "RESTful APIs, JSON, Microservices, Event-Driven Architecture, Distributed Systems, gRPC, GraphQL, WebSockets, OAuth 2.0, JWT, Gin, Node.js, Express.js"
+    },
+    {
+      "name": "Cloud & DevOps",
+      "keywordsText": "Azure (Event Grid), AWS, GCP, Docker, Kubernetes (working knowledge), GitHub Actions, CI/CD pipelines, Terraform, OpenTofu, Git"
+    },
+    {
+      "name": "Databases & SQL",
+      "keywordsText": "PostgreSQL, MySQL, MongoDB, DuckDB, SQLite, Redis; jsonb, CTEs, query tuning, transactions, database migrations"
+    },
+    {
+      "name": "Security & Compliance",
+      "keywordsText": "CIS (AWS, Azure, GCP), NIST, HIPAA, PCI DSS v4, SOC 2, FedRAMP, AWS Foundational Security Best Practices; IAM, RBAC, cloud security policies, regulatory compliance automation"
+    },
+    {
+      "name": "AI & Automation",
+      "keywordsText": "Agentic AI, Agentic Workflows, LLM Application Development, Model Context Protocol (MCP), OpenAI Agents SDK, Pydantic AI, Retrieval-Augmented Generation (RAG), Python automation"
+    },
+    {
+      "name": "Testing & Quality",
+      "keywordsText": "Unit, Integration & End-to-End Testing, Jest, Mocha, Automated CI Testing, Code Review"
+    },
+    {
+      "name": "Core CS",
+      "keywordsText": "Data Structures & Algorithms, Object-Oriented Design, Low-Level & High-Level System Design, API Design"
+    }
+  ]
+}

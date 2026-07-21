@@ -1,0 +1,3 @@
+Hi {{outreachEmployeeName}}, I just applied for the {{jobTitle}} role at {{companyName}} ({{jobLink}}) and wanted to reach out directly. My background is a close match: 3.5+ years building Go/Python backend systems, including AWS-deployed REST APIs, Kafka event-driven pipelines, and LLM workflow tooling. I’d appreciate a referral or a quick chat if possible.
+
+Priyanka Chatterjee

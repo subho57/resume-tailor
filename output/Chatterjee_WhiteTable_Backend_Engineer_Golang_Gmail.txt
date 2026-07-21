@@ -1,0 +1,8 @@
+Subject: {{jobTitle}} at {{companyName}} — quick intro
+
+Hi {{outreachEmployeeName}},
+
+I recently applied for the {{jobTitle}} role at {{companyName}} ({{jobLink}}) and wanted to reach out directly. I have 3.5+ years building Go/Python backend systems, including secure REST APIs on AWS, Kafka event-driven pipelines with DLQs, and LLM workflows (MCP server + multi-agent orchestration). I’d really value a referral or a quick conversation if you have a few minutes.
+
+Thanks so much,
+Priyanka Chatterjee

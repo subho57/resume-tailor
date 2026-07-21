@@ -1,0 +1,137 @@
+{
+  "schemaVersion": "1.0.0",
+  "theme": "corporate-navy",
+  "sectionOrder": [
+    "summary",
+    "skills",
+    "work",
+    "projects",
+    "education"
+  ],
+  "basics": {
+    "name": "Priyanka Chatterjee",
+    "label": "Backend Engineer (Golang) · 9,300★ open-source contributor · Go · Python · SQL · LLM Workflows · 3.5+ Years",
+    "email": "priyankachatterjee9075@gmail.com",
+    "phone": "+91 8617262536",
+    "url": "https://priyanka-chatterjee-2000.github.io",
+    "location": {
+      "display": "Kolkata, West Bengal, India",
+      "city": "Kolkata",
+      "region": "West Bengal",
+      "countryCode": "IN"
+    },
+    "profiles": [
+      {
+        "network": "LinkedIn",
+        "username": "priyanka-9075",
+        "url": "https://linkedin.com/in/priyanka-9075",
+        "display": "linkedin.com/in/priyanka-9075"
+      },
+      {
+        "network": "GitHub",
+        "username": "Priyanka-Chatterjee-2000",
+        "url": "https://github.com/Priyanka-Chatterjee-2000",
+        "display": "github.com/Priyanka-Chatterjee-2000"
+      },
+      {
+        "network": "Portfolio",
+        "url": "https://priyanka-chatterjee-2000.github.io",
+        "display": "priyanka-chatterjee-2000.github.io"
+      }
+    ],
+    "summaries": {
+      "tailored-golang-backend": "Accomplished Backend Engineer (Golang) with 3.5+ years of experience and expertise in Go, Python, SQL, REST APIs, and LLM-powered workflows. At Turbot, achieved 120+ merged pull requests across four open-source products (9,300+ GitHub stars) while shipping production Go/Python systems including high-throughput data pipelines processing 1,000+ logs/second."
+    },
+    "activeSummary": "tailored-golang-backend"
+  },
+  "skills": [
+    {
+      "name": "Languages",
+      "keywordsText": "Go, Python, SQL, TypeScript, JavaScript, Bash"
+    },
+    {
+      "name": "Backend & APIs",
+      "keywordsText": "REST APIs, Microservices, Event-Driven Architecture, Distributed Systems, gRPC, OAuth 2.0 (Auth0), JWT, Gin, Express.js"
+    },
+    {
+      "name": "AI & LLM Engineering",
+      "keywordsText": "LLM Workflows, Model Context Protocol (MCP), OpenAI Agents SDK, Pydantic AI, Retrieval-Augmented Generation (RAG), Multi-Agent Systems"
+    },
+    {
+      "name": "Data & Storage",
+      "keywordsText": "PostgreSQL, DuckDB, SQLite, Parquet, Firebase/Firestore, S3 Vector Storage, Query Tuning, CTEs, jsonb"
+    },
+    {
+      "name": "Cloud & DevOps",
+      "keywordsText": "AWS (Lambda, EC2, S3), Docker, GitHub Actions, Apache Kafka, Dead-Letter Queues (DLQ)"
+    },
+    {
+      "name": "Core Engineering",
+      "keywordsText": "System Design, Debugging, API Design, Data Structures and Algorithms"
+    }
+  ],
+  "work": [
+    {
+      "name": "Turbot HQ, Inc.",
+      "location": "Remote",
+      "dateDisplay": "August 2022 – April 2026",
+      "roleDisplay": "senior-only",
+      "roles": [
+        {
+          "position": "Software Engineer I",
+          "dateDisplay": "August 2023 – April 2026"
+        },
+        {
+          "position": "Junior Software Developer Intern",
+          "dateDisplay": "August 2022 – July 2023"
+        }
+      ],
+      "highlights": [
+        "Core contributor across Steampipe, Powerpipe, Flowpipe, and Tailpipe with 120+ merged pull requests and 9,300+ combined GitHub stars, shipping production backend and data-platform capabilities in Go.",
+        "Designed and developed a secure internal REST API microservice in Go (Gin) for Turbot Guardrails, implemented OAuth 2.0 (Auth0), containerized with Docker, deployed on AWS EC2, and integrated as a gRPC client with internal services.",
+        "Built a Kafka-based event-driven pipeline for policy-enforcement workflows with asynchronous consumers and webhook notifications, and added a dead-letter queue (DLQ) path for recurring-failure investigation.",
+        "Engineered high-volume data-pipeline features in Tailpipe (Go + DuckDB + Parquet), increasing throughput by 30% to 1,000+ logs/second while reducing memory usage to prevent out-of-memory failures.",
+        "Built the Steampipe MCP server in Python to provide LLM agents standardized real-time access to cloud and security data for retrieval and analysis.",
+        "Developed AI-powered workflows including a multi-agent orchestration system using OpenAI Agents SDK and a RAG-based internal Pydantic AI agent on AWS Lambda with S3 vector storage and Slack integration."
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "name": "General-Purpose AI Chatbot / Agent (Model Context Protocol)",
+      "dateDisplay": "Jun 2025 – Aug 2025",
+      "association": "",
+      "description": "Built an agentic chatbot framework with Pydantic AI and external MCP server support, including strict JSON validation, tool calling, model switching (OpenAI/Gemini/Anthropic/Mistral), conversation persistence, streaming output, and observability.",
+      "links": []
+    },
+    {
+      "name": "TODO / Tasks REST API",
+      "dateDisplay": "Apr 2026",
+      "association": "",
+      "description": "Built an API-first REST backend in TypeScript with Bun, Express.js, SQLite, and Zod, implementing JWT auth (access/ID/refresh), RBAC, schema-validated controllers, prepared-statement CRUD services, and migration-driven database management.",
+      "links": []
+    },
+    {
+      "name": "Friend-A-Book — Real-Time PDF Sharing Platform",
+      "dateDisplay": "2021",
+      "association": "Associated with University of Engineering & Management (UEM) / Kredey",
+      "description": "Built a React + Firebase platform for document sharing with real-time chat and push/email notifications, including full-text and semantic search support over a NoSQL Firebase-backed system using Elasticsearch.",
+      "links": [
+        {
+          "label": "live",
+          "url": "https://priyanka-chatterjee-2000.github.io"
+        }
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "University of Engineering & Management (UEM)",
+      "location": "Kolkata, WB, IN",
+      "degreeDisplay": "Bachelor of Technology in Computer Science and Engineering",
+      "dateDisplay": "August 2019 – May 2023",
+      "score": "CGPA: 9.28",
+      "detail": "Relevant Coursework: Object-Oriented Programming, DBMS, Data Structures and Algorithms, Shell Scripting in Linux, Low-Level Design, High-Level Design"
+    }
+  ]
+}

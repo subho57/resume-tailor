@@ -1,0 +1,4 @@
+Hi {{outreachEmployeeName}}, I just applied for the {{jobTitle}} role at {{companyName}} ({{jobLink}}) and saw you're on the team. I've built production LLM/agentic systems there — an MCP server, a Claude Code automation skill, and multi-agent workflows on the OpenAI Agents SDK — and would love a quick chat or a referral if you're open to it.
+
+Thanks so much,
+Priyanka

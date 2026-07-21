@@ -1,0 +1,125 @@
+{
+  "schemaVersion": "1.0.0",
+  "theme": "corporate-navy",
+  "sectionOrder": ["summary", "skills", "work", "projects", "education"],
+  "basics": {
+    "name": "Priyanka Chatterjee",
+    "label": "GenAI Developer · Claude Code · MCP · Multi-Agent Systems · RAG · 6.5+ Years",
+    "email": "priyankachatterjee9075@gmail.com",
+    "phone": "+91 8617262536",
+    "url": "https://priyanka-chatterjee-2000.github.io",
+    "location": {
+      "display": "Kolkata, West Bengal, India",
+      "city": "Kolkata",
+      "region": "West Bengal",
+      "countryCode": "IN"
+    },
+    "profiles": [
+      {
+        "network": "LinkedIn",
+        "username": "priyanka-9075",
+        "url": "https://linkedin.com/in/priyanka-9075",
+        "display": "linkedin.com/in/priyanka-9075"
+      },
+      {
+        "network": "GitHub",
+        "username": "Priyanka-Chatterjee-2000",
+        "url": "https://github.com/Priyanka-Chatterjee-2000",
+        "display": "github.com/Priyanka-Chatterjee-2000"
+      },
+      {
+        "network": "Portfolio",
+        "url": "https://priyanka-chatterjee-2000.github.io",
+        "display": "priyanka-chatterjee-2000.github.io"
+      }
+    ],
+    "summaries": {
+      "genai-developer-aosmith": "Accomplished GenAI Developer with 6.5+ years of software engineering experience and expertise in Claude Code, Model Context Protocol (MCP), multi-agent orchestration, and Python/Go backend engineering. Authored an LLM-driven Claude Code skill automating refactoring, testing, and deployment to migrate 35+ Azure cloud-governance modules to event-driven architecture, cutting resource-discovery latency 70–90% for Turbot HQ, Inc."
+    },
+    "activeSummary": "genai-developer-aosmith"
+  },
+  "work": [
+    {
+      "name": "Turbot HQ, Inc.",
+      "location": "Remote",
+      "dateDisplay": "August 2022 – April 2026",
+      "roleDisplay": "senior-only",
+      "roles": [
+        {
+          "position": "Software Engineer II",
+          "dateDisplay": "August 2022 – April 2026"
+        },
+        {
+          "position": "Junior Software Developer Intern",
+          "dateDisplay": "August 2022 – July 2023"
+        }
+      ],
+      "highlights": [
+        "Authored an LLM-driven Claude Code skill automating code refactoring, unit test generation, deployment, and Terraform-driven integration testing; used it to migrate 35+ Azure cloud-governance modules from polling to a push-based, event-driven model via Azure Event Grid, cutting resource-discovery latency 70–90% and eliminating recurring Azure API throttling.",
+        "Built the Steampipe Model Context Protocol (MCP) server end to end in Python, giving LLM agents standardized, real-time access to enterprise cloud and security data for retrieval and analysis.",
+        "Designed a multi-agent workflow on the OpenAI Agents SDK to orchestrate LLM agents that generate cloud preventive-policy commands, validate them in a live test environment, self-correct failures, and score accounts against an internal security metric.",
+        "Built a RAG-based internal Pydantic AI agent to resolve cross-team queries by ingesting documentation and code graphs for all internal repos into AWS S3 vector storage (embeddings-based retrieval); deployed to AWS Lambda and integrated with the Slack Bot API, resolving onboarding and cross-team queries instantly.",
+        "Designed and developed an internal REST API microservice in Go using the Gin framework as part of a greenfield build of Turbot Guardrails, a Preventive Security Posture Management (PSPM) SaaS product; secured endpoints with OAuth 2.0 authentication via Auth0, containerized with Docker, deployed to AWS EC2, and served as a gRPC client for several internal microservices."
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "name": "General-Purpose AI Chatbot / Agent (Model Context Protocol)",
+      "dateDisplay": "Jun 2025 – Aug 2025",
+      "association": "",
+      "description": "Agentic chatbot/agent framework built with Pydantic AI, producing structured outputs, featuring configurable external MCP servers via a persistent MongoDB-backed registry that routes tool calls per server with per-server failure isolation, native tool/function calling, mid-conversation multi-model switching (OpenAI, Gemini, Anthropic, Mistral), conversation-history persistence for multi-turn context management, sync + streaming output, prompt-injection safeguards, and Logfire observability/tracing.",
+      "links": []
+    },
+    {
+      "name": "TODO / Tasks REST API",
+      "dateDisplay": "Apr 2026",
+      "association": "",
+      "description": "API-first REST backend in TypeScript with Bun, Express.js 5, and SQLite (bun:sqlite) + Zod + jose (JWT). JWT authentication (access, ID, and refresh tokens), RBAC, a prepared-statement CRUD service layer, schema-validated controllers with proper REST status codes, and database migrations.",
+      "links": []
+    }
+  ],
+  "education": [
+    {
+      "institution": "University of Engineering & Management (UEM)",
+      "location": "Kolkata, WB, IN",
+      "degreeDisplay": "Bachelor of Technology in Computer Science and Engineering",
+      "score": "CGPA: 9.28",
+      "detail": "Relevant Coursework: Object-Oriented Programming, DBMS, Data Structures and Algorithms, Low-Level Design, High-Level Design"
+    }
+  ],
+  "skills": [
+    {
+      "name": "Languages",
+      "keywordsText": "Go, Python, TypeScript, JavaScript (ES6+), SQL"
+    },
+    {
+      "name": "AI & Agentic Engineering",
+      "keywordsText": "LLM Application Development, Agentic Workflows, Multi-Agent Systems, Retrieval-Augmented Generation (RAG), AWS S3 Vector Storage, Prompt Engineering, Model Context Protocol (MCP), Tool/Function Calling, Structured Outputs, OpenAI Agents SDK, Pydantic AI, Claude Code, Cursor, Codex, Logfire (LLM observability), Prompt-Injection Safeguards, Agent-to-Agent (A2A) Protocol (conceptual familiarity)"
+    },
+    {
+      "name": "Backend & APIs",
+      "keywordsText": "Microservices, Event-Driven Architecture, Distributed Systems, Serverless, REST, gRPC, OAuth 2.0 (Auth0), JWT, Zod, Node.js, Express.js, Gin, Bun"
+    },
+    {
+      "name": "Databases & SQL",
+      "keywordsText": "PostgreSQL, MongoDB, SQLite; prepared statements, indexing, database migrations"
+    },
+    {
+      "name": "Cloud & Serverless",
+      "keywordsText": "AWS (Lambda, EC2, S3), Azure"
+    },
+    {
+      "name": "IaC & DevOps / Cloud-Native Delivery",
+      "keywordsText": "Terraform, HCL, Docker, GitHub Actions (CI/CD), Git"
+    },
+    {
+      "name": "Observability",
+      "keywordsText": "Logfire (LLM/prompt observability & tracing), metrics & logging"
+    },
+    {
+      "name": "Testing & Quality",
+      "keywordsText": "Unit Testing, Integration Testing, Automated CI Testing, Code Review"
+    }
+  ]
+}

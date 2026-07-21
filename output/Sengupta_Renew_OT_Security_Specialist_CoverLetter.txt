@@ -1,0 +1,22 @@
+Bhaskar Sengupta
+Kolkata, West Bengal, India
+bppec.11500319066@gmail.com | +91 8017175093
+linkedin.com/in/-bhaskarsengupta
+
+Renew
+Re: OT Security Specialist
+
+Dear Hiring Manager,
+
+I am writing to apply for the OT Security Specialist role at Renew. I bring 3.5+ years of dedicated experience in OT/ICS cybersecurity and IT/OT security governance across PwC India and EY India, with hands-on exposure to securing industrial control systems in steel, cement, and electrical manufacturing environments — work that maps directly to the industrial OT security challenges your renewable energy portfolio demands.
+
+At PwC India, I conducted IT and OT cybersecurity audits and governance assessments using ISA/IEC 62443, ISO 27001:2022, and NIST CSF 2.0, delivering OT security maturity assessments and actionable recommendations that improved clients' security posture by up to 40%. I developed OT security policies, procedures, and network diagrams (As-Is / To-Be) aligned with regulatory standards, reducing compliance gaps by 30%. I also performed OT SOC monitoring using Microsoft Sentinel, Defender for IoT, and Lansweeper — detecting threats, tracking OT assets, and maintaining continuous security visibility — and used Claroty, Nozomi Networks, Wireshark, and Tenable for vulnerability assessment (VA/PT) and risk remediation across industrial OT environments, cutting critical vulnerabilities by 25%.
+
+I hold an ISO/IEC 27001:2022 Lead Implementer certification and a Claroty Implementation Engineer (CIE 401) certification — a vendor OT security credential your posting names as a plus — and have direct project experience conducting ISA/IEC 62443-based OT cybersecurity audits for manufacturing clients, including designing To-Be OT security architectures and producing compliance dashboards and risk registers.
+
+I will be candid about one gap: my OT security experience spans steel, cement, and electrical manufacturing rather than the renewable energy sector specifically, and I have not yet worked with CEA cybersecurity guidelines or NCIIPC advisories. What I can offer is strong, proven OT/ICS security fundamentals — ISA/IEC 62443 governance, OT SOC monitoring, vulnerability management with Claroty and Nozomi — and a consulting track record of rapidly adapting to new regulatory frameworks and industrial environments across Big Four engagements.
+
+I would welcome the opportunity to discuss how my OT security and governance experience can contribute to Renew's mission of securing its wind, solar, and hydro assets. Thank you for your time and consideration.
+
+Sincerely,
+Bhaskar Sengupta

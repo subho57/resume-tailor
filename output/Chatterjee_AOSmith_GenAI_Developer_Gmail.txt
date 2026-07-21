@@ -1,0 +1,10 @@
+Subject: Referral request — GenAI Developer role at {{companyName}}
+
+Hi {{outreachEmployeeName}},
+
+I just applied for the {{jobTitle}} role at {{companyName}} ({{jobLink}}) and noticed you're on the team there, so I wanted to reach out directly. I've built production LLM/agentic systems using Claude Code, an MCP server, and multi-agent workflows on the OpenAI Agents SDK — including a RAG agent backed by AWS S3 vector storage — which lines up closely with what the posting describes.
+
+Would you be open to a quick chat about the team, or willing to point my application to the right person? Happy to share my resume or walk through any of the projects above.
+
+Thanks so much,
+Priyanka Chatterjee

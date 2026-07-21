@@ -1,0 +1,112 @@
+{
+  "schemaVersion": "1.0.0",
+  "theme": "corporate-navy",
+  "sectionOrder": ["summary", "skills", "certifications", "work", "education"],
+  "basics": {
+    "name": "Bhaskar Sengupta",
+    "label": "OT Security Specialist · PwC & EY · ISA/IEC 62443 · ISO 27001:2022 · Claroty CIE 401 · 3.5+ Years",
+    "email": "bppec.11500319066@gmail.com",
+    "phone": "+91 8017175093",
+    "location": {
+      "display": "Kolkata, West Bengal, India",
+      "city": "Kolkata",
+      "region": "West Bengal",
+      "countryCode": "IN"
+    },
+    "profiles": [
+      {
+        "network": "LinkedIn",
+        "username": "-bhaskarsengupta",
+        "url": "https://linkedin.com/in/-bhaskarsengupta",
+        "display": "linkedin.com/in/-bhaskarsengupta"
+      }
+    ],
+    "summaries": {
+      "itot-security-consultant": "Accomplished OT Security Specialist with 3.5+ years of experience and expertise in OT/ICS cybersecurity, ISA/IEC 62443, IT/OT security governance, and regulatory compliance. Certified ISO 27001:2022 Lead Implementer and Claroty Implementation Engineer (CIE 401), improved clients' OT security posture by up to 40% through comprehensive IT/OT cybersecurity audits at PwC India across steel, cement, and electrical manufacturing environments."
+    },
+    "activeSummary": "itot-security-consultant"
+  },
+  "skills": [
+    {
+      "name": "OT / ICS Security",
+      "keywordsText": "OT/ICS Cybersecurity, Industrial Control Systems (ICS), OT SOC Monitoring, OT Network Security, Firewalls, Penetration Testing"
+    },
+    {
+      "name": "Frameworks & Standards",
+      "keywordsText": "ISA/IEC 62443, ISO/IEC 27001:2022, ISO 27701:2025 (PIMS), NIST CSF 2.0, NIST SP 800-53, ISO 22301 (BCMS), GDPR"
+    },
+    {
+      "name": "Security & Assessment Tools",
+      "keywordsText": "Claroty, Nozomi Networks, Microsoft Sentinel, Defender for IoT, Lansweeper, Tenable, Wireshark, Burp Suite"
+    },
+    {
+      "name": "Risk, Audit & Compliance",
+      "keywordsText": "IT/OT Security Assessment, OT Security Governance, OT Audit, ISMS Audit, Vulnerability Assessment (VA/PT), Risk Assessment, Maturity Assessment, Regulatory Compliance, Policy Development, Power BI Dashboards, Network Diagrams"
+    }
+  ],
+  "certifications": [
+    {
+      "title": "ISO/IEC 27001:2022 Lead Implementer (LI)",
+      "date": "2023"
+    },
+    {
+      "title": "Business Continuity Management System (BCMS) — ISO 22301",
+      "date": "2023"
+    },
+    {
+      "title": "Claroty Implementation Engineer (CIE 401)",
+      "issuer": "Claroty",
+      "date": "2023"
+    }
+  ],
+  "work": [
+    {
+      "name": "Ernst & Young (EY) India",
+      "location": "India (Hybrid)",
+      "dateDisplay": "March 2026 – Present",
+      "roles": [
+        {
+          "position": "Consultant",
+          "dateDisplay": "March 2026 – Present"
+        }
+      ],
+      "highlights": [
+        "Delivered OT security recommendations aligned with NIST CSF, IEC 62443, and ISO/IEC 27001:2022 to strengthen industrial cybersecurity posture, improve compliance readiness, and support the organization in achieving regulatory alignment across operational technology environments.",
+        "Assessed OT network switches, firewalls, and overall network architecture to identify security gaps, evaluate existing controls, and recommend targeted remediation measures to enhance network resilience and reduce attack surface.",
+        "Redesigned OT network architecture by developing revised network diagrams aligned with the Purdue Enterprise Reference Architecture (Purdue Model) to improve network segmentation, enforce defense-in-depth principles, and ensure secure IT–OT interfaces.",
+        "Collaborated closely with IT, cybersecurity, network, and infrastructure teams to support cross-functional OT security initiatives and ensure secure integration between IT and OT environments across client engagements.",
+        "Delivered data privacy and protection advisory services for a telecommunications client, applying ISO 27701:2025 (PIMS), GDPR, and Bangladesh's PDPA/NDMA regulations; conducted PIMS gap assessments, Data Protection Impact Assessments (DPIA), and developed data flow diagrams and Records of Processing Activities (ROPA).",
+        "Contributed to business development by drafting client proposals and responding to RFPs for prospective OT security, cybersecurity governance, and data privacy engagements across multiple industry verticals."
+      ]
+    },
+    {
+      "name": "PwC India (PricewaterhouseCoopers)",
+      "location": "Kolkata, West Bengal, India (Hybrid)",
+      "dateDisplay": "January 2023 – March 2026",
+      "roleDisplay": "senior-only",
+      "roles": [
+        {
+          "position": "Cybersecurity Associate (Associate II)",
+          "dateDisplay": "January 2023 – March 2026"
+        }
+      ],
+      "highlights": [
+        "Conducted IT and OT cybersecurity audits and governance assessments using ISA/IEC 62443, ISO 27001:2022, and NIST CSF 2.0, delivering OT security maturity assessments, risk reports, and actionable recommendations that improved clients' security posture by up to 40%.",
+        "Developed OT security policies, procedures, and network diagrams (As-Is / To-Be) aligned with regulatory standards, reducing compliance gaps by 30%; created Power BI dashboards to visualize OT vulnerabilities and supported clients in ISO certification readiness.",
+        "Used OT security tools including Claroty, Nozomi Networks, Wireshark, and Tenable for vulnerability assessment (VA/PT) and risk remediation across industrial OT environments, cutting critical vulnerabilities by 25%.",
+        "Performed OT SOC monitoring using Microsoft Sentinel, Defender for IoT, and Lansweeper to detect threats, track OT assets, and maintain continuous security visibility across industrial environments.",
+        "Led ISA/IEC 62443 OT cybersecurity audit for a cement manufacturer — created compliance dashboards, risk registers, and network diagrams for a To-Be OT security architecture, resulting in a 30% reduction in identified risks.",
+        "Conducted on-site ISO 27001:2022 IT/OT assessment for a steel manufacturer — developed gap reports, risk registers, and dashboards, enabling successful certification and reducing OT-environment risks by 35%."
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "B.P. Poddar Institute of Management and Technology (BPPIMT)",
+      "location": "Kolkata, WB, IN",
+      "degreeDisplay": "Bachelor of Technology in Electronics and Communication Engineering",
+      "dateDisplay": "August 2019 – June 2023",
+      "score": "GPA: 9.17"
+    }
+  ]
+}

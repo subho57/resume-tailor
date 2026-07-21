@@ -1,0 +1,8 @@
+Subject: {{jobTitle}} at {{companyName}} — quick intro
+
+Hi {{outreachEmployeeName}},
+
+I recently applied for the {{jobTitle}} role at {{companyName}} ({{jobLink}}) and wanted to reach out directly. I've spent 3.5+ years building RESTful microservices in Go, with hands-on Azure Cloud and compliance-automation experience (CIS, NIST, HIPAA, PCI DSS, SOC 2, FedRAMP for finance and healthcare customers) as a core contributor to four open-source products at Turbot (120+ merged PRs, 9,300+ GitHub stars) — so the GoLang-plus-regulatory-standards angle of this role feels like a strong match. I'd love to connect and hear more about the team if you have a few minutes.
+
+Thanks so much,
+Priyanka

@@ -1,0 +1,8 @@
+Subject: {{jobTitle}} at {{companyName}} — quick intro
+
+Hi {{outreachEmployeeName}},
+
+I recently applied for the {{jobTitle}} role at {{companyName}} ({{jobLink}}) and wanted to reach out directly. I've spent 3.5+ years building event-driven microservices and RESTful APIs in Go, Node.js, and TypeScript with React front-ends and PostgreSQL, and I'm a core contributor to four open-source Go products at Turbot (120+ merged PRs, 9,300+ GitHub stars) — so your Golang-plus-React stack and founding-team ownership line up closely with what I do best. I'd love to connect and hear more about the team if you have a few minutes.
+
+Thanks so much,
+Priyanka

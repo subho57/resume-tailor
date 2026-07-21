@@ -1,0 +1,22 @@
+Priyanka Chatterjee
+Kolkata, West Bengal, India (open to remote / hybrid)
+priyankachatterjee9075@gmail.com | +91 8617262536
+linkedin.com/in/priyanka-9075 | github.com/Priyanka-Chatterjee-2000
+
+Ninja Van — Founding Engineering Team, India Tech Lab
+Re: Full Stack Developer
+
+Dear Hiring Manager,
+
+I'm writing to apply for the Full Stack Developer role in Ninja Van's new India tech lab. I bring 3.5+ years of full-stack engineering experience building event-driven microservices and RESTful APIs in Go, Node.js, and TypeScript, with React front-ends and PostgreSQL across AWS, Azure, and GCP — much of it as a core contributor to four open-source products at Turbot (120+ merged pull requests, 9,300+ GitHub stars). Building the foundations for a founding team is exactly the fast-moving, high-ownership environment I've done my best work in.
+
+On the backend, I designed and built an internal RESTful API microservice in Go using the Gin framework, secured it with OAuth 2.0 via Auth0, containerized it with Docker, deployed it to AWS EC2, and wired it as a gRPC client for several internal microservices — the microservices-plus-RESTful-API architecture your posting is built around. I also built a Kafka-based, event-driven pipeline whose consumers asynchronously processed policy-enforcement events and fired webhooks on success, backed by a dead-letter queue for reliability — directly relevant to the Apache Kafka data pipelines in your stack. On the data layer, I optimized complex PostgreSQL queries (jsonb, multi-stage CTEs) to improve query performance 40% and eliminate a class of false-positive results.
+
+I work across the full stack. I led the AWS SDK for JavaScript v2-to-v3 migration across 180+ call sites and 11+ AWS services in production Node.js Lambdas, and on the front end I built React features — including a React 17-to-19 migration and a responsive-design overhaul — at Trisetra. Most recently I built Lila, a real-time multiplayer game end to end in four days: a React 19 + TypeScript front-end on Vercel talking over WebSocket to a Go game server backed by PostgreSQL. That's Go, React, and TypeScript front to back, which mirrors your preferred stack (Golang backend, React + TypeScript front-end).
+
+I'll be candid about the stack gaps: I haven't worked with FastAPI, AngularJS, or the Spark/Airflow big-data tooling in your listing, and my observability experience is with Datadog and OpenTelemetry rather than Prometheus/Grafana. What I can offer instead is a fast-learning track record — I joined Turbot with little Go or SQL and became a top open-source contributor across four Go products — and deep strength in the Go, React, TypeScript, RESTful-API, microservices, and PostgreSQL fundamentals this role is built on.
+
+I'd welcome the chance to talk about helping establish the engineering foundations and culture of Ninja Van's India tech lab. Thank you for your time and consideration.
+
+Sincerely,
+Priyanka Chatterjee

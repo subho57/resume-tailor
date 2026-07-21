@@ -1,0 +1,8 @@
+Subject: OT Security Specialist at Renew — quick intro
+
+Hi {{outreachEmployeeName}},
+
+I recently applied for the {{jobTitle}} role at {{companyName}} ({{jobLink}}) and wanted to reach out directly. I have 3.5+ years of OT/ICS cybersecurity experience across PwC and EY — conducting ISA/IEC 62443 audits, OT SOC monitoring with Sentinel and Defender for IoT, and vulnerability assessments using Claroty and Nozomi across industrial environments, improving clients' security posture by up to 40%. I'd love to connect and hear more about the team if you have a few minutes.
+
+Thanks so much,
+Bhaskar

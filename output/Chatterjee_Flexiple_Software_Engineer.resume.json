@@ -1,0 +1,139 @@
+{
+  "schemaVersion": "1.0.0",
+  "theme": "corporate-navy",
+  "sectionOrder": [
+    "summary",
+    "skills",
+    "work",
+    "projects",
+    "education"
+  ],
+  "basics": {
+    "name": "Priyanka Chatterjee",
+    "label": "Software Engineer · 9,300★ open-source contributor · Go · Python · TypeScript · 3.5+ Years",
+    "email": "priyankachatterjee9075@gmail.com",
+    "phone": "+91 8617262536",
+    "url": "https://priyanka-chatterjee-2000.github.io",
+    "location": {
+      "display": "Kolkata, West Bengal, India",
+      "city": "Kolkata",
+      "region": "West Bengal",
+      "countryCode": "IN"
+    },
+    "profiles": [
+      {
+        "network": "LinkedIn",
+        "username": "priyanka-9075",
+        "url": "https://linkedin.com/in/priyanka-9075",
+        "display": "linkedin.com/in/priyanka-9075"
+      },
+      {
+        "network": "GitHub",
+        "username": "Priyanka-Chatterjee-2000",
+        "url": "https://github.com/Priyanka-Chatterjee-2000",
+        "display": "github.com/Priyanka-Chatterjee-2000"
+      },
+      {
+        "network": "Portfolio",
+        "url": "https://priyanka-chatterjee-2000.github.io",
+        "display": "priyanka-chatterjee-2000.github.io"
+      }
+    ],
+    "summaries": {
+      "tailored-flexiple-swe": "Accomplished Software Engineer with 3.5+ years of experience and expertise in Go, Python, SQL, REST APIs, and system design fundamentals. At Turbot, achieved 120+ merged pull requests across four open-source products (9,300+ GitHub stars) while shipping well-tested production features, maintaining CI pipelines, and resolving production issues across distributed cloud systems."
+    },
+    "activeSummary": "tailored-flexiple-swe"
+  },
+  "skills": [
+    {
+      "name": "Languages",
+      "keywordsText": "Go, Python, TypeScript, JavaScript, SQL, Bash"
+    },
+    {
+      "name": "Backend & APIs",
+      "keywordsText": "REST APIs, Microservices, Event-Driven Architecture, Distributed Systems, gRPC, OAuth 2.0 (Auth0), JWT, Gin, Express.js"
+    },
+    {
+      "name": "Databases",
+      "keywordsText": "PostgreSQL, MySQL, DuckDB, SQLite, Firebase/Firestore (NoSQL), Elasticsearch, Query Tuning, CTEs, jsonb"
+    },
+    {
+      "name": "Cloud, Containers & Delivery",
+      "keywordsText": "AWS (Lambda, EC2, S3), Azure, GCP, Docker, Kubernetes (working knowledge), GitHub Actions, CI Pipelines, Apache Kafka, DLQ"
+    },
+    {
+      "name": "Core CS & Quality",
+      "keywordsText": "Data Structures and Algorithms, System Design Basics, Debugging, Unit Testing, Integration Testing, Code Review"
+    }
+  ],
+  "work": [
+    {
+      "name": "Turbot HQ, Inc.",
+      "location": "Remote",
+      "dateDisplay": "August 2022 – April 2026",
+      "roleDisplay": "senior-only",
+      "roles": [
+        {
+          "position": "Software Engineer I",
+          "dateDisplay": "August 2023 – April 2026"
+        },
+        {
+          "position": "Junior Software Developer Intern",
+          "dateDisplay": "August 2022 – July 2023"
+        }
+      ],
+      "highlights": [
+        "Core contributor across Steampipe, Powerpipe, Flowpipe, and Tailpipe with 120+ merged pull requests and 9,300+ combined GitHub stars, building and shipping customer-facing product features from idea to production.",
+        "Designed and developed a secure REST API microservice in Go (Gin), implemented OAuth 2.0 via Auth0, containerized with Docker, deployed on AWS EC2, and integrated as a gRPC client with internal services.",
+        "Built a Kafka-based event-driven pipeline with asynchronous consumers and dead-letter queue handling for policy-enforcement workflows, improving reliability and operability in production.",
+        "Engineered high-volume data-processing features in Tailpipe (Go + DuckDB + Parquet), improving throughput by 30% to 1,000+ logs/second and preventing out-of-memory failures through memory-safe processing changes.",
+        "Kept release and CI pipelines current by adding multi-distro Linux smoke tests in GitHub Actions and owning release workflows across four Go CLIs.",
+        "Debugged and resolved production issues, including a Kubernetes CrashLoopBackOff incident, by tracing root causes via pod and service diagnostics and restoring service availability."
+      ]
+    },
+    {
+      "name": "Kredey (Kredey Innovations Pvt. Ltd.)",
+      "dateDisplay": "2021",
+      "roles": [
+        {
+          "position": "Full-Stack Website Developer (Intern)",
+          "dateDisplay": "2021"
+        }
+      ],
+      "highlights": [
+        "Used Elasticsearch to support full-text and semantic search over a NoSQL Firebase-backed document-sharing platform."
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "name": "Lila Tic-Tac-Toe — Real-Time Multiplayer Game",
+      "dateDisplay": "2026",
+      "association": "",
+      "description": "Built and shipped an end-to-end product in 4 days with React + TypeScript frontend and a server-authoritative Go-based Nakama backend, including matchmaking, real-time game state, reconnect handling, and leaderboard features.",
+      "links": [
+        {
+          "label": "repo/live",
+          "url": "https://priyanka-chatterjee-2000.github.io"
+        }
+      ]
+    },
+    {
+      "name": "TODO / Tasks REST API",
+      "dateDisplay": "Apr 2026",
+      "association": "",
+      "description": "Built an API-first backend in TypeScript with Bun, Express.js, SQLite, Zod, and JWT auth, including RBAC, migration-based schema management, and tested CRUD endpoints with proper REST status handling.",
+      "links": []
+    }
+  ],
+  "education": [
+    {
+      "institution": "University of Engineering & Management (UEM)",
+      "location": "Kolkata, WB, IN",
+      "degreeDisplay": "Bachelor of Technology in Computer Science and Engineering",
+      "dateDisplay": "August 2019 – May 2023",
+      "score": "CGPA: 9.28",
+      "detail": "Relevant Coursework: Object-Oriented Programming, DBMS, Data Structures and Algorithms, Shell Scripting in Linux, Low-Level Design, High-Level Design"
+    }
+  ]
+}

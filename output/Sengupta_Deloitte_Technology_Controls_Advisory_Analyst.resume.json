@@ -1,0 +1,106 @@
+{
+  "schemaVersion": "1.0.0",
+  "theme": "corporate-navy",
+  "sectionOrder": ["summary", "skills", "work", "projects", "education"],
+  "basics": {
+    "name": "Bhaskar Sengupta",
+    "label": "Technology Controls Analyst - EY & PwC (Big 4) - SOX 404 - Internal Audit - 3.5+ Years",
+    "email": "bppec.11500319066@gmail.com",
+    "phone": "+91 8017175093",
+    "location": {
+      "display": "Kolkata, West Bengal, India",
+      "city": "Kolkata",
+      "region": "West Bengal",
+      "countryCode": "IN"
+    },
+    "profiles": [
+      {
+        "network": "LinkedIn",
+        "username": "-bhaskarsengupta",
+        "url": "https://linkedin.com/in/-bhaskarsengupta",
+        "display": "linkedin.com/in/-bhaskarsengupta"
+      }
+    ],
+    "summaries": {
+      "technology-controls-advisory-analyst": "Accomplished Technology Controls Advisory Analyst with 3.5+ years of experience in internal control risk assessment, SOX 404/internal audit support, IT General Controls (ITGC/GITC), and IT/OT audits. At PwC India and EY India, improved client security posture by up to 40% and reduced compliance gaps by 30% through control testing, risk reporting, and remediation planning."
+    },
+    "activeSummary": "technology-controls-advisory-analyst"
+  },
+  "skills": [
+    {
+      "name": "Technology Controls & Audit",
+      "keywordsText": "Internal Control Risk Assessment, SOX 404, Internal Audit, IT General Controls (ITGC/GITC), IT Audit, OT Audit, Regulatory Compliance"
+    },
+    {
+      "name": "Risk, Controls & Standards",
+      "keywordsText": "Risk Assessment, Maturity Assessment, Compliance Gap Assessment, ISO/IEC 27001:2022, NIST CSF 2.0, IEC 62443, ISO 27701:2025 (PIMS)"
+    },
+    {
+      "name": "Tools, Reporting & Communication",
+      "keywordsText": "Claroty, Nozomi Networks, Tenable, Wireshark, Power BI, MS Office (Excel, Word, PowerPoint), Stakeholder Communication"
+    }
+  ],
+  "work": [
+    {
+      "name": "Ernst & Young (EY) India",
+      "location": "India (Hybrid)",
+      "dateDisplay": "March 2026 - Present",
+      "roles": [
+        {
+          "position": "Consultant",
+          "dateDisplay": "March 2026 - Present"
+        }
+      ],
+      "highlights": [
+        "Performed technology-risk and internal-control assessments aligned with NIST CSF, IEC 62443, and ISO/IEC 27001:2022 to strengthen control effectiveness and compliance readiness.",
+        "Supported SOX 404 and internal audit activities by evaluating IT/OT controls, documenting test evidence, and recommending remediation for control gaps.",
+        "Assessed OT network switches, firewalls, and architecture, then redesigned Purdue-model network diagrams to improve segmentation and defense-in-depth.",
+        "Collaborated with IT, cybersecurity, network, and infrastructure teams and provided periodic status updates to ensure timely closure of risk and audit deliverables."
+      ]
+    },
+    {
+      "name": "PwC India (PricewaterhouseCoopers)",
+      "location": "Kolkata, West Bengal, India (Hybrid)",
+      "dateDisplay": "January 2023 - March 2026",
+      "roleDisplay": "senior-only",
+      "roles": [
+        {
+          "position": "Cybersecurity Associate (Associate II)",
+          "dateDisplay": "January 2023 - March 2026"
+        }
+      ],
+      "highlights": [
+        "Conducted IT and OT cybersecurity audits, including IT General Controls (ITGC) testing, against ISO 27001:2022 and NIST CSF 2.0, delivering maturity assessments and risk reports that improved client security posture by up to 40%.",
+        "Developed policies, procedures, and As-Is/To-Be network diagrams aligned with regulatory standards, reducing compliance gaps by 30%.",
+        "Used Claroty, Nozomi Networks, Wireshark, and Tenable to identify vulnerabilities, assess risk, and support remediation in industrial OT environments, cutting critical vulnerabilities by 25%.",
+        "Created Power BI dashboards for vulnerabilities and control gaps and prepared management reports that improved stakeholder decision-making.",
+        "Executed on-site ISO 27001:2022 IT/OT assessments for a steel manufacturer, producing gap reports and risk registers that enabled successful certification and reduced OT-environment risks by 35%."
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "name": "ISO 27001:2022 IT/OT Assessment - Steel Manufacturer",
+      "dateDisplay": "2023 - 2026",
+      "association": "Client engagement at PwC India",
+      "description": "Conducted on-site ISO 27001:2022 IT/OT assessments; delivered gap reports, risk registers, and dashboards that enabled successful certification and reduced OT-environment risks by 35%.",
+      "links": []
+    },
+    {
+      "name": "NIST + IEC 62443 OT Cybersecurity Audit - Cement Manufacturer",
+      "dateDisplay": "2023 - 2026",
+      "association": "Client engagement at PwC India",
+      "description": "Conducted NIST (SP 800-30/SP 800-53) and IEC 62443 based IT/OT audits; delivered risk and gap registers, dashboards, and To-Be network architecture recommendations that reduced identified risks by 30%.",
+      "links": []
+    }
+  ],
+  "education": [
+    {
+      "institution": "B.P. Poddar Institute of Management and Technology (BPPIMT)",
+      "location": "Kolkata, WB, IN",
+      "degreeDisplay": "Bachelor of Technology in Electronics and Communication Engineering",
+      "dateDisplay": "August 2019 - June 2023",
+      "score": "GPA: 9.17"
+    }
+  ]
+}

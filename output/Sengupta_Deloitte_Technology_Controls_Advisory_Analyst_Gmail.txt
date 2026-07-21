@@ -1,0 +1,12 @@
+Subject: Application for {{jobTitle}} at {{companyName}} - Referral Request
+
+Hi {{outreachEmployeeName}},
+
+I recently applied for the {{jobTitle}} role at {{companyName}} and wanted to reach out directly after seeing your profile, and here is the job link for quick reference: {{jobLink}}.
+
+I bring 3.5+ years of Big 4 experience across EY and PwC with hands-on work in SOX 404/internal audit support, IT General Controls (ITGC), and IT/OT risk assessments, including measurable impact such as improving client security posture by up to 40%.
+
+If you feel my background is a fit, I would really appreciate a referral or a quick conversation on how best to align my application with the team's expectations.
+
+Thanks so much,
+Bhaskar Sengupta

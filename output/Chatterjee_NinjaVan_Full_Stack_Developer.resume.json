@@ -1,0 +1,166 @@
+{
+  "schemaVersion": "1.0.0",
+  "theme": "corporate-navy",
+  "sectionOrder": [
+    "summary",
+    "skills",
+    "work",
+    "projects",
+    "education"
+  ],
+  "basics": {
+    "name": "Priyanka Chatterjee",
+    "label": "Full Stack Developer · 9,300★ open-source contributor · Go · React · TypeScript · 3.5+ Years",
+    "email": "priyankachatterjee9075@gmail.com",
+    "phone": "+91 8617262536",
+    "url": "https://priyanka-chatterjee-2000.github.io",
+    "location": {
+      "display": "Kolkata, West Bengal, India (open to remote / hybrid)",
+      "city": "Kolkata",
+      "region": "West Bengal",
+      "countryCode": "IN"
+    },
+    "profiles": [
+      {
+        "network": "LinkedIn",
+        "username": "priyanka-9075",
+        "url": "https://linkedin.com/in/priyanka-9075",
+        "display": "linkedin.com/in/priyanka-9075"
+      },
+      {
+        "network": "GitHub",
+        "username": "Priyanka-Chatterjee-2000",
+        "url": "https://github.com/Priyanka-Chatterjee-2000",
+        "display": "github.com/Priyanka-Chatterjee-2000"
+      },
+      {
+        "network": "Portfolio",
+        "url": "https://priyanka-chatterjee-2000.github.io",
+        "display": "priyanka-chatterjee-2000.github.io"
+      }
+    ],
+    "summaries": {
+      "golang-node-js-impact-led": "Accomplished Full Stack Developer with 3.5+ years building event-driven microservices and RESTful APIs in Go, Node.js, and TypeScript, with React front-ends and PostgreSQL across AWS, Azure, and GCP. Core contributor to four open-source products at Turbot (120+ merged PRs, 9,300+ GitHub stars) — built a Go/Gin REST microservice and a Kafka-based event-driven pipeline, and cut resource-discovery latency 70–90%."
+    },
+    "activeSummary": "golang-node-js-impact-led"
+  },
+  "work": [
+    {
+      "name": "Turbot HQ, Inc.",
+      "location": "Remote",
+      "dateDisplay": "August 2022 – April 2026",
+      "roleDisplay": "senior-only",
+      "roles": [
+        {
+          "position": "Software Engineer I",
+          "dateDisplay": "August 2023 – April 2026"
+        },
+        {
+          "position": "Junior Software Developer Intern",
+          "dateDisplay": "August 2022 – July 2023"
+        }
+      ],
+      "highlights": [
+        "Designed and built an internal RESTful API microservice in Go (Gin framework) for Turbot Guardrails; secured endpoints with OAuth 2.0 via Auth0, containerized with Docker, deployed to AWS EC2, and served as a gRPC client for several internal microservices.",
+        "Built a Kafka-based, fire-and-forget event-driven pipeline whose consumers asynchronously processed policy-enforcement events and fired a webhook on success; added a dead-letter queue (DLQ) to capture recurring failures, hardening reliability.",
+        "Core contributor across four open-source Go products (Steampipe, Powerpipe, Flowpipe, Tailpipe) — 120+ merged PRs, 9,300+ GitHub stars; engineered Tailpipe features on DuckDB + Parquet that lifted log-processing throughput 30% to 1,000+ logs per second and eliminated out-of-memory failures.",
+        "Led the AWS SDK for JavaScript v2→v3 migration across 180+ call sites and 11+ AWS services in production Node.js Lambdas, refactoring resource-discovery, configuration-sync, tagging, and cleanup workflows; cut policy-code duplication ~60% via Nunjucks templating and modular imports, keeping the platform supported past AWS SDK v2 EOL and unblocking the Node.js runtime upgrade.",
+        "Optimized complex PostgreSQL queries powering customer compliance audits — using jsonb array elements, multi-stage CTEs, and condition-aware filters — improving query performance 40% (3 min → 1.5 min across 10,000+ resources) and eliminating a class of false-positive findings.",
+        "Built the Steampipe Model Context Protocol (MCP) server end to end in Python, giving LLM agents standardized, real-time access to enterprise cloud data — proactively adopting emerging tooling to extend the platform."
+      ]
+    },
+    {
+      "name": "Trisetra, Inc.",
+      "location": "Remote",
+      "dateDisplay": "February 2022 – June 2022",
+      "roles": [
+        {
+          "position": "Frontend Software Developer Intern (SDE Intern)",
+          "dateDisplay": "February 2022 – June 2022"
+        }
+      ],
+      "highlights": [
+        "Built React front-end features for a 3D product-visualization SaaS — led a 60+ file user-upload workflow redesign, drove a responsive-design overhaul across mobile/desktop breakpoints, and contributed to a React 17→19 and MUI 4→7 migration.",
+        "Authored a 3D-geometry library (footprint/inner-polygon extraction) powering the furniture-placement feature, and introduced the repo's first Mocha unit-test suite with real 3D-asset fixtures."
+      ]
+    },
+    {
+      "name": "Kredey",
+      "dateDisplay": "2021",
+      "roles": [
+        {
+          "position": "Full-Stack Website Developer (Intern)",
+          "dateDisplay": "2021"
+        }
+      ],
+      "highlights": [
+        "Used Elasticsearch for full-text and semantic search over a NoSQL Firebase-backed document-sharing platform built with React."
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "name": "Lila Tic-Tac-Toe — Real-Time Multiplayer Game",
+      "dateDisplay": "2026",
+      "association": "",
+      "description": "Full-stack real-time multiplayer game built end to end in 4 days: React 19 + TypeScript + Vite front-end on Vercel; a Go-based Nakama game server on Fly.io with PostgreSQL. Server-authoritative anti-cheat over WebSocket, mode-aware matchmaking, optimistic UI, a top-10 leaderboard, and reconnect-into-active-match.",
+      "links": [
+        {
+          "label": "repo/live",
+          "url": "https://priyanka-chatterjee-2000.github.io"
+        }
+      ]
+    },
+    {
+      "name": "TODO / Tasks REST API",
+      "dateDisplay": "Apr 2026",
+      "association": "",
+      "description": "API-first REST backend in TypeScript (Bun, Express.js 5, SQLite, Zod, JWT): access/refresh-token auth, RBAC, a prepared-statement CRUD layer, schema-validated controllers with correct REST status codes, and database migrations.",
+      "links": []
+    }
+  ],
+  "education": [
+    {
+      "institution": "University of Engineering & Management (UEM)",
+      "location": "Kolkata, WB, IN",
+      "degreeDisplay": "Bachelor of Technology in Computer Science and Engineering",
+      "dateDisplay": "August 2019 – May 2023",
+      "score": "CGPA: 9.28",
+      "detail": "Relevant Coursework: Data Structures & Algorithms, Object-Oriented Programming, DBMS, Low-Level & High-Level Design, Shell Scripting in Linux"
+    }
+  ],
+  "skills": [
+    {
+      "name": "Languages",
+      "keywordsText": "Go (Golang), TypeScript, JavaScript (ES6+), Python, SQL, Java, Bash, HCL"
+    },
+    {
+      "name": "Backend & APIs",
+      "keywordsText": "RESTful APIs, Microservices, Event-Driven Architecture, Distributed Systems, gRPC, GraphQL, WebSockets, Serverless, OAuth 2.0 (Auth0), JWT, Node.js, Express.js, Gin, Bun"
+    },
+    {
+      "name": "Frontend",
+      "keywordsText": "React (React.js), TypeScript, Vite, MUI, Three.js, HTML, CSS"
+    },
+    {
+      "name": "Databases & Storage",
+      "keywordsText": "PostgreSQL, MySQL, SQL & NoSQL, MongoDB, Redis (ElastiCache), Elasticsearch, DuckDB, SQLite, Firebase/Firestore; jsonb, CTEs, indexing, query tuning, transactions, database migrations"
+    },
+    {
+      "name": "Messaging & Streaming",
+      "keywordsText": "Apache Kafka (consumer groups, DLQs), AWS SNS/SQS, AWS EventBridge, Azure Event Grid"
+    },
+    {
+      "name": "Cloud, DevOps & Observability",
+      "keywordsText": "AWS (Lambda, EC2, RDS, S3), GCP, Azure, OCI, Firebase; Docker, Kubernetes (working knowledge), GitHub Actions, Terraform, OpenTofu, Git, Jira, Vercel, Fly.io; Datadog, OpenTelemetry (OTel)"
+    },
+    {
+      "name": "Testing & Quality",
+      "keywordsText": "Unit, Integration & End-to-End Testing, Jest, Mocha, Automated CI Testing, Code Review"
+    },
+    {
+      "name": "Core CS & AI",
+      "keywordsText": "Data Structures & Algorithms, Object-Oriented Design, Low-Level & High-Level System Design, API Design, LLM/Agentic Workflows, Model Context Protocol (MCP)"
+    }
+  ]
+}
