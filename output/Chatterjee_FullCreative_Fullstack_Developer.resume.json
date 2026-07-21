@@ -1,0 +1,173 @@
+{
+  "schemaVersion": "1.0.0",
+  "theme": "corporate-navy",
+  "sectionOrder": [
+    "summary",
+    "skills",
+    "work",
+    "projects",
+    "certifications",
+    "education"
+  ],
+  "basics": {
+    "name": "Priyanka Chatterjee",
+    "label": "Full-Stack / Backend Engineer · 9,300★ open-source contributor · Node.js · TypeScript · REST APIs · 3.5+ Years",
+    "email": "priyankachatterjee9075@gmail.com",
+    "phone": "+91 8617262536",
+    "url": "https://priyanka-chatterjee-2000.github.io",
+    "location": {
+      "display": "Rishra, West Bengal, India 712248  (also listed as Kolkata, West Bengal, India)",
+      "city": "Kolkata",
+      "region": "West Bengal",
+      "countryCode": "IN"
+    },
+    "profiles": [
+      {
+        "network": "LinkedIn",
+        "username": "priyanka-9075",
+        "url": "https://linkedin.com/in/priyanka-9075",
+        "display": "linkedin.com/in/priyanka-9075"
+      },
+      {
+        "network": "GitHub",
+        "username": "Priyanka-Chatterjee-2000",
+        "url": "https://github.com/Priyanka-Chatterjee-2000",
+        "display": "github.com/Priyanka-Chatterjee-2000"
+      },
+      {
+        "network": "Portfolio",
+        "url": "https://priyanka-chatterjee-2000.github.io",
+        "display": "priyanka-chatterjee-2000.github.io"
+      }
+    ],
+    "summaries": {
+      "backend-platform-sde": "Accomplished Full-Stack / Backend Engineer with 3.5+ years of experience and expertise in Node.js, TypeScript, RESTful APIs, SQL, Docker, and event-driven microservices. At Turbot HQ, delivered 70–90% latency reduction by migrating 35+ modules to event-driven architecture, improved PostgreSQL audit-query performance by 40%, and contributed across four open-source products with 120+ merged PRs and 9,300+ combined GitHub stars."
+    },
+    "activeSummary": "backend-platform-sde"
+  },
+  "skills": [
+    {
+      "name": "Languages",
+      "keywordsText": "Node.js, TypeScript, JavaScript (ES6+), Go, Python, SQL"
+    },
+    {
+      "name": "Backend & APIs",
+      "keywordsText": "RESTful API Design, Express.js, Node.js Services, Microservices, Event-Driven Architecture, Distributed Systems, OAuth 2.0, gRPC, JWT"
+    },
+    {
+      "name": "Databases",
+      "keywordsText": "PostgreSQL, MySQL, MongoDB, SQLite, Firestore, Query Optimization, JSONB, CTEs"
+    },
+    {
+      "name": "Cloud & Containers",
+      "keywordsText": "GCP, AWS (EC2, Lambda), Azure, Docker, Serverless Workloads"
+    },
+    {
+      "name": "Messaging",
+      "keywordsText": "Apache Kafka (consumer groups, DLQs), Event Processing, Async Workflows"
+    },
+    {
+      "name": "DevOps & Delivery",
+      "keywordsText": "CI/CD, GitHub Actions, Git, GHCR, Terraform (working knowledge), Documentation"
+    },
+    {
+      "name": "Engineering Practices",
+      "keywordsText": "Code Reviews, Testing, System Design Fundamentals, Debugging, Cross-Functional Collaboration (Frontend, QA, Product)"
+    }
+  ],
+  "work": [
+    {
+      "name": "Turbot HQ, Inc.",
+      "dateDisplay": "August 2022 – April 2026",
+      "roleDisplay": "senior-only",
+      "roles": [
+        {
+          "position": "Software Engineer I",
+          "dateDisplay": "August 2023 – April 2026"
+        },
+        {
+          "position": "Junior Software Developer Intern",
+          "dateDisplay": "August 2022 – July 2023"
+        }
+      ],
+      "highlights": [
+        "Designed and developed an internal REST API microservice in Go (Gin) for Turbot Guardrails, secured endpoints with OAuth 2.0 via Auth0, containerized with Docker, deployed to AWS EC2, and integrated it as a gRPC client for internal microservices.",
+        "Led AWS SDK for JavaScript v2 to v3 migration across 180+ call sites and 11+ AWS services in production Node.js Lambdas, reducing policy-code duplication ~60% and unblocking Node.js runtime upgrades.",
+        "Built a Kafka-based event-driven pipeline with asynchronous consumers and dead-letter-queue handling to process policy-enforcement events reliably at scale.",
+        "Re-architected 35+ cloud-governance modules from polling to push-based eventing via Azure Event Grid, cutting resource-discovery latency 70–90% and reducing API throttling issues.",
+        "Optimized PostgreSQL audit queries using JSONB and multi-stage CTE rewrites, improving performance 40% (from 3 minutes to 1.5 minutes) across 10,000+ resources.",
+        "Authored multi-cloud compliance modules in HCL + SQL across AWS, Azure, GCP, M365, Google Workspace, and GitHub standards, reducing enterprise compliance-audit time 50%.",
+        "Added multi-distro Linux smoke tests to GitHub Actions release pipelines, improving CI/CD reliability before deployment.",
+        "Owned release engineering for four open-source products (Steampipe, Powerpipe, Flowpipe, Tailpipe), including unified GitHub Actions workflows, GHCR Docker tagging, and shipped shared-library enhancements."
+      ]
+    },
+    {
+      "name": "Trisetra, Inc.",
+      "dateDisplay": "2022",
+      "position": "Frontend Software Developer Intern (SDE Intern)",
+      "highlights": [
+        "Built a 3D-geometry library and introduced the first Mocha unit-test suite with real 3D-asset fixtures, improving code quality and maintainability in production UI workflows."
+      ]
+    },
+    {
+      "name": "Kredey (Kredey Innovations Pvt. Ltd.)",
+      "dateDisplay": "2021",
+      "position": "Full-Stack Website Developer (Intern)",
+      "highlights": [
+        "Built a React + Firebase full-stack document-sharing platform with chat and notifications, and implemented Elasticsearch for full-text and semantic search over NoSQL data."
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "name": "TODO / Tasks REST API",
+      "description": "API-first REST backend in Node.js + TypeScript using Express.js and SQLite, with JWT authentication (access, ID, refresh), RBAC, schema validation, migrations, and production-ready status handling (201/204/400/404)."
+    },
+    {
+      "name": "Friend-A-Book — Real-Time PDF Sharing Platform",
+      "description": "Built a full-stack React + Firebase platform with real-time chat, push/email notifications, integrated PDF viewing, and Elasticsearch-powered full-text search."
+    }
+  ],
+  "certifications": [
+    {
+      "title": "Machine Learning for All",
+      "issuer": "University of London (Coursera)",
+      "date": "Oct 2020",
+      "url": "https://coursera.org/share/253b7ab14f74924aeb6878f4edcbeaa8",
+      "urlLabel": "certificate"
+    },
+    {
+      "title": "C for Everyone: Programming Fundamentals",
+      "issuer": "University of California, Santa Cruz (Coursera)",
+      "date": "Oct 2020",
+      "url": "https://coursera.org/share/2a506fab29faffe42158f75d11b05888",
+      "urlLabel": "certificate"
+    },
+    {
+      "title": "HTML",
+      "issuer": "SoloLearn",
+      "date": "Aug 2020",
+      "url": "https://www.sololearn.com/Certificate/1014-18404813/pdf/",
+      "urlLabel": "certificate"
+    },
+    {
+      "title": "PHP",
+      "issuer": "SoloLearn",
+      "date": "Sep 2020",
+      "url": "https://www.sololearn.com/Certificate/1059-18404813/pdf/",
+      "urlLabel": "certificate"
+    }
+  ],
+  "education": [
+    {
+      "institution": "University of Engineering & Management (UEM)",
+      "location": "Kolkata, WB, IN",
+      "degreeDisplay": "Bachelor of Technology in Computer Science and Engineering",
+      "dateDisplay": "August 2019 – May 2023",
+      "score": "CGPA: 9.28",
+      "scoreFlagged": true,
+      "scoreNote": "CGPA 9.28 is FINAL (per user). Several resume versions show 9.45 (sometimes labeled SGPA) - 9.45 is the flagged alternate, not to be used.",
+      "detail": "Relevant Coursework: Object-Oriented Programming, DBMS, Data Structures and Algorithms, Shell Scripting in Linux, Low-Level Design, High-Level Design"
+    }
+  ]
+}

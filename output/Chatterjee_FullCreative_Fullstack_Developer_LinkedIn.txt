@@ -1,0 +1,3 @@
+Hi {{outreachEmployeeName}}, I applied for the {{jobTitle}} role at {{companyName}} ({{jobLink}}) and would value a referral if you think my profile fits. I have 3.5+ years building Node.js/TypeScript backend systems, including REST APIs, Kafka event pipelines, and production SQL performance work, plus open-source contributions (120+ merged PRs, 9,300+ stars). Thank you for considering.
+
+Priyanka Chatterjee

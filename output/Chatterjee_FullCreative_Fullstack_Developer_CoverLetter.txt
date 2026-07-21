@@ -1,0 +1,20 @@
+Priyanka Chatterjee
+priyankachatterjee9075@gmail.com
++91 8617262536
+https://priyanka-chatterjee-2000.github.io
+https://github.com/Priyanka-Chatterjee-2000
+
+Dear Hiring Manager,
+
+I am applying for the {{jobTitle}} role at {{companyName}}. I bring 3.5+ years of backend engineering experience in Node.js, TypeScript, SQL, and event-driven microservices, and I have delivered measurable production impact at Turbot HQ while contributing to four open-source platform products with 120+ merged PRs and 9,300+ combined GitHub stars.
+
+In my current role, I built and shipped backend services and APIs across Go and Node.js systems, including a REST API microservice secured with OAuth 2.0, containerized with Docker, and integrated with internal gRPC services. I also led the AWS SDK v2-to-v3 migration across 180+ production call sites in Node.js Lambdas and improved PostgreSQL audit-query performance by 40%, reducing report generation time from 3 minutes to 1.5 minutes at enterprise scale.
+
+I have hands-on experience with event-driven distributed systems through a Kafka-based asynchronous processing pipeline with DLQ handling, and I have supported CI/CD quality through cross-platform smoke tests and release-workflow ownership in GitHub Actions. My background includes practical work across AWS, Azure, and GCP-aligned compliance modules, and I am comfortable collaborating end-to-end with product, frontend, and QA stakeholders to deliver reliable features.
+
+While my direct deployment experience is stronger on AWS than Cloud Run specifically, I have consistently ramped quickly on new cloud tooling and delivered production migrations and reliability improvements in complex backend systems. I would value the opportunity to bring this execution-focused backend experience to {{companyName}}.
+
+Thanks for your time and consideration. I would welcome the opportunity to discuss how I can contribute to your backend engineering team.
+
+Sincerely,
+Priyanka Chatterjee

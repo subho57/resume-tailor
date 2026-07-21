@@ -1,0 +1,165 @@
+Hi Priyanka
+
+Nice to e-meet you!
+
+I'm Swetha J HR.I hope this email finds you well. We currently have an opening for Fullstack Developer role . If you're interested in learning more about this opportunity, please reply to this email. Looking forward to hearing from you.
+
+Client Name: Full Creative
+Job Title: Full stack Developer
+Experience: 3-5 Years
+Location: Chennai/Remote
+
+Client Website: https://full.io/
+Linkedin Page: https://www.linkedin.com/company/full-creative/
+
+About the Company:
+
+Our client is a Portland-based product company with offices in India (Chennai), Canada (Toronto) and the United Kingdom (Edinburgh). In the US, UK and Canada, we go by the name AnywhereWorks. We are on a mission, to create a world that empowers people to work Anywhere. Our client brings together engineers, artists, analysts, product experts, account managers, sales executives, and marketers to build a future where “Work is what you do, not where you do it”.
+
+We are a community with big ideas and bigger dreams. We strive to disrupt the new normal with effortless solutions. Solutions that encourage collaboration, redefine learning or help businesses connect with customers better. If you're looking for an ecosystem that nurtures talent and creativity, you could be our architect of change. Our teams are housed in Chennai and oversee operations from the Ascendas IT Park in Taramani.
+
+
+
+Job description
+
+
+We’re looking for a Backend Engineer with 3–5 years of experience who is passionate about building high-quality, scalable systems. You will contribute to the development of backend services for our product, working closely with experienced engineers, designers, and product stakeholders.
+
+In this role, you’ll gain hands-on experience in modern backend technologies, cloud-native development, and microservices architecture, while helping deliver reliable and performant features.
+
+
+
+Roles and Responsibilities:
+
+
+Contribute to the design and development of backend services and APIs
+
+Develop new features using JavaScript / TypeScript (Node.js)
+
+Write clean, maintainable, and testable code following best practices
+
+Work with SQL databases to design schemas and write efficient queries
+
+Deploy and manage services on Google Cloud Platform (GCP), especially using Cloud Run
+
+Containerise applications using Docker
+
+Participate in code reviews and incorporate feedback to improve code quality
+
+Debug, troubleshoot, and resolve backend issues and bugs
+
+Assist in improving the performance, reliability, and scalability of services
+
+Contribute to documentation for APIs, services, and workflows
+
+Work closely with frontend engineers, QA, and product manager
+
+
+
+Job requirements
+
+Must Have
+
+
+
+3–5 years of experience in backend development.
+
+Strong proficiency in JavaScript and TypeScript.
+
+Hands-on experience with Node.js and backend frameworks (e.g., Express, Fastify, Hono).
+
+Solid understanding of RESTful API design and best practices.
+
+Strong experience with SQL databases (e.g., PostgreSQL, MySQL) and query optimisation.
+
+Experience working with Google Cloud Platform (GCP) services.
+
+Hands-on experience with Docker and containerised deployments.
+
+Experience deploying and managing applications on Cloud Run or similar platforms.
+
+Basic understanding of microservices architecture and distributed systems.
+
+Familiarity with CI/CD pipelines and version control systems (Git).
+
+Strong problem-solving skills and attention to detail
+
+
+
+Good to Have
+
+
+
+Experience with messaging systems like Pub/Sub, Kafka, or similar.
+
+Familiarity with NoSQL databases (e.g., Firestore, MongoDB).
+
+Exposure to Infrastructure as Code (e.g., Terraform).
+
+Experience with monitoring and observability tools (logs, metrics, tracing).
+
+Knowledge of system design fundamentals and scalability concepts.
+
+Experience working in Agile/Scrum environments.
+
+Prior experience in SaaS or high-traffic applications.
+
+Certifications: Google Associate Engineer or any equivalent
+
+
+
+What We’re Looking For
+
+
+
+A strong individual contributor who can also collaborate effectively within a team.
+
+Someone who takes ownership of features and delivers end-to-end solutions.
+
+A developer who values clean code, testing, and continuous improvement.
+
+A proactive learner who stays updated with modern backend and cloud technologies
+
+Eligibility / Qualifications:
+
+Education: B.E/B.Tech, MCA or any related course
+
+Experience: 3-5yrs
+
+Other Details:
+
+Notice Period: 30 days or serving or Immediate Joiners
+
+Work Type: Full-time
+
+Confidentiality Note:
+This position is handled exclusively by BuildxPartners(formerly known as Getinz) Please do not apply via public job portals or the client’s website.
+
+
+If you're Interested, reply to this questionnaire ,
+
+Total experience in backend development:
+Years of experience in Node.js & TypeScript:
+Which backend frameworks have you worked with? Express.js /Fastify/Hono:
+Experience with SQL databases (PostgreSQL/MySQL):
+Have you worked on REST API development?
+Experience with Google Cloud Platform (GCP):
+Have you deployed applications using Docker & Cloud Run?
+Experience working with Microservices architect:
+Have you worked with CI/CD pipelines and Git?
+Experience with messaging systems (Kafka/PubSub/RabbitMQ):
+Current Company:
+Current CTC:
+Expected CTC:
+Holding an offer:
+Notice Period:
+Current Location:
+Education:
+Reason for the job change:
+
+
+THANK YOU
+
+Swetha J
+HR TEAM
+Contact - 9344707015
