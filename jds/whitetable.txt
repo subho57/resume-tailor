@@ -1,0 +1,31 @@
+Backend Engineer (Golang)
+Job Description
+Build. Ship. Own.
+
+We're looking for an ambitious Backend Engineer (1–4 years) to build APIs, services, and AI-powered workflows that scale from thousands to millions of requests. If you thrive in fast-moving startups, love shipping, and want real ownership from day one, you'll fit right in.
+
+What You'll Do
+
+Build scalable backend services in Go and Python
+Design and ship clean, secure REST APIs
+Develop high-volume data pipelines and LLM-powered workflows
+Optimize performance with caching, queues, and database tuning
+Own features end-to-end—from idea to production and iteration
+Work closely with founders, product, and users to solve real GTM problems
+What We're Looking For
+
+1–4 years of backend engineering experience
+Strong fundamentals in APIs, SQL, system design, and debugging
+Experience with Go, Python, or another backend language
+Hands-on experience building with LLMs/AI tools
+High ownership, fast learner, and excited by startup pace
+Passion for shipping products, not just writing code
+Tech Stack
+
+Go, Python, SQL, REST APIs, LLMs
+Bonus: Redis, NoSQL, AWS
+
+If you want to own meaningful systems, move fast, and build AI-native products from day one, we'd love to talk.
+
+Experience: 1 to 4 years
+Locations: Mumbai, Bangalore, Gurugram

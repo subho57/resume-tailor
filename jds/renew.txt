@@ -1,0 +1,59 @@
+Please update your resume as discussed.
+ 
+Dear Bhaskar,
+ 
+  This is in reference to the Job opportunity for  OT Security Specialist  - Renew - Gurgaon. In this regards, Please find enclosed herewith Job Description.
+ Company Name :- Renew
+Type – Permanent
+Location :–   Gurgaon
+Position Name : OT Security Specialist (This role will involve onsite travel across India (30-40% time)
+Company Website :- www.Renew.com
+Note :- I have processed your details in Renew and will revert after short listing. We will share the Job link shortly where in you need to submit your details alongwith Latest Resume.  All the best 
+   Job description:-
+OT Security Specialist (This role will involve onsite travel across India (30-40% time)
+We are seeking a skilled OT Security Professional with 4–7 years of experience in securing industrial control systems within the renewable energy sector. The candidate should have proven experience implementing OT cybersecurity controls across both greenfield and brownfield environments, with hands-on exposure to wind, solar, hydro power and manufacturing sites.
+Key Responsibilities
+OT Security Architecture & Governance:
+
+Develop, implement, and enforce OT security policies, procedures, and standards aligned with organizational security frameworks such as IEC 62443, CEA guidelines, and NCIIPC advisories.
+Contribute to OT security governance initiatives, baseline security standards (MBSS), and compliance programs across wind, solar, and hydro assets.
+Security Implementation & Operations:
+
+Lead deployment and validation of OT security controls.
+Work closely with OEMs, EPC partners, and O&M teams to ensure security requirements are incorporated during project design and commissioning.
+Monitor secure configuration, hardening, and ongoing maintenance of OT assets.
+Monitoring, Incident Response:
+
+Lead OT incident response activities and coordinate with teams where required.
+ Regulatory compliance:
+
+Responsible for periodic OT audit and risk assessments, VA/PT, and compliance assessments aligned with CEA, RLDC/NLDC, SECI requirements.
+Collaboration & Integration
+
+Work closely with IT,  cybersecurity, network, and infrastructure teams to ensure secure IT–OT interfaces.
+Support cross-functional OT security initiatives
+Training, Awareness & Documentation
+
+Conduct OT security awareness training for site engineers, OEM partners, and contractors per internal policy requirements.
+Develop documentation including system architecture diagrams, SOPs, incident playbooks, and audit compliance evidence.
+Required Qualifications & Experience
+Education: Bachelor’s degree in computer science, Information Technology, Electronics, Electrical, or a related field.
+Experience:
+
+4–7 years of dedicated experience in OT security or ICS/SCADA cybersecurity, preferably in the renewable energy or critical infrastructure sector.
+Hands-on experience securing OT components such as SCADA, DCS, PLCs, RTUs, protective relays, IEDs, and communication networks.
+Technical Skills:
+
+Strong understanding of industrial protocols (Modbus, OPC-UA, etc.).
+Knowledge of security solutions (firewalls, IDS/IPS, NAC, secure remote access).
+Experience with network design specifically for renewable assets (wind farms, solar farms, hydro).
+Familiarity with regulatory frameworks such as CEA cybersecurity guidelines, NCIIPC advisories, and IEC 62443.
+Soft Skills:
+
+Strong analytical and problem-solving skills.
+Effective communication and stakeholder management capabilities.
+Ability to work independently and collaboratively with cross-functional teams.
+Optional Certifications
+
+ISA/IEC 62443 Cybersecurity Fundamentals
+Vendor OT security certifications

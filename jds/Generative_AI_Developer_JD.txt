@@ -1,0 +1,76 @@
+JOB TITLE: GenAI Developer
+DEPARTMENT: Business Technology Systems group (BTS)
+
+PRIMARY FUNCTION:
+The Generative AI Developer designs, builds, and operates production-grade generative AI applications
+and agentic workflows that improve productivity, automate repeatable work, and accelerate decision-
+making. This role blends full-stack engineering with LLM integration and agent orchestration, including
+hands-on development using Anthropic Claude/Claude Code, prompt engineering, Model Context
+Protocol (MCP) integrations, and agent-to-agent (A2A) protocol patterns for multi-agent collaboration.
+The developer partners closely with product owners, architects, security, and business stakeholders to
+deliver secure, scalable solutions that integrate with enterprise systems while maintaining strong
+governance, observability, and reliability.
+
+SCOPE OF RESPONSIBILITY
+- Individual Contributor role with significant cross-functional influence
+- Complexity: High — ambiguous problems, rapid iteration, and production hardening.
+
+SPECIFIC DUTIES / ACCOUNTABILITIES (in order of importance)
+1) GenAI Product Development (Full-Stack)
+- Build end-to-end GenAI applications that support real business workflows.
+- Implement conversational experiences (chat), task-driven experiences (forms/flows), and
+embedded copilots inside internal tools.
+- Deliver clean, maintainable code with strong testing discipline, code reviews, and
+documentation.
+2) LLM Integration & Prompt Engineering
+- Integrate LLMs into applications with patterns such as tool/function calling, structured outputs,
+and retrieval-augmented generation (RAG) where appropriate.
+- Design and maintain prompt libraries, reusable system prompts, and guardrails that produce
+consistent outcomes.
+- Establish quality gates: test prompts and model changes for reliability, safety, and regressions.
+3) Agents & Agentic AI Architecture
+- Design and implement agentic systems (planner/executor, tool-using agents, multi-step
+workflows) that can execute tasks with human oversight.
+- Build multi-agent collaboration patterns, including agent routing, delegation, memory/context
+management, and failure recovery.
+- Apply A2A protocol concepts for agent-to-agent handoffs and interop (where multi-agent
+services are used).
+4) MCP (Model Context Protocol) Integrations
+- Build or integrate MCP servers/clients to connect agents to enterprise tools and data sources in
+a standard, governed way.
+- Implement capability boundaries, access controls, and least-privilege tool exposure to agents.
+5) Platform Readiness: DevOps, Observability, and Reliability
+- Package and deploy services using modern CI/CD practices.
+- Implement logging, tracing, monitoring, and alerting for AI workflows (including prompt/version
+telemetry and model behavior monitoring).
+- Tune performance and cost: caching, batching, token budgeting, timeouts, and graceful
+degradation.
+
+BASIC QUALIFICATIONS
+Education
+- Bachelor's degree in Computer Science, Engineering, or equivalent practical experience.
+- 8+ years software engineering (full-stack) with 2-4+ years GenAI/LLM systems delivery
+- Strong full-stack skills in common enterprise stacks (e.g., TypeScript/JavaScript + Node,
+Python, .NET/Java), plus modern frontend frameworks.
+- Hands-on experience with LLM application patterns (tool calling, RAG, embeddings, structured
+outputs).
+- Experience building APIs and services with strong testing, security, and performance practices.
+- Familiarity with agentic workflows and multi-step automation patterns.
+- Working knowledge of AWS/Azure (or equivalent agentic coding tools) in real development
+workflows.
+- Familiarity integrating or designing around MCP and/or standardized tool-connection protocols.
+- Familiarity with A2A protocol concepts (agent capability discovery, handoff, task lifecycle, and
+interop patterns).
+
+ADDITIONAL / PREFERRED QUALIFICATIONS
+- Experience with evaluation approaches for LLM apps (offline tests, golden sets, regression
+suites, human review loops).
+- Experience with vector databases / search systems and retrieval pipelines.
+- Experience with cloud-native delivery (containers, serverless, API gateways, secrets
+management).
+- Experience implementing safety controls: prompt injection resistance, data-loss prevention
+patterns, output filtering, and permissioned tool access.
+- Strong communication skills: translate business outcomes into engineering design and
+measurable results.
+- Experience working in enterprise governance environments with security and compliance
+stakeholders.

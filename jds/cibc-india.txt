@@ -1,0 +1,73 @@
+About Role
+Developer - GoLang
+CIBC India •
+Hyderabad, IN •
+3 - 5 years •
+Full-Time
+CIBC India
+CIBC is a leading North American bank with over 150 years of history, focused on helping clients achieve their ambitions. Our new technology and operations hub in Hyderabad is a vibrant centre for innovation, driven by exceptional talent and a collaborative culture. At CIBC India, we invest in people and technology to accelerate progress for our clients and communities, offering genuine opportunities for growth and impact as we shape the future of banking together.
+
+CIBC India Private Limited is a subsidiary of CIBC, and is referred to as “CIBC India". CIBC India Private Limited and CIBC do not provide financial services in India.
+The CIBC logo is a registered trademark of CIBC, used under license by CIBC India Private Limited.
+
+CIBC (Canadian Imperial Bank of Commerce) was formed in 1961 from the merger of two major national Canadian banks, The Canadian Bank of Commerce and the Imperial Bank of Canada. The founding date of The Canadian Bank of Commerce in 1867 is used as CIBC’s official founding date.
+
+Location
+Hyderabad
+Experience Range
+3 - 5 years
+Must-have Skills
+GoLang
+Spring Boot
+Web Services or SOAP or JSON or RESTful
+Microservices
+Nice-to-have Skills
+Java or J2ee
+About CIBC India
+CIBC India is a technology and operations hub in Hyderabad, a global hotspot for innovation and talent. This new presence lets us tap into India’s vibrant tech community, connecting our global bank to local expertise and new perspectives to better serve our clients and accelerate our strategy.
+
+In Hyderabad, we’re building a team to drive transformational change and shape our bank’s future – our technologists are advancing platforms with Python, FastAPI, and Azure Cloud, while our operations professionals support capital markets trading, simplify client onboarding, and enable accurate payment processing. By harnessing automation, CI/CD pipelines, and agentic AI, we’re creating solutions that drive efficiency and innovation across our business.
+
+Job Description
+What You’ll Be Doing (position summary):
+The Developer is responsible for designing, developing, coding, and testing full-stack application solutions This role ensures that application systems are robust, secure, and aligned with business requirements by participating in the technical design, development, and integration of multi-platform systems. The Developer works collaboratively with technical teams and stakeholders to deliver high-quality software solutions while adhering to regulatory and information security standards
+At CIBC India we enable the work environment most optimal for you to thrive in your role. Details on your work arrangement (including on-site and remote work) will be discussed at the time of your interview.
+How You’ll Succeed (responsibilities):
+Programming Skills:
+Develop, code, and test end-to-end stacks of applications to meet business objectives.
+Review, analyze, and modify programming systems, including coding, testing, and debugging to ensure optimal performance and compliance.
+Systems Implementation:
+Participate in and conduct technical design, development, and integration of cross-functional, multi-platform application systems.
+Contribute to the implementation of new technologies and frameworks to enhance application functionality and efficiency.
+Troubleshooting and Technical Skills:
+Ensure adherence to all regulatory and information security standards and policies in all aspects of application management.
+Troubleshoot, diagnose, and resolve technical issues to maintain system stability and performance.
+Relationship Management:
+Build strong relationships and partnerships with technical team members and peers to facilitate effective collaboration.
+Communicate clearly and effectively with stakeholders, using advanced verbal communication skills, including appropriate tone, style, and structure.
+ CROSS-FUNCTIONAL RELATIONSHIPS:
+ Collaborates with business analysts, QA teams, and other developers to define and deliver technical solutions.
+
+Works closely with infrastructure and operations teams to ensure seamless deployment and integration of applications.
+Partners with project managers and product owners to align technical deliverables with business priorities.
+Experience: 3-5 years of experience
+Who You Are (skills/qualifications):
+Must Have Skills:
+3-5 years of experience in software development, with a strong background in Java / J2EE, GoLang, Spring/Spring Boot, Web Services (SOAP, JSON, RESTful).
+Hands-on experience in Microservices and API development, with at least 2 years of Java development experience in an enterprise environment.
+Strong analytical, troubleshooting, and problem-solving skills.
+Advanced verbal communication skills, with the ability to adapt tone, style, and structure to different audiences.
+Ability to work collaboratively in a team-oriented environment.
+Good to have Skills:
+Familiarity with Agile methodologies and Cloud environments, particularly Azure.
+About CIBC
+CIBC is a leading North American bank, with a history of more than 150 years of living our purpose - to help make your ambition a reality. Client relationships are at the centre of our strategy, and our growth is enabled by a highly engaged and connected global team. From digital banking to community impact, we’re proud to drive progress for our clients and our communities. Recognized for our culture, award-winning innovation and community investment, CIBC continues to evolve by putting people and progress at the centre of everything we do.
+
+About CIBC India
+CIBC India is a technology and operations hub in Hyderabad, where you’ll be part of our highly engaged and global team, and play a central role in supporting our growth. Whether you’re driving innovation in digital banking or streamlining client onboarding, you’ll be part of a culture recognized for excellence and investment in people. At CIBC India, people and progress are at the centre of what we do: you’ll develop skills, collaborate with industry leaders, and see your ideas realized in a culture that values progress and belonging. We provide cutting-edge resources, ongoing learning, and a supportive environment where people come first. If you’re ready to create meaningful change and build your future, CIBC India is where your ambition meets opportunity.
+
+What CIBC India Offers:
+At CIBC India, your goals are a priority. We start with your strengths and ambitions and strive to create opportunities to tap into your potential. We aspire to give you a career that goes well beyond your compensation.
+We work to recognize you in meaningful, personalized ways including competitive fixed pay, performance-based incentive programs, a family-first benefits program, employer contributions for your retirement, attractive time off and leave offerings, wellbeing support, and MomentMakers, our social, points-based recognition program
+Our spaces and technological toolkit will make it simple to bring together great minds to create innovative solutions that make a difference for our clients worldwide
+We cultivate a culture where you can express your ambition through initiatives like Purpose Day, a paid day off dedicated for you to use to invest in your growth and development

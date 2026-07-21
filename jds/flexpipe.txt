@@ -1,0 +1,43 @@
+Flexiple
+Software Engineer
+Full-time
+₹0 – ₹0
+
+Apply with Flexiple
+Overview
+Software Engineer
+
+A high-growth, VC-backed SaaS company hiring its founding India team
+
+Location: Bengaluru, Mumbai, Delhi NCR, Hyderabad, Pune, Chennai, Kolkata, Ahmedabad — or Remote (India)
+About the Company
+A high-growth, VC-backed SaaS company is hiring its founding India team and has partnered with Flexiple to bring on software engineers for its product engineering team. You will build and ship features used by real customers from day one. Flexiple is a managed marketplace that helps global companies build high-performing teams and GCCs in India.
+Role Overview
+As a Software Engineer, you will design, build, and maintain product features end to end, working closely with product and design to turn requirements into reliable, well-tested code.
+Key Responsibilities
+Product Development
+
+Build and ship features across the stack, from design through to production
+Write clean, well-tested code and review peers' pull requests
+Break down requirements into shippable increments and estimate work realistically
+Quality & Collaboration
+
+Debug and resolve production issues, tracing root causes rather than symptoms
+Collaborate closely with product, design, and QA through the feature lifecycle
+Keep documentation, tests, and CI pipelines current for the code you own
+Ideal Candidate Profile
+2 to 5 years building production software in a modern language (e.g. Python, Java, Go, JavaScript/TypeScript)
+Solid computer-science fundamentals: data structures, algorithms, and system design basics
+Comfort working with relational or NoSQL databases and REST/GraphQL APIs
+Clear written and spoken English and a reliable remote-work setup
+Preferred Qualifications
+Exposure to a public cloud platform (AWS, GCP, or Azure) and containerised deployments
+Contributions to open-source projects or a strong personal GitHub history
+A degree in computer science, engineering, or a related field
+What We Offer
+A software engineer seat at a VC-backed SaaS company's founding India team
+Remote-friendly, pan-India hiring with long-term placement
+Ownership of real product surface area from your first sprint
+One application considered for this and future matched roles
+Hiring process
+Profile Shortlisting → Tech Interview 1 → Tech Interview 2 → Tech Interview 3 → Founder Interview
