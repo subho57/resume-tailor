@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://subho57.github.io/resume-tailor/sitemap.xml

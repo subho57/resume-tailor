@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 160" role="img" aria-label="Pipeline: JSON source of truth, validated, tailored without fabricating, autofit and rendered, to DOCX and PDF">
+  <defs>
+    <style>
+      .box { fill: #f5f7fa; stroke: #1a3a5c; stroke-width: 2; rx: 8; }
+      .label { font-family: system-ui, sans-serif; font-size: 14px; fill: #1a3a5c; text-anchor: middle; }
+      .sub { font-family: system-ui, sans-serif; font-size: 11px; fill: #55606e; text-anchor: middle; }
+      .arrow { stroke: #1a3a5c; stroke-width: 2; marker-end: url(#arrowhead); }
+    </style>
+    <marker id="arrowhead" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto">
+      <path d="M0,0 L8,4 L0,8 Z" fill="#1a3a5c" />
+    </marker>
+  </defs>
+  <g>
+    <rect class="box" x="10" y="40" width="150" height="70" />
+    <text class="label" x="85" y="70">JSON source</text>
+    <text class="sub" x="85" y="88">of truth</text>
+  </g>
+  <line class="arrow" x1="160" y1="75" x2="195" y2="75" />
+  <g>
+    <rect class="box" x="200" y="40" width="150" height="70" />
+    <text class="label" x="275" y="70">Validate</text>
+    <text class="sub" x="275" y="88">best-effort</text>
+  </g>
+  <line class="arrow" x1="350" y1="75" x2="385" y2="75" />
+  <g>
+    <rect class="box" x="390" y="40" width="170" height="70" />
+    <text class="label" x="475" y="65">Tailor to the job</text>
+    <text class="sub" x="475" y="83">select &amp; rephrase,</text>
+    <text class="sub" x="475" y="97">never fabricate</text>
+  </g>
+  <line class="arrow" x1="560" y1="75" x2="595" y2="75" />
+  <g>
+    <rect class="box" x="600" y="40" width="150" height="70" />
+    <text class="label" x="675" y="65">Autofit</text>
+    <text class="sub" x="675" y="83">&amp; render</text>
+  </g>
+  <line class="arrow" x1="750" y1="75" x2="785" y2="75" />
+  <g>
+    <rect class="box" x="790" y="40" width="100" height="70" />
+    <text class="label" x="840" y="70">DOCX</text>
+    <text class="sub" x="840" y="88">+ PDF</text>
+  </g>
+</svg>

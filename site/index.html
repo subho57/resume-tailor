@@ -3,12 +3,55 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>resume-tailor</title>
+    <title>resume-tailor — tailor your resume to a job description, without lying</title>
+    <meta name="description" content="resume-tailor is a free, open-source CLI and Claude Code/Copilot skill set that turns one JSON source of truth into an ATS-tailored resume for every job — never fabricating a skill or metric you don't have. Try the DOCX generator online, right now, no signup." />
+    <meta property="og:title" content="resume-tailor" />
+    <meta property="og:description" content="One JSON source of truth, tailored honestly to every job description. Deterministic DOCX/PDF output, no fabricated keywords, ever." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://subho57.github.io/resume-tailor/" />
+    <link rel="canonical" href="https://subho57.github.io/resume-tailor/" />
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "resume-tailor",
+      "applicationCategory": "DeveloperApplication",
+      "operatingSystem": "macOS, Linux, Windows (Beta)",
+      "description": "Deterministic, schema-driven resume generator that tailors resumes to job descriptions without fabricating experience.",
+      "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" }
+    }
+    </script>
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
     <main>
       <h1>resume-tailor</h1>
+      <p class="tagline">
+        One hand-edited resume drifts across a dozen applications. Under pressure to match a job
+        description, it's tempting to inflate a keyword you don't really have — that collapses in
+        an interview. resume-tailor keeps one JSON source of truth and tailors it honestly to each
+        job's own vocabulary: select and rephrase real experience, never invent it.
+      </p>
+      <img src="./infographic.svg" alt="Pipeline: JSON source of truth, validated, tailored without fabricating, autofit and rendered, to DOCX and PDF" class="infographic" />
+      <p class="free-note">
+        <strong>Entirely free.</strong> No account, no subscription — a static binary, plus the
+        Claude Code or GitHub Copilot subscription you already have. <code>--install-skill</code>
+        drops the tailoring workflow into your existing <code>~/.claude/skills/</code> or
+        <code>~/.copilot/skills/</code>, whichever you already use.
+      </p>
+      <h2>Install</h2>
+      <pre><code>curl -fsSL https://subho57.github.io/resume-tailor/install.sh | bash</code></pre>
+      <p>macOS and Linux. Windows support is in <strong>Beta</strong> —
+        <a href="https://github.com/subho57/resume-tailor/releases/latest/download/tailor-resume-windows-x64.zip">download the latest Windows build directly</a>.
+      </p>
+      <h2>Try it now — right in this page</h2>
+      <p class="limitation-note">
+        Runs entirely in your browser — nothing is uploaded. One difference from the
+        CLI: if your JSON uses a <code>flagged: true</code> highlight (for
+        reconciling conflicting facts), its Word comment may not render perfectly
+        here, since the CLI's comment-repair step needs tools this page can't run.
+        Everything else matches the CLI's output exactly.
+      </p>
       <div class="controls">
         <label for="theme-select">Theme</label>
         <select id="theme-select">
