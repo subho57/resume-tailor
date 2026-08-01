@@ -1,0 +1,5 @@
+Hi {{outreachEmployeeName}}, I just applied for the {{jobTitle}} role at {{companyName}} ({{jobLink}}) and saw you're on the team.
+
+I'm a Business Development Representative with CRM/lead-gen experience (45% engagement lift on a 100K+ contact database) — would love a referral or a quick chat if you have a moment.
+
+Aritrika Karmakar

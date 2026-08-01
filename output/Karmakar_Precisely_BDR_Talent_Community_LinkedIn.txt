@@ -1,0 +1,5 @@
+Hi {{outreachEmployeeName}}, I just applied to {{companyName}}'s {{jobTitle}} ({{jobLink}}) and saw you're on the team.
+
+I'm a BDR with CRM ownership and outbound lead-gen experience (led a CRM rollout from scratch, 45% engagement lift) — would love to connect ahead of an active opening.
+
+Aritrika Karmakar

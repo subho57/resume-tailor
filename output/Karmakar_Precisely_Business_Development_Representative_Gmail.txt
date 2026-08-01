@@ -1,0 +1,10 @@
+Subject: Referral request — {{jobTitle}} at {{companyName}}
+
+Hi {{outreachEmployeeName}}, I just applied for the {{jobTitle}} role at {{companyName}} ({{jobLink}}) and noticed you work there.
+
+I'm a Business Development Representative with 2+ years managing CRM outreach and lead generation — most recently increasing audience engagement by 45% across a 100,000+ contact HubSpot database at my current company.
+
+Would love a referral or a quick chat about the team and what you're looking for, if you have a moment.
+
+Thanks so much,
+Aritrika Karmakar

@@ -1,0 +1,10 @@
+Subject: Joined {{companyName}}'s {{jobTitle}} — would love to connect
+
+Hi {{outreachEmployeeName}}, I just applied to {{companyName}}'s {{jobTitle}} ({{jobLink}}) and noticed you work there.
+
+I'm a Business Development Representative with 2+ years of outbound lead generation and CRM ownership — most recently leading a CRM platform rollout from the ground up and delivering a 45% increase in audience engagement across a 100,000+ contact database.
+
+Would love a referral or a quick chat about the team, even ahead of an active opening.
+
+Thanks so much,
+Aritrika Karmakar

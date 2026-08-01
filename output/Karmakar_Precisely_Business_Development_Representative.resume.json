@@ -1,0 +1,91 @@
+{
+  "schemaVersion": "1.0.0",
+  "sectionOrder": ["summary", "skills", "work", "education"],
+  "basics": {
+    "name": "Aritrika Karmakar",
+    "label": "Business Development Representative (BDR) · CRM & Outbound Pipeline · HubSpot · Salesforce · LinkedIn Sales Navigator · 2+ Years",
+    "email": "karmakararitrika@gmail.com",
+    "phone": "+44 7760 623484",
+    "location": {
+      "display": "London, England, UK",
+      "city": "London",
+      "region": "England",
+      "countryCode": "GB"
+    },
+    "profiles": [
+      {
+        "network": "LinkedIn",
+        "url": "https://www.linkedin.com/in/aritrika-karmakar",
+        "display": "linkedin.com/in/aritrika-karmakar"
+      }
+    ],
+    "summaries": {
+      "default": "Accomplished Business Development Representative with 2+ years of experience and expertise in CRM management, lead qualification, outbound prospecting, and campaign execution. Achieved a 45% increase in audience engagement through data-driven lead-nurturing campaigns at Inmisceo, managing CRM outreach across a 100,000+ contact database."
+    },
+    "activeSummary": "default"
+  },
+  "work": [
+    {
+      "name": "Inmisceo",
+      "location": "London Area, United Kingdom",
+      "domainNote": "Technology/training company building learning-technology tools for corporate training providers.",
+      "position": "Marketing Executive (CRM & Business Development)",
+      "startDate": "2025-02",
+      "endDate": "",
+      "dateDisplay": "February 2025 – Present",
+      "highlights": [
+        "Supported lead generation initiatives through multi-channel marketing campaigns across email, LinkedIn, website and industry events, contributing to pipeline growth and customer acquisition.",
+        "Collaborated closely with sales and leadership teams to qualify marketing-generated leads, coordinate follow-up activities and support product demos and webinars.",
+        "Managed CRM activities in HubSpot, maintaining audience segmentation, automated workflows and accurate customer records across a 100,000+ contact database.",
+        "Optimised lead nurturing pathways using open, click-through, and conversion rate analytics, resulting in a 45% increase in audience engagement.",
+        "Led CRM platform selection and setup, enabling scalable marketing automation and GDPR-compliant data structures from the ground up.",
+        "Ensured campaign QA, UTM tracking accuracy, and delivered monthly CRM campaigns to 100K+ contacts with high QA standards and GDPR compliance."
+      ]
+    },
+    {
+      "name": "Goldsmiths, University of London",
+      "location": "London, United Kingdom",
+      "domainNote": "University careers service — career planning, employability workshops and events for students.",
+      "position": "Marketing & CRM Ambassador",
+      "startDate": "2023-11",
+      "endDate": "2024-06",
+      "dateDisplay": "November 2023 – June 2024",
+      "highlights": [
+        "Supported CRM-led digital campaigns reaching 50,000+ users, driving engagement and awareness across student-focused communications.",
+        "Produced campaign performance reports using Google Analytics and CRM dashboards, tracking engagement metrics and identifying optimisation opportunities."
+      ]
+    }
+  ],
+  "skills": [
+    {
+      "name": "Business Development & CRM",
+      "keywords": ["Business Development", "CRM Databases", "HubSpot", "Salesforce", "Lead Generation", "Lead Qualification"]
+    },
+    {
+      "name": "Outbound & Prospecting",
+      "keywords": ["Outbound Prospecting", "LinkedIn Sales Navigator", "Cross-Functional Collaboration"]
+    },
+    {
+      "name": "Campaign & Pipeline Analytics",
+      "keywords": ["Google Analytics", "Campaign Performance Analysis", "Campaign Reporting", "A/B Testing and Optimisation"]
+    },
+    {
+      "name": "Professional & AI Skills",
+      "keywords": ["Interpersonal Communication", "Problem Solving", "Attention to Detail", "AI Tools"]
+    }
+  ],
+  "education": [
+    {
+      "institution": "Goldsmiths, University of London",
+      "area": "Media and Communications",
+      "studyType": "MA",
+      "dateDisplay": "September 2023 – 2024"
+    },
+    {
+      "institution": "University of Calcutta",
+      "area": "English Literature",
+      "studyType": "BA",
+      "dateDisplay": "2019 – 2022"
+    }
+  ]
+}
