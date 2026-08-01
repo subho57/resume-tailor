@@ -37,6 +37,10 @@ jobs:
         with:
           bun-version: latest
 
+      # Needed even though the build only runs inside site/: src/render.ts (a
+      # sibling of site/, not an ancestor) imports "docx", and bundler module
+      # resolution only walks upward through ancestor node_modules, never
+      # sideways — so the root install must exist for that import to resolve.
       - name: Install root dependencies
         run: bun install
 
