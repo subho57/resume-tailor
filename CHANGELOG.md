@@ -1,3 +1,19 @@
+# [1.4.0](https://github.com/subho57/resume-tailor/compare/v1.3.0...v1.4.0) (2026-08-01)
+
+
+### Bug Fixes
+
+* harden install.sh prereq/OS detection (Carlito check, arch, Windows) ([8eaf14e](https://github.com/subho57/resume-tailor/commit/8eaf14e1db3a93123fc02cadd1da65c9368845df))
+
+
+### Features
+
+* add GitHub Actions Pages deployment workflow for site/ ([e63de68](https://github.com/subho57/resume-tailor/commit/e63de6862fda4e1728dd9f79f0901a638e8c880f))
+* add homepage copy, SVG infographic, and SEO metadata to site/ ([7c22e9e](https://github.com/subho57/resume-tailor/commit/7c22e9e9c6d537b59121d11127f445a0a710bacc))
+* add install.sh for macOS/Linux CLI + skill installation ([6e7db57](https://github.com/subho57/resume-tailor/commit/6e7db57e75e428e3be243f38074e998057b0074f))
+* rename build-resume to tailor-resume, resume-superset-builder to resume-tailor ([6bc6657](https://github.com/subho57/resume-tailor/commit/6bc665710960d786b25be834269e11f3f20ad7af))
+* scaffold site/ - client-side browser demo of the resume renderer ([fc85916](https://github.com/subho57/resume-tailor/commit/fc85916e622f03edaed55b5dc002ed705659995a))
+
 # [1.3.0](https://github.com/subho57/resume-builder/compare/v1.2.0...v1.3.0) (2026-08-01)
 
 
