@@ -99,8 +99,17 @@ import { $ } from "bun";
 - `packDocx`'s `fs.writeFileSync(outPath, buf)` → `Bun.write(outPath, buf)` — `buf`
   is the raw docx `Buffer` from `Packer.toBuffer()`, not text; pass it through
   unchanged (see table above). Every other read/write in this file is UTF-8 text.
-- `repairCommentIds` and `countPdfPages` gain `async` (both already called from
-  async contexts — `packDocx`/`measure` — so this doesn't propagate further).
+- `repairCommentIds`, `convertToPdf`, and `countPdfPages` all gain `async`.
+  **Correction from an earlier draft of this spec:** `convertToPdf` was
+  originally omitted from this list, but it calls `execFileSync` twice (the
+  `soffice` call and the `python3` fallback) — Bun Shell's `` $`...` `` has no
+  synchronous mode at all, it always returns an awaitable `ShellPromise`, so
+  `convertToPdf` must become `async` too, not just the two functions that
+  touch `fs` directly. All three are already called from async contexts
+  (`packDocx`, `measure` in `autofit.ts`, and `main()` in `cli.ts`), so this
+  still doesn't propagate any further than those existing boundaries — it just
+  means **both** of `convertToPdf`'s two call sites (`autofit.ts` and
+  `cli.ts`'s `main()`) need `await` added, not only `countPdfPages`'s callers.
 - All 5 `execFileSync` calls become `` $`...` `` calls:
   - `unzip -q ${docxPath} -d ${tmp}` → add `.quiet()`
   - `zip -Xrq ${docxPath} .` (had `{ cwd: tmp }`) → add `.cwd(tmp).quiet()`
