@@ -1,3 +1,10 @@
+## [1.4.1](https://github.com/subho57/resume-tailor/compare/v1.4.0...v1.4.1) (2026-08-01)
+
+
+### Bug Fixes
+
+* install root node_modules before building site/ in Pages workflow ([03aa46b](https://github.com/subho57/resume-tailor/commit/03aa46bcb6a84a209350248127908e4a531dee46))
+
 # [1.4.0](https://github.com/subho57/resume-tailor/compare/v1.3.0...v1.4.0) (2026-08-01)
 
 
