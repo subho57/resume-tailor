@@ -1,8 +1,8 @@
-// Reads the real .claude/skills/jd-tailored-resume/ directory and generates
-// src/skill-bundle.generated.ts — a plain Record<string, string> of file contents,
-// embedded into the CLI so `--install-skill` can write a standalone variant of this
-// skill to ~/.claude/skills/jd-tailored-resume/ (used by `build-resume` directly,
-// no repo checkout required).
+// Reads the real .claude/skills/<name>/ directories and generates
+// src/skill-bundle.generated.ts — SKILL_BUNDLES, a Record<skillName, Record<relPath,
+// content>>, embedded into the CLI so `--install-skill [name]` can write standalone
+// variants of these skills to ~/.claude/skills/<name>/ (used by `build-resume`
+// directly, no repo checkout required).
 //
 // A plain-data TS module (not `with { type: "file" }` imports) is used deliberately:
 // this repo has two build paths for src/cli.ts — `tsc` (-> dist/cli.js, run via
@@ -13,21 +13,23 @@
 // transform. A Record<string,string> of string constants is ordinary TS that both
 // toolchains handle identically.
 //
-// SKILL.md gets 5 anchor-replaced regions (repo/bun instructions -> standalone
-// `build-resume` instructions); everything else in SKILL.md, plus
-// references/tailoring-guide.md and scripts/check_keywords.py, are embedded verbatim
-// (neither has any repo-path or `bun` assumptions — verified by inspection).
+// Each skill's SKILL.md gets its own set of anchor-replaced regions (repo/bun
+// instructions -> standalone `build-resume` instructions); everything else in
+// SKILL.md, plus any references/ or scripts/ files, are embedded verbatim.
 //
-// assertReplace fails the whole build (not silently no-ops) if SKILL.md changes in a
-// way that moves/rewords one of these anchors — update the transform below when that
-// happens, don't bypass it.
+// assertReplace fails the whole build (not silently no-ops) if a SKILL.md changes in
+// a way that moves/rewords one of its anchors — update the matching transform below
+// when that happens, don't bypass it.
+//
+// To add a new bundled skill: add an entry to SKILLS below with its own transform
+// function (or `(c) => c` if it has no repo-specific anchors), then re-run
+// `bun run prepare-skill`.
 
-import * as fs from "fs";
-import * as path from "path";
+import { mkdirSync } from "node:fs";
+import { dirname, join, relative, resolve } from "node:path";
 
-const repoRoot = path.resolve(import.meta.dir, "..");
-const skillDir = path.join(repoRoot, ".claude", "skills", "jd-tailored-resume");
-const outPath = path.join(repoRoot, "src", "skill-bundle.generated.ts");
+const repoRoot = resolve(import.meta.dir, "..");
+const outPath = join(repoRoot, "src", "skill-bundle.generated.ts");
 
 function assertReplace(content: string, oldText: string, newText: string, label: string): string {
   const count = content.split(oldText).length - 1;
@@ -41,7 +43,7 @@ function assertReplace(content: string, oldText: string, newText: string, label:
   return content.replace(oldText, newText);
 }
 
-function transformSkillMd(content: string): string {
+function transformJdTailoredResumeSkillMd(content: string): string {
   content = assertReplace(
     content,
     `## Where this skill lives
@@ -204,28 +206,183 @@ supplied externally. Run \`build-resume --help\` for the full flag list.`,
   return content;
 }
 
-function main() {
-  const skillMdRaw = fs.readFileSync(path.join(skillDir, "SKILL.md"), "utf-8");
-  const tailoringGuide = fs.readFileSync(path.join(skillDir, "references", "tailoring-guide.md"), "utf-8");
-  const checkKeywordsPy = fs.readFileSync(path.join(skillDir, "scripts", "check_keywords.py"), "utf-8");
+function transformMasterResumeBuilderSkillMd(content: string): string {
+  content = assertReplace(
+    content,
+    `## Where this skill lives
 
-  const bundle: Record<string, string> = {
-    "SKILL.md": transformSkillMd(skillMdRaw),
-    "references/tailoring-guide.md": tailoringGuide,
-    "scripts/check_keywords.py": checkKeywordsPy,
-  };
+This is a **project skill** committed inside the \`resume-system\` repository at
+\`.claude/skills/master-resume-builder/\`. The schema and CLI it targets are the
+surrounding repo itself — **not** a bundled copy. From this skill's directory, the
+repo root is three levels up: \`../../../\`. Paths below are written relative to the
+repo root; if running from the repo root (the usual case), drop the \`../../../\`
+prefix.`,
+    `## Where this skill lives
 
-  const entries = Object.entries(bundle)
-    .map(([rel, content]) => `  ${JSON.stringify(rel)}: ${JSON.stringify(content)},`)
+This is a **personal skill** installed at \`~/.claude/skills/master-resume-builder/\`
+by the standalone \`build-resume\` CLI binary (\`build-resume --install-skill
+master-resume-builder\`) — there is no surrounding repo to check out or build.
+\`build-resume\` has the resume content schema embedded directly; you only need the
+candidate's raw material and an output path, supplied wherever you invoke this skill
+from.`,
+    "Where this skill lives"
+  );
+
+  content = assertReplace(
+    content,
+    `   shows up (e.g. \`.docx\`), convert it first: \`soffice --headless --convert-to txt:Text <file>\`
+   (LibreOffice is already a repo prerequisite — see README's "Prerequisites") or
+   ask the user to paste the content.
+2. **The candidate's full name**, and enough context (current/most recent employer,
+   location, field) to distinguish them from unrelated people of the same name in
+   web search results.
+3. **Where to write the output** — default to \`data/<firstname-lastname>.resume.json\`
+   in the repo root unless the user names a different path.`,
+    `   shows up (e.g. \`.docx\`), convert it first: \`soffice --headless --convert-to txt:Text <file>\`
+   (LibreOffice is required for \`build-resume\`'s PDF/autofit too — install it if
+   missing) or ask the user to paste the content.
+2. **The candidate's full name**, and enough context (current/most recent employer,
+   location, field) to distinguish them from unrelated people of the same name in
+   web search results.
+3. **Where to write the output** — ask the user for an output path. There's no repo
+   \`data/\` folder to default into here.`,
+    "Inputs you need (raw files / output path)"
+  );
+
+  content = assertReplace(
+    content,
+    `\`\`\`bash
+bun install && bun run build   # one-time, if dist/ is missing
+bun dist/cli.js --content data/<firstname-lastname>.resume.json
+\`\`\``,
+    `\`\`\`bash
+build-resume --content <output_path>.resume.json
+\`\`\``,
+    "Validate and render (CLI invocation)"
+  );
+
+  content = assertReplace(
+    content,
+    `## Files in this skill
+
+This skill directory (\`.claude/skills/master-resume-builder/\`) contains:
+
+- \`SKILL.md\` — this workflow.
+- \`references/research-guide.md\` — search patterns for companies and identity
+  cross-referencing, the reconciliation worked example, and the fabricated-date
+  trap in detail.
+
+The generator it feeds lives in the **surrounding repo** (\`resume-system/\`, the
+repo root three levels up): \`schema/resume.schema.json\` (the target schema),
+\`dist/\`/\`src/\` (the CLI that validates and renders the output), and \`data/\` (where
+the finished superset JSON lives alongside other candidates' ground-truth docs).`,
+    `## Files in this skill
+
+This skill directory (\`~/.claude/skills/master-resume-builder/\`) contains:
+
+- \`SKILL.md\` — this workflow.
+- \`references/research-guide.md\` — search patterns for companies and identity
+  cross-referencing, the reconciliation worked example, and the fabricated-date
+  trap in detail.
+
+The generator it feeds is the standalone \`build-resume\` binary — the resume content
+schema is embedded in it directly; only the raw material and an output path need to
+be supplied externally. Run \`build-resume --help\` for the full flag list.`,
+    "Files in this skill"
+  );
+
+  return content;
+}
+
+interface SkillSpec {
+  name: string;
+  transformSkillMd: (content: string) => string;
+  extraFiles: string[]; // relative paths beyond SKILL.md, embedded verbatim
+}
+
+const SKILLS: SkillSpec[] = [
+  {
+    name: "jd-tailored-resume",
+    transformSkillMd: transformJdTailoredResumeSkillMd,
+    extraFiles: ["references/tailoring-guide.md", "scripts/check_keywords.py"],
+  },
+  {
+    name: "master-resume-builder",
+    transformSkillMd: transformMasterResumeBuilderSkillMd,
+    extraFiles: ["references/research-guide.md"],
+  },
+];
+
+// GitHub Copilot CLI's SKILL.md format is the same as Claude Code's (YAML
+// frontmatter with name/description; unknown fields are tolerated, not rejected —
+// confirmed by inspecting ~/.copilot's own installed CLI bundle, not assumed). Its
+// project-skill discovery already includes `.claude/skills/` as a fallback source
+// (alongside `.github/skills/` and `.agents/skills/`), so no repo-committed
+// `.copilot/skills/` mirror is needed or read at project scope. Its *personal*
+// (home-directory) skill source is `~/.copilot/skills/`, which IS distinct from
+// Claude's `~/.claude/skills/` — that's the only place a Copilot-specific variant
+// is actually useful, so the derivation below only swaps the home-directory path
+// mentioned in the standalone doc's prose. (An earlier version of this also
+// injected a `trigger: /<name>` frontmatter field, believing it bound a Copilot
+// slash command — that field doesn't exist in Copilot's schema; it was a
+// misreading of an unrelated internal telemetry enum of the same name. Removed.)
+function deriveCopilotSkillMd(_skillName: string, claudeStandaloneSkillMd: string): string {
+  return claudeStandaloneSkillMd.split(".claude/skills").join(".copilot/skills");
+}
+
+async function main() {
+  // bundles[skillName][target][relPath] = content
+  const bundles: Record<string, Record<"claude" | "copilot", Record<string, string>>> = {};
+
+  for (const skill of SKILLS) {
+    const skillDir = join(repoRoot, ".claude", "skills", skill.name);
+    const skillMdRaw = await Bun.file(join(skillDir, "SKILL.md")).text();
+    const extraFiles: Record<string, string> = {};
+    for (const rel of skill.extraFiles) {
+      extraFiles[rel] = await Bun.file(join(skillDir, rel)).text();
+    }
+
+    const claudeSkillMd = skill.transformSkillMd(skillMdRaw);
+    bundles[skill.name] = {
+      claude: { "SKILL.md": claudeSkillMd, ...extraFiles },
+      copilot: { "SKILL.md": deriveCopilotSkillMd(skill.name, claudeSkillMd), ...extraFiles },
+    };
+  }
+
+  // 1. Embed both targets' bundles into the CLI for `build-resume --install-skill`
+  //    (personal-skill install, no repo needed).
+  const entries = Object.entries(bundles)
+    .map(([skillName, targets]) => {
+      const targetEntries = Object.entries(targets)
+        .map(([target, bundle]) => {
+          const fileEntries = Object.entries(bundle)
+            .map(([rel, content]) => `      ${JSON.stringify(rel)}: ${JSON.stringify(content)},`)
+            .join("\n");
+          return `    ${JSON.stringify(target)}: {\n${fileEntries}\n    },`;
+        })
+        .join("\n");
+      return `  ${JSON.stringify(skillName)}: {\n${targetEntries}\n  },`;
+    })
     .join("\n");
 
   const output = `// AUTO-GENERATED by scripts/generate-skill-bundle.ts — do not edit by hand.\n` +
     `// Regenerated by \`bun run prepare-skill\` (also run automatically by the build/compile scripts).\n` +
-    `export const SKILL_BUNDLE: Record<string, string> = {\n${entries}\n};\n`;
+    `export const SKILL_BUNDLES: Record<string, Record<"claude" | "copilot", Record<string, string>>> = {\n${entries}\n};\n`;
 
-  fs.mkdirSync(path.dirname(outPath), { recursive: true });
-  fs.writeFileSync(outPath, output, "utf-8");
-  console.log(`✓ Generated ${path.relative(repoRoot, outPath)} (${Object.keys(bundle).length} files)`);
+  mkdirSync(dirname(outPath), { recursive: true });
+  await Bun.write(outPath, output);
+
+  // No repo-committed `.copilot/skills/` mirror: Copilot CLI's own project-skill
+  // discovery already falls back to `.claude/skills/` (see the comment on
+  // deriveCopilotSkillMd above), so writing one here would just be an unread
+  // duplicate on disk, not a functional install target.
+
+  const skillNames = Object.keys(bundles);
+  const fileCount = Object.values(bundles).reduce(
+    (n, targets) => n + Object.values(targets).reduce((m, b) => m + Object.keys(b).length, 0),
+    0
+  );
+  console.log(`✓ Generated ${relative(repoRoot, outPath)} (${skillNames.length} skills, ${fileCount} files total: ${skillNames.join(", ")})`);
 }
 
-main();
+main().catch((e) => { console.error(e); process.exit(1); });
