@@ -33,6 +33,8 @@ bun dist/cli.js --content data/priyanka.resume.json                       # full
 bun dist/cli.js --content data/tailored-golang.example.json --one-pager
 bun dist/cli.js --content <file> --theme slate-compact                   # swap theme only
 bun run compile                # bun build --compile -> bin/build-resume (standalone binary)
+bun run generate               # shortcut for the priyanka.resume.json full-doc command above
+bun run generate:onepage       # same, with --one-pager
 ```
 
 There is no test suite yet (`bun test` has nothing to run). Validate changes by
@@ -258,6 +260,8 @@ Two project skills cover the two ends of this repo's content pipeline:
   selects and rephrases (never fabricates) content from `data/`, writes a new
   tailored content JSON, and renders it through this CLI. By convention, working JD
   text files live in `jds/` and generated tailored `<name>.resume.json` + `.docx` +
-  `.pdf` triples live in `output/` (both untracked scratch directories, distinct
-  from `data/`'s committed ground truth and the default `./out` the bare CLI writes
-  to).
+  `.pdf` triples live in `output/`, distinct from `data/`'s committed ground truth
+  and the default `./out` the bare CLI writes to. Neither `jds/` nor `output/` is
+  gitignored — they were historically left untracked by convention, but that's a
+  habit, not an enforced rule; whether a given candidate's JD/tailored-output set
+  gets committed is a per-case call, not automatic.
