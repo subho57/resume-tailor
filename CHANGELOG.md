@@ -1,3 +1,17 @@
+# [1.3.0](https://github.com/subho57/resume-builder/compare/v1.2.0...v1.3.0) (2026-08-01)
+
+
+### Bug Fixes
+
+* preserve executable bit on release binaries via tar/zip archives ([338a03e](https://github.com/subho57/resume-builder/commit/338a03eaf9ee05f748a6d32b026bf26221d9621e))
+
+
+### Features
+
+* add master resume for Aritrika Karmakar ([04afa8b](https://github.com/subho57/resume-builder/commit/04afa8bbf25b23d4b6eec85abde1fa7fdeca31b2))
+* add master-resume-builder skill ([352d65b](https://github.com/subho57/resume-builder/commit/352d65b58bcb793d8c31036f84243979e009d7ac))
+* tailor Aritrika's resume for 2 Precisely BDR applications ([a25cb72](https://github.com/subho57/resume-builder/commit/a25cb722d017b7fd02ed1f00e11914d225ee6419))
+
 # [1.2.0](https://github.com/subho57/resume-builder/compare/v1.1.2...v1.2.0) (2026-07-12)
 
 
