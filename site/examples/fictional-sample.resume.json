@@ -1,0 +1,56 @@
+{
+  "schemaVersion": "1.0.0",
+  "basics": {
+    "name": "Jamie Rivera",
+    "label": "Senior Backend Engineer",
+    "email": "jamie.rivera@example.com",
+    "phone": "+1 555 0100",
+    "location": { "display": "Austin, TX, USA" },
+    "profiles": [
+      { "network": "GitHub", "url": "https://github.com/example", "display": "github.com/example" }
+    ],
+    "summaries": {
+      "default": "Backend engineer with 6+ years building distributed systems in Go and Python. Led a migration from a monolith to event-driven microservices at Northwind Data, cutting p99 latency by 40% and reducing on-call incidents by half."
+    },
+    "activeSummary": "default"
+  },
+  "work": [
+    {
+      "name": "Northwind Data",
+      "location": "Remote",
+      "position": "Senior Backend Engineer",
+      "startDate": "2021-03",
+      "endDate": "",
+      "dateDisplay": "March 2021 – Present",
+      "highlights": [
+        "Led the migration from a monolithic Rails app to event-driven Go microservices, cutting p99 API latency by 40%.",
+        "Introduced a Kafka-based event pipeline with consumer groups and dead-letter queues, reducing data-loss incidents to zero.",
+        "Mentored 3 junior engineers and ran the team's on-call rotation, halving P1 incident volume over two quarters."
+      ]
+    },
+    {
+      "name": "Fictional Robotics Inc.",
+      "location": "Austin, TX",
+      "position": "Backend Engineer",
+      "startDate": "2018-06",
+      "endDate": "2021-02",
+      "dateDisplay": "June 2018 – February 2021",
+      "highlights": [
+        "Built a REST API in Python/Flask serving telemetry data for a fleet of 200+ warehouse robots.",
+        "Migrated the primary datastore from MySQL to PostgreSQL with zero downtime."
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "University of Example",
+      "area": "Computer Science",
+      "studyType": "BS",
+      "dateDisplay": "2014 – 2018"
+    }
+  ],
+  "skills": [
+    { "name": "Languages", "keywords": ["Go", "Python", "SQL"] },
+    { "name": "Infrastructure", "keywords": ["Kafka", "Docker", "Kubernetes", "PostgreSQL"] }
+  ]
+}

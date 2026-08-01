@@ -1,0 +1,6 @@
+body { font-family: system-ui, sans-serif; margin: 0; padding: 2rem; max-width: 900px; }
+.controls { display: flex; gap: 1rem; align-items: center; margin-bottom: 1rem; }
+#editor { border: 1px solid #ccc; height: 400px; overflow: auto; }
+.status { margin-top: 1rem; font-weight: bold; }
+.status.error { color: #b00020; }
+.status.success { color: #0a7d2c; }
