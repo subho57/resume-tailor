@@ -1,9 +1,9 @@
 import { ResumeContent, ResolvedTheme } from "./types";
 import { renderResume } from "./render";
 import { packDocx, convertToPdf, countPdfPages, checkPdfToolchain } from "./pack";
-import * as path from "path";
-import * as os from "os";
-import * as fs from "fs";
+import { mkdtempSync, rmSync } from "node:fs";
+import { join } from "node:path";
+import { tmpdir } from "node:os";
 
 export interface AutofitResult {
   fitted: boolean;
@@ -24,17 +24,17 @@ const clone = (t: ResolvedTheme): ResolvedTheme => JSON.parse(JSON.stringify(t))
 // just-deleted one at the same path or a recently-reused inode. A brand new directory
 // per call is the strongest structural isolation available against that class of bug.
 async function measure(content: ResumeContent, theme: ResolvedTheme, workRoot: string, keywords: string[]): Promise<number> {
-  const work = fs.mkdtempSync(path.join(workRoot, "m-"));
+  const work = mkdtempSync(join(workRoot, "m-"));
   try {
-    const docxPath = path.join(work, "probe.docx");
+    const docxPath = join(work, "probe.docx");
     const { doc } = renderResume(content, theme, keywords);
     await packDocx(doc, docxPath);
-    const pdfPath = convertToPdf(docxPath, work);
-    const pages = countPdfPages(pdfPath);
-    if (process.env.DEBUG_AUTOFIT) console.error(`[DEBUG] measure: pdfPath=${pdfPath} exists=${fs.existsSync(pdfPath)} pages=${pages} lineHeight=${theme.lineHeight} margins=${theme.margins.top} sizeBody=${theme.sizeBody}`);
+    const pdfPath = await convertToPdf(docxPath, work);
+    const pages = await countPdfPages(pdfPath);
+    if (process.env.DEBUG_AUTOFIT) console.error(`[DEBUG] measure: pdfPath=${pdfPath} exists=${await Bun.file(pdfPath).exists()} pages=${pages} lineHeight=${theme.lineHeight} margins=${theme.margins.top} sizeBody=${theme.sizeBody}`);
     return pages;
   } finally {
-    fs.rmSync(work, { recursive: true, force: true });
+    rmSync(work, { recursive: true, force: true });
   }
 }
 
@@ -47,7 +47,7 @@ export async function autofitToSinglePage(content: ResumeContent, startTheme: Re
   const warnings: string[] = [];
   let theme = clone(startTheme);
   const af = theme.autofit;
-  const work = fs.mkdtempSync(path.join(os.tmpdir(), "autofit-"));
+  const work = mkdtempSync(join(tmpdir(), "autofit-"));
 
   let iterations = 0;
   // -1 means "unmeasurable this attempt" (e.g. a transient conversion hiccup), never
@@ -124,6 +124,6 @@ export async function autofitToSinglePage(content: ResumeContent, startTheme: Re
     }
     return { fitted, pages, iterations, finalTheme: theme, warnings };
   } finally {
-    fs.rmSync(work, { recursive: true, force: true });
+    rmSync(work, { recursive: true, force: true });
   }
 }
