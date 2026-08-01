@@ -1,0 +1,310 @@
+{
+  "schemaVersion": "1.0.0",
+  "about": "Ground-truth superset / master data dump for Aritrika Karmakar — assembled from a self-written CV (Aritrika_Karmakar_CV (2).pdf, treated as ground truth on any conflict per the candidate's own instruction) and a LinkedIn data export (run-6e32d320-e255-4fb8-b358-6d572bbb80db.json, used to add context and cross-reference). Every named employer and the candidate's own public LinkedIn presence were independently web-searched to verify and ground company descriptions. Flagged values carry comments noting conflicts across sources and their resolutions.",
+  "basics": {
+    "name": "Aritrika Karmakar",
+    "label": "Digital Marketing Executive | B2B & B2C Campaigns | Content & SEO | Multichannel Campaign Development",
+    "email": "karmakararitrika@gmail.com",
+    "phone": "+44 7760 623484",
+    "location": {
+      "display": "London, England, UK",
+      "city": "London",
+      "region": "England",
+      "countryCode": "GB"
+    },
+    "profiles": [
+      {
+        "network": "LinkedIn",
+        "url": "https://www.linkedin.com/in/aritrika-karmakar",
+        "display": "linkedin.com/in/aritrika-karmakar"
+      }
+    ],
+    "summaries": {
+      "default": "Business Development Representative with 2+ years of experience across B2B SaaS and digital marketing, supporting demand generation, lead nurturing and customer engagement. Experienced in business development, CRM management, lead qualification, outbound prospecting, campaign execution and cross-functional collaboration. MA in Media & Communications with a proven track record of supporting product launches, engaging senior stakeholders and delivering data-driven campaigns that increased engagement by 30% and generated £10K+ in revenue.",
+      "crm-lifecycle": "Hi, I'm Aritrika Karmakar a London-based Marketing & CRM Executive specialising in email, lifecycle, and data-driven digital marketing that drives engagement and retention. I have experience delivering end-to-end CRM and email campaigns using HubSpot and Mailchimp, from audience segmentation and A/B testing to automation, reporting, and optimisation. I've created newsletters, built GDPR-compliant workflows, and improved open and click-through rates through insight-led iteration. Alongside CRM, I manage multi-channel digital campaigns across email, web, and LinkedIn, supporting major industry events and conferences. I enjoy working with data, refining customer journeys, and translating insights into campaigns that feel relevant, human, and effective."
+    },
+    "activeSummary": ""
+  },
+  "preferences": {
+    "locations": ["London"],
+    "hybrid": "",
+    "roles": ["CRM Marketing", "Email Marketing", "Digital Marketing"],
+    "note": "Sourced from the LinkedIn profile's own 'about' text: keen to grow in CRM, email, and digital marketing roles, open to connecting with London-based teams. Not independently corroborated elsewhere, which is expected for a forward-looking preference statement."
+  },
+  "work": [
+    {
+      "name": "Inmisceo",
+      "location": "London Area, United Kingdom",
+      "url": "https://www.linkedin.com/company/inmisceo/",
+      "domainNote": "Technology/training company (~5 employees per RocketReach) — builds learning-technology tools, including the aNewSpring blended-learning platform, for corporate training providers; registered in the UK as INMISCEO LTD under management-consultancy activities (Companies House). Not primarily a marketing/CRM SaaS vendor despite the CRM focus of this role.",
+      "position": "Marketing Executive (CRM & Business Development)",
+      "startDate": "2025-02",
+      "endDate": "",
+      "dateDisplay": "February 2025 – Present",
+      "highlights": [
+        "Supported lead generation initiatives through multi-channel marketing campaigns across email, LinkedIn, website and industry events, contributing to pipeline growth and customer acquisition.",
+        "Collaborated closely with sales and leadership teams to qualify marketing-generated leads, coordinate follow-up activities and support product demos and webinars.",
+        "Managed CRM activities in HubSpot, maintaining audience segmentation, automated workflows and accurate customer records across a 100,000+ contact database.",
+        "Optimised lead nurturing pathways using open, click-through, and conversion rate analytics, resulting in a 45% increase in audience engagement.",
+        "Produced campaign performance reports using Google Analytics and CRM dashboards, delivering actionable insights that informed marketing and sales decisions.",
+        "Ensured campaign QA, UTM tracking accuracy, and delivered monthly CRM campaigns to 100K+ contacts with high QA standards and GDPR compliance.",
+        "Led CRM platform selection and setup, enabling scalable marketing automation and GDPR-compliant data structures from the ground up.",
+        "Designed and implemented cross-channel campaigns across email and LinkedIn using behavioural triggers and A/B testing to improve engagement.",
+        "Developed brand-aligned templates, lifecycle workflows and campaign calendars to support a consistent user experience.",
+        "Conducted regular CRM audits and data-cleansing initiatives to enhance segmentation accuracy and maintain FCA/GDPR compliance.",
+        "Produced videos and web content translating technical features into clear customer value, supporting sales and onboarding efforts."
+      ]
+    },
+    {
+      "name": "Goldsmiths, University of London",
+      "location": "London, United Kingdom",
+      "url": "https://www.linkedin.com/company/143861/",
+      "domainNote": "University careers service — provides career planning, CV/LinkedIn support, employability workshops and events for students (Goldsmiths, University of London Careers Service).",
+      "position": "Marketing & CRM Ambassador",
+      "startDate": "2023-11",
+      "endDate": "2024-06",
+      "dateDisplay": "November 2023 – June 2024",
+      "highlights": [
+        {
+          "text": "Role title: Marketing & CRM Ambassador.",
+          "flagged": true,
+          "alt": "LinkedIn lists this same role (same company, same Nov 2023 – Jun 2024 dates) as \"Marketing and Administration Student Ambassador\".",
+          "note": "CV (ground truth per candidate instruction) says \"Marketing & CRM Ambassador\"; LinkedIn's own listing uses substantively different wording, emphasizing administration over CRM. Kept the CV's title as the position field; LinkedIn's variant is preserved here since the schema has no flagged field for a plain position/title string."
+        },
+        "Supported CRM-led digital campaigns reaching 50,000+ users, driving engagement and awareness across student-focused communications.",
+        "Managed promotion of university events and student engagement initiatives across social media and digital platforms, coordinating logistics and post-event data uploads to ensure clean, actionable records.",
+        "Produced campaign performance reports using Google Analytics and CRM dashboards, tracking engagement metrics and identifying optimisation opportunities.",
+        "A/B tested headlines, formats, and internal linking approaches to improve search performance and engagement.",
+        "Delivered actionable campaign insights to stakeholders via Excel dashboards and analytics tools, enabling informed decision-making and continuous optimisation.",
+        "Developed visually appealing graphics and engaging content for Instagram to promote internal and external events and workshops run by the Careers Service.",
+        "Managed social media platforms during events, capturing moments and creating stories and reels to enhance student engagement and brand visibility.",
+        "Crafted bulk emails and newsletters targeting the student body, showcasing upcoming events, workshops and opportunities offered by the Careers Service.",
+        "Provided office administration support: handling student inquiries, managing calls, and booking appointments for CV checks and career guidance.",
+        "Represented Goldsmiths on student panels and delivered talks sharing experiences at on-campus recruitment and widening-participation events (e.g. taster days, school visits)."
+      ]
+    },
+    {
+      "name": "Anicodedigital",
+      "domainNote": "Digital-marketing / content-writing agency founded 2018 (registered as a firm in 2020 by founder Ekta); single-owner small firm offering SEO, PPC, social media management and content creation. LinkedIn lists two slightly different taglines for this company across the candidate's two stints here (\"Information Technology Services\" in 2023, \"Digital Marketing Agency\" in 2020) — treated as the same company, not two different employers.",
+      "position": "Content Creator",
+      "startDate": "2023-03",
+      "endDate": "2023-06",
+      "dateDisplay": "March 2023 – June 2023",
+      "summary": "Internship (Remote), per LinkedIn. No detailed role description is available in any source — not mentioned in the CV at all; left without highlights rather than invented ones.",
+      "highlights": []
+    },
+    {
+      "name": "Adya Info Help",
+      "location": "Kolkata, West Bengal, India",
+      "domainNote": "Kolkata-based bespoke academic-writing / assignment-help service for international students (~20 employees per ZoomInfo).",
+      "position": "Academic Content Writer",
+      "startDate": "2022-09",
+      "endDate": "2022-12",
+      "dateDisplay": "September 2022 – December 2022",
+      "summary": "Full-time, per LinkedIn. Not mentioned in the CV.",
+      "highlights": [
+        "Wrote content across academic topics including business, management, science and social studies.",
+        "Edited and proofread existing content for accuracy and clarity.",
+        "Collaborated with editors and other writers to ensure content met required standards.",
+        "Used current research and data to ensure content accuracy, following appropriate citation styles."
+      ]
+    },
+    {
+      "name": "The Statesman",
+      "location": "Kolkata, West Bengal, India",
+      "url": "https://www.linkedin.com/company/the-statesman/",
+      "domainNote": "Major Indian English-language daily newspaper, founded 1875, headquartered in Kolkata (also published in Delhi, Siliguri and Bhubaneswar) — approximately 234,000 weekday circulation.",
+      "position": "Editor",
+      "startDate": "2021-10",
+      "endDate": "2021-10",
+      "dateDisplay": "October 2021",
+      "summary": "Internship, per LinkedIn. Not mentioned in the CV.",
+      "highlights": [
+        "Edited and copywrote daily news, stories and periodicals using various tools and techniques.",
+        "Designed layouts and formats to optimise news coverage.",
+        "Collaborated with editors, reporters, photojournalists and anchors to support efficient coverage."
+      ]
+    },
+    {
+      "name": "Contentlane",
+      "location": "Kolkata, West Bengal, India",
+      "domainNote": "Kolkata-based content-writing marketplace/agency founded 2015 by Ashwini Sah and Kuldeep Sharma; roughly 17 employees, has served 500+ client companies.",
+      "position": "Writer",
+      "startDate": "2021-05",
+      "endDate": "2021-07",
+      "dateDisplay": "May 2021 – July 2021",
+      "summary": "Internship, per LinkedIn. Not mentioned in the CV.",
+      "highlights": [
+        "Wrote articles for the creative-writing department, including restaurant/cafe reviews and travel pieces on honeymoon destinations and tours.",
+        "Suggested new ideas and topics to improve article quality."
+      ]
+    },
+    {
+      "name": "Anicodedigital",
+      "domainNote": "Same company as the 2023 \"Content Creator\" stint above — see that entry's domain note. This is an earlier, separate internship roughly three years prior.",
+      "position": "Content Writer",
+      "startDate": "2020-02",
+      "endDate": "2020-05",
+      "dateDisplay": "February 2020 – May 2020",
+      "summary": "Internship, per LinkedIn. Not mentioned in the CV.",
+      "highlights": [
+        "Wrote product reviews, descriptions and technology articles.",
+        "Wrote instructional booklets and business-focused write-ups.",
+        "Wrote motivational articles and short stories."
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "Goldsmiths, University of London",
+      "area": "Media and Communications",
+      "studyType": "MA",
+      "startDate": "2023-09",
+      "endDate": "2024",
+      "dateDisplay": "September 2023 – 2024",
+      "courses": [
+        "Media, Law and Ethics",
+        "Introduction to Media and Communications",
+        "Promotional Culture",
+        "Film Producing Fundamentals",
+        "Understanding the UK Media Industries – Fiction Production"
+      ]
+    },
+    {
+      "institution": "University of Calcutta",
+      "area": "English Literature",
+      "studyType": "BA",
+      "startDate": "2019",
+      "endDate": "2022",
+      "dateDisplay": "2019 – 2022",
+      "detail": "Relevant coursework per LinkedIn: History of English Literature and Philology, European Classical Literature, Indian Writing in English, British poetry and drama (17th century), American Literature, Popular Literature, Women's Writing, Early 20th Century British Literature, Modern European Drama, Modern Indian Writing in English Translation, Literary Types, Rhetoric and Prosody, Communicative English, Business Communication."
+    },
+    {
+      "institution": "Auxilium Convent School",
+      "area": "Commerce with Maths",
+      "studyType": "High School",
+      "endDate": "2019",
+      "dateDisplay": "2019",
+      "detail": "Not mentioned in the CV; from LinkedIn only. No start date given by any source."
+    }
+  ],
+  "skills": [
+    {
+      "name": "CRM & Marketing Automation",
+      "keywords": ["HubSpot", "Salesforce", "Klaviyo", "Shopify", "Marketing Automation", "Lifecycle Automation Workflows", "CRM Databases"]
+    },
+    {
+      "name": "Campaign Analytics & Reporting",
+      "keywords": ["Google Analytics", "Campaign Performance Analysis", "Campaign Reporting", "A/B Testing and Optimisation", "GDPR Compliance"]
+    },
+    {
+      "name": "SEO & Content",
+      "keywords": ["SEO Tools", "SEO Copywriting", "Content Strategy", "Content Development", "Written Communication", "WordPress"]
+    },
+    {
+      "name": "Email & Lifecycle Marketing",
+      "keywords": ["Email Marketing", "Email Strategy", "Email Management"]
+    },
+    {
+      "name": "Social & Brand",
+      "keywords": ["Social Media Strategy", "Social Media Management", "Social Media Marketing", "Social Media Content Creation", "Brand Strategy", "Branding & Identity", "B2B Marketing Strategy", "Media Strategy", "LinkedIn Sales Navigator"]
+    },
+    {
+      "name": "Design & Tools",
+      "keywords": ["Adobe Creative Cloud", "Canva", "MS Office Suite", "Microsoft Outlook", "AI Tools", "E-Commerce"]
+    },
+    {
+      "name": "Project Coordination & Professional Skills",
+      "keywords": ["Trello", "Monday.com", "Interpersonal Communication", "Problem Solving", "Attention to Detail", "Event Planning", "Administrative Assistance", "Customer Support"]
+    }
+  ],
+  "certifications": [
+    {
+      "title": "Foundations of Digital Marketing and E-commerce",
+      "issuer": "Google (via Coursera)",
+      "date": "January 2025",
+      "url": "https://coursera.org/share/5f297aec62bda09c822ecf81264c4fb2",
+      "urlLabel": "certificate"
+    },
+    {
+      "title": "Inbound Marketing Certification",
+      "issuer": "HubSpot Academy",
+      "date": "November 2025",
+      "url": "https://app-eu1.hubspot.com/academy/achievements/n587vpn1/en/1/aritrika-karmakar/inbound",
+      "urlLabel": "certificate"
+    },
+    {
+      "title": "SEO",
+      "issuer": "HubSpot Academy",
+      "date": "October 2025",
+      "url": "https://app-eu1.hubspot.com/academy/achievements/6wgd4809/en/1/aritrika-karmakar/seo",
+      "urlLabel": "certificate"
+    },
+    {
+      "title": "Campaign Manager 360 Certification Exam",
+      "issuer": "Skillshop (Google)",
+      "date": "November 2025",
+      "url": "https://skillshop.credential.net/a9e0074d-4cff-41fb-9073-c85f4445ee3a",
+      "urlLabel": "certificate"
+    },
+    {
+      "title": "Salesforce for Marketers",
+      "issuer": "LinkedIn Learning",
+      "date": "November 2025",
+      "url": "https://www.linkedin.com/learning/certificates/56c9f4d66c1fcf70a52dc82aece99c72653c5a284fc50a3a00ac4747f22104ff",
+      "urlLabel": "certificate"
+    },
+    {
+      "title": "Marketing and Brand Strategy",
+      "issuer": "Chartered Institute of Marketing (CIM)",
+      "date": "December 2025"
+    },
+    {
+      "title": "McKinsey Forward Program",
+      "issuer": "McKinsey.org",
+      "date": "June 2026",
+      "url": "https://www.credly.com/badges/d5917cb4-8e3f-4b1c-8012-5007a0ae922d/public_url",
+      "urlLabel": "certificate"
+    },
+    {
+      "title": "LVMH Certificate",
+      "issuer": "LVMH"
+    }
+  ],
+  "certificationsNote": "LVMH Certificate's exact date and detailed issuer aren't given by the CV (its only source) and it doesn't appear in the LinkedIn certifications list at all — kept as the bare title only rather than guessing a date.",
+  "certificationsNoteFlagged": true,
+  "recommendations": [
+    {
+      "by": "The Gold Award (Goldsmiths, University of London Careers Service)",
+      "role": "Personal & Professional Development Scheme",
+      "relationship": "Programme-completion recognition, not a personal reference",
+      "text": "Aritrika completed the Gold Award in 2024. The Gold Award is a one-year personal and professional skills development programme run by the Goldsmiths (University of London) Careers Service. The Gold Award provides students with opportunities to identify, develop and reflect on their professional skill-set in a variety of ways. In completing the programme alongside their academic studies, Aritrika showed sustained commitment and dedication to their personal and professional development. Aritrika also participated in workshops to develop key employability skills and explore new career opportunities. Alongside attending these workshops, Aritrika completed and reflected on at least 40 hours of relevant work experience. By completing the Gold Award this year, Aritrika showed resilience and creativity in a new and evolving work environment."
+    }
+  ],
+  "companyContext": [
+    {
+      "name": "Inmisceo",
+      "text": "Verified via web search (RocketReach, UK Companies House): a small (~5 employee) London-based technology/training company building learning-technology tools such as the aNewSpring blended-learning platform for corporate training providers. Registered as INMISCEO LTD under management-consultancy activities. Not primarily a marketing/CRM SaaS vendor, despite this role's CRM focus."
+    },
+    {
+      "name": "Goldsmiths, University of London",
+      "text": "Verified via web search: a well-known UK university; its Careers Service provides career planning, CV/LinkedIn support, and employability workshops/events for students."
+    },
+    {
+      "name": "Anicodedigital",
+      "text": "Verified via web search: a digital-marketing/content-writing agency founded 2018, registered as a firm in 2020 by founder Ekta; small single-owner firm offering SEO, PPC, social media and content-creation services."
+    },
+    {
+      "name": "Adya Info Help",
+      "text": "Verified via web search (ZoomInfo, JustDial): a Kolkata-based academic-writing/assignment-help service for international students, roughly 20 employees."
+    },
+    {
+      "name": "The Statesman",
+      "text": "Verified via web search (Wikipedia, Britannica): a major Indian English-language daily newspaper founded 1875, headquartered in Kolkata, ~234,000 weekday circulation, also published in Delhi, Siliguri and Bhubaneswar."
+    },
+    {
+      "name": "Contentlane",
+      "text": "Verified via web search: a Kolkata-based content-writing marketplace/agency founded 2015 by Ashwini Sah and Kuldeep Sharma, roughly 17 employees, has served 500+ client companies."
+    }
+  ]
+}
