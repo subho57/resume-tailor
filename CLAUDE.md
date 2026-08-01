@@ -197,8 +197,9 @@ than a simple write-flush race — investigate with `DEBUG_AUTOFIT=1` (prints ea
 - `src/cli.ts` — argument parsing and orchestration (validate -> resolve theme ->
   optional autofit -> render -> pack -> convert to PDF).
 - `src/node-shim.d.ts` — ambient fallback declarations for the `node:` built-ins the
-  CLI uses (`fs`/`path`/`os`/`child_process`, `__dirname`, `process`). `@types/node`
-  supersedes it in a normal install; it only exists so the project still type-checks
+  CLI uses (`fs`/`path`/`os`, `__dirname`, `process`; no `child_process` block —
+  nothing imports it since the Bun Shell conversion). `@types/node` supersedes it
+  in a normal install; it only exists so the project still type-checks
   where `@types/node` can't be fetched. Not dead code — don't delete it.
 
 Data flow: content JSON + theme JSON -> `validate` (both, independently) ->
