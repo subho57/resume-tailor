@@ -165,7 +165,7 @@ async function installSkill(name?: string) {
         await Bun.write(full, content);
         if (relPath.endsWith(".py")) chmodSync(full, 0o755);
       }
-      console.log(`✓ Installed ${skillName} skill (standalone variant — uses build-resume directly, no repo) to:`);
+      console.log(`✓ Installed ${skillName} skill (standalone variant — uses tailor-resume directly, no repo) to:`);
       console.log(`  ${dest}`);
       console.log(`  Files: ${Object.keys(bundle).join(", ")}`);
     }

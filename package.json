@@ -1,14 +1,14 @@
 {
-  "name": "resume-superset-builder",
+  "name": "resume-tailor",
   "version": "1.3.0",
   "description": "Deterministic, schema-driven resume generator: content JSON + theme preset -> DOCX + PDF, with optional single-page autofit.",
   "bin": {
-    "build-resume": "dist/cli.js"
+    "tailor-resume": "dist/cli.js"
   },
   "scripts": {
     "prepare-skill": "bun scripts/generate-skill-bundle.ts",
     "build": "bun run prepare-skill && tsc -p tsconfig.json",
-    "compile": "bun run prepare-skill && bun build --compile --outfile=bin/build-resume ./src/cli.ts",
+    "compile": "bun run prepare-skill && bun build --compile --outfile=bin/tailor-resume ./src/cli.ts",
     "generate": "bun dist/cli.js --content data/priyanka.resume.json",
     "generate:onepage": "bun dist/cli.js --content data/priyanka.resume.json --one-pager"
   },

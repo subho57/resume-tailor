@@ -93,13 +93,13 @@ defined in ES module scope`. Bun runs it fine regardless.
 
 ## Standalone binary
 
-For a single `build-resume` command usable from anywhere, without typing
+For a single `tailor-resume` command usable from anywhere, without typing
 `bun dist/cli.js` or needing to be in this repo's directory:
 
 ```bash
-bun run compile                # bun build --compile --outfile=bin/build-resume ./src/cli.ts
-cp bin/build-resume ~/.bun/bin/   # any directory already on PATH works
-build-resume --content data/priyanka.resume.json --one-pager
+bun run compile                # bun build --compile --outfile=bin/tailor-resume ./src/cli.ts
+cp bin/tailor-resume ~/.bun/bin/   # any directory already on PATH works
+tailor-resume --content data/priyanka.resume.json --one-pager
 ```
 
 `bun build --compile` bundles the JS, the Bun runtime, and all npm dependencies
@@ -117,7 +117,7 @@ won't pick up edits automatically. Adding a new theme preset also needs a line i
 ### Installing the JD-tailoring skill
 
 ```bash
-build-resume --install-skill
+tailor-resume --install-skill
 ```
 
 Installs a **standalone variant** of the `jd-tailored-resume` Claude Code skill to
@@ -126,7 +126,7 @@ not just this repo checkout. It's the same tailoring workflow, generated from th
 repo's own `.claude/skills/jd-tailored-resume/` at build time
 (`scripts/generate-skill-bundle.ts`), with the repo-specific instructions (`bun
 dist/cli.js`, `data/*.resume.json` in the repo root, the install/build step)
-rewritten to invoke `build-resume` directly — no repo, no build step, themes and
+rewritten to invoke `tailor-resume` directly — no repo, no build step, themes and
 schemas are already embedded in the binary. Re-run `--install-skill` any time to
 update it. This doesn't touch or read this repo's own `.claude/skills/` copy, which
 stays exactly as-is for in-repo use.
@@ -162,27 +162,26 @@ Don't hand-edit `package.json`'s `version` or create git tags manually — seman
 release owns both, and a manual edit can conflict with what it computes next.
 
 Prebuilt binaries are published to
-[GitHub Releases](https://github.com/subho57/resume-builder/releases). This repo is
-private, so downloading a release asset needs repo access (`gh release download`
-while authenticated, or a browser session logged in with access).
+[GitHub Releases](https://github.com/subho57/resume-tailor/releases) — the repo is
+public, so anyone can download a release asset directly, no authentication needed.
 
 | Asset | Platform |
 |---|---|
-| `build-resume-linux-x64.tar.gz` | Linux, x86_64 |
-| `build-resume-linux-arm64.tar.gz` | Linux, ARM64 |
-| `build-resume-macos-x64.tar.gz` | macOS, Intel |
-| `build-resume-macos-arm64.tar.gz` | macOS, Apple Silicon |
-| `build-resume-windows-x64.zip` | Windows, x86_64 |
-| `build-resume-windows-arm64.zip` | Windows, ARM64 |
+| `tailor-resume-linux-x64.tar.gz` | Linux, x86_64 |
+| `tailor-resume-linux-arm64.tar.gz` | Linux, ARM64 |
+| `tailor-resume-macos-x64.tar.gz` | macOS, Intel |
+| `tailor-resume-macos-arm64.tar.gz` | macOS, Apple Silicon |
+| `tailor-resume-windows-x64.zip` | Windows, x86_64 |
+| `tailor-resume-windows-arm64.zip` | Windows, ARM64 |
 
 A `SHA256SUMS.txt` manifest is attached to each release for integrity verification
 (checksums cover the archives themselves, not their extracted contents). Download
-the matching archive and extract it — `tar -xzf build-resume-<platform>.tar.gz` on
-Linux/macOS, or unzip on Windows. The binary inside (`build-resume` /
-`build-resume.exe`) comes out already executable; no manual `chmod +x` needed —
+the matching archive and extract it — `tar -xzf tailor-resume-<platform>.tar.gz` on
+Linux/macOS, or unzip on Windows. The binary inside (`tailor-resume` /
+`tailor-resume.exe`) comes out already executable; no manual `chmod +x` needed —
 tar's own format preserves the Unix executable bit through extraction, unlike a
 raw binary downloaded directly as a release asset. Put it on PATH and run
-`build-resume --version` to confirm.
+`tailor-resume --version` to confirm.
 
 ### Options
 
@@ -274,7 +273,7 @@ that's expected.
 page count for a mid-loop measurement, causing autofit to report "fit to 1 page" when
 the final PDF is actually 2. This is a pre-existing issue in the LibreOffice-invocation
 pipeline (`src/pack.ts`'s `convertToPdf`/`countPdfPages`), reproduces identically via
-`bun dist/cli.js` and the compiled `build-resume` binary alike, and is not fully
+`bun dist/cli.js` and the compiled `tailor-resume` binary alike, and is not fully
 root-caused yet. Mitigated (file staleness reduced by deleting any pre-existing output
 file first, and a real independent `-1`-vs-"fits" conflation bug in `autofit.ts`'s loop
 is fixed) but not eliminated. If a delivered PDF's page count looks off, open it and

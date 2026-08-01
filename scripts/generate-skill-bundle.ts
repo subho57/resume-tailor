@@ -1,7 +1,7 @@
 // Reads the real .claude/skills/<name>/ directories and generates
 // src/skill-bundle.generated.ts — SKILL_BUNDLES, a Record<skillName, Record<relPath,
 // content>>, embedded into the CLI so `--install-skill [name]` can write standalone
-// variants of these skills to ~/.claude/skills/<name>/ (used by `build-resume`
+// variants of these skills to ~/.claude/skills/<name>/ (used by `tailor-resume`
 // directly, no repo checkout required).
 //
 // A plain-data TS module (not `with { type: "file" }` imports) is used deliberately:
@@ -14,7 +14,7 @@
 // toolchains handle identically.
 //
 // Each skill's SKILL.md gets its own set of anchor-replaced regions (repo/bun
-// instructions -> standalone `build-resume` instructions); everything else in
+// instructions -> standalone `tailor-resume` instructions); everything else in
 // SKILL.md, plus any references/ or scripts/ files, are embedded verbatim.
 //
 // assertReplace fails the whole build (not silently no-ops) if a SKILL.md changes in
@@ -58,8 +58,8 @@ use the plain paths (\`dist/cli.js\`, \`data/…\`, \`.claude/skills/jd-tailored
     `## Where this skill lives
 
 This is a **personal skill** installed at \`~/.claude/skills/jd-tailored-resume/\` by
-the standalone \`build-resume\` CLI binary (\`build-resume --install-skill\`) — there is
-no surrounding repo to check out or build. \`build-resume\` has both shipped theme
+the standalone \`tailor-resume\` CLI binary (\`tailor-resume --install-skill\`) — there is
+no surrounding repo to check out or build. \`tailor-resume\` has both shipped theme
 presets (\`corporate-navy\`, \`slate-compact\`) and both JSON schemas embedded directly;
 you only need the candidate's own superset ground-truth JSON, supplied as a path
 wherever you invoke this skill from.`,
@@ -78,7 +78,7 @@ wherever you invoke this skill from.`,
    fall back on here — this is the ONLY source of factual content, and you cannot
    proceed without it.
 3. **(Optional) a theme name** — defaults to \`corporate-navy\`. Both shipped presets
-   (\`corporate-navy\`, \`slate-compact\`) are built into \`build-resume\` itself; no file
+   (\`corporate-navy\`, \`slate-compact\`) are built into \`tailor-resume\` itself; no file
    lookup needed.`,
     "Inputs you need (superset JSON / theme name)"
   );
@@ -88,7 +88,7 @@ wherever you invoke this skill from.`,
     `Produce a **new** JSON conforming to the same schema the superset uses
 (\`schema/resume.schema.json\` in the repo root). Rules:`,
     `Produce a **new** JSON conforming to the same schema the superset uses
-(the \`resume.schema.json\` structure — embedded in \`build-resume\`, no file lookup
+(the \`resume.schema.json\` structure — embedded in \`tailor-resume\`, no file lookup
 needed). Rules:`,
     "Write the tailored JSON (schema reference)"
   );
@@ -128,10 +128,10 @@ The CLI needs LibreOffice + \`pdfinfo\` for PDF/autofit; if those are unavailabl
 still writes the DOCX and warns, naming exactly what's missing.`,
     `### 7. Render with the CLI
 
-\`build-resume\` is a standalone binary — no repo, no install/build step, no \`bun\`.
+\`tailor-resume\` is a standalone binary — no repo, no install/build step, no \`bun\`.
 
 \`\`\`bash
-build-resume \\
+tailor-resume \\
   --content <output_folder>/<FileName>.resume.json \\
   --theme corporate-navy \\
   --out <output_folder> \\
@@ -197,9 +197,9 @@ This skill directory (\`~/.claude/skills/jd-tailored-resume/\`) contains:
   honestly, with examples. Read it when you need the detail behind steps 1–6.
 - \`scripts/check_keywords.py\` — the keyword-coverage verifier used in step 8.
 
-The generator it drives is the standalone \`build-resume\` binary — themes and schemas
+The generator it drives is the standalone \`tailor-resume\` binary — themes and schemas
 are embedded in it directly; only the candidate's own superset JSON needs to be
-supplied externally. Run \`build-resume --help\` for the full flag list.`,
+supplied externally. Run \`tailor-resume --help\` for the full flag list.`,
     "Files in this skill"
   );
 
@@ -220,9 +220,9 @@ prefix.`,
     `## Where this skill lives
 
 This is a **personal skill** installed at \`~/.claude/skills/master-resume-builder/\`
-by the standalone \`build-resume\` CLI binary (\`build-resume --install-skill
+by the standalone \`tailor-resume\` CLI binary (\`tailor-resume --install-skill
 master-resume-builder\`) — there is no surrounding repo to check out or build.
-\`build-resume\` has the resume content schema embedded directly; you only need the
+\`tailor-resume\` has the resume content schema embedded directly; you only need the
 candidate's raw material and an output path, supplied wherever you invoke this skill
 from.`,
     "Where this skill lives"
@@ -239,7 +239,7 @@ from.`,
 3. **Where to write the output** — default to \`data/<firstname-lastname>.resume.json\`
    in the repo root unless the user names a different path.`,
     `   shows up (e.g. \`.docx\`), convert it first: \`soffice --headless --convert-to txt:Text <file>\`
-   (LibreOffice is required for \`build-resume\`'s PDF/autofit too — install it if
+   (LibreOffice is required for \`tailor-resume\`'s PDF/autofit too — install it if
    missing) or ask the user to paste the content.
 2. **The candidate's full name**, and enough context (current/most recent employer,
    location, field) to distinguish them from unrelated people of the same name in
@@ -256,7 +256,7 @@ bun install && bun run build   # one-time, if dist/ is missing
 bun dist/cli.js --content data/<firstname-lastname>.resume.json
 \`\`\``,
     `\`\`\`bash
-build-resume --content <output_path>.resume.json
+tailor-resume --content <output_path>.resume.json
 \`\`\``,
     "Validate and render (CLI invocation)"
   );
@@ -285,9 +285,9 @@ This skill directory (\`~/.claude/skills/master-resume-builder/\`) contains:
   cross-referencing, the reconciliation worked example, and the fabricated-date
   trap in detail.
 
-The generator it feeds is the standalone \`build-resume\` binary — the resume content
+The generator it feeds is the standalone \`tailor-resume\` binary — the resume content
 schema is embedded in it directly; only the raw material and an output path need to
-be supplied externally. Run \`build-resume --help\` for the full flag list.`,
+be supplied externally. Run \`tailor-resume --help\` for the full flag list.`,
     "Files in this skill"
   );
 
@@ -349,7 +349,7 @@ async function main() {
     };
   }
 
-  // 1. Embed both targets' bundles into the CLI for `build-resume --install-skill`
+  // 1. Embed both targets' bundles into the CLI for `tailor-resume --install-skill`
   //    (personal-skill install, no repo needed).
   const entries = Object.entries(bundles)
     .map(([skillName, targets]) => {

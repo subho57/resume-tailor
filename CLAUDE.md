@@ -32,7 +32,7 @@ bun run build                  # tsc -p tsconfig.json: src/ -> dist/ (commonjs)
 bun dist/cli.js --content data/priyanka.resume.json                       # full ground-truth doc
 bun dist/cli.js --content data/tailored-golang.example.json --one-pager
 bun dist/cli.js --content <file> --theme slate-compact                   # swap theme only
-bun run compile                # bun build --compile -> bin/build-resume (standalone binary)
+bun run compile                # bun build --compile -> bin/tailor-resume (standalone binary)
 bun run generate               # shortcut for the priyanka.resume.json full-doc command above
 bun run generate:onepage       # same, with --one-pager
 ```
@@ -113,7 +113,7 @@ bundled skill, each with its own `transformSkillMd` function and list of extra
 files (e.g. `references/tailoring-guide.md`, `scripts/check_keywords.py` for
 `jd-tailored-resume`; `references/research-guide.md` for `master-resume-builder`) —
 and rewrites each skill's own repo/bun-specific anchor regions in its `SKILL.md`
-(repo/bun instructions -> `build-resume` instructions) via an `assertReplace()`
+(repo/bun instructions -> `tailor-resume` instructions) via an `assertReplace()`
 helper that **throws if an anchor isn't found exactly once** — so editing a
 `SKILL.md` in a way that moves/rewords one of its anchors fails the next `bun run
 build`/`bun run compile` loudly, instead of silently shipping a stale standalone

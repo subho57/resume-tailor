@@ -41,7 +41,7 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-  # Cross-compiles build-resume for every target from this single Linux runner (bun
+  # Cross-compiles tailor-resume for every target from this single Linux runner (bun
   # build --compile downloads the target platform's Bun runtime, it doesn't need to
   # run on that OS). Only runs when the release job actually published something, and
   # checks out main *after* that job's version-bump commit, so each binary's embedded
@@ -55,23 +55,23 @@ jobs:
       matrix:
         include:
           - target: bun-linux-x64
-            binaryName: build-resume
-            archiveName: build-resume-linux-x64.tar.gz
+            binaryName: tailor-resume
+            archiveName: tailor-resume-linux-x64.tar.gz
           - target: bun-linux-arm64
-            binaryName: build-resume
-            archiveName: build-resume-linux-arm64.tar.gz
+            binaryName: tailor-resume
+            archiveName: tailor-resume-linux-arm64.tar.gz
           - target: bun-darwin-x64
-            binaryName: build-resume
-            archiveName: build-resume-macos-x64.tar.gz
+            binaryName: tailor-resume
+            archiveName: tailor-resume-macos-x64.tar.gz
           - target: bun-darwin-arm64
-            binaryName: build-resume
-            archiveName: build-resume-macos-arm64.tar.gz
+            binaryName: tailor-resume
+            archiveName: tailor-resume-macos-arm64.tar.gz
           - target: bun-windows-x64
-            binaryName: build-resume.exe
-            archiveName: build-resume-windows-x64.zip
+            binaryName: tailor-resume.exe
+            archiveName: tailor-resume-windows-x64.zip
           - target: bun-windows-arm64
-            binaryName: build-resume.exe
-            archiveName: build-resume-windows-arm64.zip
+            binaryName: tailor-resume.exe
+            archiveName: tailor-resume-windows-arm64.zip
     steps:
       - uses: actions/checkout@v7
         with:
@@ -96,7 +96,7 @@ jobs:
       # survives the upload-artifact/download-artifact round trip intact even
       # though that round trip is known to drop the *outer* file's own permission
       # bit (see the `attach` job below) — the archive file itself doesn't need
-      # +x, only `build-resume` inside it does, and that's preserved by tar's own
+      # +x, only `tailor-resume` inside it does, and that's preserved by tar's own
       # metadata rather than anything artifact-related.
       - name: Archive ${{ matrix.target }}
         run: |
