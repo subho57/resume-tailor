@@ -7,9 +7,10 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 - `bun install` / `bun run <script>` / `bunx <pkg>` — not npm/yarn/pnpm/npx.
 - `bun <file>` runs TS directly; `bun test` for tests (none exist yet — validate by
   building + generating, see below). Bun auto-loads `.env`; don't add `dotenv`.
-- Only Bun runtime API used is `Bun.which` (`src/pack.ts`, PDF-toolchain preflight).
-  Everything else deliberately uses `node:fs`/`path`/`os`/`child_process` for
-  portability + the compiled binary — don't "modernize" those to `Bun.file` etc.
+- Bun runtime APIs deliberately used: `Bun.which` (toolchain detection), `Bun.file()`
+  + `Bun.write()` (file I/O), Bun Shell `` $`...` `` (subprocesses). `fs.mkdirSync`/
+  `chmodSync`/`rmSync`/`mkdtempSync` and all `path.*`/`os.*` calls deliberately stay on
+  `node:` imports — Bun has no native equivalent.
 
 (Deterministic CLI emitting DOCX/PDF — no server, DB, or frontend, so the generic
 Bun `Bun.serve`/SQLite/React/Tailwind starter notes don't apply here.)
@@ -49,10 +50,19 @@ throws `ReferenceError: exports is not defined in ES module scope` on the compil
 output. Bun runs it fine regardless. If you ever see that exact error, it means a
 command used `node` instead of `bun` — swap it, don't touch the module settings.
 
-If `bun run build` fails with `TS5103: Invalid value for '--ignoreDeprecations'`,
-`tsconfig.json`'s `ignoreDeprecations` value is ahead of the installed `typescript`
-devDependency (it must match the installed compiler's major version, e.g. `"5.0"`
-for TypeScript 5.x) — fix the value, don't suppress the check differently.
+`tsconfig.json` has no `moduleResolution` or `types`-suppressing flags left to babysit
+across a TypeScript major bump — `moduleResolution: "node10"` (and the
+`ignoreDeprecations: "5.0"` that silenced its deprecation warning under TS 5.x) were
+both removed when the project moved to TypeScript 7: `"node10"` was removed outright
+as a valid value (not just deprecated), and once it was gone `ignoreDeprecations` had
+nothing left to suppress. `moduleResolution` is now left unset (TS infers the right
+default for `module: "commonjs"`); an explicit `"types": ["bun", "node"]` was added
+because TS 7 stopped auto-including `@types/bun`'s ambient globals (`Bun.which` in
+`src/pack.ts`) without it — omitting `types` now silently drops `@types/bun` instead
+of including everything under `@types/` like TS 5 did, so `Bun` reads as undefined
+with no warning, only a `Cannot find name 'Bun'` compile error. If a future
+TypeScript major reintroduces either kind of breakage, re-check both settings rather
+than assuming this is a one-time fix.
 
 PDF + autofit require **LibreOffice** (`soffice`) and **Poppler** (`pdfinfo`) on
 PATH, plus the **Carlito** font installed (Calibri-metric-compatible, keeps page
@@ -80,22 +90,49 @@ see it even after `themes/<name>.theme.json` exists on disk.
 `--version`/`-v` prints `package.json`'s `version`, statically imported in `cli.ts`
 for the same reason as `BUILTIN_THEMES` (compiled-binary `__dirname` can't fs-read it).
 
-`--install-skill` writes a standalone variant of the `jd-tailored-resume` skill to
-`~/.claude/skills/jd-tailored-resume/` (personal skill, any project, no repo). Source
-of truth is still this repo's own `.claude/skills/jd-tailored-resume/` — never edit
-`src/skill-bundle.generated.ts` by hand or the standalone skill's content directly;
-edit the real skill files and re-generate. `scripts/generate-skill-bundle.ts` (run via
-the new `bun run prepare-skill` script, which `build` and `compile` both run first)
-reads `SKILL.md`/`references/tailoring-guide.md`/`scripts/check_keywords.py` and
-rewrites 7 specific anchor regions in `SKILL.md` (repo/bun instructions ->
-`build-resume` instructions) via an `assertReplace()` helper that **throws if an
-anchor isn't found exactly once** — so editing `SKILL.md` in a way that moves/rewords
-one of those regions fails the next `bun run build`/`bun run compile` loudly, instead
-of silently shipping a stale standalone skill. `evals/evals.json` is intentionally
-excluded (author-only test content, not needed at invocation time).
-`src/skill-bundle.generated.ts` is gitignored (regenerate with `bun run prepare-skill`
-if it's missing — needed before running `bun src/cli.ts` directly, since that
-bypasses both the `build`/`compile` scripts that normally generate it first).
+`--install-skill [name]` writes a standalone variant of one (or, with no `name`,
+every) bundled project skill to **both** `~/.claude/skills/<name>/` and
+`~/.copilot/skills/<name>/` (personal skill, any project, no repo — same content,
+either assistant's *personal* skill directory). Currently bundled:
+`jd-tailored-resume` and `master-resume-builder`. There is deliberately **no**
+repo-committed `.copilot/skills/` mirror for *project*-scope use — GitHub Copilot
+CLI's own project-skill discovery already falls back to `.claude/skills/` (verified
+by inspecting the installed `copilot` CLI's own bundle: its skill-loading help text
+lists `.github/skills/`, `.agents/skills/`, and `.claude/skills/` as the three
+project sources, `~/.copilot/skills/` and `~/.agents/skills/` as the two personal
+ones — no project-scope `.copilot/skills/` exists in its discovery order), so a
+repo copy of it would just be dead weight. Source of truth is still each skill's
+own `.claude/skills/<name>/` directory — never edit
+`src/skill-bundle.generated.ts` or a standalone skill's installed content by hand;
+edit the real `.claude/skills/<name>/` files and re-generate.
+`scripts/generate-skill-bundle.ts` (run via the `bun run prepare-skill` script,
+which `build` and `compile` both run first) defines a `SKILLS` list — one entry per
+bundled skill, each with its own `transformSkillMd` function and list of extra
+files (e.g. `references/tailoring-guide.md`, `scripts/check_keywords.py` for
+`jd-tailored-resume`; `references/research-guide.md` for `master-resume-builder`) —
+and rewrites each skill's own repo/bun-specific anchor regions in its `SKILL.md`
+(repo/bun instructions -> `build-resume` instructions) via an `assertReplace()`
+helper that **throws if an anchor isn't found exactly once** — so editing a
+`SKILL.md` in a way that moves/rewords one of its anchors fails the next `bun run
+build`/`bun run compile` loudly, instead of silently shipping a stale standalone
+skill. The Claude standalone output is the only hand-written transform target; the
+Copilot personal-install variant is derived from it mechanically by
+`deriveCopilotSkillMd()` — just `.claude/skills` -> `.copilot/skills` in the
+standalone doc's own prose (its "installed at `~/...`" self-description), nothing
+else differs, since both tools parse the same SKILL.md frontmatter format (YAML,
+`name`+`description` required, unknown fields tolerated with a warning rather than
+rejected — also confirmed against the installed `copilot` CLI bundle, not assumed).
+**Do not reintroduce a `trigger: <field>` in that derivation** — an earlier version
+of this code injected `trigger: /<name>`, believing it bound a Copilot slash
+command; it doesn't exist in Copilot's actual schema and was a misreading of an
+unrelated internal telemetry enum sharing the name. To bundle a new skill, add a
+`SkillSpec` entry to the `SKILLS` array (a no-op `(c) => c` transform is fine if it
+has no repo-specific anchors). `jd-tailored-resume/evals/evals.json` is
+intentionally excluded (author-only test content, not needed at invocation time).
+`src/skill-bundle.generated.ts` is gitignored (regenerate with `bun run
+prepare-skill` if it's missing — needed before running `bun src/cli.ts` directly,
+since that bypasses both the `build`/`compile` scripts that normally generate it
+first).
 
 Releases are fully automatic via `.github/workflows/release.yml` + semantic-release
 (`.releaserc.json`) — every push to `main` is analyzed for Conventional Commits
@@ -104,10 +141,21 @@ Releases are fully automatic via `.github/workflows/release.yml` + semantic-rele
 creates the GitHub Release, then `build` (needs: release, conditional on
 `published == 'true'`) cross-compiles all 6 `bun-{linux,darwin,windows}-{x64,arm64}`
 targets from one `ubuntu-latest` runner (Bun downloads the target platform's runtime
-for `--compile`) against the now-bumped version, and `attach` uploads the binaries +
-`SHA256SUMS.txt` onto the release. **Never hand-edit `package.json`'s `version` or
-create a release tag manually** — semantic-release owns both; a manual edit can
-directly conflict with what it computes on the next run.
+for `--compile`) against the now-bumped version, archives each binary into a
+`.tar.gz` (Linux/macOS) or `.zip` (Windows) **before** `actions/upload-artifact`,
+and `attach` uploads the archives + `SHA256SUMS.txt` onto the release. The archiving
+step exists specifically so the Unix executable bit survives — both
+`actions/upload-artifact`/`download-artifact`'s zip round trip (a documented
+GitHub Actions limitation: it drops the executable bit on a *raw* uploaded file,
+though tar/zip's own per-entry permission metadata inside an already-archived file
+passes through unaffected) and a plain HTTP release-asset download (which carries
+no Unix permission metadata at all for a raw binary, unlike an archive format that
+encodes the mode itself and restores it on extraction). Do the archiving in the
+`build` job, before `upload-artifact` — doing it later in `attach`, after the
+round trip, is too late to matter for the CI-side loss and doesn't help end users
+either. **Never hand-edit `package.json`'s `version` or create a release tag
+manually** — semantic-release owns both; a manual edit can directly conflict with
+what it computes on the next run.
 
 **Known bug, not yet root-caused:** under rapid repeated conversions within one
 `--one-pager` run, `src/pack.ts`'s `convertToPdf`/`countPdfPages` can
@@ -192,13 +240,23 @@ and re-packs to measure pages) -> `renderResume` -> `packDocx` -> `convertToPdf`
   "Node.js". This mirrors `scripts/check_keywords.py`'s `term_present()`; keep the
   two in sync if either changes.
 
-## Tailoring workflow
+## Master resume + tailoring workflow
 
-The `.claude/skills/jd-tailored-resume/` project skill turns a job description
-into a tailored resume: it reverse-engineers the JD's priorities/keywords, selects
-and rephrases (never fabricates) content from the ground-truth superset in
-`data/`, writes a new tailored content JSON, and renders it through this CLI. By
-convention, working JD text files live in `jds/` and generated tailored
-`<name>.resume.json` + `.docx` + `.pdf` triples live in `output/` (both untracked
-scratch directories, distinct from `data/`'s committed ground truth and the
-default `./out` the bare CLI writes to).
+Two project skills cover the two ends of this repo's content pipeline:
+
+- `.claude/skills/master-resume-builder/` builds the ground-truth superset itself:
+  given a pile of raw material (old resumes, a LinkedIn export, notes, transcripts),
+  it extracts every fact, web-searches each named employer and the candidate's own
+  public footprint to verify/ground and cross-reference, reconciles disagreements
+  across sources via the schema's `flagged`/`note`/`alt` fields (never silently
+  picking one), and never invents a value to fill a gap — a vague source fact (e.g.
+  an unanchored "last year") stays vague in the output, with the gap stated in a
+  note. Writes to `data/<name>.resume.json`.
+- `.claude/skills/jd-tailored-resume/` turns a job description into a tailored
+  resume from that superset: it reverse-engineers the JD's priorities/keywords,
+  selects and rephrases (never fabricates) content from `data/`, writes a new
+  tailored content JSON, and renders it through this CLI. By convention, working JD
+  text files live in `jds/` and generated tailored `<name>.resume.json` + `.docx` +
+  `.pdf` triples live in `output/` (both untracked scratch directories, distinct
+  from `data/`'s committed ground truth and the default `./out` the bare CLI writes
+  to).
