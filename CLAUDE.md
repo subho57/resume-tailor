@@ -203,6 +203,24 @@ than a simple write-flush race — investigate with `DEBUG_AUTOFIT=1` (prints ea
   nothing imports it since the Bun Shell conversion). `@types/node` supersedes it
   in a normal install; it only exists so the project still type-checks
   where `@types/node` can't be fetched. Not dead code — don't delete it.
+- `site/` — separate, own `package.json`/`node_modules`, isolated from the CLI's
+  `bun install`. A client-side-only browser demo (Vite + CodeMirror 6) deployed to
+  GitHub Pages (`https://subho57.github.io/resume-tailor/`) by
+  `.github/workflows/deploy-pages.yml`, distinct from `release.yml`. `site/main.ts`
+  imports `src/render.ts`/`theme.ts`/`validate.ts`/`types.ts` unmodified — those 4
+  files have zero Node/Bun-specific imports, verified deliberately, so the CLI's
+  renderer runs unchanged in a browser bundle. Two things the CLI does that the
+  browser demo structurally cannot: PDF conversion/`--one-pager` autofit (need
+  LibreOffice/Poppler, no server here) and `pack.ts`'s comment-repair step for
+  `flagged` highlights (shells out to `unzip`/`zip`) — both are disclosed as known
+  limitations in `site/index.html`'s `.limitation-note`, not silently broken.
+  `deploy-pages.yml`'s build step only runs `bun install` inside `site/`, so it
+  also needs a **root** `bun install` first — `src/render.ts` (a sibling of
+  `site/`, not an ancestor) imports `"docx"`, and bundler module resolution only
+  walks upward through ancestor `node_modules`, never sideways into a sibling.
+  `site/public/install.sh` (the macOS/Linux one-line installer, linked from both
+  this repo's README and the Pages site) is a plain static file — Vite's
+  `public/` copies it to `dist/` as-is, nothing generates or transforms it.
 
 Data flow: content JSON + theme JSON -> `validate` (both, independently) ->
 `resolveTheme` -> (`autofitToSinglePage` if requested, which internally re-renders

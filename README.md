@@ -1,10 +1,15 @@
-# Resume Superset Builder
+# resume-tailor
 
 A deterministic, schema-driven resume generator. You maintain **one JSON file** of
 resume content plus a small **theme preset**; the TypeScript build script renders a
 predictable `.docx` (and `.pdf`) every time. Hand a job description + the ground-truth
 JSON to an LLM, ask it to emit a tailored JSON, drop that JSON into the same script,
 and you get a matching DOCX + PDF — no manual formatting.
+
+**Try it online:** [subho57.github.io/resume-tailor](https://subho57.github.io/resume-tailor/) —
+a client-side-only demo (no server, no account) that renders a `.docx` straight in
+your browser from a sample or pasted JSON. PDF export and `--one-pager` autofit need
+LibreOffice/Poppler, so they're CLI-only — see "Standalone binary" below.
 
 ## Why JSON, not a DOCX, as the source of truth
 
@@ -35,6 +40,11 @@ src/
   pack.ts         Packs the .docx, converts to .pdf (LibreOffice), counts pages.
   autofit.ts      Single-page autofit loop (shrink spacing -> margins -> font).
   cli.ts          Command-line entry point.
+site/
+  Client-side browser demo (Vite + CodeMirror), deployed to GitHub Pages.
+  Reuses render.ts/theme.ts/validate.ts/types.ts unmodified; no LibreOffice/
+  Poppler in the browser, so no PDF export or --one-pager there. Own dev
+  workflow: `cd site && bun install && bun run dev`.
 ```
 
 ## Install & build
@@ -95,6 +105,21 @@ defined in ES module scope`. Bun runs it fine regardless.
 
 For a single `tailor-resume` command usable from anywhere, without typing
 `bun dist/cli.js` or needing to be in this repo's directory:
+
+**macOS/Linux, one line** (downloads the latest release, installs to
+`~/.local/bin`, runs `--install-skill`, and checks LibreOffice/Poppler/Carlito
+prerequisites via `brew`/`apt`/`dnf`):
+
+```bash
+curl -fsSL https://subho57.github.io/resume-tailor/install.sh | bash
+```
+
+**Windows:** Beta — download
+[`tailor-resume-windows-x64.zip`](https://github.com/subho57/resume-tailor/releases/latest/download/tailor-resume-windows-x64.zip)
+from the latest release and put it on PATH manually; `install.sh` doesn't cover
+Windows.
+
+**Or build from source:**
 
 ```bash
 bun run compile                # bun build --compile --outfile=bin/tailor-resume ./src/cli.ts
