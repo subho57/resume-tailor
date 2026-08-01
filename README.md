@@ -149,7 +149,10 @@ When a release fires, semantic-release bumps `package.json`'s `version`, writes
 doesn't retrigger the workflow), creates the git tag, and creates the GitHub Release.
 A follow-up job then cross-compiles all 6 targets (embedding the version just
 decided — this is why the compile step waits for the version-bump commit rather than
-building first) and attaches the binaries + a `SHA256SUMS.txt` manifest.
+building first), archives each binary into a per-platform `.tar.gz`/`.zip` (so the
+executable bit survives both the CI artifact-passing step and the end user's
+download — see "Prebuilt binaries" below), and attaches the archives + a
+`SHA256SUMS.txt` manifest.
 
 **To cut a release:** just write commits with the right prefix and push/merge to
 `main`. Nothing else to do. `workflow_dispatch` re-runs the same pipeline on demand
@@ -165,15 +168,20 @@ while authenticated, or a browser session logged in with access).
 
 | Asset | Platform |
 |---|---|
-| `build-resume-linux-x64` | Linux, x86_64 |
-| `build-resume-linux-arm64` | Linux, ARM64 |
-| `build-resume-macos-x64` | macOS, Intel |
-| `build-resume-macos-arm64` | macOS, Apple Silicon |
-| `build-resume-windows-x64.exe` | Windows, x86_64 |
-| `build-resume-windows-arm64.exe` | Windows, ARM64 |
+| `build-resume-linux-x64.tar.gz` | Linux, x86_64 |
+| `build-resume-linux-arm64.tar.gz` | Linux, ARM64 |
+| `build-resume-macos-x64.tar.gz` | macOS, Intel |
+| `build-resume-macos-arm64.tar.gz` | macOS, Apple Silicon |
+| `build-resume-windows-x64.zip` | Windows, x86_64 |
+| `build-resume-windows-arm64.zip` | Windows, ARM64 |
 
-A `SHA256SUMS.txt` manifest is attached to each release for integrity verification.
-Download the matching asset, `chmod +x` it (Linux/macOS), put it on PATH, and run
+A `SHA256SUMS.txt` manifest is attached to each release for integrity verification
+(checksums cover the archives themselves, not their extracted contents). Download
+the matching archive and extract it — `tar -xzf build-resume-<platform>.tar.gz` on
+Linux/macOS, or unzip on Windows. The binary inside (`build-resume` /
+`build-resume.exe`) comes out already executable; no manual `chmod +x` needed —
+tar's own format preserves the Unix executable bit through extraction, unlike a
+raw binary downloaded directly as a release asset. Put it on PATH and run
 `build-resume --version` to confirm.
 
 ### Options

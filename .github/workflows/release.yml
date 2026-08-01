@@ -55,17 +55,23 @@ jobs:
       matrix:
         include:
           - target: bun-linux-x64
-            asset: build-resume-linux-x64
+            binaryName: build-resume
+            archiveName: build-resume-linux-x64.tar.gz
           - target: bun-linux-arm64
-            asset: build-resume-linux-arm64
+            binaryName: build-resume
+            archiveName: build-resume-linux-arm64.tar.gz
           - target: bun-darwin-x64
-            asset: build-resume-macos-x64
+            binaryName: build-resume
+            archiveName: build-resume-macos-x64.tar.gz
           - target: bun-darwin-arm64
-            asset: build-resume-macos-arm64
+            binaryName: build-resume
+            archiveName: build-resume-macos-arm64.tar.gz
           - target: bun-windows-x64
-            asset: build-resume-windows-x64.exe
+            binaryName: build-resume.exe
+            archiveName: build-resume-windows-x64.zip
           - target: bun-windows-arm64
-            asset: build-resume-windows-arm64.exe
+            binaryName: build-resume.exe
+            archiveName: build-resume-windows-arm64.zip
     steps:
       - uses: actions/checkout@v7
         with:
@@ -83,15 +89,32 @@ jobs:
       - name: Compile ${{ matrix.target }}
         run: |
           mkdir -p dist-bin
-          bun build --compile --target=${{ matrix.target }} --outfile=dist-bin/${{ matrix.asset }} ./src/cli.ts
+          bun build --compile --target=${{ matrix.target }} --outfile=dist-bin/${{ matrix.binaryName }} ./src/cli.ts
+
+      # Archive here, before actions/upload-artifact, not after: tar/zip's own
+      # format stores the Unix executable bit in its per-entry header, so it
+      # survives the upload-artifact/download-artifact round trip intact even
+      # though that round trip is known to drop the *outer* file's own permission
+      # bit (see the `attach` job below) — the archive file itself doesn't need
+      # +x, only `build-resume` inside it does, and that's preserved by tar's own
+      # metadata rather than anything artifact-related.
+      - name: Archive ${{ matrix.target }}
+        run: |
+          cd dist-bin
+          if [[ "${{ matrix.archiveName }}" == *.zip ]]; then
+            zip "${{ matrix.archiveName }}" "${{ matrix.binaryName }}"
+          else
+            chmod +x "${{ matrix.binaryName }}"
+            tar -czf "${{ matrix.archiveName }}" "${{ matrix.binaryName }}"
+          fi
 
       - uses: actions/upload-artifact@v7
         with:
-          name: ${{ matrix.asset }}
-          path: dist-bin/${{ matrix.asset }}
+          name: ${{ matrix.archiveName }}
+          path: dist-bin/${{ matrix.archiveName }}
           if-no-files-found: error
 
-  # Attaches the 6 binaries + a checksum manifest onto the release the `release` job
+  # Attaches the 6 archives + a checksum manifest onto the release the `release` job
   # already created (gh release upload, not create — the release exists already).
   attach:
     needs: [release, build]
@@ -103,6 +126,14 @@ jobs:
       - uses: actions/download-artifact@v8
         with:
           path: artifacts
+
+      # No chmod-restoring step needed here: the `build` job archives each binary
+      # into a .tar.gz/.zip *before* actions/upload-artifact, and tar/zip's own
+      # per-entry permission metadata survives the upload/download-artifact round
+      # trip even though that round trip is known to drop the executable bit on a
+      # raw (unarchived) file. Extracting the archive restores +x on the binary
+      # inside — no manual `chmod +x` needed by end users either, unlike the old
+      # raw-binary assets.
 
       - name: Generate checksums
         run: |
