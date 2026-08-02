@@ -1,0 +1,8 @@
+Subject: Agentic AI engineer with MCP, multi-agent orchestration, and RAG production experience — {{jobTitle}} at {{companyName}}
+
+Hi {{outreachEmployeeName}},
+
+I just applied for the {{jobTitle}} position and wanted to reach out. I've spent the last 4+ years building enterprise-grade LLM applications and agentic AI systems. I built and shipped the Steampipe MCP server enabling LLM agents to query live cloud infrastructure; designed multi-agent workflows orchestrating OpenAI agents with self-correction loops; architected a RAG pipeline ingesting 1000+ compliance checks deployed on AWS Lambda with Slack integration; and built real-time streaming UIs using WebSocket transport. Strong hands-on Python backend (REST APIs, event-driven, Kafka), React/TypeScript frontend, and full production infrastructure experience (Docker, Kubernetes, GitHub Actions). Excited about driving AI transformation at EY. Would love to discuss the role—here's my application: {{jobLink}}
+
+Thanks,
+Priyanka Chatterjee

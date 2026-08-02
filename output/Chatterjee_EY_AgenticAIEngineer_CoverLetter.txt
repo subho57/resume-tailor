@@ -1,0 +1,19 @@
+Priyanka Chatterjee
+priyankachatterjee9075@gmail.com
++91 8617262536
+github.com/Priyanka-Chatterjee-2000
+
+Dear Hiring Manager,
+
+I'm writing to express my strong interest in the Senior Consultant, Agentic AI Engineer role at EY. With 4+ years of full-stack experience building enterprise-grade LLM applications, multi-agent workflows, and production-grade GenAI solutions in Python and React/TypeScript, I'm excited about the opportunity to drive AI-powered business transformation for EY's global clients.
+
+My core differentiator is hands-on experience shipping production agentic systems from end to end. I built and shipped the Steampipe Model Context Protocol (MCP) server in Python, enabling LLM agents to query live enterprise cloud infrastructure in real time—this directly demonstrates the MCP expertise your role values. I designed a multi-agent orchestration system on the OpenAI Agents SDK that generates cloud policy commands, validates them against live infrastructure, self-corrects failures, and scores results—a concrete example of agentic workflows I've shipped. I architected a RAG-based Pydantic AI agent that ingests documentation and code graphs into S3 vector storage, deployed it to AWS Lambda, and integrated it with Slack for instant developer onboarding—demonstrating full-stack RAG implementation.
+
+On the frontend, I've built real-time streaming interfaces using WebSocket transport (Tic-Tac-Toe multiplayer game with server-authoritative architecture and optimistic UI), and I'm skilled in React/TypeScript component-driven architecture, state management, and API-driven UI patterns. My backend expertise spans Python REST APIs (Gin in Go, Express.js patterns), microservices, event-driven systems (Kafka with DLQs), and responsible AI implementation—I've authored 1,000+ compliance checks across CIS, NIST, HIPAA, PCI DSS frameworks, implementing security guardrails and AI governance practices.
+
+One honest gap: my LLM framework background is OpenAI Agents SDK and Pydantic AI (both Python-based agent frameworks) rather than LangChain/LangGraph. However, LangGraph's node-and-edge workflow model is conceptually similar to what I've built with OpenAI Agents, and I'm confident I can quickly master LangGraph given my production agentic AI experience. Similarly, I've used Go Gin and Express.js for REST backends rather than FastAPI specifically, but the patterns (async request handling, middleware, schema validation) are directly transferable.
+
+I'm drawn to EY's vision of building enterprise-grade GenAI solutions at scale, and I'd welcome the opportunity to bring my full-stack LLM engineering, MCP expertise, and production agentic AI experience to drive impact across your global client base. Thank you for considering my application.
+
+Best regards,
+Priyanka Chatterjee

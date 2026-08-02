@@ -1,0 +1,133 @@
+{
+  "schemaVersion": "1.0.0",
+  "theme": "corporate-navy",
+  "sectionOrder": ["summary", "skills", "work", "projects", "education"],
+  "basics": {
+    "name": "Priyanka Chatterjee",
+    "label": "Agentic AI & GenAI Engineer · Python · React/TypeScript · MCP · LLM Agents · 4+ Years",
+    "email": "priyankachatterjee9075@gmail.com",
+    "phone": "+91 8617262536",
+    "url": "https://priyanka-chatterjee-2000.github.io",
+    "location": {
+      "display": "Kolkata, West Bengal, India",
+      "city": "Kolkata",
+      "region": "West Bengal",
+      "countryCode": "IN"
+    },
+    "profiles": [
+      {
+        "network": "GitHub",
+        "username": "Priyanka-Chatterjee-2000",
+        "url": "https://github.com/Priyanka-Chatterjee-2000",
+        "display": "github.com/Priyanka-Chatterjee-2000"
+      },
+      {
+        "network": "LinkedIn",
+        "username": "priyanka-9075",
+        "url": "https://linkedin.com/in/priyanka-9075",
+        "display": "linkedin.com/in/priyanka-9075"
+      }
+    ],
+    "summaries": {
+      "default": "Full-stack Agentic AI and GenAI engineer with 4+ years building enterprise-grade LLM applications, multi-agent workflows, retrieval-augmented generation pipelines, and real-time streaming copilot interfaces in Python and React/TypeScript. Built and shipped an MCP server providing standardized, real-time LLM agent access to enterprise cloud data; designed multi-agent workflows orchestrating LLM agents to generate, validate, and refine policy commands with self-correction loops. Architected RAG-based Pydantic AI agent ingesting documentation and code graphs into vector storage, deployed to AWS Lambda with Slack Bot API integration for instant developer onboarding. Strong expertise in full-stack AI: Python backends (FastAPI-style REST APIs, event-driven architectures), React/TypeScript frontends (WebSocket streaming, component SDKs), prompt engineering, tool/function calling, responsible AI guardrails, and production infrastructure (Docker, Kubernetes, GitHub Actions)."
+    },
+    "activeSummary": "default"
+  },
+  "skills": [
+    {
+      "name": "AI & LLM Engineering",
+      "keywordsText": "LLM Application Development, Agentic Workflows, Multi-Agent Systems, Retrieval-Augmented Generation (RAG), Prompt Engineering, Tool/Function Calling, Model Context Protocol (MCP), OpenAI Agents SDK, Pydantic AI, LLM Observability, Semantic Search, Vector Embeddings"
+    },
+    {
+      "name": "Languages",
+      "keywordsText": "Python, TypeScript, JavaScript (ES6+), Go, SQL, Bash, HCL"
+    },
+    {
+      "name": "Frontend & UI Development",
+      "keywordsText": "React, TypeScript, Next.js, MUI, WebSocket, Server-Sent Events (SSE), streaming UI, real-time interfaces, component-driven architecture, reusable component SDKs, state management, API-driven UI"
+    },
+    {
+      "name": "Backend & APIs",
+      "keywordsText": "REST APIs, gRPC, Python backend services, Microservices, Event-Driven Architecture, Serverless, Express.js, Gin, OAuth 2.0"
+    },
+    {
+      "name": "Data & Databases",
+      "keywordsText": "PostgreSQL, Redis, DuckDB, Vector Databases, S3 Vector Storage, Query Optimization, Embeddings, Knowledge Retrieval"
+    },
+    {
+      "name": "Messaging & Streaming",
+      "keywordsText": "Apache Kafka, consumer groups, dead-letter queues (DLQs), event-driven pipelines, WebSocket streaming, real-time processing"
+    },
+    {
+      "name": "Cloud & Infrastructure",
+      "keywordsText": "AWS (Lambda, EC2, S3, CloudWatch, RDS), Azure, GCP, Docker, Kubernetes, OpenShift, multi-cloud"
+    },
+    {
+      "name": "DevOps & CI/CD",
+      "keywordsText": "GitHub Actions, CI/CD pipelines, automated testing, release automation, containerized deployment, monitoring, observability"
+    },
+    {
+      "name": "Responsible AI & Security",
+      "keywordsText": "PII protection, data privacy, AI security, responsible AI guardrails, prompt injection mitigation, safe tool execution, AI governance, compliance frameworks (CIS, NIST, HIPAA, PCI DSS)"
+    },
+    {
+      "name": "Core CS",
+      "keywordsText": "Data structures and algorithms, system architecture, API design, performance optimization, distributed systems"
+    }
+  ],
+  "work": [
+    {
+      "name": "Turbot HQ, Inc.",
+      "location": "Remote",
+      "dateDisplay": "August 2022 – April 2026",
+      "position": "Software Engineer I",
+      "roleDisplay": "senior-only",
+      "highlights": [
+        "Built the Steampipe Model Context Protocol (MCP) server end to end in Python, providing LLM agents with standardized, real-time access to enterprise cloud and security data for retrieval and analysis; enables agentic workflows to interact with live infrastructure.",
+        "Designed a multi-agent workflow on the OpenAI Agents SDK orchestrating LLM agents that generate cloud preventive-policy commands (e.g., blocking public S3 buckets by region), validate them in a live test environment, self-correct failures, and score accounts against internal security metrics.",
+        "Built a RAG-based internal Pydantic AI agent that resolves cross-team queries by ingesting documentation and code graphs for all internal repositories into S3 vector storage; deployed to AWS Lambda and integrated with Slack Bot API, instantly resolving onboarding and cross-team queries for developers.",
+        "Designed and developed a REST API microservice in Go using the Gin framework with OAuth 2.0 authentication, containerized with Docker, deployed to AWS EC2, and served as a gRPC client for internal microservices; handled production traffic for a SaaS platform.",
+        "Built a Kafka-based, fire-and-forget event-driven pipeline for policy-enforcement workflows with asynchronous consumer processing and dead-letter queue (DLQ) for fault tolerance; ensured reliability and observability in high-volume data processing.",
+        "Authored compliance and security modules in HCL + SQL covering 1,000+ resource checks across CIS (AWS, Azure, GCP), NIST, HIPAA, PCI DSS frameworks used by enterprise customers in finance and healthcare; implemented responsible AI practices and security guardrails for cloud governance.",
+        "Led an LLM-driven Claude Code skill automating code refactoring, unit test generation, deployment, and Terraform-driven integration testing; migrated 35+ Azure cloud-governance modules from polling to push-based eventing via Azure Event Grid, cutting latency 70–90%.",
+        "Engineered core features for Tailpipe (Go-based observability CLI on DuckDB + Parquet) lifting log-processing throughput 30% to 1,000+ records per second; authored 11 AWS log-source tables with standardized error handling and cross-platform smoke-test pipeline in GitHub Actions."
+      ]
+    },
+    {
+      "name": "Kredey (Kredey Innovations Pvt. Ltd.)",
+      "location": "Remote",
+      "dateDisplay": "2021",
+      "position": "Full-Stack Website Developer (Intern)",
+      "highlights": [
+        "Built full-stack React + Firebase PWA with full-text and semantic search powered by Elasticsearch, supporting real-time data discovery over a NoSQL backend; implemented real-time notifications and responsive UI/UX."
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "name": "Lila Tic-Tac-Toe — Real-Time Multiplayer Game",
+      "dateDisplay": "2026",
+      "description": "Full-stack real-time system: React 19 + TypeScript frontend on Vercel; Go-based Nakama game server with PostgreSQL on Fly.io. Server-authoritative architecture over WebSocket transport with real-time state streaming, KV-storage matchmaking, optimistic UI with failure recovery, and reconnect-into-active-match reliability. Demonstrates streaming interfaces, real-time data synchronization, and distributed systems reliability patterns critical for copilot and agent UIs."
+    },
+    {
+      "name": "TODO / Tasks REST API",
+      "dateDisplay": "April 2026",
+      "description": "Full-stack REST API in TypeScript with Bun, Express.js 5, and SQLite (bun:sqlite). JWT authentication, RBAC, prepared-statement CRUD service layer, database migrations, and schema validation with Zod. Demonstrates component-driven API design, typed clients, reusable service patterns, and production-grade backend practices."
+    },
+    {
+      "name": "General-Purpose AI Chatbot / Agent with MCP",
+      "dateDisplay": "June 2025 – August 2025",
+      "description": "Agentic chatbot framework built with Pydantic AI featuring configurable external MCP servers via persistent MongoDB-backed registry, JSON config loader with strict validation, per-server failure isolation, native tool calling, mid-conversation multi-model switching (OpenAI, Gemini, Anthropic, Mistral), conversation-history persistence, sync + streaming output, prompt-injection safeguards, and Logfire observability. Demonstrates multi-agent orchestration, tool integration, and production-grade LLM application architecture."
+    }
+  ],
+  "education": [
+    {
+      "institution": "University of Engineering & Management (UEM)",
+      "location": "Kolkata, West Bengal, India",
+      "degreeDisplay": "Bachelor of Technology in Computer Science and Engineering",
+      "dateDisplay": "August 2019 – May 2023",
+      "score": "CGPA: 9.28",
+      "detail": "Relevant Coursework: Object-Oriented Programming, DBMS, Data Structures and Algorithms, Shell Scripting in Linux, Low-Level Design, High-Level Design"
+    }
+  ]
+}

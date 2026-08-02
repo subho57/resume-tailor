@@ -1,0 +1,155 @@
+EY - GDS Consulting - AIA - Agentic AI Engineer- Senior
+
+At EY, you’ll have the chance to build a career as unique as you are, with the global scale, support, inclusive culture and technology to become the best version of you. And we’re counting on your unique voice and perspective to help EY become even better, too. Join us and build an exceptional experience for yourself, and a better working world for all.
+
+
+
+
+
+
+
+
+
+Career Family: AIA – AGENTIC AI ENGINEER
+
+
+The opportunity
+
+We are seeking a dynamic Senior Consultant to join our AI & Data Consulting team, focused on building enterprise-grade GenAI and Agentic AI solutions with strong emphasis on LLM engineering, frontend experience layer, reusable UI components, and real-time copilot interfaces.
+
+The ideal candidate will bring a strong combination of AI engineering, LLM application development, agentic AI system design, backend engineering, and modern frontend development expertise. This role requires hands-on experience in building chatbots, copilots, agent-driven workflows, reusable UI SDKs, streaming interfaces, and API-driven AI experiences that are scalable, secure, maintainable, and production-ready.
+
+You will work closely with AI engineers, backend engineers, UX designers, product owners, security teams, platform teams, and business stakeholders to design and implement LLM-powered applications, agentic workflows, Retrieval-Augmented Generation (RAG) pipelines, streaming AI interfaces, and reusable experience-layer components that accelerate enterprise AI adoption and business transformation.
+
+
+
+Your key responsibilities
+
+Technical Excellence:
+
+AI Engineering & Agentic AI Development
+Design and develop enterprise-grade GenAI and Agentic AI applications using LLM frameworks such as LangChain, LangGraph / AutoGen / Google Agent SDK, and Model Context Protocol (MCP).
+Build agentic AI architectures including multi-agent workflows, tool/function calling, enterprise integrations, memory patterns, and autonomous decision flows.
+Develop and maintain Retrieval-Augmented Generation (RAG) pipelines including document ingestion, chunking, embeddings generation, vector indexing, retrieval optimization, and response grounding.
+Implement semantic search and knowledge retrieval solutions using vector databases and hybrid search patterns.
+Develop prompt engineering strategies, tool-based agents, AI workflows, and enterprise copilots aligned to business use cases.
+Contribute to AI evaluation, observability, monitoring, and performance optimization of LLM-powered applications.
+Stay current with emerging trends in GenAI, Agentic AI, LLM frameworks, AI SDKs, multimodal AI, and enterprise AI engineering practices.
+
+
+Frontend & Experience Layer Engineering
+Design and build modern AI user experiences using React, TypeScript, Next.js, reusable UI component libraries, and frontend SDKs.
+Develop chatbot, copilot, and agent-driven interfaces that provide intuitive, responsive, and accessible user experiences.
+Build reusable React and TypeScript components and SDKs that can be consumed across multiple applications and teams.
+Implement state management, client-side performance optimization, accessibility standards, and design system integration for enterprise-grade AI applications.
+Develop API-first and contract-driven UI integrations with backend services, agent APIs, and streaming endpoints.
+Implement extensible plug-in patterns, schema-driven forms, typed API clients, and component-driven architectures for scalable AI experiences.
+
+
+Streaming & Real-time UI Development
+Implement real-time AI interfaces using WebSocket’s, Server-Sent Events (SSE), and token-level LLM response streaming.
+Build streaming chat, copilot, and agent interfaces with incremental rendering, backpressure handling, and low-latency response patterns.
+Develop real-time visualization of agent state, workflow progress, tool usage, and execution traces.
+Optimize streaming performance across frontend, backend, and LLM service layers.
+Ensure safe rendering of model output, including UI-level guardrails, content handling, and secure display patterns.
+
+
+Backend & Platform Engineering
+Design and build scalable backend services using Python, FastAPI, REST APIs, microservices, and event-driven architectures.
+Develop reusable AI platform components, services, APIs, and integrations to accelerate enterprise AI adoption.
+Integrate AI solutions with enterprise systems, third-party applications, workflow platforms, and data services.
+Troubleshoot and optimize AI pipelines, APIs, vector stores, backend services, and cloud-native applications.
+Implement scalable deployment strategies using containerized and cloud-native architectures.
+
+
+Cloud, Infrastructure & DevOps
+Deploy and manage AI applications using Docker, Kubernetes, OpenShift, and cloud-native deployment patterns.
+Build and maintain CI/CD pipelines using GitHub Actions, GitLab CI, and modern DevOps tooling.
+Ensure production readiness through monitoring, observability, automated testing, release management, and operational excellence.
+Support deployment and lifecycle management across development, testing, staging, and production environments.
+Apply scalable deployment patterns for AI services, frontend applications, reusable SDKs, and backend platforms.
+
+
+AI Governance, Security & Responsible AI
+Implement controls for PII protection, data privacy, AI security, compliance, and responsible AI practices.
+Support AI governance through monitoring, observability, auditability, access controls, and policy-aligned implementation.
+Apply guardrails for prompt injection mitigation, safe tool execution, secure API access, and safe rendering of model output in UI experiences.
+Contribute to AI observability practices including monitoring model behavior, hallucination risks, agent trajectories, retrieval quality, latency, accuracy, and user experience performance.
+Ensure adherence to enterprise architecture, information security, accessibility, responsible AI, and engineering standards.
+
+
+Team Collaboration & Delivery Excellence
+Collaborate with AI engineers, backend engineers, UX designers, product owners, security teams, platform teams, and business stakeholders to refine requirements and deliver scalable AI solutions.
+Participate in architecture reviews, code reviews, UX reviews, testing reviews, and technical design discussions.
+Drive engineering excellence through reusable components, documentation, automated testing, scalable design, and production-ready development practices.
+Support production operations including troubleshooting, performance tuning, root-cause analysis, issue resolution, and continuous improvement.
+
+
+Skills and Attributes:
+
+Educational Background
+
+Bachelor’s degree in computer science, Information Technology, Engineering, or a related discipline.
+
+
+Professional Experience
+
+4+ years of professional engineering experience with hands-on exposure to LLM/agent development and modern frontend engineering.
+Strong hands-on proficiency in Python for LLM and agent development, backend services, and AI application engineering.
+Mandatory hands-on proficiency in React and TypeScript, with production experience building Next.js applications and reusable UI components or SDKs.
+Demonstrable experience building chatbots, copilots, or agent-based workflows delivered through modern web UIs.
+Hands-on experience with streaming UI patterns using WebSockets and/or Server-Sent Events (SSE) for token-level LLM streaming and real-time agent updates.
+Strong experience with API-driven UI development and component-driven architecture, including building typed clients, reusable components, and SDKs consumed by multiple applications or teams.
+Hands-on expertise with LLM frameworks such as LangChain, LangGraph / Google Agent SDK, / AutoGen, including their TypeScript SDKs.
+Experience implementing Retrieval-Augmented Generation pipelines, prompt engineering, and tool/function calling for enterprise agent scenarios.
+Proficiency in building scalable backend and streaming services using Python, FastAPI, REST APIs, microservices, and event-driven architecture.
+Working knowledge of ClickHouse, MongoDB, and Redis for AI application data, caching, and analytics patterns.
+Exposure to containerized deployments using Docker, Kubernetes, or OpenShift is preferred.
+Experience implementing CI/CD pipelines using GitHub Actions, GitLab CI, or similar DevOps tooling.
+Familiarity with AI evaluation, observability, monitoring, and production support for LLM- and agent-based systems.
+Strong understanding of PII protection, data privacy, AI security, compliance, and responsible AI practices, including UI-level guardrails and safe rendering of model output.
+Ability to troubleshoot and debug issues across LLM pipelines, agent workflows, streaming APIs, UI components, and production environments.
+Experience in banking or financial services domain is preferred, especially exposure to regulatory, security, and compliance requirements.
+Commitment to engineering quality, including maintainable code, automated testing, reusable components, documentation, and scalable design practices.
+
+
+Soft Skills
+
+Strong analytical and problem-solving capabilities.
+Excellent communication and stakeholder management skills.
+Ability to translate complex business requirements into scalable technical solutions.
+Strong collaboration skills across engineering, product, and business functions.
+Commitment to engineering excellence, continuous learning, and innovation
+
+
+Preferred Certifications
+
+GenAI and LLM focused, AI/ML, or data analytics certifications (Google, Microsoft, AWS, Coursera, etc.)
+
+
+Why Join Us
+
+Be at the forefront of AI-driven innovation across multiple client sectors.
+Work with global clients to drive real business impact.
+Collaborate with a team of AI experts, analytics leaders, and industry specialists in a highly entrepreneurial environment.
+
+
+What we offer
+
+EY Global Delivery Services (GDS) is a dynamic and truly global delivery network. We work across six locations – Argentina, China, India, the Philippines, Poland and the UK – and with teams from all EY service lines, geographies and sectors, playing a vital role in the delivery of the EY growth strategy. From accountants to coders to advisory consultants, we offer a wide variety of fulfilling career opportunities that span all business disciplines. In GDS, you will collaborate with EY teams on exciting projects and work with well-known brands from across the globe. We’ll introduce you to an ever-expanding ecosystem of people, learning, skills and insights that will stay with you throughout your career.
+
+Continuous learning: You’ll develop the mindset and skills to navigate whatever comes next.
+Success as defined by you: We’ll provide the tools and flexibility, so you can make a meaningful impact, your way.
+Transformative leadership: We’ll give you the insights, coaching and confidence to be the leader the world needs.
+Diverse and inclusive culture: You’ll be embraced for who you are and empowered to use your voice to help others find theirs.
+
+
+EY | Building a better working world
+
+
+
+EY exists to build a better working world, helping to create long-term value for clients, people and society and build trust in the capital markets.
+
+
+
+Enabled by data and technology, diverse EY teams in over 150 countries provide trust through assurance and help clients grow, transform and operate.

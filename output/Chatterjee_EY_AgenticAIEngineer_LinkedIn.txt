@@ -1,0 +1,4 @@
+Hi {{outreachEmployeeName}}, I applied for the {{jobTitle}} at {{companyName}} and would love to connect. 4+ years full-stack LLM/agentic AI: built Steampipe MCP server for live cloud agent access, multi-agent orchestration with self-correction, RAG pipelines on AWS Lambda + Slack. Strong Python backend (REST, Kafka), React/TypeScript streaming UI (WebSocket). Excited about driving AI transformation at EY. Open to a chat? {{jobLink}}
+
+Thanks,
+Priyanka
