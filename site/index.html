@@ -3,67 +3,521 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>resume-tailor — tailor your resume to a job description, without lying</title>
-    <meta name="description" content="resume-tailor is a free, open-source CLI and Claude Code/Copilot skill set that turns one JSON source of truth into an ATS-tailored resume for every job — never fabricating a skill or metric you don't have. Try the DOCX generator online, right now, no signup." />
-    <meta property="og:title" content="resume-tailor" />
-    <meta property="og:description" content="One JSON source of truth, tailored honestly to every job description. Deterministic DOCX/PDF output, no fabricated keywords, ever." />
+    <title>resume-tailor — Honest, ATS-Tailored Resume Generator CLI & AI Skill</title>
+    <meta
+      name="description"
+      content="Free, open-source CLI & AI Skill for Claude Code and Copilot. Turn one JSON source of truth into an ATS-tailored resume for every job application — without fabricating a single metric or skill."
+    />
+    <meta name="keywords" content="resume generator, resume tailor, ATS resume, Claude Code skill, Copilot skill, JSON resume, ATS resume builder, open source resume tool" />
+    <meta name="author" content="resume-tailor" />
+    <meta name="robots" content="index, follow" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:site_name" content="resume-tailor" />
+    <meta property="og:title" content="resume-tailor — Tailor Resumes Honestly Without Lying" />
+    <meta
+      property="og:description"
+      content="One JSON source of truth, tailored honestly to every job description. Deterministic DOCX/PDF output, zero fabricated keywords."
+    />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://subho57.github.io/resume-tailor/" />
+    <meta property="og:image" content="https://subho57.github.io/resume-tailor/infographic.svg" />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="resume-tailor — Honest ATS Resume Tailoring" />
+    <meta name="twitter:description" content="One JSON source of truth, tailored honestly to every job description. No fabricated experience, ever." />
+    <meta name="twitter:image" content="https://subho57.github.io/resume-tailor/infographic.svg" />
+
     <link rel="canonical" href="https://subho57.github.io/resume-tailor/" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- JSON-LD Structured Data (SoftwareApplication + FAQPage) -->
     <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "SoftwareApplication",
-      "name": "resume-tailor",
-      "applicationCategory": "DeveloperApplication",
-      "operatingSystem": "macOS, Linux, Windows (Beta)",
-      "description": "Deterministic, schema-driven resume generator that tailors resumes to job descriptions without fabricating experience.",
-      "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" }
-    }
+      [
+        {
+          "@context": "https://schema.org",
+          "@type": "SoftwareApplication",
+          "name": "resume-tailor",
+          "applicationCategory": "DeveloperApplication",
+          "operatingSystem": "macOS, Linux, Windows (Beta)",
+          "description": "Deterministic, schema-driven resume generator that tailors resumes to job descriptions without fabricating experience.",
+          "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+          "url": "https://subho57.github.io/resume-tailor/"
+        },
+        {
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "How does resume-tailor avoid fabricating skills or experience?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The tailoring prompt and skill pipeline operate strictly on the content present in your JSON source of truth. It can rephrase sentences to highlight relevant terminology from the job description, but it is explicitly forbidden from inventing job titles, companies, dates, or unverified achievements."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is my resume data stored or sent to any server?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "No. When using the CLI tool, it runs completely on your local machine. When using this browser page, the JSON parsing and DOCX generation are executed 100% client-side. Nothing is ever transmitted to a backend server."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How do I use it with Claude Code or GitHub Copilot?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Run tailor-resume --install-skill. This copies both bundled skills into your local ~/.claude/skills/ and ~/.copilot/skills/ directories."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What formats does resume-tailor export to?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The CLI exports clean Microsoft Word .docx documents as well as formatted .pdf files. The web interface generates high-fidelity .docx files directly in your browser."
+              }
+            }
+          ]
+        }
+      ]
     </script>
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
-    <main>
-      <h1>resume-tailor</h1>
-      <p class="tagline">
-        One hand-edited resume drifts across a dozen applications. Under pressure to match a job
-        description, it's tempting to inflate a keyword you don't really have — that collapses in
-        an interview. resume-tailor keeps one JSON source of truth and tailors it honestly to each
-        job's own vocabulary: select and rephrase real experience, never invent it.
-      </p>
-      <img src="./infographic.svg" alt="Pipeline: JSON source of truth, validated, tailored without fabricating, autofit and rendered, to DOCX and PDF" class="infographic" />
-      <p class="free-note">
-        <strong>Entirely free.</strong> No account, no subscription — a static binary, plus the
-        Claude Code or GitHub Copilot subscription you already have. <code>--install-skill</code>
-        drops the tailoring workflow into your existing <code>~/.claude/skills/</code> or
-        <code>~/.copilot/skills/</code>, whichever you already use.
-      </p>
-      <h2>Install</h2>
-      <pre><code>curl -fsSL https://subho57.github.io/resume-tailor/install.sh | bash</code></pre>
-      <p>macOS and Linux. Windows support is in <strong>Beta</strong> —
-        <a href="https://github.com/subho57/resume-tailor/releases/latest/download/tailor-resume-windows-x64.zip">download the latest Windows build directly</a>.
-      </p>
-      <h2>Try it now — right in this page</h2>
-      <p class="limitation-note">
-        Runs entirely in your browser — nothing is uploaded. One difference from the
-        CLI: if your JSON uses a <code>flagged: true</code> highlight (for
-        reconciling conflicting facts), its Word comment may not render perfectly
-        here, since the CLI's comment-repair step needs tools this page can't run.
-        Everything else matches the CLI's output exactly.
-      </p>
-      <div class="controls">
-        <label for="theme-select">Theme</label>
-        <select id="theme-select">
-          <option value="corporate-navy">Corporate Navy</option>
-          <option value="slate-compact">Slate Compact</option>
-        </select>
-        <button id="generate">Generate .docx</button>
+    <!-- Background Glow Elements -->
+    <div class="bg-glow glow-1"></div>
+    <div class="bg-glow glow-2"></div>
+
+    <!-- Navigation Header -->
+    <header class="navbar">
+      <div class="nav-container">
+        <a href="#" class="brand">
+          <div class="brand-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h6"/>
+              <polyline points="14 2 14 8 20 8"/>
+              <line x1="8" y1="7" x2="11" y2="7"/>
+              <line x1="8" y1="11" x2="16" y2="11"/>
+              <line x1="8" y1="15" x2="12" y2="15"/>
+              <circle cx="15.5" cy="19.5" r="1.5"/>
+              <circle cx="19.5" cy="19.5" r="1.5"/>
+              <path d="M16.5 18.5L20 13"/>
+              <path d="M18.5 18.5L15 13"/>
+            </svg>
+          </div>
+          <span class="brand-name">resume-tailor</span>
+        </a>
+        <nav class="nav-links">
+          <a href="#pipeline">How It Works</a>
+          <a href="#playground">Try Live</a>
+          <a href="#skills">AI & CLI</a>
+          <a href="#features">Features</a>
+          <a href="#faq">FAQ</a>
+        </nav>
+        <div class="nav-actions">
+          <button id="theme-toggle" class="btn btn-theme-toggle" aria-label="Toggle light or dark theme" title="Toggle theme">
+            <svg class="sun-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="5"></circle>
+              <line x1="12" y1="1" x2="12" y2="3"></line>
+              <line x1="12" y1="21" x2="12" y2="23"></line>
+              <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+              <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+              <line x1="1" y1="12" x2="3" y2="12"></line>
+              <line x1="21" y1="12" x2="23" y2="12"></line>
+              <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+              <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+            </svg>
+            <svg class="moon-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+            </svg>
+          </button>
+          <a
+            href="https://github.com/subho57/resume-tailor"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="btn btn-github"
+          >
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+            </svg>
+            <span>GitHub</span>
+          </a>
+          <a href="#playground" class="btn btn-primary nav-cta">Try Online</a>
+        </div>
       </div>
-      <div id="editor"></div>
-      <div id="warnings"></div>
-      <div id="status" class="status"></div>
+    </header>
+
+    <main class="container">
+      <!-- Hero Section -->
+      <section class="hero">
+        <div class="badge-pill">
+          <span class="badge-dot"></span>
+          <span>100% Free & Open Source • Privacy-First CLI & AI Skill</span>
+        </div>
+        <h1 class="hero-title">
+          Tailor your resume to any job.<br />
+          <span class="gradient-text">Without lying.</span>
+        </h1>
+        <p class="hero-subtitle">
+          Keep one verified JSON source of truth. Rephrase and select real experience matching target job descriptions — never fabricating a metric or skill you don't actually have.
+        </p>
+
+        <div class="hero-actions">
+          <a href="#playground" class="btn btn-primary btn-lg">
+            <span>Try Browser Demo</span>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12l7 7 7-7"/></svg>
+          </a>
+          <a href="#skills" class="btn btn-secondary btn-lg">
+            <span>CLI & AI Setup</span>
+          </a>
+        </div>
+
+        <!-- Terminal Command Box -->
+        <div class="terminal-box">
+          <div class="terminal-header">
+            <div class="terminal-dots">
+              <span class="dot red"></span>
+              <span class="dot yellow"></span>
+              <span class="dot green"></span>
+            </div>
+            <span class="terminal-title">Quick Install (macOS / Linux)</span>
+          </div>
+          <div class="terminal-body">
+            <code id="cmd-install">curl -fsSL https://subho57.github.io/resume-tailor/install.sh | bash</code>
+            <button class="copy-btn" id="btn-copy-install" title="Copy to clipboard">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+              </svg>
+              <span class="copy-text">Copy</span>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- Pipeline Visualization Section -->
+      <section id="pipeline" class="section">
+        <div class="section-header">
+          <h2 class="section-title">How It Works</h2>
+          <p class="section-subtitle">A deterministic, schema-driven approach to honest resume tailoring.</p>
+        </div>
+
+        <div class="pipeline-grid">
+          <div class="pipeline-card">
+            <div class="step-num">01</div>
+            <div class="card-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+            </div>
+            <h3>JSON Source of Truth</h3>
+            <p>Maintain your entire employment history, projects, and verified skills in one structured JSON document.</p>
+          </div>
+
+          <div class="pipeline-arrow">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </div>
+
+          <div class="pipeline-card">
+            <div class="step-num">02</div>
+            <div class="card-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+            </div>
+            <h3>Schema Validation</h3>
+            <p>Strict schema checking ensures required fields exist, metrics are valid, and links are formatted properly.</p>
+          </div>
+
+          <div class="pipeline-arrow">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </div>
+
+          <div class="pipeline-card highlight-card">
+            <div class="step-num">03</div>
+            <div class="card-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+            </div>
+            <h3>Honest Tailoring</h3>
+            <p>Rephrases and prioritizes your existing achievements to match the job vocabulary — zero hallucinated facts.</p>
+          </div>
+
+          <div class="pipeline-arrow">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </div>
+
+          <div class="pipeline-card">
+            <div class="step-num">04</div>
+            <div class="card-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="4" width="16" height="16" rx="2"/><rect x="9" y="9" width="6" height="6"/><line x1="9" y1="1" x2="9" y2="4"/><line x1="15" y1="1" x2="15" y2="4"/><line x1="9" y1="20" x2="9" y2="23"/><line x1="15" y1="20" x2="15" y2="23"/></svg>
+            </div>
+            <h3>Smart Autofit & DOCX</h3>
+            <p>Algorithmic line fitting keeps your resume cleanly on 1 page and renders native DOCX & PDF files.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Live Browser Playground -->
+      <section id="playground" class="section">
+        <div class="section-header">
+          <div class="badge-pill sm">
+            <span>Instant Web Generator</span>
+          </div>
+          <h2 class="section-title">Try It Now — Right In Your Browser</h2>
+          <p class="section-subtitle">
+            Runs 100% client-side. Edit the sample JSON below and generate your Word document instantly.
+          </p>
+        </div>
+
+        <div class="playground-card">
+          <div class="playground-toolbar">
+            <div class="toolbar-left">
+              <div class="theme-picker">
+                <label for="theme-select">Theme Style:</label>
+                <select id="theme-select">
+                  <option value="corporate-navy">Corporate Navy (Modern Classic)</option>
+                  <option value="slate-compact">Slate Compact (Single-Page Dense)</option>
+                </select>
+              </div>
+            </div>
+            <div class="toolbar-right">
+              <button id="btn-reset-json" class="btn btn-tertiary sm">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"/><path d="M3 3v5h5"/></svg>
+                <span>Reset Sample</span>
+              </button>
+              <button id="generate" class="btn btn-primary">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+                <span>Generate .docx</span>
+              </button>
+            </div>
+          </div>
+
+          <div class="playground-notice">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+            <span>Everything stays on your machine — zero network uploads. The browser output matches the CLI output exactly.</span>
+          </div>
+
+          <div class="editor-grid">
+            <div class="editor-column">
+              <div class="editor-header">
+                <span class="editor-filename">resume.json</span>
+                <span class="editor-lang">JSON</span>
+              </div>
+              <div id="editor"></div>
+            </div>
+
+            <div class="preview-column">
+              <div class="preview-header">
+                <span>Output & Status</span>
+              </div>
+              <div class="preview-body">
+                <div class="theme-card-preview" id="theme-preview-box">
+                  <h4 id="theme-preview-name">Corporate Navy</h4>
+                  <div class="theme-swatch">
+                    <span class="swatch s-primary" id="swatch-1"></span>
+                    <span class="swatch s-secondary" id="swatch-2"></span>
+                    <span class="swatch s-text" id="swatch-3"></span>
+                  </div>
+                  <p class="theme-desc" id="theme-preview-desc">Polished 2-column header with deep navy headers and crisp typography.</p>
+                </div>
+
+                <div id="warnings" class="warnings-box"></div>
+                <div id="status" class="status-box"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- AI Skill & CLI Workflows -->
+      <section id="skills" class="section">
+        <div class="section-header">
+          <h2 class="section-title">Built for Terminal & AI Coding Agents</h2>
+          <p class="section-subtitle">Use it from your command line, or install the standalone AI skills into Claude Code and GitHub Copilot.</p>
+        </div>
+
+        <div class="tabs-container">
+          <div class="tabs-header">
+            <button class="tab-btn active" data-tab="tab-cli">CLI Command Line</button>
+            <button class="tab-btn" data-tab="tab-claude">Claude Code Skill</button>
+            <button class="tab-btn" data-tab="tab-copilot">GitHub Copilot Skill</button>
+          </div>
+
+          <div class="tab-content active" id="tab-cli">
+            <div class="code-card">
+              <div class="code-header">
+                <span>Terminal Usage</span>
+                <button class="copy-code-btn" data-target="cli-code">Copy</button>
+              </div>
+              <pre><code id="cli-code"># Generate resume with single-page autofit
+tailor-resume --content resume.json --theme corporate-navy --one-pager
+
+# Specify custom output directory and format
+tailor-resume --content resume.json --theme slate-compact --out build/</code></pre>
+            </div>
+          </div>
+
+          <div class="tab-content" id="tab-claude">
+            <div class="code-card">
+              <div class="code-header">
+                <span>Claude Code Skill Workflow</span>
+                <button class="copy-code-btn" data-target="claude-code">Copy</button>
+              </div>
+              <pre><code id="claude-code"># Step 1: Install standalone skills to ~/.claude/skills/
+tailor-resume --install-skill
+
+# Step 2: Build your ground-truth master JSON (master-resume-builder)
+"Build a master resume JSON for Priyanka from my raw work notes in history.txt"
+
+# Step 3: Honestly tailor your master JSON to any job description (jd-tailored-resume)
+"Tailor my priyanka.resume.json to match the senior engineer job in jd.txt"</code></pre>
+            </div>
+          </div>
+
+          <div class="tab-content" id="tab-copilot">
+            <div class="code-card">
+              <div class="code-header">
+                <span>GitHub Copilot Skill Workflow</span>
+                <button class="copy-code-btn" data-target="copilot-code">Copy</button>
+              </div>
+              <pre><code id="copilot-code"># Step 1: Install standalone skills to ~/.copilot/skills/
+tailor-resume --install-skill
+
+# Step 2: Build your ground-truth master JSON (master-resume-builder)
+"Use master-resume-builder to compile my work experience into master.resume.json"
+
+# Step 3: Honestly tailor your master JSON to any job description (jd-tailored-resume)
+"Use jd-tailored-resume to tailor master.resume.json to target-jd.txt without inventing facts"</code></pre>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Key Features Grid -->
+      <section id="features" class="section">
+        <div class="section-header">
+          <h2 class="section-title">Designed for Accuracy and Impact</h2>
+          <p class="section-subtitle">Everything you need to land interviews with integrity.</p>
+        </div>
+
+        <div class="features-grid">
+          <div class="feature-card">
+            <div class="feature-icon">🛡️</div>
+            <h3>Zero Fabrication Guarantee</h3>
+            <p>Traditional resume rewriters guess metrics and insert buzzwords you don't own. resume-tailor only selects and rewords your actual accomplishments.</p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon">📏</div>
+            <h3>1-Page Autofit Engine</h3>
+            <p>Automatically calculates line height, paragraph spacing, and margins so your resume stays strictly 1 page without messy manual tweaks.</p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon">🎨</div>
+            <h3>Deterministic Styling</h3>
+            <p>JSON structure and theme definitions strictly map to native Word XML styling elements for pixel-perfect ATS-friendly rendering.</p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon">🔒</div>
+            <h3>100% Private & Open Source</h3>
+            <p>Zero telemetry, zero servers, zero subscriptions. Run it locally via static binaries or completely offline in your browser.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- FAQ Section -->
+      <section id="faq" class="section">
+        <div class="section-header">
+          <h2 class="section-title">Frequently Asked Questions</h2>
+        </div>
+
+        <div class="faq-list">
+          <details class="faq-item">
+            <summary class="faq-question">
+              <span>How does resume-tailor avoid fabricating skills or experience?</span>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="faq-chevron"><polyline points="6 9 12 15 18 9"/></svg>
+            </summary>
+            <div class="faq-answer">
+              <p>The tailoring prompt and skill pipeline operate strictly on the content present in your JSON source of truth. It can rephrase sentences to highlight relevant terminology from the job description, but it is explicitly forbidden from inventing job titles, companies, dates, or unverified achievements.</p>
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary class="faq-question">
+              <span>Is my resume data stored or sent to any server?</span>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="faq-chevron"><polyline points="6 9 12 15 18 9"/></svg>
+            </summary>
+            <div class="faq-answer">
+              <p>No. When using the CLI tool, it runs completely on your local machine. When using this browser page, the JSON parsing and DOCX generation are executed 100% client-side in WebAssembly/JavaScript. Nothing is ever transmitted to a backend server.</p>
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary class="faq-question">
+              <span>How do I use it with Claude Code or GitHub Copilot?</span>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="faq-chevron"><polyline points="6 9 12 15 18 9"/></svg>
+            </summary>
+            <div class="faq-answer">
+              <p>Run <code>tailor-resume --install-skill</code>. This copies both bundled skills (<code>jd-tailored-resume</code> and <code>master-resume-builder</code>) into your local <code>~/.claude/skills/</code> and <code>~/.copilot/skills/</code> directories, giving your AI coding assistant full context on how to build and tailor your resume without hallucinatory facts.</p>
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary class="faq-question">
+              <span>What formats does resume-tailor export to?</span>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="faq-chevron"><polyline points="6 9 12 15 18 9"/></svg>
+            </summary>
+            <div class="faq-answer">
+              <p>The CLI exports clean Microsoft Word <code>.docx</code> documents as well as formatted <code>.pdf</code> files (via headless LibreOffice/Word when available). The web interface generates high-fidelity <code>.docx</code> files directly in your browser.</p>
+            </div>
+          </details>
+        </div>
+      </section>
     </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-left">
+          <div class="brand">
+            <div class="brand-icon sm">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h6"/>
+                <polyline points="14 2 14 8 20 8"/>
+                <line x1="8" y1="7" x2="11" y2="7"/>
+                <line x1="8" y1="11" x2="16" y2="11"/>
+                <line x1="8" y1="15" x2="12" y2="15"/>
+                <circle cx="15.5" cy="19.5" r="1.5"/>
+                <circle cx="19.5" cy="19.5" r="1.5"/>
+                <path d="M16.5 18.5L20 13"/>
+                <path d="M18.5 18.5L15 13"/>
+              </svg>
+            </div>
+            <span>resume-tailor</span>
+          </div>
+          <p class="footer-copy">
+            Free and open-source under the MIT License. Designed for privacy and developer productivity.
+          </p>
+        </div>
+        <div class="footer-links">
+          <a href="https://github.com/subho57/resume-tailor" target="_blank" rel="noopener noreferrer">GitHub Repository</a>
+          <a href="https://github.com/subho57/resume-tailor/releases" target="_blank" rel="noopener noreferrer">Releases</a>
+          <a href="./llms.txt" target="_blank">llms.txt</a>
+          <a href="#pipeline">Pipeline</a>
+          <a href="#playground">Web Generator</a>
+        </div>
+      </div>
+    </footer>
+
     <script type="module" src="./main.ts"></script>
   </body>
 </html>

@@ -1,0 +1,42 @@
+# resume-tailor
+
+> Deterministic, schema-driven resume generator CLI and AI Skill for Claude Code & GitHub Copilot.
+> Keeps one verified JSON source of truth and tailors it honestly to every job description — never fabricating a skill, metric, or job title you don't have.
+
+## Overview
+- Website: https://subho57.github.io/resume-tailor/
+- Repository: https://github.com/subho57/resume-tailor
+- License: MIT (100% Free & Open Source)
+- Privacy: 100% Local / In-Browser Execution. Zero telemetry, zero external server calls.
+
+## Key Features
+- **Zero Fabrication Guarantee**: Selects and rephrases real achievements matching target job keywords; explicitly forbids inventing facts.
+- **1-Page Autofit Engine**: Algorithmic layout fitting so resumes stay strictly 1 page without overflow.
+- **Deterministic Output**: JSON content + Theme preset -> Native DOCX & PDF output with corporate styling.
+- **AI Coding Agent Skills**: Bundled standalone skills (`jd-tailored-resume` and `master-resume-builder`) for Claude Code (`~/.claude/skills/`) and GitHub Copilot (`~/.copilot/skills/`).
+
+## Quick Install (macOS / Linux)
+```bash
+curl -fsSL https://subho57.github.io/resume-tailor/install.sh | bash
+```
+
+## CLI Usage & Flags
+```bash
+# Basic DOCX + PDF generation
+tailor-resume --content resume.json --theme corporate-navy --one-pager
+
+# Output directory and custom options
+tailor-resume --content resume.json --theme slate-compact --out build/
+
+# Install standalone AI Skills for Claude Code & Copilot
+tailor-resume --install-skill
+```
+
+## Bundled AI Skills
+1. **`master-resume-builder`**: Compiles raw work history notes or LinkedIn exports into a structured, validated ground-truth `resume.json`.
+2. **`jd-tailored-resume`**: Honestly tailors `resume.json` against a target job description file without hallucinatory facts.
+
+## Documentation & Links
+- [Installation Script](https://subho57.github.io/resume-tailor/install.sh): Shell installer script for macOS and Linux.
+- [GitHub Releases](https://github.com/subho57/resume-tailor/releases): Prebuilt static binaries for macOS, Linux, and Windows.
+- [Sitemap](https://subho57.github.io/resume-tailor/sitemap.xml): Website XML sitemap.

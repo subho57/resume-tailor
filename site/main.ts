@@ -16,21 +16,197 @@ const BUILTIN_THEMES: Record<string, Theme> = {
   "slate-compact": slateCompact as Theme,
 };
 
+const THEME_PREVIEWS: Record<
+  string,
+  { name: string; desc: string; p: string; s: string; t: string }
+> = {
+  "corporate-navy": {
+    name: "Corporate Navy",
+    desc: "Polished 2-column header with deep navy headers and crisp corporate typography.",
+    p: "#1a3a5c",
+    s: "#4a5568",
+    t: "#2d3748",
+  },
+  "slate-compact": {
+    name: "Slate Compact",
+    desc: "Single-page condensed layout with slate header accents and optimized margin spacing.",
+    p: "#334155",
+    s: "#64748b",
+    t: "#1e293b",
+  },
+};
+
+// Theme Management System (System Theme Default + Manual Override)
+const themeToggleBtn = document.getElementById("theme-toggle") as HTMLButtonElement;
+const MEDIA_DARK = window.matchMedia("(prefers-color-scheme: dark)");
+
+// Clear legacy auto-saved key from early prototype if user didn't explicitly toggle
+if (!sessionStorage.getItem("theme-toggled-this-session")) {
+  localStorage.removeItem("resume-tailor-theme");
+}
+
+function getSavedTheme(): "dark" | "light" | null {
+  const saved = localStorage.getItem("resume-tailor-theme");
+  if (saved === "dark" || saved === "light") {
+    return saved;
+  }
+  return null;
+}
+
+function updateThemeUI() {
+  const saved = getSavedTheme();
+  if (saved) {
+    document.documentElement.setAttribute("data-theme", saved);
+  } else {
+    // Remove data-theme attribute so CSS @media (prefers-color-scheme) handles OS system theme natively!
+    document.documentElement.removeAttribute("data-theme");
+  }
+}
+
+// Initial theme sync
+updateThemeUI();
+
+// Live listener for OS system theme changes
+MEDIA_DARK.addEventListener("change", () => {
+  if (!getSavedTheme()) {
+    updateThemeUI();
+  }
+});
+
+// User manual toggle override
+themeToggleBtn?.addEventListener("click", () => {
+  sessionStorage.setItem("theme-toggled-this-session", "true");
+  const saved = getSavedTheme();
+  const systemIsDark = MEDIA_DARK.matches;
+  const currentEffective = saved || (systemIsDark ? "dark" : "light");
+  const nextTheme = currentEffective === "dark" ? "light" : "dark";
+
+  localStorage.setItem("resume-tailor-theme", nextTheme);
+  updateThemeUI();
+});
+
+// DOM Elements
 const editorContainer = document.getElementById("editor")!;
 const themeSelect = document.getElementById("theme-select") as HTMLSelectElement;
 const generateButton = document.getElementById("generate") as HTMLButtonElement;
+const resetJsonButton = document.getElementById("btn-reset-json") as HTMLButtonElement;
+const copyInstallBtn = document.getElementById("btn-copy-install") as HTMLButtonElement;
+const cmdInstallCode = document.getElementById("cmd-install") as HTMLElement;
+
 const warningsPanel = document.getElementById("warnings")!;
 const statusPanel = document.getElementById("status")!;
 
+// Theme Preview Elements
+const themePreviewName = document.getElementById("theme-preview-name")!;
+const themePreviewDesc = document.getElementById("theme-preview-desc")!;
+const swatch1 = document.getElementById("swatch-1")!;
+const swatch2 = document.getElementById("swatch-2")!;
+const swatch3 = document.getElementById("swatch-3")!;
+
+// Initialize CodeMirror Editor
 const editor = new EditorView({
   doc: JSON.stringify(fictionalSample, null, 2),
-  extensions: [basicSetup, jsonLang()],
+  extensions: [
+    basicSetup,
+    jsonLang(),
+  ],
   parent: editorContainer,
+});
+
+// Update Theme Preview Box
+function updateThemePreview(themeKey: string) {
+  const meta = THEME_PREVIEWS[themeKey] || THEME_PREVIEWS["corporate-navy"];
+  themePreviewName.textContent = meta.name;
+  themePreviewDesc.textContent = meta.desc;
+  swatch1.style.backgroundColor = meta.p;
+  swatch2.style.backgroundColor = meta.s;
+  swatch3.style.backgroundColor = meta.t;
+}
+
+themeSelect.addEventListener("change", () => {
+  updateThemePreview(themeSelect.value);
+});
+
+// Initial theme preview set
+updateThemePreview(themeSelect.value);
+
+// Reset JSON Sample
+resetJsonButton.addEventListener("click", () => {
+  editor.dispatch({
+    changes: {
+      from: 0,
+      to: editor.state.doc.length,
+      insert: JSON.stringify(fictionalSample, null, 2),
+    },
+  });
+  showWarnings([]);
+  showStatus("", false);
+});
+
+// Copy Install Command
+copyInstallBtn?.addEventListener("click", async () => {
+  const text = cmdInstallCode.textContent || "";
+  try {
+    await navigator.clipboard.writeText(text);
+    const copyTextSpan = copyInstallBtn.querySelector(".copy-text");
+    if (copyTextSpan) {
+      const original = copyTextSpan.textContent;
+      copyTextSpan.textContent = "Copied!";
+      setTimeout(() => {
+        copyTextSpan.textContent = original;
+      }, 2000);
+    }
+  } catch (err) {
+    console.error("Failed to copy:", err);
+  }
+});
+
+// Copy Code Snippets (Tabs)
+document.querySelectorAll(".copy-code-btn").forEach((btn) => {
+  btn.addEventListener("click", async () => {
+    const targetId = btn.getAttribute("data-target");
+    if (!targetId) return;
+    const targetEl = document.getElementById(targetId);
+    if (!targetEl) return;
+
+    try {
+      await navigator.clipboard.writeText(targetEl.textContent || "");
+      const orig = btn.textContent;
+      btn.textContent = "Copied!";
+      setTimeout(() => {
+        btn.textContent = orig;
+      }, 2000);
+    } catch (e) {
+      console.error(e);
+    }
+  });
+});
+
+// Tab Switching Logic
+document.querySelectorAll(".tab-btn").forEach((tabBtn) => {
+  tabBtn.addEventListener("click", () => {
+    document.querySelectorAll(".tab-btn").forEach((b) => b.classList.remove("active"));
+    document.querySelectorAll(".tab-content").forEach((c) => c.classList.remove("active"));
+
+    tabBtn.classList.add("active");
+    const targetTab = tabBtn.getAttribute("data-tab");
+    if (targetTab) {
+      document.getElementById(targetTab)?.classList.add("active");
+    }
+  });
 });
 
 function showWarnings(messages: string[]) {
   warningsPanel.innerHTML = "";
-  if (messages.length === 0) return;
+  if (messages.length === 0) {
+    warningsPanel.style.display = "none";
+    return;
+  }
+  warningsPanel.style.display = "block";
+  const title = document.createElement("strong");
+  title.textContent = "Schema Warnings:";
+  warningsPanel.appendChild(title);
+
   const list = document.createElement("ul");
   for (const msg of messages) {
     const item = document.createElement("li");
@@ -41,26 +217,34 @@ function showWarnings(messages: string[]) {
 }
 
 function showStatus(message: string, isError: boolean) {
+  if (!message) {
+    statusPanel.style.display = "none";
+    return;
+  }
+  statusPanel.style.display = "block";
   statusPanel.textContent = message;
-  statusPanel.className = isError ? "status error" : "status success";
+  statusPanel.className = isError ? "status-box error" : "status-box success";
 }
 
 generateButton.addEventListener("click", async () => {
   showWarnings([]);
   showStatus("", false);
 
+  const origButtonHtml = generateButton.innerHTML;
+  generateButton.disabled = true;
+  generateButton.innerHTML = `<span>Rendering...</span>`;
+
   let content: ResumeContent;
   try {
     content = JSON.parse(editor.state.doc.toString());
   } catch (e) {
-    showStatus(`Invalid JSON: ${(e as Error).message}`, true);
+    showStatus(`Invalid JSON syntax: ${(e as Error).message}`, true);
+    generateButton.disabled = false;
+    generateButton.innerHTML = origButtonHtml;
     return;
   }
 
   const contentWarnings = validate(resumeSchema, content);
-  // No theme validation here (unlike the CLI's main()) — themeRaw is always one of
-  // our own bundled built-in presets, selected from a fixed dropdown, never
-  // user-edited JSON, so there's nothing for validate() to usefully catch.
   const themeRaw = BUILTIN_THEMES[themeSelect.value] ?? BUILTIN_THEMES["corporate-navy"];
   const theme = resolveTheme(themeRaw);
 
@@ -69,11 +253,6 @@ generateButton.addEventListener("click", async () => {
   }
 
   try {
-    // No comment-repair pass here, unlike the CLI's packDocx() — that step shells
-    // out to unzip/zip to work around a docx v9 bug where flagged-highlight Word
-    // comments can serialize as "[object Object]", and unzip/zip aren't available
-    // in a browser. Only matters if the JSON has `flagged: true` highlights; see
-    // the on-page note next to the editor.
     const { doc } = renderResume(content, theme, []);
     const blob = await Packer.toBlob(doc as Document);
     const url = URL.createObjectURL(blob);
@@ -83,8 +262,11 @@ generateButton.addEventListener("click", async () => {
     a.download = `${basename}.docx`;
     a.click();
     URL.revokeObjectURL(url);
-    showStatus("Generated — check your downloads.", false);
+    showStatus("✅ Resume generated successfully! Check your downloads.", false);
   } catch (e) {
     showStatus(`Render failed: ${(e as Error).message}`, true);
+  } finally {
+    generateButton.disabled = false;
+    generateButton.innerHTML = origButtonHtml;
   }
 });
