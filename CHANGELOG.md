@@ -1,3 +1,10 @@
+## [1.4.3](https://github.com/subho57/resume-tailor/compare/v1.4.2...v1.4.3) (2026-08-02)
+
+
+### Bug Fixes
+
+* warner music group cvs added ([ab72625](https://github.com/subho57/resume-tailor/commit/ab72625f070355ac64a49d74fc980e5df559bf66))
+
 ## [1.4.2](https://github.com/subho57/resume-tailor/compare/v1.4.1...v1.4.2) (2026-08-02)
 
 
