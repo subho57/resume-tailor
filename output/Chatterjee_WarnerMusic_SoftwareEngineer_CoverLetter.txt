@@ -1,0 +1,19 @@
+Priyanka Chatterjee
+priyankachatterjee9075@gmail.com
++91 8617262536
+github.com/Priyanka-Chatterjee-2000
+
+Dear Hiring Manager,
+
+I'm writing to express my strong interest in the Software Engineer role within the Insights Services team at Warner Music Group. With 3.5+ years of full-stack experience building scalable data pipelines, insights APIs, and distributed systems, I'm excited about the opportunity to power WMG's data products and help artists make informed, data-driven decisions at scale.
+
+Throughout my tenure at Turbot, I've consistently shipped end-to-end features that balance technical depth with operational excellence. I engineered a Kafka-based event-driven data pipeline processing 1,000+ events per second with dead-letter queues for fault tolerance—exactly the kind of high-volume, reliable data infrastructure the Insights Services team needs. I built Tailpipe, a data CLI on DuckDB + Parquet, and authored 11 AWS log-source tables serving analytics and security detections, demonstrating my ability to design and implement data systems end to end. On the performance side, I optimized PostgreSQL queries powering compliance data analysis by 40% (cut report-generation time from 3 minutes to 1.5 minutes across 10,000+ records), directly reducing latency in production insights workflows.
+
+I'm equally comfortable on the full-stack side—I've shipped REST APIs in Go with Gin framework, migrated AWS SDK calls across 180+ Node.js call sites in production, and built front-end features in React with TypeScript. I've also designed multi-distro Linux testing pipelines in GitHub Actions and diagnosed production incidents in Kubernetes, reflecting my commitment to operational excellence. My background across Go, Python, TypeScript, and AWS, combined with my hands-on experience with data tools (DuckDB, Parquet, Kafka), positions me well to contribute to the insights APIs and data products that drive WMG's technology initiatives.
+
+My one knowledge gap is specific experience with Databricks and Snowflake: my background centers on DuckDB + Parquet for columnar data, Kafka for streaming, and PostgreSQL for transactional data. However, I've quickly mastered new data platforms before and am confident I can rapidly extend my expertise to your tech stack.
+
+I'm drawn to WMG's mission of empowering artists with data-driven insights, and I'd welcome the chance to bring my full-stack, data-pipeline, and distributed-systems experience to a high-impact team. Thank you for considering my application.
+
+Best regards,
+Priyanka Chatterjee

@@ -1,0 +1,58 @@
+Warner Music Group logo
+Backend Engineer
+BangaloreEngineering – Software Engineering /Full-Time /Hybrid
+Run Happpy Agent
+At Warner Music Group, we’re a global collective of music makers and music lovers, tech innovators and inspired entrepreneurs, game-changing creatives and passionate team members. Here, we turn dreams into stardom and audiences into fans. We are guided by three core values that underpin everything we do across all our diverse businesses:
+
+• Curiosity: We do our best work when we’re immersing ourselves in culture and breaking through barriers. Curiosity is the driving force behind creativity and ingenuity. It fuels innovation, and innovation is the key to our future.
+
+• Collaboration: Making music and bringing it to the world is all about the power of originality amplified by teamwork. A great idea, like a great song, travels globally. We ignite passions and build connections across our diverse community of artists, songwriters, partners, and fans.
+
+• Commitment: We pursue excellence for our team and our talent. Everything in music starts with a leap into the unknown, and we’re committed to keeping the faith, acting with integrity, and delivering on our promises.
+
+Technology is one of the most important parts of our business. Whether it’s signing up new artists; ensuring we provide the right data to Spotify, YouTube, and other digital service providers; or helping artists use the latest AI tools and make thoughtful decisions with data-driven insights – technology plays an invaluable role in our success. The engineering team at Warner Music Group makes all of it a reality. Check out first-hand accounts from the WMG engineering, product, design, infrastructure and data teams in our blog!
+
+WMG is home to a wide range of artists, musicians, and songwriters that fuel our success. That is why we are committed to creating a work environment that actively values, appreciates, and respects everyone. We encourage applications from people with a wide variety of backgrounds and experiences.
+
+Consider a career at WMG and get the best of both worlds – an innovative global music company that retains the creative spirit of a nimble independent.
+
+Your role:
+
+As a Backend Engineer, you’ll play a key role in maintaining, upgrading, and supporting the technical systems that power Warner Music Group’s global operations. This hybrid role combines elements of Software Engineering with Site Reliability Engineering (SRE) and operational support, requiring adaptability, technical breadth, and a strong customer focus. You’ll thrive if you enjoy keeping complex systems healthy, scalable, and resilient in production.
+
+Ideal candidates will feel a strong sense of responsibility for the systems under their care, and value continuous improvement, knowledge sharing, communication and cooperation.
+
+
+Responsibilities:
+
+Software Engineering & Upgrades
+• Write clean, maintainable code in Java or Python (backend)
+• Upgrade application frameworks (e.g., Java) to stay current with security patches, support, and performance improvements
+• Debug and resolve systems errors identified by automated or manual testing
+
+Reliability & Monitoring
+• Monitor production systems and improve observability to detect and resolve issues proactively
+• Lead root cause analyses (RCA) for outages and implement corrective actions
+• Conduct performance and scalability testing, identify bottlenecks, and implement optimizations
+
+Support & Operations
+• Partner with business and operations users to troubleshoot, document, and resolve issues
+• Execute manual workflows (e.g., data queries, AWS resource modifications, job restarts) and automate them for efficiency
+• Participate in the on-call rotation, responding to high-priority production incidents
+
+Automation & Continuous Improvement
+• Enhance CI/CD pipelines (e.g., GitHub Actions, infrastructure-as-code (IaC))
+• Contribute to and maintain team knowledge bases, runbooks, and technical documentation
+• Drive continuous improvement through process automation and tooling enhancements
+About you:
+At least 4 years of experience in software development, ideally with Java or Python (backend)
+Experience with relational databases (Oracle, PostgreSQL) and writing SQL queries
+Effective communicator who can bridge technical and non-technical discussions
+Comfortable collaborating in distributed teams across multiple time zones
+We’d love it if you also had:
+Experience working with enterprise systems and modernizing them
+Hands-on experience with Infrastructure as Code (IaC) to manage cloud resources, ideally in AWS
+Ability to diagnose and resolve issues across desktop, network, and web layers
+Experience being on-call, managing incidents, and meeting SLA commitments
+We may use artificial intelligence (AI) tools to support parts of the hiring process, such as reviewing applications, analyzing resumes, or assessing responses and identifying potential inconsistencies or verification signals in application materials based on available information. These tools assist our recruitment team but do not replace human judgment. Final hiring decisions are ultimately made by humans. If you would like more information about how your data is processed, please contact us.
+Jobs powered byLever logo

@@ -1,0 +1,127 @@
+{
+  "schemaVersion": "1.0.0",
+  "theme": "corporate-navy",
+  "sectionOrder": ["summary", "skills", "work", "projects", "education"],
+  "basics": {
+    "name": "Priyanka Chatterjee",
+    "label": "Backend Engineer · Go & Python · Event-Driven Systems · Production Reliability · 4+ Years",
+    "email": "priyankachatterjee9075@gmail.com",
+    "phone": "+91 8617262536",
+    "url": "https://priyanka-chatterjee-2000.github.io",
+    "location": {
+      "display": "Kolkata, West Bengal, India",
+      "city": "Kolkata",
+      "region": "West Bengal",
+      "countryCode": "IN"
+    },
+    "profiles": [
+      {
+        "network": "GitHub",
+        "username": "Priyanka-Chatterjee-2000",
+        "url": "https://github.com/Priyanka-Chatterjee-2000",
+        "display": "github.com/Priyanka-Chatterjee-2000"
+      },
+      {
+        "network": "LinkedIn",
+        "username": "priyanka-9075",
+        "url": "https://linkedin.com/in/priyanka-9075",
+        "display": "linkedin.com/in/priyanka-9075"
+      }
+    ],
+    "summaries": {
+      "default": "Backend engineer with 4+ years designing reliable, scalable microservices in Go and Python, including event-driven systems, production monitoring, and database optimization. Demonstrated expertise in AWS infrastructure, CI/CD automation with GitHub Actions, and diagnosing complex production incidents across distributed systems. Led the AWS SDK JavaScript v2-to-v3 migration across 180+ call sites and 11+ services, reducing bundle size and unblocking runtime upgrades; optimized PostgreSQL queries powering compliance audits by 40%, cutting audit time from 3 minutes to 1.5 minutes."
+    },
+    "activeSummary": "default"
+  },
+  "skills": [
+    {
+      "name": "Languages",
+      "keywordsText": "Python, Go, SQL, Bash, TypeScript, JavaScript (ES6+), HCL"
+    },
+    {
+      "name": "Backend & APIs",
+      "keywordsText": "Microservices, Event-Driven Architecture, Distributed Systems, Serverless, REST APIs, gRPC, OAuth 2.0 (Auth0), Gin, Express.js, Node.js"
+    },
+    {
+      "name": "Databases & SQL",
+      "keywordsText": "PostgreSQL, SQL query tuning, Query optimization, CTEs, jsonb, prepared statements, indexing, database migrations, transaction management"
+    },
+    {
+      "name": "Messaging & Streaming",
+      "keywordsText": "Apache Kafka, consumer groups, dead-letter queues (DLQs), AWS SNS/SQS, event-driven pipelines, asynchronous processing"
+    },
+    {
+      "name": "Cloud & Serverless",
+      "keywordsText": "AWS (Lambda, EC2, RDS, S3, CloudTrail, GuardDuty, SecurityHub, X-Ray, CloudWatch), Azure, GCP, serverless architecture, multi-cloud"
+    },
+    {
+      "name": "IaC & DevOps",
+      "keywordsText": "GitHub Actions, CI/CD pipelines, Docker, Terraform, HCL, Infrastructure as Code, automated testing, release automation, multi-distro environments"
+    },
+    {
+      "name": "Observability",
+      "keywordsText": "Datadog, OpenTelemetry (OTel), logging, tracing, metrics, incident diagnosis, production monitoring"
+    },
+    {
+      "name": "Testing & Quality",
+      "keywordsText": "Unit testing, integration testing, automated CI testing, code review, smoke tests"
+    },
+    {
+      "name": "Core CS",
+      "keywordsText": "Data structures and algorithms, object-oriented design, system design, API design, performance optimization"
+    },
+    {
+      "name": "Security & Compliance",
+      "keywordsText": "Cloud security, IAM, RBAC, OAuth 2.0, authentication and authorization, compliance frameworks (CIS, NIST)"
+    }
+  ],
+  "work": [
+    {
+      "name": "Turbot HQ, Inc.",
+      "location": "Remote",
+      "dateDisplay": "August 2022 – April 2026",
+      "position": "Software Engineer I",
+      "roleDisplay": "senior-only",
+      "highlights": [
+        "Designed and developed a REST API microservice in Go using the Gin framework with OAuth 2.0 authentication (Auth0), containerized with Docker, and deployed to AWS EC2 serving multiple internal gRPC clients; handled authentication, request validation, and service-to-service communication for a multi-tenant SaaS platform.",
+        "Built a Kafka-based event-driven pipeline for policy-enforcement workflows with asynchronous consumer processing and a dead-letter queue (DLQ) for failure handling and manual investigation; ensured exactly-once delivery semantics and improved reliability through robust error handling.",
+        "Optimized complex PostgreSQL queries powering enterprise compliance audits — rewriting AWS IAM policy-evaluation queries with jsonb array operations, multi-stage CTEs, and condition-aware filtering — improving query performance 40% (cutting audit-report generation from 3 minutes to 1.5 minutes across 10,000+ resources) and eliminating false-positive findings.",
+        "Led the AWS SDK for JavaScript v2 to v3 migration across 180+ call sites and 11+ AWS services (SecurityHub, CloudWatch, ControlTower, Shield, X-Ray, EC2, EFS, and others) in production Node.js Lambda functions, reducing bundle size through modular imports and keeping the platform supported past AWS SDK v2 end-of-life.",
+        "Engineered core features for Tailpipe, a Go-based observability CLI on DuckDB + Parquet, lifting log-processing throughput 30% to 1,000+ logs per second by chunking and batching file reads; authored 11 AWS log-source plugin tables (CloudTrail, GuardDuty, SecurityHub, ALB/NLB/CLB/ELB access, VPC flow, WAF) with standardized error handling.",
+        "Designed multi-distro Linux smoke tests (CentOS, Ubuntu ARM64, macOS) for Go CLIs in the GitHub Actions release pipeline, hardening release safety and catching regressions before deployment; unified release workflows, automated Slack notifications, and Docker image tagging for four open-source products.",
+        "Conducted root cause analysis on a production incident, diagnosing a Go service stuck in a Kubernetes CrashLoopBackOff; collaborated with the platform team to investigate pod logs, service status, and restore availability, implementing preventive measures to avoid recurrence."
+      ]
+    },
+    {
+      "name": "Kredey (Kredey Innovations Pvt. Ltd.)",
+      "location": "Remote",
+      "dateDisplay": "2021",
+      "position": "Full-Stack Website Developer (Intern)",
+      "highlights": [
+        "Used Elasticsearch to support full-text and semantic search over a Firebase NoSQL database, enabling users to discover content efficiently across a document-sharing platform."
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "name": "TODO / Tasks REST API",
+      "dateDisplay": "April 2026",
+      "description": "API-first REST backend in TypeScript with Bun, Express.js 5, and SQLite (bun:sqlite). JWT authentication (access, ID, and refresh tokens), role-based access control (RBAC), prepared-statement CRUD service layer with proper REST status codes (201/204/400/404), database migrations, and schema validation with Zod. Demonstrates production-grade API design patterns and secure credential management."
+    },
+    {
+      "name": "Lila Tic-Tac-Toe — Real-Time Multiplayer Game",
+      "dateDisplay": "2026",
+      "description": "Go-based Nakama game server with PostgreSQL, deployed on Fly.io. Server-authoritative architecture over WebSocket transport, KV-storage-based matchmaking, mode-aware configuration, optimistic UI with validation-failure recovery, and reconnect-into-active-match reliability. Demonstrates real-time system reliability, database transactions, and production deployment practices."
+    }
+  ],
+  "education": [
+    {
+      "institution": "University of Engineering & Management (UEM)",
+      "location": "Kolkata, West Bengal, India",
+      "degreeDisplay": "Bachelor of Technology in Computer Science and Engineering",
+      "dateDisplay": "August 2019 – May 2023",
+      "score": "CGPA: 9.28",
+      "detail": "Relevant Coursework: Object-Oriented Programming, DBMS, Data Structures and Algorithms, Shell Scripting in Linux, Low-Level Design, High-Level Design"
+    }
+  ]
+}

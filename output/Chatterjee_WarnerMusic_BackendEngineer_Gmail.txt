@@ -1,0 +1,8 @@
+Subject: Backend Engineer opportunity at {{companyName}} — strong PostgreSQL/AWS production systems background
+
+Hi {{outreachEmployeeName}},
+
+I saw that {{companyName}} is hiring for a {{jobTitle}} and came across your profile — I'd love to connect. I've spent the last 3.5+ years building reliable microservices and diagnosing production incidents across AWS/Azure/GCP. Recently, I optimized PostgreSQL queries powering compliance audits by 40% (cut report-generation time from 3 mins to 1.5 mins), led root cause analysis on Kubernetes production incidents, and designed Kafka-based event-driven pipelines with DLQs. I'm particularly drawn to {{companyName}}'s focus on blending software engineering with SRE — that's exactly the mindset I've been honing. Would you be open to a quick coffee chat, or could you refer me to the hiring manager? Here's my application: {{jobLink}}
+
+Thanks so much,
+Priyanka Chatterjee

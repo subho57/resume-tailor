@@ -1,0 +1,4 @@
+Hi {{outreachEmployeeName}}, I applied for the {{jobTitle}} at {{companyName}} and would love to connect. I have 3.5+ years full-stack experience—data pipelines (Kafka, DuckDB), query optimization (40% perf gain), and distributed systems (70–90% latency cuts) across Python, Go, and TypeScript. Excited about powering WMG's artist insights at scale. Open to a chat? {{jobLink}}
+
+Thanks,
+Priyanka

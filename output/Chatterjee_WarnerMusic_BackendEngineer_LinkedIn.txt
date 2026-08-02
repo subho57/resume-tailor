@@ -1,0 +1,4 @@
+Hi {{outreachEmployeeName}}, I applied for the {{jobTitle}} at {{companyName}} and would love to connect. I have 3.5+ years building reliable Go/Python microservices, optimizing PostgreSQL queries (40% perf gain), and diagnosing production incidents across AWS/Azure/GCP. Excited about your team's SRE mindset. Would you be open to a quick chat? {{jobLink}}
+
+Thanks,
+Priyanka

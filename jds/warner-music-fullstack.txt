@@ -1,0 +1,42 @@
+Warner Music Group logo
+Software Engineer
+BangaloreEngineering – Software Engineering /Full-Time /Hybrid
+Run Happpy Agent
+At Warner Music Group, we’re a global collective of music makers and music lovers, tech innovators and inspired entrepreneurs, game-changing creatives and passionate team members. Here, we turn dreams into stardom and audiences into fans. We are guided by three core values that underpin everything we do across all our diverse businesses:
+
+• Curiosity: We do our best work when we’re immersing ourselves in culture and breaking through barriers. Curiosity is the driving force behind creativity and ingenuity. It fuels innovation, and innovation is the key to our future.
+
+• Collaboration: Making music and bringing it to the world is all about the power of originality amplified by teamwork. A great idea, like a great song, travels globally. We ignite passions and build connections across our diverse community of artists, songwriters, partners, and fans.
+
+• Commitment: We pursue excellence for our team and our talent. Everything in music starts with a leap into the unknown, and we’re committed to keeping the faith, acting with integrity, and delivering on our promises.
+
+Technology is one of the most important parts of our business. Whether it’s signing up new artists; ensuring we provide the right data to Spotify, YouTube, and other digital service providers; or helping artists use the latest AI tools and make thoughtful decisions with data-driven insights – technology plays an invaluable role in our success. The engineering team at Warner Music Group makes all of it a reality. Check out first-hand accounts from the WMG engineering, product, design, infrastructure and data teams in our blog!
+
+WMG is home to a wide range of artists, musicians, and songwriters that fuel our success. That is why we are committed to creating a work environment that actively values, appreciates, and respects everyone. We encourage applications from people with a wide variety of backgrounds and experiences.
+
+Consider a career at WMG and get the best of both worlds – an innovative global music company that retains the creative spirit of a nimble independent.
+
+Your Role:
+
+The role is within the Insights Services team that powers the data products, insights, and APIs used across WMG applications, such as the WMG One and the Pulse (Artist and Songwriter) applications. We provide meaningful, actionable, fresh, and timely insights to empower our customers to make informed, effective decisions. The Insights Services team owns the production of micro insights, such as big movers in key metrics, and the APIs serving for both micro and scaled insights. An example of a micro insight is "Your track grew streams by more than 10% today!" This is a unique opportunity to be a part of a new, high-performing engineering center of excellence and drive significant impact for WMG's technology initiatives.
+
+This role will collaborate closely with our North American Engineering teams to synchronize strategies, processes, and objectives. This is a hybrid position that requires you to work onsite at our Bangalore office a few days per week. We need strong engineers who love music, data, and building world-class systems that scale to solve problems.
+Responsibilities:
+Reimagine and implement the future of tech for the music industry
+Work as part of a dynamic and highly effective team
+Own features though full development lifecycle – design, creation, test, deployment, maintenance
+Implement maintainable solutions with high quality and reliability that can scale as our business continues to grow and expand
+Learn and grow as a professional through close collaboration with your team members and engineering leaders, and by being part of culture of continuous improvement and learning
+About You:
+You have an undergraduate or graduate degree in Computer Science, Computer Engineering, or other related field
+You have at least 4 years of experience in backend or full stack development
+You have a deep knowledge of AWS or other large cloud computing environment
+You have strong distributed systems skills: How to make things fast and scalable, how to measure things (e.g. latency, throughput)
+You have strong operational excellence best practices: Testing, monitoring, paging, and incident management
+You have a strong understanding of developing APIs, backend services, databases, data pipelines, data warehousing
+Tech stack consists of Databricks Data Products (analytical data, reverse-ETL, Lakebase/Postgres performance serving), Snowflake, Python for backend, TypeScript and React for frontend, and AWS. Experience in this tech stack is a plus although not mandatory
+You have a high sense of ownership and a drive to deliver impact in a fast-paced, evolving, ambiguous environment
+You have strong debugging skills and the ability to diagnose and resolve complex issues
+You have a drive to grow, learn, and master the craft of software development
+We may use artificial intelligence (AI) tools to support parts of the hiring process, such as reviewing applications, analyzing resumes, or assessing responses and identifying potential inconsistencies or verification signals in application materials based on available information. These tools assist our recruitment team but do not replace human judgment. Final hiring decisions are ultimately made by humans. If you would like more information about how your data is processed, please contact us.
+Jobs powered byLever logo

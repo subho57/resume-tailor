@@ -1,0 +1,21 @@
+Priyanka Chatterjee
+priyankachatterjee9075@gmail.com
++91 8617262536
+github.com/Priyanka-Chatterjee-2000
+
+Dear Hiring Manager,
+
+I'm writing to express my strong interest in the Backend Engineer role at Warner Music Group. With 3.5+ years of hands-on experience building reliable, scalable microservices in Go and Python, I'm drawn to your team's focus on combining software engineering with production reliability, and I believe my track record of shipping resilient systems and diagnosing complex production incidents aligns directly with the role's needs.
+
+Throughout my tenure at Turbot, a multi-cloud security and compliance platform, I've consistently owned systems end-to-end across AWS, Azure, and GCP. I designed and built a REST API microservice in Go with OAuth 2.0 authentication, containerized it with Docker, and deployed it to AWS EC2 — managing all aspects of production stability. I'm equally comfortable on the SRE side: I led root cause analysis on a production incident involving a Go service in Kubernetes, collaborating with platform teams to restore service availability and prevent recurrence. I've also built Kafka-based event-driven pipelines with dead-letter queues for fault tolerance, ensuring exactly-once delivery semantics in asynchronous processing workflows — exactly the kind of production reliability thinking your team values.
+
+Database optimization is another core strength. I rewrote AWS IAM policy-evaluation queries in PostgreSQL using jsonb arrays, CTEs, and conditional filters, improving query performance 40% (cutting audit-report generation from 3 minutes to 1.5 minutes across 10,000+ resources) and eliminating false-positive findings. I'm comfortable with complex SQL, indexing strategies, and query tuning — the fundamentals your compliance and analytics workloads depend on. On the DevOps side, I've designed multi-distro Linux smoke-test pipelines in GitHub Actions, unified release workflows across four open-source products, and automated Docker image tagging and Slack notifications, hardening release safety and catching regressions before deployment.
+
+My one knowledge gap is Java: my background is Go and Python. However, I've successfully migrated AWS SDK calls across 180+ Node.js call sites and 11+ AWS services from v2 to v3, refactoring workflows and reducing bundle size through careful module management — experience that translates well to Java framework upgrades and similar large-scale codebase transitions.
+
+I'm excited by the prospect of bringing my production reliability mindset, observability skills, and cloud-systems experience to Warner Music Group. I'd welcome the chance to discuss how I can contribute to maintaining and upgrading the systems that power your global operations.
+
+Thank you for your consideration.
+
+Best regards,
+Priyanka Chatterjee

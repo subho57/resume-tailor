@@ -1,0 +1,128 @@
+{
+  "schemaVersion": "1.0.0",
+  "theme": "corporate-navy",
+  "sectionOrder": ["summary", "skills", "work", "projects", "education"],
+  "basics": {
+    "name": "Priyanka Chatterjee",
+    "label": "Full-Stack Software Engineer · Data Pipelines & Insights APIs · Python · TypeScript · AWS · 4+ Years",
+    "email": "priyankachatterjee9075@gmail.com",
+    "phone": "+91 8617262536",
+    "url": "https://priyanka-chatterjee-2000.github.io",
+    "location": {
+      "display": "Kolkata, West Bengal, India",
+      "city": "Kolkata",
+      "region": "West Bengal",
+      "countryCode": "IN"
+    },
+    "profiles": [
+      {
+        "network": "GitHub",
+        "username": "Priyanka-Chatterjee-2000",
+        "url": "https://github.com/Priyanka-Chatterjee-2000",
+        "display": "github.com/Priyanka-Chatterjee-2000"
+      },
+      {
+        "network": "LinkedIn",
+        "username": "priyanka-9075",
+        "url": "https://linkedin.com/in/priyanka-9075",
+        "display": "linkedin.com/in/priyanka-9075"
+      }
+    ],
+    "summaries": {
+      "default": "Full-stack software engineer with 4+ years building scalable data pipelines, insights APIs, and distributed systems in Python, TypeScript, and Go across AWS, Azure, and GCP. Demonstrated expertise in operational excellence—monitoring, incident management, performance optimization—and shipping full-lifecycle features from design through deployment. Engineered Kafka-based data pipelines processing 1,000+ events per second with dead-letter queues; optimized PostgreSQL queries powering compliance data analysis by 40% (cut processing time from 3 minutes to 1.5 minutes across 10,000+ records); led microservice migrations cutting resource-discovery latency 70–90% via event-driven architecture."
+    },
+    "activeSummary": "default"
+  },
+  "skills": [
+    {
+      "name": "Languages",
+      "keywordsText": "Python, TypeScript, Go, JavaScript (ES6+), SQL, Bash, HCL"
+    },
+    {
+      "name": "Backend & APIs",
+      "keywordsText": "Microservices, REST APIs, gRPC, Event-Driven Architecture, Serverless, OAuth 2.0, Gin, Express.js, Node.js"
+    },
+    {
+      "name": "Frontend",
+      "keywordsText": "React, TypeScript, MUI, responsive design"
+    },
+    {
+      "name": "Databases & Data",
+      "keywordsText": "PostgreSQL, DuckDB, Parquet, SQL query optimization, query tuning, indexing, data pipelines, CTEs, jsonb"
+    },
+    {
+      "name": "Messaging & Streaming",
+      "keywordsText": "Apache Kafka, consumer groups, dead-letter queues (DLQs), event-driven pipelines, asynchronous processing, stream processing"
+    },
+    {
+      "name": "Cloud & Distributed Systems",
+      "keywordsText": "AWS (Lambda, EC2, RDS, S3, CloudWatch, X-Ray), Azure, GCP, scalability, latency optimization, throughput measurement, multi-cloud"
+    },
+    {
+      "name": "DevOps & Observability",
+      "keywordsText": "GitHub Actions, CI/CD pipelines, Docker, Kubernetes (working knowledge), Terraform, monitoring, logging, tracing, incident management, testing automation"
+    },
+    {
+      "name": "Observability & Reliability",
+      "keywordsText": "Datadog, OpenTelemetry (OTel), Logfire, performance monitoring, latency tracking, debugging, root cause analysis, operational excellence"
+    },
+    {
+      "name": "Testing & Quality",
+      "keywordsText": "Unit testing, integration testing, end-to-end testing, automated CI testing, code review, smoke tests"
+    },
+    {
+      "name": "Core CS",
+      "keywordsText": "Data structures and algorithms, distributed systems design, system architecture, API design, database design, performance optimization"
+    }
+  ],
+  "work": [
+    {
+      "name": "Turbot HQ, Inc.",
+      "location": "Remote",
+      "dateDisplay": "August 2022 – April 2026",
+      "position": "Software Engineer I",
+      "roleDisplay": "senior-only",
+      "highlights": [
+        "Engineered a Kafka-based, fire-and-forget event-driven data pipeline for policy-enforcement workflows with asynchronous consumer processing and a dead-letter queue (DLQ) for fault tolerance; ensured reliability and observability in high-volume data processing.",
+        "Built core features for Tailpipe, a Go-based observability and data CLI on DuckDB + Parquet, lifting data-processing throughput 30% to 1,000+ records per second by optimizing chunking, batching, and streaming writes; reduced memory use to eliminate out-of-memory failures.",
+        "Authored 11 AWS log-source data tables for Tailpipe in Go (CloudTrail, GuardDuty, SecurityHub, ALB/NLB/CLB/ELB access logs, S3 access, VPC flow, WAF, Network Firewall) with 25+ pre-built analytics/security detections; designed cross-platform smoke-test pipeline.",
+        "Optimized complex PostgreSQL queries powering enterprise data analysis and compliance audits — rewriting IAM policy-evaluation queries with jsonb array operations, multi-stage CTEs, and conditional filtering — improving query performance 40% (cutting report-generation from 3 minutes to 1.5 minutes across 10,000+ records) and eliminating false-positive findings.",
+        "Designed and developed a REST API microservice in Go using Gin framework with OAuth 2.0 authentication, containerized with Docker, deployed to AWS EC2, and integrated as a gRPC client for internal microservices; handled production traffic with high reliability.",
+        "Led the AWS SDK for JavaScript v2 to v3 migration across 180+ call sites and 11+ AWS services (Lambda, CloudWatch, SecurityHub, X-Ray, EC2, and others) in production Node.js Lambda functions, reducing bundle size through modular imports and keeping the platform supported past EOL.",
+        "Designed multi-distro Linux smoke tests (CentOS, Ubuntu ARM64, macOS) for data CLI tools in GitHub Actions release pipelines, hardening deployment safety and catching regressions; unified release workflows and automated Slack notifications for four open-source products.",
+        "Conducted root cause analysis on production incidents — diagnosed a Go service stuck in Kubernetes CrashLoopBackOff by investigating pod logs and service status with the platform team — and implemented preventive measures to avoid recurrence."
+      ]
+    },
+    {
+      "name": "Kredey (Kredey Innovations Pvt. Ltd.)",
+      "location": "Remote",
+      "dateDisplay": "2021",
+      "position": "Full-Stack Website Developer (Intern)",
+      "highlights": [
+        "Built full-stack React + Firebase PWA with full-text and semantic search powered by Elasticsearch, supporting fast data discovery over a Firebase NoSQL backend; implemented real-time notifications and responsive UI/UX."
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "name": "TODO / Tasks REST API",
+      "dateDisplay": "April 2026",
+      "description": "Full-stack REST API in TypeScript with Bun, Express.js 5, and SQLite (bun:sqlite). JWT authentication (access, ID, refresh tokens), RBAC, prepared-statement CRUD service layer with proper REST status codes, database migrations, and route observability middleware. Demonstrates full-stack development with security patterns, schema validation (Zod), and production API design."
+    },
+    {
+      "name": "Lila Tic-Tac-Toe — Real-Time Multiplayer Game",
+      "dateDisplay": "2026",
+      "description": "Full-stack real-time system: React 19 + TypeScript frontend on Vercel; Go-based Nakama game server with PostgreSQL on Fly.io. Server-authoritative architecture over WebSocket transport, KV-storage matchmaking, optimistic UI with failure recovery, reconnect-into-active-match reliability. Demonstrates distributed systems, real-time communication, database transactions, and multi-tier deployment."
+    }
+  ],
+  "education": [
+    {
+      "institution": "University of Engineering & Management (UEM)",
+      "location": "Kolkata, West Bengal, India",
+      "degreeDisplay": "Bachelor of Technology in Computer Science and Engineering",
+      "dateDisplay": "August 2019 – May 2023",
+      "score": "CGPA: 9.28",
+      "detail": "Relevant Coursework: Object-Oriented Programming, DBMS, Data Structures and Algorithms, Shell Scripting in Linux, Low-Level Design, High-Level Design"
+    }
+  ]
+}

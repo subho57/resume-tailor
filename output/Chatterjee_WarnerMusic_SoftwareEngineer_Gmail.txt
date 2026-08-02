@@ -1,0 +1,8 @@
+Subject: Full-Stack Engineer with data-pipeline & scalability expertise — {{jobTitle}} at {{companyName}}
+
+Hi {{outreachEmployeeName}},
+
+I just applied for the {{jobTitle}} position on your Insights Services team and would love to connect. I've spent the last 3.5+ years building scalable data pipelines and insights APIs across Python, TypeScript, and Go. Recently, I engineered a Kafka-based data pipeline processing 1,000+ events/sec with dead-letter queue reliability, optimized PostgreSQL queries by 40% (cut reporting from 3 mins to 1.5 mins), and led migrations cutting latency 70–90% via event-driven architecture. I'm excited about powering WMG's data products to help artists make informed decisions at scale. Would you be open to a quick chat about the role? Here's my application: {{jobLink}}
+
+Thanks,
+Priyanka Chatterjee
