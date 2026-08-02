@@ -1,6 +1,6 @@
 {
   "name": "resume-tailor",
-  "version": "1.4.4",
+  "version": "1.4.5",
   "description": "Deterministic, schema-driven resume generator: content JSON + theme preset -> DOCX + PDF, with optional single-page autofit.",
   "bin": {
     "tailor-resume": "dist/cli.js"
