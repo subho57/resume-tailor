@@ -1,3 +1,10 @@
+## [1.4.4](https://github.com/subho57/resume-tailor/compare/v1.4.3...v1.4.4) (2026-08-02)
+
+
+### Bug Fixes
+
+* updated sitemap.xml ([33a61bd](https://github.com/subho57/resume-tailor/commit/33a61bd6416562ef7c995e669a7a64f5c2c778a3))
+
 ## [1.4.3](https://github.com/subho57/resume-tailor/compare/v1.4.2...v1.4.3) (2026-08-02)
 
 
