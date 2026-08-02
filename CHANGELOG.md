@@ -1,3 +1,10 @@
+## [1.4.2](https://github.com/subho57/resume-tailor/compare/v1.4.1...v1.4.2) (2026-08-02)
+
+
+### Bug Fixes
+
+* updated the website layout ([e1ca884](https://github.com/subho57/resume-tailor/commit/e1ca8848817befa8400ffb01bd9a42141d964d32))
+
 ## [1.4.1](https://github.com/subho57/resume-tailor/compare/v1.4.0...v1.4.1) (2026-08-01)
 
 
