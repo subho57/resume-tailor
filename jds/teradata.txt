@@ -1,0 +1,71 @@
+Location: Bangalore, Hyderabad, or Pune, India  
+
+Our Company:   
+
+At Teradata, we believe that people thrive when empowered with better information. That’s why we built the most complete cloud analytics and data platform for AI. By delivering harmonized data, trusted AI, and faster innovation, we uplift and empower our customers—and our customers’ customers—to make better, more confident decisions. The world’s top companies across every major industry trust Teradata to improve business performance, enrich customer experiences, and fully integrate data across the enterprise.   
+
+ 
+
+What You’ll Do 
+
+As a Cloud AI Engineer, you will play a key role in designing and delivering highly scalable, next generation infrastructure within our AI stack. You will work in a technically rich environment with talented peers, contributing to product strategy, architecture, and execution while influencing the evolution of Teradata’s AI capabilities. 
+
+In this role, you will: 
+
+Design, architect, develop, and maintain high quality cloud native or on-prem infrastructure with an emphasis on scalability, availability, resiliency, and performance. 
+Lead design and review of large-scale distributed systems supporting multi cloud deployments. 
+Use IaC and automation tools such as Terraform to ensure infrastructure changes are reliable, repeatable, and version controlled. 
+Develop self-service platforms and tools that improve developer productivity and streamline deployment lifecycles. 
+Guide organizational infrastructure strategy, set engineering standards and best practices. 
+Collaborate with cross-functional engineers and product partners to shape architecture and enable consistent delivery of end to end products and features. 
+Build and integrate robust RESTful APIs, ensuring security, data consistency, and maintainability. 
+Work with SQL and NoSQL databases to implement efficient data models and service access patterns. 
+Implement comprehensive monitoring, logging, and alerting systems. 
+Apply and experiment with AI/ML technologies, including agentic AI and large language models (LLMs). 
+Use AI powered engineering tools to improve development quality, speed, and productivity. 
+Mentor engineers, supporting them in technical planning and execution. 
+Identify and resolve system performance bottlenecks, optimizing code, architecture, and infrastructure. 
+Write unit and integration tests and participate in code reviews to uphold engineering excellence. 
+Investigate production issues, ensuring timely and effective solutions. 
+Stay current with emerging trends in infrastructure engineering, AI/ML, and cloud-native technologies. 
+ 
+
+Who You’ll Work With 
+
+You will be part of a high-performing engineering team building core components of Teradata’s AI platform. You will collaborate closely with other engineers, AI/ML specialists, product managers, cloud architects, and partner teams across the company. The role offers opportunities to contribute directly to Teradata’s AI product roadmap and technological direction. 
+
+ 
+
+What Makes You a Qualified Candidate 
+
+(Nonnegotiable qualifications) 
+
+Bachelor’s degree in Computer Science or equivalent from a recognized institution. 
+2+ years of experience in infrastructure, networking, devops and cloud technologies. 
+Deep hands-on expertise with public cloud providers such as AWS, Azure, or GCP, cloud APIs and SDKs, and infrastructure components such as VPC/VNet, API gateways, storage and compute. 
+Mastery of virtualization/container orchestration technologies like Kubernetes, Istio and Docker. 
+Advanced proficiency in automation tools like Terraform and Helm. 
+Experience with configuration management tools like Chef or Puppet. 
+Strong proficiency in languages like Python, Go, and Bash for services development and scripting. 
+Familiarity with CI/CD pipelines and tools such as Jenkins, GitHub Actions and ArgoCD. 
+Deep understanding of design principles, distributed system patterns, and software architecture. 
+Familiarity with security, compliance, IAM and observability. 
+Hands-on experience designing and developing RESTful APIs. 
+Experience with SQL and NoSQL databases and data modelling. 
+Strong debugging, problem solving, and troubleshooting skills. 
+Experience with AI productivity tools such as Claude Code or GitHub Copilot. 
+Ability to work independently, drive workstreams, and deliver high quality outcomes. 
+Strong communication and collaboration skills. 
+ 
+
+What You’ll Bring 
+
+(Preferred qualifications) 
+
+Familiarity with infrastructure KPIs and cost optimization. 
+Experience with messaging systems such as Kafka. 
+Experience experimenting with or implementing AI/ML technologies, Agentic AI, or LLMs. 
+A track record of influencing infrastructure architecture decisions and driving engineering best practices. 
+The ability to mentor engineers and guide them through design, planning, and execution. 
+A proactive mindset and comfort working in fast paced, dynamic environments. 
+Curiosity, adaptability, and a passion for building impactful AI-driven products. 

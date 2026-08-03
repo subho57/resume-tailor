@@ -1,0 +1,113 @@
+ZoomRx's logo
+Staff Software Engineer
+at ZoomRx
+Rakhee Jha's profile picture
+Posted by Rakhee Jha
+Apply to this job
+4 - 10 yrs
+₹25L - ₹60L / yr
+Chennai, Pune, Gurugram
+Skills
+Staff Software Engineer — AI-native, high agency
+
+
+
+ZoomRx Technology Team · Chennai / Pune / Gurugram (hybrid)
+
+
+
+The bet
+
+The last 12 months redefined what “senior engineer” means. We’re hiring the people who already operate the new way.
+
+If you’ve spent this year rewiring how you ship — turning ambiguous PRDs into shipped features with Claude Code and Codex in the loop, replacing rote work with agents, treating AI as leverage instead of assistance — read on.
+
+
+
+About ZoomRx
+
+We work on hard problems at the intersection of data, healthcare, and technology, for the world’s largest biopharma companies. Our products — Ferma.AI, PERxCEPT, HCP-Pt Conversations — shape how they understand markets and make decisions. We’re flat; engineers own outcomes, not tickets.
+
+Apply Here:- tinyurl.com/zoomrx-apply
+
+
+
+The role
+
+You’ll own engineering work end-to-end across our products and platform — from ambiguous problem to shipped feature.
+
+•    Translate fuzzy product and engineering asks into shipped systems; you don’t wait for a manager to break the work down for you.
+
+•    Build with Claude Code, Codex, and the broader agentic stack as your default workflow — not novelty.
+
+•    Design and ship backend systems, APIs, and data platforms that hold up at scale.
+
+•    Partner directly with product owners and stakeholders. Product instinct matters as much as code.
+
+
+
+How we engineer
+
+We write evals, not just tests. We engineer the harness: model routing, context and prompt design, tokenomics — first-class craft, not afterthoughts. We author skills and MCP plugins to specialize our toolchain — we don’t just consume it. Open-weights models get explored when they unlock cost, sovereignty, or capability that frontier APIs can’t. We treat the engineering loop itself as something to instrument and improve, week over week.
+
+
+
+How we operate
+
+Closer to a Forward-Deployed Engineer than a heads-down coder. Twice-daily written updates are the default, not an ask. Decisions, trade-offs, and approaches live where everyone can see them — silence stays comfortable because the writing is already flowing. We respond fast on chat and email, and treat documents as how we think and align.
+
+
+
+What we look for
+
+•    4–10 years building real software. Stack is secondary; strong fundamentals and learning agility are not.
+
+•    You’ve already rewired how you work in the last 6–12 months around AI tooling. You can tell us specifically what changed, and why.
+
+•    High agency. You spot the problem, frame it, and ship the fix without waiting to be asked.
+
+•    Communicates in writing by default. Surfaces progress, decisions, and blockers fast — not weekly, not when asked.
+
+•    No cognitive surrender. You think with AI, not through it — you spot slop, push back on the model, and ship higher-quality work because of the loop, not despite it.
+
+•    Sharp judgment on trade-offs, prioritization, and when to push back.
+
+•    Comfort with ambiguity and a bias to action.
+
+
+
+Python, FastAPI, LangGraph, and Postgres are common in our stack — but we’d rather hire a generalist who thinks AI-native than a specialist who doesn’t.
+
+
+
+Why now
+
+We’re not retrofitting AI onto how we used to work. We’re rebuilding the tech function around it — operating model, tooling, hiring bar. Engineers joining now shape what that looks like.
+
+If “what changed in the last six months of how you work” is a question you have a real answer to, we’d love to talk.
+
+
+
+What’s in our stack today
+
+Tooling our engineers run on every day: Claude Code, Codex, MCP servers, and the broader agentic toolchain.
+
+
+
+Product stack: Python, FastAPI, LangGraph, Temporal, Anthropic Claude, OpenAI, Google Gemini (Vertex AI), Milvus, PostgreSQL, Redis, Kubernetes (GKE) on GCP, LangFuse, SigNoz, Sentry.
+
+We don’t expect everyone to have touched all of these — most of our engineers picked up half on the job.
+
+Read less
+About ZoomRx
+Follow • 198
+Founded :
+2009
+Type :
+Services
+Size :
+100-1000
+Stage :
+Profitable
+About
+ZoomRx is a strategic healthcare consulting company founded upon the belief that there is important work to be done at the intersection of data, health care, and technology. Through tighter collaboration and a smarter process, we help the people behind the world’s most important therapies make a difference. Our deep expertise is paired with our own research platform and curated community of providers. This means we work with our clients and focus on the stuff that matters—asking the right questions, delivering thoughtful analysis, and revealing the truth within complex markets. At ZoomRx we favor collaboration over hierarchy, opt for creativity over “the way it’s always been done,” and know strategic healthcare consulting needs a fresh approach. If you feel the same, let’s work together.

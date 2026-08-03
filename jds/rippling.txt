@@ -1,0 +1,53 @@
+Software Engineer I - Backend Leaning FullStack
+About Rippling
+Rippling gives businesses one place to run HR, IT, and Finance. It brings together all of the workforce systems that are normally scattered across a company, like payroll, expenses, benefits, and computers. For the first time ever, you can manage and automate every part of the employee lifecycle in a single system.
+
+
+
+Take onboarding, for example. With Rippling, you can hire a new employee anywhere in the world and set up their payroll, corporate card, computer, benefits, and even third-party apps like Slack and Microsoft 365—all within 90 seconds.
+
+
+
+Based in San Francisco, CA, Rippling has raised $1.85B+ from the world’s top investors—including Kleiner Perkins, Founders Fund, Sequoia, Greenoaks, and Bedrock—and was named one of America's best startup employers by Forbes.
+
+
+
+We prioritize candidate safety. Please be aware that all official communication will only be sent from @Rippling.com addresses.
+
+About the team 
+The App Components Team is a forward-thinking, platform-focused product engineering team dedicated to crafting the cohesive, high-performing building blocks that define Rippling’s "Enterprise Studio" experience.
+
+
+
+About the Role 
+As a Software Engineer I (Backend / Full Stack) on this team you will be responsible to build and scale the systems that power these components. While your primary focus will be on the backend, this is a truly full-stack role. You will help design the distributed systems that power our platform and also contribute to React and React Native code to deliver polished end-to-end product experiences.
+
+
+You will be responsible for building scalable backend services, APIs, and data models, while partnering closely with product and design to ensure the underlying complexity is translated into seamless, high-performance user experiences.
+
+
+
+What you will do
+
+Design and implement scalable backend services using Python and Golang to support complex enterprise data modeling and product use cases.
+Contribute to systems that operate at scale, with exposure to distributed systems challenges and technologies such as Kafka, Flink, and AWS.
+While your strength lies in backend engineering, you will also contribute to the frontend codebase. You will write high-quality React and React Native code to ship end-to-end features and help deliver intuitive, performant UI components.
+Take ownership of meaningful product initiatives from early problem definition through implementation. You will help shape technical designs for new "App Studio" capabilities and deliver robust solutions.
+Write clean, maintainable, well-tested code, participate in thoughtful code reviews, and contribute to strong engineering standards across backend and frontend systems.
+Work closely with Product, Design, and other engineers to break down complex user problems and build components that are technically strong and practically useful for teams building on top of them.
+What you will need
+1+ years of professional software engineering experience, with strong experience building production systems
+Proficiency in building scalable backend services. Experience with Python, Django, Golang, MongoDB, and AWS is highly preferred.
+Comfortable in writing and shipping production code in React and React Native. You should understand component lifecycles, state management, and mobile constraints well enough to build and iterate on UI for the systems you own.
+Ability to design scalable, reliable systems and reason through trade-offs such as consistency, performance, and fault tolerance.
+Experience building reusable systems, frameworks, or developer-facing components is a plus. You should be excited by building flexible foundations that can support multiple product use cases over time.
+A track record of independently driving projects, navigating ambiguity, and delivering high-quality outcomes.
+Strong communication skills and the ability to work effectively with both technical and non-technical stakeholders.
+
+
+Additional Information
+Rippling is an equal opportunity employer. We are committed to building a diverse and inclusive workforce and do not discriminate based on race, religion, color, national origin, ancestry, physical disability, mental disability, medical condition, genetic information, marital status, sex, gender, gender identity, gender expression, age, sexual orientation, veteran or military status, or any other legally protected characteristics, Rippling is committed to providing reasonable accommodations for candidates with disabilities who need assistance during the hiring process. To request a reasonable accommodation, please email accommodations@rippling.com
+
+
+
+Rippling highly values having employees working in-office to foster a collaborative work environment and company culture.  For office-based employees (employees who live within a defined radius of a Rippling office), Rippling considers working in the office, at least three days a week under current policy, to be an essential function of the employee's role.

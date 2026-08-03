@@ -1,0 +1,8 @@
+Subject: Applied for {{jobTitle}} at {{companyName}} — would love a referral or quick chat
+
+Hi {{outreachEmployeeName}},
+
+I recently applied for the {{jobTitle}} role at {{companyName}} ({{jobLink}}) and wanted to reach out directly since I saw you're on the team there. I'm a backend engineer with 3.5+ years building distributed microservices in Golang and Node.js on AWS — most recently at Turbot HQ, a multi-cloud security and compliance software company, where I built a Kafka-based policy-enforcement pipeline and authored multi-cloud compliance modules across CIS, NIST, HIPAA, and PCI DSS v4 that cut enterprise audit time 50%. Given the role's focus on cloud security and microservices, I think there's a strong match, and I'd really value a referral or even just a few minutes to hear about your experience on the team. Happy to share my resume or answer any questions — thanks so much for considering it!
+
+Best,
+Priyanka

@@ -1,0 +1,10 @@
+Subject: Referral request — {{jobTitle}} role at {{companyName}}
+
+Hi {{outreachEmployeeName}},
+
+I just applied for the {{jobTitle}} role at {{companyName}} ({{jobLink}}) and noticed you're on the team there, so I wanted to reach out directly. I have 3.5+ years building Node.js and TypeScript backend systems at a product company (Turbot HQ) — most recently leading an AWS SDK v2-to-v3 migration across 180+ call sites in production Node.js Lambdas — plus REST API and microservices work in Go and TypeScript, which lines up closely with what the posting describes.
+
+Would you be open to a quick chat about the team, or willing to point my application to the right person? Happy to share my resume or walk through any of the projects above.
+
+Thanks so much,
+Priyanka Chatterjee

@@ -1,0 +1,111 @@
+{
+  "schemaVersion": "1.0.0",
+  "theme": "corporate-navy",
+  "sectionOrder": ["summary", "skills", "work", "projects", "education"],
+  "basics": {
+    "name": "Priyanka Chatterjee",
+    "label": "Backend Engineer · Node.js & TypeScript · REST APIs & Microservices · 9,300★ Open-Source Contributor · 3.5+ Years",
+    "email": "priyankachatterjee9075@gmail.com",
+    "phone": "+91 8617262536",
+    "url": "https://priyanka-chatterjee-2000.github.io",
+    "location": {
+      "display": "Kolkata, West Bengal, India",
+      "city": "Kolkata",
+      "region": "West Bengal",
+      "countryCode": "IN"
+    },
+    "profiles": [
+      {
+        "network": "LinkedIn",
+        "username": "priyanka-9075",
+        "url": "https://linkedin.com/in/priyanka-9075",
+        "display": "linkedin.com/in/priyanka-9075"
+      },
+      {
+        "network": "GitHub",
+        "username": "Priyanka-Chatterjee-2000",
+        "url": "https://github.com/Priyanka-Chatterjee-2000",
+        "display": "github.com/Priyanka-Chatterjee-2000"
+      },
+      {
+        "network": "Portfolio",
+        "url": "https://priyanka-chatterjee-2000.github.io",
+        "display": "priyanka-chatterjee-2000.github.io"
+      }
+    ],
+    "summaries": {
+      "backend-sde-nodejs-ts": "Backend Software Development Engineer with 3.5+ years of experience and expertise in Node.js, TypeScript, RESTful APIs, and backend system design. Led the AWS SDK for JavaScript v2 to v3 migration across 180+ call sites and 11+ AWS services in production Node.js Lambdas at Turbot HQ, cutting policy-code duplication ~60% while keeping the platform supported past AWS SDK v2 end-of-life."
+    },
+    "activeSummary": "backend-sde-nodejs-ts"
+  },
+  "work": [
+    {
+      "name": "Turbot HQ, Inc.",
+      "location": "Remote",
+      "dateDisplay": "August 2022 – April 2026",
+      "roleDisplay": "senior-only",
+      "roles": [
+        {
+          "position": "Software Engineer I",
+          "dateDisplay": "August 2022 – April 2026"
+        }
+      ],
+      "highlights": [
+        "Led the AWS SDK for JavaScript v2 to v3 migration across 180+ call sites and 11+ AWS services (SecurityHub, CloudWatch, ControlTower, Shield, Comprehend, Pinpoint, RAM, X-Ray, EC2, EFS) in production Node.js Lambdas, refactoring discovery, configuration-sync, tagging, and resource-cleanup workflows; reduced policy-code duplication ~60% via templating and shrank bundle size through modular imports, keeping the platform supported past AWS SDK v2 EOL and unblocking the Node.js runtime upgrade.",
+        "Designed and developed a REST API microservice using the Gin framework as part of a greenfield build of Turbot Guardrails, a Preventive Security Posture Management (PSPM) SaaS product; secured endpoints with OAuth 2.0 authentication via Auth0, containerized with Docker, deployed to AWS EC2, and served as a gRPC client for several internal microservices.",
+        "Core contributor across four open-source platform-engineering products (Steampipe, Powerpipe, Flowpipe, Tailpipe) — 120+ merged pull requests and 9,300+ GitHub stars — including engineering core throughput and memory optimizations for Tailpipe, lifting log-processing throughput 30% to 1,000+ logs per second via chunked, batched file reads and streaming writes, and eliminating out-of-memory failures.",
+        "Optimized complex PostgreSQL queries powering customer compliance audits — rewriting IAM policy-evaluation queries with jsonb array elements and multi-stage CTEs — improving query performance 40% (cutting report generation from 3 minutes to 1.5 minutes across 10,000+ resources) and eliminating a class of false-positive findings.",
+        "Built a Kafka-based, event-driven pipeline where consumers asynchronously processed policy-enforcement events and fired a webhook once a policy was successfully enforced against a resource; added a dead-letter queue (DLQ) to capture recurring failures for debugging, and unified GitHub Actions CI/CD release workflows across four production services."
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "University of Engineering & Management (UEM)",
+      "location": "Kolkata, WB, IN",
+      "degreeDisplay": "Bachelor of Technology in Computer Science and Engineering",
+      "dateDisplay": "August 2019 – May 2023",
+      "score": "CGPA: 9.28",
+      "detail": "Relevant Coursework: Object-Oriented Programming, DBMS, Data Structures and Algorithms, Shell Scripting in Linux, Low-Level Design, High-Level Design"
+    }
+  ],
+  "skills": [
+    {
+      "name": "Languages",
+      "keywordsText": "TypeScript, JavaScript (ES6+), Go, Python, SQL, Bash"
+    },
+    {
+      "name": "Backend & APIs (Node.js focus)",
+      "keywordsText": "Node.js, Express.js, REST APIs, GraphQL, gRPC, Microservices, Distributed Systems, OAuth 2.0 (Auth0), JWT, Zod, Bun"
+    },
+    {
+      "name": "Databases & SQL",
+      "keywordsText": "PostgreSQL, MySQL, MongoDB, DuckDB, Redis (ElastiCache); jsonb, CTEs, query tuning, transactions, database migrations"
+    },
+    {
+      "name": "Cloud & DevOps",
+      "keywordsText": "AWS (Lambda, EC2, S3, SecurityHub, GuardDuty, ControlTower, Shield, X-Ray, EFS), Azure, GCP, Docker, Kubernetes (working knowledge), GitHub Actions (CI/CD)"
+    },
+    {
+      "name": "Messaging & Event-Driven",
+      "keywordsText": "Apache Kafka (consumer groups, DLQs), AWS SNS/SQS, AWS EventBridge, Azure Event Grid"
+    },
+    {
+      "name": "Testing & Quality",
+      "keywordsText": "Unit Testing, Integration Testing, End-to-End Testing, Jest, Mocha, Automated CI Testing, Code Review"
+    },
+    {
+      "name": "Core CS",
+      "keywordsText": "Data Structures & Algorithms, Object-Oriented Design, Backend Architecture, Low-Level & High-Level System Design, API Design"
+    }
+  ],
+  "projects": [
+    {
+      "name": "TODO / Tasks REST API",
+      "dateDisplay": "Apr 2026",
+      "association": "",
+      "description": "API-first REST backend in TypeScript with Bun, Express.js 5, and SQLite (bun:sqlite) + Zod + jose (JWT). JWT authentication (access, ID, and refresh tokens), RBAC, a prepared-statement CRUD service layer with crypto.randomUUID() IDs, schema-validated controllers with proper REST status codes (201/204/400/404), database migrations, and route-heatmap middleware.",
+      "links": []
+    }
+  ]
+}

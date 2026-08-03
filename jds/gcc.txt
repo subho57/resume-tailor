@@ -1,0 +1,139 @@
+Must have skills required :
+React Js, Next Js, Node Js, Express Js
+Good to have skills :
+Arabic RTL, bilingual web application, E-Commerce
+Job Posted By
+
+Deeksha Karamchandani
+deeksha.k@uplers.in
+
+
+career@uplers.in
+
+The Opportunity
+
+
+
+🚀 Founding Full-Stack Engineer | Remote | 4 hrs/day | Saudi Arabia Startup | Full Technical Ownership
+
+We are looking for its first senior engineering hire — someone who will build both products from an early-stage codebase to live, tested platforms used by real consumers, merchants, and businesses in Saudi Arabia. This is not a supporting role on a large team. You will make architectural decisions, ship features end-to-end across two products, and directly shape technical direction alongside the founding team.
+
+
+
+The near-term goal is a testable alpha for both products — targeting real pilot users within 8 to 10 weeks of joining — followed by iteration toward product market fit.
+
+
+
+What You Will Build
+
+Your time is split evenly across both products. You will decide how each is built. The founding team defines what it needs to do and why.
+
+
+
+AI Commerce Platform
+
+It is a neutral commerce discovery and comparison platform for Saudi Arabia and the GCC. Consumers search, compare, and complete purchases across listed retail partners and independent merchants, in Arabic and English.
+
+• Consumer discovery and comparison experience, bilingual Arabic/English with full RTL support
+
+• Merchant pages with affiliate link tracking for listed retail partners
+
+• A payment flow for unlisted independent merchants — the specific approach (redirect-based PSP checkout vs. embedded payments) is still open and part of what you''''ll help shape
+
+• One AI-assisted feature powered by a Saudi-native LLM via streaming responses
+
+• Alpha target: a working, tested product with real pilot users
+
+
+
+Inventory Intelligence Platform
+
+It is an AI-integrated inventory intelligence platform for GCC businesses, providing demand forecasting, real-time stock alerts, and inventory health tracking. It is a product-focused platform, not cloud infrastructure.
+
+• Core inventory tracking and real-time stock alerting
+
+• Foundational demand forecasting logic for a pilot business
+
+• Data modeling built to scale cleanly as forecasting depth increases post-alpha
+
+
+
+Skills & Experience
+
+We care about what you have actually built and shipped. The items below are genuine requirements for this role the nice-to-haves will make you immediately more effective.
+
+
+
+Required
+
+• 3–5 years of professional full-stack experience, with a track record of owning a product end-to-end, not just contributing within a larger team
+
+• Strong command of at least one modern frontend framework (e.g., React/Next.js) and one backend runtime (e.g., Node.js/Express) — or an equally strong equivalent you can justify
+
+• Solid database design judgment — able to choose and justify the right engine(s) for commerce and inventory/forecasting data respectively
+
+• Experience deploying and running production systems independently, with no dedicated DevOps or QA function to lean on
+
+• Experience integrating LLM APIs — including streaming responses and prompt design
+
+• Comfort making architectural decisions and shipping full features without detailed specs or hand- holding
+
+
+
+Strongly Preferred
+
+• Experience working at startups, ideally across multiple early-stage companies — comfortable with ambiguity, shifting priorities, and wearing multiple hats
+
+• Domain knowledge of e-commerce and supply chain — understands catalog structures, affiliate or commission logic, checkout flows, inventory/warehouse fundamentals, and demand-forecasting logic
+
+• Direct experience building marketplace, commerce, or supply-chain/inventory products specifically
+
+• Arabic RTL and bilingual web application experience
+
+• PDPL or regional data-residency compliance awareness
+
+
+
+What We Are Not Looking For
+
+We are not looking for someone who needs detailed specifications before writing a line of code, who is uncomfortable making decisions without approval, or who treats scope questions as something to defer rather than resolve. This role demands someone energised by ambiguity and genuine product ownership — not someone waiting to be told what to build.
+
+
+
+What Is Fixed vs. What Is Yours to Decide
+
+We deliberately have not locked the technology stack. The following are genuine, non-negotiable constraints everything else is your call to propose and defend.
+
+
+
+Fixed constraints
+
+• All infrastructure and personal data storage for Saudi users must be hosted within the Kingdom of Saudi Arabia in compliance with PDPL — the specific cloud provider (e.g., AWS me-central-1, Oracle Cloud KSA, STC Cloud, or an equivalent in-Kingdom provider) is open to your recommendation
+
+• The AI layer must run on a Saudi-native or Saudi-hosted LLM (e.g., HUMAIN, ALLAM, or an equivalent) with streaming responses
+
+• Both products require full Arabic RTL support with bilingual Arabic/English interfaces Open — your recommendation
+
+• Frontend and backend frameworks, database engine(s), caching, hosting/deployment tooling, and overall architecture
+
+• Whether AI Commerce Platform and Inventory Intelligence Platform share infrastructure or run as separate systems
+
+• Payment integration approach for AI Commerce Platform''''s unlisted-merchant flow
+
+
+
+What We Offer
+
+Full technical ownership: You make the architectural decisions across both products. There is no senior engineer above you and no committee approving your stack choices.
+Direct founding-team access: You work directly with the founding team. Product and business decisions are made in conversation, not through a ticketing layer.
+Market-defining work: You are building the technical foundation for two category-defining products in one of the fastest- growing digital markets in the region.
+Outcomes-based culture: We measure what ships and what works for real users — not hours logged. Ship well and you have full autonomy over how you work.
+
+
+Saudi & GCC Context
+
+• Arabic-first product — RTL layout, dialect handling, and Arabic/English code-switching are genuine technical challenges you will solve, not an afterthought
+
+• Data residency under PDPL — personal data on Saudi residents must be stored within the Kingdom this shapes every infrastructure decision
+
+• Vision 2030 tailwind — Saudi Arabia's digital commerce and business-intelligence markets are among the fastest-growing in the world, with a young, highly connected population

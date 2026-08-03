@@ -1,0 +1,18 @@
+Priyanka Chatterjee
+priyankachatterjee9075@gmail.com | +91 8617262536
+linkedin.com/in/priyanka-9075 | github.com/Priyanka-Chatterjee-2000 | priyanka-chatterjee-2000.github.io
+
+Dear Hiring Manager,
+
+I'm writing to apply for the Software Engineer – Containers role at Barclays. As a core contributor to Turbot's open-source Go CLIs (9,300+ GitHub stars, 120+ merged pull requests), I've spent the last 3.5 years building and operating containerized, cloud-native backend services — most recently cutting Azure cloud-governance resource-discovery latency 70–90% by migrating 35+ modules to an event-driven architecture.
+
+In my current role at Turbot HQ, I designed and built an internal REST API microservice in Go using the Gin framework, containerized it with Docker, and deployed it to AWS EC2 as part of a greenfield build of our Preventive Security Posture Management SaaS product. I've also worked directly with Kubernetes in production — most recently diagnosing and resolving a service stuck in a CrashLoopBackOff by working through pod logs and status with our platform team.
+
+My day-to-day language is Go, with Python for automation and tooling — I built Tailpipe, a Go-based observability/SIEM CLI, lifting log-processing throughput 30% to 1,000+ logs per second, and authored 11 AWS log-source tables and 25+ security detections for it. Across AWS and Azure, I've built Kafka-based event-driven pipelines with dead-letter-queue reliability, and I own release engineering for four open-source Go CLIs, including GitHub Actions pipelines and GHCR Docker image tagging.
+
+I haven't worked directly with OpenShift, EKS, or AKS specifically, or with Ansible/Chef — but I've consistently picked up new infrastructure tooling fast on the job (Go, SQL, and public cloud all learned from scratch at Turbot), and I'd welcome the chance to bring that same speed to Barclays' container platform.
+
+I'd love to talk about how my container, Kubernetes, and cloud-native backend experience could contribute to your team in Chennai or Pune. Thank you for your consideration.
+
+Best regards,
+Priyanka Chatterjee

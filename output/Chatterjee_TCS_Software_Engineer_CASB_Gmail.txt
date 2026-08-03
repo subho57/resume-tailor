@@ -1,0 +1,12 @@
+Subject: Applied for {{jobTitle}} at {{companyName}} — would love a quick chat
+
+Hi {{outreachEmployeeName}},
+
+I just applied for the {{jobTitle}} role at {{companyName}} ({{jobLink}}) and wanted to reach out directly. I'm a backend engineer with 3.5+ years in Go and Node.js on AWS, and my day-to-day work at Turbot HQ has been squarely in this space — a Kafka-based policy-enforcement pipeline for a cloud security platform, plus 1,000+ multi-cloud compliance checks across CIS, NIST, HIPAA, and PCI DSS.
+
+That policy-enforcement and compliance-automation background feels like a strong match for a CASB-focused team, and I'd love to learn more about the role.
+
+Would you be open to a quick chat, or could you point me to the right person for a referral?
+
+Thanks so much,
+Priyanka

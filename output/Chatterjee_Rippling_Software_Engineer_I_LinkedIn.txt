@@ -1,0 +1,4 @@
+Hi {{outreachEmployeeName}}, I just applied for the {{jobTitle}} role at {{companyName}} ({{jobLink}}) and saw you're on the team. I'm backend-leaning full-stack — Go/Python distributed services (Kafka, AWS) plus production React work, and a core contributor to Turbot's open-source suite (9,300+ stars, 120+ merged PRs). Would you be open to a referral or a quick chat about the role?
+
+Thanks,
+Priyanka

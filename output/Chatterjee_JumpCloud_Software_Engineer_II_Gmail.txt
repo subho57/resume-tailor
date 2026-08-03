@@ -1,0 +1,12 @@
+Subject: Applied for {{jobTitle}} at {{companyName}} — would love a quick chat
+
+Hi {{outreachEmployeeName}},
+
+I just applied for the {{jobTitle}} role at {{companyName}} ({{jobLink}}) and wanted to reach out directly. I'm a backend engineer with 3.5+ years in Go, Python, and Node.js, including hands-on OAuth 2.0/JWT authentication work and an internal REST microservice I built and shipped at Turbot HQ.
+
+I also authored a Claude Code skill that automates refactoring, test generation, and deployment, and use Claude Code and Cursor daily to move faster — which lines up closely with how your team leverages AI-assisted development.
+
+Would you be open to a quick chat, or could you point me to the right person for a referral?
+
+Thanks so much,
+Priyanka

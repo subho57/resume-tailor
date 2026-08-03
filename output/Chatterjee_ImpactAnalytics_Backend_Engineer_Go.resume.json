@@ -1,0 +1,130 @@
+{
+  "schemaVersion": "1.0.0",
+  "theme": "corporate-navy",
+  "sectionOrder": ["summary", "skills", "work", "projects", "education"],
+  "basics": {
+    "name": "Priyanka Chatterjee",
+    "label": "Backend Software Engineer · Go (Golang) · Distributed Systems & Microservices · 9,300★ Open-Source Contributor · 3.5+ Years",
+    "email": "priyankachatterjee9075@gmail.com",
+    "phone": "+91 8617262536",
+    "url": "https://priyanka-chatterjee-2000.github.io",
+    "location": {
+      "display": "Kolkata, West Bengal, India",
+      "city": "Kolkata",
+      "region": "West Bengal",
+      "countryCode": "IN"
+    },
+    "profiles": [
+      {
+        "network": "LinkedIn",
+        "username": "priyanka-9075",
+        "url": "https://linkedin.com/in/priyanka-9075",
+        "display": "linkedin.com/in/priyanka-9075"
+      },
+      {
+        "network": "GitHub",
+        "username": "Priyanka-Chatterjee-2000",
+        "url": "https://github.com/Priyanka-Chatterjee-2000",
+        "display": "github.com/Priyanka-Chatterjee-2000"
+      },
+      {
+        "network": "Portfolio",
+        "url": "https://priyanka-chatterjee-2000.github.io",
+        "display": "priyanka-chatterjee-2000.github.io"
+      }
+    ],
+    "summaries": {
+      "impact-analytics-go-backend": "Backend Software Engineer with 3.5+ years designing, building, and scaling backend services and distributed systems in Go, with strong fundamentals in Data Structures & Algorithms, Object-Oriented Design, and REST/gRPC microservices. Core contributor to four open-source Go platforms (9,300+ GitHub stars, 120+ merged PRs) at Turbot HQ, where I engineered core features for a Go-based, data-intensive observability CLI that lifted log-processing throughput 30% to 1,000+ events per second while eliminating out-of-memory failures."
+    },
+    "activeSummary": "impact-analytics-go-backend"
+  },
+  "work": [
+    {
+      "name": "Turbot HQ, Inc.",
+      "location": "Remote",
+      "domainNote": "Multi-cloud security, governance, and compliance software; makers of the open-source Steampipe / Powerpipe / Flowpipe / Tailpipe suite and the commercial Turbot Guardrails PSPM platform. Remote-first.",
+      "dateDisplay": "August 2022 – April 2026",
+      "roleDisplay": "senior-only",
+      "roles": [
+        {
+          "position": "Software Engineer I",
+          "dateDisplay": "August 2023 – April 2026"
+        },
+        {
+          "position": "Junior Software Developer Intern",
+          "dateDisplay": "August 2022 – July 2023"
+        }
+      ],
+      "highlights": [
+        "Designed and built an internal REST API microservice in Go using the Gin framework as part of a greenfield build of Turbot Guardrails, a SaaS platform; secured endpoints with OAuth 2.0 (Auth0), containerized with Docker, deployed to AWS EC2, and served as a gRPC client for several internal microservices.",
+        "Built a Kafka-based, event-driven pipeline in Go where distributed consumers asynchronously processed policy-enforcement events and fired a webhook once processing completed; added a dead-letter queue (DLQ) for recurring-failure investigation and debugging.",
+        "Engineered core features for Tailpipe, a Go-based, data-intensive observability CLI built on DuckDB + Parquet, lifting log-processing throughput 30% to 1,000+ events per second by chunking and batching file reads and streaming writes; reduced memory use to eliminate out-of-memory failures and enable incremental updates.",
+        "Authored 11 data-source tables in Go for Tailpipe (CloudTrail, GuardDuty, SecurityHub, ALB/NLB/CLB/ELB, S3, VPC flow, WAF, Network Firewall) and 25+ pre-built detections; designed standardized exit-code handling and a cross-platform smoke-test pipeline (CentOS, Ubuntu ARM64, macOS).",
+        "Resolved a production incident by troubleshooting a Go service stuck in a Kubernetes CrashLoopBackOff, collaborating with the platform team to investigate pod logs and status and restore service.",
+        "Owned CI/CD release engineering for four open-source Go CLIs (Steampipe, Powerpipe, Flowpipe, Tailpipe) — unified GitHub Actions release pipelines with automated multi-distro Linux smoke tests, hardening release safety and catching regressions before deployment; shipped HCL function-call support across two of the CLIs by extending a shared Go library."
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "name": "Lila Tic-Tac-Toe — Real-Time Multiplayer Game",
+      "dateDisplay": "2026",
+      "association": "",
+      "description": "Built end to end in 4 days. React 19 + TypeScript + Vite on Vercel; Nakama game server (Go core + TS runtime) on Fly.io with PostgreSQL. Server-authoritative anti-cheat over WebSocket transport, mode-aware matchmaking via KV-storage queues, tick-based turn timer, and reconnect-into-active-match — a distributed, stateful backend service under real-time constraints.",
+      "links": [
+        {
+          "label": "repo/live",
+          "url": "https://priyanka-chatterjee-2000.github.io"
+        }
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "University of Engineering & Management (UEM)",
+      "location": "Kolkata, WB, IN",
+      "degreeDisplay": "Bachelor of Technology in Computer Science and Engineering",
+      "dateDisplay": "August 2019 – May 2023",
+      "score": "CGPA: 9.28",
+      "detail": "Relevant Coursework: Object-Oriented Programming, Data Structures and Algorithms, DBMS, Low-Level Design, High-Level Design"
+    }
+  ],
+  "skills": [
+    {
+      "name": "Languages",
+      "keywordsText": "Go (Golang), Python, TypeScript, JavaScript (ES6+), SQL, Bash"
+    },
+    {
+      "name": "Backend & APIs",
+      "keywordsText": "Microservices, Distributed Systems, Event-Driven Architecture, Concurrent/high-throughput Go services, REST, gRPC, WebSockets, OAuth 2.0 (Auth0), Node.js, Gin"
+    },
+    {
+      "name": "Messaging & Streaming",
+      "keywordsText": "Apache Kafka (consumer groups, DLQs), AWS SNS/SQS, AWS EventBridge"
+    },
+    {
+      "name": "Databases & SQL",
+      "keywordsText": "PostgreSQL, MongoDB, DuckDB, SQLite, Redis; query tuning, indexing, transactions, database migrations"
+    },
+    {
+      "name": "Cloud & Serverless",
+      "keywordsText": "AWS (Lambda, EC2, S3), Azure, GCP"
+    },
+    {
+      "name": "IaC & DevOps",
+      "keywordsText": "Docker, Kubernetes (working knowledge), GitHub Actions, Git"
+    },
+    {
+      "name": "Observability",
+      "keywordsText": "Datadog, OpenTelemetry (OTel); metrics, logging, tracing, incident triage"
+    },
+    {
+      "name": "Core CS",
+      "keywordsText": "Data Structures & Algorithms, Object-Oriented Design, Low-Level & High-Level System Design, API Design"
+    },
+    {
+      "name": "Testing & Quality",
+      "keywordsText": "Unit Testing, Integration Testing, Automated CI Testing, Code Review"
+    }
+  ]
+}

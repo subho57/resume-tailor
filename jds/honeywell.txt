@@ -1,0 +1,30 @@
+Advanced Software Engr
+Bengaluru, Karnataka, India
+Responsibilities
+KEY RESPONSIBILITIES
+
+Hands-on design, analysis, development and troubleshooting of highly distributed large-scale production systems and event-driven, cloud-based services
+Primarily Linux Administration, managing a fleet of Linux and Windows VMs as part of the application solutions
+Involved in Pull Requests for site reliability goals
+Advocate IaC (Infrastructure as Code) and CaC (Configuration as Code) practices within Honeywell HCE
+Ownership of reliability, up time, system security, cost, operations, capacity and performance-analysis
+Monitor and report on service level objectives for a given applications services. Work with the business, Technology teams and product owners to establish key service level indicators.
+Ensuring the repeatability, traceability, and transparency of our infrastructure automation
+Support on-call rotations for operational duties that have not been addressed with automation
+Support healthy software development practices, including complying with the chosen software development methodology (Agile, or alternatives), building standards for code reviews, work packaging, etc.
+Create and maintain monitoring technologies and processes that improve the visibility to our applications' performance and business metrics and keep operational workload in-check.
+Partnering with security engineers and developing plans and automation to aggressively and safely respond to new risks and vulnerabilities.
+Develop, communicate, collaborate, and monitor standard processes to promote the long-term health and sustainability of operational development tasks.
+Participate in technical training events, game day scenarios, and professional conferences
+Qualifications
+YOU MUST HAVE
+
+3 Years of experience in system administration, application development, infrastructure development or related areas
+3  years of experience with programming in languages like Javascript, Python, PHP, Go, Java or Ruby
+3 years Mastery of infrastructure automation technologies (like Terraform, CodeDeploy, Puppet, Ansible, Chef)
+5+ years Cloud and container native Linux administration/build/management skills
+3+ years expertise in container/container-fleet-orchestration technologies (like Kubernetes, Openshift, AKS, EKS, Docker, Vagrant, etcd, zookeeper)
+Required Skills
+SRE
+About Us
+Honeywell helps organizations solve the world's most complex challenges in automation, the future of aviation and energy transition. As a trusted partner, we provide actionable solutions and innovation through our Aerospace Technologies, Building Automation, Energy and Sustainability Solutions, and Industrial Automation business segments – powered by our Honeywell Forge software – that help make the world smarter, safer and more sustainable.

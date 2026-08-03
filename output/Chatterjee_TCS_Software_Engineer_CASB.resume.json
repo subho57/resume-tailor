@@ -1,0 +1,108 @@
+{
+  "schemaVersion": "1.0.0",
+  "theme": "corporate-navy",
+  "sectionOrder": ["summary", "skills", "work", "projects", "education"],
+  "basics": {
+    "name": "Priyanka Chatterjee",
+    "label": "Backend Software Engineer · Cloud Security & Policy Enforcement · Go (Golang) · Node.js · AWS · 3.5+ Years",
+    "email": "priyankachatterjee9075@gmail.com",
+    "phone": "+91 8617262536",
+    "url": "https://priyanka-chatterjee-2000.github.io",
+    "location": {
+      "display": "Kolkata, West Bengal, India",
+      "city": "Kolkata",
+      "region": "West Bengal",
+      "countryCode": "IN"
+    },
+    "profiles": [
+      {
+        "network": "LinkedIn",
+        "username": "priyanka-9075",
+        "url": "https://linkedin.com/in/priyanka-9075",
+        "display": "linkedin.com/in/priyanka-9075"
+      },
+      {
+        "network": "GitHub",
+        "username": "Priyanka-Chatterjee-2000",
+        "url": "https://github.com/Priyanka-Chatterjee-2000",
+        "display": "github.com/Priyanka-Chatterjee-2000"
+      },
+      {
+        "network": "Portfolio",
+        "url": "https://priyanka-chatterjee-2000.github.io",
+        "display": "priyanka-chatterjee-2000.github.io"
+      }
+    ],
+    "summaries": {
+      "tcs-casb-cloud-security": "Backend software engineer with 3.5+ years building microservices in Go (Golang) and Node.js across AWS, with hands-on experience in cloud security policy enforcement, compliance automation, and CI/CD. Built a Kafka-based policy-enforcement pipeline and 1,000+ multi-cloud compliance checks across CIS, NIST, HIPAA, and PCI DSS frameworks for Turbot HQ, cutting enterprise compliance-audit time 50%."
+    },
+    "activeSummary": "tcs-casb-cloud-security"
+  },
+  "work": [
+    {
+      "name": "Turbot HQ, Inc.",
+      "location": "Remote",
+      "domainNote": "Multi-cloud security, governance, and compliance software; makers of the open-source Steampipe / Powerpipe / Flowpipe / Tailpipe suite and the commercial Turbot Guardrails PSPM platform. Remote-first.",
+      "dateDisplay": "August 2022 – April 2026",
+      "roleDisplay": "senior-only",
+      "roles": [
+        {
+          "position": "Software Engineer I",
+          "dateDisplay": "August 2022 – April 2026"
+        }
+      ],
+      "highlights": [
+        "Built a Kafka-based, fire-and-forget event-driven pipeline for Turbot Guardrails, a cloud security policy-enforcement platform, where consumers asynchronously processed policy-enforcement events and fired a webhook once a policy was successfully enforced against a cloud resource; added a dead-letter queue (DLQ) to capture recurring failures for investigation.",
+        "Authored multi-cloud compliance modules in HCL + SQL covering 1,000+ resource checks across CIS (AWS, Azure, GCP, Microsoft 365, GitHub), NIST, HIPAA, PCI DSS v4, SOC 2, and FedRAMP frameworks — used by enterprise customers in finance, healthcare, and government for cloud data visibility and compliance — cutting enterprise compliance-audit time 50%.",
+        "Engineered core features for Tailpipe, a Go-based observability/SIEM CLI on DuckDB + Parquet, lifting log-processing throughput 30% to 1,000+ logs per second by chunking and batching file reads and streaming writes; reduced memory use to eliminate out-of-memory failures.",
+        "Designed and developed an internal REST API microservice in Go (Golang) using the Gin framework as part of a greenfield build of Turbot Guardrails, a Preventive Security Posture Management (PSPM) SaaS product; secured endpoints with OAuth 2.0 via Auth0, containerized with Docker, deployed to AWS EC2, and served as a gRPC client for several internal microservices.",
+        "Led the AWS SDK for JavaScript v2 to v3 migration across 180+ call sites and 11+ AWS services in production Node.js Lambdas, refactoring discovery, configuration-sync, tagging, and resource-cleanup workflows; reduced policy-code duplication ~60% via Nunjucks templating and resolved recurring AWS API throttling issues.",
+        "Owned release engineering for four open-source Go CLIs (Steampipe, Powerpipe, Flowpipe, Tailpipe) — unified GitHub Actions CI/CD release workflows with automated quality gates and multi-distro Linux smoke tests, hardening release safety before deployment."
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "name": "CIS Benchmark → Compliance Dashboard Generator",
+      "dateDisplay": "",
+      "association": "",
+      "description": "Python CLI that automates compliance-dashboard authoring for a multi-cloud governance product. Ingests CIS benchmark XLSX workbooks (AWS, Azure) and emits ready-to-deploy HCL dashboard config plus markdown docs for cloud security visibility. OOP resource model, custom HCL pretty-printer, openpyxl + pandas, distributed as a pip-installable package.",
+      "links": []
+    }
+  ],
+  "education": [
+    {
+      "institution": "University of Engineering & Management (UEM)",
+      "location": "Kolkata, WB, IN",
+      "degreeDisplay": "Bachelor of Technology in Computer Science and Engineering",
+      "dateDisplay": "August 2019 – May 2023",
+      "score": "CGPA: 9.28"
+    }
+  ],
+  "skills": [
+    {
+      "name": "Languages",
+      "keywordsText": "Go (Golang), Python, TypeScript, JavaScript (ES6+), SQL, Bash"
+    },
+    {
+      "name": "Backend & APIs",
+      "keywordsText": "Microservices, Event-Driven Architecture, Distributed Systems, REST, gRPC, OAuth 2.0 (Auth0), JWT, Node.js, Express.js, Gin"
+    },
+    {
+      "name": "Cloud & DevOps",
+      "keywordsText": "AWS (Lambda, EC2, RDS, S3, SecurityHub, GuardDuty), Azure, GCP, Docker, Kubernetes (working knowledge), Terraform, GitHub Actions, CI/CD, Git"
+    },
+    {
+      "name": "Security & Compliance",
+      "keywordsText": "CIS (AWS, Azure, GCP, M365, GitHub, Google Workspace), NIST, HIPAA, PCI DSS v4, SOC 2, FedRAMP; IAM, RBAC, cloud security policies, policy enforcement, CMDB, SIEM"
+    },
+    {
+      "name": "Observability",
+      "keywordsText": "Datadog, OpenTelemetry (OTel), Logfire; metrics, logging, tracing, incident triage"
+    },
+    {
+      "name": "Databases & SQL",
+      "keywordsText": "PostgreSQL, MySQL, MongoDB, DuckDB, SQLite; CTEs, indexing, query tuning, transactions"
+    }
+  ]
+}

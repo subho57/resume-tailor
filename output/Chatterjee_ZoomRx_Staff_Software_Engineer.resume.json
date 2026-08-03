@@ -1,0 +1,111 @@
+{
+  "schemaVersion": "1.0.0",
+  "theme": "corporate-navy",
+  "sectionOrder": ["summary", "skills", "work", "projects", "education"],
+  "basics": {
+    "name": "Priyanka Chatterjee",
+    "label": "Software Engineer · AI-Native Backend & Agentic Systems (Claude Code, MCP, RAG) · Python · 9,300★ Open-Source Contributor · 3.5+ Years",
+    "email": "priyankachatterjee9075@gmail.com",
+    "phone": "+91 8617262536",
+    "url": "https://priyanka-chatterjee-2000.github.io",
+    "location": {
+      "display": "Kolkata, West Bengal, India",
+      "city": "Kolkata",
+      "region": "West Bengal",
+      "countryCode": "IN"
+    },
+    "profiles": [
+      {
+        "network": "LinkedIn",
+        "username": "priyanka-9075",
+        "url": "https://linkedin.com/in/priyanka-9075",
+        "display": "linkedin.com/in/priyanka-9075"
+      },
+      {
+        "network": "GitHub",
+        "username": "Priyanka-Chatterjee-2000",
+        "url": "https://github.com/Priyanka-Chatterjee-2000",
+        "display": "github.com/Priyanka-Chatterjee-2000"
+      },
+      {
+        "network": "Portfolio",
+        "url": "https://priyanka-chatterjee-2000.github.io",
+        "display": "priyanka-chatterjee-2000.github.io"
+      }
+    ],
+    "summaries": {
+      "zoomrx-ai-native-backend": "Software engineer with 3.5+ years of experience and expertise in Python, agentic AI systems, Model Context Protocol (MCP), and backend platform engineering, building with Claude Code and the OpenAI Agents SDK as a default workflow rather than a novelty. Authored an LLM-driven Claude Code skill that automated refactoring, testing, and deployment at Turbot HQ, using it to migrate 35+ Azure cloud-governance modules to event-driven architecture and cut resource-discovery latency 70–90%."
+    },
+    "activeSummary": "zoomrx-ai-native-backend"
+  },
+  "work": [
+    {
+      "name": "Turbot HQ, Inc.",
+      "location": "Remote",
+      "dateDisplay": "August 2022 – April 2026",
+      "roleDisplay": "senior-only",
+      "roles": [
+        {
+          "position": "Software Engineer I",
+          "dateDisplay": "August 2022 – April 2026"
+        }
+      ],
+      "highlights": [
+        "Authored an LLM-driven Claude Code skill automating code refactoring, unit test generation, deployment, Terraform-driven integration testing, and PR creation — building with agentic tooling as a default workflow, not an experiment; used it to migrate 35+ Azure cloud-governance modules from polling to push-based eventing via Azure Event Grid, cutting resource-discovery latency 70–90% and eliminating recurring Azure API throttling.",
+        "Built the Steampipe Model Context Protocol (MCP) server end to end in Python — one of 120+ merged pull requests across Turbot's four open-source products (9,300+ combined GitHub stars) — giving LLM agents standardized, real-time access to enterprise cloud and security data for retrieval and analysis.",
+        "Designed a multi-agent workflow on the OpenAI Agents SDK to orchestrate LLM agents that generate cloud preventive-policy commands, validate them in a live test environment, self-correct failures, and score accounts against an internal security metric.",
+        "Built a RAG-based internal Pydantic AI agent to resolve cross-team queries by ingesting the documentation and code graph for all internal repos into AWS S3 vector storage; deployed it to AWS Lambda and integrated it with the Slack Bot API as the UI for instant, context-aware query resolution.",
+        "Optimized complex PostgreSQL queries powering customer compliance audits — rewriting AWS IAM policy-evaluation queries with jsonb array elements and multi-stage CTEs — improving query performance 40% (cutting report generation from 3 minutes to 1.5 minutes across 10,000+ resources) and eliminating a class of false-positive findings."
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "University of Engineering & Management (UEM)",
+      "location": "Kolkata, WB, IN",
+      "degreeDisplay": "Bachelor of Technology in Computer Science and Engineering",
+      "dateDisplay": "August 2019 – May 2023",
+      "score": "CGPA: 9.28",
+      "detail": "Relevant Coursework: Object-Oriented Programming, DBMS, Data Structures and Algorithms, Shell Scripting in Linux, Low-Level Design, High-Level Design"
+    }
+  ],
+  "skills": [
+    {
+      "name": "Languages",
+      "keywordsText": "Python, Go, TypeScript, JavaScript (ES6+), SQL, Bash"
+    },
+    {
+      "name": "AI & Agentic Engineering",
+      "keywordsText": "LLM Application Development, Agentic Workflows, Multi-Agent Systems, Retrieval-Augmented Generation (RAG), Model Context Protocol (MCP), OpenAI Agents SDK, Pydantic AI, Anthropic Claude, OpenAI, Google Gemini, Prompt Engineering, Claude Code, Cursor, Codex, Logfire (LLM observability)"
+    },
+    {
+      "name": "Backend & APIs",
+      "keywordsText": "Microservices, Event-Driven Architecture, Distributed Systems, Serverless, REST, gRPC, OAuth 2.0 (Auth0), JWT"
+    },
+    {
+      "name": "Databases & Vector Search",
+      "keywordsText": "PostgreSQL (Postgres), MongoDB, DuckDB, Redis (ElastiCache), AWS S3 vector storage; jsonb, CTEs, query tuning, indexing, transactions"
+    },
+    {
+      "name": "Cloud & DevOps",
+      "keywordsText": "AWS (Lambda, EC2, S3), Azure, GCP, Docker, Kubernetes (working knowledge; collaborate with platform teams), GitHub Actions"
+    },
+    {
+      "name": "Observability",
+      "keywordsText": "Datadog, OpenTelemetry (OTel), Logfire; metrics, logging, tracing, incident triage"
+    },
+    {
+      "name": "Core CS",
+      "keywordsText": "Data Structures & Algorithms, Object-Oriented Design, Low-Level & High-Level System Design, API Design"
+    }
+  ],
+  "projects": [
+    {
+      "name": "General-Purpose AI Chatbot / Agent (Model Context Protocol)",
+      "dateDisplay": "Jun 2025 – Aug 2025",
+      "association": "",
+      "description": "Agentic chatbot/agent framework built with Pydantic AI featuring configurable external MCP servers via a persistent MongoDB-backed registry, JSON config loader with strict input validation, per-server failure isolation, native tool calling, mid-conversation multi-model switching (OpenAI, Gemini, Anthropic, Mistral), conversation-history persistence, sync + streaming output, prompt-injection safeguards, and Logfire observability.",
+      "links": []
+    }
+  ]
+}

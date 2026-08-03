@@ -1,0 +1,4 @@
+Hi {{outreachEmployeeName}}, I just applied for the {{jobTitle}} role at {{companyName}} ({{jobLink}}) and saw you're on the team. I have 3.5+ years building Node.js/TypeScript backend systems at a product company — including leading an AWS SDK v2-to-v3 migration across 180+ call sites in production Node.js Lambdas — and would love a quick chat or a referral if you're open to it.
+
+Thanks so much,
+Priyanka

@@ -1,0 +1,111 @@
+{
+  "schemaVersion": "1.0.0",
+  "theme": "corporate-navy",
+  "sectionOrder": ["summary", "skills", "work", "education"],
+  "basics": {
+    "name": "Priyanka Chatterjee",
+    "label": "Cloud AI Engineer · 9,300★ Open-Source Contributor · Terraform · Kubernetes · Agentic AI (MCP, LLMs) · 3.5+ Years",
+    "email": "priyankachatterjee9075@gmail.com",
+    "phone": "+91 8617262536",
+    "url": "https://priyanka-chatterjee-2000.github.io",
+    "location": {
+      "display": "Kolkata, West Bengal, India",
+      "city": "Kolkata",
+      "region": "West Bengal",
+      "countryCode": "IN"
+    },
+    "profiles": [
+      {
+        "network": "LinkedIn",
+        "username": "priyanka-9075",
+        "url": "https://linkedin.com/in/priyanka-9075",
+        "display": "linkedin.com/in/priyanka-9075"
+      },
+      {
+        "network": "GitHub",
+        "username": "Priyanka-Chatterjee-2000",
+        "url": "https://github.com/Priyanka-Chatterjee-2000",
+        "display": "github.com/Priyanka-Chatterjee-2000"
+      },
+      {
+        "network": "Portfolio",
+        "url": "https://priyanka-chatterjee-2000.github.io",
+        "display": "priyanka-chatterjee-2000.github.io"
+      }
+    ],
+    "summaries": {
+      "teradata-cloud-ai": "Cloud AI Engineer with 3.5+ years building scalable, distributed cloud infrastructure across AWS, Azure, and GCP — hands-on with Terraform/HCL, Kubernetes, Docker, GitHub Actions CI/CD, and Kafka event-driven pipelines — and integrating agentic AI (Model Context Protocol, multi-agent LLM workflows) into production systems using Claude Code as a default engineering workflow. Built the Steampipe MCP server and an LLM-driven Claude Code automation that migrated 35+ Azure modules to event-driven architecture, cutting resource-discovery latency 70–90% — one of 120+ merged pull requests across Turbot's 9,300★ open-source suite."
+    },
+    "activeSummary": "teradata-cloud-ai"
+  },
+  "work": [
+    {
+      "name": "Turbot HQ, Inc.",
+      "location": "Remote",
+      "dateDisplay": "August 2022 – April 2026",
+      "roleDisplay": "senior-only",
+      "roles": [
+        {
+          "position": "Software Engineer I",
+          "dateDisplay": "August 2022 – April 2026"
+        }
+      ],
+      "highlights": [
+        "Built the Steampipe Model Context Protocol (MCP) server end to end in Python, giving LLM agents standardized, real-time access to enterprise cloud and security data for retrieval and analysis.",
+        "Designed a multi-agent workflow on the OpenAI Agents SDK to orchestrate LLM agents that generate cloud preventive-policy commands, validate them in a live test environment, self-correct failures, and score accounts against an internal security metric — applying agentic AI directly to production infrastructure.",
+        "Authored an LLM-driven Claude Code skill automating code refactoring, unit test generation, deployment, Terraform-driven integration testing, and PR creation; used it to migrate 35+ Azure cloud-governance modules from polling to an event-driven architecture via Azure Event Grid, cutting resource-discovery latency 70–90% and eliminating recurring Azure API throttling.",
+        "Built a Kafka-based, fire-and-forget event-driven pipeline for Turbot Guardrails, where consumers asynchronously processed policy-enforcement events and fired a webhook once a policy was successfully enforced against a resource; added a dead-letter queue (DLQ) to capture recurring failures for manual investigation and debugging.",
+        "Designed and developed an internal RESTful API microservice in Go using the Gin framework as part of a greenfield build of Turbot Guardrails, a Preventive Security Posture Management (PSPM) SaaS product; secured endpoints with OAuth 2.0 (Auth0), containerized with Docker, deployed to AWS EC2, and served as a gRPC client for several internal microservices; all changes shipped through peer code review via GitHub pull requests.",
+        "Optimized complex PostgreSQL queries powering customer compliance audits — rewriting AWS IAM policy-evaluation queries with jsonb array elements and multi-stage CTEs — resolving a production performance bottleneck: 40% faster queries (cutting report generation from 3 minutes to 1.5 minutes across 10,000+ resources) and eliminating a class of false-positive findings."
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "University of Engineering & Management (UEM)",
+      "location": "Kolkata, WB, IN",
+      "degreeDisplay": "Bachelor of Technology in Computer Science and Engineering",
+      "dateDisplay": "August 2019 – May 2023",
+      "score": "CGPA: 9.28",
+      "detail": "Relevant Coursework: Object-Oriented Programming, DBMS, Data Structures and Algorithms, Shell Scripting in Linux, Low-Level Design, High-Level Design"
+    }
+  ],
+  "skills": [
+    {
+      "name": "Languages",
+      "keywordsText": "Go, Python, TypeScript, JavaScript (ES6+), SQL, Bash, HCL"
+    },
+    {
+      "name": "AI & Agentic Engineering",
+      "keywordsText": "LLM Application Development, Agentic Workflows, Multi-Agent Systems, Retrieval-Augmented Generation (RAG), Model Context Protocol (MCP), OpenAI Agents SDK, Pydantic AI, Claude Code, Cursor, Codex, Logfire (LLM observability)"
+    },
+    {
+      "name": "IaC & DevOps",
+      "keywordsText": "Terraform, OpenTofu, HCL, Docker, Kubernetes (working knowledge; collaborate with platform teams), GitHub Actions, Git"
+    },
+    {
+      "name": "Cloud & Serverless",
+      "keywordsText": "AWS (Lambda, EC2, RDS, S3, SecurityHub, GuardDuty, ControlTower, Shield, X-Ray, EFS), Azure, GCP, OCI, AliCloud"
+    },
+    {
+      "name": "Messaging & Streaming",
+      "keywordsText": "Apache Kafka (consumer groups, DLQs), AWS SNS/SQS, AWS EventBridge, Azure Event Grid"
+    },
+    {
+      "name": "Backend & APIs",
+      "keywordsText": "Microservices, Event-Driven Architecture, Distributed Systems, Serverless, REST, gRPC, OAuth 2.0 (Auth0), JWT"
+    },
+    {
+      "name": "Databases & SQL",
+      "keywordsText": "PostgreSQL, MySQL, MongoDB, DuckDB, SQLite, Redis (ElastiCache); jsonb, CTEs, query tuning, indexing, transactions, database migrations"
+    },
+    {
+      "name": "Observability",
+      "keywordsText": "Datadog, OpenTelemetry (OTel), Logfire; metrics, logging, tracing, incident triage"
+    },
+    {
+      "name": "Security & Compliance",
+      "keywordsText": "IAM, RBAC, CIS (AWS, Azure, GCP), NIST, HIPAA, PCI DSS v4, SOC 2, FedRAMP, cloud security policies"
+    }
+  ]
+}

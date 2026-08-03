@@ -1,0 +1,21 @@
+Priyanka Chatterjee
+Kolkata, West Bengal, India
+priyankachatterjee9075@gmail.com | +91 8617262536
+linkedin.com/in/priyanka-9075 | github.com/Priyanka-Chatterjee-2000
+
+Re: Software Development Engineer (Backend) — Job ID 378398
+
+Dear Hiring Manager,
+
+I'm writing to apply for the Backend SDE role. I bring 3.5+ years of backend engineering experience building Node.js and TypeScript systems in a product-based environment, and I'm a core open-source contributor across four platform products at Turbot HQ (120+ merged pull requests, 9,300+ GitHub stars). Most directly relevant: I led the AWS SDK for JavaScript v2-to-v3 migration across 180+ call sites and 11+ AWS services in production Node.js Lambdas, cutting policy-code duplication ~60% while keeping the platform supported past AWS SDK v2 end-of-life — the kind of hands-on Node.js/TypeScript ownership your posting is looking for.
+
+On backend architecture and APIs, I designed and built a REST API microservice using the Gin framework as part of a greenfield build of Turbot Guardrails, a preventive cloud-security SaaS product — secured with OAuth 2.0, containerized with Docker, and wired as a gRPC client to several internal microservices. I've since carried that same API-first discipline into TypeScript directly: a personal REST backend built with Bun and Express.js 5 with JWT authentication, RBAC, schema-validated controllers, and database migrations, mirroring exactly the kind of scalable service work you're hiring for.
+
+I also have solid grounding in the fundamentals your posting calls out: I optimized complex PostgreSQL queries powering customer compliance audits, improving query performance 40% and eliminating a class of false-positive findings, and I built a Kafka-based event-driven pipeline with dead-letter-queue reliability for asynchronous processing — real data-structures-and-algorithms and system-design work, not just theory. Turbot itself has been my only professional home since 2022, a product company end to end, and I've grown there from an intern with little cloud or backend experience into a core contributor trusted with production-critical migrations.
+
+I'll be candid about one gap: my hands-on framework experience is in Express.js rather than NestJS specifically, though both sit in the same Node.js web-framework space and I've shipped production REST services on Express end to end. Given how quickly I picked up Go, SQL, and cloud infrastructure at Turbot with no prior background in any of them, I'm confident I'd ramp on NestJS just as fast.
+
+I'd welcome the opportunity to discuss how I could contribute to your backend team. Thank you for your time and consideration.
+
+Sincerely,
+Priyanka Chatterjee

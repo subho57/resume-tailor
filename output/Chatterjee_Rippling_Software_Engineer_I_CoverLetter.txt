@@ -1,0 +1,18 @@
+Priyanka Chatterjee
+priyankachatterjee9075@gmail.com | +91 8617262536
+linkedin.com/in/priyanka-9075 | github.com/Priyanka-Chatterjee-2000 | priyanka-chatterjee-2000.github.io
+
+Dear Hiring Manager,
+
+I'm writing to apply for the Software Engineer I (Backend-Leaning Full Stack) role on the App Components team. I'm a backend-leaning full-stack engineer with 3.5+ years building distributed backend services in Go (Golang) and Python, plus production React experience shipping user-facing features — and a core contributor to Turbot's open-source infrastructure suite (9,300+ GitHub stars, 120+ merged pull requests through PR code review). At Turbot HQ, I designed and built a RESTful Go/Gin microservice as part of a greenfield product build, and at Trisetra I led a React-based user-upload workflow redesign across 60+ files.
+
+Your posting asks for scalable backend services, distributed systems exposure, and comfort reasoning through consistency/performance/fault-tolerance trade-offs. I built a Kafka-based event-driven pipeline at Turbot with a dead-letter queue for handling recurring failures, and separately optimized PostgreSQL data models and queries powering compliance audits, improving query performance 40%. I've also built reusable, developer-facing components — extending a shared Go library (pipe-fittings) to ship a top-requested feature across two open-source CLIs, and building the Steampipe MCP server end to end.
+
+On the frontend side, my React work at Trisetra went beyond feature-building into component-level debugging: I fixed a recurring double-render bug in an IndexedDB-backed asset-caching layer, contributed to an incremental React 17 to React 19 migration, and resolved re-rendering issues in existing components — the kind of component-lifecycle and state-management work your posting calls out directly.
+
+I haven't shipped production React Native or worked with Django specifically, though my React and Python backend experience should transfer quickly, and I'm used to ramping fast on new frameworks. I'd welcome the opportunity to talk through how my backend and frontend experience could contribute to the App Components team.
+
+Thank you for your consideration — I'd love to discuss further.
+
+Best regards,
+Priyanka Chatterjee

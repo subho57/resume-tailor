@@ -1,0 +1,18 @@
+Priyanka Chatterjee
+priyankachatterjee9075@gmail.com | +91 8617262536
+linkedin.com/in/priyanka-9075 | github.com/Priyanka-Chatterjee-2000 | priyanka-chatterjee-2000.github.io
+
+Dear Hiring Manager,
+
+I'm a full-stack engineer with 3.5+ years building production systems end-to-end at early-stage startups, and I'd like to be your founding engineer for the AI Commerce and Inventory Intelligence platforms. At Turbot HQ, I designed and shipped an internal REST API microservice from a greenfield spec, secured it with OAuth 2.0, containerized it with Docker, and deployed it to AWS EC2 — with no dedicated DevOps team behind me. That microservice is one of 120+ merged pull requests I've contributed across Turbot's open-source suite, which has 9,300+ GitHub stars.
+
+Your requirement for LLM API integration with streaming responses is exactly the kind of work I've been doing hands-on. I built the Steampipe Model Context Protocol (MCP) server end-to-end in Python, giving LLM agents standardized, real-time access to production data, and designed a multi-agent workflow on the OpenAI Agents SDK that generates, validates, and self-corrects LLM-produced policy commands. Separately, I built a general-purpose AI chatbot framework with mid-conversation multi-model switching (OpenAI, Gemini, Anthropic, Mistral) and sync/streaming output — direct, transferable experience for wiring a Saudi-native LLM into your commerce platform with a real streaming UX.
+
+On the database side, I've made the kind of engine-choice calls this role needs rather than defaulting to one stack: PostgreSQL and MySQL for relational, transactional data, MongoDB and Firebase/Firestore for document-shaped data, and DuckDB for high-throughput analytical workloads — each picked to match the access pattern, not out of habit. I also have direct React and Node.js/Express production experience: I led a 60+ file React user-upload workflow redesign at Trisetra, an early-stage Palo Alto startup, working without a dedicated QA function, and I built a REST backend in Express.js 5 with JWT auth and RBAC for a recent project. I don't have hands-on Next.js experience specifically — my React work has been in a Vite/CRA-style setup rather than Next's framework conventions — but I pick up frameworks fast, as reflected in migrating a codebase from React 17 to 19 and MUI 4 to MUI 7 without missing a beat.
+
+I'm comfortable with the ambiguity this role is built around — making architectural calls, shipping full features without a detailed spec, and owning outcomes rather than waiting to be told what to build. I'd welcome the chance to talk through how I'd approach the 8-10 week alpha timeline for both products.
+
+Thank you for your consideration — I'd love to connect.
+
+Best regards,
+Priyanka Chatterjee

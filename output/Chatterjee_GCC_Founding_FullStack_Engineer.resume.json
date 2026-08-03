@@ -1,0 +1,133 @@
+{
+  "schemaVersion": "1.0.0",
+  "theme": "corporate-navy",
+  "sectionOrder": ["summary", "skills", "work", "projects", "education"],
+  "basics": {
+    "name": "Priyanka Chatterjee",
+    "label": "Founding Full-Stack Engineer · React · Node.js · LLM Streaming Integration · 9,300★ Open-Source Contributor · 3.5+ Years",
+    "email": "priyankachatterjee9075@gmail.com",
+    "phone": "+91 8617262536",
+    "url": "https://priyanka-chatterjee-2000.github.io",
+    "location": {
+      "display": "Kolkata, West Bengal, India",
+      "city": "Kolkata",
+      "region": "West Bengal",
+      "countryCode": "IN"
+    },
+    "profiles": [
+      {
+        "network": "LinkedIn",
+        "username": "priyanka-9075",
+        "url": "https://linkedin.com/in/priyanka-9075",
+        "display": "linkedin.com/in/priyanka-9075"
+      },
+      {
+        "network": "GitHub",
+        "username": "Priyanka-Chatterjee-2000",
+        "url": "https://github.com/Priyanka-Chatterjee-2000",
+        "display": "github.com/Priyanka-Chatterjee-2000"
+      },
+      {
+        "network": "Portfolio",
+        "url": "https://priyanka-chatterjee-2000.github.io",
+        "display": "priyanka-chatterjee-2000.github.io"
+      }
+    ],
+    "summaries": {
+      "gcc-founding-fullstack": "Full-stack engineer with 3.5+ years of experience in React, Node.js, database design, and LLM API integration with streaming responses, built across early-stage startups owning features end-to-end with no dedicated DevOps or QA team. Shipped an MCP server and multi-agent LLM tooling for Turbot HQ (9,300+ GitHub stars, 120+ merged PRs), cutting resource-discovery latency 70–90%."
+    },
+    "activeSummary": "gcc-founding-fullstack"
+  },
+  "work": [
+    {
+      "name": "Turbot HQ, Inc.",
+      "location": "Remote",
+      "domainNote": "Multi-cloud security and compliance software; makers of the open-source Steampipe/Powerpipe/Flowpipe/Tailpipe suite and the Turbot Guardrails PSPM platform.",
+      "dateDisplay": "August 2022 – April 2026",
+      "roleDisplay": "senior-only",
+      "roles": [
+        {
+          "position": "Software Engineer I",
+          "dateDisplay": "August 2022 – April 2026"
+        }
+      ],
+      "highlights": [
+        "Designed and built an internal REST API microservice in Go/Gin as part of a greenfield build of Turbot Guardrails, a PSPM SaaS product — an independent architectural call — secured with OAuth 2.0 (Auth0), containerized with Docker, and deployed to production on AWS EC2 with no dedicated DevOps team.",
+        "Built the Steampipe Model Context Protocol (MCP) server end to end in Python, giving LLM agents standardized, real-time access to enterprise cloud and security data for retrieval and analysis.",
+        "Designed a multi-agent workflow on the OpenAI Agents SDK orchestrating LLM agents that generate, validate, and self-correct cloud policy commands — hands-on LLM API integration and prompt design end to end.",
+        "Led the AWS SDK v2-to-v3 migration across 180+ call sites in production Node.js Lambdas, refactoring discovery and config-sync workflows; cut policy-code duplication ~60% via Nunjucks templating."
+      ]
+    },
+    {
+      "name": "Trisetra, Inc.",
+      "location": "Remote",
+      "domainNote": "Early-stage Palo Alto startup building an AI-powered 3D product-visualization / interior-design SaaS.",
+      "dateDisplay": "February 2022 – June 2022",
+      "roles": [
+        {
+          "position": "Frontend Software Developer Intern (SDE Intern)",
+          "dateDisplay": "February 2022 – June 2022"
+        }
+      ],
+      "highlights": [
+        "Led the user-upload workflow redesign across 60+ files in React (Google Maps autocomplete, drag-and-drop upload, history dashboard) at an early-stage startup with no dedicated QA team, shipping full features independently."
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "name": "General-Purpose AI Chatbot / Agent (Model Context Protocol)",
+      "dateDisplay": "Jun 2025 – Aug 2025",
+      "association": "",
+      "description": "Agentic chatbot/agent framework built with Pydantic AI featuring configurable external MCP servers via a persistent MongoDB-backed registry, JSON config loader with strict input validation, per-server failure isolation, native tool calling, mid-conversation multi-model switching (OpenAI, Gemini, Anthropic, Mistral), conversation-history persistence, sync + streaming output, prompt-injection safeguards, and Logfire observability.",
+      "links": []
+    },
+    {
+      "name": "TODO / Tasks REST API",
+      "dateDisplay": "Apr 2026",
+      "association": "",
+      "description": "API-first REST backend in TypeScript with Bun, Express.js 5, and SQLite + Zod + jose (JWT). JWT authentication, RBAC, a prepared-statement CRUD service layer, schema-validated controllers with proper REST status codes, and database migrations.",
+      "links": []
+    }
+  ],
+  "education": [
+    {
+      "institution": "University of Engineering & Management (UEM)",
+      "location": "Kolkata, WB, IN",
+      "degreeDisplay": "Bachelor of Technology in Computer Science and Engineering",
+      "dateDisplay": "August 2019 – May 2023",
+      "score": "CGPA: 9.28",
+      "detail": "Relevant Coursework: Object-Oriented Programming, DBMS, Data Structures and Algorithms, Shell Scripting in Linux, Low-Level Design, High-Level Design"
+    }
+  ],
+  "skills": [
+    {
+      "name": "Languages",
+      "keywordsText": "TypeScript, JavaScript (ES6+), Go, Python, SQL, Bash"
+    },
+    {
+      "name": "Frontend",
+      "keywordsText": "React, MUI, Three.js, HTML, CSS"
+    },
+    {
+      "name": "Backend & APIs",
+      "keywordsText": "Node.js, Express.js, Gin, REST, WebSockets, Microservices, Event-Driven Architecture, OAuth 2.0 (Auth0), JWT, Zod, Bun"
+    },
+    {
+      "name": "AI & Agentic Engineering",
+      "keywordsText": "LLM Application Development, Streaming Responses, Prompt Engineering, Multi-Agent Systems, Model Context Protocol (MCP), OpenAI Agents SDK, Pydantic AI"
+    },
+    {
+      "name": "Databases & SQL",
+      "keywordsText": "PostgreSQL, MySQL, MongoDB, SQLite, Firebase/Firestore, Redis; database design, indexing, transactions, database migrations"
+    },
+    {
+      "name": "Cloud & DevOps",
+      "keywordsText": "AWS (Lambda, EC2, RDS, S3), Azure, GCP, Docker, Kubernetes (working knowledge), GitHub Actions, CI/CD, Git"
+    },
+    {
+      "name": "Testing & Quality",
+      "keywordsText": "Unit Testing, Integration Testing, Jest, Mocha, Automated CI Testing, Code Review"
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+Subject: Applied for {{jobTitle}} at {{companyName}} — would love a referral or quick chat
+
+Hi {{outreachEmployeeName}},
+
+I just applied for the {{jobTitle}} role at {{companyName}} ({{jobLink}}) and noticed you're on the team, so I wanted to reach out directly. I'm a backend engineer with 3.5+ years building distributed cloud infrastructure (Terraform, Kubernetes, Docker, Kafka) and integrating agentic AI into production systems — I built an MCP server and a multi-agent OpenAI Agents SDK workflow at Turbot HQ, and use Claude Code as a default part of my engineering workflow, including an automation that cut resource-discovery latency 70-90%. I'm also a core contributor to Turbot's open-source infra suite (9,300+ GitHub stars, 120+ merged PRs). Would you be open to a referral, or a quick chat about the role and team? Happy to share more context or my resume.
+
+Thanks so much,
+Priyanka

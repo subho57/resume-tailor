@@ -1,0 +1,18 @@
+Priyanka Chatterjee
+priyankachatterjee9075@gmail.com | +91 8617262536
+linkedin.com/in/priyanka-9075 | github.com/Priyanka-Chatterjee-2000 | priyanka-chatterjee-2000.github.io
+
+Dear Hiring Manager,
+
+I'm writing to apply for the Advanced Software Engineer role on Honeywell HCE's site reliability team. I'm a backend engineer with 3.5+ years building and operating distributed, event-driven cloud systems, and a core contributor to Turbot's open-source infrastructure suite (9,300+ GitHub stars, 120+ merged pull requests through peer code review) — including a Claude Code-driven automation that migrated 35+ Azure cloud-governance modules to an event-driven architecture and cut resource-discovery latency 70-90%.
+
+Your posting emphasizes ownership of reliability, uptime, and infrastructure automation, which maps directly onto my day-to-day work at Turbot HQ. I've diagnosed and resolved production incidents (including a Go service stuck in a Kubernetes CrashLoopBackOff, working with the platform team to restore service), built a Kafka-based event-driven pipeline with dead-letter-queue handling for policy-enforcement events, and owned release engineering for four open-source Go CLIs — unifying GitHub Actions workflows, adding multi-distro Linux smoke tests to the release pipeline, and automating GHCR image tagging to make releases more repeatable and traceable.
+
+Infrastructure as code and compliance are also central to my work: I write Terraform and HCL daily, and authored multi-cloud compliance automation covering 1,000+ resource checks across CIS, NIST, HIPAA, PCI DSS v4, SOC 2, and FedRAMP frameworks for enterprise customers in finance, healthcare, and government, cutting audit time 50%. I operate across AWS, Azure, and GCP with Docker and Kubernetes, and use Datadog and OpenTelemetry for monitoring and incident triage.
+
+I haven't worked hands-on with Puppet, Ansible, or Chef specifically, though I've picked up new infrastructure tooling quickly throughout my career — my Terraform/HCL and CI/CD automation background should translate directly. I'd welcome the chance to talk through how my distributed-systems and reliability experience could contribute to Honeywell HCE's infrastructure automation goals.
+
+Thank you for your consideration — I'd love to discuss further.
+
+Best regards,
+Priyanka Chatterjee

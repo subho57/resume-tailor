@@ -1,0 +1,108 @@
+{
+  "schemaVersion": "1.0.0",
+  "theme": "corporate-navy",
+  "sectionOrder": ["summary", "skills", "work", "projects", "education"],
+  "basics": {
+    "name": "Priyanka Chatterjee",
+    "label": "Backend Software Engineer · OAuth 2.0 / JWT Auth Systems · Go · Python · Node.js · AI-Assisted Development (Claude Code, Cursor) · 3.5+ Years",
+    "email": "priyankachatterjee9075@gmail.com",
+    "phone": "+91 8617262536",
+    "url": "https://priyanka-chatterjee-2000.github.io",
+    "location": {
+      "display": "Kolkata, West Bengal, India",
+      "city": "Kolkata",
+      "region": "West Bengal",
+      "countryCode": "IN"
+    },
+    "profiles": [
+      {
+        "network": "LinkedIn",
+        "username": "priyanka-9075",
+        "url": "https://linkedin.com/in/priyanka-9075",
+        "display": "linkedin.com/in/priyanka-9075"
+      },
+      {
+        "network": "GitHub",
+        "username": "Priyanka-Chatterjee-2000",
+        "url": "https://github.com/Priyanka-Chatterjee-2000",
+        "display": "github.com/Priyanka-Chatterjee-2000"
+      },
+      {
+        "network": "Portfolio",
+        "url": "https://priyanka-chatterjee-2000.github.io",
+        "display": "priyanka-chatterjee-2000.github.io"
+      }
+    ],
+    "summaries": {
+      "jumpcloud-auth-backend": "Backend software engineer with 3.5+ years building secure, scalable microservices in Go, Python, and Node.js, with hands-on OAuth 2.0 and JWT-based authentication work and heavy day-to-day use of AI-assisted development tools (Claude Code, Cursor) to accelerate delivery. Authored an LLM-driven Claude Code skill automating refactoring, test generation, and deployment for Turbot HQ, migrating 35+ modules to an event-driven architecture and cutting resource-discovery latency 70–90%."
+    },
+    "activeSummary": "jumpcloud-auth-backend"
+  },
+  "work": [
+    {
+      "name": "Turbot HQ, Inc.",
+      "location": "Remote",
+      "domainNote": "Multi-cloud security, governance, and compliance software; makers of the open-source Steampipe / Powerpipe / Flowpipe / Tailpipe suite and the commercial Turbot Guardrails PSPM platform. Remote-first.",
+      "dateDisplay": "August 2022 – April 2026",
+      "roleDisplay": "senior-only",
+      "roles": [
+        {
+          "position": "Software Engineer I",
+          "dateDisplay": "August 2022 – April 2026"
+        }
+      ],
+      "highlights": [
+        "Designed and developed an internal REST API microservice in Go using the Gin framework as part of a greenfield build of Turbot Guardrails, a Preventive Security Posture Management (PSPM) SaaS product; secured endpoints with OAuth 2.0 authentication via Auth0, containerized with Docker, deployed to AWS EC2, and served as a gRPC client for several internal microservices.",
+        "Led the AWS SDK for JavaScript v2 to v3 migration across 180+ call sites and 11+ AWS services in production Node.js Lambdas, refactoring discovery, configuration-sync, tagging, and resource-cleanup workflows; reduced policy-code duplication ~60% via Nunjucks templating.",
+        "Authored an LLM-driven Claude Code skill automating code refactoring, unit test generation, deployment, and Terraform-driven integration testing to accelerate feature velocity; used it to migrate 35+ Azure cloud-governance modules from polling to push-based eventing via Azure Event Grid, cutting resource-discovery latency 70–90% and eliminating recurring API throttling.",
+        "Built a Kafka-based, fire-and-forget event-driven pipeline for Turbot Guardrails, where consumers asynchronously processed policy-enforcement events and fired a webhook once a policy was enforced; added a dead-letter queue (DLQ) to capture recurring failures for investigation.",
+        "Optimized complex PostgreSQL queries powering customer compliance audits — rewriting AWS IAM policy-evaluation queries with jsonb array elements and multi-stage CTEs — improving query performance 40% and eliminating a class of false-positive findings.",
+        "Resolved a production incident by diagnosing a Go service stuck in a Kubernetes CrashLoopBackOff, collaborating with the platform team to restore service."
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "name": "TODO / Tasks REST API",
+      "dateDisplay": "Apr 2026",
+      "association": "",
+      "description": "API-first REST backend in TypeScript with Bun, Express.js 5, and SQLite + Zod + jose (JWT). JWT authentication (access, ID, and refresh tokens), RBAC, a prepared-statement CRUD service layer, schema-validated controllers with proper REST status codes, and database migrations.",
+      "links": []
+    }
+  ],
+  "education": [
+    {
+      "institution": "University of Engineering & Management (UEM)",
+      "location": "Kolkata, WB, IN",
+      "degreeDisplay": "Bachelor of Technology in Computer Science and Engineering",
+      "dateDisplay": "August 2019 – May 2023",
+      "score": "CGPA: 9.28"
+    }
+  ],
+  "skills": [
+    {
+      "name": "Languages",
+      "keywordsText": "Go, Python, TypeScript, JavaScript (ES6+), SQL, Bash"
+    },
+    {
+      "name": "Backend & APIs",
+      "keywordsText": "Microservices, Event-Driven Architecture, Distributed Systems, REST, gRPC, WebSockets, OAuth 2.0 (Auth0), JWT, IAM, Node.js, Express.js, Gin, Bun"
+    },
+    {
+      "name": "AI-Assisted Development",
+      "keywordsText": "Claude Code, Cursor, Codex, LLM Application Development, Agentic Workflows, Model Context Protocol (MCP)"
+    },
+    {
+      "name": "Cloud & DevOps",
+      "keywordsText": "AWS (Lambda, EC2, RDS, S3), Azure, GCP, Docker, Kubernetes (working knowledge; collaborate with platform teams), Terraform, OpenTofu, HCL, GitHub Actions, CI/CD, Git"
+    },
+    {
+      "name": "Databases & SQL",
+      "keywordsText": "PostgreSQL, MySQL, MongoDB, DuckDB, SQLite, Redis; jsonb, CTEs, indexing, transactions, database migrations"
+    },
+    {
+      "name": "Testing & Quality",
+      "keywordsText": "Unit Testing, Integration Testing, Jest, Mocha, Automated CI Testing, Code Review"
+    }
+  ]
+}

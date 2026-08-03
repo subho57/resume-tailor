@@ -1,0 +1,10 @@
+Subject: Referral request — {{jobTitle}} role at {{companyName}}
+
+Hi {{outreachEmployeeName}},
+
+I just applied for the {{jobTitle}} role at {{companyName}} ({{jobLink}}) and noticed you're on the team there, so I wanted to reach out directly. I've built production agentic systems in Python — an MCP server, multi-agent workflows on the OpenAI Agents SDK, and a Claude Code skill I use daily that automated a 35+ module migration and cut latency 70-90% — which lines up closely with how your team already works.
+
+Would you be open to a quick chat about the team, or willing to point my application to the right person? Happy to share my resume or walk through any of the projects above.
+
+Thanks so much,
+Priyanka Chatterjee

@@ -1,0 +1,4 @@
+Hi {{outreachEmployeeName}}, I just applied for the {{jobTitle}} role at {{companyName}} ({{jobLink}}) and saw you're on the team. I build with Claude Code and MCP servers as my default workflow, not a novelty — including one skill that automated a 35+ module migration and cut latency 70-90% — and would love a quick chat or a referral if you're open to it.
+
+Thanks so much,
+Priyanka

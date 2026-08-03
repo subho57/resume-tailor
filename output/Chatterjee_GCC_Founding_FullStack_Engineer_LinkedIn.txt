@@ -1,0 +1,4 @@
+Hi {{outreachEmployeeName}}, I just applied for the {{jobTitle}} role at {{companyName}} ({{jobLink}}) and would love a referral or quick chat. I'm a full-stack engineer who's built an MCP server and LLM streaming tooling end-to-end, plus production React/Node.js work at early-stage startups with no dedicated DevOps team — a strong match for the founding-engineer scope here.
+
+Thanks so much,
+Priyanka

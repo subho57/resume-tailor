@@ -1,0 +1,4 @@
+Hi {{outreachEmployeeName}}, I just applied for the {{jobTitle}} role at {{companyName}} ({{jobLink}}) and saw you're on the team. I build distributed, event-driven cloud systems and infra automation (Terraform, Kubernetes, Kafka) and I'm a core contributor to Turbot's open-source infra suite (9,300+ stars, 120+ merged PRs). Would you be open to a referral or a quick chat about the role?
+
+Thanks,
+Priyanka

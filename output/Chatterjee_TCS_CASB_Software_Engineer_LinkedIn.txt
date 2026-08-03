@@ -1,0 +1,4 @@
+Hi {{outreachEmployeeName}}, I just applied for the {{jobTitle}} role at {{companyName}} ({{jobLink}}) and noticed you're on the team. I'm a backend engineer (Golang/Node.js/AWS) with hands-on cloud security and compliance work — CIS/NIST/PCI DSS modules and a Kafka-based policy-enforcement pipeline at my current company. Would love a referral or a quick chat if you have a few minutes!
+
+Thanks,
+Priyanka

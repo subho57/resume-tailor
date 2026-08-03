@@ -1,0 +1,111 @@
+{
+  "schemaVersion": "1.0.0",
+  "theme": "corporate-navy",
+  "sectionOrder": ["summary", "skills", "work", "education"],
+  "basics": {
+    "name": "Priyanka Chatterjee",
+    "label": "Backend Software Engineer · Golang & Node.js · AWS Microservices · Cloud Security & Compliance · 3.5+ Years",
+    "email": "priyankachatterjee9075@gmail.com",
+    "phone": "+91 8617262536",
+    "url": "https://priyanka-chatterjee-2000.github.io",
+    "location": {
+      "display": "Kolkata, West Bengal, India",
+      "city": "Kolkata",
+      "region": "West Bengal",
+      "countryCode": "IN"
+    },
+    "profiles": [
+      {
+        "network": "LinkedIn",
+        "username": "priyanka-9075",
+        "url": "https://linkedin.com/in/priyanka-9075",
+        "display": "linkedin.com/in/priyanka-9075"
+      },
+      {
+        "network": "GitHub",
+        "username": "Priyanka-Chatterjee-2000",
+        "url": "https://github.com/Priyanka-Chatterjee-2000",
+        "display": "github.com/Priyanka-Chatterjee-2000"
+      },
+      {
+        "network": "Portfolio",
+        "url": "https://priyanka-chatterjee-2000.github.io",
+        "display": "priyanka-chatterjee-2000.github.io"
+      }
+    ],
+    "summaries": {
+      "tcs-casb-cloud-security": "Backend Software Engineer with 3.5+ years building distributed microservices in Golang and Node.js on AWS, with hands-on CI/CD pipelines, cloud-native services, and production monitoring and troubleshooting. At Turbot HQ — a multi-cloud security, governance, and compliance software company — built a Kafka-based policy-enforcement pipeline and cut resource-discovery latency 70–90% by migrating 35+ cloud-governance modules to event-driven architecture."
+    },
+    "activeSummary": "tcs-casb-cloud-security"
+  },
+  "work": [
+    {
+      "name": "Turbot HQ, Inc.",
+      "location": "Remote",
+      "domainNote": "Multi-cloud security, governance, and compliance software; makers of the open-source Steampipe / Powerpipe / Flowpipe / Tailpipe suite and the commercial Turbot Guardrails PSPM platform. Remote-first.",
+      "dateDisplay": "August 2022 – April 2026",
+      "roleDisplay": "senior-only",
+      "roles": [
+        {
+          "position": "Software Engineer I",
+          "dateDisplay": "August 2023 – April 2026"
+        },
+        {
+          "position": "Junior Software Developer Intern",
+          "dateDisplay": "August 2022 – July 2023"
+        }
+      ],
+      "highlights": [
+        "Designed and built an internal REST microservice in Golang (Gin) as part of a greenfield build of Turbot Guardrails, a cloud security SaaS product; secured with OAuth 2.0 (Auth0), containerized with Docker, deployed to AWS EC2, and served as a gRPC client for internal microservices.",
+        "Built a Kafka-based event-driven pipeline processing policy-enforcement events asynchronously and firing a webhook once a policy was enforced against a cloud resource, with a dead-letter queue (DLQ) for failure investigation and debugging.",
+        "Led the AWS SDK v2→v3 migration across 180+ call sites and 11+ AWS services in production Node.js Lambdas, reducing policy-code duplication ~60% and unblocking a Node.js runtime upgrade past AWS SDK v2 EOL.",
+        "Authored 11 AWS log-source tables (Golang) for data visibility across CloudTrail, GuardDuty, SecurityHub, VPC flow, and WAF logs plus 25+ security detections, lifting log-processing throughput 30% to 1,000+ logs/sec.",
+        "Authored multi-cloud compliance modules (HCL + SQL, 1,000+ resource checks) across CIS, NIST, HIPAA, PCI DSS v4, SOC 2, and FedRAMP frameworks for enterprise finance/healthcare/government customers, cutting compliance-audit time 50%.",
+        "Owned CI/CD release engineering for four open-source Golang CLIs — unified GitHub Actions pipelines with automated multi-distro Linux smoke tests, hardening release safety and catching regressions before deployment."
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "University of Engineering & Management (UEM)",
+      "location": "Kolkata, WB, IN",
+      "degreeDisplay": "Bachelor of Technology in Computer Science and Engineering",
+      "dateDisplay": "August 2019 – May 2023",
+      "score": "CGPA: 9.28"
+    }
+  ],
+  "skills": [
+    {
+      "name": "Languages",
+      "keywordsText": "Go (Golang), Python, TypeScript, JavaScript (ES6+), SQL, Bash, HCL"
+    },
+    {
+      "name": "Backend & APIs",
+      "keywordsText": "Microservices, Event-Driven Architecture, Distributed Systems, Serverless, REST, gRPC, OAuth 2.0 (Auth0), JWT, Node.js, Express.js, Gin"
+    },
+    {
+      "name": "Messaging & Streaming",
+      "keywordsText": "Apache Kafka (consumer groups, DLQs), AWS SNS/SQS, AWS EventBridge, Azure Event Grid"
+    },
+    {
+      "name": "Databases & SQL",
+      "keywordsText": "PostgreSQL, MongoDB, DuckDB, SQLite, Redis; query tuning, indexing, transactions, database migrations"
+    },
+    {
+      "name": "Cloud & Serverless",
+      "keywordsText": "AWS (Lambda, EC2, S3, SecurityHub, GuardDuty, ControlTower), Azure, GCP, OCI"
+    },
+    {
+      "name": "IaC & DevOps",
+      "keywordsText": "Terraform, Docker, Kubernetes (working knowledge), GitHub Actions, Jenkins, Git"
+    },
+    {
+      "name": "Observability",
+      "keywordsText": "Datadog, OpenTelemetry (OTel); metrics, logging, tracing, performance monitoring, incident triage"
+    },
+    {
+      "name": "Security & Compliance",
+      "keywordsText": "CIS (AWS, Azure, GCP, M365, GitHub, Google Workspace), NIST, HIPAA, PCI DSS v4, SOC 2, FedRAMP; IAM, RBAC, cloud security policies, data visibility, policy enforcement, SIEM"
+    }
+  ]
+}

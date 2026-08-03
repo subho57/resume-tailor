@@ -1,0 +1,18 @@
+Priyanka Chatterjee
+priyankachatterjee9075@gmail.com | +91 8617262536
+linkedin.com/in/priyanka-9075 | github.com/Priyanka-Chatterjee-2000 | priyanka-chatterjee-2000.github.io
+
+Dear Hiring Manager,
+
+I'm a backend engineer with 3.5+ years building microservices in Go and Node.js on AWS, and I've spent that time working inside the exact problem space a CASB role lives in: cloud data visibility, policy enforcement, and compliance at scale. At Turbot HQ, I built a Kafka-based event-driven pipeline for Turbot Guardrails — a cloud security policy-enforcement platform — where consumers asynchronously processed policy-enforcement events and fired a webhook once a policy was successfully enforced against a cloud resource, with a dead-letter queue to catch and investigate recurring failures.
+
+On the compliance side, I authored multi-cloud compliance modules in HCL and SQL covering 1,000+ resource checks across CIS, NIST, HIPAA, PCI DSS v4, SOC 2, and FedRAMP frameworks, used by enterprise finance, healthcare, and government customers for cloud data visibility — cutting audit time 50%. I also built core features for Tailpipe, a Go-based observability/SIEM CLI, lifting log-processing throughput 30% to 1,000+ logs per second, and shipped a greenfield REST API microservice in Go/Gin secured with OAuth 2.0, containerized with Docker, and deployed to AWS EC2.
+
+For CI/CD, I've owned release engineering for four open-source Go CLIs using GitHub Actions — unified release workflows, automated quality gates, and multi-distro Linux smoke tests before every deployment. I haven't used Jenkins specifically, but the CI/CD concepts (pipelines, quality gates, automated releases) transfer directly, and I picked up GitHub Actions' equivalent patterns quickly. I don't have hands-on CASB or DLP tooling experience by name, but the underlying work — policy enforcement, data visibility, compliance automation across multi-cloud environments — is what I've been doing day to day.
+
+I'd welcome the opportunity to bring this background to the team and would be glad to discuss further.
+
+Thank you for your consideration.
+
+Best regards,
+Priyanka Chatterjee

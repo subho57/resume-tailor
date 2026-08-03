@@ -62,12 +62,7 @@
     "activeSummary": ""
   },
   "preferences": {
-    "locations": [
-      "Remote — top priority",
-      "Kolkata",
-      "Hyderabad",
-      "Bengaluru"
-    ],
+    "locations": ["Remote — top priority", "Kolkata", "Hyderabad", "Bengaluru"],
     "hybrid": "Open to hybrid opportunities as well.",
     "roles": [
       "Golang Developer — 1st choice",
@@ -255,7 +250,7 @@
     },
     {
       "name": "IaC & DevOps",
-      "keywordsText": "Terraform, OpenTofu, HCL, Docker, Kubernetes (working knowledge; collaborate with platform teams), GHCR, GitHub Actions, Nunjucks, Fly.io, Vercel, Git, Jira"
+      "keywordsText": "Terraform, OpenTofu, HCL, Docker, Kubernetes (working knowledge; collaborate with platform teams), GHCR, GitHub Actions, Jenkins, Nunjucks, Fly.io, Vercel, Git, Jira"
     },
     {
       "name": "Observability",

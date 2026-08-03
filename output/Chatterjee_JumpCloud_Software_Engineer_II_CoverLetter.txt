@@ -1,0 +1,18 @@
+Priyanka Chatterjee
+priyankachatterjee9075@gmail.com | +91 8617262536
+linkedin.com/in/priyanka-9075 | github.com/Priyanka-Chatterjee-2000 | priyanka-chatterjee-2000.github.io
+
+Dear Hiring Manager,
+
+I'm a backend engineer with 3.5+ years building secure, scalable microservices across Go, Python, and Node.js, and I'd love to bring that to the Auth & Access team at JumpCloud. At Turbot HQ, I designed and built an internal REST API microservice in Go/Gin as part of a greenfield product build, securing every endpoint with OAuth 2.0 via Auth0 and deploying it to production on AWS EC2 with Docker — hands-on experience with exactly the auth architecture this role centers on.
+
+Your emphasis on AI-assisted development is where I think I can move fastest for your team. I authored an LLM-driven Claude Code skill that automates code refactoring, unit test generation, and deployment, and used it myself to migrate 35+ Azure cloud-governance modules to an event-driven architecture, cutting resource-discovery latency 70–90%. I use Claude Code and Cursor daily to accelerate delivery and debugging, not as a novelty but as a core part of how I ship — the same "aggressively leverage AI tools" mindset your JD describes.
+
+On the infrastructure side, I've worked across AWS (Lambda, EC2, S3), Docker, and Kubernetes — including diagnosing a production CrashLoopBackOff incident directly with the platform team — plus Terraform-driven integration testing and GitHub Actions CI/CD pipelines with automated quality gates. I've also written JWT authentication flows (including ID, access, and refresh tokens) and optimized AWS IAM policy-evaluation queries at scale, cutting audit query time 40% across 10,000+ resources. I don't have direct OIDC/SSO protocol implementation or DynamoDB experience specifically, but I pick up adjacent auth and cloud patterns quickly — my JWT and IAM work sits right next door to both.
+
+I'd welcome the chance to talk through how I could contribute to the Auth & Access team, including participating in on-call rotations across a globally distributed engineering group.
+
+Thank you for your consideration.
+
+Best regards,
+Priyanka Chatterjee

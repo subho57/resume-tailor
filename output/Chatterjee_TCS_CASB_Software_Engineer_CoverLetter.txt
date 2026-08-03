@@ -1,0 +1,16 @@
+Priyanka Chatterjee
+priyankachatterjee9075@gmail.com | +91 8617262536
+linkedin.com/in/priyanka-9075 | github.com/Priyanka-Chatterjee-2000
+
+Dear Hiring Manager,
+
+I'm writing to apply for the Software Engineer – Cloud Access Security Broker role on the TCS client engagement. At Turbot HQ, a multi-cloud security, governance, and compliance software company, I built a Kafka-based policy-enforcement pipeline and migrated 35+ cloud-governance modules to an event-driven architecture, cutting resource-discovery latency 70-90% — the kind of backend work this role's mix of Golang, Node.js, and cloud security is built around.
+
+On the backend side, I designed and built an internal REST microservice in Golang using Gin as part of a greenfield build of Turbot Guardrails, a cloud security posture management SaaS product — securing it with OAuth 2.0 via Auth0, containerizing it with Docker, and deploying it to AWS EC2. On the Node.js side, I led the AWS SDK v2-to-v3 migration across 180+ call sites and 11+ AWS services in production Lambdas, cutting policy-code duplication ~60% and keeping the platform supported past AWS SDK v2 end-of-life. Both efforts required the kind of microservices architecture, AWS fluency, and hands-on debugging this role calls for.
+
+Cloud security and compliance is the core of my day-to-day work, not a side interest: I authored multi-cloud compliance modules covering 1,000+ resource checks across CIS, NIST, HIPAA, PCI DSS v4, SOC 2, and FedRAMP frameworks for enterprise finance, healthcare, and government customers, cutting compliance-audit time 50%, and built 11 AWS log-source tables for data visibility across CloudTrail, GuardDuty, SecurityHub, VPC flow, and WAF logs. For CI/CD, my hands-on depth is in GitHub Actions — I owned release engineering for four open-source Golang CLIs with unified pipelines and automated multi-distro smoke tests — and I pick up new CI tooling like Jenkins quickly given that background.
+
+I'd welcome the chance to talk through how this experience maps to the CASB-focused parts of the role. Thank you for your consideration.
+
+Sincerely,
+Priyanka Chatterjee

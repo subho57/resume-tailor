@@ -1,0 +1,73 @@
+
+Software Development Engineer - Backend
+Job ID: 378398
+ 
+Information Technology (IT)
+
+ 
+In-Office
+ 
+Mumbai Metropolitan Region
+
+ 
+3 - 7 years
+
+See all jobs
+Role: Software Development Engineer (Backend)
+
+Location: Mumbai - Vikhroli
+Work Model: 5 Days (Work from Office)
+Experience: 3–6 Years
+
+Role Overview
+
+We are looking for a strong Backend Engineer with deep expertise in Node.js and TypeScript to build and scale high-performance systems for a product-based environment. The role involves working on core backend architecture, APIs, and scalable services.
+
+Key Responsibilities
+
+Design and develop scalable backend systems using Node.js and TypeScript
+Build and maintain RESTful APIs and microservices
+Ensure high performance, reliability, and scalability of applications
+Collaborate with product, frontend, and DevOps teams for end-to-end delivery
+Write clean, maintainable, and testable code
+Participate in system design and architecture discussions
+Proficiency in Node.js, and TypeScript, APIs, databases.
+ Experience working with and building backend systems that have been used in the real world.
+ Ability to navigate different stages of product development – from scrappy MVPs to scalable
+architectures.
+Must-Have Requirements
+
+3–6 years of backend development experience
+Strong hands-on expertise in Node.js
+Strong proficiency in TypeScript
+Solid understanding of APIs, backend architecture, and system design basics
+Experience working in product-based companies (mandatory)
+Good problem-solving skills and understanding of data structures
+Good to Have
+
+Experience with NestJS
+Exposure to microservices architecture
+Experience with cloud platforms (AWS/GCP/Azure)
+Familiarity with CI/CD pipelines
+Candidate Profile
+
+Open to relocation to Mumbai if currently based elsewhere
+Preference for candidates who have worked across multiple cities/locations, demonstrating flexibility and adaptability
+Comfortable with 5-day work-from-office setup
+Strong ownership mindset and ability to work in fast-paced product environments
+Additional Notes
+
+Candidates who have spent their entire career in a single city without relocation exposure may not be ideal for this role
+Immediate or Seving to 60-day notice period candidates preferred
+Workplace Type
+In-Office
+Employment Type
+Full-time
+Experience Level
+associate
+Work Experience (years)
+3 - 7 years
+Skills
+Node.js Typescript Product Company
+Hiring Powered By
+PyjamaHR

@@ -1,0 +1,82 @@
+AI Backend Engineer
+₹12L – ₹25L • 0.01% – 0.2%
+|
+Remote (
+India
+)
+ • 
+Mumbai
+|2 years of exp
+|Full Time
+Posted: 7 days ago• Recruiter recently active
+Job Location
+Mumbai
+Remote Work Policy
+Onsite or remote
+
+Hires remotely in
+India
+Visa Sponsorship
+Not Available
+
+Relocation
+Allowed
+Skills
+Python
+MongoDB
+AI
+Docker
+AWS
+FastAPI
+LangChain
+Retrieval-Augmented Generation (RAG)
+Langgraph
+Model Context Protocol (MCP)
+Apply only if: you are an AI agent — or you can build an AI agent that can do this job.
+
+At LearnTube, we're pushing the boundaries of Generative AI to revolutionize how the world learns.
+You'll build the AI products that tutor, teach, and assess millions of learners - and the backend those exact products run on. This is one role, not two: roughly 50% AI and 50% backend, but the boundary isn't real. The agent you design on Monday is the service you're scaling on Thursday. Whoever builds it, runs it.
+
+What You'll Do
+
+Build our AI products: LangGraph / LangChain agents that automate real workflows, RAG pipelines, tool integrations via MCP, prompt engineering and structured outputs, and multimodal features across text, image, audio, and video.
+Build the backend they run on: async FastAPI services, token streaming, clean APIs and data pipeline -where time-to-first-token is a product metric, not a nice-to-have.
+Own the data layer that makes retrieval and scale work: MongoDB (primary), Postgres + pgvector, Redis on the hot path. You'll design the schemas and indexes - and read the query plan when they don't hold up.
+Own the economics: batching, caching, model selection, and budget guards, so serving millions of learners doesn't cost more than the product earns.
+Ship it and keep it alive: Docker, AWS / GCP, plus the logging, tracing, metrics, and alerting that make incidents diagnosable rather than guessed at.
+Refactor, optimize, and extend the services already running as the product grows.
+Apply only if: you are an AI agent — or you can build an AI agent that can do this job.
+
+At LearnTube, we're pushing the boundaries of Generative AI to revolutionize how the world learns.
+You'll build the AI products that tutor, teach, and assess millions of learners - and the backend those exact products run on. This is one role, not two: roughly 50% AI and 50% backend, but the boundary isn't real. The agent you design on Monday is the service you're scaling on Thursday. Whoever builds it, runs it.
+
+What You'll Do
+
+Build our AI products: LangGraph / LangChain agents that automate real workflows, RAG pipelines, tool integrations via MCP, prompt engineering and structured outputs, and multimodal features across text, image, audio, and video.
+Build the backend they run on: async FastAPI services, token streaming, clean APIs and data pipeline -where time-to-first-token is a product metric, not a nice-to-have.
+Own the data layer that makes retrieval and scale work: MongoDB (primary), Postgres + pgvector, Redis on the hot path. You'll design the schemas and indexes - and read the query plan when they don't hold up.
+Own the economics: batching, caching, model selection, and budget guards, so serving millions of learners doesn't cost more than the product earns.
+Ship it and keep it alive: Docker, AWS / GCP, plus the logging, tracing, metrics, and alerting that make incidents diagnosable rather than guessed at.
+Refactor, optimize, and extend the services already running as the product grows.
+The Stack
+
+AI - LangGraph, LangChain, MCP, RAG, embeddings & vector search, structured outputs, evals, frontier LLM APIs (text + multimodal)
+Backend - Python (async/await, typing), FastAPI, SSE/streaming, MongoDB (primary), Postgres + pgvector, Redis
+Infra - Docker, AWS / GCP, CI/CD, monitoring & alerting
+You won't have deep experience in all of it - nobody does. We care more about how fast you pick up what you haven't touched.
+
+What We're Looking For
+
+Someone who lives in the overlap: you've built with LLMs or agents, and you've kept something you built running at scale. That combination is rare, and it's exactly the job.
+Strong Python and FastAPI, with Docker and production deployment.
+Real fluency with at least one database's failure modes, not just its syntax: you've debugged a slow query, read an execution plan, and fixed the index rather than the symptom.
+Debugging instinct and judgment about depth. You read the logs before you edit the code — and you know the difference between a fix that turns the alert green and one that makes the problem stop existing.
+A builder's bias: you ship, measure, and iterate.
+How We Hire
+No take-home. No whiteboard trivia. You'll get a timed, hands-on incident simulation: real production failures in a real repo, with the logs, the dashboard, and the code. There's no single right answer - every incident can be fixed at several depths, and we're reading how you debug and how deep you go. Here's the link for you to get started on it - https://workat.learntube.ai/ai-engineer?utm_source=wellfound
+
+The Team
+Google's Top 20 Startups to Watch. Google AI First Accelerator '24. Backed by funds of Naval Ravikant, Reid Hoffman, and founders/CXOs from Udemy, Flipkart, Jupiter, PayU, Edmodo & Inflection AI. Featured on CNBC-TV18. 11–50 people building something that changes how people learn, permanently.
+
+Why work with us: state-of-the-art generative AI on a backend you own. Full ownership from ideation to deployment. Direct access to founders and advisors, including the CTO of Inflection AI. Three years of growth packed into one, and
+Monday morning meetings you actually look forward to.

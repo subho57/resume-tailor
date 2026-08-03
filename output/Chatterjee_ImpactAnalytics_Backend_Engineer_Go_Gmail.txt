@@ -1,0 +1,8 @@
+Subject: Applied for {{jobTitle}} at {{companyName}} — would love a referral or quick chat
+
+Hi {{outreachEmployeeName}},
+
+I recently applied for the {{jobTitle}} role at {{companyName}} ({{jobLink}}) and wanted to reach out directly since I saw you're on the team there. I'm a backend engineer with 3.5+ years building Go services and distributed systems — most recently at Turbot HQ, where I'm a core contributor to four open-source Go platforms (9,300+ GitHub stars) and built a Go/Gin REST microservice serving as a gRPC client across internal services, plus a Kafka-based event-driven pipeline. Given the role's focus on Go, REST/gRPC, and distributed systems, I think there's a strong match, and I'd really value a referral or even just a few minutes to hear about your experience on the team. Happy to share my resume or answer any questions — thanks so much for considering it!
+
+Best,
+Priyanka

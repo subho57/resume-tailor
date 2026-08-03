@@ -1,0 +1,19 @@
+Hiring: Software Engineer – Cloud Access Security Broker
+Location: Bangalore, Chennai, Hyderabad, Noida/Delhi.
+ Experience: 3–10 Years (junior and senior required)
+ Employment: Full-Time
+Client : TCS
+
+Mandatory Skills
+✅ Strong backend development experience with Node.js and Golang
+✅ Hands-on experience with AWS and cloud-native services
+✅ Good understanding of Microservices architecture, development, and maintenance
+✅ Experience implementing and maintaining CI/CD pipelines using Jenkins
+✅ Strong analytical, debugging, and troubleshooting skills
+✅ Experience with monitoring tools and performance metrics
+
+Good-to-Have Skills
+➕ Exposure to Cloud Security and CASB concepts
+➕ Experience with modern cloud application development
+➕ Understanding of data visibility, policy enforcement, and DLP workflows
+➕ Knowledge of cloud security architectures and secure application practices

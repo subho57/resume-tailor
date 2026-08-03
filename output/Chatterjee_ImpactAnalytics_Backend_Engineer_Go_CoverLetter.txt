@@ -1,0 +1,16 @@
+Priyanka Chatterjee
+priyankachatterjee9075@gmail.com | +91 8617262536
+linkedin.com/in/priyanka-9075 | github.com/Priyanka-Chatterjee-2000
+
+Dear Hiring Manager,
+
+I'm writing to apply for the Backend Software Engineer role at Impact Analytics. I'm a core contributor to four open-source Go platforms (9,300+ GitHub stars, 120+ merged pull requests) at Turbot HQ, where I engineered core features for a Go-based, data-intensive observability CLI that lifted log-processing throughput 30% to 1,000+ events per second — the kind of high-performance, data-intensive backend work this role is built around.
+
+On the API and microservices side, I designed and built an internal REST microservice in Go using the Gin framework, securing it with OAuth 2.0, containerizing it with Docker, and serving it as a gRPC client for several internal microservices — direct, hands-on experience with the REST/gRPC/microservices stack this role calls for. I also built a Kafka-based, event-driven pipeline in Go with distributed consumers and a dead-letter queue for failure handling, and authored 11 Go-based data-source tables plus 25+ detections for the same platform, working with both relational (PostgreSQL) and embedded (DuckDB, SQLite) databases.
+
+Data Structures & Algorithms and Object-Oriented Design are the foundation of my CS coursework and day-to-day engineering, and troubleshooting production issues is a regular part of the job — I recently diagnosed and resolved a Go service stuck in a Kubernetes CrashLoopBackOff by working through pod logs with the platform team. I also own CI/CD release engineering for our open-source Go CLIs, including GitHub Actions pipelines and automated smoke tests, which keeps me close to the QA and DevOps collaboration this role expects.
+
+I'd welcome the opportunity to bring this Go backend experience to Impact Analytics' merchandising platform. Thank you for your consideration.
+
+Sincerely,
+Priyanka Chatterjee

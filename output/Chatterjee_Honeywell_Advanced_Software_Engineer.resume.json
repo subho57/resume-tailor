@@ -1,0 +1,115 @@
+{
+  "schemaVersion": "1.0.0",
+  "theme": "corporate-navy",
+  "sectionOrder": ["summary", "skills", "work", "projects", "education"],
+  "basics": {
+    "name": "Priyanka Chatterjee",
+    "label": "Advanced Software Engineer · Site Reliability (SRE) & Cloud Infrastructure · Terraform · Kubernetes · 9,300★ OSS Contributor · 3.5+ Years",
+    "email": "priyankachatterjee9075@gmail.com",
+    "phone": "+91 8617262536",
+    "url": "https://priyanka-chatterjee-2000.github.io",
+    "location": {
+      "display": "Kolkata, West Bengal, India",
+      "city": "Kolkata",
+      "region": "West Bengal",
+      "countryCode": "IN"
+    },
+    "profiles": [
+      {
+        "network": "LinkedIn",
+        "username": "priyanka-9075",
+        "url": "https://linkedin.com/in/priyanka-9075",
+        "display": "linkedin.com/in/priyanka-9075"
+      },
+      {
+        "network": "GitHub",
+        "username": "Priyanka-Chatterjee-2000",
+        "url": "https://github.com/Priyanka-Chatterjee-2000",
+        "display": "github.com/Priyanka-Chatterjee-2000"
+      },
+      {
+        "network": "Portfolio",
+        "url": "https://priyanka-chatterjee-2000.github.io",
+        "display": "priyanka-chatterjee-2000.github.io"
+      }
+    ],
+    "summaries": {
+      "honeywell-sre-infra": "Advanced Software Engineer with 3.5+ years designing, operating, and troubleshooting distributed, event-driven cloud systems across AWS, Azure, and GCP — hands-on with Terraform/HCL infrastructure-as-code, Docker, Kubernetes, GitHub Actions CI/CD, and Datadog/OpenTelemetry monitoring. Cut resource-discovery latency 70–90% by migrating 35+ Azure governance modules to an event-driven architecture at Turbot HQ, one of 120+ merged pull requests across Turbot's 9,300★ open-source suite."
+    },
+    "activeSummary": "honeywell-sre-infra"
+  },
+  "work": [
+    {
+      "name": "Turbot HQ, Inc.",
+      "location": "Remote",
+      "dateDisplay": "August 2022 – April 2026",
+      "roleDisplay": "senior-only",
+      "roles": [
+        {
+          "position": "Software Engineer I",
+          "dateDisplay": "August 2022 – April 2026"
+        }
+      ],
+      "highlights": [
+        "Resolved a production incident by diagnosing a Go service stuck in a Kubernetes CrashLoopBackOff, collaborating with the platform team on system reliability and uptime to investigate pod logs and status and restore service.",
+        "Authored an LLM-driven Claude Code skill automating code refactoring, unit test generation, deployment, Terraform-driven integration testing, and PR creation; used it to migrate 35+ Azure cloud-governance modules to an event-driven architecture via Azure Event Grid (from polling), cutting resource-discovery latency 70–90% and eliminating recurring Azure API throttling.",
+        "Built a Kafka-based, fire-and-forget event-driven pipeline for Turbot Guardrails, where consumers asynchronously processed policy-enforcement events and fired a webhook once a policy was successfully enforced against a resource; added a dead-letter queue (DLQ) to capture recurring failures for manual investigation and debugging.",
+        "Owned release engineering for four open-source Go CLIs (Steampipe, Powerpipe, Flowpipe, Tailpipe) — added multi-distro Linux smoke tests to the GitHub Actions release pipeline and unified release/version workflows, automated Slack notifications, and GHCR Docker image tagging, improving release safety, repeatability, and traceability — all shipped through peer code review via GitHub pull requests.",
+        "Authored multi-cloud compliance modules in HCL + SQL covering 1,000+ resource checks across CIS (AWS v4–v6, Azure v2.1–v4.0, GCP v3–v4, Microsoft 365, Google Workspace, GitHub), NIST, HIPAA, PCI DSS v4, SOC 2, and FedRAMP frameworks — used by enterprise customers in finance, healthcare, and government — cutting enterprise compliance-audit time 50%."
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "name": "SLA Tracking Dashboard for an Open-Source Tools Team",
+      "dateDisplay": "",
+      "association": "",
+      "description": "651 lines of dashboard config (HCL + SQL) for a public OSS repo: per-repo SLA-tracking status cards across 8 repositories (Awaiting Initial Response, Needs Triage, Awaiting Author Feedback, Stale Issues, Total Age) with threshold-coded indicators, giving the team ongoing visibility into service-level performance. Lateral-join SQL against the Steampipe GitHub plugin tables detects zero-org-comment issues — replacing manual repo-by-repo triage with a single dashboard.",
+      "links": []
+    }
+  ],
+  "education": [
+    {
+      "institution": "University of Engineering & Management (UEM)",
+      "location": "Kolkata, WB, IN",
+      "degreeDisplay": "Bachelor of Technology in Computer Science and Engineering",
+      "dateDisplay": "August 2019 – May 2023",
+      "score": "CGPA: 9.28",
+      "detail": "Relevant Coursework: Object-Oriented Programming, DBMS, Data Structures and Algorithms, Shell Scripting in Linux, Low-Level Design, High-Level Design"
+    }
+  ],
+  "skills": [
+    {
+      "name": "Languages",
+      "keywordsText": "Go, Python, TypeScript, JavaScript (ES6+), SQL, Bash, HCL"
+    },
+    {
+      "name": "IaC & DevOps",
+      "keywordsText": "Terraform, OpenTofu, HCL, Docker, Kubernetes (working knowledge; collaborate with platform teams), GHCR, GitHub Actions, Git"
+    },
+    {
+      "name": "Cloud & Serverless",
+      "keywordsText": "AWS (Lambda, EC2, RDS, S3, SecurityHub, GuardDuty, ControlTower, Shield, X-Ray, EFS), Azure, GCP, OCI, AliCloud"
+    },
+    {
+      "name": "Messaging & Streaming",
+      "keywordsText": "Apache Kafka (consumer groups, DLQs), AWS SNS/SQS, AWS EventBridge, Azure Event Grid"
+    },
+    {
+      "name": "Observability",
+      "keywordsText": "Datadog, OpenTelemetry (OTel), Logfire; metrics, logging, tracing, incident triage"
+    },
+    {
+      "name": "Security & Compliance",
+      "keywordsText": "CIS (AWS, Azure, GCP, M365, GitHub, Google Workspace), NIST (incl. 800-171 Rev 2), HIPAA, PCI DSS v4, SOC 2, FedRAMP, AWS Foundational Security Best Practices; IAM, RBAC, cloud security policies, CMDB, SIEM"
+    },
+    {
+      "name": "Backend & APIs",
+      "keywordsText": "Microservices, Event-Driven Architecture, Distributed Systems, Serverless, REST, gRPC, OAuth 2.0 (Auth0), JWT"
+    },
+    {
+      "name": "Databases & SQL",
+      "keywordsText": "PostgreSQL, MySQL, MongoDB, DuckDB; jsonb, CTEs, query tuning, indexing, transactions, database migrations"
+    }
+  ]
+}

@@ -1,0 +1,4 @@
+Hi {{outreachEmployeeName}}, I just applied for the {{jobTitle}} role at {{companyName}} ({{jobLink}}) and would love a referral or quick chat. I'm a backend engineer with hands-on OAuth 2.0/JWT auth work in Go, Python, and Node.js, plus daily use of Claude Code and Cursor to ship faster — a strong match for the Auth & Access team's AI-driven approach.
+
+Thanks so much,
+Priyanka

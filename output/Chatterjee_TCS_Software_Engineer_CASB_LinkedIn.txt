@@ -1,0 +1,4 @@
+Hi {{outreachEmployeeName}}, I just applied for the {{jobTitle}} role at {{companyName}} ({{jobLink}}) and would love a referral or quick chat. I'm a backend engineer (Go, Node.js, AWS) who's built cloud security policy-enforcement pipelines and 1,000+ multi-cloud compliance checks (CIS, NIST, HIPAA, PCI DSS) at Turbot HQ — work that sits right in the CASB problem space.
+
+Thanks so much,
+Priyanka

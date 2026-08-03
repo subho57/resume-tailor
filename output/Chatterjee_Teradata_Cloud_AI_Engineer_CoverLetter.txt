@@ -1,0 +1,18 @@
+Priyanka Chatterjee
+priyankachatterjee9075@gmail.com | +91 8617262536
+linkedin.com/in/priyanka-9075 | github.com/Priyanka-Chatterjee-2000 | priyanka-chatterjee-2000.github.io
+
+Dear Hiring Manager,
+
+I'm writing to apply for the Cloud AI Engineer role at Teradata. I'm a backend engineer with 3.5+ years building distributed cloud infrastructure and integrating agentic AI directly into production systems, and a core contributor to Turbot's open-source infrastructure suite (9,300+ GitHub stars, 120+ merged pull requests through peer code review) — including building the Steampipe Model Context Protocol server end to end in Python and an LLM-driven Claude Code automation that migrated 35+ Azure cloud-governance modules to an event-driven architecture, cutting resource-discovery latency 70-90%.
+
+Your posting emphasizes applying agentic AI and LLMs to real infrastructure, and Claude Code is core to how I already work: beyond the MCP server, I designed a multi-agent workflow on the OpenAI Agents SDK that generates cloud preventive-policy commands, validates them in a live test environment, and self-corrects failures — a working example of agentic AI running against production infrastructure rather than a demo.
+
+On the infrastructure side, I write Terraform/HCL daily, containerize and deploy services with Docker to AWS EC2, built a Kafka-based event-driven pipeline with dead-letter-queue handling, and designed a RESTful Go/Gin microservice secured with OAuth 2.0 that also serves as a gRPC client for internal services. I operate across AWS, Azure, and GCP, work with both SQL and NoSQL data stores (PostgreSQL, MongoDB, DuckDB), and recently resolved a production performance bottleneck by rewriting PostgreSQL compliance-audit queries for a 40% speedup. I also bring hands-on IAM and compliance experience (CIS, NIST, HIPAA, PCI DSS, SOC 2, FedRAMP) that maps to your observability, security, and compliance requirements.
+
+I haven't worked hands-on with Helm, Istio, or Jenkins specifically, though my Terraform, Kubernetes, and GitHub Actions background has made picking up adjacent infrastructure tooling straightforward in the past. I'd welcome the opportunity to talk through how my agentic-AI and cloud-infrastructure experience could contribute to Teradata's AI platform team.
+
+Thank you for your consideration — I'd love to discuss further.
+
+Best regards,
+Priyanka Chatterjee

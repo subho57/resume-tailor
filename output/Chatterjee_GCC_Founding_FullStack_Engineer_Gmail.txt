@@ -1,0 +1,12 @@
+Subject: Applied for {{jobTitle}} at {{companyName}} — would love a quick chat
+
+Hi {{outreachEmployeeName}},
+
+I just applied for the {{jobTitle}} role at {{companyName}} ({{jobLink}}) and wanted to reach out directly. I'm a full-stack engineer with 3.5+ years shipping production systems end-to-end at early-stage startups, including a Model Context Protocol (MCP) server and multi-agent LLM tooling I built from scratch at Turbot HQ (9,300+ GitHub stars, 120+ merged PRs), plus direct React and Node.js/Express production experience.
+
+The founding-engineer scope — full ownership, no dedicated DevOps or QA, LLM streaming integration — is exactly the kind of work I gravitate toward, and I'd love to hear more about how the two products are shaping up.
+
+Would you be open to a quick chat, or could you point me to the right person for a referral?
+
+Thanks so much,
+Priyanka

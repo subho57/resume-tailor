@@ -1,0 +1,22 @@
+Priyanka Chatterjee
+Kolkata, West Bengal, India
+priyankachatterjee9075@gmail.com | +91 8617262536
+linkedin.com/in/priyanka-9075 | github.com/Priyanka-Chatterjee-2000
+
+ZoomRx
+Re: Staff Software Engineer
+
+Dear Hiring Manager,
+
+I'm writing to apply for the Staff Software Engineer role at ZoomRx. Over the past year I've rewired how I ship, not just talked about it: I authored an LLM-driven Claude Code skill that automates code refactoring, unit test generation, Terraform-driven integration testing, and PR creation, then used it myself to migrate 35+ Azure cloud-governance modules from polling to push-based eventing at Turbot HQ, cutting resource-discovery latency 70-90%. That's alongside being a core contributor across Turbot's four open-source products — 120+ merged pull requests, 9,300+ combined GitHub stars — so agentic tooling as a default workflow, not a novelty, is exactly how I already operate.
+
+On the agentic stack specifically: I built the Steampipe Model Context Protocol (MCP) server end to end in Python, giving LLM agents standardized, real-time access to enterprise cloud data; designed a multi-agent workflow on the OpenAI Agents SDK that generates policy commands, validates them live, and self-corrects failures; and built a general-purpose agentic chatbot in Pydantic AI with configurable external MCP servers and mid-conversation multi-model switching across OpenAI, Gemini, and Anthropic — the same model landscape your stack runs on.
+
+On the backend and data side, I've owned systems end-to-end: a RAG agent backed by AWS S3 vector storage deployed to AWS Lambda and wired into Slack for instant cross-team query resolution, and PostgreSQL query rewrites (jsonb, multi-stage CTEs) that cut audit-report generation time 40% and eliminated a class of false positives — the kind of backend systems and data platforms that need to hold up at scale, which is what the role calls for.
+
+I'll be candid about two gaps: I haven't worked in FastAPI or LangGraph specifically, and my professional tenure is 3.5 years against the 4-10 you're targeting. What I can offer instead is a track record of picking up whatever the stack demands fast — I joined Turbot with no prior Go, SQL, or cloud experience and became a top open-source contributor within months — plus real, hands-on Python API and agent-orchestration work (Lambda-based services, the OpenAI Agents SDK, Pydantic AI) that should translate quickly.
+
+I'd welcome the chance to talk about how I could contribute to ZoomRx's engineering team. Thank you for your time and consideration.
+
+Sincerely,
+Priyanka Chatterjee
